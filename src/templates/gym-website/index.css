@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  .template-wrapper {
+    @apply bg-gym-dark text-white font-sans;
+  }
+  
+  .template-wrapper h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gym-darker;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gym-gray rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gym-accent;
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-gym-dark: #0a0a0a;
+  --color-gym-darker: #000000;
+  --color-gym-charcoal: #1a1a1a;
+  --color-gym-accent: #b2ff05;
+  --color-gym-accentHover: #98d804;
+  --color-gym-gray: #333333;
+  --color-gym-light: #f5f5f5;
+  /* fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  /* animations */
+  --animate-marquee: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

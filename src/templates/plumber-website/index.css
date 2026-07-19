@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap");
+
+
+
+@import "tailwindcss";
+
+:root {
+  color: #07182d;
+  background: #f8fcff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: clip;
+  background:
+    linear-gradient(90deg, rgba(7, 24, 45, 0.025) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(7, 24, 45, 0.02) 1px, transparent 1px),
+    #ffffff;
+  background-size: 88px 88px, 88px 88px, auto;
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.template-wrapper a,
+.template-wrapper button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+::selection {
+  background: rgba(24, 189, 242, 0.28);
+}
+
+.marquee-track {
+  animation: marquee 24s linear infinite;
+}
+
+.project-gallery {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(24, 189, 242, 0.65) rgba(7, 24, 45, 0.08);
+  will-change: transform;
+}
+
+.project-gallery > article {
+  scroll-snap-align: start;
+}
+
+.project-gallery::-webkit-scrollbar {
+  height: 10px;
+}
+
+.project-gallery::-webkit-scrollbar-track {
+  background: rgba(7, 24, 45, 0.08);
+}
+
+.project-gallery::-webkit-scrollbar-thumb {
+  background: rgba(24, 189, 242, 0.75);
+  border: 3px solid rgba(238, 246, 250, 1);
+}
+
+@media (min-width: 1024px) {
+  .project-gallery {
+    scrollbar-width: none;
+  }
+
+  .project-gallery::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes heroDrift {
+  0% {
+    transform: scale(1.035) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.11) translate3d(-1.4%, -1%, 0);
+  }
+}
+
+.animate-heroDrift {
+  animation: heroDrift 6.4s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track,
+  .animate-heroDrift {
+    animation: none !important;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-navy: #07182d;
+  --color-harbor: #0d2746;
+  --color-water: #18bdf2;
+  --color-cyan: #70e4ff;
+  --color-steel: #5f7285;
+  --color-graphite: #172331;
+  --color-mist: #eef6fa;
+  --color-ice: #f8fcff;
+  /* fonts */
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: 'Manrope', 'Avenir Next', 'Segoe UI', sans-serif;
+  /* shadows */
+  --shadow-deep: 0 34px 90px rgba(7, 24, 45, 0.34);
+  --shadow-card: 0 18px 48px rgba(13, 39, 70, 0.12);
+  --shadow-glow: 0 18px 58px rgba(24, 189, 242, 0.28);
+}
+

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  .template-wrapper {
+    @apply antialiased bg-white text-electric-text font-sans;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-electric-bg: #FFFFFF;
+  --color-electric-surface: #F8F7F5;
+  --color-electric-text: #0F172A;
+  --color-electric-amber: #D97706;
+  --color-electric-slate: #475569;
+  --color-electric-charcoal: #1E293B;
+  --color-electric-stone: #78716C;
+  /* fonts */
+  --font-sans: "Geist Sans", sans-serif;
+  --font-display: "Satoshi", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+}
+

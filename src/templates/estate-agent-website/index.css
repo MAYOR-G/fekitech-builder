@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-gold: #C9A45C;
+  --color-gold-hover: #b59353;
+  --color-charcoal-navy: #1E2A3A;
+  --color-charcoal: #1E1E1E;
+  --color-ivory: #FAF8F5;
+  --color-success: #10B981;
+  /* fonts */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  /* letter spacing */
+  --tracking-widest: 0.1em;
+  --tracking-cta: 0.06em;
+}
+

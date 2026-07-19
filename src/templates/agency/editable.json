@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Grow Your Business",
+    "subtitle": "Professional digital solutions to scale your brand and increase revenue.",
+    "button": "Book Consultation"
+  },
+  "colors": {
+    "primary": "#5C16C5",
+    "background": "#FFFFFF",
+    "text": "#111111"
+  },
+  "services": [
+    {
+      "title": "Web Design",
+      "description": "Custom websites built for performance and conversion."
+    },
+    {
+      "title": "SEO Optimization",
+      "description": "Rank higher on search engines and get organic traffic."
+    },
+    {
+      "title": "Digital Marketing",
+      "description": "Data-driven campaigns to maximize your ROI."
+    }
+  ]
+}

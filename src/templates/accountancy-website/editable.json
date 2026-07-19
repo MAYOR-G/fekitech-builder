@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Clear numbers. Confident decisions.",
+    "subtitle": "Chartered accountants helping UK SMEs plan, grow, and stay compliant.",
+    "button": "Book a free consultation"
+  },
+  "about": {
+    "title": "Proactive accounting for ambitious businesses.",
+    "text": "From year-end accounts to R&D tax credits, we partner with you to make sense of the numbers."
+  },
+  "contact": {
+    "email": "hello@accountancy.co.uk",
+    "phone": "020 7946 0000"
+  }
+}

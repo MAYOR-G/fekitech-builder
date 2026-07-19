@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+
+
+@import "tailwindcss";
+
+:root {
+  color: #2C2C2C;
+  background: #FFFFFF;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: "Inter", "Sora", sans-serif;
+}
+
+.template-wrapper a,
+.template-wrapper button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+.template-wrapper p,
+.template-wrapper h1,
+.template-wrapper h2,
+.template-wrapper h3 {
+  overflow-wrap: break-word;
+}
+
+section[id] {
+  scroll-margin-top: 96px;
+}
+
+::selection {
+  background: rgba(201, 168, 106, 0.34);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  filter: blur(8px);
+  transition:
+    opacity 780ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 780ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 780ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes heroDrift {
+  0% {
+    transform: scale(1.035) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.105) translate3d(-1.2%, -0.8%, 0);
+  }
+}
+
+@keyframes scrollCue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(220%);
+  }
+}
+
+.animate-heroDrift {
+  animation: heroDrift 7s ease-out both;
+}
+
+.animate-scrollCue {
+  animation: scrollCue 1.45s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .marquee-track,
+  .animate-heroDrift,
+  .animate-scrollCue {
+    animation: none !important;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-onyx: #111111;
+  --color-slate: #2A2A2A;
+  --color-alabaster: #F9F8F6;
+  --color-pureWhite: #FFFFFF;
+  --color-bronze: #A89379;
+  --color-charcoal: #333333;
+  --color-gold: #A89379;
+  --color-espresso: #111111;
+  --color-pearl: #FFFFFF;
+  --color-cocoa: #333333;
+  --color-mist: #F9F8F6;
+  /* fonts */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Sora', sans-serif;
+  /* shadows */
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-deep: 0 24px 60px rgba(15, 27, 46, 0.12);
+  /* background images (utility: bg-<name>) */
+  --background-image-hero-gradient: linear-gradient(to top, rgba(15,27,46,0.7), transparent 60%);
+  /* animations */
+  --animate-riseIn: riseIn 760ms ease both;
+  --animate-slowZoom: slowZoom 16s ease-in-out infinite;
+  --animate-softFloat: softFloat 6s ease-in-out infinite;
+}
+
+@keyframes riseIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slowZoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.055);
+  }
+}
+
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+

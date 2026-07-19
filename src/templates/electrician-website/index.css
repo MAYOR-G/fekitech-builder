@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
+
+
+
+@import "tailwindcss";
+
+:root {
+  color: #10233f;
+  background: #f8fbff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 16% 8%, rgba(54, 197, 255, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 0%, rgba(255, 216, 77, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, #eef5ff 52%, #ffffff 100%);
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.template-wrapper::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(90deg, rgba(12, 107, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(12, 107, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+}
+
+.template-wrapper a,
+.template-wrapper button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+.template-wrapper p,
+.template-wrapper h1,
+.template-wrapper h2,
+.template-wrapper h3 {
+  overflow-wrap: break-word;
+}
+
+section[id] {
+  scroll-margin-top: 96px;
+}
+
+::selection {
+  background: rgba(255, 216, 77, 0.34);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  filter: blur(8px);
+  transition:
+    opacity 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 760ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-navy: #0a192f;
+  --color-midnight: #060d1a;
+  --color-cobalt: #0052ff;
+  --color-cyan: #00e5ff;
+  --color-safety: #ffb700;
+  --color-amber: #ff8c00;
+  --color-slate: #475569;
+  --color-mist: #f1f5f9;
+  --color-cloud: #f8fafc;
+  --color-line: #e2e8f0;
+  --color-ink: #0f172a;
+  --color-steel: #334155;
+  /* fonts */
+  --font-display: 'Sora', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Avenir Next', 'Segoe UI', sans-serif;
+  /* shadows */
+  --shadow-blue: 0 24px 70px rgba(0, 82, 255, 0.15);
+  --shadow-card: 0 18px 48px rgba(15, 23, 42, 0.06);
+  --shadow-deep: 0 30px 90px rgba(10, 25, 47, 0.25);
+  --shadow-insetLine: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  /* background images (utility: bg-<name>) */
+  --background-image-circuit-hero: linear-gradient(135deg, #0a192f 0%, #0f172a 100%);
+}
+

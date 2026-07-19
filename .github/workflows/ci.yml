@@ -1,0 +1,51 @@
+name: Quality gates
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: fekitech_builder_test
+          POSTGRES_USER: fekitech
+          POSTGRES_PASSWORD: ci_database_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U fekitech -d fekitech_builder_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql://fekitech:ci_database_password@localhost:5432/fekitech_builder_test?schema=public
+      BETTER_AUTH_SECRET: ci-only-auth-secret-at-least-thirty-two-characters
+      BETTER_AUTH_URL: http://localhost:3000
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      APP_ENV: test
+      AUTH_TRUSTED_ORIGINS: http://localhost:3000
+      AUTH_REQUIRE_EMAIL_VERIFICATION: "false"
+      RATE_LIMIT_KEY_SECRET: ci-only-rate-limit-key-at-least-thirty-two-characters
+      DOMAIN_VERIFICATION_SECRET: ci-only-domain-key-at-least-thirty-two-characters
+      ROOT_DOMAIN: localhost:3000
+      NEXT_PUBLIC_ROOT_DOMAIN: localhost:3000
+      UPLOAD_STORAGE_DRIVER: local
+      UPLOAD_LOCAL_DIRECTORY: .data/uploads
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run prisma:generate
+      - run: npm run db:deploy
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build

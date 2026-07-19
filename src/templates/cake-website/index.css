@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+
+@import "tailwindcss";
+
+:root {
+  color: #231715;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.template-wrapper::before {
+  content: "";
+  display: none;
+}
+
+.template-wrapper button,
+.template-wrapper a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+.template-wrapper p {
+  overflow-wrap: break-word;
+}
+
+section[id] {
+  scroll-margin-top: 92px;
+}
+
+::selection {
+  background: rgba(201, 111, 121, 0.24);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(7px);
+  transition:
+    opacity 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 760ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-cream: #FFF3E3;
+  --color-chantilly: #fffaf4;
+  --color-blush: #f3c8c6;
+  --color-rose: #c96f79;
+  --color-petal: #f8e5df;
+  --color-cocoa: #6f4a36;
+  --color-chocolate: #3a241c;
+  --color-ganache: #231715;
+  --color-champagne: #c89f5d;
+  --color-pistachio: #9ea88a;
+  --color-almond: #ead8c6;
+  /* fonts */
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Avenir Next', 'Segoe UI', sans-serif;
+  /* shadows */
+  --shadow-soft: 0 24px 70px rgba(70, 39, 28, 0.13);
+  --shadow-card: 0 18px 44px rgba(68, 39, 30, 0.11);
+  --shadow-glow: 0 20px 90px rgba(201, 111, 121, 0.18);
+  --shadow-insetLine: inset 0 1px 0 rgba(255, 255, 255, 0.68);
+  /* background images (utility: bg-<name>) */
+  --background-image-bakery-radial: radial-gradient(circle at 20% 10%, rgba(243, 200, 198, 0.34), transparent 32%), radial-gradient(circle at 80% 0%, rgba(200, 159, 93, 0.18), transparent 30%), linear-gradient(135deg, #fffaf4 0%, #fff7ed 54%, #f8e5df 100%);
+  --background-image-ganache-depth: linear-gradient(135deg, #231715 0%, #3a241c 58%, #6f4a36 100%);
+  /* animations */
+  --animate-rise: riseIn 700ms ease both;
+  --animate-floatSoft: floatSoft 6s ease-in-out infinite;
+}
+
+@keyframes riseIn {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

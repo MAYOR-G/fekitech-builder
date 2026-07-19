@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap');
+
+
+
+@import "tailwindcss";
+
+@layer base {
+  .template-wrapper {
+    @apply font-body bg-brand-black text-brand-cream antialiased overflow-x-hidden;
+  }
+  .template-wrapper h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase tracking-wide;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #f4f1eb;
+  color: transparent;
+}
+.text-stroke-hover:hover {
+  color: #f4f1eb;
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-brand-black: #0a0a0a;
+  --color-brand-charcoal: #1a1a1a;
+  --color-brand-cream: #f4f1eb;
+  --color-brand-accent: #e63946;
+  --color-brand-beige: #d5c7b3;
+  /* fonts */
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+}
+

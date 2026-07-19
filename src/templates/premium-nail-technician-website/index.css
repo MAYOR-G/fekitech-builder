@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap");
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-berry: #9b4b6b;
+  --color-blush: #f4e7ec;
+  --color-charcoal: #2c2c2c;
+  --color-ivory: #faf8f6;
+  --color-rose-gold: #c9a19c;
+  --color-muted: #7a7a7a;
+  --font-serif: "Cormorant Garamond";
+  --font-sans: "Inter";
+}
+
+:root {
+  --berry: #9b4b6b;
+  --blush: #f4e7ec;
+  --charcoal: #2c2c2c;
+  --ivory: #faf8f6;
+  --rose-gold: #c9a19c;
+  --muted: #7a7a7a;
+  --white: #ffffff;
+  --font-cormorant: "Cormorant Garamond";
+  --font-inter: "Inter";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis .template-wrapper {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.template-wrapper {
+  margin: 0;
+  background: #ffffff;
+  color: var(--charcoal);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: clip;
+}
+
+.template-wrapper button,
+.template-wrapper a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--rose-gold);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--berry);
+  color: white;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), serif;
+  letter-spacing: 0;
+}
+
+.section-shell {
+  margin: 0 auto;
+  width: min(1160px, calc(100% - 40px));
+}
+
+.label {
+  color: var(--berry);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.headline {
+  color: var(--charcoal);
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(42px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.body-copy {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 55ch;
+}
+
+.pill {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 8px;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  min-height: 46px;
+  padding: 0 22px;
+  text-transform: uppercase;
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+.pill:hover {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.image-cover {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

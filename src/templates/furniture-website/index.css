@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  color: #1A1A1A;
+  background: #FFFFFF;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: 'Geist Sans', 'Inter', sans-serif;
+}
+
+.template-wrapper button,
+.template-wrapper a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+section[id] {
+  scroll-margin-top: 92px;
+}
+
+::selection {
+  background: rgba(166, 111, 63, 0.25);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(7px);
+  transition:
+    opacity 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 760ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 760ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes heroDrift {
+  0% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.11) translate3d(-1.4%, -1%, 0);
+  }
+}
+
+@keyframes scrollCue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(220%);
+  }
+}
+
+.animate-heroDrift {
+  animation: heroDrift 7s ease-out both;
+}
+
+.animate-scrollCue {
+  animation: scrollCue 1.45s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .marquee-track,
+  .animate-heroDrift,
+  .animate-scrollCue {
+    animation: none !important;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-ivory: #f7f0e6;
+  --color-bone: #efe2d0;
+  --color-linen: #fbf7ef;
+  --color-charcoal: #1A1A1A;
+  --color-slate: #57534E;
+  --color-amber: #B45309;
+  --color-walnut: #6f503b;
+  --color-bronze: #a66f3f;
+  --color-wood: #4A3018;
+  /* fonts */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans: 'Geist Sans', 'Inter', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  /* shadows */
+  --shadow-soft: 0 22px 70px rgba(64, 42, 27, 0.12);
+  --shadow-card: 0 18px 48px rgba(55, 39, 28, 0.10);
+  --shadow-insetGlow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  /* background images (utility: bg-<name>) */
+  --background-image-linen-radial: radial-gradient(circle at top left, rgba(166, 111, 63, 0.12), transparent 36%), linear-gradient(135deg, #fbf7ef 0%, #efe2d0 100%);
+  --background-image-charcoal-depth: linear-gradient(135deg, #1A1A1A 0%, #2D2A26 55%, #3D3D3D 100%);
+  /* animations */
+  --animate-rise: riseIn 680ms ease both;
+}
+
+@keyframes riseIn {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

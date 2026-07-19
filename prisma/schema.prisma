@@ -1,0 +1,219 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library"
+  output     = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id
+  name          String
+  email         String   @unique
+  emailVerified Boolean  @default(false)
+  image         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  role          String   @default("user")
+
+  sessions      Session[]
+  accounts      Account[]
+  projects      Project[]
+  subscriptions Subscription[]
+  payments      Payment[]
+  activityLogs  ActivityLog[]
+  assets        Asset[]
+
+  @@index([role])
+  @@map("user")
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@unique([providerId, accountId])
+  @@index([userId])
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+  @@index([expiresAt])
+  @@map("verification")
+}
+
+model RateLimit {
+  id          String @id @default(cuid())
+  key         String @unique
+  count       Int
+  lastRequest BigInt
+
+  @@index([lastRequest])
+  @@map("rate_limit")
+}
+
+model Project {
+  id                                String    @id @default(cuid())
+  name                              String
+  userId                            String
+  user                              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  templateId                        String
+  subdomain                         String?   @unique
+  customDomain                      String?   @unique
+  customDomainVerifiedAt            DateTime?
+  customDomainVerificationTokenHash String?
+  isPublished                       Boolean   @default(false)
+  publishedAt                       DateTime?
+  editableData                      Json
+  dataVersion                       Int       @default(1)
+  createdAt                         DateTime  @default(now())
+  updatedAt                         DateTime  @updatedAt
+
+  publishedVersionId String?           @unique
+  publishedVersion   TemplateVersion?  @relation("PublishedProjectVersion", fields: [publishedVersionId], references: [id], onDelete: SetNull)
+  versions           TemplateVersion[] @relation("ProjectVersions")
+  assets             Asset[]
+
+  @@index([userId, updatedAt])
+  @@index([isPublished, subdomain])
+  @@index([isPublished, customDomain])
+  @@map("project")
+}
+
+model TemplateVersion {
+  id                String    @id @default(cuid())
+  projectId         String
+  project           Project   @relation("ProjectVersions", fields: [projectId], references: [id], onDelete: Cascade)
+  versionName       String
+  editableData      Json
+  dataVersion       Int       @default(1)
+  isPublishSnapshot Boolean   @default(false)
+  createdAt         DateTime  @default(now())
+  publishedAt       DateTime?
+  publishedProject  Project?  @relation("PublishedProjectVersion")
+
+  @@index([projectId, createdAt])
+  @@index([projectId, isPublishSnapshot, createdAt])
+  @@map("template_version")
+}
+
+model Subscription {
+  id                     String    @id @default(cuid())
+  userId                 String
+  user                   User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  planId                 String
+  status                 String
+  source                 String    @default("payment")
+  provider               String?
+  providerCustomerId     String?
+  providerSubscriptionId String?   @unique
+  currentPeriodEnd       DateTime?
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+
+  @@unique([userId, source])
+  @@index([userId, status, currentPeriodEnd])
+  @@map("subscription")
+}
+
+model Payment {
+  id                String   @id @default(cuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  amountMinor       Int
+  currency          String
+  status            String
+  provider          String
+  providerPaymentId String?  @unique
+  idempotencyKey    String?  @unique
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([userId, createdAt])
+  @@index([status, createdAt])
+  @@map("payment")
+}
+
+model Asset {
+  id           String    @id @default(cuid())
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  projectId    String
+  project      Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  storageKey   String    @unique
+  originalName String
+  mimeType     String
+  byteSize     Int
+  width        Int?
+  height       Int?
+  createdAt    DateTime  @default(now())
+  deletedAt    DateTime?
+
+  @@index([userId, createdAt])
+  @@index([projectId, createdAt])
+  @@map("asset")
+}
+
+model SubdomainReservation {
+  subdomain  String    @id
+  userId     String?
+  projectId  String?
+  reservedAt DateTime  @default(now())
+  releasedAt DateTime?
+
+  @@index([projectId])
+  @@index([releasedAt])
+  @@map("subdomain_reservation")
+}
+
+model ActivityLog {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  action    String
+  details   String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([action, createdAt])
+  @@map("activity_log")
+}

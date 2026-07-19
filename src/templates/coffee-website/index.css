@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .template-wrapper {
+    @apply bg-coffee-light text-coffee-dark font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-coffee-light/80 backdrop-blur-md border border-coffee-cream shadow-sm;
+  }
+  
+  .dark-glass-panel {
+    @apply bg-coffee-dark/80 backdrop-blur-md border border-coffee-brown shadow-sm;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-coffee-light: #fdfbf7;
+  --color-coffee-cream: #f2ece4;
+  --color-coffee-accent: #c0a080;
+  --color-coffee-terracotta: #c97a5e;
+  --color-coffee-green: #7b8c7c;
+  --color-coffee-brown: #4a3b32;
+  --color-coffee-dark: #2c2420;
+  /* fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+

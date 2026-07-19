@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Jost:wght@400;500;600;700;800&display=swap");
+
+
+
+@import "tailwindcss";
+
+:root {
+  color: #13272b;
+  background: #f8fbfa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template-wrapper {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(29, 118, 136, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(29, 118, 136, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 12% 4%, rgba(79, 183, 174, 0.16), transparent 34%),
+    linear-gradient(135deg, #f8fbfa 0%, #eef8f5 56%, #f1e5d2 100%);
+  background-size: 76px 76px, 76px 76px, auto, auto;
+  font-family: "Jost", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.template-wrapper::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.64), transparent 48%),
+    linear-gradient(300deg, rgba(183, 138, 77, 0.13), transparent 62%);
+}
+
+.template-wrapper a,
+.template-wrapper button,
+.template-wrapper select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.template-wrapper button,
+.template-wrapper select {
+  cursor: pointer;
+}
+
+.template-wrapper img {
+  max-width: 100%;
+}
+
+section[id] {
+  scroll-margin-top: 92px;
+}
+
+::selection {
+  background: rgba(79, 183, 174, 0.25);
+}
+
+.magnetic-link {
+  --magnet-x: 0px;
+  --magnet-y: 0px;
+  transform: translate3d(var(--magnet-x), var(--magnet-y), 0);
+}
+
+.hero-panel {
+  isolation: isolate;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(6px);
+  transition:
+    opacity 720ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 720ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.image-reveal {
+  clip-path: inset(0 0 0 0 round 1.5rem);
+}
+
+.service-card::after {
+  position: absolute;
+  inset: auto 20px 20px auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 9999px;
+  pointer-events: none;
+  content: "";
+  background: radial-gradient(circle, rgba(79, 183, 174, 0.18), transparent 68%);
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    opacity 300ms ease,
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.journey-card img,
+.image-reveal img {
+  transform-origin: center;
+}
+
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+@media (min-width: 1024px) {
+  .journey-rail {
+    will-change: transform;
+  }
+}
+
+@media (max-width: 1023px) {
+  .journey-section {
+    height: auto;
+  }
+
+  .journey-rail {
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .magnetic-link {
+    transform: none !important;
+  }
+
+  .journey-rail {
+    transform: none !important;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-porcelain: #f8fbfa;
+  --color-pearl: #eef8f5;
+  --color-cloud: #e7f3f5;
+  --color-mint: #c8efe4;
+  --color-lagoon: #4fb7ae;
+  --color-ocean: #1d7688;
+  --color-ink: #13272b;
+  --color-graphite: #314246;
+  --color-mist: #6f8588;
+  --color-sand: #f1e5d2;
+  --color-champagne: #b78a4d;
+  --color-coral: #d97964;
+  /* fonts */
+  --font-display: 'Bodoni Moda', 'Georgia', serif;
+  --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
+  /* shadows */
+  --shadow-soft: 0 24px 70px rgba(31, 88, 96, 0.13);
+  --shadow-card: 0 18px 48px rgba(19, 39, 43, 0.09);
+  --shadow-glow: 0 20px 80px rgba(79, 183, 174, 0.22);
+  --shadow-insetGlow: inset 0 1px 0 rgba(255, 255, 255, 0.74);
+  /* background images (utility: bg-<name>) */
+  --background-image-clinic-wash: radial-gradient(circle at 12% 4%, rgba(79, 183, 174, 0.15), transparent 34%), radial-gradient(circle at 86% 12%, rgba(183, 138, 77, 0.12), transparent 28%), linear-gradient(135deg, #f8fbfa 0%, #eef8f5 54%, #f1e5d2 100%);
+  --background-image-ocean-depth: linear-gradient(135deg, #13272b 0%, #1d7688 62%, #4fb7ae 100%);
+  /* animations */
+  --animate-marquee: marquee 34s linear infinite;
+  --animate-softPulse: softPulse 4.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.86;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+

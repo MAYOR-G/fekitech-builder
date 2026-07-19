@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  .template-wrapper {
+    @apply antialiased font-sans;
+  color: #3D2B1F;
+  background-color: #F5F0E8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* INJECTED FROM tailwind.config.js (v3->v4 port).
+   Without these `@theme` tokens, the v4 build cannot recognize
+   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+@theme {
+  /* colors */
+  --color-furniture-bg: #F5F0E8;
+  --color-furniture-text: #3D2B1F;
+  --color-furniture-ochre: #D4A017;
+  --color-furniture-walnut: #2C1810;
+  /* fonts */
+  --font-sans: "Geist Sans", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+  --font-mono: "Geist Mono", monospace;
+}
+

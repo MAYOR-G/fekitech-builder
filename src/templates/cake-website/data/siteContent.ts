@@ -1,0 +1,292 @@
+import {
+  Award,
+  CalendarCheck,
+  ClipboardList,
+  Gift,
+  Heart,
+  Mail,
+  MapPin,
+  PackageCheck,
+  Phone,
+  Sparkles,
+  Star,
+  Truck,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+export type NavLink = {
+  label: string;
+  href: string;
+};
+
+export type Category = {
+  title: string;
+  description: string;
+  image: string;
+  icon: LucideIcon;
+};
+
+export type Product = {
+  name: string;
+  category: string;
+  price: string;
+  badge: string;
+  image: string;
+  description: string;
+};
+
+export type ProcessStep = {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+};
+
+export type Feature = {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+};
+
+export type GalleryItem = {
+  title: string;
+  occasion: string;
+  image: string;
+};
+
+export type Testimonial = {
+  quote: string;
+  name: string;
+  title: string;
+  initials: string;
+};
+
+export const brand = {
+  name: "Velvet Crumb Cakes",
+  tagline: "Elegant cakes, dessert tables, and celebration sweets made to order.",
+  phone: "+1 212 555 0184",
+  email: "hello@velvetcrumbcakes.com",
+  address: "118 Mercer Street, New York, NY 10012",
+  studioNote: "Consultation studio serving New York, Brooklyn, Chicago, London, and Manchester.",
+  instagram: "@velvetcrumbcakes",
+};
+
+export const navLinks: NavLink[] = [
+  { label: "Cakes", href: "#categories" },
+  { label: "Menu", href: "#menu" },
+  { label: "Process", href: "#process" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const heroStats = [
+  { value: "300+", label: "celebrations styled" },
+  { value: "4 wk", label: "ideal booking window" },
+  { value: "4.9/5", label: "client rating" },
+];
+
+export const categories: Category[] = [
+  {
+    title: "Wedding Cakes",
+    description: "Tiered cakes with refined florals, delicate piping, and polished delivery planning.",
+    image:
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=85",
+    icon: Heart,
+  },
+  {
+    title: "Birthday Cakes",
+    description: "Elegant celebration cakes for milestone birthdays, family dinners, and private parties.",
+    image:
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85",
+    icon: Gift,
+  },
+  {
+    title: "Cupcakes",
+    description: "Soft sponge, silky buttercream, and boxed presentation for gifting or dessert tables.",
+    image:
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=85",
+    icon: Sparkles,
+  },
+  {
+    title: "Dessert Boxes",
+    description: "Curated selections of mini cakes, cookies, macarons, brownies, and seasonal sweets.",
+    image:
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85",
+    icon: PackageCheck,
+  },
+  {
+    title: "Custom Cakes",
+    description: "Bespoke flavours, palettes, monograms, florals, and finishes for meaningful occasions.",
+    image:
+      "https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=900&q=85",
+    icon: Star,
+  },
+];
+
+export const products: Product[] = [
+  {
+    name: "Blush Garden Bento",
+    category: "Mini Celebration Cake",
+    price: "$45",
+    badge: "Gift Ready",
+    image:
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=85",
+    description: "Four-inch vanilla bean cake with blush buttercream and hand-piped florals.",
+  },
+  {
+    name: "Chocolate Silk Layer",
+    category: "Birthday Cake",
+    price: "$120",
+    badge: "Best Seller",
+    image:
+      "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=85",
+    description: "Rich cocoa sponge, whipped ganache, and a glossy chocolate finish.",
+  },
+  {
+    name: "Champagne Berry Cake",
+    category: "Celebration Cake",
+    price: "$250",
+    badge: "Signature",
+    image:
+      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=85",
+    description: "Vanilla champagne sponge with berry compote and soft cream rosettes.",
+  },
+  {
+    name: "Pearl Wedding Tiers",
+    category: "Wedding Cake",
+    price: "$650",
+    badge: "Custom Order",
+    image:
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1100&q=90&v=visible-wedding-menu",
+    description: "Two-tier wedding cake with pearl detailing, satin buttercream, and floral styling.",
+  },
+  {
+    name: "Petite Dessert Box",
+    category: "Dessert Box",
+    price: "$85",
+    badge: "Party Edit",
+    image:
+      "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=900&q=85",
+    description: "Mini cupcakes, brownies, cookies, and seasonal patisserie packed for gifting.",
+  },
+  {
+    name: "Velvet Cupcake Dozen",
+    category: "Cupcakes",
+    price: "$58",
+    badge: "Ready to Share",
+    image:
+      "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=900&q=85",
+    description: "A dozen piped cupcakes with coordinated colours, sprinkles, and premium boxes.",
+  },
+];
+
+export const processSteps: ProcessStep[] = [
+  {
+    title: "Share the occasion",
+    description: "Tell us the date, guest count, flavour preferences, colour palette, and delivery city.",
+    icon: ClipboardList,
+  },
+  {
+    title: "Review the proposal",
+    description: "We prepare a clear quotation with size, flavour, design direction, and pickup or delivery details.",
+    icon: CalendarCheck,
+  },
+  {
+    title: "Approve the design",
+    description: "Confirm the finish, florals, message, dietary notes, and final presentation style.",
+    icon: Sparkles,
+  },
+  {
+    title: "Enjoy the celebration",
+    description: "Your order is finished, boxed, and coordinated for collection, courier, or venue delivery.",
+    icon: Truck,
+  },
+];
+
+export const features: Feature[] = [
+  {
+    title: "Premium ingredients",
+    description: "Real butter, Belgian chocolate, seasonal fruit, and balanced sweetness across every order.",
+    icon: Award,
+  },
+  {
+    title: "Design-led finishes",
+    description: "Colour palettes, piping, florals, and composition are treated with the care of an editorial set.",
+    icon: Sparkles,
+  },
+  {
+    title: "Clear ordering",
+    description: "Every custom cake starts with size, servings, timeline, delivery plan, and transparent pricing.",
+    icon: ClipboardList,
+  },
+  {
+    title: "Careful delivery",
+    description: "Cakes are packed for safe travel and delivered with handling notes for venues and hosts.",
+    icon: Truck,
+  },
+];
+
+export const galleryItems: GalleryItem[] = [
+  {
+    title: "Pressed floral tiers",
+    occasion: "Spring wedding",
+    image:
+      "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    title: "Chocolate ribbon cake",
+    occasion: "Dinner party",
+    image:
+      "https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    title: "Vanilla blush cupcakes",
+    occasion: "Bridal shower",
+    image:
+      "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    title: "Pearl buttercream stack",
+    occasion: "Milestone birthday",
+    image:
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=85",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "The wedding cake looked like it belonged in our floral mood board, and it tasted even better than the tasting box.",
+    name: "Isabelle M.",
+    title: "Bride, London",
+    initials: "IM",
+  },
+  {
+    quote:
+      "Our birthday dessert table felt polished, generous, and completely effortless. Guests kept asking who made the cupcakes.",
+    name: "Rachel K.",
+    title: "Private client, Brooklyn",
+    initials: "RK",
+  },
+  {
+    quote:
+      "They handled design, timing, packaging, and venue delivery beautifully. It made a corporate celebration feel personal.",
+    name: "Claire W.",
+    title: "Events manager, Chicago",
+    initials: "CW",
+  },
+];
+
+export const contactHighlights = [
+  { label: "Private tastings", icon: Star },
+  { label: "Custom colour palettes", icon: Sparkles },
+  { label: "Venue delivery", icon: Truck },
+  { label: "Studio consultation", icon: MapPin },
+  { label: "Order by phone", icon: Phone },
+  { label: "Email proposal", icon: Mail },
+];
+
+export const openingHours = [
+  "Tuesday - Friday: 9:00 AM - 6:00 PM",
+  "Saturday: 10:00 AM - 4:00 PM",
+  "Sunday - Monday: Custom orders by appointment",
+];

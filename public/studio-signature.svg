@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title">
+  <title id="title">Studio founder signature</title>
+  <path
+    d="M26 78c34-44 58-55 72-33 10 15-5 46-19 48-9 1-13-8-9-18 8-19 39-36 72-41 41-6 71 15 54 34-13 15-47 11-50-3-2-12 22-24 53-25 38-1 55 20 34 38-15 13-45 12-52-2-9-19 35-33 83-23 32 7 56 19 87-10m-224 51c43-3 92-1 146 7m-203 13c66-8 130-8 192 0"
+    fill="none"
+    stroke="#111111"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

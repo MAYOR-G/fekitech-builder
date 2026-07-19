@@ -1,0 +1,314 @@
+{
+  "brand": {
+    "name": "VoltEdge Electrical",
+    "tagline": "Precision electrical service, emergency response, and safety-led upgrades for homes and businesses.",
+    "phone": "+1 312 555 0167",
+    "emergencyPhone": "+1 312 555 0119",
+    "email": "service@voltedgeelectrical.com",
+    "address": "128 West Lake Street, Chicago, IL 60606",
+    "hours": "Mon-Sat 7:00 AM-7:00 PM, emergency support available 24/7",
+    "serviceAreas": "Chicago, Brooklyn, New York, Los Angeles, London, Manchester, and Birmingham."
+  },
+  "contactCards": [
+    {
+      "label": "+1 312 555 0119",
+      "title": "Emergency line",
+      "icon": "Siren"
+    },
+    {
+      "label": "+1 312 555 0167",
+      "title": "Main office",
+      "icon": "Phone"
+    },
+    {
+      "label": "service@voltedgeelectrical.com",
+      "title": "Email",
+      "icon": "Mail"
+    },
+    {
+      "label": "128 West Lake Street, Chicago, IL 60606",
+      "title": "Office",
+      "icon": "MapPin"
+    },
+    {
+      "label": "Mon-Sat 7:00 AM-7:00 PM, emergency support available 24/7",
+      "title": "Hours",
+      "icon": "Clock3"
+    }
+  ],
+  "credentialBadges": [
+    {
+      "label": "Licensed and insured",
+      "value": "Documented work",
+      "icon": "BadgeCheck"
+    },
+    {
+      "label": "24/7 support",
+      "value": "Emergency triage",
+      "icon": "Clock3"
+    },
+    {
+      "label": "Safety-first visits",
+      "value": "Tested before handoff",
+      "icon": "ShieldCheck"
+    },
+    {
+      "label": "Clear pricing",
+      "value": "Quote before repair",
+      "icon": "ClipboardCheck"
+    }
+  ],
+  "emergencyHighlights": [
+    "Fault finding and urgent repairs",
+    "Same-day inspection windows",
+    "Licensed, insured technicians",
+    "Clear estimates before work starts"
+  ],
+  "footerLinks": [
+    {
+      "label": "Residential electrical",
+      "href": "#services"
+    },
+    {
+      "label": "Emergency repairs",
+      "href": "#services"
+    },
+    {
+      "label": "Pricing estimates",
+      "href": "#pricing"
+    },
+    {
+      "label": "Book inspection",
+      "href": "#contact"
+    }
+  ],
+  "heroSlides": [
+    {
+      "title": "Panel Upgrade",
+      "image": "/images/electrician_hero_1_1781688414781.png",
+      "alt": "Professional electrician performing panel upgrades"
+    },
+    {
+      "title": "Circuit Testing",
+      "image": "/images/electrician_hero_2_1781688444639.png",
+      "alt": "Electrician testing circuits"
+    },
+    {
+      "title": "Commercial Wiring",
+      "image": "/images/electrician_hero_3_1781688552708.png",
+      "alt": "Commercial building wiring"
+    }
+  ],
+  "heroStats": [
+    {
+      "value": "24/7",
+      "label": "emergency support"
+    },
+    {
+      "value": "Licensed",
+      "label": "technicians"
+    },
+    {
+      "value": "60 min",
+      "label": "response windows"
+    },
+    {
+      "value": "10k+",
+      "label": "jobs completed"
+    }
+  ],
+  "navLinks": [
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Why us",
+      "href": "#why"
+    },
+    {
+      "label": "Process",
+      "href": "#process"
+    },
+    {
+      "label": "Pricing",
+      "href": "#pricing"
+    },
+    {
+      "label": "Reviews",
+      "href": "#reviews"
+    }
+  ],
+  "pricingPlans": [
+    {
+      "name": "Emergency Callout",
+      "price": "$95 callout",
+      "description": "For urgent electrical faults, unsafe wiring concerns, tripped breakers, and outage troubleshooting.",
+      "features": [
+        "Priority dispatch",
+        "Fault diagnosis",
+        "Safety recommendations",
+        "Repair estimate before work"
+      ]
+    },
+    {
+      "name": "Safety Inspection",
+      "price": "$180 inspection",
+      "description": "A practical electrical health check for homes, apartments, rentals, and small business spaces.",
+      "features": [
+        "Panel and circuit review",
+        "Outlet and fixture checks",
+        "Written findings summary",
+        "Upgrade recommendations"
+      ],
+      "highlighted": true
+    },
+    {
+      "name": "Panel Upgrade Estimate",
+      "price": "$450 estimate",
+      "description": "Planning support for panel replacements, increased capacity, EV circuits, or major rewiring.",
+      "features": [
+        "Load assessment",
+        "Upgrade pathway",
+        "Permit guidance notes",
+        "Project estimate range"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "title": "Request a visit",
+      "description": "Call, email, or request an appointment with the issue, preferred time, and property type.",
+      "icon": "CalendarCheck"
+    },
+    {
+      "title": "On-site inspection",
+      "description": "A technician checks the circuit, panel, fixture, or wiring and explains the likely cause.",
+      "icon": "ClipboardCheck"
+    },
+    {
+      "title": "Clear quote",
+      "description": "The customer receives a practical repair or installation estimate before approving the work.",
+      "icon": "Sparkles"
+    },
+    {
+      "title": "Repair or install",
+      "description": "The approved electrical work is completed with tidy workmanship and minimal disruption.",
+      "icon": "Wrench"
+    },
+    {
+      "title": "Final safety check",
+      "description": "We test the work, clean the area, and confirm everything is operating safely.",
+      "icon": "ShieldCheck"
+    }
+  ],
+  "projectSignals": [
+    {
+      "title": "Residential callouts",
+      "description": "A clear route for homeowners who need fast help with outlets, panels, breakers, fixtures, or unsafe faults.",
+      "icon": "Home"
+    },
+    {
+      "title": "Commercial maintenance",
+      "description": "Confident service framing for offices, restaurants, retail units, property managers, and light commercial spaces.",
+      "icon": "Building2"
+    },
+    {
+      "title": "Upgrade planning",
+      "description": "Room for EV circuits, smart-home wiring, lighting redesigns, panel upgrades, and future-ready load checks.",
+      "icon": "BatteryCharging"
+    }
+  ],
+  "serviceAreas": [
+    "Chicago",
+    "Brooklyn",
+    "New York",
+    "Los Angeles",
+    "London",
+    "Manchester",
+    "Birmingham"
+  ],
+  "services": [
+    {
+      "title": "Residential Electrical",
+      "description": "Fault finding, outlet upgrades, breaker troubleshooting, appliance circuits, and tidy home improvements.",
+      "icon": "Home",
+      "tag": "Homes"
+    },
+    {
+      "title": "Commercial Electrical",
+      "description": "Planned and reactive electrical support for offices, retail spaces, hospitality venues, and managed units.",
+      "icon": "Building2",
+      "tag": "Business"
+    },
+    {
+      "title": "Emergency Repairs",
+      "description": "Urgent support for outages, tripped breakers, burning smells, faulty panels, and unsafe wiring concerns.",
+      "icon": "Siren",
+      "tag": "24/7"
+    },
+    {
+      "title": "Lighting Installation",
+      "description": "Interior lighting, exterior security lighting, recessed fixtures, dimmers, and energy-efficient upgrades.",
+      "icon": "Lightbulb",
+      "tag": "Lighting"
+    },
+    {
+      "title": "Electrical Inspections",
+      "description": "Safety checks, buyer inspections, landlord-ready reports, panel reviews, and repair recommendations.",
+      "icon": "ClipboardCheck",
+      "tag": "Safety"
+    },
+    {
+      "title": "Smart Home Wiring",
+      "description": "Smart switches, EV-ready circuits, low-voltage planning, network points, and connected-home upgrades.",
+      "icon": "Smartphone",
+      "tag": "Smart"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "VoltEdge explained the problem clearly, fixed the breaker issue the same day, and left everything tidy.",
+      "name": "Rachel Adams",
+      "title": "Homeowner",
+      "initials": "RA",
+      "location": "Chicago, IL"
+    },
+    {
+      "quote": "We use them for our retail locations because they communicate well and keep safety documentation organized.",
+      "name": "Marcus Reed",
+      "title": "Operations Manager",
+      "initials": "MR",
+      "location": "Brooklyn, NY"
+    },
+    {
+      "quote": "The inspection was thorough without being confusing. We knew exactly what needed attention before buying.",
+      "name": "Eleanor Walsh",
+      "title": "Property buyer",
+      "initials": "EW",
+      "location": "London, UK"
+    }
+  ],
+  "trustPoints": [
+    {
+      "title": "Licensed technicians",
+      "description": "Every visit is handled by qualified electrical professionals working to modern safety standards.",
+      "icon": "BadgeCheck"
+    },
+    {
+      "title": "Fast response windows",
+      "description": "Emergency jobs are triaged quickly with clear arrival windows and practical dispatch updates.",
+      "icon": "TimerReset"
+    },
+    {
+      "title": "Transparent pricing",
+      "description": "Customers get a clear estimate before work begins, with options explained in plain language.",
+      "icon": "CheckCircle2"
+    },
+    {
+      "title": "Warranty-backed work",
+      "description": "Repairs and installations are documented, tested, and backed by service warranty options.",
+      "icon": "ShieldCheck"
+    }
+  ]
+}
