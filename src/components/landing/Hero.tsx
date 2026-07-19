@@ -2,9 +2,8 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { Pill } from "@/components/ui/Pill";
 import { GradientButton } from "@/components/ui/GradientButton";
-import { Sparkles, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
