@@ -60,7 +60,7 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const isRoot = hostname === root || hostname === `www.${root}` || hostname === `app.${root}`;
+  const isRoot = hostname === root || hostname === `www.${root}` || hostname === `app.${root}` || hostname.endsWith(".vercel.app");
   const isTenant = !isRoot && hostname.endsWith(`.${root}`);
 
   if (isTenant) {
