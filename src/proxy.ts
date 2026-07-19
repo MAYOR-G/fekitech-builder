@@ -43,7 +43,12 @@ function hostnameWithoutPort(request: NextRequest): string {
 }
 
 function rootHostname(): string {
-  return (process.env.ROOT_DOMAIN ?? "localhost:3000").split(":", 1)[0].toLowerCase();
+  const domain =
+    process.env.ROOT_DOMAIN ??
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ??
+    process.env.VERCEL_URL ??
+    "localhost:3000";
+  return domain.split(":", 1)[0].toLowerCase();
 }
 
 export function proxy(request: NextRequest) {
