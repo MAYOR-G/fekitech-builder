@@ -19,7 +19,7 @@ const pills = [
 export default function Hero() {
   return (
     <section
-      className="texture-wash relative flex flex-col items-center justify-center overflow-hidden px-5 min-h-[100dvh]"
+      className="texture-wash relative flex flex-col items-center justify-center overflow-hidden px-5 pt-[140px] pb-12"
       style={{
         background:
           "radial-gradient(120% 100% at 50% 0%, rgba(250, 250, 255, 1) 0%, rgba(246, 248, 255, 0.8) 50%, rgba(255, 255, 255, 1) 100%)",

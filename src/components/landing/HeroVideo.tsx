@@ -11,7 +11,7 @@ export default function HeroVideo() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease }}
-        className="relative w-full overflow-hidden"
+        className="relative w-full overflow-hidden flex justify-center items-center h-[30vh] md:h-[40vh]"
       >
         <video
           src="/animo-ticker-loop-720p.webm"
@@ -19,7 +19,7 @@ export default function HeroVideo() {
           loop
           muted
           playsInline
-          className="w-full h-[70vh] object-cover pointer-events-none block"
+          className="w-full h-full object-cover object-center pointer-events-none block"
         />
       </motion.div>
     </section>

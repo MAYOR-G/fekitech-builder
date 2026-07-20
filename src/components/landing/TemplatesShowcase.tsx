@@ -22,12 +22,12 @@ export default function TemplatesShowcase() {
 
       return template
         ? [
-            {
-              id: template.id,
-              name: template.name,
-              image: template.image,
-            },
-          ]
+          {
+            id: template.id,
+            name: template.name,
+            image: template.image,
+          },
+        ]
         : [];
     });
   }, []);
@@ -82,8 +82,8 @@ export default function TemplatesShowcase() {
                 transition={{ duration: 0.5, delay: i * 0.1, ease }}
                 className="w-full h-full"
               >
-                <div className="relative aspect-[3/4] w-full overflow-hidden bg-ft-surface-cool">
-                  <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1200} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
+                <div className="relative aspect-[9/16] w-full overflow-hidden bg-ft-surface-cool rounded-xl">
+                  <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1500} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
                   <div className="absolute inset-0 bg-ft-ink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-ft-ink shadow-[0_14px_34px_rgba(17,24,39,0.18)] hover:scale-105 transition-transform duration-300">
                       Preview

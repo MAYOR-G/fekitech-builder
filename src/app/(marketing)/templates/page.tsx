@@ -12,14 +12,14 @@ const templates = getAllTemplates();
 
 function TemplateThumbnail({ name, src }: { name: string; src: string }) {
   return (
-    <div className="relative aspect-[4/3] overflow-hidden bg-ft-surface-cool">
+    <div className="relative aspect-[3/4] overflow-hidden bg-ft-surface-cool">
       <div className="absolute inset-0 animate-pulse bg-[linear-gradient(110deg,#f1f6ff_8%,#ffffff_18%,#f1f6ff_33%)] bg-[length:200%_100%]" />
       <div className="absolute inset-x-4 bottom-0 top-4 overflow-hidden rounded-t-xl border border-ft-border/70 bg-white shadow-[0_18px_40px_rgba(22,31,72,0.13)] transition-transform duration-500 group-hover:-translate-y-1">
         <div className="browser-bar">
           <span className="browser-dot" /><span className="browser-dot" /><span className="browser-dot" />
           <span className="ml-2 h-2.5 flex-1 rounded-full bg-ft-border-light" />
         </div>
-        <TemplateImage src={src} alt={`${name} template preview`} width={1200} height={900} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="h-[calc(100%-2rem)] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
+        <TemplateImage src={src} alt={`${name} template preview`} width={1200} height={1600} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="h-[calc(100%-2rem)] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
       </div>
     </div>
   );
