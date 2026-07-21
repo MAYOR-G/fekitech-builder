@@ -14,7 +14,7 @@ export default function PricingPage() {
           The perfect plan for your business
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-ft-body sm:text-lg">
-          Start building for free. Upgrade when you're ready to publish, remove our branding, or connect a custom domain.
+          Start building for free. Upgrade when you&apos;re ready to publish, remove our branding, or connect a custom domain.
         </p>
       </section>
 

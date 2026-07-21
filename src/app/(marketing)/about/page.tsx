@@ -1,6 +1,6 @@
 import { TemplateImage } from "@/components/templates/TemplateImage";
 import Link from "next/link";
-import { getAllTemplates } from "@/registry";
+
 
 const stats = [
   {

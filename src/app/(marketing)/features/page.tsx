@@ -111,12 +111,7 @@ const platformCards = [
   { icon: LockKeyhole, title: "Tenant isolation", body: "Owner-scoped projects and assets stay separate from other accounts." },
 ];
 
-const templateStrip = [
-  "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=600&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop",
-];
+
 
 function BrowserPreview({
   image,
