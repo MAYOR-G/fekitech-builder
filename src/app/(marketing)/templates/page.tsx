@@ -10,20 +10,7 @@ import { getAllTemplates } from "@/registry";
 
 const templates = getAllTemplates();
 
-function TemplateThumbnail({ name, src }: { name: string; src: string }) {
-  return (
-    <div className="relative aspect-[3/4] overflow-hidden bg-ft-surface-cool">
-      <div className="absolute inset-0 animate-pulse bg-[linear-gradient(110deg,#f1f6ff_8%,#ffffff_18%,#f1f6ff_33%)] bg-[length:200%_100%]" />
-      <div className="absolute inset-x-4 bottom-0 top-4 overflow-hidden rounded-t-xl border border-ft-border/70 bg-white shadow-[0_18px_40px_rgba(22,31,72,0.13)] transition-transform duration-500 group-hover:-translate-y-1">
-        <div className="browser-bar">
-          <span className="browser-dot" /><span className="browser-dot" /><span className="browser-dot" />
-          <span className="ml-2 h-2.5 flex-1 rounded-full bg-ft-border-light" />
-        </div>
-        <TemplateImage src={src} alt={`${name} template preview`} width={1200} height={1600} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="h-[calc(100%-2rem)] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
-      </div>
-    </div>
-  );
-}
+
 
 export default function TemplatesPage() {
   const [search, setSearch] = useState("");
@@ -37,7 +24,7 @@ export default function TemplatesPage() {
   return (
     <div className="min-h-screen bg-white text-ft-ink">
       <header className="border-b border-ft-border bg-white/90 px-5 py-3 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between text-sm">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-between text-sm">
           <Link href="/" className="inline-flex min-h-11 items-center gap-2 font-semibold text-ft-body hover:text-ft-primary">
             <ArrowLeft aria-hidden="true" size={16} /> Back
           </Link>
@@ -46,7 +33,7 @@ export default function TemplatesPage() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-5 pb-24 pt-12 sm:pt-16">
+      <main className="mx-auto max-w-[1400px] px-5 pb-24 pt-12 sm:pt-16">
         <div className="mb-8">
           <h1 className="text-balance text-4xl font-[720] leading-[1.02] tracking-[-0.04em] sm:text-5xl">Choose a starting point for your website</h1>
           <p className="mt-4 max-w-2xl text-base leading-7 text-ft-body">Browse complete designs, open a full preview, and customize any template included with your plan.</p>
@@ -69,17 +56,17 @@ export default function TemplatesPage() {
             {filtered.map((template) => {
               const minimumPlan = getTemplateMinimumPlan(template.id);
               return (
-                <article key={template.id} className="group overflow-hidden rounded-2xl border border-ft-border bg-white shadow-[0_12px_34px_rgba(22,31,72,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-ft-primary/25 hover:shadow-[0_20px_46px_rgba(22,31,72,0.12)]">
-                  <TemplateThumbnail name={template.name} src={template.image} />
-                  <div className="p-5">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h2 className="text-base font-semibold">{template.name}</h2>
-                        <p className="mt-1 text-xs text-ft-body">{minimumPlan === "free" ? "Free to customize" : `${PLANS[minimumPlan].name} plan`}</p>
-                      </div>
-                    </div>
-                    <div className="mt-4 grid grid-cols-2 gap-3">
-                      <Link href={`/preview/${template.id}`} className="min-h-11 rounded-lg border border-ft-border px-3 py-2.5 text-center text-sm font-semibold transition-colors hover:border-ft-primary hover:text-ft-primary">Preview</Link>
+                <article key={template.id} className="group relative flex flex-col gap-4">
+                  {/* Image Card */}
+                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-ft-border/50 bg-ft-surface-cool shadow-[0_12px_34px_rgba(22,31,72,0.04)] transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_20px_46px_rgba(22,31,72,0.12)]">
+                    <div className="absolute inset-0 animate-pulse bg-[linear-gradient(110deg,#f1f6ff_8%,#ffffff_18%,#f1f6ff_33%)] bg-[length:200%_100%]" />
+                    <TemplateImage src={template.image} alt={`${template.name} template preview`} width={1200} height={1600} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="relative z-10 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                    
+                    {/* Hover Action Bar */}
+                    <div className="absolute inset-0 z-20 bg-ft-ink/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+                    
+                    <div className="absolute bottom-4 left-4 right-4 z-30 flex translate-y-[150%] flex-col sm:flex-row gap-3 rounded-xl bg-white/95 p-3 shadow-xl backdrop-blur-md transition-transform duration-300 ease-out group-hover:translate-y-0">
+                      <Link href={`/preview/${template.id}`} className="flex-1 flex justify-center items-center rounded-lg border border-ft-border/70 bg-white px-3 py-2.5 text-center text-sm font-semibold text-ft-ink transition-colors hover:border-ft-primary hover:text-ft-primary">Preview</Link>
                       <button
                         type="button"
                         disabled={creatingId === template.id}
@@ -105,10 +92,18 @@ export default function TemplatesPage() {
                             setCreatingId(null);
                           }
                         }}
-                        className="min-h-11 rounded-lg bg-ft-primary px-3 py-2.5 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(24,59,211,0.16)] transition-all hover:-translate-y-0.5 hover:bg-ft-primary-deep disabled:translate-y-0 disabled:cursor-wait disabled:opacity-50"
+                        className="flex-1 rounded-lg bg-ft-primary px-3 py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-ft-primary-deep disabled:cursor-wait disabled:opacity-50"
                       >
-                        {creatingId === template.id ? "Creating…" : "Use template"}
+                        {creatingId === template.id ? "Creating…" : "Start editing"}
                       </button>
+                    </div>
+                  </div>
+
+                  {/* Template Info (Below the card) */}
+                  <div className="flex items-start justify-between gap-3 px-1">
+                    <div>
+                      <h2 className="text-base font-semibold text-ft-ink">{template.name}</h2>
+                      <p className="mt-1 text-xs text-ft-body">{minimumPlan === "free" ? "Free to customize" : `${PLANS[minimumPlan].name} plan`}</p>
                     </div>
                   </div>
                 </article>

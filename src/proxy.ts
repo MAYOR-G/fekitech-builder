@@ -17,7 +17,6 @@ function contentSecurityPolicy(nonce: string): string {
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
-    "frame-ancestors 'none'",
     "worker-src 'self' blob:",
   ].join("; ") + upgrade;
 }

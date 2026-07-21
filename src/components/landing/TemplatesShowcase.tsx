@@ -67,31 +67,33 @@ export default function TemplatesShowcase() {
         {/* Template Cards */}
         <div
           aria-label="Featured website templates"
-          className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           {templates.map((tpl, i) => (
-            <Link
+            <motion.div
               key={tpl.id}
-              href={`/preview/${tpl.id}`}
-              className="group relative block min-w-0 cursor-pointer overflow-hidden rounded-[24px] bg-white shadow-lg transition-[transform,box-shadow] duration-500 hover:-translate-y-1 hover:shadow-2xl"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease }}
+              className="group relative flex flex-col gap-4"
             >
-              <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: i * 0.1, ease }}
-                className="w-full h-full"
-              >
-                <div className="relative aspect-[9/16] w-full overflow-hidden bg-ft-surface-cool rounded-xl">
-                  <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1500} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.025]" loading="lazy" />
-                  <div className="absolute inset-0 bg-ft-ink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-ft-ink shadow-[0_14px_34px_rgba(17,24,39,0.18)] hover:scale-105 transition-transform duration-300">
-                      Preview
-                    </span>
-                  </div>
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-white/10 bg-ft-surface-cool shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-2xl">
+                <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1200} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="relative z-10 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                
+                <div className="absolute inset-0 z-20 bg-ft-ink/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+                
+                <div className="absolute bottom-4 left-4 right-4 z-30 flex translate-y-[150%] rounded-xl bg-white/95 p-2 shadow-xl backdrop-blur-md transition-transform duration-300 ease-out group-hover:translate-y-0">
+                  <Link href={`/preview/${tpl.id}`} className="flex-1 rounded-lg bg-ft-primary px-3 py-2.5 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-ft-primary-deep">
+                    Preview Template
+                  </Link>
                 </div>
-              </motion.div>
-            </Link>
+              </div>
+              
+              <div className="px-1">
+                <h3 className="text-base font-semibold text-white group-hover:text-white/90 transition-colors">{tpl.name}</h3>
+              </div>
+            </motion.div>
           ))}
         </div>
 
