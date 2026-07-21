@@ -1,5 +1,7 @@
 "use client";
 import { TemplateImage } from "@/components/templates/TemplateImage";
+import { getAllTemplates } from "@/registry";
+import HeroVideo from "@/components/landing/HeroVideo";
 
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -22,6 +24,13 @@ import {
 } from "lucide-react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
+
+const featuredTemplateIds = [
+  "barber-website",
+  "premium-coffee-website",
+  "gym-website",
+  "second-furniture-website",
+] as const;
 
 const easyCards = [
   { icon: LayoutTemplate, title: "Website builder", body: "Start from a polished layout and edit sections visually." },
@@ -154,6 +163,20 @@ function SectionTitle({
 }
 
 export default function FeaturesPage() {
+  const templates = featuredTemplateIds.flatMap((templateId) => {
+    const templateCatalog = getAllTemplates();
+    const template = templateCatalog.find((item) => item.id === templateId);
+    return template
+      ? [
+          {
+            id: template.id,
+            name: template.name,
+            image: template.image,
+          },
+        ]
+      : [];
+  });
+
   return (
     <div className="min-h-screen bg-white text-ft-ink">
       <section className="relative overflow-hidden bg-ft-sky px-6 pb-24 pt-24 md:pt-32">
@@ -283,9 +306,32 @@ export default function FeaturesPage() {
               Browse templates
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
-            {templateStrip.map((image, index) => (
-              <BrowserPreview key={image} image={image} className={`aspect-[0.72] ${index % 2 ? "mt-8" : ""}`} />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+            {templates.map((tpl, i) => (
+              <motion.div
+                key={tpl.id}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease }}
+                className="group relative flex flex-col gap-4"
+              >
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-white/10 bg-ft-surface-cool shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-2xl">
+                  <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1200} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="relative z-10 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+                  
+                  <div className="absolute inset-0 z-20 bg-ft-ink/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+                  
+                  <div className="absolute bottom-4 left-4 right-4 z-30 flex translate-y-[150%] rounded-xl bg-white/95 p-2 shadow-xl backdrop-blur-md transition-transform duration-300 ease-out group-hover:translate-y-0">
+                    <Link href={`/preview/${tpl.id}`} className="flex-1 rounded-lg bg-ft-primary px-3 py-2.5 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-ft-primary-deep">
+                      Preview Template
+                    </Link>
+                  </div>
+                </div>
+                
+                <div className="px-1">
+                  <h3 className="text-base font-semibold text-white group-hover:text-white/90 transition-colors">{tpl.name}</h3>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -355,10 +401,8 @@ export default function FeaturesPage() {
 
       <section className="overflow-hidden px-6 py-24">
         <SectionTitle title="A strong starting point for many kinds of business" body="Choose from clean templates and customize the supported content and design controls yourself." />
-        <div className="mx-auto flex max-w-[1280px] gap-5 overflow-hidden">
-          {templateStrip.concat(templateStrip.slice(0, 2)).map((image, index) => (
-            <BrowserPreview key={`${image}-${index}`} image={image} className="h-[280px] min-w-[230px] rounded-[12px]" />
-          ))}
+        <div className="mx-auto mt-10 w-full overflow-hidden rounded-3xl">
+          <HeroVideo />
         </div>
       </section>
 

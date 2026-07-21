@@ -122,7 +122,28 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div id="mobile-navigation" className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-white/96 pb-8 pt-24 backdrop-blur-xl lg:hidden">
+        <div id="mobile-navigation" className="fixed inset-0 z-[100] flex flex-col overflow-y-auto bg-white pb-8 lg:hidden">
+          <div className="flex items-center justify-between px-6 py-5 border-b border-ft-border-light mb-4">
+            <Link
+              href="/"
+              className="group flex items-center gap-2.5"
+              onClick={() => setMobileOpen(false)}
+            >
+              <LogoMark className="w-8 h-8" />
+              <span className="text-base font-bold tracking-[-0.02em] text-ft-ink">
+                FekiTech <span className="font-medium text-ft-body">Builder</span>
+              </span>
+            </Link>
+            <button
+              type="button"
+              onClick={() => setMobileOpen(false)}
+              className="flex min-h-11 min-w-11 items-center justify-center rounded-xl transition-colors hover:bg-ft-surface-alt"
+              aria-label="Close menu"
+            >
+              <X className="w-6 h-6 text-ft-ink" />
+            </button>
+          </div>
+
           <nav className="mx-auto flex w-full max-w-lg flex-1 flex-col gap-1 px-6" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <Link

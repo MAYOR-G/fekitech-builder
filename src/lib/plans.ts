@@ -1,5 +1,5 @@
-export const PLAN_IDS = ["free", "starter", "professional", "agency"] as const;
-export const PUBLIC_PLAN_IDS = ["starter", "professional", "agency"] as const;
+export const PLAN_IDS = ["free", "business", "pro", "agency"] as const;
+export const PUBLIC_PLAN_IDS = ["free", "business", "pro", "agency"] as const;
 
 export type PlanId = (typeof PLAN_IDS)[number];
 
@@ -33,9 +33,9 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
   free: {
     id: "free",
     name: "Free",
-    description: "Create and preview one website before choosing a publishing plan.",
+    description: "Create and preview websites before choosing a publishing plan.",
     monthlyPriceMinor: 0,
-    publicFeatures: ["Browse templates", "Customize one draft", "Private website previews"],
+    publicFeatures: ["Subdomain", "Limited templates", "Branding included"],
     ctaLabel: "Start building",
     ctaHref: "/signup",
     entitlements: {
@@ -51,21 +51,18 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
       canUseCustomDomain: false,
     },
   },
-  starter: {
-    id: "starter",
-    name: "Starter",
+  business: {
+    id: "business",
+    name: "Business",
     description: "For an individual or small business publishing one website.",
-    monthlyPriceMinor: 900,
+    monthlyPriceMinor: 1500,
     publicFeatures: [
-      "1 published website",
-      "Standard templates",
-      "Text, color, background, image, and logo customization",
-      "Mobile-responsive website",
-      "FekiTech Builder subdomain",
-      "Secure hosting and website previews",
-      "Basic support",
+      "Custom domain",
+      "Remove branding",
+      "Analytics",
+      "Forms"
     ],
-    ctaLabel: "Start with Starter",
+    ctaLabel: "Start with Business",
     ctaHref: "/signup",
     entitlements: {
       maxProjects: 3,
@@ -77,26 +74,23 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
       templateLevel: 1,
       canPublish: true,
       canUploadImages: true,
-      canUseCustomDomain: false,
+      canUseCustomDomain: true,
     },
   },
-  professional: {
-    id: "professional",
-    name: "Growth",
-    description: "For freelancers and growing businesses managing several websites.",
-    monthlyPriceMinor: 1900,
+  pro: {
+    id: "pro",
+    name: "Pro",
+    description: "For growing businesses needing advanced features.",
+    monthlyPriceMinor: 3900,
     recommended: true,
     publicFeatures: [
-      "Up to 3 published websites",
-      "Everything in Starter",
-      "All premium templates",
-      "More upload and storage capacity",
-      "Expanded version history",
-      "Advanced customization",
-      "Custom-domain connection",
-      "Priority support",
+      "Everything in Business",
+      "AI copywriting",
+      "More pages",
+      "SEO, AEO, and GEO",
+      "Integrations"
     ],
-    ctaLabel: "Choose Growth",
+    ctaLabel: "Choose Pro",
     ctaHref: "/signup",
     entitlements: {
       maxProjects: 10,
@@ -113,20 +107,16 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
   },
   agency: {
     id: "agency",
-    name: "Custom",
-    description: "For a unique website designed and set up around your requirements.",
-    monthlyPriceMinor: 3000,
-    pricePrefix: "From",
+    name: "Agency",
+    description: "For agencies and freelancers managing several websites.",
+    monthlyPriceMinor: 9900,
     publicFeatures: [
-      "Unique custom-designed website",
-      "Personal domain connection",
-      "Design matched to your brand",
-      "Content and structure setup",
-      "Responsive implementation",
-      "Managed updates or support based on scope",
+      "Everything in Pro",
+      "Multiple websites",
+      "Client management"
     ],
-    ctaLabel: "Request a custom website",
-    ctaHref: "/support",
+    ctaLabel: "Choose Agency",
+    ctaHref: "/signup",
     entitlements: {
       maxProjects: 100,
       maxPublishedProjects: 100,
@@ -143,33 +133,33 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
 };
 
 const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
-  "accountancy-website": "starter",
+  "accountancy-website": "business",
   "agency": "agency",
   "barber-website": "free",
-  "blackwood-barbers": "starter",
+  "blackwood-barbers": "business",
   "cake-website": "free",
-  "catering-website": "starter",
+  "catering-website": "business",
   "coffee-website": "free",
-  "dentist-website": "starter",
+  "dentist-website": "business",
   "electrician-website": "free",
-  "estate-agent-website": "professional",
-  "furniture-website": "starter",
-  "gym-website": "starter",
-  "hearth-and-harvest": "professional",
-  "hotel-website": "professional",
-  "ink-and-iron": "professional",
-  "oak-and-ivory-barbers": "starter",
-  "plumber-website": "starter",
-  "premium-coffee-website": "professional",
-  "premium-lash-technician-website": "professional",
-  "premium-nail-technician-website": "professional",
-  "premium-spa-website": "professional",
-  "restaurant-website": "starter",
+  "estate-agent-website": "pro",
+  "furniture-website": "business",
+  "gym-website": "business",
+  "hearth-and-harvest": "pro",
+  "hotel-website": "pro",
+  "ink-and-iron": "pro",
+  "oak-and-ivory-barbers": "business",
+  "plumber-website": "business",
+  "premium-coffee-website": "pro",
+  "premium-lash-technician-website": "pro",
+  "premium-nail-technician-website": "pro",
+  "premium-spa-website": "pro",
+  "restaurant-website": "business",
   "salon-website": "free",
-  "second-electrician-website": "starter",
-  "second-furniture-website": "professional",
-  "second-plumber-website": "starter",
-  "second-salon-website": "starter",
+  "second-electrician-website": "business",
+  "second-furniture-website": "pro",
+  "second-plumber-website": "business",
+  "second-salon-website": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

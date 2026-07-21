@@ -52,10 +52,16 @@ export const auth = betterAuth({
         text: `A password reset was requested for your account. Open this link within one hour:\n\n${url}\n\nIf you did not request this, you can ignore this message.`,
       });
     },
-    onPasswordReset: async ({ user }) => {
+      onPasswordReset: async ({ user }) => {
       await prisma.activityLog.create({
         data: { userId: user.id, action: "auth.password_reset" },
       });
+    },
+  },
+  socialProviders: {
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     },
   },
   emailVerification: {

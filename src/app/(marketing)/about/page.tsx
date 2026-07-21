@@ -2,23 +2,21 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 import Link from "next/link";
 import { getAllTemplates } from "@/registry";
 
-const templateCount = getAllTemplates().length;
-
 const stats = [
   {
-    value: `${templateCount} templates`,
+    value: "Premium templates",
     body: "A growing collection of complete starting points for service businesses, creators, and local brands.",
-    bg: "bg-[#F0DCD5]",
+    bg: "bg-ft-sky",
   },
   {
     value: "Draft first",
     body: "Explore templates and test customization before choosing a publishing plan.",
-    bg: "bg-ft-sky",
+    bg: "bg-[#F3F4F6]",
   },
   {
     value: "No code",
     body: "Edit the structured content and design controls provided by each template.",
-    bg: "bg-[#E5EACF]",
+    bg: "bg-[#FFF0DE]",
   },
 ];
 
@@ -27,29 +25,30 @@ const audiences = ["Small businesses", "Freelancers", "Creators", "Agencies", "S
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-ft-ink">
-      <section className="bg-ft-sky px-6 pb-28 pt-28 text-center md:pt-40">
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-ft-muted">About us</p>
-        <h1 className="mx-auto max-w-[760px] text-[clamp(38px,5.8vw,72px)] font-[760] leading-[1.03] text-balance">
+      <section className="bg-ft-surface-cool px-6 pb-28 pt-28 text-center md:pt-40 relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-ft-primary/10 blur-[100px] rounded-full pointer-events-none" />
+        <p className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-ft-primary relative z-10">About us</p>
+        <h1 className="mx-auto max-w-[800px] text-[clamp(42px,6vw,72px)] font-[760] leading-[1.05] tracking-tight text-balance relative z-10">
           We enable anyone to build their own websites. Easily.
         </h1>
-        <p className="mx-auto mt-5 max-w-[560px] text-sm leading-7 text-ft-body">
+        <p className="mx-auto mt-6 max-w-[600px] text-lg leading-relaxed text-ft-body sm:text-xl relative z-10">
           FekiTech Builder gives business owners a clear path from template selection to a published website.
         </p>
       </section>
 
-      <section className="px-6 py-24">
+      <section className="px-6 py-28 relative">
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-[clamp(34px,4.5vw,58px)] font-[760] leading-[1.04]">
+          <h2 className="text-[clamp(36px,5vw,58px)] font-[760] leading-[1.04] tracking-tight">
             A practical website builder
           </h2>
-          <p className="mx-auto mt-4 max-w-[620px] text-sm leading-6 text-ft-body">
+          <p className="mx-auto mt-5 max-w-[620px] text-lg leading-relaxed text-ft-body sm:text-xl">
             Built to make choosing, customizing, previewing, and publishing a website easier to understand.
           </p>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
             {stats.map((stat) => (
-              <article key={stat.value} className={`${stat.bg} rounded-[16px] p-8 text-left`}>
-                <h3 className="text-[clamp(30px,4vw,46px)] font-[760] leading-[1.02]">{stat.value}</h3>
-                <p className="mt-8 text-sm leading-6 text-ft-body">{stat.body}</p>
+              <article key={stat.value} className={`${stat.bg} rounded-3xl p-10 text-left transition-transform duration-300 hover:-translate-y-1`}>
+                <h3 className="text-[clamp(28px,3vw,36px)] font-[760] leading-[1.1] tracking-tight">{stat.value}</h3>
+                <p className="mt-6 text-base leading-relaxed text-ft-body/90 sm:text-lg">{stat.body}</p>
               </article>
             ))}
           </div>
@@ -57,37 +56,37 @@ export default function AboutPage() {
       </section>
 
       <TemplateImage
-        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1800&auto=format&fit=crop"
-        alt="Team meeting around a bright office table"
-        className="h-[360px] w-full object-cover md:h-[520px]"
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop"
+        alt="Premium modern workspace"
+        className="h-[400px] w-full object-cover md:h-[600px]"
         loading="lazy"
       />
 
-      <section className="px-6 py-24">
-        <div className="mx-auto grid max-w-[980px] gap-10 md:grid-cols-[0.45fr_1fr]">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-ft-muted">About us</p>
-          <div className="space-y-5 text-sm leading-7 text-ft-body">
+      <section className="px-6 py-28 bg-white">
+        <div className="mx-auto grid max-w-[1080px] gap-12 md:grid-cols-[0.45fr_1fr] items-start">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-ft-primary mt-2">What we do</p>
+          <div className="space-y-6 text-lg leading-relaxed text-ft-body sm:text-xl sm:leading-[1.8]">
             <p>
               We believe website building should be clear and manageable. FekiTech Builder brings templates, structured editing, previews, and publishing into one practical workspace.
             </p>
             <p>
-              People without technical experience can start from a complete design and focus on their own content. Every template is built to adapt across mobile, tablet, and desktop screens.
+              People without technical experience can start from a complete design and focus on their own content. Every template is built to adapt beautifully across mobile, tablet, and desktop screens.
             </p>
           </div>
         </div>
       </section>
 
       <TemplateImage
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1800&auto=format&fit=crop"
-        alt="Team standing together outdoors"
-        className="h-[360px] w-full object-cover md:h-[520px]"
+        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop"
+        alt="Creative team collaborating in a modern office"
+        className="h-[400px] w-full object-cover md:h-[600px]"
         loading="lazy"
       />
 
-      <section className="px-6 py-24">
-        <div className="mx-auto grid max-w-[980px] gap-10 md:grid-cols-[0.45fr_1fr]">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-ft-muted">Our story</p>
-          <div className="space-y-5 text-sm leading-7 text-ft-body">
+      <section className="px-6 py-28 bg-ft-surface-cool/30">
+        <div className="mx-auto grid max-w-[1080px] gap-12 md:grid-cols-[0.45fr_1fr] items-start">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-ft-primary mt-2">Our story</p>
+          <div className="space-y-6 text-lg leading-relaxed text-ft-body sm:text-xl sm:leading-[1.8]">
             <p>
               FekiTech Builder began with a simple idea: business owners should be able to choose a strong template, preview it, adjust the content, and publish without feeling overwhelmed by technical details.
             </p>
@@ -101,76 +100,79 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#FFF0DE] px-6 py-24">
-        <div className="mx-auto grid max-w-[980px] items-center gap-12 md:grid-cols-[1fr_0.95fr]">
-          <div>
-            <h2 className="text-[clamp(34px,4.4vw,58px)] font-[760] leading-[1.04]">Our Philosophy</h2>
-            <p className="mt-4 max-w-md text-lg font-semibold leading-7">
+      <section className="bg-[#FFF0DE] px-6 py-32">
+        <div className="mx-auto grid max-w-[1100px] items-center gap-16 md:grid-cols-[1fr_0.95fr]">
+          <div className="space-y-6">
+            <h2 className="text-[clamp(40px,5vw,64px)] font-[760] leading-[1.05] tracking-tight">Our Philosophy</h2>
+            <p className="max-w-md text-xl font-medium leading-relaxed text-ft-ink">
               You don&apos;t have to be tech-savvy or a design pro to create an awesome website.
             </p>
-            <p className="mt-4 max-w-lg text-sm leading-7 text-ft-body">
+            <p className="max-w-lg text-lg leading-relaxed text-ft-body">
               Start from a considered design and spend your time refining the details that matter to your customers.
             </p>
-            <ul className="mt-6 space-y-2 text-sm font-semibold text-ft-ink">
-              <li>• Templates you can preview before paying</li>
-              <li>• Desktop, tablet, and mobile previews</li>
-              <li>• Ready-to-use blocks</li>
+            <ul className="mt-8 space-y-4 text-lg font-medium text-ft-ink">
+              <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-ft-primary" /> Templates you can preview before paying</li>
+              <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-ft-primary" /> Desktop, tablet, and mobile previews</li>
+              <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-ft-primary" /> Ready-to-use blocks</li>
             </ul>
           </div>
           <TemplateImage
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1000&auto=format&fit=crop"
-            alt="Person working calmly on a laptop"
-            className="h-[360px] w-full rounded-[18px] object-cover shadow-[0_22px_58px_rgba(17,24,39,0.12)]"
+            src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1200&auto=format&fit=crop"
+            alt="Designer working on digital layouts"
+            className="h-[460px] w-full rounded-3xl object-cover shadow-[0_30px_60px_-15px_rgba(17,24,39,0.15)] transition-transform duration-500 hover:scale-[1.02]"
             loading="lazy"
           />
         </div>
       </section>
 
-      <section className="bg-ft-primary px-6 py-24 text-center text-white">
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-white/58">Our vision</p>
-        <h2 className="mx-auto max-w-[840px] text-[clamp(34px,5vw,64px)] font-[760] leading-[1.04] text-balance">
-          To help any business owner achieve everything they aspire to online.
-        </h2>
+      <section className="bg-ft-primary px-6 py-32 text-center text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-tr from-ft-primary-deep to-ft-primary opacity-50" />
+        <div className="relative z-10">
+          <p className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white/70">Our vision</p>
+          <h2 className="mx-auto max-w-[900px] text-[clamp(42px,6vw,72px)] font-[760] leading-[1.05] tracking-tight text-balance">
+            To help any business owner achieve everything they aspire to online.
+          </h2>
+        </div>
       </section>
 
-      <section className="px-6 py-20 text-center">
-        <h2 className="text-[clamp(30px,4vw,48px)] font-[760]">Built for independent businesses</h2>
-        <div className="mx-auto mt-10 flex max-w-[920px] flex-wrap items-center justify-center gap-x-10 gap-y-6">
+      <section className="px-6 py-28 text-center bg-white">
+        <h2 className="text-[clamp(34px,5vw,52px)] font-[760] tracking-tight">Built for independent businesses</h2>
+        <div className="mx-auto mt-12 flex max-w-[920px] flex-wrap items-center justify-center gap-x-6 gap-y-6">
           {audiences.map((audience) => (
-            <span key={audience} className="rounded-full border border-ft-border bg-ft-surface-alt px-5 py-2.5 text-sm font-semibold text-ft-body">
+            <span key={audience} className="rounded-full border border-ft-border/60 bg-ft-surface-cool px-6 py-3 text-base font-medium text-ft-ink shadow-sm hover:shadow-md transition-shadow">
               {audience}
             </span>
           ))}
         </div>
       </section>
 
-      <section className="bg-[#FFF0DE] px-6 py-24">
-        <div className="mx-auto grid max-w-[980px] items-center gap-12 md:grid-cols-[0.92fr_1fr]">
+      <section className="bg-ft-sky/30 px-6 py-32">
+        <div className="mx-auto grid max-w-[1100px] items-center gap-16 md:grid-cols-[0.92fr_1fr]">
           <TemplateImage
-            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1000&auto=format&fit=crop"
-            alt="Agency partners reviewing website work"
-            className="h-[340px] w-full rounded-[20px] object-cover shadow-[0_18px_48px_rgba(17,24,39,0.1)]"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+            alt="Agency partners collaborating on a project"
+            className="h-[420px] w-full rounded-3xl object-cover shadow-[0_24px_50px_-12px_rgba(17,24,39,0.12)] transition-transform duration-500 hover:scale-[1.02]"
             loading="lazy"
           />
-          <div>
-            <h2 className="text-[clamp(32px,4.4vw,56px)] font-[760] leading-[1.04]">
+          <div className="space-y-6">
+            <h2 className="text-[clamp(38px,5vw,60px)] font-[760] leading-[1.05] tracking-tight">
               For agencies and white-label partners
             </h2>
-            <p className="mt-5 max-w-lg text-sm leading-7 text-ft-body">
+            <p className="max-w-lg text-lg leading-relaxed text-ft-body sm:text-xl">
               Empower your clients with custom websites quickly and from any device, without long technical handoffs.
             </p>
-            <Link href="/support" className="mt-7 inline-flex rounded-full bg-ft-dark px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5">
+            <Link href="/support" className="mt-4 inline-flex items-center justify-center rounded-xl bg-ft-ink px-8 py-4 text-base font-bold text-white transition-all hover:-translate-y-1 hover:shadow-xl">
               Learn more
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-ft-dark px-6 py-24 text-center text-white">
-        <h2 className="mx-auto max-w-[720px] text-[clamp(38px,5vw,68px)] font-[760] leading-[1.03] text-balance">
+      <section className="bg-ft-ink px-6 py-32 text-center text-white">
+        <h2 className="mx-auto max-w-[800px] text-[clamp(42px,6vw,72px)] font-[760] leading-[1.05] tracking-tight text-balance">
           Build your online presence with FekiTech Builder
         </h2>
-        <Link href="/templates" className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-bold text-ft-ink transition hover:-translate-y-0.5">
+        <Link href="/templates" className="mt-10 inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-bold text-ft-ink transition-all hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(255,255,255,0.2)]">
           Browse templates
         </Link>
       </section>
