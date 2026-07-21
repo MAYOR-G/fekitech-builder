@@ -133,33 +133,18 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
 };
 
 const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
-  "accountancy-website": "business",
-  "agency": "agency",
   "barber-website": "free",
-  "blackwood-barbers": "business",
   "cake-website": "free",
   "catering-website": "business",
   "coffee-website": "free",
   "dentist-website": "business",
   "electrician-website": "free",
-  "estate-agent-website": "pro",
-  "furniture-website": "business",
   "gym-website": "business",
-  "hearth-and-harvest": "pro",
-  "hotel-website": "pro",
   "ink-and-iron": "pro",
-  "oak-and-ivory-barbers": "business",
-  "plumber-website": "business",
   "premium-coffee-website": "pro",
-  "premium-lash-technician-website": "pro",
-  "premium-nail-technician-website": "pro",
-  "premium-spa-website": "pro",
   "restaurant-website": "business",
-  "salon-website": "free",
-  "second-electrician-website": "business",
   "second-furniture-website": "pro",
   "second-plumber-website": "business",
-  "second-salon-website": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {
