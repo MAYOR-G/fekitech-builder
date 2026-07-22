@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "Luma Slice",
+    "tagline": "Bright pizza, seasonal produce, and neighborhood warmth.",
+    "phone": "+1 310 555 0193",
+    "email": "ciao@lumaslice.com",
+    "address": "123 Sunbeam Way, Santa Monica, CA 90401"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Our story", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Order and reserve", "href": "#contact" }
+    ],
+    "ctaLabel": "Order a pie",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Bright pizza. Better days.",
+    "title": "Sunshine, served by the slice.",
+    "description": "Artisan pizzas with seasonal ingredients, slow-fermented dough, and a whole lot of good energy.",
+    "primaryLabel": "Order a pie",
+    "primaryHref": "#contact",
+    "secondaryLabel": "See the menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/luma-slice-hero-v2.webp",
+    "imageAlt": "Luma Slice artisan margherita pizza with basil and yellow tomatoes",
+    "badgeValue": "48H",
+    "badgeLabel": "slow and sunny"
+  },
+  "marquee": { "items": ["Good pizza", "Good people", "Good times", "Fresh every day"] },
+  "signature": {
+    "eyebrow": "House favorite",
+    "title": "The Luma Margherita",
+    "description": "San Marzano tomatoes, fior di latte, basil, extra virgin olive oil, and sea salt on our airy fermented dough.",
+    "price": "$16",
+    "buttonLabel": "Order this pie",
+    "buttonHref": "#contact",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=90",
+    "imageAlt": "Bright artisan margherita pizza"
+  },
+  "dishes": {
+    "title": "Made with season",
+    "description": "Crisp produce, long-fermented dough, and bold color in every slice.",
+    "buttonLabel": "View full menu",
+    "buttonHref": "#menu",
+    "items": [
+      { "name": "Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Margherita pizza with basil" },
+      { "name": "Lemon and Mushroom", "description": "Mushrooms, arugula, lemon cream, herbs.", "price": "$17", "image": "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Mushroom pizza with fresh greens" },
+      { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18", "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Spicy artisan pizza with red onion" },
+      { "name": "Sunbeam Salad", "description": "Citrus, fennel, herbs, greens, toasted seeds.", "price": "$12", "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Colorful seasonal green salad" }
+    ]
+  },
+  "menu": {
+    "title": "A slice for every mood",
+    "description": "Seasonal pies and bright little plates, built for the whole table to try.",
+    "categories": [
+      { "name": "Seasonal pies", "items": [
+        { "name": "The Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16" },
+        { "name": "Lemon and Mushroom", "description": "Mushrooms, lemon cream, arugula, herbs.", "price": "$17" },
+        { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18" }
+      ] },
+      { "name": "Bright classics", "items": [
+        { "name": "Pepperoni Sunburst", "description": "Tomato, mozzarella, pepperoni, oregano.", "price": "$18" },
+        { "name": "Green Garden", "description": "Zucchini, pesto, ricotta, basil, lemon.", "price": "$17" },
+        { "name": "White Coast", "description": "Fior di latte, garlic, potato, rosemary.", "price": "$17" }
+      ] },
+      { "name": "Small and sweet", "items": [
+        { "name": "Sunbeam Salad", "description": "Citrus, fennel, herbs, greens, toasted seeds.", "price": "$12" },
+        { "name": "Whipped Ricotta", "description": "Hot honey, lemon zest, warm flatbread.", "price": "$11" },
+        { "name": "Olive Oil Cake", "description": "Lemon cream, sea salt, seasonal berries.", "price": "$9" }
+      ] }
+    ]
+  },
+  "story": {
+    "eyebrow": "Neighborhood by nature",
+    "title": "A love letter to sunny days",
+    "description": "Luma Slice brings together local growers, thoughtful flour, and the joy of sharing great pizza. We ferment every dough slowly and fire each pie with care so the ingredients stay bright.",
+    "buttonLabel": "Come say hello",
+    "buttonHref": "#gallery",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=88",
+    "imageAlt": "Sunlit neighborhood pizzeria interior",
+    "secondaryImage": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=900&q=88",
+    "secondaryImageAlt": "Colorful casual restaurant table"
+  },
+  "gallery": {
+    "title": "A slice of Luma",
+    "description": "Sunlit lunches, fiery ovens, shared pies, and a room full of color.",
+    "images": [
+      { "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Fresh pizza ready to share" },
+      { "image": "https://images.unsplash.com/photo-1583953623787-ada99d338235?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Wood fire inside a pizza oven" },
+      { "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Friends sharing colorful food" },
+      { "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Bright modern pizzeria dining room" }
+    ]
+  },
+  "reviews": {
+    "title": "Our neighbors say it best",
+    "items": [
+      { "quote": "Best pizza in the neighborhood. The dough is unreal and the ingredients taste so fresh.", "name": "Jessica Kim", "detail": "Friday night regular" },
+      { "quote": "Consistently perfect every time, with a room that always feels like summer.", "name": "Alex Romero", "detail": "Local designer" },
+      { "quote": "Bright, cozy, and welcoming. You can feel the care in every detail.", "name": "Nina Torres", "detail": "Family dinner" }
+    ]
+  },
+  "contact": {
+    "title": "Reserve your table in the sun",
+    "description": "Planning ahead or celebrating something special? Book a table or order your favorite pie for pickup.",
+    "primaryLabel": "Make a reservation",
+    "primaryHref": "https://example.com/reservations",
+    "secondaryLabel": "Get directions",
+    "secondaryHref": "https://maps.google.com",
+    "hours": [
+      { "day": "Monday", "time": "Closed" },
+      { "day": "Tue-Thu", "time": "11 AM-10 PM" },
+      { "day": "Fri-Sat", "time": "11 AM-11 PM" },
+      { "day": "Sunday", "time": "11 AM-9 PM" }
+    ]
+  },
+  "social": {
+    "instagram": "Instagram", "instagramHref": "https://instagram.com", "facebook": "Facebook", "facebookHref": "https://facebook.com", "tiktok": "TikTok", "tiktokHref": "https://tiktok.com"
+  },
+  "footer": { "note": "Sunlit pizza, slow dough, local ingredients, and a place for everyone.", "copyright": "© 2026 Luma Slice. All rights reserved." }
+}

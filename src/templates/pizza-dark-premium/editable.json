@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "Forno Nero",
+    "tagline": "Wood-fired pizza shaped by flour, flame, and patience.",
+    "phone": "+1 718 555 0162",
+    "email": "tables@fornonero.com",
+    "address": "27 Brick Oven Way, Brooklyn, NY 11201"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Our story", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Reservations", "href": "#contact" }
+    ],
+    "ctaLabel": "Reserve a table",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Wood-fired every day",
+    "title": "Fire. Flour. Time.",
+    "description": "Slow-fermented dough, honest ingredients, and a 450-degree oven. Every pie arrives with char, lift, and balance.",
+    "primaryLabel": "Reserve a table",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Explore menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/forno-nero-hero-v2.webp",
+    "imageAlt": "Forno Nero wood-fired salami and mushroom pizza with blistered crust",
+    "badgeValue": "48H",
+    "badgeLabel": "slow fermented"
+  },
+  "marquee": { "items": ["Forty-eight hour dough", "San Marzano tomatoes", "Fior di latte", "Live fire"] },
+  "signature": {
+    "eyebrow": "Our signature pie",
+    "title": "The Nero Margherita",
+    "description": "San Marzano tomato, fior di latte, basil, extra virgin olive oil, sea salt, and a blistered cornicione from the live-fire oven.",
+    "price": "$18",
+    "buttonLabel": "Reserve and taste",
+    "buttonHref": "#contact",
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1600&q=90",
+    "imageAlt": "Artisan margherita pizza fresh from the oven"
+  },
+  "dishes": {
+    "title": "Fired by nature",
+    "description": "A focused collection of seasonal pies, small plates, and slow desserts made for the table.",
+    "buttonLabel": "See the menu",
+    "buttonHref": "#menu",
+    "items": [
+      { "name": "Nero Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$18", "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Classic margherita pizza" },
+      { "name": "Funghi and Truffle", "description": "Wild mushrooms, fior di latte, truffle crema.", "price": "$22", "image": "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Mushroom pizza with herbs" },
+      { "name": "Charred Rapini", "description": "Rapini, garlic, lemon, chile, pecorino.", "price": "$12", "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Charred greens on a ceramic plate" },
+      { "name": "Tiramisu al Fuoco", "description": "Mascarpone, espresso, cocoa, smoked salt.", "price": "$11", "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Tiramisu dusted with cocoa" }
+    ]
+  },
+  "menu": {
+    "title": "Simple ingredients. Extraordinary results.",
+    "description": "Our menu changes with the market while the standards stay the same: patient dough, clean flavor, live fire.",
+    "categories": [
+      { "name": "Signature pies", "items": [
+        { "name": "The Nero Margherita", "description": "Tomato, fior di latte, basil, extra virgin olive oil.", "price": "$18" },
+        { "name": "Diavola", "description": "Tomato, spicy salumi, hot honey, oregano.", "price": "$21" },
+        { "name": "Funghi and Truffle", "description": "Mushrooms, truffle crema, arugula.", "price": "$22" }
+      ] },
+      { "name": "Rosso and bianco", "items": [
+        { "name": "Prosciutto and Arugula", "description": "Tomato, prosciutto, arugula, Grana Padano.", "price": "$22" },
+        { "name": "Salsiccia and Rapini", "description": "Sausage, rapini, fior di latte, chile.", "price": "$21" },
+        { "name": "Potato Bianca", "description": "Potato, rosemary, taleggio, roasted garlic.", "price": "$19" }
+      ] },
+      { "name": "Small plates and dolci", "items": [
+        { "name": "Fire-Roasted Olives", "description": "Citrus, rosemary, fennel pollen.", "price": "$8" },
+        { "name": "Burrata and Ember Bread", "description": "Warm bread, tomato conserva, basil oil.", "price": "$15" },
+        { "name": "Tiramisu al Fuoco", "description": "Mascarpone, espresso, cocoa, smoked salt.", "price": "$11" }
+      ] }
+    ]
+  },
+  "story": {
+    "eyebrow": "Born from fire",
+    "title": "Rooted in craft",
+    "description": "Forno Nero is where time-honored technique meets a restless passion for better. We work with local farmers, slow-ferment our dough for 48 hours, and fire every pizza in our hand-built oven.",
+    "buttonLabel": "Meet our makers",
+    "buttonHref": "#gallery",
+    "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=88",
+    "imageAlt": "Chef shaping dough in a dark open kitchen",
+    "secondaryImage": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=900&q=88",
+    "secondaryImageAlt": "Candlelit restaurant dining room"
+  },
+  "gallery": {
+    "title": "A glimpse inside",
+    "description": "Hands in flour, glowing embers, long tables, and the final blistered crust.",
+    "images": [
+      { "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Pizza topped with basil" },
+      { "image": "https://images.unsplash.com/photo-1583953623787-ada99d338235?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Flames in a wood-fired oven" },
+      { "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Chef at work in the kitchen" },
+      { "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Intimate restaurant interior" }
+    ]
+  },
+  "reviews": {
+    "title": "Kind words, clean plates",
+    "items": [
+      { "quote": "The crust has real character. Airy, charred, and somehow still delicate.", "name": "Jessica Moretti", "detail": "Brooklyn, NY" },
+      { "quote": "You can taste the patience in the dough and the confidence in every topping.", "name": "Adrian Russo", "detail": "Chef and neighbor" },
+      { "quote": "The dining room glows, the wine list is sharp, and the pizza is worth crossing town for.", "name": "Camille Hart", "detail": "Evening guest" }
+    ]
+  },
+  "contact": {
+    "title": "Your table by the fire",
+    "description": "Join us for dinner, reserve the long table, or order a few pies to enjoy at home.",
+    "primaryLabel": "Reserve a table",
+    "primaryHref": "https://example.com/reservations",
+    "secondaryLabel": "Get directions",
+    "secondaryHref": "https://maps.google.com",
+    "hours": [
+      { "day": "Mon-Thu", "time": "5 PM-10 PM" },
+      { "day": "Friday", "time": "5 PM-11 PM" },
+      { "day": "Saturday", "time": "4 PM-11 PM" },
+      { "day": "Sunday", "time": "12 PM-9 PM" }
+    ]
+  },
+  "social": {
+    "instagram": "Instagram", "instagramHref": "https://instagram.com", "facebook": "Facebook", "facebookHref": "https://facebook.com", "tiktok": "TikTok", "tiktokHref": "https://tiktok.com"
+  },
+  "footer": { "note": "Slow dough, live fire, and a dining room built for long evenings.", "copyright": "© 2026 Forno Nero. All rights reserved." }
+}

@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "Ember & Bun",
+    "tagline": "Fire-grilled burgers, honest ingredients, late-night energy.",
+    "phone": "+1 512 555 0184",
+    "email": "hello@emberandbun.com",
+    "address": "123 Ember Way, Austin, TX 78701"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Our story", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Visit", "href": "#contact" }
+    ],
+    "ctaLabel": "Order pickup",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Flame-grilled in Austin",
+    "title": "Fire makes it better.",
+    "description": "Smash burgers built with brisket, toasted buns, house sauces, and the confidence of an open flame.",
+    "primaryLabel": "Order pickup",
+    "primaryHref": "#contact",
+    "secondaryLabel": "View menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/ember-bun-hero-v2.webp",
+    "imageAlt": "Ember and Bun double smash burger with molten cheddar and caramelized onions",
+    "badgeValue": "100%",
+    "badgeLabel": "flame grilled"
+  },
+  "marquee": { "items": ["Flame grilled", "Real ingredients", "Bold flavor", "Made to order"] },
+  "signature": {
+    "eyebrow": "The house favorite",
+    "title": "The House Stack",
+    "description": "Two brisket smash patties, smoked cheddar, applewood bacon, grilled onions, pickles, and Ember sauce on a toasted brioche bun.",
+    "price": "$15.40",
+    "buttonLabel": "Add to order",
+    "buttonHref": "#contact",
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1600&q=90",
+    "imageAlt": "Double cheeseburger served with crisp fries"
+  },
+  "dishes": {
+    "title": "Bold by nature",
+    "description": "Smoke, crunch, heat, and a sweet finish. These are the plates regulars come back for.",
+    "buttonLabel": "See full menu",
+    "buttonHref": "#menu",
+    "items": [
+      { "name": "Smokehouse Double", "description": "Brisket patties, smoked cheddar, bacon jam.", "price": "$15.40", "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Smokehouse double cheeseburger" },
+      { "name": "Charred Ember Fries", "description": "Crispy fries, charred scallions, parmesan.", "price": "$5.20", "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Golden seasoned fries" },
+      { "name": "Burnt Sugar Shake", "description": "Vanilla custard, caramel, toasted marshmallow.", "price": "$6.80", "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Caramel milkshake with whipped cream" },
+      { "name": "Hot Honey Chicken", "description": "Crispy chicken, pickles, slaw, hot honey.", "price": "$14.90", "image": "https://images.unsplash.com/photo-1615297928064-24977384d0da?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Crispy chicken burger with slaw" }
+    ]
+  },
+  "menu": {
+    "title": "From the grill",
+    "description": "A focused menu designed for fast decisions and serious cravings.",
+    "categories": [
+      { "name": "Smash burgers", "items": [
+        { "name": "The House Stack", "description": "Double brisket, cheddar, bacon, Ember sauce.", "price": "$15.40" },
+        { "name": "Black Pepper Classic", "description": "Single patty, American cheese, onion, pickles.", "price": "$11.80" },
+        { "name": "Fireline Melt", "description": "Double patty, pepper jack, jalapeño, hot relish.", "price": "$14.60" }
+      ] },
+      { "name": "Sides and extras", "items": [
+        { "name": "Charred Ember Fries", "description": "Scallion, parmesan, garlic oil.", "price": "$5.20" },
+        { "name": "Crispy Onion Hay", "description": "Thin onions, smoked salt, ranch.", "price": "$5.80" },
+        { "name": "House Pickles", "description": "Cold-crisp dill spears with chile.", "price": "$3.20" }
+      ] },
+      { "name": "Cold and sweet", "items": [
+        { "name": "Burnt Sugar Shake", "description": "Custard, caramel, toasted marshmallow.", "price": "$6.80" },
+        { "name": "Black Cherry Cola", "description": "House cherry syrup, cola, lime.", "price": "$4.50" },
+        { "name": "Cast-Iron Cookie", "description": "Warm chocolate cookie, soft serve.", "price": "$8.20" }
+      ] }
+    ]
+  },
+  "story": {
+    "eyebrow": "Built on fire",
+    "title": "Made to share",
+    "description": "Ember & Bun began with a late-night grill, a borrowed prep table, and a promise to make every burger worth the mess. We still grind our brisket daily and toast every bun to order.",
+    "buttonLabel": "Read our story",
+    "buttonHref": "#gallery",
+    "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1400&q=88",
+    "imageAlt": "Chef cooking over a bright open grill",
+    "secondaryImage": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=88",
+    "secondaryImageAlt": "Warm dark restaurant dining room"
+  },
+  "gallery": {
+    "title": "From our grill",
+    "description": "Burgers, late nights, and the people who make the room feel alive.",
+    "images": [
+      { "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Cheeseburger close-up" },
+      { "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Fresh fries on a tray" },
+      { "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Burger held in two hands" },
+      { "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Busy restaurant dining room" }
+    ]
+  },
+  "reviews": {
+    "title": "People leave happy",
+    "items": [
+      { "quote": "The char on the patties is perfect. Every bite tastes deliberate.", "name": "Jordan Mercer", "detail": "Austin local" },
+      { "quote": "Fast enough for lunch, good enough to plan dinner around.", "name": "Taylor Reed", "detail": "Regular guest" },
+      { "quote": "That house sauce and the crispy onion hay are a dangerous combination.", "name": "Mina Alvarez", "detail": "Weekend visitor" }
+    ]
+  },
+  "contact": {
+    "title": "Skip the line. Meet us at the fire.",
+    "description": "Order ahead for pickup or pull up a chair. We save a few tables for walk-ins every night.",
+    "primaryLabel": "Order pickup",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "Get directions",
+    "secondaryHref": "https://maps.google.com",
+    "hours": [
+      { "day": "Mon-Thu", "time": "11 AM-10 PM" },
+      { "day": "Friday", "time": "11 AM-11 PM" },
+      { "day": "Saturday", "time": "12 PM-11 PM" },
+      { "day": "Sunday", "time": "12 PM-9 PM" }
+    ]
+  },
+  "social": {
+    "instagram": "Instagram", "instagramHref": "https://instagram.com", "facebook": "Facebook", "facebookHref": "https://facebook.com", "tiktok": "TikTok", "tiktokHref": "https://tiktok.com"
+  },
+  "footer": { "note": "Fire-grilled burgers made with brisket, sharp edges, and generous hospitality.", "copyright": "© 2026 Ember & Bun. All rights reserved." }
+}

@@ -1,0 +1,198 @@
+{
+  "colors": {
+    "primary": "#147D75",
+    "background": "#FCFEFD",
+    "text": "#173337"
+  },
+  "brand": {
+    "name": "Linden & Tide Cleaning",
+    "tagline": "Thoughtful care for every space",
+    "logo": "",
+    "phone": "+1 312 555 0148",
+    "email": "hello@lindenandtide.com",
+    "address": "418 North Linden Avenue, Chicago, IL 60610",
+    "notice": "Appointments available Monday through Saturday",
+    "noticeHref": "#contact"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Results", "href": "#results" },
+      { "label": "How it works", "href": "#process" },
+      { "label": "Plans", "href": "#packages" },
+      { "label": "Reviews", "href": "#reviews" }
+    ],
+    "ctaLabel": "Get a free quote",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Residential and commercial cleaning",
+    "title": "Cleaner spaces. Clearer days.",
+    "description": "Vetted professionals, careful checklists, and flexible visits built around the way you live and work.",
+    "primaryLabel": "Get a free quote",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Explore services",
+    "secondaryHref": "#services",
+    "image": "/templates/assets/linden-tide-hero.webp",
+    "imageAlt": "Professional cleaner wiping a marble island in a bright modern kitchen"
+  },
+  "trust": {
+    "items": [
+      { "title": "Fully insured", "description": "Coverage for every visit and every team member." },
+      { "title": "Carefully vetted", "description": "Background-checked cleaners trained to our standards." },
+      { "title": "Satisfaction promise", "description": "Tell us within 24 hours and we will make it right." },
+      { "title": "Flexible scheduling", "description": "One-time, weekly, biweekly, or custom service plans." }
+    ]
+  },
+  "services": {
+    "title": "The right clean for every room",
+    "description": "From regular home care to detailed workplace resets, each service follows a clear scope and quality checklist.",
+    "items": [
+      {
+        "name": "Residential cleaning",
+        "description": "Reliable whole-home care for kitchens, bathrooms, bedrooms, and shared spaces.",
+        "image": "/templates/assets/linden-tide-hero.webp",
+        "imageAlt": "Cleaner working in a bright residential kitchen"
+      },
+      {
+        "name": "Office cleaning",
+        "description": "Discreet daytime or evening cleaning for offices, studios, and shared workspaces.",
+        "image": "/templates/assets/linden-tide-office.webp",
+        "imageAlt": "Professional team cleaning a contemporary office"
+      },
+      {
+        "name": "Deep cleaning",
+        "description": "Detailed attention for buildup, overlooked corners, fixtures, baseboards, and high-touch surfaces.",
+        "image": "",
+        "imageAlt": "Detailed deep cleaning service"
+      },
+      {
+        "name": "Move-in and move-out",
+        "description": "An empty-space reset that helps handovers, deposits, and new beginnings go smoothly.",
+        "image": "",
+        "imageAlt": "Move-in cleaning service"
+      },
+      {
+        "name": "Recurring care",
+        "description": "A consistent team, familiar priorities, and a schedule that keeps your space comfortably maintained.",
+        "image": "",
+        "imageAlt": "Recurring home cleaning service"
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "See the difference",
+    "title": "A reset you can feel",
+    "description": "Move the handle to compare the same kitchen before and after a Linden & Tide deep clean.",
+    "beforeImage": "/templates/assets/linden-tide-before.webp",
+    "beforeAlt": "Modern kitchen before professional deep cleaning",
+    "beforeLabel": "Before",
+    "afterImage": "/templates/assets/linden-tide-after.webp",
+    "afterAlt": "The same modern kitchen after professional deep cleaning",
+    "afterLabel": "After",
+    "controlLabel": "Compare the kitchen before and after cleaning"
+  },
+  "process": {
+    "title": "Simple from quote to clean",
+    "description": "Clear communication and a familiar routine make professional cleaning easy to keep on your calendar.",
+    "image": "/templates/assets/linden-tide-office.webp",
+    "imageAlt": "Cleaning professionals caring for a bright modern office",
+    "steps": [
+      { "title": "Tell us about your space", "description": "Share the size, priorities, preferred timing, and any special instructions." },
+      { "title": "Approve your plan", "description": "We confirm scope, transparent pricing, arrival details, and your cleaning team." },
+      { "title": "We clean with care", "description": "Your team follows a room-by-room checklist and respects your belongings." },
+      { "title": "Review the result", "description": "A final quality check closes each visit, with simple follow-up if needed." }
+    ]
+  },
+  "packages": {
+    "title": "Straightforward service plans",
+    "description": "Choose a starting point, then personalize frequency, rooms, and add-ons during your quote.",
+    "items": [
+      {
+        "name": "Signature recurring clean",
+        "description": "A dependable maintenance visit for homes that deserve consistent care.",
+        "price": "From $138",
+        "note": "Per visit, based on home size",
+        "buttonLabel": "Request a quote",
+        "buttonHref": "#contact",
+        "features": ["Kitchen and bathrooms", "Bedrooms and living areas", "Floors and high-touch surfaces", "Weekly or biweekly scheduling"]
+      },
+      {
+        "name": "One-time deep clean",
+        "description": "A detailed reset before guests, seasons, celebrations, or a fresh start.",
+        "price": "From $248",
+        "note": "Customized after a quick consultation",
+        "buttonLabel": "Plan a deep clean",
+        "buttonHref": "#contact",
+        "features": ["Expanded detail checklist", "Fixtures and baseboards", "Buildup-focused care", "Optional inside appliances"]
+      },
+      {
+        "name": "Workplace care",
+        "description": "Flexible cleaning for small offices, studios, clinics, and customer-facing spaces.",
+        "price": "Custom plan",
+        "note": "Daytime and evening options",
+        "buttonLabel": "Discuss your office",
+        "buttonHref": "#contact",
+        "features": ["Shared spaces and desks", "Restrooms and kitchens", "Waste and recycling", "Flexible access planning"]
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "12 years", "label": "Serving Chicago homes and workplaces" },
+      { "value": "4.9 stars", "label": "Average customer review" },
+      { "value": "24 hr", "label": "Satisfaction follow-up window" },
+      { "value": "6 days", "label": "Weekly appointment availability" }
+    ]
+  },
+  "gallery": {
+    "title": "Fresh spaces, carefully finished",
+    "description": "A closer look at the homes, offices, and details our teams care for each week.",
+    "images": [
+      { "image": "/templates/assets/linden-tide-hero.webp", "imageAlt": "Cleaner finishing a marble kitchen island", "caption": "Residential kitchen care" },
+      { "image": "/templates/assets/linden-tide-office.webp", "imageAlt": "Team cleaning a glass-walled office", "caption": "Evening workplace service" },
+      { "image": "/templates/assets/linden-tide-after.webp", "imageAlt": "Spotless bright kitchen after cleaning", "caption": "Deep-clean finish" },
+      { "image": "/templates/assets/linden-tide-before.webp", "imageAlt": "Kitchen prepared for a detailed reset", "caption": "Every visit starts with a plan" }
+    ]
+  },
+  "testimonials": {
+    "title": "Trusted with the spaces that matter",
+    "description": "Clients value the consistency, care, and calm our teams bring to every appointment.",
+    "items": [
+      { "quote": "The same thoughtful team arrives every other week, notices the details, and leaves the house genuinely calm.", "name": "Marisol Bennett", "detail": "Lincoln Park homeowner" },
+      { "quote": "Our studio is ready for clients every morning, with no disruption to the team.", "name": "Devon Park", "detail": "Creative director, West Loop" },
+      { "quote": "The move-out clean was thorough, clearly scoped, and finished exactly when promised.", "name": "Anika Foster", "detail": "Property manager" }
+    ]
+  },
+  "areas": {
+    "title": "Local teams across Chicago",
+    "description": "We schedule residential and commercial cleaning throughout the city and nearby neighborhoods.",
+    "items": ["Lincoln Park", "Lakeview", "West Loop", "Wicker Park", "Gold Coast", "River North", "Bucktown", "Old Town", "Logan Square"]
+  },
+  "contact": {
+    "eyebrow": "A cleaner week starts here",
+    "title": "Tell us what needs care",
+    "description": "Share a few details about your space and preferred timing. We will reply with a clear, no-pressure quote.",
+    "primaryLabel": "Get a free quote",
+    "primaryHref": "mailto:hello@lindenandtide.com?subject=Free%20cleaning%20quote",
+    "secondaryLabel": "Call our team",
+    "secondaryHref": "tel:+13125550148",
+    "hours": [
+      { "day": "Monday-Friday", "time": "7 AM-7 PM" },
+      { "day": "Saturday", "time": "8 AM-4 PM" },
+      { "day": "Sunday", "time": "Closed" }
+    ]
+  },
+  "social": {
+    "instagram": "Linden and Tide on Instagram",
+    "instagramHref": "https://instagram.com",
+    "facebook": "Linden and Tide on Facebook",
+    "facebookHref": "https://facebook.com",
+    "linkedin": "Linden and Tide on LinkedIn",
+    "linkedinHref": "https://linkedin.com"
+  },
+  "footer": {
+    "note": "Considerate cleaning for homes, offices, and the people who use them.",
+    "copyright": "© 2026 Linden & Tide Cleaning. All rights reserved."
+  }
+}

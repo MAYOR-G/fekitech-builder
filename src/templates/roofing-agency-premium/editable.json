@@ -1,0 +1,219 @@
+{
+  "colors": {
+    "primary": "#315E72",
+    "background": "#FBFCFD",
+    "text": "#182A33"
+  },
+  "brand": {
+    "name": "Northline Roofworks",
+    "tagline": "Built carefully. Backed clearly.",
+    "logo": "",
+    "phone": "+1 615 555 0192",
+    "email": "inspections@northlineroofworks.com",
+    "address": "860 Meridian Pike, Nashville, TN 37209",
+    "notice": "24-hour storm response available",
+    "noticeHref": "tel:+16155550192"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "#results" },
+      { "label": "Our process", "href": "#process" },
+      { "label": "Roof systems", "href": "#packages" },
+      { "label": "Reviews", "href": "#reviews" }
+    ],
+    "ctaLabel": "Request an inspection",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Residential and commercial roofing",
+    "title": "Built to protect. Made to last.",
+    "description": "Clear inspections, disciplined crews, and roofing systems installed for long-term protection.",
+    "primaryLabel": "Request an inspection",
+    "primaryHref": "#contact",
+    "secondaryLabel": "See completed work",
+    "secondaryHref": "#gallery",
+    "image": "/templates/assets/northline-hero.webp",
+    "imageAlt": "Safety-equipped roofing specialist inspecting a new charcoal roof"
+  },
+  "trust": {
+    "items": [
+      { "title": "Licensed and insured", "description": "Documented coverage and qualified crews on every project." },
+      { "title": "Certified installers", "description": "Manufacturer-trained teams for leading roofing systems." },
+      { "title": "Written warranties", "description": "Clear workmanship and material coverage before work begins." },
+      { "title": "Safety-led sites", "description": "Daily planning, fall protection, and tidy property care." }
+    ]
+  },
+  "services": {
+    "title": "Roofing work, handled precisely",
+    "description": "We inspect carefully, explain the evidence, and recommend the repair or system your property actually needs.",
+    "items": [
+      {
+        "name": "Residential roofing",
+        "description": "Complete roof systems designed around your home, climate, and long-term plans.",
+        "image": "/templates/assets/northline-hero.webp",
+        "imageAlt": "New charcoal architectural-shingle roof on a white home"
+      },
+      {
+        "name": "Commercial roofing",
+        "description": "Planned installation and maintenance for low-slope and commercial properties.",
+        "image": "/templates/assets/northline-crew.webp",
+        "imageAlt": "Professional roofing crew installing a roof system"
+      },
+      {
+        "name": "Roof repairs",
+        "description": "Targeted repairs for leaks, flashing, wind damage, penetrations, and worn sections.",
+        "image": "",
+        "imageAlt": "Roof repair service"
+      },
+      {
+        "name": "Roof inspections",
+        "description": "Photo-documented assessments for homeowners, buyers, sellers, and facility teams.",
+        "image": "",
+        "imageAlt": "Detailed roof inspection"
+      },
+      {
+        "name": "Roof replacements",
+        "description": "Organized tear-off, deck review, system installation, cleanup, and final walkthrough.",
+        "image": "",
+        "imageAlt": "Complete roof replacement"
+      },
+      {
+        "name": "Gutters and drainage",
+        "description": "Properly sized gutters, guards, downspouts, and drainage details that protect the building envelope.",
+        "image": "",
+        "imageAlt": "Gutter and drainage installation"
+      },
+      {
+        "name": "Emergency storm service",
+        "description": "Rapid assessment, temporary protection, repair planning, and insurance-ready documentation after severe weather.",
+        "image": "",
+        "imageAlt": "Emergency storm roof service"
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "Project transformation",
+    "title": "Same home. Renewed protection.",
+    "description": "Drag the handle to compare a weathered roof with the completed Northline architectural-shingle system.",
+    "beforeImage": "/templates/assets/northline-before.webp",
+    "beforeAlt": "White craftsman home with a weathered roof before replacement",
+    "beforeLabel": "Before",
+    "afterImage": "/templates/assets/northline-after.webp",
+    "afterAlt": "The same white craftsman home with a new charcoal roof",
+    "afterLabel": "After",
+    "controlLabel": "Compare the roof before and after replacement"
+  },
+  "process": {
+    "title": "From inspection to final walkthrough",
+    "description": "A disciplined process keeps recommendations, scheduling, site safety, and warranties clear from the start.",
+    "image": "/templates/assets/northline-crew.webp",
+    "imageAlt": "Safety-equipped Northline roofing crew installing charcoal shingles",
+    "steps": [
+      { "title": "Inspect and document", "description": "We review roof planes, penetrations, flashing, ventilation, decking clues, and drainage." },
+      { "title": "Explain the options", "description": "You receive photos, priorities, system choices, pricing, and warranty details in writing." },
+      { "title": "Build and protect", "description": "The crew protects the property, installs to specification, and keeps the site organized." },
+      { "title": "Verify and stand behind it", "description": "A final inspection, cleanup review, and warranty handoff close the project properly." }
+    ]
+  },
+  "packages": {
+    "title": "Roof systems chosen for the property",
+    "description": "We help compare appearance, durability, ventilation, maintenance, and warranty before you select a system.",
+    "items": [
+      {
+        "name": "Architectural shingles",
+        "description": "Dimensional profiles, dependable weather protection, and broad color options for residential properties.",
+        "price": "Everyday performance",
+        "note": "Strong value for most homes",
+        "buttonLabel": "Compare shingle options",
+        "buttonHref": "#contact",
+        "features": ["Dimensional appearance", "Wind-rated options", "Coordinated ridge caps", "Manufacturer warranties"]
+      },
+      {
+        "name": "Standing-seam metal",
+        "description": "A refined long-life system with concealed fasteners and crisp architectural lines.",
+        "price": "Long-life system",
+        "note": "Low maintenance and highly durable",
+        "buttonLabel": "Explore metal roofing",
+        "buttonHref": "#contact",
+        "features": ["Concealed fasteners", "Reflective finish options", "Custom trim details", "Long service life"]
+      },
+      {
+        "name": "Low-slope membrane",
+        "description": "Commercial-grade assemblies planned for drainage, penetrations, insulation, and service access.",
+        "price": "Commercial ready",
+        "note": "Configured to each roof plan",
+        "buttonLabel": "Discuss a commercial roof",
+        "buttonHref": "#contact",
+        "features": ["TPO and membrane options", "Drainage planning", "Insulation coordination", "Maintenance documentation"]
+      },
+      {
+        "name": "Specialty roof details",
+        "description": "Copper accents, custom flashing, gutters, and ventilation details that complete the system.",
+        "price": "Made to fit",
+        "note": "Quoted with your selected system",
+        "buttonLabel": "Plan the details",
+        "buttonHref": "#contact",
+        "features": ["Custom flashing", "Copper accent options", "Ventilation review", "Gutter coordination"]
+      }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "24 years", "label": "Local roofing experience" },
+      { "value": "1,800+", "label": "Completed repair and replacement projects" },
+      { "value": "Up to 50 yr", "label": "Available material warranty coverage" },
+      { "value": "24 hr", "label": "Storm-response availability" }
+    ]
+  },
+  "gallery": {
+    "title": "Work that holds up close",
+    "description": "Completed systems, careful details, and organized crews across residential and commercial projects.",
+    "images": [
+      { "image": "/templates/assets/northline-hero.webp", "imageAlt": "Roofing specialist checking flashing on a completed roof", "caption": "Final flashing inspection" },
+      { "image": "/templates/assets/northline-after.webp", "imageAlt": "White craftsman home with a new charcoal roof", "caption": "Architectural-shingle replacement" },
+      { "image": "/templates/assets/northline-crew.webp", "imageAlt": "Roofing crew installing a new system", "caption": "Protected and organized installation" },
+      { "image": "/templates/assets/northline-before.webp", "imageAlt": "Weathered roof documented before replacement", "caption": "Photo-documented inspection" }
+    ]
+  },
+  "testimonials": {
+    "title": "Clear answers earn lasting trust",
+    "description": "Property owners appreciate direct recommendations, respectful crews, and documentation they can keep.",
+    "items": [
+      { "quote": "Northline showed us the problem in photos, explained the repair and replacement paths, and never pushed the larger job.", "name": "Caleb Monroe", "detail": "Homeowner, Belle Meade" },
+      { "quote": "The crew protected the landscaping, communicated daily, and left the property remarkably clean.", "name": "Priya Raman", "detail": "Homeowner, Green Hills" },
+      { "quote": "Our inspection report was detailed enough for budgeting and simple enough to present to the board.", "name": "Elliot Vaughn", "detail": "Facilities director" }
+    ]
+  },
+  "areas": {
+    "title": "Serving greater Nashville",
+    "description": "Inspection, repair, replacement, gutter, and storm-response crews work across Davidson and nearby counties.",
+    "items": ["Nashville", "Belle Meade", "Brentwood", "Franklin", "Green Hills", "Hendersonville", "Mount Juliet", "Murfreesboro", "Spring Hill"]
+  },
+  "contact": {
+    "eyebrow": "Start with a clear inspection",
+    "title": "Know what your roof needs",
+    "description": "Schedule a no-pressure inspection and receive photos, findings, practical options, and a written estimate.",
+    "primaryLabel": "Request an inspection",
+    "primaryHref": "mailto:inspections@northlineroofworks.com?subject=Roof%20inspection%20request",
+    "secondaryLabel": "Call Northline",
+    "secondaryHref": "tel:+16155550192",
+    "hours": [
+      { "day": "Monday-Friday", "time": "7 AM-6 PM" },
+      { "day": "Saturday", "time": "8 AM-2 PM" },
+      { "day": "Storm response", "time": "24 hours" }
+    ]
+  },
+  "social": {
+    "instagram": "Northline Roofworks on Instagram",
+    "instagramHref": "https://instagram.com",
+    "facebook": "Northline Roofworks on Facebook",
+    "facebookHref": "https://facebook.com",
+    "linkedin": "Northline Roofworks on LinkedIn",
+    "linkedinHref": "https://linkedin.com"
+  },
+  "footer": {
+    "note": "Documented roofing work for homes, businesses, and long-term property protection.",
+    "copyright": "© 2026 Northline Roofworks. All rights reserved."
+  }
+}

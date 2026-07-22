@@ -1,0 +1,123 @@
+{
+  "brand": {
+    "name": "Sunny Stack",
+    "tagline": "Big flavor, bright days, and burgers made fresh to order.",
+    "phone": "+1 323 555 0147",
+    "email": "hello@sunnystack.com",
+    "address": "123 Sunshine Way, Brightville, CA 90210"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Our story", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Locations", "href": "#contact" }
+    ],
+    "ctaLabel": "Start your order",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Classic American flavor since day one",
+    "title": "Big flavor. Bright days.",
+    "description": "Juicy burgers, crisp ingredients, and good vibes made fresh for every table.",
+    "primaryLabel": "Start your order",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Explore menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/sunny-stack-hero-v2.webp",
+    "imageAlt": "Sunny Stack double cheeseburger with crisp vegetables and house sauce",
+    "badgeValue": "DAILY",
+    "badgeLabel": "made bright"
+  },
+  "marquee": { "items": ["Good ingredients", "Good people", "Good burgers", "Made fresh"] },
+  "signature": {
+    "eyebrow": "Always something sunny",
+    "title": "The Sunshine Double",
+    "description": "Two seared beef patties, American cheese, shredded lettuce, tomato, pickles, red onion, and our tangy sunshine sauce.",
+    "price": "$12.50",
+    "buttonLabel": "Build your order",
+    "buttonHref": "#contact",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1600&q=90",
+    "imageAlt": "Classic double cheeseburger on a bright table"
+  },
+  "dishes": {
+    "title": "Fan favorites",
+    "description": "The classics you love, sunny sides, and hand-spun shakes made your way.",
+    "buttonLabel": "View full menu",
+    "buttonHref": "#menu",
+    "items": [
+      { "name": "Sunshine Double", "description": "Double beef, American cheese, sunshine sauce.", "price": "$12.50", "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Double cheeseburger with tomato and lettuce" },
+      { "name": "Bacon and Green", "description": "Beef, bacon, avocado, crisp lettuce.", "price": "$11.90", "image": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Bacon burger with fresh greens" },
+      { "name": "Sunny Seasoned Fries", "description": "Skin-on fries with house seasoning.", "price": "$3.90", "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Golden skin-on french fries" },
+      { "name": "Cookie Cloud Shake", "description": "Chocolate cookie, vanilla custard, soft cream.", "price": "$5.60", "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Chocolate cookie milkshake" }
+    ]
+  },
+  "menu": {
+    "title": "Made for your mood",
+    "description": "Pick a favorite, swap the toppings, and make lunch exactly what you want.",
+    "categories": [
+      { "name": "Burgers", "items": [
+        { "name": "Sunshine Double", "description": "Double beef, cheese, vegetables, sunshine sauce.", "price": "$12.50" },
+        { "name": "Bacon and Green", "description": "Bacon, avocado, lettuce, green goddess sauce.", "price": "$11.90" },
+        { "name": "Crispy Chicken Delight", "description": "Crispy chicken, slaw, pickles, honey mustard.", "price": "$10.80" }
+      ] },
+      { "name": "Sides", "items": [
+        { "name": "Sunny Seasoned Fries", "description": "Skin-on fries and sunshine salt.", "price": "$3.90" },
+        { "name": "Golden Onion Rings", "description": "Crisp onions with ranch dip.", "price": "$4.60" },
+        { "name": "Little Garden Salad", "description": "Greens, tomato, cucumber, lemon dressing.", "price": "$5.20" }
+      ] },
+      { "name": "Shakes and sips", "items": [
+        { "name": "Cookie Cloud Shake", "description": "Chocolate cookie and vanilla custard.", "price": "$5.60" },
+        { "name": "Fresh Squeezed Lemonade", "description": "Lemon, cane sugar, sparkling water.", "price": "$3.80" },
+        { "name": "Strawberry Daydream", "description": "Strawberry custard, berry swirl.", "price": "$5.40" }
+      ] }
+    ]
+  },
+  "story": {
+    "eyebrow": "Our neighborhood story",
+    "title": "Burgers bring us together",
+    "description": "Sunny Stack started with a simple idea: good ingredients, big flavor, and a place where everyone feels welcome. From our kitchen to your table, we are here for the bright moments.",
+    "buttonLabel": "Learn about us",
+    "buttonHref": "#gallery",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=88",
+    "imageAlt": "Bright modern neighborhood restaurant interior",
+    "secondaryImage": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=88",
+    "secondaryImageAlt": "Friends sharing food at a restaurant table"
+  },
+  "gallery": {
+    "title": "A little sunshine",
+    "description": "Colorful plates, casual tables, and moments made for sharing.",
+    "images": [
+      { "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Fresh cheeseburger with vegetables" },
+      { "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Crispy fries in daylight" },
+      { "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Guest holding a fresh burger" },
+      { "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Bright cafe interior with large windows" }
+    ]
+  },
+  "reviews": {
+    "title": "Good days, great reviews",
+    "items": [
+      { "quote": "Everything is fresh and flavorful. The Sunshine Double lives up to its name.", "name": "Jessica Mora", "detail": "Neighborhood regular" },
+      { "quote": "My kids loved it, I loved it, and the whole place feels genuinely cheerful.", "name": "Elliot Brooks", "detail": "Family lunch" },
+      { "quote": "The crispy chicken and lemonade might be my new perfect lunch order.", "name": "Nina Patel", "detail": "First-time guest" }
+    ]
+  },
+  "contact": {
+    "title": "Come hungry. Leave happy.",
+    "description": "Order online, grab a sunny table, or call ahead for group lunches and easy catering.",
+    "primaryLabel": "Start your order",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "Get directions",
+    "secondaryHref": "https://maps.google.com",
+    "hours": [
+      { "day": "Mon-Thu", "time": "11 AM-9 PM" },
+      { "day": "Friday", "time": "11 AM-10 PM" },
+      { "day": "Saturday", "time": "10 AM-10 PM" },
+      { "day": "Sunday", "time": "10 AM-8 PM" }
+    ]
+  },
+  "social": {
+    "instagram": "Instagram", "instagramHref": "https://instagram.com", "facebook": "Facebook", "facebookHref": "https://facebook.com", "tiktok": "TikTok", "tiktokHref": "https://tiktok.com"
+  },
+  "footer": { "note": "Fresh burgers, sunny sides, and friendly tables for the whole neighborhood.", "copyright": "© 2026 Sunny Stack. All rights reserved." }
+}

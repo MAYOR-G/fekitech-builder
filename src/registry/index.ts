@@ -16,6 +16,18 @@ import electricianConfig from "../templates/electrician-website/config.json";
 import electricianEditable from "../templates/electrician-website/editable.json";
 import gymConfig from "../templates/gym-website/config.json";
 import gymEditable from "../templates/gym-website/editable.json";
+import burgerDarkConfig from "../templates/burger-dark-premium/config.json";
+import burgerDarkEditable from "../templates/burger-dark-premium/editable.json";
+import burgerLightConfig from "../templates/burger-light-clean/config.json";
+import burgerLightEditable from "../templates/burger-light-clean/editable.json";
+import pizzaDarkConfig from "../templates/pizza-dark-premium/config.json";
+import pizzaDarkEditable from "../templates/pizza-dark-premium/editable.json";
+import pizzaLightConfig from "../templates/pizza-light-clean/config.json";
+import pizzaLightEditable from "../templates/pizza-light-clean/editable.json";
+import cleaningAgencyConfig from "../templates/cleaning-agency-premium/config.json";
+import cleaningAgencyEditable from "../templates/cleaning-agency-premium/editable.json";
+import roofingAgencyConfig from "../templates/roofing-agency-premium/config.json";
+import roofingAgencyEditable from "../templates/roofing-agency-premium/editable.json";
 import inkConfig from "../templates/ink-and-iron/config.json";
 import inkEditable from "../templates/ink-and-iron/editable.json";
 import premiumCoffeeConfig from "../templates/premium-coffee-website/config.json";
@@ -47,6 +59,12 @@ const components = {
   "dentist-website": dynamic<{ data: TemplateData }>(() => import("../templates/dentist-website/template")),
   "electrician-website": dynamic<{ data: TemplateData }>(() => import("../templates/electrician-website/template")),
   "gym-website": dynamic<{ data: TemplateData }>(() => import("../templates/gym-website/template")),
+  "burger-dark-premium": dynamic<{ data: TemplateData }>(() => import("../templates/burger-dark-premium/template")),
+  "burger-light-clean": dynamic<{ data: TemplateData }>(() => import("../templates/burger-light-clean/template")),
+  "pizza-dark-premium": dynamic<{ data: TemplateData }>(() => import("../templates/pizza-dark-premium/template")),
+  "pizza-light-clean": dynamic<{ data: TemplateData }>(() => import("../templates/pizza-light-clean/template")),
+  "cleaning-agency-premium": dynamic<{ data: TemplateData }>(() => import("../templates/cleaning-agency-premium/template")),
+  "roofing-agency-premium": dynamic<{ data: TemplateData }>(() => import("../templates/roofing-agency-premium/template")),
   "ink-and-iron": dynamic<{ data: TemplateData }>(() => import("../templates/ink-and-iron/template")),
   "premium-coffee-website": dynamic<{ data: TemplateData }>(() => import("../templates/premium-coffee-website/template")),
   "restaurant-website": dynamic<{ data: TemplateData }>(() => import("../templates/restaurant-website/template")),
@@ -58,6 +76,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "barber-website": { config: barberConfig, component: components["barber-website"], defaultData: normalizeData(barberEditable) },
   "premium-coffee-website": { config: premiumCoffeeConfig, component: components["premium-coffee-website"], defaultData: normalizeData(premiumCoffeeEditable) },
   "gym-website": { config: gymConfig, component: components["gym-website"], defaultData: normalizeData(gymEditable) },
+  "burger-dark-premium": { config: burgerDarkConfig, component: components["burger-dark-premium"], defaultData: normalizeData(burgerDarkEditable) },
+  "burger-light-clean": { config: burgerLightConfig, component: components["burger-light-clean"], defaultData: normalizeData(burgerLightEditable) },
+  "pizza-dark-premium": { config: pizzaDarkConfig, component: components["pizza-dark-premium"], defaultData: normalizeData(pizzaDarkEditable) },
+  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
+  "cleaning-agency-premium": { config: cleaningAgencyConfig, component: components["cleaning-agency-premium"], defaultData: normalizeData(cleaningAgencyEditable) },
+  "roofing-agency-premium": { config: roofingAgencyConfig, component: components["roofing-agency-premium"], defaultData: normalizeData(roofingAgencyEditable) },
   "second-furniture-website": { config: secondFurnitureConfig, component: components["second-furniture-website"], defaultData: normalizeData(secondFurnitureEditable) },
   "cake-website": { config: cakeConfig, component: components["cake-website"], defaultData: normalizeData(cakeEditable) },
   "catering-website": { config: cateringConfig, component: components["catering-website"], defaultData: normalizeData(cateringEditable) },
