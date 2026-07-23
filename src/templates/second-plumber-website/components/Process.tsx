@@ -3,6 +3,7 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import type { MotionValue } from 'motion/react';
+import { useMeasuredPinnedSequence } from '@/lib/pinned-scroll';
 
 const steps = [
   {
@@ -33,7 +34,17 @@ const steps = [
 
 type ProcessStepData = (typeof steps)[number];
 
-const ProcessStep = ({ step, i, progress }: { step: ProcessStepData, i: number, progress: MotionValue<number> }) => {
+const ProcessStep = ({
+  step,
+  i,
+  progress,
+  reducedMotion,
+}: {
+  step: ProcessStepData;
+  i: number;
+  progress: MotionValue<number>;
+  reducedMotion: boolean;
+}) => {
   const isFirst = i === 0;
   // 4 steps = 3 transitions. phase = 0.333. slideDuration = 0.15.
   const phase = 1 / 3;
@@ -66,8 +77,12 @@ const ProcessStep = ({ step, i, progress }: { step: ProcessStepData, i: number, 
 
   return (
     <motion.div 
-      style={{ y, opacity, scale }}
-      className="absolute inset-0 bg-[#FAFAF8] rounded-2xl overflow-hidden shadow-2xl border border-plumber-charcoal/5 origin-top"
+      style={reducedMotion ? undefined : { y, opacity, scale }}
+      className={`inset-0 origin-top overflow-hidden rounded-2xl bg-[#FAFAF8] ${
+        reducedMotion
+          ? "relative min-h-[32rem] shadow-xl"
+          : "absolute border border-plumber-charcoal/5 shadow-2xl"
+      }`}
     >
       <div className="absolute -right-4 -top-10 font-mono text-[180px] md:text-[240px] font-bold text-plumber-copper/10 leading-none pointer-events-none select-none z-0">
         {step.num}
@@ -94,10 +109,24 @@ const Process = () => {
     target: containerRef,
     offset: ["start start", "end end"]
   });
+  const { sectionHeight, reducedMotion } = useMeasuredPinnedSequence({
+    sectionRef: containerRef,
+    steps: steps.length,
+  });
 
   return (
-    <section ref={containerRef} className="bg-plumber-charcoal relative h-[400vh]">
-      <div className="sticky top-0 h-screen flex flex-col lg:flex-row items-center overflow-hidden">
+    <section
+      ref={containerRef}
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-plumber-charcoal ${reducedMotion ? "py-20" : "min-h-svh"}`}
+    >
+      <div
+        className={
+          reducedMotion
+            ? "relative flex flex-col items-start lg:flex-row"
+            : "sticky top-0 flex h-svh flex-col items-center overflow-hidden lg:flex-row"
+        }
+      >
         
         {/* Left fixed content */}
         <div className="w-full lg:w-1/3 p-8 lg:p-20 text-white z-20">
@@ -106,9 +135,19 @@ const Process = () => {
         </div>
 
         {/* Right scrolling cards */}
-        <div className="w-full lg:w-2/3 h-[60vh] lg:h-[80vh] relative px-4 lg:px-20 z-10 perspective-1000">
+        <div
+          className={`relative z-10 w-full px-4 perspective-1000 lg:w-2/3 lg:px-20 ${
+            reducedMotion ? "grid h-auto gap-6 pb-8" : "h-[60vh] lg:h-[80vh]"
+          }`}
+        >
           {steps.map((step, i) => (
-            <ProcessStep key={i} step={step} i={i} progress={scrollYProgress} />
+            <ProcessStep
+              key={i}
+              step={step}
+              i={i}
+              progress={scrollYProgress}
+              reducedMotion={reducedMotion}
+            />
           ))}
         </div>
 

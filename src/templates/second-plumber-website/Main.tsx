@@ -10,7 +10,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="bg-plumber-bg min-h-screen text-plumber-text font-sans overflow-x-clip selection:bg-plumber-copper selection:text-white">
+    <div className="bg-plumber-bg min-h-screen text-plumber-text font-sans selection:bg-plumber-copper selection:text-white">
       <Navbar />
       <Hero />
       <Services />

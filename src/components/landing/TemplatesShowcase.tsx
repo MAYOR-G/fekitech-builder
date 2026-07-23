@@ -1,112 +1,149 @@
 "use client";
+
 import { motion } from "motion/react";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { getAllTemplates } from "@/registry";
 import { TemplateImage } from "@/components/templates/TemplateImage";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 const featuredTemplateIds = [
+  "burger-dark-premium",
+  "pizza-light-clean",
+  "cake-bakery-premium",
+  "pastries-snacks-premium",
   "gym-website",
-  "barber-website",
   "premium-coffee-website",
+  "plumbing-company-premium",
   "second-furniture-website",
 ] as const;
 
 export default function TemplatesShowcase() {
+  const [creatingId, setCreatingId] = useState<string | null>(null);
+  const [message, setMessage] = useState("");
   const templates = useMemo(() => {
     const templateCatalog = getAllTemplates();
 
     return featuredTemplateIds.flatMap((templateId) => {
       const template = templateCatalog.find((item) => item.id === templateId);
-
-      return template
-        ? [
-          {
-            id: template.id,
-            name: template.name,
-            image: template.image,
-          },
-        ]
-        : [];
+      return template ? [template] : [];
     });
   }, []);
 
-  return (
-    <section className="relative overflow-hidden bg-ft-primary px-4 py-24 text-white sm:px-6 md:py-28">
-      <div className="absolute inset-0 opacity-[0.11] texture-wash" />
-      <div className="absolute -left-24 top-16 h-56 w-96 rounded-[999px] bg-white/25 blur-3xl pointer-events-none" />
+  const createFromTemplate = async (templateId: string) => {
+    setCreatingId(templateId);
+    setMessage("");
+    try {
+      const response = await fetch("/api/projects", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ templateId }),
+      });
+      const payload = (await response.json()) as {
+        project?: { id: string };
+        error?: string;
+      };
 
-      <div className="relative z-10 mx-auto max-w-[1880px]">
-        <div className="mx-auto mb-14 flex max-w-[1280px] flex-col justify-between gap-8 md:flex-row md:items-end">
+      if (response.status === 401) {
+        window.location.assign(`/login?redirect=${encodeURIComponent("/")}`);
+        return;
+      }
+      if (!response.ok || !payload.project) {
+        throw new Error(payload.error ?? "Unable to create the project.");
+      }
+      window.location.assign(`/editor/${payload.project.id}`);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Unable to create the project.");
+    } finally {
+      setCreatingId(null);
+    }
+  };
+
+  return (
+    <section className="relative overflow-hidden bg-white px-4 py-24 text-ft-ink sm:px-6 md:py-28">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-ft-border" />
+
+      <div className="relative z-10 mx-auto max-w-[1500px]">
+        <div className="mx-auto mb-12 flex max-w-[1280px] flex-col justify-between gap-7 md:mb-14 md:flex-row md:items-end">
           <div className="max-w-[800px]">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, ease }}
-              className="text-[clamp(38px,5vw,64px)] font-[800] leading-[1.05] tracking-[-0.01em] text-white mb-6 text-balance"
+              className="mb-5 text-balance text-[clamp(38px,5vw,64px)] font-[800] leading-[1.02] tracking-[-0.035em] text-ft-ink"
             >
-              Or start with a professionally designed template
+              It all starts with a professional design
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: 0.1, ease }}
-              className="text-xl text-white/80 leading-relaxed max-w-[660px]"
+              className="max-w-[660px] text-lg leading-relaxed text-ft-body"
             >
-              Browse {getAllTemplates().length} available starting points, preview each design, and check its plan before creating a project.
+              Choose a proven starting point, preview the complete site, and customize it for your business.
             </motion.p>
           </div>
-          <Link href="/templates" className="btn-ghost flex-shrink-0 whitespace-nowrap text-base px-8 py-3.5">
-            Get started
-          </Link>
-        </div>
-
-        {/* Template Cards */}
-        <div
-          aria-label="Featured website templates"
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {templates.map((tpl, i) => (
-            <motion.div
-              key={tpl.id}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, delay: i * 0.1, ease }}
-              className="group relative flex flex-col gap-4"
-            >
-              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-white/10 bg-ft-surface-cool shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-2xl">
-                <TemplateImage src={tpl.image} alt={`${tpl.name} template preview`} width={900} height={1200} sizes="(max-width: 639px) 84vw, (max-width: 1023px) 48vw, 25vw" className="relative z-10 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
-                
-                <div className="absolute inset-0 z-20 bg-ft-ink/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
-                
-                <div className="absolute bottom-4 left-4 right-4 z-30 flex translate-y-[150%] rounded-xl bg-white/95 p-2 shadow-xl backdrop-blur-md transition-transform duration-300 ease-out group-hover:translate-y-0">
-                  <Link href={`/preview/${tpl.id}`} className="flex-1 rounded-lg bg-ft-primary px-3 py-2.5 text-center text-sm font-semibold text-white shadow-md transition-all hover:bg-ft-primary-deep">
-                    Preview Template
-                  </Link>
-                </div>
-              </div>
-              
-              <div className="px-1">
-                <h3 className="text-base font-semibold text-white group-hover:text-white/90 transition-colors">{tpl.name}</h3>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Link */}
-        <div className="mt-14 text-center">
           <Link
             href="/templates"
-            className="text-white/78 font-semibold hover:text-white transition-colors inline-flex items-center gap-2 group/link"
+            className="inline-flex min-h-12 flex-shrink-0 items-center justify-center rounded-full border border-ft-border px-7 text-sm font-semibold text-ft-ink transition hover:border-ft-primary hover:text-ft-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/20"
           >
-            Browse all templates{" "}
-            <span className="group-hover/link:translate-x-1 transition-transform">→</span>
+            Browse all templates
           </Link>
         </div>
+
+        <div className="-mx-4 px-4 sm:-mx-6 sm:px-6 pb-12 pt-4">
+          <div
+            aria-label="Featured website templates"
+            className="grid grid-cols-1 gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            {templates.map((template, index) => (
+              <motion.article
+                key={template.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.45, delay: (index % 4) * 0.06, ease }}
+                className="group"
+              >
+                <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-ft-surface-cool shadow-[0_8px_20px_rgba(22,31,72,0.08)]">
+                  <TemplateImage
+                    src={template.image}
+                    alt={`${template.name} template preview`}
+                    width={1440}
+                    height={1000}
+                    sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+                    className="h-full w-full object-cover object-top transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.025]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-x-3 bottom-3 flex gap-2 rounded-lg bg-white p-2 shadow-md md:translate-y-[calc(100%+1rem)] md:transition-transform md:duration-300 md:group-hover:translate-y-0 md:group-focus-within:translate-y-0">
+                    <Link
+                      href={`/preview/${template.id}`}
+                      className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md border border-ft-border px-2 text-xs font-semibold text-ft-ink transition hover:border-ft-primary hover:text-ft-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/20"
+                    >
+                      Preview
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => void createFromTemplate(template.id)}
+                      disabled={creatingId === template.id}
+                      className="min-h-10 flex-1 rounded-md bg-ft-primary px-2 text-xs font-semibold text-white transition hover:bg-ft-primary-deep focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/25 disabled:cursor-wait disabled:opacity-50"
+                    >
+                      {creatingId === template.id ? "Creating…" : "Use template"}
+                    </button>
+                  </div>
+                </div>
+                <h3 className="mt-3 px-1 text-sm font-semibold text-ft-ink">{template.name}</h3>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+        {message ? (
+          <p role="status" className="mt-6 text-center text-sm font-medium text-ft-body">
+            {message}
+          </p>
+        ) : null}
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { ensureScrollTrigger, observeScrollTriggerLayout, prefersReducedScrollMotion } from "@/lib/gsap-scroll";
 
 export default function AboutSplit() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -12,7 +12,10 @@ export default function AboutSplit() {
   const textContainerRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    ensureScrollTrigger();
+    const container = containerRef.current;
+    if (!container) return;
+    if (prefersReducedScrollMotion()) return;
     
     const ctx = gsap.context(() => {
       // Image Parallax
@@ -65,8 +68,12 @@ export default function AboutSplit() {
         }
       );
     }, containerRef);
+    const cleanupMeasurements = observeScrollTriggerLayout(container);
 
-    return () => ctx.revert();
+    return () => {
+      cleanupMeasurements();
+      ctx.revert();
+    };
   }, []);
 
   return (

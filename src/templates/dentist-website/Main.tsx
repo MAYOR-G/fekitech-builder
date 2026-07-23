@@ -16,7 +16,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen overflow-hidden bg-clinic-wash font-body text-ink">
+    <div className="min-h-screen bg-clinic-wash font-body text-ink">
       <Navbar />
       <main>
         <Hero />

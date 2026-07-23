@@ -140,11 +140,11 @@ export type PremiumServiceData = {
   footer: { note: string; copyright: string };
 };
 
-type Variant = "cleaning" | "roofing";
+type Variant = "cleaning" | "roofing" | "plumbing";
 
 function Reveal({ children, className = "" }: { children: ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const element = ref.current;
@@ -192,7 +192,7 @@ function BrandMark({ data, variant }: { data: PremiumServiceData; variant: Varia
   }
   return (
     <span className="pst-logo-mark" aria-hidden="true">
-      {variant === "cleaning" ? <Sparkle size={25} weight="fill" /> : <HouseLine size={27} weight="duotone" />}
+      {variant === "cleaning" ? <Sparkle size={25} weight="fill" /> : variant === "plumbing" ? <Wrench size={27} weight="duotone" /> : <HouseLine size={27} weight="duotone" />}
     </span>
   );
 }
@@ -231,12 +231,13 @@ function BeforeAfter({ data }: { data: PremiumServiceData["comparison"] }) {
 
 const cleaningServiceIcons = [HouseLine, Buildings, Sparkle, Broom, CalendarCheck];
 const roofingServiceIcons = [HouseLine, Buildings, Wrench, ClipboardText, Hammer, Wrench, Warning];
+const plumbingServiceIcons = [Wrench, HouseLine, Buildings, Broom, ClipboardText, Hammer, Warning];
 const trustIcons = [ShieldCheck, UsersThree, CheckCircle, CalendarCheck];
 
 export default function PremiumServiceTemplate({ data, variant }: { data: PremiumServiceData; variant: Variant }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const isCleaning = variant === "cleaning";
-  const serviceIcons = isCleaning ? cleaningServiceIcons : roofingServiceIcons;
+  const serviceIcons = isCleaning ? cleaningServiceIcons : variant === "plumbing" ? plumbingServiceIcons : roofingServiceIcons;
   const themeStyle = {
     "--pst-accent": data.colors.primary,
     "--pst-background": data.colors.background,

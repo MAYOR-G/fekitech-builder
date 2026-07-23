@@ -20,7 +20,7 @@ function App() {
   const { brand, categories, features, galleryItems, processSteps, products, testimonials } = useTemplateData();
 
   return (
-    <div className="min-h-screen overflow-hidden bg-white text-ganache">
+    <div className="min-h-screen bg-white text-ganache">
       <Navbar />
       <main>
         <Hero />

@@ -22,7 +22,7 @@ export function Navbar() {
               {brand.name}
             </span>
             <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-sage sm:block">
-              Modern fire-led dining
+              Seasonal British dining
             </span>
           </span>
         </a>

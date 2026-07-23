@@ -40,14 +40,14 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label={brand.name}>
           <span className="grid h-11 w-11 place-items-center rounded-full bg-ganache font-display text-lg font-semibold text-cream shadow-card">
-            VC
+            SD
           </span>
           <span className="leading-none">
             <span className="block font-display text-xl font-semibold tracking-wide text-ganache">
               {brand.name}
             </span>
             <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.24em] text-cocoa/80 sm:block">
-              Cake atelier
+              Bristol cake studio
             </span>
           </span>
         </a>

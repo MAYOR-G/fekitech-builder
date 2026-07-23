@@ -1,10 +1,21 @@
 export const siteContent = {
+  brand: {
+    name: "Morning Brew Coffee",
+    tagline: "Independent coffee house in Manchester"
+  },
   hero: {
+    eyebrow: "Independent Manchester coffee house",
+    primaryLabel: "View the menu",
+    primaryHref: "#menu",
+    secondaryLabel: "Find our café",
+    secondaryHref: "#visit",
+    note: "Speciality coffee · fresh bakes",
     slides: [
       {
-        image: "/images/coffee_hero.png",
-        headline: "Coffee, Crafted With Care.",
-        subtext: "From carefully sourced beans to beautifully made cups, we create coffee experiences that feel warm, calm, and worth returning to."
+        image: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=85&w=1800&auto=format&fit=crop",
+        imageAlt: "Warm independent coffee house interior with a barista preparing coffee",
+        headline: "Great coffee, made properly.",
+        subtext: "Speciality coffee, fresh bakes and an easy place to pause in Manchester’s Northern Quarter."
       },
       {
         image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=2000&auto=format&fit=crop",
@@ -74,14 +85,14 @@ export const siteContent = {
     { name: "Elena R.", role: "Coffee Enthusiast", quote: "You can taste the intention in every cup. They really respect the craft of coffee making here.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" }
   ],
   visit: {
-    address: "123 Market Street, Coffee District, CA 90210",
+    address: "38 Tib Street, Northern Quarter, Manchester M4 1NB",
     hours: [
       { day: "Monday - Friday", time: "6:30 AM - 5:00 PM" },
       { day: "Saturday", time: "7:00 AM - 6:00 PM" },
       { day: "Sunday", time: "8:00 AM - 4:00 PM" }
     ],
-    phone: "(555) 123-4567",
-    email: "hello@coffeecrafted.com"
+    phone: "+44 161 555 0138",
+    email: "hello@morningbrewcoffee.co.uk"
   },
   faq: [
     { question: "Do you offer dairy alternatives?", answer: "Yes, we proudly serve oat, almond, and macadamia milk options at a slight upcharge." },

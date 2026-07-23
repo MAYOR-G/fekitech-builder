@@ -3,26 +3,44 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useTemplateData } from '../TemplateContext';
+import { useMeasuredHorizontalScroll } from '@/lib/pinned-scroll';
 
 
 const PinnedHorizontalScroll = () => {
   const siteContent = useTemplateData();
   const targetRef = useRef<HTMLDivElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
   
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end end"]
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const { distance, sectionHeight, reducedMotion } = useMeasuredHorizontalScroll({
+    sectionRef: targetRef,
+    viewportRef,
+    trackRef,
+  });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
   return (
-    <section 
-      ref={targetRef} 
-      className="relative h-[400vh] bg-coffee-dark text-coffee-light"
+    <section
+      ref={targetRef}
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-coffee-dark text-coffee-light ${
+        reducedMotion ? "py-20" : "min-h-svh"
+      }`}
       id="journey"
     >
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <div
+        ref={viewportRef}
+        className={
+          reducedMotion
+            ? "relative overflow-hidden"
+            : "sticky top-0 flex h-svh items-center overflow-hidden"
+        }
+      >
         
         {/* Intro Text floating on the left */}
         <div className="absolute top-16 left-6 md:left-16 z-10">
@@ -30,14 +48,23 @@ const PinnedHorizontalScroll = () => {
           <div className="h-px w-16 bg-coffee-terracotta mt-4" />
         </div>
 
-        <motion.div 
-          style={{ x }} 
-          className="flex gap-8 px-6 md:px-16 pt-32 pb-16 h-full items-center"
+        <motion.div
+          ref={trackRef}
+          style={reducedMotion ? undefined : { x }}
+          className={
+            reducedMotion
+              ? "grid gap-8 px-6 pb-8 pt-32 md:grid-cols-2 md:px-16"
+              : "flex h-full w-max items-center gap-8 px-6 pb-16 pt-32 md:px-16"
+          }
         >
           {siteContent.journey.map((step, index) => (
             <div 
               key={index}
-              className="relative w-[85vw] md:w-[60vw] lg:w-[45vw] h-[60vh] md:h-[70vh] shrink-0 flex flex-col group"
+              className={`group relative flex flex-col ${
+                reducedMotion
+                  ? "h-[32rem] w-full"
+                  : "h-[60vh] w-[85vw] shrink-0 md:h-[70vh] md:w-[60vw] lg:w-[45vw]"
+              }`}
             >
               <div className="relative w-full h-full overflow-hidden shadow-2xl bg-coffee-brown/20">
                 <TemplateImage 
@@ -58,7 +85,7 @@ const PinnedHorizontalScroll = () => {
           ))}
           
           {/* Empty spacer at the end for smooth exit */}
-          <div className="w-[10vw] shrink-0" />
+          {!reducedMotion ? <div className="w-[10vw] shrink-0" /> : null}
         </motion.div>
         
       </div>

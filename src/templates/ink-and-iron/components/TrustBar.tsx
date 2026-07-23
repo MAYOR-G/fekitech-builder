@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Award, PenTool, ShieldCheck, Clock } from "lucide-react";
+import { ensureScrollTrigger, observeScrollTriggerLayout, prefersReducedScrollMotion } from "@/lib/gsap-scroll";
 
 const features = [
   {
@@ -32,7 +32,10 @@ export default function TrustBar() {
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    ensureScrollTrigger();
+    const container = containerRef.current;
+    if (!container) return;
+    if (prefersReducedScrollMotion()) return;
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -55,8 +58,12 @@ export default function TrustBar() {
         }
       );
     }, containerRef);
+    const cleanupMeasurements = observeScrollTriggerLayout(container);
 
-    return () => ctx.revert();
+    return () => {
+      cleanupMeasurements();
+      ctx.revert();
+    };
   }, []);
 
   return (

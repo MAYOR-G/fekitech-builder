@@ -1,0 +1,121 @@
+{
+  "colors": { "primary": "#C6532F", "secondary": "#E8B84D", "background": "#FFF8ED", "text": "#28332B" },
+  "brand": { "name": "Golden Fold", "tagline": "Pastries worth sharing", "logo": "", "phone": "+44 121 555 0170", "email": "orders@goldenfold.co.uk", "address": "21 Warstone Lane, Birmingham B18 6JQ" },
+  "navigation": {
+    "links": [
+      { "label": "Shop", "href": "#menu" },
+      { "label": "Snack boxes", "href": "#packages" },
+      { "label": "Our bakery", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Delivery", "href": "#contact" }
+    ],
+    "ctaLabel": "Order a box",
+    "ctaHref": "https://example.com/order"
+  },
+  "hero": {
+    "note": "Savoury bakes, party bites and sweet things",
+    "title": "Golden, flaky, gone fast.",
+    "description": "Proper pies, sausage rolls, Scotch eggs and party boxes—baked in Birmingham and delivered across the Midlands.",
+    "primaryLabel": "Shop snack boxes",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "Browse favourites",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/golden-fold-hero.webp",
+    "imageAlt": "Large spread of golden pies, sausage rolls, Scotch eggs and sweet pastries",
+    "badge": "Baked fresh every morning"
+  },
+  "strip": { "items": ["Proper meat pies", "All-butter pastry", "Party boxes", "Midlands delivery", "Vegetarian bakes"] },
+  "products": {
+    "title": "The counter favourites",
+    "description": "Reliable classics, generous fillings and pastry with the right kind of mess.",
+    "items": [
+      { "name": "Steak & ale pie", "description": "Slow-cooked British beef, dark ale gravy and all-butter pastry.", "price": "£4.95", "image": "/templates/assets/golden-fold-hero.webp", "imageAlt": "Golden individual meat pie with rich filling" },
+      { "name": "Heritage sausage roll", "description": "Seasoned pork shoulder, sage and a crisp flaky wrap.", "price": "£3.75", "image": "/templates/assets/golden-fold-boxes.webp", "imageAlt": "Box of freshly baked sausage rolls" },
+      { "name": "Jam almond Danish", "description": "Laminated pastry, berry preserve, almond and light icing.", "price": "£3.50", "image": "/templates/assets/golden-fold-boxes.webp", "imageAlt": "Sweet jam and almond Danish pastry" }
+    ]
+  },
+  "feature": {
+    "note": "Boxed for sharing",
+    "title": "A spread that arrives ready.",
+    "description": "Mixed office lunches, birthday tables and match-day boxes are packed by type, labelled clearly and timed around your event.",
+    "image": "/templates/assets/golden-fold-boxes.webp",
+    "imageAlt": "Open kraft boxes filled with pies, sausage rolls and Scotch eggs",
+    "facts": [
+      { "value": "12+", "label": "box combinations" },
+      { "value": "48h", "label": "advance notice" },
+      { "value": "7", "label": "delivery days" }
+    ],
+    "buttonLabel": "Build a party order",
+    "buttonHref": "#packages"
+  },
+  "packages": {
+    "title": "Boxes built for the occasion",
+    "description": "Straightforward quantities and easy add-ons for homes, teams and full party tables.",
+    "items": [
+      { "name": "Office dozen", "description": "A balanced mix of savoury pastries for a working lunch.", "price": "£34", "note": "Feeds 6–8", "features": ["12 mixed savouries", "Vegetarian split available", "Clear allergen card"], "buttonLabel": "Order the dozen", "buttonHref": "https://example.com/order" },
+      { "name": "Party table", "description": "Our broadest mix of pastries, Scotch eggs and small chops.", "price": "£76", "note": "Best seller · feeds 12–16", "features": ["36 savoury pieces", "12 sweet pastries", "Three house dips"], "buttonLabel": "Book your party box", "buttonHref": "https://example.com/order" },
+      { "name": "Big match box", "description": "Handheld favourites made for sharing around the screen.", "price": "£48", "note": "Feeds 8–10", "features": ["Sausage rolls and pies", "Spiced chicken puffs", "Mustard and chilli jam"], "buttonLabel": "Choose a match date", "buttonHref": "https://example.com/order" }
+    ]
+  },
+  "gallery": {
+    "title": "Flake, fold, fill",
+    "description": "The morning bake, the packed box and the first pastry to disappear.",
+    "rowOne": [
+      { "image": "/templates/assets/golden-fold-hero.webp", "imageAlt": "Assorted savoury and sweet pastries", "caption": "Morning counter" },
+      { "image": "/templates/assets/golden-fold-boxes.webp", "imageAlt": "Pastry boxes ready for delivery", "caption": "Boxed and ready" },
+      { "image": "/templates/assets/golden-fold-hero.webp", "imageAlt": "Golden sausage rolls and Scotch eggs", "caption": "The savoury line-up" }
+    ],
+    "rowTwo": [
+      { "image": "/templates/assets/golden-fold-boxes.webp", "imageAlt": "Scotch eggs in a kraft catering box", "caption": "Seven-minute yolks" },
+      { "image": "/templates/assets/golden-fold-hero.webp", "imageAlt": "Close-up flaky pastry detail", "caption": "All-butter layers" },
+      { "image": "/templates/assets/golden-fold-boxes.webp", "imageAlt": "Sweet Danish pastry on a white plate", "caption": "Something sweet" }
+    ]
+  },
+  "story": {
+    "note": "The Golden Fold story",
+    "title": "Familiar bakes, made properly.",
+    "description": "We started at a Birmingham market stall with one pie, one roll and a queue. Today the range is wider, but the pastry is still folded, filled and baked by our own team.",
+    "image": "/templates/assets/golden-fold-boxes.webp",
+    "imageAlt": "Fresh pastries arranged in delivery boxes on a white bakery table",
+    "quote": "Good pastry should shatter a little and leave everyone reaching for another.",
+    "buttonLabel": "Meet the bakery",
+    "buttonHref": "#story"
+  },
+  "process": {
+    "title": "From oven to doorstep",
+    "description": "Fresh baking and organised delivery make larger orders feel simple.",
+    "steps": [
+      { "title": "Pick a box", "description": "Choose a ready-made mix or request your own quantities." },
+      { "title": "Tell us when", "description": "Select collection or a timed Midlands delivery window." },
+      { "title": "We bake", "description": "Pastry is filled, finished and baked for your order." },
+      { "title": "Serve", "description": "Clear labels and easy reheating notes are included." }
+    ]
+  },
+  "testimonials": {
+    "title": "Passed around, talked about",
+    "description": "From office kitchens to family parties across the Midlands.",
+    "items": [
+      { "quote": "The party box looked generous, arrived perfectly organised and vanished in minutes.", "name": "Tosin A.", "detail": "Birthday host" },
+      { "quote": "Finally, a sausage roll with real filling and genuinely flaky pastry.", "name": "Ben H.", "detail": "Weekly regular" },
+      { "quote": "Allergens were labelled clearly and the office delivery was right on time.", "name": "Rachel P.", "detail": "Team coordinator" }
+    ]
+  },
+  "visit": {
+    "note": "Order or collect",
+    "title": "Make the table easy.",
+    "description": "Collection slots open seven days ahead. Catering quantities and regular workplace orders are welcome.",
+    "areasLabel": "Delivery coverage",
+    "areas": ["Birmingham", "Solihull", "West Bromwich", "Sutton Coldfield"],
+    "hours": [
+      { "day": "Mon–Fri", "time": "7:30am–5pm" },
+      { "day": "Saturday", "time": "8am–4pm" },
+      { "day": "Sunday", "time": "Pre-orders only" }
+    ],
+    "primaryLabel": "Order a snack box",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "Ask about catering",
+    "secondaryHref": "mailto:orders@goldenfold.co.uk"
+  },
+  "social": { "instagram": "Golden Fold on Instagram", "instagramHref": "https://instagram.com", "facebook": "Golden Fold on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Golden Fold on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Fresh pastry and party boxes, baked in Birmingham.", "copyright": "© 2026 Golden Fold. All rights reserved." }
+}

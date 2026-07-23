@@ -28,6 +28,18 @@ import cleaningAgencyConfig from "../templates/cleaning-agency-premium/config.js
 import cleaningAgencyEditable from "../templates/cleaning-agency-premium/editable.json";
 import roofingAgencyConfig from "../templates/roofing-agency-premium/config.json";
 import roofingAgencyEditable from "../templates/roofing-agency-premium/editable.json";
+import premiumRestaurantConfig from "../templates/premium-restaurant/config.json";
+import premiumRestaurantEditable from "../templates/premium-restaurant/editable.json";
+import fastFoodConfig from "../templates/fast-food-chicken-tacos/config.json";
+import fastFoodEditable from "../templates/fast-food-chicken-tacos/editable.json";
+import cakeBakeryConfig from "../templates/cake-bakery-premium/config.json";
+import cakeBakeryEditable from "../templates/cake-bakery-premium/editable.json";
+import pastriesSnacksConfig from "../templates/pastries-snacks-premium/config.json";
+import pastriesSnacksEditable from "../templates/pastries-snacks-premium/editable.json";
+import cateringCompanyConfig from "../templates/catering-company-premium/config.json";
+import cateringCompanyEditable from "../templates/catering-company-premium/editable.json";
+import plumbingCompanyConfig from "../templates/plumbing-company-premium/config.json";
+import plumbingCompanyEditable from "../templates/plumbing-company-premium/editable.json";
 import inkConfig from "../templates/ink-and-iron/config.json";
 import inkEditable from "../templates/ink-and-iron/editable.json";
 import premiumCoffeeConfig from "../templates/premium-coffee-website/config.json";
@@ -39,7 +51,13 @@ import secondFurnitureEditable from "../templates/second-furniture-website/edita
 import secondPlumberConfig from "../templates/second-plumber-website/config.json";
 import secondPlumberEditable from "../templates/second-plumber-website/editable.json";
 
-export type TemplateConfig = { id: string; name: string; category: string; image: string };
+export type TemplateConfig = {
+  id: string;
+  name: string;
+  category: string;
+  image: string;
+  previewImages?: string[];
+};
 export type TemplateEntry = {
   config: TemplateConfig;
   component: ComponentType<{ data: TemplateData }>;
@@ -65,6 +83,12 @@ const components = {
   "pizza-light-clean": dynamic<{ data: TemplateData }>(() => import("../templates/pizza-light-clean/template")),
   "cleaning-agency-premium": dynamic<{ data: TemplateData }>(() => import("../templates/cleaning-agency-premium/template")),
   "roofing-agency-premium": dynamic<{ data: TemplateData }>(() => import("../templates/roofing-agency-premium/template")),
+  "premium-restaurant": dynamic<{ data: TemplateData }>(() => import("../templates/premium-restaurant/template")),
+  "fast-food-chicken-tacos": dynamic<{ data: TemplateData }>(() => import("../templates/fast-food-chicken-tacos/template")),
+  "cake-bakery-premium": dynamic<{ data: TemplateData }>(() => import("../templates/cake-bakery-premium/template")),
+  "pastries-snacks-premium": dynamic<{ data: TemplateData }>(() => import("../templates/pastries-snacks-premium/template")),
+  "catering-company-premium": dynamic<{ data: TemplateData }>(() => import("../templates/catering-company-premium/template")),
+  "plumbing-company-premium": dynamic<{ data: TemplateData }>(() => import("../templates/plumbing-company-premium/template")),
   "ink-and-iron": dynamic<{ data: TemplateData }>(() => import("../templates/ink-and-iron/template")),
   "premium-coffee-website": dynamic<{ data: TemplateData }>(() => import("../templates/premium-coffee-website/template")),
   "restaurant-website": dynamic<{ data: TemplateData }>(() => import("../templates/restaurant-website/template")),
@@ -73,6 +97,11 @@ const components = {
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
+  "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
+  "fast-food-chicken-tacos": { config: fastFoodConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodEditable) },
+  "cake-bakery-premium": { config: cakeBakeryConfig, component: components["cake-bakery-premium"], defaultData: normalizeData(cakeBakeryEditable) },
+  "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
+  "catering-company-premium": { config: cateringCompanyConfig, component: components["catering-company-premium"], defaultData: normalizeData(cateringCompanyEditable) },
   "barber-website": { config: barberConfig, component: components["barber-website"], defaultData: normalizeData(barberEditable) },
   "premium-coffee-website": { config: premiumCoffeeConfig, component: components["premium-coffee-website"], defaultData: normalizeData(premiumCoffeeEditable) },
   "gym-website": { config: gymConfig, component: components["gym-website"], defaultData: normalizeData(gymEditable) },
@@ -82,6 +111,7 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
   "cleaning-agency-premium": { config: cleaningAgencyConfig, component: components["cleaning-agency-premium"], defaultData: normalizeData(cleaningAgencyEditable) },
   "roofing-agency-premium": { config: roofingAgencyConfig, component: components["roofing-agency-premium"], defaultData: normalizeData(roofingAgencyEditable) },
+  "plumbing-company-premium": { config: plumbingCompanyConfig, component: components["plumbing-company-premium"], defaultData: normalizeData(plumbingCompanyEditable) },
   "second-furniture-website": { config: secondFurnitureConfig, component: components["second-furniture-website"], defaultData: normalizeData(secondFurnitureEditable) },
   "cake-website": { config: cakeConfig, component: components["cake-website"], defaultData: normalizeData(cakeEditable) },
   "catering-website": { config: cateringConfig, component: components["catering-website"], defaultData: normalizeData(cateringEditable) },

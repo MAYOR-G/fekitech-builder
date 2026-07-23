@@ -73,18 +73,32 @@ export type Testimonial = {
 };
 
 export const brand = {
-  name: "Gild & Gather",
-  shortName: "Gild & Gather",
-  tagline: "Fine catering for momentous occasions.",
+  name: "Gourmet Events Catering",
+  shortName: "Gourmet Events",
+  tagline: "Thoughtful food and polished service for memorable occasions.",
   description:
-    "We orchestrate beautiful, ingredient-driven dining experiences for weddings, corporate events, and private dinners. From the first bite to the final pour, every detail is managed with quiet precision.",
-  email: "events@gildandgather.com",
-  phone: "+1 (555) 283-9110",
-  studioNote: "Tastings by appointment in our Brooklyn kitchen.",
-  address: "124 Culinary Lane, Suite 2",
-  location: "Brooklyn, NY 11201",
-  hours: "Mon-Sat, 9am - 6pm",
-  instagram: "@gildandgather",
+    "We create ingredient-led menus for weddings, corporate events and private celebrations, with calm planning and attentive service from first conversation to final course.",
+  email: "events@gourmeteventscatering.co.uk",
+  phone: "+44 20 7946 0182",
+  studioNote: "Private tastings by appointment in our London kitchen.",
+  address: "24 Borough High Street",
+  location: "London SE1 1XW",
+  hours: "Monday–Saturday, 9am–6pm",
+  instagram: "@gourmeteventscatering",
+};
+
+export const hero = {
+  eyebrow: "London event caterer",
+  title: "Beautiful food for memorable events.",
+  subtitle:
+    "Thoughtful catering for weddings, private parties and corporate events across London and the South East.",
+  image: "/templates/assets/gather-grace-hero.webp",
+  imageAlt: "Catering professional preparing an elegant wedding table with flowers and canapés",
+  primaryLabel: "Request a quote",
+  primaryHref: "#contact",
+  secondaryLabel: "View our menus",
+  secondaryHref: "#packages",
+  note: "Weddings · corporate · private dining",
 };
 
 export const navLinks = [

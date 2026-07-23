@@ -35,8 +35,8 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-out",
         solid
-          ? "border-b border-oat bg-white text-charcoal shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
-          : "border-b border-transparent bg-transparent text-white shadow-none"
+          ? "border-b border-oat bg-white/96 text-charcoal shadow-[0_2px_12px_rgba(0,0,0,0.06)] backdrop-blur"
+          : "border-b border-oat/80 bg-[#fbfaf6]/92 text-charcoal backdrop-blur"
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -44,17 +44,17 @@ export function Navbar() {
           <span
             className={cn(
               "grid h-11 w-11 place-items-center rounded-full shadow-card transition-colors duration-300",
-              solid ? "bg-charcoal text-cream" : "bg-white/12 text-white ring-1 ring-white/25 backdrop-blur"
+              solid ? "bg-charcoal text-cream" : "bg-olive text-white"
             )}
           >
             <UtensilsCrossed className="h-5 w-5" aria-hidden="true" />
           </span>
           <span className="leading-none">
-            <span className={cn("block font-display text-xl font-semibold transition-colors", solid ? "text-charcoal" : "text-white")}>
+            <span className="block font-display text-xl font-semibold text-charcoal">
               {brand.name}
             </span>
-            <span className={cn("mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] transition-colors sm:block", solid ? "text-olive" : "text-white/78")}>
-              Event catering atelier
+            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-olive sm:block">
+              London event catering
             </span>
           </span>
         </a>
@@ -66,7 +66,7 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "text-[15px] font-extrabold transition hover:text-gold",
-                solid ? "text-ink" : "text-white/88"
+                "text-ink"
               )}
             >
               {link.label}
@@ -86,7 +86,7 @@ export function Navbar() {
             "grid h-11 w-11 place-items-center rounded-md border transition hover:-translate-y-0.5 lg:hidden",
             solid
               ? "border-oat bg-white text-charcoal"
-              : "border-white/25 bg-white/10 text-white backdrop-blur"
+              : "border-oat bg-white text-charcoal"
           )}
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}

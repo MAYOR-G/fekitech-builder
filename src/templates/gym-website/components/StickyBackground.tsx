@@ -4,9 +4,9 @@ import React from 'react';
 
 const StickyBackground = () => {
   return (
-    <section className="relative z-0 h-[150vh] lg:h-[200vh]">
+    <section className="relative z-0 h-[120svh]">
       {/* Sticky Background */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 h-svh w-full overflow-hidden">
         <div className="absolute inset-0 bg-gym-darker/60 z-10"></div>
         <TemplateImage 
           src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=2070&auto=format&fit=crop" 

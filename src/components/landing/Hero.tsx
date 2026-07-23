@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { GradientButton } from "@/components/ui/GradientButton";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 const pills = [
@@ -17,9 +16,10 @@ const pills = [
 ];
 
 export default function Hero() {
+
   return (
     <section
-      className="texture-wash relative flex flex-col items-center justify-center overflow-hidden px-5 pt-[140px] pb-12"
+      className="texture-wash relative flex min-h-[calc(100svh-5rem)] flex-col items-center justify-center overflow-hidden px-5 pb-16 pt-[132px] sm:pb-20 sm:pt-[148px]"
       style={{
         background:
           "radial-gradient(120% 100% at 50% 0%, rgba(250, 250, 255, 1) 0%, rgba(246, 248, 255, 0.8) 50%, rgba(255, 255, 255, 1) 100%)",
@@ -38,9 +38,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease }}
-          className="max-w-[940px] text-balance text-[clamp(48px,8vw,96px)] font-[800] leading-[0.98] tracking-[-0.04em] text-transparent bg-clip-text bg-gradient-to-b from-ft-ink to-ft-ink/80"
+          className="max-w-[940px] text-balance text-[clamp(46px,7.5vw,88px)] font-[800] leading-[0.98] tracking-[-0.04em] text-ft-ink"
         >
-          Build a website that is ready for business
+          Build your website in minutes — for free.
         </motion.h1>
 
         <motion.p
@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease }}
           className="mt-8 max-w-[680px] text-pretty text-[1.125rem] leading-[1.6] text-ft-body/90 sm:text-[1.25rem]"
         >
-          Choose a template, customize it to match your business, and publish without writing code.
+          Choose a professional template, make it yours, and get your business online without writing code.
         </motion.p>
 
         {/* Input + Button */}
@@ -60,12 +60,12 @@ export default function Hero() {
           className="mt-10 w-full max-w-[800px]"
         >
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <GradientButton href="/signup" className="group min-h-[56px] w-full !px-8 text-base font-semibold sm:w-auto shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all">
-              Start building
+            <GradientButton href="/signup" className="group min-h-[56px] w-full !px-8 text-base font-semibold sm:w-auto shadow-[0_8px_18px_rgba(22,31,72,0.14)] transition-all hover:shadow-[0_10px_22px_rgba(22,31,72,0.18)]">
+              Start Free
               <ArrowRight className="inline-block ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
             </GradientButton>
             <Link href="/templates" className="inline-flex items-center justify-center min-h-[56px] w-full px-8 text-base font-semibold bg-white border border-black/10 rounded-[999px] text-ft-ink shadow-sm hover:bg-gray-50 hover:border-black/20 transition-all sm:w-auto">
-              Explore templates
+              Browse Templates
             </Link>
           </div>
           

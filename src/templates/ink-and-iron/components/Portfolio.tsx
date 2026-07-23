@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { ensureScrollTrigger, observeScrollTriggerLayout, prefersReducedScrollMotion } from "@/lib/gsap-scroll";
 
 // Using the generated images for the portfolio
 const portfolioItems = [
@@ -20,7 +20,10 @@ export default function Portfolio() {
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    ensureScrollTrigger();
+    const container = containerRef.current;
+    if (!container) return;
+    if (prefersReducedScrollMotion()) return;
 
     const ctx = gsap.context(() => {
       // Fade up gallery items
@@ -44,12 +47,17 @@ export default function Portfolio() {
         }
       );
     }, containerRef);
+    const cleanupMeasurements = observeScrollTriggerLayout(container);
 
-    return () => ctx.revert();
+    return () => {
+      cleanupMeasurements();
+      ctx.revert();
+    };
   }, []);
 
   return (
-    <section 
+    <section
+      id="portfolio"
       ref={containerRef}
       className="w-full bg-[#141414] py-24 md:py-32 relative z-10"
     >

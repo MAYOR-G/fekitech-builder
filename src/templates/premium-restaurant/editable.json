@@ -1,0 +1,128 @@
+{
+  "colors": { "primary": "#8D2E45", "secondary": "#D5B76A", "background": "#F7F4EE", "text": "#193128" },
+  "brand": {
+    "name": "Halcyon Table",
+    "tagline": "Modern British dining",
+    "logo": "",
+    "phone": "+44 20 7946 0184",
+    "email": "hello@halcyontable.co.uk",
+    "address": "18 Montford Lane, London SE1 3QJ"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Our story", "href": "#story" },
+      { "label": "Private dining", "href": "#packages" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Visit", "href": "#contact" }
+    ],
+    "ctaLabel": "Reserve a table",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "note": "A neighbourhood dining room in Borough",
+    "title": "British seasons, beautifully plated.",
+    "description": "Thoughtful cooking, warm service and produce gathered from growers, day boats and makers across the UK.",
+    "primaryLabel": "Reserve a table",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Explore the menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/halcyon-table-hero.webp",
+    "imageAlt": "Signature sea bass dish with seasonal vegetables on a sculptural white plate",
+    "badge": "Spring menu now serving"
+  },
+  "strip": { "items": ["British produce", "Lunch Thursday–Saturday", "Private dining", "Seasonal tasting menu"] },
+  "products": {
+    "title": "A taste of the menu",
+    "description": "A concise menu that changes with the market, balancing familiar flavours with a light modern touch.",
+    "items": [
+      { "name": "Day-boat bass", "description": "Peas, smoked mussel, lovage and cider beurre blanc.", "price": "£29", "image": "/templates/assets/halcyon-table-hero.webp", "imageAlt": "Plated sea bass with green seasonal garnish" },
+      { "name": "Cotswold chicken", "description": "Morels, wild garlic and roast chicken jus.", "price": "£27", "image": "/templates/assets/halcyon-chicken.webp", "imageAlt": "Roast chicken plated with seasonal vegetables" },
+      { "name": "Garden tomatoes", "description": "Goat's curd, preserved lemon and basil oil.", "price": "£13", "image": "/templates/assets/gather-grace-canapes.webp", "imageAlt": "Colourful seasonal tomato and herb plate" }
+    ]
+  },
+  "feature": {
+    "note": "At the pass",
+    "title": "Cooking with clarity, not clutter.",
+    "description": "Chef-founder Mara Ellis builds each plate around one exceptional ingredient. Sauces are deep, garnishes earn their place, and the room stays relaxed.",
+    "image": "/templates/assets/halcyon-chef.webp",
+    "imageAlt": "Chef plating a refined dish in the restaurant kitchen",
+    "facts": [
+      { "value": "14", "label": "local suppliers" },
+      { "value": "6", "label": "course tasting" },
+      { "value": "2021", "label": "opened in Borough" }
+    ],
+    "buttonLabel": "Meet the kitchen",
+    "buttonHref": "#story"
+  },
+  "packages": {
+    "title": "Make an occasion of it",
+    "description": "From a long lunch to a private celebration, every booking is shaped around the people at the table.",
+    "items": [
+      { "name": "Market lunch", "description": "A generous midweek menu for an unhurried afternoon.", "price": "Two courses £32", "note": "Thursday & Friday", "features": ["Seasonal starter and main", "Vegetarian choice", "Optional wine pairing"], "buttonLabel": "Book lunch", "buttonHref": "#contact" },
+      { "name": "Tasting evening", "description": "Our fullest expression of the season, served at your pace.", "price": "Six courses £78", "note": "Chef's recommendation", "features": ["Six changing courses", "Snacks and petits fours", "Wine or alcohol-free pairing"], "buttonLabel": "Reserve tasting", "buttonHref": "#contact" },
+      { "name": "Private room", "description": "An intimate dining room with a bespoke menu and dedicated host.", "price": "From £95 per guest", "note": "8–24 guests", "features": ["Menu consultation", "Printed place cards", "AV available on request"], "buttonLabel": "Plan an event", "buttonHref": "mailto:events@halcyontable.co.uk" }
+    ]
+  },
+  "gallery": {
+    "title": "Life around the table",
+    "description": "Plates, people and the small details that make an evening memorable.",
+    "rowOne": [
+      { "image": "/templates/assets/halcyon-dining.webp", "imageAlt": "Warm contemporary restaurant dining room", "caption": "The dining room" },
+      { "image": "/templates/assets/halcyon-table-hero.webp", "imageAlt": "Signature sea bass dish", "caption": "From the spring menu" },
+      { "image": "/templates/assets/halcyon-chef.webp", "imageAlt": "Chef working at the pass", "caption": "A quiet moment at the pass" }
+    ],
+    "rowTwo": [
+      { "image": "/templates/assets/halcyon-chicken.webp", "imageAlt": "Seasonal roast chicken dish", "caption": "Cotswold chicken" },
+      { "image": "/templates/assets/gather-grace-canapes.webp", "imageAlt": "Bright seasonal ingredients", "caption": "Produce first" },
+      { "image": "/templates/assets/halcyon-dining.webp", "imageAlt": "Dining tables set for service", "caption": "Ready for evening service" }
+    ]
+  },
+  "story": {
+    "note": "Our restaurant",
+    "title": "A generous room with a serious kitchen.",
+    "description": "Halcyon began as a Sunday supper club. Today the spirit is the same: thoughtful food, no ceremony, and a room where everyone is looked after.",
+    "image": "/templates/assets/halcyon-dining.webp",
+    "imageAlt": "Elegant and welcoming restaurant dining room",
+    "quote": "The best meals feel composed, but never rehearsed.",
+    "buttonLabel": "Read our story",
+    "buttonHref": "#story"
+  },
+  "process": {
+    "title": "From field to plate",
+    "description": "A short supply chain and daily conversations keep the menu alive.",
+    "steps": [
+      { "title": "Source", "description": "We buy directly from trusted growers, fishers and makers." },
+      { "title": "Taste", "description": "The morning's produce decides what earns a place on the menu." },
+      { "title": "Prepare", "description": "Classical technique, careful seasoning and minimal waste." },
+      { "title": "Welcome", "description": "Warm service, useful guidance and time to enjoy the table." }
+    ]
+  },
+  "testimonials": {
+    "title": "Kind words from the dining room",
+    "description": "Recent notes from lunches, celebrations and returning regulars.",
+    "items": [
+      { "quote": "Every course felt precise, but the whole evening was wonderfully relaxed.", "name": "Amelia R.", "detail": "Anniversary dinner" },
+      { "quote": "The private room was beautiful and the team quietly handled every detail.", "name": "Daniel K.", "detail": "Private celebration" },
+      { "quote": "A genuinely seasonal menu and some of the warmest service in London.", "name": "Priya S.", "detail": "Saturday lunch" }
+    ]
+  },
+  "visit": {
+    "note": "Find your table",
+    "title": "Come hungry. Leave happy.",
+    "description": "A short walk from Borough Market. Please tell us about allergies or access needs when booking.",
+    "areasLabel": "Location & directions",
+    "areas": ["Borough", "London Bridge", "Southwark"],
+    "hours": [
+      { "day": "Tue–Wed", "time": "5:30–10pm" },
+      { "day": "Thu–Sat", "time": "12–10:30pm" },
+      { "day": "Sunday", "time": "12–5pm" }
+    ],
+    "primaryLabel": "Reserve a table",
+    "primaryHref": "https://example.com/reserve",
+    "secondaryLabel": "Get directions",
+    "secondaryHref": "https://maps.google.com"
+  },
+  "social": { "instagram": "Halcyon Table on Instagram", "instagramHref": "https://instagram.com", "facebook": "Halcyon Table on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Halcyon Table on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Modern British dining, served with warmth.", "copyright": "© 2026 Halcyon Table. All rights reserved." }
+}

@@ -3,6 +3,7 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useMeasuredHorizontalScroll } from '@/lib/pinned-scroll';
 
 const programs = [
   {
@@ -34,27 +35,56 @@ const programs = [
 
 const PinnedHorizontalScroll = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
+  const viewportRef = useRef<HTMLDivElement | null>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-65%"]);
+  const { distance, sectionHeight, reducedMotion } = useMeasuredHorizontalScroll({
+    sectionRef: targetRef,
+    viewportRef,
+    trackRef,
+  });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
   return (
-    <section ref={targetRef} id="programs" className="relative h-[300vh] bg-gym-dark">
-      <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
+    <section
+      ref={targetRef}
+      id="programs"
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-gym-dark ${reducedMotion ? "py-20" : "min-h-svh"}`}
+    >
+      <div
+        ref={viewportRef}
+        className={
+          reducedMotion
+            ? "relative overflow-hidden"
+            : "sticky top-0 flex h-svh flex-col justify-center overflow-hidden"
+        }
+      >
         
         <div className="max-w-7xl mx-auto px-6 w-full mb-12">
           <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Programs</h2>
           <h3 className="text-4xl md:text-6xl font-black font-display uppercase">Choose Your Path</h3>
         </div>
 
-        <motion.div style={{ x }} className="flex gap-8 px-6 w-max">
+        <motion.div
+          ref={trackRef}
+          style={reducedMotion ? undefined : { x }}
+          className={
+            reducedMotion
+              ? "grid gap-8 px-6 md:grid-cols-2"
+              : "flex w-max gap-8 px-6"
+          }
+        >
           {programs.map((program, idx) => (
             <div 
               key={idx} 
-              className="w-[80vw] md:w-[600px] h-[500px] rounded-3xl overflow-hidden relative group cursor-pointer"
+              className={`group relative h-[500px] cursor-pointer overflow-hidden rounded-2xl ${
+                reducedMotion ? "w-full" : "w-[80vw] md:w-[600px]"
+              }`}
             >
               <TemplateImage 
                 src={program.image} 

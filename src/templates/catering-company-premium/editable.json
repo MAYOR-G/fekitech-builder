@@ -1,0 +1,121 @@
+{
+  "colors": { "primary": "#5E7451", "secondary": "#D6A07A", "background": "#F7F6F0", "text": "#26352E" },
+  "brand": { "name": "Gather & Grace", "tagline": "Food for remarkable gatherings", "logo": "", "phone": "+44 113 555 0129", "email": "events@gatherandgrace.co.uk", "address": "4 Crown Point Road, Leeds LS10 1EL" },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#menu" },
+      { "label": "Menus", "href": "#packages" },
+      { "label": "Our approach", "href": "#story" },
+      { "label": "Events", "href": "#gallery" },
+      { "label": "Request a quote", "href": "#contact" }
+    ],
+    "ctaLabel": "Plan your event",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "note": "Independent event catering across Yorkshire",
+    "title": "Good food brings the room together.",
+    "description": "Warm, beautifully organised catering for weddings, work, parties and cultural celebrations—planned around your people.",
+    "primaryLabel": "Request a quote",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Explore our menus",
+    "secondaryHref": "#packages",
+    "image": "/templates/assets/gather-grace-hero.webp",
+    "imageAlt": "Elegant daylight wedding table prepared by a professional caterer",
+    "badge": "Dates open for 2026"
+  },
+  "strip": { "items": ["Weddings", "Corporate events", "Private parties", "Buffets", "Canapés", "Cultural menus"] },
+  "products": {
+    "title": "Catering shaped to the gathering",
+    "description": "Different events need different rhythms. We build the food and service around yours.",
+    "items": [
+      { "name": "Wedding feasts", "description": "Relaxed sharing menus, plated dinners and evening food with full service.", "price": "From £68 pp", "image": "/templates/assets/gather-grace-hero.webp", "imageAlt": "Beautiful wedding reception table with catered food" },
+      { "name": "Work & launches", "description": "Breakfasts, lunches, canapés and brand events that run precisely.", "price": "From £24 pp", "image": "/templates/assets/gather-grace-canapes.webp", "imageAlt": "Professional caterer finishing colourful canapés" },
+      { "name": "Private celebrations", "description": "Generous buffets and hosted dinners for birthdays and family occasions.", "price": "From £36 pp", "image": "/templates/assets/gather-grace-event.webp", "imageAlt": "Catered private event with guests and plated food" }
+    ]
+  },
+  "feature": {
+    "note": "Food with a point of view",
+    "title": "Seasonal menus, built around your guests.",
+    "description": "We combine modern British produce with influences from the families and communities we cook for. Dietary needs are part of the plan—not an afterthought.",
+    "image": "/templates/assets/gather-grace-canapes.webp",
+    "imageAlt": "Caterer finishing a bright seasonal buffet with refined canapés",
+    "facts": [
+      { "value": "30–400", "label": "guest range" },
+      { "value": "18", "label": "trusted venues" },
+      { "value": "100%", "label": "bespoke menus" }
+    ],
+    "buttonLabel": "See our approach",
+    "buttonHref": "#story"
+  },
+  "packages": {
+    "title": "Useful places to begin",
+    "description": "Choose a service style, then we tailor the dishes, staffing and timings to your event.",
+    "items": [
+      { "name": "Gathering table", "description": "Abundant seasonal sharing dishes for a relaxed lunch or dinner.", "price": "From £36 pp", "note": "Family style", "features": ["Three sharing mains", "Seasonal sides and salads", "Staffing and setup option"], "buttonLabel": "Build a sharing menu", "buttonHref": "#contact" },
+      { "name": "Wedding day", "description": "A complete food journey from welcome drink to late-night bite.", "price": "From £68 pp", "note": "Most comprehensive", "features": ["Tasting and planning session", "Canapés and wedding breakfast", "Service team and coordination"], "buttonLabel": "Plan your wedding", "buttonHref": "#contact" },
+      { "name": "Canapé reception", "description": "Elegant bite-sized food with attentive roaming service.", "price": "From £28 pp", "note": "6 pieces per guest", "features": ["Six seasonal canapés", "Dietary alternatives", "Service team included"], "buttonLabel": "Choose canapés", "buttonHref": "#contact" }
+    ]
+  },
+  "gallery": {
+    "title": "Events in full colour",
+    "description": "Long tables, busy passes, intimate rooms and generous platters across Yorkshire.",
+    "rowOne": [
+      { "image": "/templates/assets/gather-grace-hero.webp", "imageAlt": "Airy wedding reception table", "caption": "A Yorkshire wedding" },
+      { "image": "/templates/assets/gather-grace-canapes.webp", "imageAlt": "Caterer preparing colourful canapés", "caption": "Canapés on the pass" },
+      { "image": "/templates/assets/gather-grace-event.webp", "imageAlt": "Private event dining experience", "caption": "Dinner in motion" }
+    ],
+    "rowTwo": [
+      { "image": "/templates/assets/gather-grace-canapes.webp", "imageAlt": "Seasonal salads and small plates", "caption": "Season-led plates" },
+      { "image": "/templates/assets/halcyon-dining.webp", "imageAlt": "Tables set for an intimate dinner", "caption": "An intimate room" },
+      { "image": "/templates/assets/gather-grace-hero.webp", "imageAlt": "Caterer at an elegant celebration table", "caption": "Before the doors open" }
+    ]
+  },
+  "story": {
+    "note": "How we work",
+    "title": "A calm team behind a brilliant day.",
+    "description": "Our planners and chefs work as one team from first call to final clear-down. You get one clear plan, honest advice and people who know how events really move.",
+    "image": "/templates/assets/gather-grace-event.webp",
+    "imageAlt": "Professional catering team serving guests at a private event",
+    "quote": "The food should feel effortless to your guests—even when the plan behind it is exact.",
+    "buttonLabel": "Meet the team",
+    "buttonHref": "#story"
+  },
+  "process": {
+    "title": "Planning without the noise",
+    "description": "Four clear stages keep menus, logistics and people moving together.",
+    "steps": [
+      { "title": "Share the brief", "description": "Tell us the occasion, location, guests, budget and priorities." },
+      { "title": "Shape the menu", "description": "We propose service style, dishes, dietary choices and staffing." },
+      { "title": "Taste & refine", "description": "Wedding and large-event clients taste, review and approve." },
+      { "title": "Host with ease", "description": "Our team cooks, serves, coordinates and clears down quietly." }
+    ]
+  },
+  "testimonials": {
+    "title": "Trusted with the important days",
+    "description": "Feedback from couples, producers, offices and hosts.",
+    "items": [
+      { "quote": "The team made 140 guests feel individually looked after. The food was exceptional.", "name": "Maya & Tom", "detail": "Wedding at Wharfedale Grange" },
+      { "quote": "Precise timings, thoughtful dietary options and not one moment of stress.", "name": "Jo H.", "detail": "Corporate producer" },
+      { "quote": "Our family menu felt personal and generous, not like standard event food.", "name": "Adaeze N.", "detail": "60th birthday" }
+    ]
+  },
+  "visit": {
+    "note": "Start the conversation",
+    "title": "Tell us what's gathering.",
+    "description": "Send the date, venue, guest count and rough style. We reply with availability and sensible next steps.",
+    "areasLabel": "Service areas",
+    "areas": ["Leeds", "York", "Harrogate", "Sheffield", "Across Yorkshire"],
+    "hours": [
+      { "day": "Mon–Fri", "time": "9am–5:30pm" },
+      { "day": "Saturday", "time": "Events only" },
+      { "day": "Sunday", "time": "Events only" }
+    ],
+    "primaryLabel": "Request a quote",
+    "primaryHref": "mailto:events@gatherandgrace.co.uk",
+    "secondaryLabel": "Call our planner",
+    "secondaryHref": "tel:+441135550129"
+  },
+  "social": { "instagram": "Gather & Grace on Instagram", "instagramHref": "https://instagram.com", "facebook": "Gather & Grace on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Gather & Grace on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Thoughtful catering for gatherings across Yorkshire.", "copyright": "© 2026 Gather & Grace. All rights reserved." }
+}

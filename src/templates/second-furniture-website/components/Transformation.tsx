@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
+import { useMeasuredPinnedSequence } from '@/lib/pinned-scroll';
 
 const Transformation = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -11,10 +12,26 @@ const Transformation = () => {
 
   const clipPath = useTransform(scrollYProgress, [0, 0.5], ["inset(100% 0 0 0)", "inset(0% 0 0 0)"]);
   const y = useTransform(scrollYProgress, [0, 1], ["10%", "-10%"]);
+  const { sectionHeight, reducedMotion } = useMeasuredPinnedSequence({
+    sectionRef: containerRef,
+    steps: 2,
+    stepRatio: 0.8,
+  });
 
   return (
-    <section id="atelier" ref={containerRef} className="relative h-[250vh] bg-furniture-bg">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section
+      id="atelier"
+      ref={containerRef}
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-furniture-bg ${reducedMotion ? "min-h-svh py-24" : "min-h-svh"}`}
+    >
+      <div
+        className={
+          reducedMotion
+            ? "relative flex min-h-svh flex-col items-center justify-center overflow-hidden"
+            : "sticky top-0 flex h-svh flex-col items-center justify-center overflow-hidden"
+        }
+      >
         
         {/* Background Text */}
         <div className="absolute inset-0 flex items-center justify-center z-0">
@@ -39,11 +56,13 @@ const Transformation = () => {
 
         {/* Rising Curtain Image Reveal */}
         <motion.div 
-          style={{ clipPath }}
-          className="absolute inset-0 z-20 pointer-events-none"
+          style={reducedMotion ? { clipPath: "inset(0% 0 0 0)" } : { clipPath }}
+          className={`inset-0 z-20 pointer-events-none ${
+            reducedMotion ? "relative mt-16 h-[70svh] w-full" : "absolute"
+          }`}
         >
           <motion.img 
-            style={{ y }}
+            style={reducedMotion ? undefined : { y }}
             src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=2000" 
             alt="Atelier workspace" 
             className="w-full h-[140%] object-cover object-center absolute -top-[20%]"

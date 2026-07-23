@@ -2,6 +2,7 @@
 import { TemplateImage } from "@/components/templates/TemplateImage";
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
+import { useMeasuredHorizontalScroll } from '@/lib/pinned-scroll';
 
 const collections = [
   {
@@ -28,19 +29,52 @@ const collections = [
 
 const Collections = () => {
   const targetRef = useRef<HTMLDivElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const { distance, sectionHeight, reducedMotion } = useMeasuredHorizontalScroll({
+    sectionRef: targetRef,
+    viewportRef,
+    trackRef,
+  });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
   return (
-    <section id="collections" ref={targetRef} className="relative h-[300vh] bg-furniture-walnut">
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-8 px-6 md:px-24">
+    <section
+      id="collections"
+      ref={targetRef}
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-furniture-walnut ${reducedMotion ? "py-20" : "min-h-svh"}`}
+    >
+      <div
+        ref={viewportRef}
+        className={
+          reducedMotion
+            ? "relative overflow-hidden"
+            : "sticky top-0 flex h-svh items-center overflow-hidden"
+        }
+      >
+        <motion.div
+          ref={trackRef}
+          style={reducedMotion ? undefined : { x }}
+          className={
+            reducedMotion
+              ? "grid gap-8 px-6 md:grid-cols-2 md:px-24"
+              : "flex w-max gap-8 px-6 md:px-24"
+          }
+        >
           
           {/* Intro Card */}
-          <div className="w-[85vw] md:w-[40vw] h-[70vh] flex flex-col justify-center flex-shrink-0">
+          <div
+            className={`flex flex-col justify-center ${
+              reducedMotion
+                ? "min-h-[28rem] w-full"
+                : "h-[70vh] w-[85vw] flex-shrink-0 md:w-[40vw]"
+            }`}
+          >
             <span className="text-furniture-ochre text-sm tracking-[0.2em] uppercase mb-8 block font-medium">The Collections</span>
             <h2 className="font-display text-5xl md:text-7xl text-furniture-bg mb-8">
               Curated for<br/><span className="italic text-furniture-bg/80">Architecture.</span>
@@ -54,7 +88,11 @@ const Collections = () => {
           {collections.map((item, index) => (
             <div 
               key={index} 
-              className="w-[85vw] md:w-[70vw] h-[70vh] relative flex-shrink-0 group overflow-hidden"
+              className={`group relative h-[70vh] overflow-hidden ${
+                reducedMotion
+                  ? "w-full"
+                  : "w-[85vw] flex-shrink-0 md:w-[70vw]"
+              }`}
             >
               <TemplateImage 
                 src={item.img} 

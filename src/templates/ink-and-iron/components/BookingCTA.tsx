@@ -1,15 +1,18 @@
 "use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { ensureScrollTrigger, observeScrollTriggerLayout, prefersReducedScrollMotion } from "@/lib/gsap-scroll";
 
 export default function BookingCTA() {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    ensureScrollTrigger();
+    const container = containerRef.current;
+    if (!container) return;
+    if (prefersReducedScrollMotion()) return;
 
     const ctx = gsap.context(() => {
       gsap.to(textRef.current, {
@@ -23,8 +26,12 @@ export default function BookingCTA() {
         },
       });
     }, containerRef);
+    const cleanupMeasurements = observeScrollTriggerLayout(container);
 
-    return () => ctx.revert();
+    return () => {
+      cleanupMeasurements();
+      ctx.revert();
+    };
   }, []);
 
   return (

@@ -2,6 +2,7 @@
 import { TemplateImage } from "@/components/templates/TemplateImage";
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
+import { useMeasuredHorizontalScroll } from '@/lib/pinned-scroll';
 
 const testimonials = [
   {
@@ -32,15 +33,33 @@ const testimonials = [
 
 const Testimonials = () => {
   const targetRef = useRef<HTMLDivElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
+  const { distance, sectionHeight, reducedMotion } = useMeasuredHorizontalScroll({
+    sectionRef: targetRef,
+    viewportRef,
+    trackRef,
+  });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
   return (
-    <section ref={targetRef} className="relative h-[200vh] bg-[#F2F2EE]">
-      <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
+    <section
+      ref={targetRef}
+      style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
+      className={`relative bg-[#F2F2EE] ${reducedMotion ? "py-20" : "min-h-svh"}`}
+    >
+      <div
+        ref={viewportRef}
+        className={
+          reducedMotion
+            ? "relative overflow-hidden"
+            : "sticky top-0 flex h-svh flex-col justify-center overflow-hidden"
+        }
+      >
         <div className="container mx-auto px-6 md:px-12 mb-12">
           <div className="flex items-center gap-3 mb-4">
             <span className="h-[1px] w-8 bg-plumber-copper"></span>
@@ -53,11 +72,21 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <motion.div style={{ x }} className="flex gap-8 px-6 md:px-12 w-max pb-12">
+        <motion.div
+          ref={trackRef}
+          style={reducedMotion ? undefined : { x }}
+          className={
+            reducedMotion
+              ? "grid gap-8 px-6 pb-12 md:grid-cols-2 md:px-12"
+              : "flex w-max gap-8 px-6 pb-12 md:px-12"
+          }
+        >
           {testimonials.map((item, index) => (
             <div 
               key={index} 
-              className="w-[85vw] md:w-[600px] bg-white p-10 md:p-14 shadow-xl shadow-plumber-charcoal/5 flex flex-col justify-between"
+              className={`flex flex-col justify-between bg-white p-10 shadow-xl shadow-plumber-charcoal/5 md:p-14 ${
+                reducedMotion ? "w-full" : "w-[85vw] md:w-[600px]"
+              }`}
             >
               <div>
                 <svg className="w-12 h-12 text-plumber-copper/20 mb-8" fill="currentColor" viewBox="0 0 32 32">

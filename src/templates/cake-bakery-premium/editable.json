@@ -1,0 +1,121 @@
+{
+  "colors": { "primary": "#7E2948", "secondary": "#AFC8C1", "background": "#FAF7F2", "text": "#2D2430" },
+  "brand": { "name": "Northmill Cakes", "tagline": "Celebration, considered", "logo": "", "phone": "+44 117 555 0142", "email": "studio@northmillcakes.co.uk", "address": "7 Wapping Wharf, Bristol BS1 6UD" },
+  "navigation": {
+    "links": [
+      { "label": "Collections", "href": "#menu" },
+      { "label": "Custom cakes", "href": "#packages" },
+      { "label": "Our studio", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Enquire", "href": "#contact" }
+    ],
+    "ctaLabel": "Plan your cake",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "note": "Made to mark the moment",
+    "title": "Cakes with presence.",
+    "description": "Sculptural celebration cakes, precise flavour and thoughtful detail—designed and baked in our Bristol studio.",
+    "primaryLabel": "Start an enquiry",
+    "primaryHref": "#contact",
+    "secondaryLabel": "View collections",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/northmill-cakes-hero.webp",
+    "imageAlt": "Elegant two-tier celebration cake with cupcakes on burgundy plinths",
+    "badge": "Consultations now open"
+  },
+  "strip": { "items": ["Wedding cakes", "Celebration cakes", "Cupcake towers", "Seasonal collections", "Bristol delivery"] },
+  "products": {
+    "title": "Choose your centrepiece",
+    "description": "Start with a collection or commission something entirely your own.",
+    "items": [
+      { "name": "Modern celebration", "description": "Clean finish, layered flavour and a tailored colour story.", "price": "From £95", "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Modern tiered cake on a burgundy display" },
+      { "name": "Wedding tiers", "description": "Architectural cakes for intimate dinners and full receptions.", "price": "From £420", "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Baker finishing a sculptural two-tier wedding cake" },
+      { "name": "Cupcake edit", "description": "Twenty-four hand-finished cakes in two seasonal flavours.", "price": "From £72", "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Premium hand-finished cupcakes beside a tiered cake" }
+    ]
+  },
+  "feature": {
+    "note": "Inside the studio",
+    "title": "Designed first. Baked beautifully.",
+    "description": "Each commission begins with your occasion, room and mood. We then develop proportion, colour, texture and flavour as one complete piece.",
+    "image": "/templates/assets/northmill-workshop.webp",
+    "imageAlt": "Professional cake designer finishing smooth buttercream in a bright studio",
+    "facts": [
+      { "value": "12", "label": "signature flavours" },
+      { "value": "48h", "label": "minimum bake time" },
+      { "value": "4.9", "label": "client rating" }
+    ],
+    "buttonLabel": "Meet the makers",
+    "buttonHref": "#story"
+  },
+  "packages": {
+    "title": "A clear way to commission",
+    "description": "Transparent starting points, with final pricing shaped by size, finish and delivery.",
+    "items": [
+      { "name": "Celebration", "description": "A polished single-tier cake for birthdays and gatherings.", "price": "From £95", "note": "Serves 12–24", "features": ["One signature flavour", "Personal inscription", "Collection included"], "buttonLabel": "Choose a style", "buttonHref": "#contact" },
+      { "name": "Wedding atelier", "description": "A fully designed centrepiece with tasting and delivery.", "price": "From £420", "note": "Bespoke commission", "features": ["Tasting box and consultation", "Custom sketch and palette", "Delivery and venue setup"], "buttonLabel": "Plan your wedding cake", "buttonHref": "#contact" },
+      { "name": "Cupcake table", "description": "A display-ready collection for parties and brand events.", "price": "From £144", "note": "48 cupcakes", "features": ["Up to three flavours", "Coordinated finishes", "Display hire available"], "buttonLabel": "Build a table", "buttonHref": "#contact" }
+    ]
+  },
+  "gallery": {
+    "title": "From sketchbook to cake table",
+    "description": "A closer look at finished commissions, studio hands and thoughtful details.",
+    "rowOne": [
+      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Sculptural tiered cake and cupcakes", "caption": "Burgundy and pearl" },
+      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Cake artist applying buttercream", "caption": "Hand-finished in Bristol" },
+      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Cupcakes arranged on plinths", "caption": "The cupcake edit" }
+    ],
+    "rowTwo": [
+      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Bright professional cake studio", "caption": "Studio morning" },
+      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Elegant cake with restrained decoration", "caption": "Quietly dramatic" },
+      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Smooth sculptural cake detail", "caption": "Texture in progress" }
+    ]
+  },
+  "story": {
+    "note": "Northmill studio",
+    "title": "Confident design, genuinely good cake.",
+    "description": "Our small team combines pastry training with product and interior design. The result is cake that belongs in the room—and tastes as memorable as it looks.",
+    "image": "/templates/assets/northmill-workshop.webp",
+    "imageAlt": "Cake maker working carefully in the Northmill studio",
+    "quote": "A cake should hold the room for a moment, then bring everyone to the table.",
+    "buttonLabel": "Discover our studio",
+    "buttonHref": "#story"
+  },
+  "process": {
+    "title": "From idea to first slice",
+    "description": "A considered process with clear decisions and no last-minute surprises.",
+    "steps": [
+      { "title": "Tell us", "description": "Share the date, guest count, venue and visual direction." },
+      { "title": "Taste", "description": "Choose favourites from a posted or studio tasting box." },
+      { "title": "Design", "description": "Approve a clear sketch, palette and final quotation." },
+      { "title": "Celebrate", "description": "Collect from our studio or let us deliver and install." }
+    ]
+  },
+  "testimonials": {
+    "title": "Celebrated by our clients",
+    "description": "Notes from couples, families and creative teams across the South West.",
+    "items": [
+      { "quote": "It looked like a piece of design and tasted even better than our tasting box.", "name": "Imogen & Josh", "detail": "Wedding at Coombe Lodge" },
+      { "quote": "The process was calm, clear and completely professional from start to finish.", "name": "Leila M.", "detail": "40th birthday" },
+      { "quote": "Our launch cake was distinctive without feeling gimmicky. Exactly right.", "name": "Studio Alder", "detail": "Brand event" }
+    ]
+  },
+  "visit": {
+    "note": "Begin your commission",
+    "title": "Tell us what you're celebrating.",
+    "description": "Enquiries are answered within two working days. Local delivery and venue setup are quoted by postcode.",
+    "areasLabel": "Delivery coverage",
+    "areas": ["Bristol", "Bath", "Somerset", "The Cotswolds"],
+    "hours": [
+      { "day": "Tue–Fri", "time": "9am–5pm" },
+      { "day": "Saturday", "time": "10am–2pm" },
+      { "day": "Sunday", "time": "Deliveries only" }
+    ],
+    "primaryLabel": "Start an enquiry",
+    "primaryHref": "mailto:studio@northmillcakes.co.uk",
+    "secondaryLabel": "Order a tasting box",
+    "secondaryHref": "https://example.com/tasting"
+  },
+  "social": { "instagram": "Northmill Cakes on Instagram", "instagramHref": "https://instagram.com", "facebook": "Northmill Cakes on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Northmill Cakes on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Sculptural cakes, clear process, generous flavour.", "copyright": "© 2026 Northmill Cakes. All rights reserved." }
+}

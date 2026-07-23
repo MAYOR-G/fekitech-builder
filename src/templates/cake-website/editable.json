@@ -1,12 +1,24 @@
 {
   "brand": {
-    "name": "Velvet Crumb Cakes",
-    "tagline": "Elegant cakes, dessert tables, and celebration sweets made to order.",
-    "phone": "+1 212 555 0184",
-    "email": "hello@velvetcrumbcakes.com",
-    "address": "118 Mercer Street, New York, NY 10012",
-    "studioNote": "Consultation studio serving New York, Brooklyn, Chicago, London, and Manchester.",
-    "instagram": "@velvetcrumbcakes"
+    "name": "Sweet Delights Bakery",
+    "tagline": "Beautiful cakes and celebration bakes, made to order in Bristol.",
+    "phone": "+44 117 555 0184",
+    "email": "hello@sweetdelightsbakery.co.uk",
+    "address": "18 Clifton Village, Bristol BS8 4AA",
+    "studioNote": "Private cake consultations and delivery across Bristol, Bath and the South West.",
+    "instagram": "@sweetdelightsbakery"
+  },
+  "hero": {
+    "eyebrow": "Independent Bristol bakery",
+    "title": "Beautiful cakes for every celebration.",
+    "subtitle": "Made-to-order wedding cakes, birthday cakes and elegant bakes, created with exceptional ingredients and a careful eye for detail.",
+    "image": "/templates/assets/northmill-cakes-hero.webp",
+    "imageAlt": "Elegant tiered celebration cake with berries, chocolate and matching cupcakes",
+    "primaryLabel": "Plan your cake",
+    "primaryHref": "#order",
+    "secondaryLabel": "View our cakes",
+    "secondaryHref": "#gallery",
+    "note": "Wedding · birthday · celebration"
   },
   "categories": [
     {

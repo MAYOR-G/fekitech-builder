@@ -19,7 +19,7 @@ function App() {
   const { experiences, featuredDishes, galleryItems, menuCategories, reasons, reviews } = useTemplateData();
 
   return (
-    <div className="min-h-screen overflow-hidden bg-dining-room text-cream">
+    <div className="min-h-screen bg-dining-room text-cream">
       <Navbar />
       <main>
         <Hero />

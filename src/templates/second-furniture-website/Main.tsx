@@ -11,7 +11,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="bg-furniture-bg min-h-screen text-furniture-text font-sans overflow-x-clip selection:bg-furniture-ochre selection:text-white">
+    <div className="bg-furniture-bg min-h-screen text-furniture-text font-sans selection:bg-furniture-ochre selection:text-white">
       <Navbar />
       <Hero />
       <Craft />

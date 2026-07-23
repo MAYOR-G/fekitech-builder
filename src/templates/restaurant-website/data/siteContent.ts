@@ -71,13 +71,26 @@ export type Review = {
 };
 
 export const brand = {
-  name: "Ember & Sage Kitchen",
-  tagline: "Modern dining shaped by open-fire cooking, seasonal produce, and warm hospitality.",
-  phone: "+1 312 555 0198",
-  email: "reservations@emberandsage.com",
-  address: "84 West Randolph Street, Chicago, IL 60601",
-  locationNote: "Private dining and group bookings available in Chicago, New York, Brooklyn, London, and Manchester.",
-  instagram: "@emberandsagekitchen",
+  name: "The Rustic Plate Restaurant",
+  tagline: "Seasonal British cooking, thoughtful drinks and warm Yorkshire hospitality.",
+  phone: "+44 1904 555 018",
+  email: "bookings@therusticplate.co.uk",
+  address: "12 Stonegate, York YO1 8AS",
+  locationNote: "Private dining, Sunday lunch and group bookings in the heart of York.",
+  instagram: "@therusticplate",
+};
+
+export const hero = {
+  eyebrow: "Independent dining in York",
+  title: "Seasonal food, simply done.",
+  subtitle:
+    "A relaxed British restaurant serving thoughtful plates, good wine and warm hospitality in the heart of York.",
+  image: "/templates/assets/halcyon-dining.webp",
+  imageAlt: "Elegant candlelit restaurant dining room prepared for evening service",
+  primaryLabel: "Reserve a table",
+  primaryHref: "#reservation",
+  secondaryLabel: "View the menu",
+  secondaryHref: "#menu",
 };
 
 export const navLinks: NavLink[] = [

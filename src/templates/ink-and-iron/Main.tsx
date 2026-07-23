@@ -11,7 +11,7 @@ import './index.css';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#0A0A0A] text-white overflow-hidden">
+    <main className="flex min-h-screen flex-col bg-[#0A0A0A] text-white">
       <Navbar />
       <Hero />
       <TrustBar />

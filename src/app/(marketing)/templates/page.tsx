@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ArrowLeft, Search } from "lucide-react";
 import { LogoMark } from "@/components/ui/LogoMark";
-import { TemplateImage } from "@/components/templates/TemplateImage";
-import { getTemplateMinimumPlan, PLANS } from "@/lib/plans";
+import { TemplateCatalogCard } from "@/components/templates/TemplateCatalogCard";
 import { getAllTemplates } from "@/registry";
 
 const templates = getAllTemplates();
@@ -52,25 +51,14 @@ export default function TemplatesPage() {
             <p className="mt-2 text-sm text-ft-body">Try a broader search term.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((template) => {
-              const minimumPlan = getTemplateMinimumPlan(template.id);
               return (
-                <article key={template.id} className="group relative flex flex-col gap-4">
-                  {/* Image Card */}
-                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-ft-border/50 bg-ft-surface-cool shadow-[0_12px_34px_rgba(22,31,72,0.04)] transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_20px_46px_rgba(22,31,72,0.12)]">
-                    <div className="absolute inset-0 animate-pulse bg-[linear-gradient(110deg,#f1f6ff_8%,#ffffff_18%,#f1f6ff_33%)] bg-[length:200%_100%]" />
-                    <TemplateImage src={template.image} alt={`${template.name} template preview`} width={1200} height={1600} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="relative z-10 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
-                    
-                    {/* Hover Action Bar */}
-                    <div className="absolute inset-0 z-20 bg-ft-ink/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
-                    
-                    <div className="absolute bottom-4 left-4 right-4 z-30 flex translate-y-[150%] flex-col sm:flex-row gap-3 rounded-xl bg-white/95 p-3 shadow-xl backdrop-blur-md transition-transform duration-300 ease-out group-hover:translate-y-0">
-                      <Link href={`/preview/${template.id}`} className="flex-1 flex justify-center items-center rounded-lg border border-ft-border/70 bg-white px-3 py-2.5 text-center text-sm font-semibold text-ft-ink transition-colors hover:border-ft-primary hover:text-ft-primary">Preview</Link>
-                      <button
-                        type="button"
-                        disabled={creatingId === template.id}
-                        onClick={async () => {
+                <TemplateCatalogCard
+                  key={template.id}
+                  template={template}
+                  creating={creatingId === template.id}
+                  onStart={async () => {
                           setCreatingId(template.id);
                           setMessage("");
                           try {
@@ -91,22 +79,8 @@ export default function TemplatesPage() {
                           } finally {
                             setCreatingId(null);
                           }
-                        }}
-                        className="flex-1 rounded-lg bg-ft-primary px-3 py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:bg-ft-primary-deep disabled:cursor-wait disabled:opacity-50"
-                      >
-                        {creatingId === template.id ? "Creating…" : "Start editing"}
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Template Info (Below the card) */}
-                  <div className="flex items-start justify-between gap-3 px-1">
-                    <div>
-                      <h2 className="text-base font-semibold text-ft-ink">{template.name}</h2>
-                      <p className="mt-1 text-xs text-ft-body">{minimumPlan === "free" ? "Free to customize" : `${PLANS[minimumPlan].name} plan`}</p>
-                    </div>
-                  </div>
-                </article>
+                  }}
+                />
               );
             })}
           </div>

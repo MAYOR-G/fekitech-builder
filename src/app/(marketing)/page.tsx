@@ -1,5 +1,4 @@
 import Hero from "@/components/landing/Hero";
-import HeroVideo from "@/components/landing/HeroVideo";
 import FloatingMockups from "@/components/landing/FloatingMockups";
 import Marquee from "@/components/landing/Marquee";
 import TemplatesShowcase from "@/components/landing/TemplatesShowcase";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <HeroVideo />
       <FloatingMockups />
       <Marquee />
       <TemplatesShowcase />

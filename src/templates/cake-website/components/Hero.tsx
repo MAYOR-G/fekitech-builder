@@ -1,93 +1,82 @@
 "use client";
-import { TemplateImage } from "@/components/templates/TemplateImage";
-import { ArrowRight, Star } from "lucide-react";
-import { ButtonLink } from "./ButtonLink";
 
+import { TemplateImage } from "@/components/templates/TemplateImage";
+import { ArrowRight, MapPin, Star } from "lucide-react";
+import { ButtonLink } from "./ButtonLink";
 import { useTemplateData } from "../TemplateContext";
+
 export function Hero() {
-  const { brand, contactHighlights } = useTemplateData();
+  const { hero } = useTemplateData();
 
   return (
-    <section id="top" className="relative min-h-screen bg-cream flex flex-col">
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/45 to-transparent z-10 pointer-events-none" />
-      
-      <div className="flex-1 grid lg:grid-cols-2 relative z-0">
-        
-        {/* Left Content */}
-        <div className="flex flex-col justify-center px-6 py-20 lg:px-16 xl:px-24">
+    <section
+      id="top"
+      className="relative isolate overflow-hidden bg-[#fffaf6] pt-24 lg:min-h-[min(920px,100svh)] lg:pt-0"
+    >
+      <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-[#edd7d0]/45 blur-3xl" />
+      <div className="mx-auto grid min-h-[calc(100svh-6rem)] max-w-[1500px] items-stretch lg:grid-cols-[0.88fr_1.12fr]">
+        <div className="relative z-10 flex items-center px-5 py-14 sm:px-8 lg:px-12 lg:py-32 xl:px-20">
           <div className="max-w-2xl animate-rise">
-            <div className="flex items-center gap-3 mb-8">
-              <span className="h-[1px] w-8 bg-rose/40" />
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-rose/90">
-                Studio & Patisserie
-              </p>
-            </div>
-            
-            <h1 className="font-display text-5xl font-normal leading-[1.05] tracking-tight text-ganache sm:text-6xl xl:text-[5.5rem]">
-              Celebrations, <br />
-              <span className="italic text-chocolate/80">composed.</span>
+            <p className="mb-7 flex items-center gap-3 text-[0.7rem] font-black uppercase tracking-[0.26em] text-rose">
+              <span className="h-px w-10 bg-rose/55" />
+              {hero.eyebrow}
+            </p>
+
+            <h1 className="max-w-[10ch] font-display text-5xl font-semibold leading-[0.96] tracking-[-0.035em] text-ganache sm:text-6xl lg:text-7xl xl:text-[5.6rem]">
+              {hero.title}
             </h1>
-            
-            <p className="mt-8 text-[1.05rem] leading-[1.85] tracking-wide text-chocolate/75 max-w-xl">
-              {brand.name} creates sculpted wedding cakes, elegant birthday
-              centrepieces, and dessert curations with careful flavour
-              planning, beautiful finishing, and calm order guidance.
+
+            <p className="mt-7 max-w-xl text-base leading-7 text-chocolate/76 sm:text-lg sm:leading-8">
+              {hero.subtitle}
             </p>
-            
-            <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <ButtonLink href="#order" className="group flex items-center justify-center gap-2 px-8 py-4 text-sm tracking-[0.1em] uppercase font-bold bg-ganache text-cream hover:bg-chocolate transition-all duration-300">
-                Request a Custom Cake
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <ButtonLink
+                href={hero.primaryHref}
+                className="group flex min-h-12 items-center justify-center gap-2 px-7 text-sm font-bold uppercase tracking-[0.1em]"
+              >
+                {hero.primaryLabel}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </ButtonLink>
-              <ButtonLink href="#gallery" variant="secondary" className="px-8 py-4 text-sm tracking-[0.1em] uppercase font-bold border-chocolate/20 text-ganache hover:border-chocolate/40 hover:bg-white/50 transition-all duration-300">
-                View Gallery
+              <ButtonLink
+                href={hero.secondaryHref}
+                variant="secondary"
+                className="min-h-12 px-7 text-sm font-bold uppercase tracking-[0.1em]"
+              >
+                {hero.secondaryLabel}
               </ButtonLink>
             </div>
-            
-            <div className="mt-20 pt-10 border-t border-chocolate/10 flex flex-wrap gap-x-8 gap-y-4">
-              {contactHighlights.slice(0, 3).map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div key={item.label} className="flex items-center gap-3">
-                    <div className="grid h-8 w-8 place-items-center rounded-full bg-white/60 shadow-sm border border-chocolate/5">
-                      <Icon className="h-3.5 w-3.5 text-rose" />
-                    </div>
-                    <span className="text-xs font-bold uppercase tracking-[0.15em] text-ganache/80">
-                      {item.label}
-                    </span>
-                  </div>
-                );
-              })}
+
+            <div className="mt-11 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-chocolate/12 pt-6 text-xs font-bold uppercase tracking-[0.13em] text-chocolate/68">
+              <span className="inline-flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-rose" aria-hidden="true" />
+                Bristol &amp; the South West
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <Star className="h-4 w-4 fill-champagne text-champagne" aria-hidden="true" />
+                Made to order
+              </span>
             </div>
           </div>
         </div>
 
-        {/* Right Image / Editorial Frame */}
-        <div className="relative hidden lg:block overflow-hidden bg-chantilly">
-          <div className="absolute inset-0 bg-ganache-depth opacity-5 mix-blend-multiply pointer-events-none z-10" />
-          
+        <div className="relative min-h-[520px] overflow-hidden sm:min-h-[640px] lg:min-h-full">
           <TemplateImage
-            src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1400&q=90"
-            alt="Beautifully crafted wedding cake"
-            className="absolute inset-0 w-full h-full object-cover object-center animate-rise scale-105"
-            style={{ animationDuration: '2s', animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
+            src={hero.image}
+            alt={hero.imageAlt}
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            loading="eager"
           />
-
-          <div className="absolute bottom-10 right-10 bg-white/90 backdrop-blur-md px-6 py-5 rounded-sm shadow-2xl border border-white/20 max-w-xs animate-rise" style={{ animationDelay: '600ms' }}>
-            <div className="flex text-champagne mb-3">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-current" />
-              ))}
-            </div>
-            <p className="font-display text-lg leading-snug text-ganache mb-2">
-              &quot;The finish was flawless, and the flavour was entirely unforgettable.&quot;
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(51,23,26,0.18)_100%)]" />
+          <div className="absolute bottom-6 left-5 right-5 border border-white/55 bg-white/88 px-5 py-4 shadow-[0_18px_50px_rgba(65,35,31,0.14)] backdrop-blur sm:bottom-8 sm:left-8 sm:right-auto sm:max-w-xs">
+            <p className="text-[0.65rem] font-black uppercase tracking-[0.22em] text-rose">
+              {hero.note}
             </p>
-            <p className="text-xs font-bold uppercase tracking-widest text-chocolate/60">
-              — Isabelle M., Bride
+            <p className="mt-2 font-display text-xl font-semibold leading-snug text-ganache">
+              Designed with care. Finished by hand.
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );

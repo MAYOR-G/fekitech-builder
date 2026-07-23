@@ -12,7 +12,7 @@ export default function GymWebsiteTemplate({ data }: { data: TemplateData }) {
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="template-wrapper min-h-screen w-full flex flex-col">
         <Main />
       </div>
     </TemplateContext.Provider>

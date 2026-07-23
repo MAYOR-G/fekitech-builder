@@ -1,0 +1,121 @@
+{
+  "colors": { "primary": "#E5412B", "secondary": "#F4C62B", "background": "#FFF9ED", "text": "#153A35" },
+  "brand": { "name": "Cluck & Yard", "tagline": "Chicken, tacos & good times", "logo": "", "phone": "+44 161 555 0188", "email": "orders@cluckandyard.co.uk", "address": "42 Oldham Street, Manchester M1 1JN" },
+  "navigation": {
+    "links": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Combos", "href": "#packages" },
+      { "label": "Our kitchen", "href": "#story" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Locations", "href": "#contact" }
+    ],
+    "ctaLabel": "Order now",
+    "ctaHref": "https://example.com/order"
+  },
+  "hero": {
+    "note": "Manchester-made. Big flavour.",
+    "title": "Crunch. Char. Repeat.",
+    "description": "Buttermilk chicken, flame-kissed tacos and loaded sides built fresh, packed properly and ready when you are.",
+    "primaryLabel": "Start your order",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "See the menu",
+    "secondaryHref": "#menu",
+    "image": "/templates/assets/cluck-yard-hero.webp",
+    "imageAlt": "Fried chicken, tacos, burger, wings, loaded fries, wrap and shake on a bright table",
+    "badge": "Freshly fried to order"
+  },
+  "strip": { "items": ["Buttermilk chicken", "Hot honey wings", "Loaded fries", "Grilled tacos", "Shakes made thick"] },
+  "products": {
+    "title": "Pick your craving",
+    "description": "Big flavour, sharp sauces and proper portions. Go solo or turn it into a full yard feast.",
+    "items": [
+      { "name": "The Yardbird", "description": "Crispy thigh, pickles, shredded lettuce and comeback sauce.", "price": "£9.95", "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Crispy chicken burger with fresh toppings" },
+      { "name": "Charred chicken tacos", "description": "Three corn tacos, salsa verde, slaw and lime crema.", "price": "£10.50", "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Colourful chicken tacos with salsa and lime" },
+      { "name": "Hot honey wings", "description": "Eight crisp wings, chilli honey and ranch dust.", "price": "£8.75", "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Golden chicken wings with spicy glaze" }
+    ]
+  },
+  "feature": {
+    "note": "Built fresh",
+    "title": "Fast food with standards.",
+    "description": "We brine overnight, bread in small batches and char every taco filling over flame. Sauces are made in-house and nothing waits under a heat lamp.",
+    "image": "/templates/assets/cluck-yard-tacos.webp",
+    "imageAlt": "Freshly assembled tacos with vibrant toppings",
+    "facts": [
+      { "value": "24h", "label": "buttermilk brine" },
+      { "value": "7", "label": "house sauces" },
+      { "value": "15m", "label": "pickup target" }
+    ],
+    "buttonLabel": "See how we cook",
+    "buttonHref": "#story"
+  },
+  "packages": {
+    "title": "Combos that make sense",
+    "description": "Choose the mood, pick a heat level and let us handle the rest.",
+    "items": [
+      { "name": "Solo stack", "description": "A main, seasoned fries and any canned drink.", "price": "From £13.50", "note": "One hungry person", "features": ["Burger, wrap or tacos", "House-seasoned fries", "Any canned drink"], "buttonLabel": "Build yours", "buttonHref": "https://example.com/order" },
+      { "name": "Full yard feast", "description": "The table-filling mix for friends who want everything.", "price": "£39.95", "note": "Best value · serves 3–4", "features": ["12 wings and 4 tacos", "2 loaded fries", "4 dips and 4 drinks"], "buttonLabel": "Order the feast", "buttonHref": "https://example.com/order" },
+      { "name": "Taco night", "description": "A shareable taco spread with fries and street corn.", "price": "£29.50", "note": "Serves 2–3", "features": ["9 mixed tacos", "Large seasoned fries", "Street corn and salsa"], "buttonLabel": "Choose fillings", "buttonHref": "https://example.com/order" }
+    ]
+  },
+  "gallery": {
+    "title": "Fresh out the kitchen",
+    "description": "A moving line-up of crunch, colour, char and shake-worthy finishes.",
+    "rowOne": [
+      { "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Fast-food spread with chicken and tacos", "caption": "The full yard" },
+      { "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Chicken tacos with bright salsa", "caption": "Charred chicken tacos" },
+      { "image": "/templates/assets/sunny-stack-hero-v2.webp", "imageAlt": "Large premium burger", "caption": "Stacked to order" }
+    ],
+    "rowTwo": [
+      { "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Tacos with fresh toppings", "caption": "Taco Tuesday, every day" },
+      { "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Loaded fries and fried chicken", "caption": "Crisp, hot, ready" },
+      { "image": "/templates/assets/ember-bun-hero-v2.webp", "imageAlt": "Flame-grilled burger", "caption": "Off the grill" }
+    ]
+  },
+  "story": {
+    "note": "Our kitchen",
+    "title": "Made fast. Never rushed.",
+    "description": "Cluck & Yard began with a fryer, a taco press and an unreasonable obsession with crunch. We still prep every sauce, slaw and pickle in our Manchester kitchen.",
+    "image": "/templates/assets/cluck-yard-hero.webp",
+    "imageAlt": "Colourful selection of freshly made fast food",
+    "quote": "If it doesn't drip a little, we haven't gone far enough.",
+    "buttonLabel": "Meet the yard",
+    "buttonHref": "#story"
+  },
+  "process": {
+    "title": "Choose. Heat. Collect.",
+    "description": "Ordering stays quick, whether you're at the counter or on the sofa.",
+    "steps": [
+      { "title": "Pick it", "description": "Choose chicken, tacos, burgers, wraps or a full combo." },
+      { "title": "Set the heat", "description": "Keep it mellow, go hot honey or ask for Yard Fire." },
+      { "title": "We cook", "description": "Your order is fried, grilled and dressed from fresh." },
+      { "title": "Grab it", "description": "Collect in store or follow live delivery tracking." }
+    ]
+  },
+  "testimonials": {
+    "title": "The group chat approved",
+    "description": "Real reactions from local regulars and late-night feast crews.",
+    "items": [
+      { "quote": "The chicken stayed audibly crunchy all the way home. Unreal.", "name": "Kai M.", "detail": "Northern Quarter" },
+      { "quote": "Proper tacos, sharp salsa and portions that are actually generous.", "name": "Sophie T.", "detail": "Ancoats" },
+      { "quote": "Our office lunch arrived hot, labelled and exactly on time.", "name": "Marcus J.", "detail": "Team order" }
+    ]
+  },
+  "visit": {
+    "note": "Eat in, collect or deliver",
+    "title": "Your nearest yard is ready.",
+    "description": "Order direct for collection or delivery. Large office orders can be scheduled by email.",
+    "areasLabel": "Delivery areas",
+    "areas": ["Northern Quarter", "Ancoats", "Deansgate", "Salford"],
+    "hours": [
+      { "day": "Mon–Thu", "time": "11:30am–11pm" },
+      { "day": "Fri–Sat", "time": "11:30am–1am" },
+      { "day": "Sunday", "time": "12–10pm" }
+    ],
+    "primaryLabel": "Order delivery",
+    "primaryHref": "https://example.com/order",
+    "secondaryLabel": "Find a location",
+    "secondaryHref": "https://maps.google.com"
+  },
+  "social": { "instagram": "Cluck & Yard on Instagram", "instagramHref": "https://instagram.com", "facebook": "Cluck & Yard on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Cluck & Yard on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Big flavour from Manchester, made fresh every day.", "copyright": "© 2026 Cluck & Yard. All rights reserved." }
+}
