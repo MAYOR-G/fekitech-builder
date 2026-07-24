@@ -1,0 +1,14 @@
+{
+  "id": "premium-construction",
+  "name": "Sterling Build Co. Construction",
+  "description": "A high-end, professional construction and civil engineering website template designed for building firms seeking to showcase their expertise and portfolio.",
+  "category": "Services",
+  "image": "/templates/premium-construction.webp",
+  "features": [
+    "Project Portfolio Showcase",
+    "Service Specializations",
+    "Company Statistics",
+    "Lead Generation Contact Form",
+    "Mobile Responsive Design"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "brand": {
+    "name": "Sweet Blossom",
+    "logo": "",
+    "tagline": "Artisan Bakery & Patisserie",
+    "phone": "020 7123 4567",
+    "email": "hello@sweetblossom.co.uk",
+    "address": "42 High Street, Cotswolds",
+    "colors": {
+      "primary": "#48a9a6",
+      "secondary": "#ffb6b9",
+      "background": "#ffffff",
+      "text": "#4a4a4a"
+    }
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#" },
+      { "label": "Specialties", "href": "#specialties" },
+      { "label": "Menu", "href": "#menu" },
+      { "label": "About", "href": "#about" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Order Online",
+    "ctaHref": "#order"
+  },
+  "hero": {
+    "kicker": "Since 2012",
+    "title": "Baked with Love, Crafted with Passion",
+    "subtitle": "Discover our daily selection of artisan breads, delicate pastries, and bespoke celebration cakes.",
+    "backgroundImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200",
+    "buttonLabel": "Explore Menu",
+    "buttonHref": "#menu"
+  },
+  "specialties": {
+    "title": "Our Specialties",
+    "items": [
+      {
+        "title": "Occasion Cakes",
+        "description": "Bespoke designs for weddings, birthdays, and special events.",
+        "icon": "Cake",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600"
+      },
+      {
+        "title": "Artisan Bread",
+        "description": "Sourdough and rustic loaves baked fresh every morning.",
+        "icon": "Bread",
+        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600"
+      },
+      {
+        "title": "French Pastries",
+        "description": "Buttery croissants, pain au chocolat, and delicate éclairs.",
+        "icon": "Croissant",
+        "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=600"
+      },
+      {
+        "title": "Macarons",
+        "description": "Hand-piped French macarons in seasonal flavours.",
+        "icon": "Cookie",
+        "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600"
+      }
+    ]
+  },
+  "about": {
+    "title": "Magic Processing",
+    "subtitle": "Every morning starts before dawn in our kitchen.",
+    "description": "We believe that great baking takes time, patience, and the finest ingredients. Our recipes have been perfected over years of dedication to the craft, bringing you authentic flavours and textures that make every bite special.",
+    "backgroundImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200",
+    "buttonLabel": "Discover More",
+    "buttonHref": "#story"
+  },
+  "gallery": {
+    "title": "Our Creations",
+    "images": [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=800",
+      "https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=800",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=800",
+      "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800",
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=800"
+    ]
+  },
+  "testimonials": {
+    "title": "Clients Say",
+    "items": [
+      {
+        "name": "Sarah Jenkins",
+        "quote": "The wedding cake they created for us was absolutely stunning. Not only did it look perfect, but the flavour was divine.",
+        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150"
+      },
+      {
+        "name": "David Miller",
+        "quote": "I stop by every morning for my sourdough and coffee. The quality is consistently excellent, and the staff are incredibly warm.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150"
+      },
+      {
+        "name": "Emily Chen",
+        "quote": "Their macarons are the best outside of Paris! I always buy a box as a gift, though I usually end up eating half myself.",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Our Prices",
+    "items": [
+      {
+        "name": "Occasion Cakes",
+        "price": "65",
+        "currency": "£",
+        "features": [
+          "1x Sweet Aniseed",
+          "1x Soft Fruits",
+          "1x Assorted",
+          "1x Flavour Mix"
+        ],
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=300",
+        "buttonLabel": "Order Now",
+        "buttonHref": "#enquire"
+      },
+      {
+        "name": "Cupcakes",
+        "price": "35",
+        "currency": "£",
+        "features": [
+          "2x Sweet Aniseed",
+          "2x Soft Fruits",
+          "2x Assorted",
+          "2x Flavour Mix"
+        ],
+        "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?q=80&w=300",
+        "buttonLabel": "Order Now",
+        "buttonHref": "#order"
+      },
+      {
+        "name": "Macarons",
+        "price": "55",
+        "currency": "£",
+        "features": [
+          "5x Sweet Aniseed",
+          "5x Soft Fruits",
+          "5x Assorted",
+          "5x Flavour Mix"
+        ],
+        "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=300",
+        "buttonLabel": "Order Now",
+        "buttonHref": "#order",
+        "featured": true
+      },
+      {
+        "name": "Small Cakes",
+        "price": "95",
+        "currency": "£",
+        "features": [
+          "10x Sweet Aniseed",
+          "10x Soft Fruits",
+          "10x Assorted",
+          "10x Flavour Mix"
+        ],
+        "image": "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=300",
+        "buttonLabel": "Order Now",
+        "buttonHref": "#order"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Sweet Blossom Bakery. All rights reserved.",
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#"
+    }
+  }
+}

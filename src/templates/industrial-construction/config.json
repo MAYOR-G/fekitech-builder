@@ -1,0 +1,15 @@
+{
+  "id": "industrial-construction",
+  "name": "Titan Industrial Construction",
+  "description": "A heavy-duty, high-impact template designed for large-scale construction, civil engineering, and industrial building companies.",
+  "image": "/templates/industrial-construction.webp",
+  "category": "construction",
+  "features": [
+    "Bold Hero Section",
+    "Service Grids with Overlays",
+    "Impact Counters",
+    "Contact & Newsletter Forms",
+    "Modern Aesthetic"
+  ],
+  "author": "FekiTech"
+}

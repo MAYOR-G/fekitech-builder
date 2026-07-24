@@ -1,10 +1,16 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import PremiumHospitalityTemplate, { type PremiumHospitalityData } from "../_premium-hospitality/PremiumHospitalityTemplate";
+import type { PremiumHospitalityData } from "../_premium-hospitality/PremiumHospitalityTemplate";
 import editableData from "./editable.json";
+import { TemplateProvider } from "./TemplateContext";
+import Main from "./Main";
 
-export default function CateringCompanyPremiumTemplate({ data }: { data: TemplateData }) {
+export default function CateringCompanyWebsiteTemplate({ data }: { data: TemplateData }) {
   const content = mergeTemplateData(editableData, data) as unknown as PremiumHospitalityData;
-  return <PremiumHospitalityTemplate data={content} variant="catering" />;
+  return (
+    <TemplateProvider data={content}>
+      <Main />
+    </TemplateProvider>
+  );
 }

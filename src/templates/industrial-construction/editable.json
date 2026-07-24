@@ -1,0 +1,127 @@
+{
+  "header": {
+    "logo": "TITAN",
+    "logoSubtitle": "Industrial Construction",
+    "nav": [
+      { "label": "Home", "href": "#" },
+      { "label": "Pages", "href": "#" },
+      { "label": "Services", "href": "#" },
+      { "label": "Projects", "href": "#" },
+      { "label": "News", "href": "#" },
+      { "label": "Contacts", "href": "#" }
+    ],
+    "quoteButton": "GET A QUOTE"
+  },
+  "hero": {
+    "title": "WE BUILD EVERYTHING YOU NEED FOR THE FUTURE",
+    "image": "https://images.unsplash.com/photo-1541888086225-f674ce882488?auto=format&fit=crop&q=80&w=2000",
+    "buttonLabel": "VIEW SERVICES",
+    "buttonHref": "#services",
+    "experience": {
+      "years": "34+",
+      "text": "YEARS OF EXPERIENCE"
+    },
+    "efficiency": {
+      "label": "IMPROVED SUPPLY CHAIN EFFICIENCY",
+      "value": "503k"
+    },
+    "contactBox": {
+      "emergency": {
+        "label": "Call Emergency",
+        "value": "635 5258 4250"
+      },
+      "mail": {
+        "label": "Our Mail",
+        "value": "hello@titan-industrial.com"
+      }
+    }
+  },
+  "services": {
+    "tagline": "OUR SERVICES",
+    "title": "Modern Building Challenges & Solutions of Construction",
+    "buttonLabel": "VIEW SERVICES",
+    "buttonHref": "#services",
+    "items": [
+      {
+        "title": "Flooring Installation",
+        "description": "Premium industrial flooring solutions designed for durability.",
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "title": "Building Architecture",
+        "description": "Affordable housing communities, industrial, public and private healthcare facilities.",
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "title": "Foundation Repair",
+        "description": "Expert foundation repair and strengthening for large structures.",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
+      },
+      {
+        "title": "Structural Steel",
+        "description": "Heavy-duty steel framing and structural integrity solutions.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+      }
+    ]
+  },
+  "impacts": {
+    "tagline": "WHO WE ARE",
+    "orangeBoxTitle": "Building The Next Generation Of Efficient Industrial Systems",
+    "buttonLabel": "READ MORE",
+    "buttonHref": "#about",
+    "image": "https://images.unsplash.com/photo-1431576901776-e539bd916ba2?auto=format&fit=crop&q=80&w=1000",
+    "rightTitle": "BUILDING THE FUTURE OF THE CONSTRUCTION INDUSTRY, ONE PROJECT AT A TIME.",
+    "stats": [
+      {
+        "label": "GLOBAL BUSINESS SERVICES",
+        "value": "594+"
+      },
+      {
+        "label": "REAL-TIME LIVE SUPPORT",
+        "value": "498B"
+      }
+    ]
+  },
+  "quality": {
+    "tagline": "OUR IMPACTS",
+    "title": "Modern Building Challenges & Solutions of Construction",
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800",
+    "projectsDone": "67+",
+    "contentTitle": "QUALITY CONSTRUCTION WITH NEW AGE EQUIPMENT.",
+    "description": "We build multi-family and affordable housing communities, industrial facilities, public and private healthcare facilities, fitness centers and office buildings. We improve the supply chain management process, increase operational efficiencies and build environments that foster creativity.",
+    "subImage": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=600",
+    "checks": [
+      "100% Satisfaction guarantee",
+      "Ontime delivery system",
+      "Safe, Reliable And Express"
+    ]
+  },
+  "footer": {
+    "logo": "TITAN",
+    "logoSubtitle": "Industrial Construction",
+    "description": "We are creators of transformative spaces that inspire, innovate, and endure.",
+    "social": {
+      "facebook": "#",
+      "twitter": "#",
+      "linkedin": "#",
+      "instagram": "#"
+    },
+    "quickLinks": [
+      { "label": "About Us" },
+      { "label": "Our Services" },
+      { "label": "Recent Projects" },
+      { "label": "Latest News" },
+      { "label": "Contact Us" }
+    ],
+    "contactInfo": {
+      "address": "42 Artisan Lane, London, UK",
+      "phone": "+32.839.28.898",
+      "email": "buildnow@gmail.com"
+    },
+    "newsletter": {
+      "description": "Subscribe to our newsletter to receive the latest news and updates.",
+      "placeholder": "Email address"
+    },
+    "copyright": "Copyright © 2026 Titan Industrial. All Rights Reserved."
+  }
+}

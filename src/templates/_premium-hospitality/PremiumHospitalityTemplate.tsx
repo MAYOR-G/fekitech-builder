@@ -159,6 +159,150 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
     "--pht-ink": data.colors.text,
   } as CSSProperties;
 
+  const renderHero = () => (
+    <section className="pht-hero" id="top" key="hero">
+      <div className="pht-shell pht-hero-grid">
+        <div className="pht-hero-copy pht-enter">
+          <p className="pht-kicker">{data.hero.note}</p>
+          <h1>{data.hero.title}</h1>
+          <p className="pht-lead">{data.hero.description}</p>
+          <div className="pht-actions">
+            <Button href={data.hero.primaryHref}>{data.hero.primaryLabel}</Button>
+            <Button href={data.hero.secondaryHref} quiet>{data.hero.secondaryLabel}</Button>
+          </div>
+          <p className="pht-hero-contact"><MapPin aria-hidden="true" size={17} />{data.brand.address}</p>
+        </div>
+        <div className="pht-hero-media pht-enter">
+          <span className="pht-hero-shape" aria-hidden="true" />
+          <img src={data.hero.image} alt={data.hero.imageAlt} fetchPriority="high" />
+          <span className="pht-hero-badge">{data.hero.badge}</span>
+          <span className="pht-doodle" aria-hidden="true">✦</span>
+        </div>
+      </div>
+      <div className="pht-ripped-edge" aria-hidden="true" />
+    </section>
+  );
+
+  const renderStrip = () => (
+    <div className="pht-strip" aria-label="Highlights" key="strip">
+      <div>{[...data.strip.items, ...data.strip.items].map((item, index) => <span key={`${item}-${index}`}>{item}<b aria-hidden="true">✦</b></span>)}</div>
+    </div>
+  );
+
+  const renderProducts = () => (
+    <section className="pht-section pht-products" id="menu" key="products">
+      <div className="pht-shell">
+        <div className="pht-heading pht-reveal"><h2>{data.products.title}</h2><p>{data.products.description}</p></div>
+        <div className="pht-products-grid">
+          {data.products.items.map((item, index) => (
+            <article className={`pht-product pht-product--${index + 1} pht-reveal`} key={item.name}>
+              <div className="pht-product-media"><img src={item.image} alt={item.imageAlt} loading="lazy" /></div>
+              <div><p>{String(index + 1).padStart(2, "0")}</p><h3>{item.name}</h3><span>{item.description}</span><strong>{item.price}</strong></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
+  const renderFeature = () => (
+    <section className="pht-section pht-feature" id="story" key="feature">
+      <div className="pht-shell pht-feature-grid">
+        <div className="pht-feature-media pht-reveal"><img src={data.feature.image} alt={data.feature.imageAlt} loading="lazy" /><span>{data.feature.note}</span></div>
+        <div className="pht-feature-copy pht-reveal">
+          <p className="pht-kicker">{data.feature.note}</p><h2>{data.feature.title}</h2><p>{data.feature.description}</p>
+          <div className="pht-facts">{data.feature.facts.map((fact) => <div key={fact.label}><strong>{fact.value}</strong><span>{fact.label}</span></div>)}</div>
+          <Button href={data.feature.buttonHref}>{data.feature.buttonLabel}</Button>
+        </div>
+      </div>
+    </section>
+  );
+
+  const renderPackages = () => (
+    <section className="pht-section pht-packages" id="packages" key="packages">
+      <div className="pht-shell">
+        <div className="pht-heading pht-reveal"><h2>{data.packages.title}</h2><p>{data.packages.description}</p></div>
+        <div className="pht-package-grid">
+          {data.packages.items.map((item, index) => (
+            <article className={`pht-package ${index === 1 ? "is-featured" : ""} pht-reveal`} key={item.name}>
+              <p>{item.note}</p><h3>{item.name}</h3><span>{item.description}</span><strong>{item.price}</strong>
+              <ul>{item.features.map((feature) => <li key={feature}><Check aria-hidden="true" size={16} weight="bold" />{feature}</li>)}</ul>
+              <Button href={item.buttonHref} quiet={index !== 1}>{item.buttonLabel}</Button>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
+  const renderGallery = () => (
+    <section className="pht-section pht-gallery" id="gallery" key="gallery">
+      <div className="pht-shell pht-heading pht-reveal"><h2>{data.gallery.title}</h2><p>{data.gallery.description}</p></div>
+      <MarqueeRow items={data.gallery.rowOne} />
+      <MarqueeRow items={data.gallery.rowTwo} reverse />
+    </section>
+  );
+
+  const renderStory = () => (
+    <section className="pht-section pht-story" key="story">
+      <div className="pht-shell pht-story-grid">
+        <div className="pht-story-copy pht-reveal"><p className="pht-kicker">{data.story.note}</p><h2>{data.story.title}</h2><p>{data.story.description}</p><blockquote>“{data.story.quote}”</blockquote><Button href={data.story.buttonHref}>{data.story.buttonLabel}</Button></div>
+        <div className="pht-story-media pht-reveal"><img src={data.story.image} alt={data.story.imageAlt} loading="lazy" /></div>
+      </div>
+    </section>
+  );
+
+  const renderProcess = () => (
+    <section className="pht-section pht-process" id="process" key="process">
+      <div className="pht-shell">
+        <div className="pht-heading pht-reveal"><h2>{data.process.title}</h2><p>{data.process.description}</p></div>
+        <ol>{data.process.steps.map((step, index) => <li className="pht-reveal" key={step.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol>
+      </div>
+    </section>
+  );
+
+  const renderTestimonials = () => (
+    <section className="pht-section pht-testimonials" id="reviews" key="testimonials">
+      <div className="pht-shell">
+        <div className="pht-heading pht-reveal"><h2>{data.testimonials.title}</h2><p>{data.testimonials.description}</p></div>
+        <div className="pht-review-grid">{data.testimonials.items.map((item) => <figure className="pht-reveal" key={item.name}><div aria-label="5 out of 5 stars">{Array.from({ length: 5 }).map((_, star) => <Star aria-hidden="true" key={star} size={15} weight="fill" />)}</div><blockquote>“{item.quote}”</blockquote><figcaption><strong>{item.name}</strong><span>{item.detail}</span></figcaption></figure>)}</div>
+      </div>
+    </section>
+  );
+
+  const renderVisit = () => (
+    <section className="pht-section pht-visit" id="contact" key="visit">
+      <div className="pht-shell pht-visit-panel">
+        <div className="pht-visit-copy pht-reveal"><p className="pht-kicker">{data.visit.note}</p><h2>{data.visit.title}</h2><p>{data.visit.description}</p><div className="pht-actions"><Button href={data.visit.primaryHref}>{data.visit.primaryLabel}</Button><Button href={data.visit.secondaryHref} quiet>{data.visit.secondaryLabel}</Button></div></div>
+        <div className="pht-visit-details">
+          <div><Clock aria-hidden="true" size={22} /><h3>Opening hours</h3>{data.visit.hours.map((item) => <p key={item.day}><span>{item.day}</span><strong>{item.time}</strong></p>)}</div>
+          <div><MapPin aria-hidden="true" size={22} /><h3>{data.visit.areasLabel}</h3><p>{data.visit.areas.join(" · ")}</p><a href={`mailto:${data.brand.email}`}>{data.brand.email}</a></div>
+        </div>
+      </div>
+    </section>
+  );
+
+  let sections: ReactNode[] = [];
+  switch (variant) {
+    case "restaurant":
+      sections = [renderHero(), renderFeature(), renderProducts(), renderGallery(), renderStory(), renderPackages(), renderProcess(), renderStrip(), renderTestimonials(), renderVisit()];
+      break;
+    case "fastfood":
+      sections = [renderHero(), renderStrip(), renderProducts(), renderPackages(), renderProcess(), renderTestimonials(), renderFeature(), renderGallery(), renderStory(), renderVisit()];
+      break;
+    case "bakery":
+      sections = [renderHero(), renderProducts(), renderGallery(), renderProcess(), renderFeature(), renderStory(), renderStrip(), renderPackages(), renderTestimonials(), renderVisit()];
+      break;
+    case "pastry":
+      sections = [renderHero(), renderStrip(), renderFeature(), renderProducts(), renderStory(), renderGallery(), renderPackages(), renderProcess(), renderTestimonials(), renderVisit()];
+      break;
+    case "catering":
+      sections = [renderHero(), renderPackages(), renderProcess(), renderGallery(), renderFeature(), renderProducts(), renderStory(), renderStrip(), renderTestimonials(), renderVisit()];
+      break;
+    default:
+      sections = [renderHero(), renderStrip(), renderProducts(), renderFeature(), renderPackages(), renderGallery(), renderStory(), renderProcess(), renderTestimonials(), renderVisit()];
+  }
+
   return (
     <div className={`pht-template pht-${variant}`} style={theme}>
       <a className="pht-skip" href="#main-content">Skip to content</a>
@@ -179,108 +323,7 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
       </header>
 
       <main id="main-content">
-        <section className="pht-hero" id="top">
-          <div className="pht-shell pht-hero-grid">
-            <div className="pht-hero-copy pht-enter">
-              <p className="pht-kicker">{data.hero.note}</p>
-              <h1>{data.hero.title}</h1>
-              <p className="pht-lead">{data.hero.description}</p>
-              <div className="pht-actions">
-                <Button href={data.hero.primaryHref}>{data.hero.primaryLabel}</Button>
-                <Button href={data.hero.secondaryHref} quiet>{data.hero.secondaryLabel}</Button>
-              </div>
-              <p className="pht-hero-contact"><MapPin aria-hidden="true" size={17} />{data.brand.address}</p>
-            </div>
-            <div className="pht-hero-media pht-enter">
-              <span className="pht-hero-shape" aria-hidden="true" />
-              <img src={data.hero.image} alt={data.hero.imageAlt} fetchPriority="high" />
-              <span className="pht-hero-badge">{data.hero.badge}</span>
-              <span className="pht-doodle" aria-hidden="true">✦</span>
-            </div>
-          </div>
-          <div className="pht-ripped-edge" aria-hidden="true" />
-        </section>
-
-        <div className="pht-strip" aria-label="Highlights">
-          <div>{[...data.strip.items, ...data.strip.items].map((item, index) => <span key={`${item}-${index}`}>{item}<b aria-hidden="true">✦</b></span>)}</div>
-        </div>
-
-        <section className="pht-section pht-products" id="menu">
-          <div className="pht-shell">
-            <div className="pht-heading pht-reveal"><h2>{data.products.title}</h2><p>{data.products.description}</p></div>
-            <div className="pht-products-grid">
-              {data.products.items.map((item, index) => (
-                <article className={`pht-product pht-product--${index + 1} pht-reveal`} key={item.name}>
-                  <div className="pht-product-media"><img src={item.image} alt={item.imageAlt} loading="lazy" /></div>
-                  <div><p>{String(index + 1).padStart(2, "0")}</p><h3>{item.name}</h3><span>{item.description}</span><strong>{item.price}</strong></div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="pht-section pht-feature" id="story">
-          <div className="pht-shell pht-feature-grid">
-            <div className="pht-feature-media pht-reveal"><img src={data.feature.image} alt={data.feature.imageAlt} loading="lazy" /><span>{data.feature.note}</span></div>
-            <div className="pht-feature-copy pht-reveal">
-              <p className="pht-kicker">{data.feature.note}</p><h2>{data.feature.title}</h2><p>{data.feature.description}</p>
-              <div className="pht-facts">{data.feature.facts.map((fact) => <div key={fact.label}><strong>{fact.value}</strong><span>{fact.label}</span></div>)}</div>
-              <Button href={data.feature.buttonHref}>{data.feature.buttonLabel}</Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="pht-section pht-packages" id="packages">
-          <div className="pht-shell">
-            <div className="pht-heading pht-reveal"><h2>{data.packages.title}</h2><p>{data.packages.description}</p></div>
-            <div className="pht-package-grid">
-              {data.packages.items.map((item, index) => (
-                <article className={`pht-package ${index === 1 ? "is-featured" : ""} pht-reveal`} key={item.name}>
-                  <p>{item.note}</p><h3>{item.name}</h3><span>{item.description}</span><strong>{item.price}</strong>
-                  <ul>{item.features.map((feature) => <li key={feature}><Check aria-hidden="true" size={16} weight="bold" />{feature}</li>)}</ul>
-                  <Button href={item.buttonHref} quiet={index !== 1}>{item.buttonLabel}</Button>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="pht-section pht-gallery" id="gallery">
-          <div className="pht-shell pht-heading pht-reveal"><h2>{data.gallery.title}</h2><p>{data.gallery.description}</p></div>
-          <MarqueeRow items={data.gallery.rowOne} />
-          <MarqueeRow items={data.gallery.rowTwo} reverse />
-        </section>
-
-        <section className="pht-section pht-story">
-          <div className="pht-shell pht-story-grid">
-            <div className="pht-story-copy pht-reveal"><p className="pht-kicker">{data.story.note}</p><h2>{data.story.title}</h2><p>{data.story.description}</p><blockquote>“{data.story.quote}”</blockquote><Button href={data.story.buttonHref}>{data.story.buttonLabel}</Button></div>
-            <div className="pht-story-media pht-reveal"><img src={data.story.image} alt={data.story.imageAlt} loading="lazy" /></div>
-          </div>
-        </section>
-
-        <section className="pht-section pht-process" id="process">
-          <div className="pht-shell">
-            <div className="pht-heading pht-reveal"><h2>{data.process.title}</h2><p>{data.process.description}</p></div>
-            <ol>{data.process.steps.map((step, index) => <li className="pht-reveal" key={step.title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol>
-          </div>
-        </section>
-
-        <section className="pht-section pht-testimonials" id="reviews">
-          <div className="pht-shell">
-            <div className="pht-heading pht-reveal"><h2>{data.testimonials.title}</h2><p>{data.testimonials.description}</p></div>
-            <div className="pht-review-grid">{data.testimonials.items.map((item) => <figure className="pht-reveal" key={item.name}><div aria-label="5 out of 5 stars">{Array.from({ length: 5 }).map((_, star) => <Star aria-hidden="true" key={star} size={15} weight="fill" />)}</div><blockquote>“{item.quote}”</blockquote><figcaption><strong>{item.name}</strong><span>{item.detail}</span></figcaption></figure>)}</div>
-          </div>
-        </section>
-
-        <section className="pht-section pht-visit" id="contact">
-          <div className="pht-shell pht-visit-panel">
-            <div className="pht-visit-copy pht-reveal"><p className="pht-kicker">{data.visit.note}</p><h2>{data.visit.title}</h2><p>{data.visit.description}</p><div className="pht-actions"><Button href={data.visit.primaryHref}>{data.visit.primaryLabel}</Button><Button href={data.visit.secondaryHref} quiet>{data.visit.secondaryLabel}</Button></div></div>
-            <div className="pht-visit-details">
-              <div><Clock aria-hidden="true" size={22} /><h3>Opening hours</h3>{data.visit.hours.map((item) => <p key={item.day}><span>{item.day}</span><strong>{item.time}</strong></p>)}</div>
-              <div><MapPin aria-hidden="true" size={22} /><h3>{data.visit.areasLabel}</h3><p>{data.visit.areas.join(" · ")}</p><a href={`mailto:${data.brand.email}`}>{data.brand.email}</a></div>
-            </div>
-          </div>
-        </section>
+        {sections}
       </main>
 
       <footer className="pht-footer">

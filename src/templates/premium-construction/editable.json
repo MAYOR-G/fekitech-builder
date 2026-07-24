@@ -1,0 +1,287 @@
+{
+  "brand": {
+    "name": "Sterling Build Co.",
+    "logoText": "STERLING",
+    "phone": "0800 123 4567",
+    "email": "hello@sterlingbuild.co.uk",
+    "address": "42 Artisan Lane, London, UK"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "News & Insights", "href": "#blog" },
+      { "label": "Contact Us", "href": "#contact" }
+    ],
+    "support": "Support 24/7:\n(0800) 123-4567",
+    "ctaLabel": "Start Project",
+    "ctaHref": "#contact",
+    "contactHref": "#contact"
+  },
+  "hero": {
+    "title": "CONSTRUCTION\nSOLUTIONS FOR MODERN EXCELLENCE",
+    "subtitle": "Your Partner in Creating Sustainable and Innovative Structures",
+    "backgroundImage": "https://images.unsplash.com/photo-1431576901776-e539bd916ba2?auto=format&fit=crop&q=80&w=2000",
+    "social": [
+      { "platform": "Facebook", "href": "#" },
+      { "platform": "LinkedIn", "href": "#" },
+      { "platform": "Pinterest", "href": "#" },
+      { "platform": "Dribbble", "href": "#" }
+    ]
+  },
+  "about": {
+    "title": "Enriching Lives with Sterling Partner in Construction",
+    "description": "We believe construction is more than building structures; it's about creating spaces that inspire and enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
+    "items": [
+      "Resistant Construction",
+      "Commercial Construction",
+      "Infrastructure Construction"
+    ],
+    "buttonLabel": "View More",
+    "buttonHref": "#about"
+  },
+  "services": {
+    "title": "Construction Services Tailored to Build Your Success",
+    "watermark": "EVERY TIME. QUALITY CONST",
+    "items": [
+      {
+        "title": "Residential Construction",
+        "description": "Premium home building and renovations tailored to your lifestyle.",
+        "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "title": "Commercial Construction",
+        "description": "State-of-the-art commercial facilities delivered on time.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "title": "Project Management",
+        "description": "End-to-end management ensuring quality and precision.",
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Explore Our Most Recent Projects",
+    "items": [
+      {
+        "image": "https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&q=80&w=600",
+        "title": "The Glass Hub",
+        "category": "Commercial"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600",
+        "title": "Modern Bridge",
+        "category": "Infrastructure"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600",
+        "title": "Urban Heights",
+        "category": "Residential"
+      }
+    ]
+  },
+  "features": {
+    "items": [
+      {
+        "title": "Optimized Construction",
+        "description": "Streamlined processes for efficient building.",
+        "icon": "Box"
+      },
+      {
+        "title": "Building Economic Growth",
+        "description": "Creating structures that drive business success.",
+        "icon": "TrendingUp"
+      },
+      {
+        "title": "Full-Service Contracting",
+        "description": "From planning to execution, we handle it all.",
+        "icon": "Settings"
+      }
+    ]
+  },
+  "whyUs": {
+    "kicker": "Why Choose Us",
+    "title": "We deliver excellence on every site",
+    "image": "https://images.unsplash.com/photo-1541888086225-f674ce882488?auto=format&fit=crop&q=80&w=800",
+    "features": [
+      {
+        "title": "Optimized Construction",
+        "description": "Streamlined processes for efficient building."
+      },
+      {
+        "title": "Building Economic Growth",
+        "description": "Creating structures that drive business success."
+      },
+      {
+        "title": "Full-Service Contracting",
+        "description": "From planning to execution, we handle it all."
+      },
+      {
+        "title": "Safety & Quality",
+        "description": "Uncompromising standards on every single project."
+      }
+    ],
+    "stats": [
+      { "value": "130+", "label": "Our Employees" },
+      { "value": "30+", "label": "Offices Worldwide" },
+      { "value": "20+", "label": "Year Experience" }
+    ]
+  },
+  "logos": [
+    "DEKA", "BENZ", "GENEVA", "BRAM", "BEINZE"
+  ],
+  "stats": [
+    { "value": "130+", "label": "Our Employees", "subtext": "Highly dedicated and professional team." },
+    { "value": "30+", "label": "Offices Worldwide", "subtext": "Global presence for localized solutions." },
+    { "value": "20+", "label": "Year Experience", "subtext": "Decades of proven industry expertise." },
+    { "value": "20+", "label": "Awards Winning", "subtext": "Recognized for our excellence." }
+  ],
+  "team": {
+    "title": "Get to Know Our Dedicated Team Members",
+    "items": [
+      { "name": "William Davies", "role": "Project Manager" },
+      { "name": "Thomas Wright", "role": "Lead Architect" },
+      { "name": "James Cole", "role": "Site Supervisor" },
+      { "name": "Sarah Jenkins", "role": "Civil Engineer" }
+    ],
+    "testimonial": {
+      "quote": "We are a creative agency driven by our passion to build experiences that inspire.",
+      "author": "Mark Johnson",
+      "role": "CEO, TechFlow",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150"
+    }
+  },
+  "testimonials": {
+    "kicker": "Testimonials",
+    "title": "What Our Clients Say About Us",
+    "items": [
+      {
+        "quote": "The attention to detail and commitment to quality is unparalleled. They delivered our new office space ahead of schedule.",
+        "author": "Sarah Jenkins",
+        "role": "Operations Director"
+      },
+      {
+        "quote": "A truly professional team that understands the complexities of large-scale infrastructure projects.",
+        "author": "David Chen",
+        "role": "City Planner"
+      },
+      {
+        "quote": "From design to execution, their process was transparent and the results exceeded our expectations.",
+        "author": "Michael Roberts",
+        "role": "Property Developer"
+      },
+      {
+        "quote": "Innovative solutions and exceptional project management. Highly recommended for any commercial build.",
+        "author": "Emma Thompson",
+        "role": "CEO, TechCorp"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Building Beyond Expectations with Innovation & Precision",
+    "description": "We are a creative agency driven by our passion to build experiences that inspire.",
+    "buttonLabel": "Get Quote",
+    "buttonHref": "#contact",
+    "secondaryButtonLabel": "Contact Us",
+    "secondaryButtonHref": "#contact",
+    "videoImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800"
+  },
+  "benefits": [
+    { "title": "Passionate", "description": "Committed to delivering excellence in every project we undertake." },
+    { "title": "Professional", "description": "Maintaining the highest standards of integrity and expertise." },
+    { "title": "Support", "description": "Dedicated assistance throughout the construction lifecycle." },
+    { "title": "Quality", "description": "Uncompromising focus on superior materials and craftsmanship." }
+  ],
+  "pricing": {
+    "title": "Find the Right Plan for Your Project",
+    "plans": [
+      {
+        "name": "Lite Plan",
+        "price": "$150.00",
+        "description": "For small renovations",
+        "features": ["Basic planning", "Standard materials", "Email support"],
+        "isPopular": false
+      },
+      {
+        "name": "Pro Plan",
+        "price": "$350.00",
+        "description": "For commercial projects",
+        "features": ["Advanced planning", "Premium materials", "Priority support"],
+        "isPopular": true
+      },
+      {
+        "name": "Premium",
+        "price": "$850.00",
+        "description": "For full scale builds",
+        "features": ["Full architecture", "Luxury finishes", "24/7 dedicated support"],
+        "isPopular": false
+      }
+    ]
+  },
+  "banner": {
+    "title": "Ready to Start Your Construction Project?",
+    "subtitle": "Get in touch with our experts today to discuss your next big build.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "#contact",
+    "backgroundImage": "https://images.unsplash.com/photo-1541888086225-f674ce882488?auto=format&fit=crop&q=80&w=1200"
+  },
+  "blog": {
+    "title": "Explore Our Most Recent Blog Posts and Insights",
+    "posts": [
+      {
+        "title": "The Future of Sustainable Construction",
+        "date": "Oct 12, 2026",
+        "author": "Admin",
+        "category": "Construction",
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "title": "Building Economic Growth Through Infrastructure",
+        "date": "Oct 15, 2026",
+        "author": "Admin",
+        "category": "Insights",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "title": "Health & Safety on the Modern Job Site",
+        "date": "Oct 18, 2026",
+        "author": "Admin",
+        "category": "Safety",
+        "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Send Us a Message to Our Contact Form to Get In Touch",
+    "address": "42 Artisan Lane\nLondon, UK EC1A 1BB",
+    "phone": "0800 123 4567",
+    "email": "hello@sterlingbuild.co.uk",
+    "hours": "Mon-Fri: 8:00 AM - 6:00 PM\nSat: 9:00 AM - 2:00 PM"
+  },
+  "footer": {
+    "description": "Sterling Build Co. is a premier construction firm dedicated to modern excellence.",
+    "links": [
+      { "label": "About Us", "href": "#about" },
+      { "label": "Our Services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "copyright": "© 2026 Sterling Build Co. All rights reserved."
+  },
+  "social": {
+    "facebook": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  "colors": {
+    "primary": "#F26419",
+    "secondary": "#0A1128",
+    "accent": "#F4F4F9",
+    "text": "#333333",
+    "background": "#ffffff"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "carpenter-website",
+  "name": "Timber & Craft Carpentry",
+  "description": "A premium, robust website template designed for bespoke carpenters, woodworkers, and high-end joinery businesses.",
+  "category": "Services",
+  "image": "/templates/carpenter-website.webp",
+  "features": [
+    "Project Portfolio Gallery",
+    "Service Specialisations",
+    "Trust & Experience Counters",
+    "Lead Generation Contact Form",
+    "Mobile Responsive Design"
+  ]
+}

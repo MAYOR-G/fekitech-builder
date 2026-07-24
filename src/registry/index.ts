@@ -51,6 +51,19 @@ import secondFurnitureEditable from "../templates/second-furniture-website/edita
 import secondPlumberConfig from "../templates/second-plumber-website/config.json";
 import secondPlumberEditable from "../templates/second-plumber-website/editable.json";
 
+import farmShopConfig from "../templates/farm-shop-website/config.json";
+import farmShopEditable from "../templates/farm-shop-website/editable.json";
+import iceCreamConfig from "../templates/ice-cream-website/config.json";
+import iceCreamEditable from "../templates/ice-cream-website/editable.json";
+import bakeryWebsiteConfig from "../templates/bakery-website/config.json";
+import bakeryWebsiteEditable from "../templates/bakery-website/editable.json";
+import carpenterConfig from "../templates/carpenter-website/config.json";
+import carpenterEditable from "../templates/carpenter-website/editable.json";
+import premiumConstructionConfig from "../templates/premium-construction/config.json";
+import premiumConstructionEditable from "../templates/premium-construction/editable.json";
+import industrialConstructionConfig from "../templates/industrial-construction/config.json";
+import industrialConstructionEditable from "../templates/industrial-construction/editable.json";
+
 export type TemplateConfig = {
   id: string;
   name: string;
@@ -94,9 +107,21 @@ const components = {
   "restaurant-website": dynamic<{ data: TemplateData }>(() => import("../templates/restaurant-website/template")),
   "second-furniture-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-furniture-website/template")),
   "second-plumber-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-plumber-website/template")),
+  "farm-shop-website": dynamic<{ data: TemplateData }>(() => import("../templates/farm-shop-website/template")),
+  "ice-cream-website": dynamic<{ data: TemplateData }>(() => import("../templates/ice-cream-website/template")),
+  "bakery-website": dynamic<{ data: TemplateData }>(() => import("../templates/bakery-website/template")),
+  "carpenter-website": dynamic<{ data: TemplateData }>(() => import("../templates/carpenter-website/template")),
+  "premium-construction": dynamic<{ data: TemplateData }>(() => import("../templates/premium-construction/template")),
+  "industrial-construction": dynamic<{ data: TemplateData }>(() => import("../templates/industrial-construction/template")),
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
+  "industrial-construction": { config: industrialConstructionConfig, component: components["industrial-construction"], defaultData: normalizeData(industrialConstructionEditable) },
+  "premium-construction": { config: premiumConstructionConfig, component: components["premium-construction"], defaultData: normalizeData(premiumConstructionEditable) },
+  "carpenter-website": { config: carpenterConfig, component: components["carpenter-website"], defaultData: normalizeData(carpenterEditable) },
+  "bakery-website": { config: bakeryWebsiteConfig, component: components["bakery-website"], defaultData: normalizeData(bakeryWebsiteEditable) },
+  "ice-cream-website": { config: iceCreamConfig, component: components["ice-cream-website"], defaultData: normalizeData(iceCreamEditable) },
+  "farm-shop-website": { config: farmShopConfig, component: components["farm-shop-website"], defaultData: normalizeData(farmShopEditable) },
   "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
   "fast-food-chicken-tacos": { config: fastFoodConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodEditable) },
   "cake-bakery-premium": { config: cakeBakeryConfig, component: components["cake-bakery-premium"], defaultData: normalizeData(cakeBakeryEditable) },
