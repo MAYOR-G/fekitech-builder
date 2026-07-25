@@ -2,6 +2,7 @@
 import React from "react";
 import { useTemplateData } from "../TemplateContext";
 import { motion } from "framer-motion";
+import { IceCream } from "@phosphor-icons/react";
 
 export default function Pricing() {
   const data = useTemplateData();
@@ -14,6 +15,21 @@ export default function Pricing() {
         </div>
         <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">{data.pricing.title}</h2>
       </div>
+
+      <motion.div 
+        animate={{ y: [0, 15, 0], rotate: [10, -10, 10] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-20 right-10 z-0 text-[var(--color-primary)] opacity-40 hidden md:block pointer-events-none"
+      >
+        <IceCream size={140} weight="duotone" />
+      </motion.div>
+      <motion.div 
+        animate={{ y: [0, -15, 0], rotate: [-10, 10, -10] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-20 left-10 z-0 text-white opacity-20 hidden md:block pointer-events-none"
+      >
+        <IceCream size={160} weight="duotone" />
+      </motion.div>
 
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8">

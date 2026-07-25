@@ -32,7 +32,7 @@ export default function Wholesale() {
             transition={{ duration: 0.8 }}
             src={siteContent?.wholesale?.image1} 
             alt="Wholesale Roasting" 
-            className="w-full aspect-[4/3] object-cover grayscale"
+            className="w-full aspect-[4/3] object-cover"
           />
           <motion.img 
             initial={{ opacity: 0, x: -50, y: 50 }}

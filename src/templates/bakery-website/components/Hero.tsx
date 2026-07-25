@@ -27,11 +27,11 @@ export default function Hero() {
              <div className="w-16 md:w-24 h-[2px] bg-white/60"></div>
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-white leading-none mb-6 drop-shadow-lg tracking-tight font-black">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-none mb-6 drop-shadow-lg tracking-tight font-black">
             {data.hero.title}
           </h1>
           
-          <p className="text-xl md:text-3xl text-white/90 mb-12 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
             {data.hero.subtitle}
           </p>
           

@@ -80,7 +80,7 @@ const VisitUs = () => {
               allowFullScreen={true} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              className="absolute inset-0 grayscale contrast-125 opacity-90"
+              className="absolute inset-0 opacity-90"
               title="Interactive Map"
             ></iframe>
           </motion.div>

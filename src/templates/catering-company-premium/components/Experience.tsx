@@ -6,7 +6,7 @@ export default function Experience() {
   const { gallery } = useTemplateData();
 
   return (
-    <section className="py-32 bg-[#F7F5F0]" id="gallery">
+    <section className="py-32 bg-white" id="gallery">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center mb-24">
         <span className="text-[#556B2F] text-[11px] font-bold uppercase tracking-[0.3em] mb-6 block">
           Experiences

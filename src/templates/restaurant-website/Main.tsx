@@ -26,7 +26,7 @@ function App() {
 
         <section
           id="dishes"
-          className="page-panel hero-overlap bg-white px-5 py-20 text-coal lg:px-8"
+          className="page-panel bg-white px-5 py-20 text-coal lg:px-8"
         >
           <div className="mx-auto max-w-7xl">
             <Reveal>

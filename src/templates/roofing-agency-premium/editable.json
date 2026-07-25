@@ -16,11 +16,26 @@
   },
   "navigation": {
     "links": [
-      { "label": "Services", "href": "#services" },
-      { "label": "Projects", "href": "#results" },
-      { "label": "Our process", "href": "#process" },
-      { "label": "Roof systems", "href": "#packages" },
-      { "label": "Reviews", "href": "#reviews" }
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Projects",
+        "href": "#results"
+      },
+      {
+        "label": "Our process",
+        "href": "#process"
+      },
+      {
+        "label": "Roof systems",
+        "href": "#packages"
+      },
+      {
+        "label": "Reviews",
+        "href": "#reviews"
+      }
     ],
     "ctaLabel": "Request an inspection",
     "ctaHref": "#contact"
@@ -38,10 +53,22 @@
   },
   "trust": {
     "items": [
-      { "title": "Licensed and insured", "description": "Documented coverage and qualified crews on every project." },
-      { "title": "Certified installers", "description": "Manufacturer-trained teams for leading roofing systems." },
-      { "title": "Written warranties", "description": "Clear workmanship and material coverage before work begins." },
-      { "title": "Safety-led sites", "description": "Daily planning, fall protection, and tidy property care." }
+      {
+        "title": "Licensed and insured",
+        "description": "Documented coverage and qualified crews on every project."
+      },
+      {
+        "title": "Certified installers",
+        "description": "Manufacturer-trained teams for leading roofing systems."
+      },
+      {
+        "title": "Written warranties",
+        "description": "Clear workmanship and material coverage before work begins."
+      },
+      {
+        "title": "Safety-led sites",
+        "description": "Daily planning, fall protection, and tidy property care."
+      }
     ]
   },
   "services": {
@@ -51,44 +78,38 @@
       {
         "name": "Residential roofing",
         "description": "Complete roof systems designed around your home, climate, and long-term plans.",
-        "image": "/templates/assets/northline-hero.webp",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "New charcoal architectural-shingle roof on a white home"
       },
       {
         "name": "Commercial roofing",
         "description": "Planned installation and maintenance for low-slope and commercial properties.",
-        "image": "/templates/assets/northline-crew.webp",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "Professional roofing crew installing a roof system"
       },
       {
         "name": "Roof repairs",
         "description": "Targeted repairs for leaks, flashing, wind damage, penetrations, and worn sections.",
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "Roof repair service"
       },
       {
         "name": "Roof inspections",
         "description": "Photo-documented assessments for homeowners, buyers, sellers, and facility teams.",
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1599809275671-50798eb1151a?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "Detailed roof inspection"
       },
       {
         "name": "Roof replacements",
         "description": "Organized tear-off, deck review, system installation, cleanup, and final walkthrough.",
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "Complete roof replacement"
       },
       {
         "name": "Gutters and drainage",
         "description": "Properly sized gutters, guards, downspouts, and drainage details that protect the building envelope.",
-        "image": "",
+        "image": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?auto=format&fit=crop&w=600&q=80",
         "imageAlt": "Gutter and drainage installation"
-      },
-      {
-        "name": "Emergency storm service",
-        "description": "Rapid assessment, temporary protection, repair planning, and insurance-ready documentation after severe weather.",
-        "image": "",
-        "imageAlt": "Emergency storm roof service"
       }
     ]
   },
@@ -110,10 +131,22 @@
     "image": "/templates/assets/northline-crew.webp",
     "imageAlt": "Safety-equipped Northline roofing crew installing charcoal shingles",
     "steps": [
-      { "title": "Inspect and document", "description": "We review roof planes, penetrations, flashing, ventilation, decking clues, and drainage." },
-      { "title": "Explain the options", "description": "You receive photos, priorities, system choices, pricing, and warranty details in writing." },
-      { "title": "Build and protect", "description": "The crew protects the property, installs to specification, and keeps the site organized." },
-      { "title": "Verify and stand behind it", "description": "A final inspection, cleanup review, and warranty handoff close the project properly." }
+      {
+        "title": "Inspect and document",
+        "description": "We review roof planes, penetrations, flashing, ventilation, decking clues, and drainage."
+      },
+      {
+        "title": "Explain the options",
+        "description": "You receive photos, priorities, system choices, pricing, and warranty details in writing."
+      },
+      {
+        "title": "Build and protect",
+        "description": "The crew protects the property, installs to specification, and keeps the site organized."
+      },
+      {
+        "title": "Verify and stand behind it",
+        "description": "A final inspection, cleanup review, and warranty handoff close the project properly."
+      }
     ]
   },
   "packages": {
@@ -127,7 +160,12 @@
         "note": "Strong value for most homes",
         "buttonLabel": "Compare shingle options",
         "buttonHref": "#contact",
-        "features": ["Dimensional appearance", "Wind-rated options", "Coordinated ridge caps", "Manufacturer warranties"]
+        "features": [
+          "Dimensional appearance",
+          "Wind-rated options",
+          "Coordinated ridge caps",
+          "Manufacturer warranties"
+        ]
       },
       {
         "name": "Standing-seam metal",
@@ -136,7 +174,12 @@
         "note": "Low maintenance and highly durable",
         "buttonLabel": "Explore metal roofing",
         "buttonHref": "#contact",
-        "features": ["Concealed fasteners", "Reflective finish options", "Custom trim details", "Long service life"]
+        "features": [
+          "Concealed fasteners",
+          "Reflective finish options",
+          "Custom trim details",
+          "Long service life"
+        ]
       },
       {
         "name": "Low-slope membrane",
@@ -145,7 +188,12 @@
         "note": "Configured to each roof plan",
         "buttonLabel": "Discuss a commercial roof",
         "buttonHref": "#contact",
-        "features": ["TPO and membrane options", "Drainage planning", "Insulation coordination", "Maintenance documentation"]
+        "features": [
+          "TPO and membrane options",
+          "Drainage planning",
+          "Insulation coordination",
+          "Maintenance documentation"
+        ]
       },
       {
         "name": "Specialty roof details",
@@ -154,41 +202,96 @@
         "note": "Quoted with your selected system",
         "buttonLabel": "Plan the details",
         "buttonHref": "#contact",
-        "features": ["Custom flashing", "Copper accent options", "Ventilation review", "Gutter coordination"]
+        "features": [
+          "Custom flashing",
+          "Copper accent options",
+          "Ventilation review",
+          "Gutter coordination"
+        ]
       }
     ]
   },
   "stats": {
     "items": [
-      { "value": "24 years", "label": "Local roofing experience" },
-      { "value": "1,800+", "label": "Completed repair and replacement projects" },
-      { "value": "Up to 50 yr", "label": "Available material warranty coverage" },
-      { "value": "24 hr", "label": "Storm-response availability" }
+      {
+        "value": "24 years",
+        "label": "Local roofing experience"
+      },
+      {
+        "value": "1,800+",
+        "label": "Completed repair and replacement projects"
+      },
+      {
+        "value": "Up to 50 yr",
+        "label": "Available material warranty coverage"
+      },
+      {
+        "value": "24 hr",
+        "label": "Storm-response availability"
+      }
     ]
   },
   "gallery": {
     "title": "Work that holds up close",
     "description": "Completed systems, careful details, and organized crews across residential and commercial projects.",
     "images": [
-      { "image": "/templates/assets/northline-hero.webp", "imageAlt": "Roofing specialist checking flashing on a completed roof", "caption": "Final flashing inspection" },
-      { "image": "/templates/assets/northline-after.webp", "imageAlt": "White craftsman home with a new charcoal roof", "caption": "Architectural-shingle replacement" },
-      { "image": "/templates/assets/northline-crew.webp", "imageAlt": "Roofing crew installing a new system", "caption": "Protected and organized installation" },
-      { "image": "/templates/assets/northline-before.webp", "imageAlt": "Weathered roof documented before replacement", "caption": "Photo-documented inspection" }
+      {
+        "image": "/templates/assets/northline-hero.webp",
+        "imageAlt": "Roofing specialist checking flashing on a completed roof",
+        "caption": "Final flashing inspection"
+      },
+      {
+        "image": "/templates/assets/northline-after.webp",
+        "imageAlt": "White craftsman home with a new charcoal roof",
+        "caption": "Architectural-shingle replacement"
+      },
+      {
+        "image": "/templates/assets/northline-crew.webp",
+        "imageAlt": "Roofing crew installing a new system",
+        "caption": "Protected and organized installation"
+      },
+      {
+        "image": "/templates/assets/northline-before.webp",
+        "imageAlt": "Weathered roof documented before replacement",
+        "caption": "Photo-documented inspection"
+      }
     ]
   },
   "testimonials": {
     "title": "Clear answers earn lasting trust",
     "description": "Property owners appreciate direct recommendations, respectful crews, and documentation they can keep.",
     "items": [
-      { "quote": "Northline showed us the problem in photos, explained the repair and replacement paths, and never pushed the larger job.", "name": "Caleb Monroe", "detail": "Homeowner, Belle Meade" },
-      { "quote": "The crew protected the landscaping, communicated daily, and left the property remarkably clean.", "name": "Priya Raman", "detail": "Homeowner, Green Hills" },
-      { "quote": "Our inspection report was detailed enough for budgeting and simple enough to present to the board.", "name": "Elliot Vaughn", "detail": "Facilities director" }
+      {
+        "quote": "Northline showed us the problem in photos, explained the repair and replacement paths, and never pushed the larger job.",
+        "name": "Caleb Monroe",
+        "detail": "Homeowner, Belle Meade"
+      },
+      {
+        "quote": "The crew protected the landscaping, communicated daily, and left the property remarkably clean.",
+        "name": "Priya Raman",
+        "detail": "Homeowner, Green Hills"
+      },
+      {
+        "quote": "Our inspection report was detailed enough for budgeting and simple enough to present to the board.",
+        "name": "Elliot Vaughn",
+        "detail": "Facilities director"
+      }
     ]
   },
   "areas": {
     "title": "Serving greater Nashville",
     "description": "Inspection, repair, replacement, gutter, and storm-response crews work across Davidson and nearby counties.",
-    "items": ["Nashville", "Belle Meade", "Brentwood", "Franklin", "Green Hills", "Hendersonville", "Mount Juliet", "Murfreesboro", "Spring Hill"]
+    "items": [
+      "Nashville",
+      "Belle Meade",
+      "Brentwood",
+      "Franklin",
+      "Green Hills",
+      "Hendersonville",
+      "Mount Juliet",
+      "Murfreesboro",
+      "Spring Hill"
+    ]
   },
   "contact": {
     "eyebrow": "Start with a clear inspection",
@@ -199,9 +302,18 @@
     "secondaryLabel": "Call Northline",
     "secondaryHref": "tel:+16155550192",
     "hours": [
-      { "day": "Monday-Friday", "time": "7 AM-6 PM" },
-      { "day": "Saturday", "time": "8 AM-2 PM" },
-      { "day": "Storm response", "time": "24 hours" }
+      {
+        "day": "Monday-Friday",
+        "time": "7 AM-6 PM"
+      },
+      {
+        "day": "Saturday",
+        "time": "8 AM-2 PM"
+      },
+      {
+        "day": "Storm response",
+        "time": "24 hours"
+      }
     ]
   },
   "social": {

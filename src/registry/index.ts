@@ -64,6 +64,7 @@ import premiumConstructionEditable from "../templates/premium-construction/edita
 import industrialConstructionConfig from "../templates/industrial-construction/config.json";
 import industrialConstructionEditable from "../templates/industrial-construction/editable.json";
 
+
 export type TemplateConfig = {
   id: string;
   name: string;
@@ -113,30 +114,32 @@ const components = {
   "carpenter-website": dynamic<{ data: TemplateData }>(() => import("../templates/carpenter-website/template")),
   "premium-construction": dynamic<{ data: TemplateData }>(() => import("../templates/premium-construction/template")),
   "industrial-construction": dynamic<{ data: TemplateData }>(() => import("../templates/industrial-construction/template")),
+
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
+
+  "burger-light-clean": { config: burgerLightConfig, component: components["burger-light-clean"], defaultData: normalizeData(burgerLightEditable) },
+  "farm-shop-website": { config: farmShopConfig, component: components["farm-shop-website"], defaultData: normalizeData(farmShopEditable) },
+  "fast-food-chicken-tacos": { config: fastFoodConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodEditable) },
+  "cake-bakery-premium": { config: cakeBakeryConfig, component: components["cake-bakery-premium"], defaultData: normalizeData(cakeBakeryEditable) },
+  "gym-website": { config: gymConfig, component: components["gym-website"], defaultData: normalizeData(gymEditable) },
+  "premium-coffee-website": { config: premiumCoffeeConfig, component: components["premium-coffee-website"], defaultData: normalizeData(premiumCoffeeEditable) },
+  "cleaning-agency-premium": { config: cleaningAgencyConfig, component: components["cleaning-agency-premium"], defaultData: normalizeData(cleaningAgencyEditable) },
+  "pizza-dark-premium": { config: pizzaDarkConfig, component: components["pizza-dark-premium"], defaultData: normalizeData(pizzaDarkEditable) },
   "industrial-construction": { config: industrialConstructionConfig, component: components["industrial-construction"], defaultData: normalizeData(industrialConstructionEditable) },
   "premium-construction": { config: premiumConstructionConfig, component: components["premium-construction"], defaultData: normalizeData(premiumConstructionEditable) },
   "carpenter-website": { config: carpenterConfig, component: components["carpenter-website"], defaultData: normalizeData(carpenterEditable) },
+  "roofing-agency-premium": { config: roofingAgencyConfig, component: components["roofing-agency-premium"], defaultData: normalizeData(roofingAgencyEditable) },
   "bakery-website": { config: bakeryWebsiteConfig, component: components["bakery-website"], defaultData: normalizeData(bakeryWebsiteEditable) },
   "ice-cream-website": { config: iceCreamConfig, component: components["ice-cream-website"], defaultData: normalizeData(iceCreamEditable) },
-  "farm-shop-website": { config: farmShopConfig, component: components["farm-shop-website"], defaultData: normalizeData(farmShopEditable) },
   "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
-  "fast-food-chicken-tacos": { config: fastFoodConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodEditable) },
-  "cake-bakery-premium": { config: cakeBakeryConfig, component: components["cake-bakery-premium"], defaultData: normalizeData(cakeBakeryEditable) },
+  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
+  "plumbing-company-premium": { config: plumbingCompanyConfig, component: components["plumbing-company-premium"], defaultData: normalizeData(plumbingCompanyEditable) },
   "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
   "catering-company-premium": { config: cateringCompanyConfig, component: components["catering-company-premium"], defaultData: normalizeData(cateringCompanyEditable) },
   "barber-website": { config: barberConfig, component: components["barber-website"], defaultData: normalizeData(barberEditable) },
-  "premium-coffee-website": { config: premiumCoffeeConfig, component: components["premium-coffee-website"], defaultData: normalizeData(premiumCoffeeEditable) },
-  "gym-website": { config: gymConfig, component: components["gym-website"], defaultData: normalizeData(gymEditable) },
   "burger-dark-premium": { config: burgerDarkConfig, component: components["burger-dark-premium"], defaultData: normalizeData(burgerDarkEditable) },
-  "burger-light-clean": { config: burgerLightConfig, component: components["burger-light-clean"], defaultData: normalizeData(burgerLightEditable) },
-  "pizza-dark-premium": { config: pizzaDarkConfig, component: components["pizza-dark-premium"], defaultData: normalizeData(pizzaDarkEditable) },
-  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
-  "cleaning-agency-premium": { config: cleaningAgencyConfig, component: components["cleaning-agency-premium"], defaultData: normalizeData(cleaningAgencyEditable) },
-  "roofing-agency-premium": { config: roofingAgencyConfig, component: components["roofing-agency-premium"], defaultData: normalizeData(roofingAgencyEditable) },
-  "plumbing-company-premium": { config: plumbingCompanyConfig, component: components["plumbing-company-premium"], defaultData: normalizeData(plumbingCompanyEditable) },
   "second-furniture-website": { config: secondFurnitureConfig, component: components["second-furniture-website"], defaultData: normalizeData(secondFurnitureEditable) },
   "cake-website": { config: cakeConfig, component: components["cake-website"], defaultData: normalizeData(cakeEditable) },
   "catering-website": { config: cateringConfig, component: components["catering-website"], defaultData: normalizeData(cateringEditable) },

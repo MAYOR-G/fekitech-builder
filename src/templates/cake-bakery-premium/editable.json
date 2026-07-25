@@ -1,5 +1,5 @@
 {
-  "colors": { "primary": "#7E2948", "secondary": "#AFC8C1", "background": "#FAF7F2", "text": "#2D2430" },
+  "colors": { "primary": "#C7A28F", "secondary": "#E8D8CE", "background": "#FFFFFF", "text": "#3D3A35" },
   "brand": { "name": "Northmill Cakes", "tagline": "Celebration, considered", "logo": "", "phone": "+44 117 555 0142", "email": "studio@northmillcakes.co.uk", "address": "7 Wapping Wharf, Bristol BS1 6UD" },
   "navigation": {
     "links": [
@@ -20,7 +20,7 @@
     "primaryHref": "#contact",
     "secondaryLabel": "View collections",
     "secondaryHref": "#menu",
-    "image": "/templates/assets/northmill-cakes-hero.webp",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2000&auto=format&fit=crop",
     "imageAlt": "Elegant two-tier celebration cake with cupcakes on burgundy plinths",
     "badge": "Consultations now open"
   },
@@ -29,16 +29,16 @@
     "title": "Choose your centrepiece",
     "description": "Start with a collection or commission something entirely your own.",
     "items": [
-      { "name": "Modern celebration", "description": "Clean finish, layered flavour and a tailored colour story.", "price": "From £95", "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Modern tiered cake on a burgundy display" },
-      { "name": "Wedding tiers", "description": "Architectural cakes for intimate dinners and full receptions.", "price": "From £420", "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Baker finishing a sculptural two-tier wedding cake" },
-      { "name": "Cupcake edit", "description": "Twenty-four hand-finished cakes in two seasonal flavours.", "price": "From £72", "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Premium hand-finished cupcakes beside a tiered cake" }
+      { "name": "Modern celebration", "description": "Clean finish, layered flavour and a tailored colour story.", "price": "From £95", "image": "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Modern tiered cake on a burgundy display" },
+      { "name": "Wedding tiers", "description": "Architectural cakes for intimate dinners and full receptions.", "price": "From £420", "image": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Baker finishing a sculptural two-tier wedding cake" },
+      { "name": "Cupcake edit", "description": "Twenty-four hand-finished cakes in two seasonal flavours.", "price": "From £72", "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Premium hand-finished cupcakes beside a tiered cake" }
     ]
   },
   "feature": {
     "note": "Inside the studio",
     "title": "Designed first. Baked beautifully.",
     "description": "Each commission begins with your occasion, room and mood. We then develop proportion, colour, texture and flavour as one complete piece.",
-    "image": "/templates/assets/northmill-workshop.webp",
+    "image": "https://images.unsplash.com/photo-1558231464-9eb51e9ee9b3?q=80&w=1000&auto=format&fit=crop",
     "imageAlt": "Professional cake designer finishing smooth buttercream in a bright studio",
     "facts": [
       { "value": "12", "label": "signature flavours" },
@@ -61,21 +61,21 @@
     "title": "From sketchbook to cake table",
     "description": "A closer look at finished commissions, studio hands and thoughtful details.",
     "rowOne": [
-      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Sculptural tiered cake and cupcakes", "caption": "Burgundy and pearl" },
-      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Cake artist applying buttercream", "caption": "Hand-finished in Bristol" },
-      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Cupcakes arranged on plinths", "caption": "The cupcake edit" }
+      { "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Sculptural tiered cake and cupcakes", "caption": "Burgundy and pearl" },
+      { "image": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Cake artist applying buttercream", "caption": "Hand-finished in Bristol" },
+      { "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Cupcakes arranged on plinths", "caption": "The cupcake edit" }
     ],
     "rowTwo": [
-      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Bright professional cake studio", "caption": "Studio morning" },
-      { "image": "/templates/assets/northmill-cakes-hero.webp", "imageAlt": "Elegant cake with restrained decoration", "caption": "Quietly dramatic" },
-      { "image": "/templates/assets/northmill-workshop.webp", "imageAlt": "Smooth sculptural cake detail", "caption": "Texture in progress" }
+      { "image": "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Bright professional cake studio", "caption": "Studio morning" },
+      { "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Elegant cake with restrained decoration", "caption": "Quietly dramatic" },
+      { "image": "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?q=80&w=1000&auto=format&fit=crop", "imageAlt": "Smooth sculptural cake detail", "caption": "Texture in progress" }
     ]
   },
   "story": {
     "note": "Northmill studio",
     "title": "Confident design, genuinely good cake.",
     "description": "Our small team combines pastry training with product and interior design. The result is cake that belongs in the room—and tastes as memorable as it looks.",
-    "image": "/templates/assets/northmill-workshop.webp",
+    "image": "https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1000&auto=format&fit=crop",
     "imageAlt": "Cake maker working carefully in the Northmill studio",
     "quote": "A cake should hold the room for a moment, then bring everyone to the table.",
     "buttonLabel": "Discover our studio",

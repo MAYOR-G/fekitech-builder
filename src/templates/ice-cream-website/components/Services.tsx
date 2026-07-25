@@ -6,9 +6,9 @@ import { IceCream, Brandy, Moped } from "@phosphor-icons/react";
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
-    case "ice-cream": return <IceCream size={48} weight="duotone" className="text-white group-hover:text-[var(--color-primary)] transition-colors" />;
-    case "drinks": return <Brandy size={48} weight="duotone" className="text-white group-hover:text-[var(--color-primary)] transition-colors" />;
-    case "delivery": return <Moped size={48} weight="duotone" className="text-white group-hover:text-[var(--color-primary)] transition-colors" />;
+    case "ice-cream": return <IceCream size={48} weight="duotone" className="text-[#2a2a2a] group-hover:text-[var(--color-primary)] transition-colors" />;
+    case "drinks": return <Brandy size={48} weight="duotone" className="text-[#2a2a2a] group-hover:text-[var(--color-primary)] transition-colors" />;
+    case "delivery": return <Moped size={48} weight="duotone" className="text-[#2a2a2a] group-hover:text-[var(--color-primary)] transition-colors" />;
     default: return <IceCream size={48} weight="duotone" />;
   }
 };
@@ -22,9 +22,9 @@ export default function Services() {
         <img 
           src={data.services.backgroundImage} 
           alt="Services background" 
-          className="w-full h-full object-cover opacity-20 mix-blend-luminosity"
+          className="w-full h-full object-cover opacity-30 mix-blend-luminosity grayscale"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-secondary)] via-transparent to-[var(--color-secondary)] opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-secondary)] via-transparent to-[var(--color-secondary)] opacity-70"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 max-w-7xl">
@@ -34,15 +34,15 @@ export default function Services() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="inline-block px-4 py-1 rounded border border-[var(--color-primary)] mb-6 bg-white/5 backdrop-blur-sm"
+              className="inline-block px-4 py-1 rounded border border-white/40 mb-6 bg-white/20 backdrop-blur-sm"
             >
-              <span className="font-semibold text-xs tracking-widest uppercase text-[var(--color-primary)]">What We Offer</span>
+              <span className="font-semibold text-xs tracking-widest uppercase text-white drop-shadow-sm">What We Offer</span>
             </motion.div>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight uppercase"
+              className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight uppercase drop-shadow-md"
             >
               {data.services.title}
             </motion.h2>
@@ -64,7 +64,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: idx * 0.2 }}
-                className="flex flex-col bg-white/5 backdrop-blur-md p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors duration-300 group"
+                className="flex flex-col bg-white p-10 rounded-3xl border border-gray-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
               >
                 <div className="mb-8 relative w-20 h-20 flex items-center justify-center">
                   <motion.div 
@@ -77,11 +77,11 @@ export default function Services() {
                     {getIcon(item.icon)}
                   </div>
                 </div>
-                <h3 className="font-pacifico text-3xl text-white mb-4 tracking-wide">{item.title}</h3>
-                <p className="text-gray-300 mb-10 text-base leading-relaxed flex-grow">{item.description}</p>
+                <h3 className="font-pacifico text-3xl text-[#2a2a2a] mb-4 tracking-wide">{item.title}</h3>
+                <p className="text-gray-600 font-medium mb-10 text-base leading-relaxed flex-grow">{item.description}</p>
                 <a 
                   href={item.buttonHref}
-                  className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold uppercase tracking-widest text-xs hover:text-white transition-colors group/btn mt-auto"
+                  className="inline-flex items-center gap-2 text-[var(--color-primary)] font-bold uppercase tracking-widest text-xs hover:text-[#2a2a2a] transition-colors group/btn mt-auto"
                 >
                   {item.buttonLabel}
                   <svg className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">

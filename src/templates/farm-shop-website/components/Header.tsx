@@ -9,13 +9,13 @@ export default function Header() {
     <header className="absolute top-0 left-0 w-full z-50 py-6 px-8 md:px-16 flex items-center justify-between">
       <div className="flex items-center gap-12">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold font-sans tracking-tight text-[#1E201E]">{data.global?.businessName || "FreshMarket"}</span>
+          <span className="text-2xl font-bold font-sans tracking-tight text-white drop-shadow-md">{data.global?.businessName || "FreshMarket"}</span>
         </div>
         
-        <nav className="hidden md:flex items-center gap-8 text-[#1E201E] font-medium text-sm">
-          <a href="#" className="hover:text-[#548D4E] transition-colors">Home</a>
-          <a href="#" className="hover:text-[#548D4E] transition-colors">Fruit & Veg</a>
-          <a href="#" className="hover:text-[#548D4E] transition-colors">Meat & Fish</a>
+        <nav className="hidden md:flex items-center gap-8 text-white font-medium text-sm drop-shadow-md">
+          <a href="#" className="hover:text-[#E2CD88] transition-colors">Home</a>
+          <a href="#" className="hover:text-[#E2CD88] transition-colors">Fruit & Veg</a>
+          <a href="#" className="hover:text-[#E2CD88] transition-colors">Meat & Fish</a>
         </nav>
       </div>
 

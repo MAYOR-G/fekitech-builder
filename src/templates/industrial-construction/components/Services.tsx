@@ -9,7 +9,7 @@ const Services = () => {
   const { services } = useTemplateData();
 
   return (
-    <section className="bg-[#f9f8f6]" id="services">
+    <section className="bg-white" id="services">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-8 py-24 flex justify-between items-end">
         <div className="max-w-2xl">

@@ -1,7 +1,6 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import {
   ArrowRight,
   Broom,
@@ -188,7 +187,7 @@ function ActionLink({ href, children, secondary = false }: { href: string; child
 
 function BrandMark({ data, variant }: { data: PremiumServiceData; variant: Variant }) {
   if (data.brand.logo) {
-    return <img className="pst-logo-image" src={data.brand.logo} alt={`${data.brand.name} logo`} />;
+    return <Image className="pst-logo-image" src={data.brand.logo} alt={`${data.brand.name} logo`} width={200} height={60} />;
   }
   return (
     <span className="pst-logo-mark" aria-hidden="true">
@@ -202,9 +201,9 @@ function BeforeAfter({ data }: { data: PremiumServiceData["comparison"] }) {
   return (
     <figure className="pst-compare-figure">
       <div className="pst-compare-stage">
-        <img src={data.beforeImage} alt={data.beforeAlt} draggable={false} />
+        <Image src={data.beforeImage} alt={data.beforeAlt} draggable={false} fill sizes="(max-width: 1320px) 100vw, 1320px" />
         <div className="pst-compare-after" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
-          <img src={data.afterImage} alt={data.afterAlt} draggable={false} />
+          <Image src={data.afterImage} alt={data.afterAlt} draggable={false} fill sizes="(max-width: 1320px) 100vw, 1320px" />
         </div>
         <input
           className="pst-compare-input"
@@ -278,7 +277,9 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
       <main id="main-content">
         <section className="pst-hero" id="top">
-          <div className="pst-shell pst-hero-grid">
+          <Image className="pst-hero-bg" src={data.hero.image} alt={data.hero.imageAlt} fill priority sizes="100vw" />
+          <div className="pst-hero-overlay" />
+          <div className="pst-shell pst-hero-content">
             <Reveal className="pst-hero-copy">
               <p className="pst-eyebrow">{data.hero.eyebrow}</p>
               <h1>{data.hero.title}</h1>
@@ -287,14 +288,11 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
                 <ActionLink href={data.hero.primaryHref}>{data.hero.primaryLabel}</ActionLink>
                 <ActionLink href={data.hero.secondaryHref} secondary>{data.hero.secondaryLabel}</ActionLink>
               </div>
-            </Reveal>
-            <div className="pst-hero-media">
-              <img src={data.hero.image} alt={data.hero.imageAlt} fetchPriority="high" />
               <div className="pst-hero-proof">
                 <ShieldCheck aria-hidden="true" size={24} weight="duotone" />
                 <span>{data.trust.items[0]?.title}</span>
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
 
@@ -318,7 +316,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
                 const Icon = serviceIcons[index % serviceIcons.length];
                 return (
                   <Reveal className={`pst-service pst-service--${index + 1}`} key={service.name}>
-                    {service.image ? <img src={service.image} alt={service.imageAlt} loading="lazy" /> : null}
+                    {service.image ? <Image src={service.image} alt={service.imageAlt} width={600} height={400} /> : null}
                     <div className="pst-service-content">
                       <Icon aria-hidden="true" size={27} weight="duotone" />
                       <h3>{service.name}</h3>
@@ -344,7 +342,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-process" id="process">
           <div className="pst-shell pst-process-grid">
-            <div className="pst-process-media"><img src={data.process.image} alt={data.process.imageAlt} loading="lazy" /></div>
+            <div className="pst-process-media"><Image src={data.process.image} alt={data.process.imageAlt} width={800} height={800} /></div>
             <div className="pst-process-copy">
               <Reveal className="pst-section-heading"><h2>{data.process.title}</h2><p>{data.process.description}</p></Reveal>
               <div className="pst-process-steps">
@@ -386,7 +384,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
             <div className="pst-gallery-grid">
               {data.gallery.images.map((item, index) => (
                 <Reveal className={`pst-gallery-item pst-gallery-item--${index + 1}`} key={`${item.caption}-${index}`}>
-                  <img src={item.image} alt={item.imageAlt} loading="lazy" /><p>{item.caption}</p>
+                  <Image src={item.image} alt={item.imageAlt} width={600} height={400} /><p>{item.caption}</p>
                 </Reveal>
               ))}
             </div>

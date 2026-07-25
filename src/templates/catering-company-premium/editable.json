@@ -1,6 +1,6 @@
 {
   "colors": { "primary": "#5E7451", "secondary": "#D6A07A", "background": "#F7F6F0", "text": "#26352E" },
-  "brand": { "name": "Gather & Grace", "tagline": "Food for remarkable gatherings", "logo": "", "phone": "+44 113 555 0129", "email": "events@gatherandgrace.co.uk", "address": "4 Crown Point Road, Leeds LS10 1EL" },
+  "brand": { "name": "Harvest & Feast", "tagline": "Food for remarkable gatherings", "logo": "", "phone": "+44 113 555 0129", "email": "events@harvestandfeast.co.uk", "address": "4 Crown Point Road, Leeds LS10 1EL" },
   "navigation": {
     "links": [
       { "label": "Services", "href": "#menu" },
@@ -20,7 +20,7 @@
     "primaryHref": "#contact",
     "secondaryLabel": "Explore our menus",
     "secondaryHref": "#packages",
-    "image": "/templates/assets/gather-grace-hero.webp",
+    "image": "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2000&auto=format&fit=crop",
     "imageAlt": "Elegant daylight wedding table prepared by a professional caterer",
     "badge": "Dates open for 2026"
   },
@@ -112,10 +112,10 @@
       { "day": "Sunday", "time": "Events only" }
     ],
     "primaryLabel": "Request a quote",
-    "primaryHref": "mailto:events@gatherandgrace.co.uk",
+    "primaryHref": "mailto:events@harvestandfeast.co.uk",
     "secondaryLabel": "Call our planner",
     "secondaryHref": "tel:+441135550129"
   },
-  "social": { "instagram": "Gather & Grace on Instagram", "instagramHref": "https://instagram.com", "facebook": "Gather & Grace on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Gather & Grace on TikTok", "tiktokHref": "https://tiktok.com" },
-  "footer": { "note": "Thoughtful catering for gatherings across Yorkshire.", "copyright": "© 2026 Gather & Grace. All rights reserved." }
+  "social": { "instagram": "Harvest & Feast on Instagram", "instagramHref": "https://instagram.com", "facebook": "Harvest & Feast on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Harvest & Feast on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Thoughtful catering for gatherings across Yorkshire.", "copyright": "© 2026 Harvest & Feast. All rights reserved." }
 }

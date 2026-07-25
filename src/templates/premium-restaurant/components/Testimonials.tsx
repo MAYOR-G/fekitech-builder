@@ -37,7 +37,7 @@ export default function Testimonials() {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
               className="flex flex-col items-center"
             >
-              <div className="text-[#9B2C3F] font-serif text-6xl leading-none mb-4">"</div>
+              <div className="text-[#9B2C3F] font-serif text-6xl leading-none mb-4">&quot;</div>
               <p className="text-[#E5E0D8] text-lg font-light leading-relaxed mb-8 flex-grow">
                 {item.quote}
               </p>

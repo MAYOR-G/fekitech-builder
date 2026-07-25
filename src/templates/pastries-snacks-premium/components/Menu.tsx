@@ -39,7 +39,7 @@ export default function Menu() {
                 <img
                   src={item.image}
                   alt={item.imageAlt}
-                  className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 />
               </div>
               

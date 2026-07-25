@@ -10,7 +10,7 @@ const StorytellingAbout = () => {
   const siteContent = useTemplateData();
 
   return (
-    <section id="about" className="py-24 bg-coffee-light overflow-hidden">
+    <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           

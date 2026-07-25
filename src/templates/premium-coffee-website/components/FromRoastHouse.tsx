@@ -12,7 +12,7 @@ export default function FromRoastHouse() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-brand-cream text-brand-black">
+    <section className="py-32 px-6 bg-white text-brand-black">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}

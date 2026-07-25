@@ -6,7 +6,7 @@ export default function Header() {
   const data = useTemplateData();
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 text-white p-4 md:px-8 py-6 flex items-center justify-between">
+    <header className="absolute top-0 left-0 right-0 z-50 text-[var(--color-text)] drop-shadow-md p-4 md:px-8 py-6 flex items-center justify-between">
       <nav className="hidden md:flex items-center gap-6 text-sm font-semibold tracking-wider uppercase">
         {data.navigation.links.slice(0, 3).map((link, idx) => (
           <a key={idx} href={link.href} className="hover:text-[var(--color-primary)] transition-colors duration-300">
@@ -46,7 +46,7 @@ export default function Header() {
         </button>
       </nav>
 
-      <button className="md:hidden text-white hover:text-[var(--color-primary)]">
+      <button className="md:hidden text-[var(--color-text)] hover:text-[var(--color-primary)]">
         <List size={28} weight="bold" />
       </button>
     </header>

@@ -48,7 +48,7 @@ export function Services() {
   };
 
   return (
-    <section id="treatments" className="bg-white px-5 py-20 lg:px-8">
+    <section id="treatments" className="px-5 py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-end">

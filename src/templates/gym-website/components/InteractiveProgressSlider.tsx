@@ -74,7 +74,7 @@ const InteractiveProgressSlider = () => {
             <TemplateImage 
               src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop" 
               alt="Person starting their fitness journey" 
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none grayscale opacity-80"
+              className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-80"
             />
             <div className="absolute top-4 left-4 bg-gym-dark/80 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm z-10 border border-white/10">
               Starting Point

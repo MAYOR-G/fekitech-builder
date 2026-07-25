@@ -46,29 +46,25 @@ const ProcessStep = ({
   reducedMotion: boolean;
 }) => {
   const isFirst = i === 0;
-  // 4 steps = 3 transitions. phase = 0.333. slideDuration = 0.15.
-  const phase = 1 / 3;
+  // 4 steps = 4 phases to give the first step time to be read.
+  const phase = 1 / steps.length;
   const slideDuration = 0.15;
   
-  const startSlide = isFirst ? 0 : (i - 1) * phase;
+  // Card slides in at its respective phase. i=1 at 0.25, i=2 at 0.50, i=3 at 0.75.
+  const startSlide = isFirst ? 0 : i * phase;
   const endSlide = startSlide + slideDuration;
 
-  const startScale = i * phase;
+  // Card scales down when the NEXT card slides in (i+1).
+  const startScale = (i + 1) * phase;
   const endScale = startScale + slideDuration;
 
-  // First card is always fully slid in. Others slide from 100% (bottom) to 0%.
+  // First card is always fully slid in. Others slide from 100vh (bottom) to 0%.
   const y = useTransform(
     progress, 
     [startSlide, endSlide], 
-    [isFirst ? '0%' : '100%', '0%']
+    [isFirst ? '0%' : '100vh', '0%']
   );
   
-  const opacity = useTransform(
-    progress, 
-    [startSlide, startSlide + 0.05], 
-    [isFirst ? 1 : 0, 1]
-  );
-
   const scale = useTransform(
     progress, 
     [startScale, endScale], 
@@ -77,8 +73,8 @@ const ProcessStep = ({
 
   return (
     <motion.div 
-      style={reducedMotion ? undefined : { y, opacity, scale }}
-      className={`inset-0 origin-top overflow-hidden rounded-2xl bg-[#FAFAF8] ${
+      style={reducedMotion ? undefined : { y, scale, zIndex: i }}
+      className={`inset-0 origin-top overflow-hidden rounded-2xl bg-white ${
         reducedMotion
           ? "relative min-h-[32rem] shadow-xl"
           : "absolute border border-plumber-charcoal/5 shadow-2xl"

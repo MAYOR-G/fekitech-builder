@@ -1,6 +1,7 @@
 import React from "react";
 import { useTemplateData } from "../TemplateContext";
 import { motion } from "framer-motion";
+import { IceCream } from "@phosphor-icons/react";
 
 export default function Hero() {
   const data = useTemplateData();
@@ -74,6 +75,15 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+      
+      {/* Decorative Ice Cream at the corner */}
+      <motion.div 
+        animate={{ y: [0, -15, 0], rotate: [-10, 5, -10] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -bottom-10 -right-10 z-20 text-[var(--color-primary)] opacity-80 hidden md:block"
+      >
+        <IceCream size={200} weight="duotone" />
+      </motion.div>
     </section>
   );
 }

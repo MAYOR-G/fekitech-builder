@@ -2,7 +2,7 @@
 import React from "react";
 import { useTemplateData } from "../TemplateContext";
 import { motion } from "framer-motion";
-import { Quotes } from "@phosphor-icons/react";
+import { Quotes, IceCream } from "@phosphor-icons/react";
 
 export default function Testimonials() {
   const data = useTemplateData();
@@ -15,6 +15,14 @@ export default function Testimonials() {
         </div>
         <h2 className="text-4xl md:text-5xl font-black text-[#2a2a2a] uppercase tracking-tight">{data.testimonials.title}</h2>
       </div>
+
+      <motion.div 
+        animate={{ rotate: [0, 10, -10, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+        className="absolute top-10 right-20 z-0 text-[var(--color-secondary)] opacity-10 hidden lg:block pointer-events-none"
+      >
+        <IceCream size={350} weight="duotone" />
+      </motion.div>
 
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">

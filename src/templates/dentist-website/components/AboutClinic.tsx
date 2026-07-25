@@ -10,7 +10,7 @@ export function AboutClinic() {
   const { careHighlights, clinicImages } = useTemplateData();
 
   return (
-    <section id="about" className="px-5 py-20 lg:px-8">
+    <section id="about" className="bg-white px-5 py-20 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
         <Reveal>
           <div className="relative">

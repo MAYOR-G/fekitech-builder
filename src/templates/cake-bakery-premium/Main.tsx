@@ -12,7 +12,7 @@ const jost = Jost({ subsets: ["latin"], variable: "--font-jost" });
 
 export default function Main() {
   return (
-    <div className={`${cormorant.variable} ${jost.variable} font-sans bg-[#FBF8F1] text-[#3D3A35] min-h-screen selection:bg-[#E2A499] selection:text-white`}>
+    <div className={`${cormorant.variable} ${jost.variable} font-sans bg-[#FFFFFF] text-[#3D3A35] min-h-screen selection:bg-[#C7A28F] selection:text-white`}>
       <Header />
       <main>
         <Hero />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTemplateData } from "../TemplateContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { List, X } from "@phosphor-icons/react";
+import { List, X, User } from "@phosphor-icons/react";
 
 export default function Header() {
   const { brand, navigation } = useTemplateData();
@@ -20,7 +20,7 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
-          scrolled ? "bg-white/95 backdrop-blur-md py-4 border-b border-[#E5E0D8]" : "bg-transparent py-8"
+          scrolled ? "bg-[#F7F4EE]/95 backdrop-blur-md py-4 border-b border-[#E5E0D8]" : "bg-transparent py-8"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -29,11 +29,8 @@ export default function Header() {
               <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain" />
             ) : (
               <div className="flex flex-col">
-                <span className="font-serif text-2xl font-semibold tracking-tight text-[#2C2A26]">
-                  {brand.name}
-                </span>
-                <span className="text-[9px] uppercase tracking-[0.2em] text-[#8E8B82] font-semibold mt-1">
-                  {brand.tagline}
+                <span className="font-serif text-2xl font-semibold tracking-[0.2em] text-[#2C2A26] uppercase">
+                  LAWRENCE
                 </span>
               </div>
             )}
@@ -44,25 +41,29 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[11px] font-semibold uppercase tracking-[0.15em] text-[#2C2A26] hover:text-[#9B2C3F] transition-colors relative group"
+                className="text-[13px] font-medium text-[#421a22] hover:text-[#8D2E45] transition-colors relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-[#9B2C3F] scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-[#8D2E45] scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
               </a>
             ))}
           </nav>
 
           <div className="hidden md:flex items-center gap-6">
+            <a href="#login" className="flex items-center gap-2 text-[#421a22] hover:text-[#8D2E45] transition-colors">
+              <User size={20} weight="bold" />
+              <span className="text-[13px] font-medium">Log In</span>
+            </a>
             <a
               href={navigation.ctaHref}
-              className="px-7 py-3.5 bg-[#9B2C3F] text-white text-[11px] font-bold uppercase tracking-[0.15em] hover:bg-[#7A2131] transition-colors"
+              className="px-6 py-2.5 bg-transparent border border-[#421a22] text-[#421a22] text-[13px] font-medium hover:bg-[#421a22] hover:text-white transition-colors"
             >
-              {navigation.ctaLabel}
+              Online order
             </a>
           </div>
 
           <button
-            className="md:hidden text-[#2C2A26]"
+            className="md:hidden text-[#421a22]"
             onClick={() => setMenuOpen(true)}
           >
             <List size={28} />

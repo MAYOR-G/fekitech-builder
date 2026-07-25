@@ -28,7 +28,7 @@ export default function Header() {
             {brand.logo ? (
               <img src={brand.logo} alt={brand.name} className="h-10 w-auto object-contain" />
             ) : (
-              <span className="font-serif text-2xl tracking-tight text-[#3C2A21]">{brand.name}</span>
+              <span className={`font-serif text-2xl tracking-tight transition-colors ${scrolled ? "text-[#3C2A21]" : "text-white"}`}>{brand.name}</span>
             )}
           </a>
 
@@ -37,7 +37,7 @@ export default function Header() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[13px] uppercase tracking-[0.15em] font-medium text-[#3C2A21]/80 hover:text-[#556B2F] transition-colors"
+                className={`text-[13px] uppercase tracking-[0.15em] font-bold transition-colors ${scrolled ? "text-[#3C2A21]/80 hover:text-[#556B2F]" : "text-white/90 hover:text-white"}`}
               >
                 {link.label}
               </a>
@@ -47,13 +47,13 @@ export default function Header() {
           <div className="hidden md:block">
             <a
               href={navigation.ctaHref}
-              className="px-8 py-3 bg-[#556B2F] text-[#F7F5F0] text-[13px] uppercase tracking-[0.15em] font-medium hover:bg-[#3C2A21] transition-colors"
+              className={`px-8 py-3 text-[13px] uppercase tracking-[0.15em] font-medium transition-colors ${scrolled ? "bg-[#556B2F] text-[#F7F5F0] hover:bg-[#3C2A21]" : "bg-white text-[#3C2A21] hover:bg-[#556B2F] hover:text-white"}`}
             >
               {navigation.ctaLabel}
             </a>
           </div>
 
-          <button className="md:hidden z-50 text-[#3C2A21]" onClick={() => setMenuOpen(true)}>
+          <button className={`md:hidden z-50 transition-colors ${scrolled ? "text-[#3C2A21]" : "text-white"}`} onClick={() => setMenuOpen(true)}>
             <List size={28} />
           </button>
         </div>

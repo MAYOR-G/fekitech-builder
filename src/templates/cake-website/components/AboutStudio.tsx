@@ -59,7 +59,7 @@ export function AboutStudio() {
                 <TemplateImage 
                   src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=100&h=100&q=85" 
                   alt="Head baker" 
-                  className="w-16 h-16 rounded-full object-cover grayscale opacity-80"
+                  className="w-16 h-16 rounded-full object-cover opacity-80"
                 />
                 <p className="mt-4 font-display text-xl text-ganache">Eleanor Vane</p>
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#2D2D2D]/75">Creative Director & Head Baker</p>

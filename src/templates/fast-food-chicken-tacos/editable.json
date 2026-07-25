@@ -1,6 +1,6 @@
 {
-  "colors": { "primary": "#E5412B", "secondary": "#F4C62B", "background": "#FFF9ED", "text": "#153A35" },
-  "brand": { "name": "Cluck & Yard", "tagline": "Chicken, tacos & good times", "logo": "", "phone": "+44 161 555 0188", "email": "orders@cluckandyard.co.uk", "address": "42 Oldham Street, Manchester M1 1JN" },
+  "colors": { "primary": "#FFB5F2", "secondary": "#FBE49F", "background": "#FDF9F1", "text": "#3D2721" },
+  "brand": { "name": "Crave", "tagline": "Chicken, tacos & good times", "logo": "", "phone": "+44 161 555 0188", "email": "orders@crave.co.uk", "address": "42 Oldham Street, Manchester M1 1JN" },
   "navigation": {
     "links": [
       { "label": "Menu", "href": "#menu" },
@@ -13,16 +13,15 @@
     "ctaHref": "https://example.com/order"
   },
   "hero": {
-    "note": "Manchester-made. Big flavour.",
-    "title": "Crunch. Char. Repeat.",
-    "description": "Buttermilk chicken, flame-kissed tacos and loaded sides built fresh, packed properly and ready when you are.",
-    "primaryLabel": "Start your order",
-    "primaryHref": "https://example.com/order",
-    "secondaryLabel": "See the menu",
-    "secondaryHref": "#menu",
-    "image": "/templates/assets/cluck-yard-hero.webp",
-    "imageAlt": "Fried chicken, tacos, burger, wings, loaded fries, wrap and shake on a bright table",
-    "badge": "Freshly fried to order"
+    "headline": "Crave",
+    "subheadline": "Fast Food, Elevated.",
+    "cta": "Order Now",
+    "ctaLink": "#menu",
+    "images": [
+      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1999&auto=format&fit=crop"
+    ]
   },
   "strip": { "items": ["Buttermilk chicken", "Hot honey wings", "Loaded fries", "Grilled tacos", "Shakes made thick"] },
   "products": {
@@ -92,7 +91,7 @@
     ]
   },
   "testimonials": {
-    "title": "The group chat approved",
+    "title": "From Our Neighbors",
     "description": "Real reactions from local regulars and late-night feast crews.",
     "items": [
       { "quote": "The chicken stayed audibly crunchy all the way home. Unreal.", "name": "Kai M.", "detail": "Northern Quarter" },

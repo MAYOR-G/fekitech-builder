@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="absolute bottom-12 flex items-center space-x-12"
+          className="mt-16 flex flex-wrap gap-8 items-center"
         >
           <div className="relative w-32 h-32 flex items-center justify-center">
             {/* Simple circular text approximation */}
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="border-l border-gray-600 pl-8">
             <p className="text-[10px] text-gray-400 font-bold mb-4 uppercase tracking-wider">{hero.efficiency.label}</p>
             <div className="flex items-center space-x-4">
-              <div className="border border-white/20 p-3 rounded">
+              <div className="border border-white/20 p-3 rounded shrink-0">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>

@@ -1,5 +1,9 @@
 {
-  "colors": { "primary": "#087C8C", "background": "#FBFDFD", "text": "#153047" },
+  "colors": {
+    "primary": "#087C8C",
+    "background": "#FBFDFD",
+    "text": "#153047"
+  },
   "brand": {
     "name": "Clearflow Plumbing",
     "tagline": "Clear advice. Careful work.",
@@ -12,11 +16,26 @@
   },
   "navigation": {
     "links": [
-      { "label": "Services", "href": "#services" },
-      { "label": "Before & after", "href": "#results" },
-      { "label": "How we work", "href": "#process" },
-      { "label": "Pricing", "href": "#packages" },
-      { "label": "Reviews", "href": "#reviews" }
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Before & after",
+        "href": "#results"
+      },
+      {
+        "label": "How we work",
+        "href": "#process"
+      },
+      {
+        "label": "Pricing",
+        "href": "#packages"
+      },
+      {
+        "label": "Reviews",
+        "href": "#reviews"
+      }
     ],
     "ctaLabel": "Request a quote",
     "ctaHref": "#contact"
@@ -34,23 +53,64 @@
   },
   "trust": {
     "items": [
-      { "title": "Qualified engineers", "description": "Experienced, trained plumbers with documented credentials." },
-      { "title": "Fully insured", "description": "Public liability cover for domestic and commercial work." },
-      { "title": "Clear quotations", "description": "Scope and pricing explained before planned work begins." },
-      { "title": "Workmanship guarantee", "description": "Written cover for completed repairs and installations." }
+      {
+        "title": "Qualified engineers",
+        "description": "Experienced, trained plumbers with documented credentials."
+      },
+      {
+        "title": "Fully insured",
+        "description": "Public liability cover for domestic and commercial work."
+      },
+      {
+        "title": "Clear quotations",
+        "description": "Scope and pricing explained before planned work begins."
+      },
+      {
+        "title": "Workmanship guarantee",
+        "description": "Written cover for completed repairs and installations."
+      }
     ]
   },
   "services": {
     "title": "One careful team for every water system",
     "description": "From the urgent drip to a full bathroom refit, we diagnose first and explain the practical options clearly.",
     "items": [
-      { "name": "Emergency plumbing", "description": "Rapid response for active leaks, burst pipes, loss of water and urgent isolation.", "image": "/templates/assets/clearflow-hero.webp", "imageAlt": "Professional plumber responding in a bright bathroom" },
-      { "name": "Boilers & heating", "description": "Boiler faults, radiator issues, controls, servicing and planned replacement.", "image": "", "imageAlt": "Boiler and central heating service" },
-      { "name": "Leak detection", "description": "Careful investigation of visible and hidden leaks with minimum disruption.", "image": "", "imageAlt": "Plumber checking for a hidden leak" },
-      { "name": "Bathrooms", "description": "First-fix pipework, sanitaryware, taps, showers and complete bathroom installations.", "image": "", "imageAlt": "Completed bright modern bathroom" },
-      { "name": "Pipes & drainage", "description": "Repairs, rerouting, blockages, waste pipes and dependable drainage improvements.", "image": "", "imageAlt": "Neat new domestic pipework" },
-      { "name": "Repairs & maintenance", "description": "Toilets, taps, valves, tanks and routine property maintenance for homes and landlords.", "image": "", "imageAlt": "Plumbing repair and maintenance" },
-      { "name": "Commercial plumbing", "description": "Planned work, reactive repairs and maintenance support for offices, shops and small sites.", "image": "", "imageAlt": "Commercial plumbing engineer at work" }
+      {
+        "name": "Emergency plumbing",
+        "description": "Rapid response for active leaks, burst pipes, loss of water and urgent isolation.",
+        "image": "https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Professional plumber responding in a bright bathroom"
+      },
+      {
+        "name": "Boilers & heating",
+        "description": "Boiler faults, radiator issues, controls, servicing and planned replacement.",
+        "image": "https://images.unsplash.com/photo-1607400201889-565314e0046b?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Boiler and central heating service"
+      },
+      {
+        "name": "Leak detection",
+        "description": "Careful investigation of visible and hidden leaks with minimum disruption.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Plumber checking for a hidden leak"
+      },
+      {
+        "name": "Bathrooms",
+        "description": "First-fix pipework, sanitaryware, taps, showers and complete bathroom installations.",
+        "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Completed bright modern bathroom"
+      },
+      {
+        "name": "Pipes & drainage",
+        "description": "Repairs, rerouting, blockages, waste pipes and dependable drainage improvements.",
+        "image": "https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Neat new domestic pipework"
+      },
+      {
+        "name": "Repairs & maintenance",
+        "description": "Toilets, taps, valves, tanks and routine property maintenance for homes and landlords.",
+        "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80",
+        "imageAlt": "Plumbing repair and maintenance"
+      }
     ]
   },
   "comparison": {
@@ -71,52 +131,150 @@
     "image": "/templates/assets/clearflow-hero.webp",
     "imageAlt": "Clearflow plumber carefully completing a bathroom installation",
     "steps": [
-      { "title": "Tell us the issue", "description": "Call or send details, photos and your postcode so we can triage correctly." },
-      { "title": "Inspect & explain", "description": "We find the cause, show the evidence and outline sensible options." },
-      { "title": "Approve the work", "description": "For planned jobs, scope and price are confirmed before we begin." },
-      { "title": "Repair & test", "description": "Work is completed, pressure-tested, cleaned and demonstrated." }
+      {
+        "title": "Tell us the issue",
+        "description": "Call or send details, photos and your postcode so we can triage correctly."
+      },
+      {
+        "title": "Inspect & explain",
+        "description": "We find the cause, show the evidence and outline sensible options."
+      },
+      {
+        "title": "Approve the work",
+        "description": "For planned jobs, scope and price are confirmed before we begin."
+      },
+      {
+        "title": "Repair & test",
+        "description": "Work is completed, pressure-tested, cleaned and demonstrated."
+      }
     ]
   },
   "packages": {
     "title": "Clear starting prices",
     "description": "Final pricing depends on access, parts and scope. You will always be told before additional work is carried out.",
     "items": [
-      { "name": "Standard call-out", "description": "Diagnosis and first hour for everyday plumbing faults.", "price": "From £95", "note": "Weekday daytime", "buttonLabel": "Book a visit", "buttonHref": "#contact", "features": ["Arrival window confirmed", "Diagnosis included", "Written follow-up notes"] },
-      { "name": "Emergency response", "description": "Priority attendance for active leaks and urgent plumbing failures.", "price": "From £145", "note": "Evenings and weekends", "buttonLabel": "Call emergency line", "buttonHref": "tel:+442085550136", "features": ["24-hour phone response", "Urgent isolation and repair", "Clear out-of-hours rate"] },
-      { "name": "Landlord care", "description": "Organised reactive and planned plumbing support for managed homes.", "price": "Quoted monthly", "note": "For 3+ properties", "buttonLabel": "Discuss a portfolio", "buttonHref": "mailto:help@clearflowplumbing.co.uk", "features": ["Tenant appointment handling", "Photo job reports", "Planned maintenance reminders"] }
+      {
+        "name": "Standard call-out",
+        "description": "Diagnosis and first hour for everyday plumbing faults.",
+        "price": "From £95",
+        "note": "Weekday daytime",
+        "buttonLabel": "Book a visit",
+        "buttonHref": "#contact",
+        "features": [
+          "Arrival window confirmed",
+          "Diagnosis included",
+          "Written follow-up notes"
+        ]
+      },
+      {
+        "name": "Emergency response",
+        "description": "Priority attendance for active leaks and urgent plumbing failures.",
+        "price": "From £145",
+        "note": "Evenings and weekends",
+        "buttonLabel": "Call emergency line",
+        "buttonHref": "tel:+442085550136",
+        "features": [
+          "24-hour phone response",
+          "Urgent isolation and repair",
+          "Clear out-of-hours rate"
+        ]
+      },
+      {
+        "name": "Landlord care",
+        "description": "Organised reactive and planned plumbing support for managed homes.",
+        "price": "Quoted monthly",
+        "note": "For 3+ properties",
+        "buttonLabel": "Discuss a portfolio",
+        "buttonHref": "mailto:help@clearflowplumbing.co.uk",
+        "features": [
+          "Tenant appointment handling",
+          "Photo job reports",
+          "Planned maintenance reminders"
+        ]
+      }
     ]
   },
   "stats": {
     "items": [
-      { "value": "14+", "label": "years of local experience" },
-      { "value": "2,800", "label": "jobs completed" },
-      { "value": "4.9/5", "label": "verified customer rating" },
-      { "value": "24/7", "label": "emergency phone line" }
+      {
+        "value": "14+",
+        "label": "years of local experience"
+      },
+      {
+        "value": "2,800",
+        "label": "jobs completed"
+      },
+      {
+        "value": "4.9/5",
+        "label": "verified customer rating"
+      },
+      {
+        "value": "24/7",
+        "label": "emergency phone line"
+      }
     ]
   },
   "gallery": {
     "title": "Recent work, finished cleanly",
     "description": "Repairs and installations across South East London homes and small businesses.",
     "images": [
-      { "image": "/templates/assets/clearflow-hero.webp", "imageAlt": "Plumber installing a premium bathroom tap", "caption": "Bathroom installation · Greenwich" },
-      { "image": "/templates/assets/clearflow-after.webp", "imageAlt": "Neat completed under-sink pipework", "caption": "Leak repair · Eltham" },
-      { "image": "/templates/assets/clearflow-before.webp", "imageAlt": "Old pipework before a planned repair", "caption": "Pre-work inspection · Lewisham" },
-      { "image": "/templates/assets/clearflow-after.webp", "imageAlt": "Dry clean vanity after plumbing work", "caption": "Property maintenance · Blackheath" }
+      {
+        "image": "/templates/assets/clearflow-hero.webp",
+        "imageAlt": "Plumber installing a premium bathroom tap",
+        "caption": "Bathroom installation · Greenwich"
+      },
+      {
+        "image": "/templates/assets/clearflow-after.webp",
+        "imageAlt": "Neat completed under-sink pipework",
+        "caption": "Leak repair · Eltham"
+      },
+      {
+        "image": "/templates/assets/clearflow-before.webp",
+        "imageAlt": "Old pipework before a planned repair",
+        "caption": "Pre-work inspection · Lewisham"
+      },
+      {
+        "image": "/templates/assets/clearflow-after.webp",
+        "imageAlt": "Dry clean vanity after plumbing work",
+        "caption": "Property maintenance · Blackheath"
+      }
     ]
   },
   "testimonials": {
     "title": "Trusted in homes across South East London",
     "description": "Feedback from emergency call-outs, planned repairs and full installations.",
     "items": [
-      { "quote": "The leak was traced properly, the options were explained and the repair is incredibly neat.", "name": "Helen M.", "detail": "Greenwich homeowner" },
-      { "quote": "Clearflow kept our tenant informed and sent a useful photo report straight after the visit.", "name": "Samir P.", "detail": "Local landlord" },
-      { "quote": "Calm, punctual and spotless. Our new bathroom pipework has been beautifully planned.", "name": "Chloe R.", "detail": "Blackheath renovation" }
+      {
+        "quote": "The leak was traced properly, the options were explained and the repair is incredibly neat.",
+        "name": "Helen M.",
+        "detail": "Greenwich homeowner"
+      },
+      {
+        "quote": "Clearflow kept our tenant informed and sent a useful photo report straight after the visit.",
+        "name": "Samir P.",
+        "detail": "Local landlord"
+      },
+      {
+        "quote": "Calm, punctual and spotless. Our new bathroom pipework has been beautifully planned.",
+        "name": "Chloe R.",
+        "detail": "Blackheath renovation"
+      }
     ]
   },
   "areas": {
     "title": "Local coverage, practical response times",
     "description": "Based in Eltham and serving homes, landlords and small businesses across the surrounding area.",
-    "items": ["Eltham", "Greenwich", "Blackheath", "Lewisham", "Sidcup", "Bromley", "Woolwich", "Catford", "Lee"]
+    "items": [
+      "Eltham",
+      "Greenwich",
+      "Blackheath",
+      "Lewisham",
+      "Sidcup",
+      "Bromley",
+      "Woolwich",
+      "Catford",
+      "Lee"
+    ]
   },
   "contact": {
     "eyebrow": "Book an engineer",
@@ -127,11 +285,30 @@
     "secondaryLabel": "Call +44 20 8555 0136",
     "secondaryHref": "tel:+442085550136",
     "hours": [
-      { "day": "Mon–Fri", "time": "7:30am–6pm" },
-      { "day": "Saturday", "time": "8am–4pm" },
-      { "day": "Emergency line", "time": "24 hours" }
+      {
+        "day": "Mon–Fri",
+        "time": "7:30am–6pm"
+      },
+      {
+        "day": "Saturday",
+        "time": "8am–4pm"
+      },
+      {
+        "day": "Emergency line",
+        "time": "24 hours"
+      }
     ]
   },
-  "social": { "instagram": "Clearflow Plumbing on Instagram", "instagramHref": "https://instagram.com", "facebook": "Clearflow Plumbing on Facebook", "facebookHref": "https://facebook.com", "linkedin": "Clearflow Plumbing on LinkedIn", "linkedinHref": "https://linkedin.com" },
-  "footer": { "note": "Qualified plumbing, clear communication and tidy workmanship.", "copyright": "© 2026 Clearflow Plumbing Ltd. All rights reserved." }
+  "social": {
+    "instagram": "Clearflow Plumbing on Instagram",
+    "instagramHref": "https://instagram.com",
+    "facebook": "Clearflow Plumbing on Facebook",
+    "facebookHref": "https://facebook.com",
+    "linkedin": "Clearflow Plumbing on LinkedIn",
+    "linkedinHref": "https://linkedin.com"
+  },
+  "footer": {
+    "note": "Qualified plumbing, clear communication and tidy workmanship.",
+    "copyright": "© 2026 Clearflow Plumbing Ltd. All rights reserved."
+  }
 }

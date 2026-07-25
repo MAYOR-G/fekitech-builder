@@ -44,7 +44,7 @@ export default function Philosophy() {
             <img 
               src={feature.image} 
               alt={feature.imageAlt} 
-              className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 hover:scale-105" 
+              className="w-full h-full object-cover transition-all duration-700 hover:scale-105" 
             />
           </motion.div>
         </div>

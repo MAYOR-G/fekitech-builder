@@ -9,9 +9,6 @@ export default function Highlights() {
 
   return (
     <section className="py-32 bg-white relative z-20 overflow-hidden">
-      {/* Decorative background vectors */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-[var(--color-primary)] opacity-5 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[var(--color-secondary)] opacity-5 rounded-full blur-3xl"></div>
 
       <div className="text-center mb-24 relative z-10">
         <h2 className="font-pacifico text-4xl md:text-6xl text-[var(--color-secondary)] mb-6">Signature Flavours</h2>

@@ -96,12 +96,6 @@ section[id] {
   z-index: 5;
 }
 
-.hero-overlap {
-  margin-top: -2rem;
-  border-radius: 2rem 2rem 0 0;
-  box-shadow: 0 -32px 90px rgba(0, 0, 0, 0.36);
-}
-
 .section-divider {
   box-shadow: 0 -24px 70px rgba(0, 0, 0, 0.18);
 }

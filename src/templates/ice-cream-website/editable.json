@@ -7,8 +7,8 @@
     "email": "hello@mintedscoop.co.uk",
     "address": "15 Gelato Lane, London",
     "colors": {
-      "primary": "#b4e659",
-      "secondary": "#57c196",
+      "primary": "#d8b4e2",
+      "secondary": "#ffb7b2",
       "background": "#ffffff",
       "text": "#4b4b4b"
     }
@@ -156,7 +156,7 @@
         ],
         "buttonLabel": "Order Now",
         "buttonHref": "#order",
-        "color": "#9de1aa"
+        "color": "#ffb7b2"
       },
       {
         "name": "Medium Box",
@@ -170,7 +170,7 @@
         ],
         "buttonLabel": "Order Now",
         "buttonHref": "#order",
-        "color": "#a8e0a3"
+        "color": "#d8b4e2"
       },
       {
         "name": "Party Box",
@@ -184,7 +184,7 @@
         ],
         "buttonLabel": "Order Now",
         "buttonHref": "#order",
-        "color": "#90d3d5"
+        "color": "#ffdac1"
       },
       {
         "name": "Big Box",
@@ -198,7 +198,7 @@
         ],
         "buttonLabel": "Order Now",
         "buttonHref": "#order",
-        "color": "#a1d378"
+        "color": "#ff9a9e"
       }
     ]
   },

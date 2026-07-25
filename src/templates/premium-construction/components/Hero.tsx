@@ -15,7 +15,7 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
         {/* Subtle overlay */}
-        <div className="absolute inset-0 bg-white/60"></div>
+        <div className="absolute inset-0 bg-white/30"></div>
       </div>
 
       {/* Social Sidebar */}
@@ -36,7 +36,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 w-full z-10 relative">
         <div className="max-w-3xl">
           {/* Faded Background Text */}
-          <div className="absolute -left-10 top-10 select-none pointer-events-none hidden md:block opacity-10">
+          <div className="absolute -left-10 top-10 select-none pointer-events-none hidden md:block opacity-30">
             <h1 className="text-[10rem] font-black font-sans uppercase leading-none"
                 style={{ WebkitTextStroke: '2px var(--color-secondary)', color: 'transparent' }}>
               {data.brand.logoText}

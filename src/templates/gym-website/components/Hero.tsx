@@ -30,7 +30,9 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="text-6xl md:text-8xl font-black font-display leading-[0.9] tracking-tighter uppercase mb-6"
           >
-            {content.hero.title}
+            <span className="block">{content.hero.title1 || "TRAIN SMARTER."}</span>
+            <span className="block">{content.hero.title2 || "MOVE BETTER."}</span>
+            <span className="block text-gym-accent">{content.hero.titleHighlight || "BUILD STRENGTH."}</span>
           </motion.h1>
           
           <motion.p 

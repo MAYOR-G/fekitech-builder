@@ -20,8 +20,6 @@ export default function Specialties() {
 
   return (
     <section id="specialties" className="py-24 bg-[#ffffff] relative z-20 overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-secondary) 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
 
       <div className="text-center mb-20 relative z-10">
         <div className="flex items-center justify-center gap-4 text-[var(--color-text)] mb-4">

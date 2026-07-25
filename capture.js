@@ -1,6 +1,29 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 const templates = [
+  "industrial-construction",
+  "premium-construction",
+  "carpenter-website",
+  "bakery-website",
+  "ice-cream-website",
+  "farm-shop-website",
+  "premium-restaurant",
+  "fast-food-chicken-tacos",
+  "cake-bakery-premium",
+  "pastries-snacks-premium",
+  "catering-company-premium",
+  "barber-website",
+  "premium-coffee-website",
+  "gym-website",
+  "burger-dark-premium",
+  "burger-light-clean",
+  "pizza-dark-premium",
+  "pizza-light-clean",
+  "cleaning-agency-premium",
+  "roofing-agency-premium",
+  "plumbing-company-premium",
+  "second-furniture-website",
   "cake-website",
   "catering-website",
   "coffee-website",
@@ -12,26 +35,53 @@ const templates = [
 ];
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  console.log("Starting capture script...");
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+  });
   const page = await browser.newPage();
   
-  // Set viewport to a nice 3/4 aspect ratio
-  await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 1 });
+  // Set viewport to normal desktop size (900px height) so 100vh doesn't become 2500px tall.
+  // We will still capture a 2500px tall screenshot using the `clip` property.
+  await page.setViewport({ width: 1440, height: 900 });
 
   for (const t of templates) {
-    console.log(`Capturing ${t}...`);
-    try {
-      await page.goto(`http://localhost:3000/preview/${t}?frame=1`, { waitUntil: 'networkidle2', timeout: 30000 });
-      // wait a bit extra for animations/images
-      await new Promise(r => setTimeout(r, 2000));
-      
-      await page.screenshot({ path: `public/templates/${t}-tall.webp`, type: 'webp', quality: 85 });
-      console.log(`Saved ${t}`);
-    } catch (e) {
-      console.error(`Error capturing ${t}:`, e);
-    }
+    console.log(`Processing: ${t}`);
+    
+    // Next.js dev server has open SSE connections, so we use 'load'
+    await page.goto(`http://localhost:3000/preview/${t}?frame=1`, { waitUntil: 'load', timeout: 0 });
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Scroll to trigger IntersectionObserver animations and lazy loaded images
+    // We do it in steps of 800px so it registers the intersections
+    await page.evaluate(() => window.scrollBy(0, 800));
+    await new Promise(r => setTimeout(r, 600));
+    
+    await page.evaluate(() => window.scrollBy(0, 800));
+    await new Promise(r => setTimeout(r, 600));
+
+    await page.evaluate(() => window.scrollBy(0, 800));
+    await new Promise(r => setTimeout(r, 600));
+    
+    // Reset scroll to top before screenshot so sticky headers reset and content is proper
+    await page.evaluate(() => {
+      window.scrollTo(0, 0);
+    });
+    
+    // Wait for sticky headers to transition back, etc.
+    await new Promise(r => setTimeout(r, 800));
+
+    // Capture screenshot
+    await page.screenshot({ 
+      path: `public/templates/${t}.webp`, 
+      type: 'webp', 
+      quality: 90,
+      clip: { x: 0, y: 0, width: 1440, height: 2500 }
+    });
+    
+    console.log(`✅ Saved: public/templates/${t}.webp`);
   }
 
   await browser.close();
-  console.log("All done!");
+  console.log("All screenshots captured successfully.");
 })();

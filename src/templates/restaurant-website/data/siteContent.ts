@@ -85,8 +85,8 @@ export const hero = {
   title: "Seasonal food, simply done.",
   subtitle:
     "A relaxed British restaurant serving thoughtful plates, good wine and warm hospitality in the heart of York.",
-  image: "/templates/assets/halcyon-dining.webp",
-  imageAlt: "Elegant candlelit restaurant dining room prepared for evening service",
+  image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=2000&q=80",
+  imageAlt: "Bright, clean, and elegant modern restaurant dining room",
   primaryLabel: "Reserve a table",
   primaryHref: "#reservation",
   secondaryLabel: "View the menu",

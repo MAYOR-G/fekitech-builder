@@ -9,73 +9,46 @@ export default function Hero() {
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#1A1814]" id="top">
-      {/* Background Image Parallax */}
-      <motion.div style={{ y }} className="absolute inset-0 w-full h-[120%] -top-[10%]">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/80 z-10" />
-        <img
-          src={hero.image}
-          alt={hero.imageAlt}
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
-
+    <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-32 pb-16" id="top">
       {/* Content */}
-      <motion.div
-        style={{ opacity }}
-        className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
-      >
-        <motion.div
+      <div className="w-full mx-auto px-4 md:px-8 flex flex-col items-center text-center">
+        {/* Text Content */}
+        <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-4xl mx-auto flex flex-col items-center"
+          className="text-[18.5vw] sm:text-[16vw] md:text-[13.5vw] lg:text-[12vw] xl:text-[11vw] text-[#421a22] font-normal tracking-tight leading-[1] mb-6 md:mb-8 w-full whitespace-nowrap"
+          style={{ fontFamily: "'Baguet Script', cursive" }}
         >
-          <span className="text-[#D5B55B] text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
-            {hero.note}
-          </span>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-8xl text-white font-medium tracking-tight leading-[1.1] md:leading-[1.05] mb-8 drop-shadow-lg">
-            {hero.title}
-          </h1>
-          <p className="text-[#E5E0D8] text-base md:text-xl font-light max-w-xl mx-auto mb-12 leading-relaxed">
-            {hero.description}
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto">
-            <a
-              href={hero.primaryHref}
-              className="w-full sm:w-auto px-10 py-4 bg-[#9B2C3F] text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-[#1A1814] transition-colors duration-500 text-center"
-            >
-              {hero.primaryLabel}
-            </a>
-            {hero.secondaryLabel && (
-              <a
-                href={hero.secondaryHref}
-                className="w-full sm:w-auto px-10 py-4 bg-transparent border border-white/30 text-white text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/10 transition-colors duration-500 text-center"
-              >
-                {hero.secondaryLabel}
-              </a>
-            )}
-          </div>
-        </motion.div>
-      </motion.div>
+          Restaurant & Bar
+        </motion.h1>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3"
-      >
-        <span className="text-[9px] uppercase tracking-[0.3em] text-white/50">Scroll</span>
-        <div className="w-[1px] h-12 bg-white/20 overflow-hidden">
-          <motion.div
-            animate={{ y: ["-100%", "100%"] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-            className="w-full h-1/2 bg-[#D5B55B]"
-          />
+        {/* Image Container with Badge */}
+        <div className="w-full relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="relative w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-[2.5/1] overflow-hidden"
+          >
+            {/* Jagged Star Badge */}
+            <div className="absolute top-6 left-6 md:top-12 md:left-12 z-20 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 bg-white flex items-center justify-center rotate-[-15deg]"
+                 style={{ clipPath: "polygon(50% 0%, 61% 16%, 80% 10%, 82% 29%, 100% 38%, 91% 56%, 100% 75%, 82% 80%, 79% 100%, 61% 91%, 50% 100%, 39% 91%, 21% 100%, 18% 80%, 0% 75%, 9% 56%, 0% 38%, 18% 29%, 20% 10%, 39% 16%)" }}
+            >
+              <span className="font-serif text-[#421a22] text-sm sm:text-base md:text-xl font-medium tracking-wide">
+                Est. 2055
+              </span>
+            </div>
+
+            <motion.img
+              style={{ y }}
+              src={hero.image}
+              alt={hero.imageAlt}
+              className="w-full h-[120%] object-cover object-center absolute -top-[10%]"
+            />
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

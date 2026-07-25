@@ -3,58 +3,59 @@ import { useTemplateData } from "../TemplateContext";
 import { motion } from "framer-motion";
 
 export default function Menu() {
-  const { products } = useTemplateData();
+  const { products, colors } = useTemplateData();
 
   return (
-    <section className="py-32 bg-[#111111] text-[#F9F9F9] border-y-8 border-[#FFE600]" id="menu">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+    <section className="w-full min-h-screen flex flex-col md:flex-row" id="menu">
+      <div 
+        className="w-full md:w-[40%] p-12 md:p-24 flex items-center justify-center md:justify-start"
+        style={{ backgroundColor: colors.secondary }}
+      >
+        <motion.h2 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="font-serif text-[8vw] md:text-[5vw] leading-[0.9] tracking-tighter text-[#3D2721] font-medium max-w-sm"
+        >
+          {products.title || "Fresh From Our Grill"}
+        </motion.h2>
+      </div>
+      
+      <div className="w-full md:w-[60%] relative p-8 md:p-16 flex items-center justify-center min-h-[500px]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={products.items[0]?.image || "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1999&auto=format&fit=crop"} 
+            alt="Menu background" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         
-        <motion.div
+        {/* Menu Card */}
+        <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          className="text-center mb-24"
+          viewport={{ once: true }}
+          className="relative z-10 bg-white p-8 md:p-12 shadow-2xl max-w-md w-full"
         >
-          <h2 className="font-serif text-6xl md:text-[6rem] font-bold uppercase tracking-tighter mb-6 text-[#FFE600] drop-shadow-[4px_4px_0_#FF2A00]">
-            {products.title}
-          </h2>
-          <p className="text-xl md:text-2xl font-bold max-w-2xl mx-auto border-4 border-[#FF2A00] p-4 inline-block bg-[#111111] shadow-[8px_8px_0px_0px_#FFE600]">
-            {products.description}
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {products.items.map((item, index) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-[#F9F9F9] text-[#111111] border-4 border-[#111111] shadow-[12px_12px_0px_0px_#FFE600] p-6 hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_#FF2A00] transition-all flex flex-col"
+          <h3 className="font-serif text-3xl font-bold mb-8 text-[#3D2721] text-center">Our Daily Menu</h3>
+          <div className="flex flex-col gap-4 mb-8">
+            {products.items.slice(0, 5).map((item: any, index: number) => (
+              <div key={index} className="flex justify-between items-center text-[#3D2721]">
+                <span className="font-serif text-lg">{item.name}</span>
+                <span className="font-sans font-light text-sm opacity-80">{item.price}</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <button 
+              className="px-8 py-3 rounded-full font-serif font-bold transition-transform hover:scale-105"
+              style={{ backgroundColor: colors.text, color: colors.primary }}
             >
-              <div className="w-full aspect-square border-4 border-[#111111] mb-6 overflow-hidden bg-[#FFE600]">
-                <img
-                  src={item.image}
-                  alt={item.imageAlt}
-                  className="w-full h-full object-cover hover:scale-105 transition-all duration-300"
-                />
-              </div>
-              
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="font-serif text-4xl font-bold uppercase leading-none">
-                  {item.name}
-                </h3>
-                <span className="bg-[#FF2A00] text-[#FFE600] font-bold text-2xl px-3 py-1 border-2 border-[#111111] rotate-[-5deg]">
-                  {item.price}
-                </span>
-              </div>
-              <p className="font-bold text-lg mt-auto pt-4 border-t-4 border-[#111111]">
-                {item.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+              Explore Menu
+            </button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

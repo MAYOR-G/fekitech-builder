@@ -6,7 +6,7 @@ export default function Services() {
   const { packages, products } = useTemplateData();
 
   return (
-    <section className="py-32" id="services">
+    <section className="py-32 bg-white" id="services">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         
         {/* Packages */}
