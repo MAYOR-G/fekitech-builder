@@ -4,6 +4,7 @@ import React from "react";
 import { TemplateContext } from "./TemplateContext";
 import editableData from "./editable.json";
 import * as staticContent from "./data/siteContent";
+import "./index.css";
 
 import { CTA } from "./components/CTA";
 import { EventInquiry } from "./components/EventInquiry";

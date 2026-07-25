@@ -17,6 +17,7 @@ export default function Philosophy() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="w-[85%] aspect-[3/4] overflow-hidden"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={feature.image} alt={feature.imageAlt} className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
@@ -26,6 +27,7 @@ export default function Philosophy() {
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="absolute bottom-[-10%] right-0 w-[55%] aspect-square border-[10px] border-[#F9F8F6] overflow-hidden shadow-2xl"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={story.image} alt={story.imageAlt} className="w-full h-full object-cover" />
           </motion.div>
         </div>
@@ -57,7 +59,7 @@ export default function Philosophy() {
             className="border-l border-[#D5B55B] pl-8 mb-12"
           >
             <blockquote className="font-serif text-2xl italic text-[#2C2A26] mb-4">
-              "{story.quote}"
+              &quot;{story.quote}&quot;
             </blockquote>
           </motion.div>
 
