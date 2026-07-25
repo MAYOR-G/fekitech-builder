@@ -1,6 +1,5 @@
 import React from "react";
 import { useTemplateData } from "../TemplateContext";
-import { InstagramLogo, FacebookLogo, TiktokLogo } from "@phosphor-icons/react";
 
 export default function Footer() {
   const { brand, social, footer, navigation, visit, colors } = useTemplateData();

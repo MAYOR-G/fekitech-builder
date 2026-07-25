@@ -61,17 +61,17 @@ function processTemplate(templateName: string) {
   fs.writeFileSync(path.join(targetTemplateDir, 'config.json'), JSON.stringify(config, null, 2));
 
   // 3. Extract CSS variables and copy cleaned CSS files
-  let themeStyles: Record<string, string> = {};
-  let cssFiles = ['index.css', 'App.css', 'app/globals.css', 'globals.css'];
+  const themeStyles: Record<string, string> = {};
+  const cssFiles = ['index.css', 'App.css', 'app/globals.css', 'globals.css'];
   cssFiles.forEach(cf => {
-    let cp = path.join(srcDir, cf);
+    const cp = path.join(srcDir, cf);
     if (fs.existsSync(cp)) {
-      let content = fs.readFileSync(cp, 'utf8');
+      const content = fs.readFileSync(cp, 'utf8');
       const regex = /(--[a-zA-Z0-9_-]+)\s*:\s*([^;]+);/g;
       let match;
       while ((match = regex.exec(content)) !== null) {
-        let varName = match[1];
-        let varVal = match[2].trim();
+        const varName = match[1];
+        const varVal = match[2].trim();
         themeStyles[varName] = varVal;
         allThemeVars.add(varName);
       }
@@ -85,7 +85,7 @@ function processTemplate(templateName: string) {
       // Fix arbitrary colors in @apply (Tailwind v4 / LightningCSS bug)
       let changed = true;
       while (changed) {
-        let prev = cleanedCss;
+        const prev = cleanedCss;
         cleanedCss = cleanedCss.replace(/@apply([^;]*?)\s+bg-\[#([a-fA-F0-9]+)\]([^;]*);/g, '@apply$1$3;\n  background-color: #$2;');
         cleanedCss = cleanedCss.replace(/@apply([^;]*?)\s+text-\[#([a-fA-F0-9]+)\]([^;]*);/g, '@apply$1$3;\n  color: #$2;');
         if (prev === cleanedCss) changed = false;

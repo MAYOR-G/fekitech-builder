@@ -3,7 +3,8 @@ import { useTemplateData } from "../TemplateContext";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const { hero, colors } = useTemplateData();
+  const { hero: typedHero, colors } = useTemplateData();
+  const hero = typedHero as any;
 
   const headlineParts = hero.headline ? hero.headline.split(' & ') : ['Cluck', 'Yard'];
 

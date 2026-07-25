@@ -8,14 +8,14 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 const featuredTemplateIds = [
-  "burger-dark-premium",
-  "pizza-light-clean",
+  "burger-light-clean",
+  "farm-shop-website",
+  "fast-food-chicken-tacos",
   "cake-bakery-premium",
-  "pastries-snacks-premium",
   "gym-website",
   "premium-coffee-website",
-  "plumbing-company-premium",
-  "second-furniture-website",
+  "bakery-website",
+  "premium-restaurant",
 ] as const;
 
 export default function TemplatesShowcase() {
@@ -63,7 +63,7 @@ export default function TemplatesShowcase() {
     <section className="relative overflow-hidden bg-white px-4 py-24 text-ft-ink sm:px-6 md:py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-ft-border" />
 
-      <div className="relative z-10 mx-auto max-w-[1500px]">
+      <div className="relative z-10 mx-auto max-w-[1600px]">
         <div className="mx-auto mb-12 flex max-w-[1280px] flex-col justify-between gap-7 md:mb-14 md:flex-row md:items-end">
           <div className="max-w-[800px]">
             <motion.h2

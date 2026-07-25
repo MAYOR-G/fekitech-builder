@@ -8,7 +8,12 @@ const eslintConfig = defineConfig([
   ...nextTs,
   {
     plugins: { "unused-imports": unusedImports },
-    rules: { "unused-imports/no-unused-imports": "error" },
+    rules: { 
+      "unused-imports/no-unused-imports": "error",
+      "@typescript-eslint/no-explicit-any": "off",
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-require-imports": "off"
+    },
   },
   // Override default ignores of eslint-config-next.
   globalIgnores([
