@@ -1,5 +1,5 @@
 "use client";
-/* eslint-disable @next/next/no-img-element -- Template image URLs are user-editable and may point to uploaded asset hosts. */
+ 
 
 import { useEffect } from "react";
 import {
