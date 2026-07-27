@@ -47,28 +47,28 @@
     "kicker": "Welcome to",
     "title": "The Minted Scoop",
     "subtitle": "Where artisan gelato meets real ingredients, churned daily for exceptional moments.",
-    "backgroundImage": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800"
+    "backgroundImage": "/templates/ice-cream-website/assets/berry-cone.webp"
   },
   "highlights": {
     "items": [
       {
         "title": "Coffee Ice Cream",
         "description": "Rich espresso blended with fresh cream and dark chocolate drizzle.",
-        "image": "https://images.unsplash.com/photo-1562790879-dfde82829db0?q=80&w=800",
+        "image": "/templates/ice-cream-website/assets/affogato.webp",
         "buttonLabel": "More Options",
         "buttonHref": "#menu"
       },
       {
         "title": "Fruit Ice Cream",
         "description": "Sorbet and creamy gelato made from seasonal, hand-picked fruits.",
-        "image": "https://images.unsplash.com/photo-1557142046-c704a3adf364?q=80&w=800",
+        "image": "/templates/ice-cream-website/assets/berry-cone.webp",
         "buttonLabel": "More Options",
         "buttonHref": "#menu"
       },
       {
         "title": "Mixed Ice Cream",
         "description": "A decadent swirl of vanilla bean, chocolate fudge, and hazelnut.",
-        "image": "https://images.unsplash.com/photo-1558401391-7899b4bd5bbf?q=80&w=800",
+        "image": "/templates/ice-cream-website/assets/chocolate-vanilla.webp",
         "buttonLabel": "More Options",
         "buttonHref": "#menu"
       }
@@ -79,24 +79,24 @@
     "description": "Experience hand-crafted gelato made fresh daily using only the finest ingredients. No artificial colours, just pure joy in every single scoop.",
     "buttonLabel": "Order Table",
     "buttonHref": "#book",
-    "backgroundImage": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?q=80&w=800"
+    "backgroundImage": "/templates/ice-cream-website/assets/parlour.webp"
   },
   "gallery": {
     "title": "Our Creations",
     "images": [
-      "https://plus.unsplash.com/premium_photo-1684952851239-a9cc9567884e?q=80&w=800",
-      "https://images.unsplash.com/photo-1629385697093-57be2cc97fa6?q=80&w=800",
-      "https://images.unsplash.com/photo-1559703248-dcaaec9fab78?q=80&w=800",
-      "https://images.unsplash.com/photo-1633933358116-a27b902fad35?q=80&w=800",
-      "https://plus.unsplash.com/premium_photo-1661427159078-9d85039e99b8?q=80&w=800",
-      "https://images.unsplash.com/photo-1629385744299-74b9cf013f52?q=80&w=800",
-      "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=800",
-      "https://images.unsplash.com/photo-1628815870980-f416105d89b3?q=80&w=800"
+      "/templates/ice-cream-website/assets/pistachio.webp",
+      "/templates/ice-cream-website/assets/berry-cone.webp",
+      "/templates/ice-cream-website/assets/chocolate-vanilla.webp",
+      "/templates/ice-cream-website/assets/parlour.webp",
+      "/templates/ice-cream-website/assets/affogato.webp",
+      "/templates/ice-cream-website/assets/sundae.webp",
+      "/templates/ice-cream-website/assets/pistachio.webp",
+      "/templates/ice-cream-website/assets/berry-cone.webp"
     ]
   },
   "services": {
     "title": "High Quality Services",
-    "backgroundImage": "https://images.unsplash.com/photo-1629385744299-74b9cf013f52?q=80&w=800",
+    "backgroundImage": "/templates/ice-cream-website/assets/sundae.webp",
     "items": [
       {
         "title": "Ice Cream",
@@ -127,17 +127,17 @@
       {
         "name": "Martha V.",
         "quote": "The pistachio gelato here is exactly like the one I had in Italy. Absolutely beautiful flavour and perfectly creamy.",
-        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
+        "avatar": "/templates/ice-cream-website/assets/berry-cone.webp"
       },
       {
         "name": "James H.",
         "quote": "Best milkshakes in town! My kids love coming here on the weekends. Great service and always a fantastic vibe.",
-        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
+        "avatar": "/templates/ice-cream-website/assets/chocolate-vanilla.webp"
       },
       {
         "name": "Emma W.",
         "quote": "I hired them for my wedding reception and the ice cream cart was the highlight of the evening. Incredible attention to detail.",
-        "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop"
+        "avatar": "/templates/ice-cream-website/assets/pistachio.webp"
       }
     ]
   },

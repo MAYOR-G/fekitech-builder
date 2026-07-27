@@ -1,15 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import type { CSSProperties } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
 import editableData from "./editable.json";
 import { pages } from "./pages";
-import "./styles.css";
 
 type RoofingEditable = typeof editableData;
+const TEMPLATE_ID = "northcrest-roofing";
 
 const pageAliases: Record<string, string> = {
   "index": "home",
@@ -120,31 +117,48 @@ function renderPage(raw: string, data: RoofingEditable, page: string): string {
   return html;
 }
 
+function renderDocument(body: string, data: RoofingEditable): string {
+  const cssRoot = `/templates/${TEMPLATE_ID}/assets/`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="${cssRoot}bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="${cssRoot}css/all.min-4a9b2f.css">
+  <link rel="stylesheet" href="${cssRoot}css/animate.css">
+  <link rel="stylesheet" href="${cssRoot}css/owl.carousel.min.css">
+  <link rel="stylesheet" href="${cssRoot}css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="${cssRoot}css/style.css">
+  <link rel="stylesheet" href="${cssRoot}css/responsive.css">
+  <style>
+    :root {
+      --template-primary: ${data.colors.primary};
+      --template-background: ${data.colors.background};
+      --template-text: ${data.colors.text};
+    }
+    html, body { min-width: 320px; overflow-x: hidden; }
+    body { margin: 0; }
+    .loader-mask { display: none !important; }
+    .collapse:not(.show) { display: none; }
+    .collapse.show, .dropdown-menu.show { display: block; }
+    a { cursor: pointer; }
+    .wow { opacity: 1 !important; visibility: visible !important; }
+    img[src$="logo.png"], img[src$="footer-logo.png"] { height: auto; max-width: 248px; }
+  </style>
+</head>
+<body>${body}</body>
+</html>`;
+}
+
 export default function RoofingServiceTemplate({ data }: { data: TemplateData }) {
   const content = mergeTemplateData(editableData, data) as RoofingEditable;
   const [page, setPage] = useState("home");
-  const html = useMemo(() => renderPage(pages[page] ?? pages.home, content, page), [content, page]);
+  const frameRef = useRef<HTMLIFrameElement>(null);
+  const html = useMemo(() => renderDocument(renderPage(pages[page] ?? pages.home, content, page), content), [content, page]);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const root = document.querySelector(".roofora-template-root");
-    if (!root || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const ctx = gsap.context(() => {
-      gsap.utils.toArray<HTMLElement>(".wow, .case-study-img-con, .portfolio-box, .service-box, .main-service-box").forEach((element) => {
-        element.classList.add("roofora-reveal");
-        ScrollTrigger.create({
-          trigger: element,
-          start: "top 88%",
-          once: true,
-          onEnter: () => element.classList.add("is-visible"),
-        });
-      });
-    }, root);
-    return () => ctx.revert();
-  }, [html]);
-
-  useEffect(() => {
-    const root = document.querySelector(".roofora-template-root");
+    const root = frameRef.current?.contentDocument;
     if (!root) return;
 
     const handleClick = (event: Event) => {
@@ -184,23 +198,24 @@ export default function RoofingServiceTemplate({ data }: { data: TemplateData })
         event.preventDefault();
         const next = href.slice(2).split("#")[0] || "home";
         setPage(pageAliases[next] ?? next);
-        root.scrollIntoView({ block: "start" });
+        frameRef.current?.contentWindow?.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
 
     root.addEventListener("click", handleClick);
     return () => root.removeEventListener("click", handleClick);
-  }, []);
+  }, [html]);
 
   return (
-    <main
-      className="roofora-template-root"
-      style={{
-        "--template-primary": content.colors.primary,
-        "--template-background": content.colors.background,
-        "--template-text": content.colors.text,
-      } as CSSProperties}
-      dangerouslySetInnerHTML={{ __html: html }}
+    <iframe
+      ref={frameRef}
+      srcDoc={html}
+      className="block h-screen min-h-screen w-full border-0 bg-white"
+      title={`${content.brand.name} template`}
+      onLoad={() => {
+        const root = frameRef.current?.contentDocument;
+        root?.querySelector(".loader-mask")?.remove();
+      }}
     />
   );
 }

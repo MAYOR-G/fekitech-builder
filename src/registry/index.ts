@@ -36,6 +36,24 @@ import premiumConstructionConfig from "../templates/premium-construction/config.
 import premiumConstructionEditable from "../templates/premium-construction/editable.json";
 import industrialConstructionConfig from "../templates/industrial-construction/config.json";
 import industrialConstructionEditable from "../templates/industrial-construction/editable.json";
+import alderSlateRoofingConfig from "../templates/alder-slate-roofing/config.json";
+import alderSlateRoofingEditable from "../templates/alder-slate-roofing/editable.json";
+import burgerDarkConfig from "../templates/burger-dark-premium/config.json";
+import burgerDarkEditable from "../templates/burger-dark-premium/editable.json";
+import crownlineRoofworksConfig from "../templates/crownline-roofworks/config.json";
+import crownlineRoofworksEditable from "../templates/crownline-roofworks/editable.json";
+import iceCreamConfig from "../templates/ice-cream-website/config.json";
+import iceCreamEditable from "../templates/ice-cream-website/editable.json";
+import noirHouseDesignConfig from "../templates/noir-house-design/config.json";
+import noirHouseDesignEditable from "../templates/noir-house-design/editable.json";
+import northcrestRoofingConfig from "../templates/northcrest-roofing/config.json";
+import northcrestRoofingEditable from "../templates/northcrest-roofing/editable.json";
+import secondFurnitureConfig from "../templates/second-furniture-website/config.json";
+import secondFurnitureEditable from "../templates/second-furniture-website/editable.json";
+import secondPlumberConfig from "../templates/second-plumber-website/config.json";
+import secondPlumberEditable from "../templates/second-plumber-website/editable.json";
+import velvetScoopConfig from "../templates/velvet-scoop/config.json";
+import velvetScoopEditable from "../templates/velvet-scoop/editable.json";
 
 
 export type TemplateConfig = {
@@ -74,6 +92,15 @@ const components = {
   "carpenter-website": dynamic<{ data: TemplateData }>(() => import("../templates/carpenter-website/template")),
   "premium-construction": dynamic<{ data: TemplateData }>(() => import("../templates/premium-construction/template")),
   "industrial-construction": dynamic<{ data: TemplateData }>(() => import("../templates/industrial-construction/template")),
+  "alder-slate-roofing": dynamic<{ data: TemplateData }>(() => import("../templates/alder-slate-roofing/template")),
+  "burger-dark-premium": dynamic<{ data: TemplateData }>(() => import("../templates/burger-dark-premium/template")),
+  "crownline-roofworks": dynamic<{ data: TemplateData }>(() => import("../templates/crownline-roofworks/template")),
+  "ice-cream-website": dynamic<{ data: TemplateData }>(() => import("../templates/ice-cream-website/template")),
+  "noir-house-design": dynamic<{ data: TemplateData }>(() => import("../templates/noir-house-design/template")),
+  "northcrest-roofing": dynamic<{ data: TemplateData }>(() => import("../templates/northcrest-roofing/template")),
+  "second-furniture-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-furniture-website/template")),
+  "second-plumber-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-plumber-website/template")),
+  "velvet-scoop": dynamic<{ data: TemplateData }>(() => import("../templates/velvet-scoop/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -96,6 +123,15 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "electrician-website": { config: electricianConfig, component: components["electrician-website"], defaultData: normalizeData(electricianEditable) },
   "farm-shop-website": { config: farmShopConfig, component: components["farm-shop-website"], defaultData: normalizeData(farmShopEditable) },
   "ink-and-iron": { config: inkConfig, component: components["ink-and-iron"], defaultData: normalizeData(inkEditable) },
+  "alder-slate-roofing": { config: alderSlateRoofingConfig, component: components["alder-slate-roofing"], defaultData: normalizeData(alderSlateRoofingEditable) },
+  "burger-dark-premium": { config: burgerDarkConfig, component: components["burger-dark-premium"], defaultData: normalizeData(burgerDarkEditable) },
+  "crownline-roofworks": { config: crownlineRoofworksConfig, component: components["crownline-roofworks"], defaultData: normalizeData(crownlineRoofworksEditable) },
+  "ice-cream-website": { config: iceCreamConfig, component: components["ice-cream-website"], defaultData: normalizeData(iceCreamEditable) },
+  "noir-house-design": { config: noirHouseDesignConfig, component: components["noir-house-design"], defaultData: normalizeData(noirHouseDesignEditable) },
+  "northcrest-roofing": { config: northcrestRoofingConfig, component: components["northcrest-roofing"], defaultData: normalizeData(northcrestRoofingEditable) },
+  "second-furniture-website": { config: secondFurnitureConfig, component: components["second-furniture-website"], defaultData: normalizeData(secondFurnitureEditable) },
+  "second-plumber-website": { config: secondPlumberConfig, component: components["second-plumber-website"], defaultData: normalizeData(secondPlumberEditable) },
+  "velvet-scoop": { config: velvetScoopConfig, component: components["velvet-scoop"], defaultData: normalizeData(velvetScoopEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

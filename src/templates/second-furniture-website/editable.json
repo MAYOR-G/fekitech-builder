@@ -1,11 +1,75 @@
 {
-  "hero": {
-    "title": "Furniture made to last.",
-    "subtitle": "Handcrafted pieces designed around your space.",
-    "button": "Browse collections"
+  "brand": {
+    "name": "Cozy Home Furniture",
+    "shortName": "Cozy Home",
+    "tagline": "Furniture made around real rooms.",
+    "phone": "020 7946 0821",
+    "email": "studio@cozyhome.co.uk",
+    "address": "42 Clerkenwell Road, London EC1M 5PQ"
   },
-  "about": {
-    "title": "Built by hand, designed to endure.",
-    "text": "Sustainable timber, honest joinery."
+  "navigation": {
+    "links": [
+      { "label": "Collections", "href": "#collections" },
+      { "label": "Rooms", "href": "#rooms" },
+      { "label": "Craft", "href": "#craft" },
+      { "label": "Visit", "href": "#contact" }
+    ],
+    "ctaLabel": "Book a consultation",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Made in Britain. Designed for your room.",
+    "title": "Furniture that settles in beautifully.",
+    "subtitle": "Considered sofas, tables, beds, and fitted pieces made for everyday life and built to stay.",
+    "button": "Browse collections",
+    "buttonHref": "#collections",
+    "image": "/templates/second-furniture-website/assets/living-room.jpg",
+    "imageAlt": "Calm contemporary living room with a low grey sofa"
+  },
+  "collections": {
+    "title": "Start with the room.",
+    "description": "Proportions, materials, and comfort are considered together, so every piece belongs where it lands.",
+    "items": [
+      { "name": "Living", "detail": "Sofas, lounge chairs, side tables", "image": "/templates/second-furniture-website/assets/lounge.jpg", "imageAlt": "Modern lounge furniture" },
+      { "name": "Dining", "detail": "Tables, chairs, benches, storage", "image": "/templates/second-furniture-website/assets/dining-room.jpg", "imageAlt": "Contemporary dining furniture" },
+      { "name": "Bedroom", "detail": "Beds, nightstands, wardrobes", "image": "/templates/second-furniture-website/assets/bedroom.jpg", "imageAlt": "Quiet modern bedroom furniture" }
+    ]
+  },
+  "rooms": {
+    "title": "See how it lives.",
+    "description": "Move through complete rooms and discover the pieces, finishes, and proportions that make them work.",
+    "items": [
+      { "name": "Forest House", "location": "Hampstead", "image": "/templates/second-furniture-website/assets/living-room.jpg", "imageAlt": "Forest House living room" },
+      { "name": "Clay Loft", "location": "Shoreditch", "image": "/templates/second-furniture-website/assets/lounge.jpg", "imageAlt": "Clay Loft lounge" },
+      { "name": "Long Table", "location": "Richmond", "image": "/templates/second-furniture-website/assets/dining-room.jpg", "imageAlt": "Long Table dining room" }
+    ]
+  },
+  "craft": {
+    "eyebrow": "Measured, made, installed",
+    "title": "Good furniture begins with restraint.",
+    "description": "We use solid timber, repairable construction, durable textiles, and finishes that improve with use. Custom work starts with an in-home measure and ends with our makers installing every piece.",
+    "buttonLabel": "Meet the workshop",
+    "buttonHref": "#contact",
+    "image": "/templates/second-furniture-website/assets/detail.jpg",
+    "imageAlt": "Close detail of furniture materials and joinery"
+  },
+  "quote": {
+    "text": "The room feels calmer, but it also works harder. Every detail has a reason.",
+    "name": "Amelia Foster",
+    "detail": "Forest House, Hampstead"
+  },
+  "contact": {
+    "title": "Bring us the room.",
+    "description": "Visit the Clerkenwell studio or book a home consultation. We will help with scale, layout, finishes, and delivery.",
+    "buttonLabel": "Book a consultation",
+    "buttonHref": "mailto:studio@cozyhome.co.uk"
+  },
+  "footer": {
+    "note": "Furniture, fitted joinery, and room planning from our London studio.",
+    "copyright": "© 2026 Cozy Home Furniture. All rights reserved.",
+    "instagramLabel": "Instagram",
+    "instagramHref": "https://instagram.com",
+    "pinterestLabel": "Pinterest",
+    "pinterestHref": "https://pinterest.com"
   }
 }

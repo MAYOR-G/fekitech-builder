@@ -1,11 +1,82 @@
 {
-  "hero": {
-    "title": "Plumbing done properly.",
-    "subtitle": "Heating, drainage, and bathrooms.",
-    "button": "Book online"
+  "brand": {
+    "name": "Reliable Pipes Plumbing",
+    "shortName": "Reliable Pipes",
+    "tagline": "Clear advice. Careful work. No surprises.",
+    "phone": "020 7946 0714",
+    "emergencyPhone": "0800 014 2711",
+    "email": "jobs@reliablepipes.co.uk",
+    "address": "Serving London and Greater London"
   },
-  "about": {
-    "title": "Reliable engineers, fair pricing.",
-    "text": "Gas Safe registered and available 24/7 for emergencies."
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Recent work", "href": "#work" },
+      { "label": "How it works", "href": "#process" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Book an engineer",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "London plumbing and heating",
+    "title": "The problem stops here.",
+    "subtitle": "Responsive engineers for leaks, repairs, drainage, heating, and bathroom work. We diagnose carefully, price clearly, and leave the room tidy.",
+    "button": "Book an engineer",
+    "buttonHref": "#contact",
+    "image": "/templates/second-plumber-website/assets/hero.webp",
+    "imageAlt": "Plumber carefully fitting a bathroom tap"
+  },
+  "proof": [
+    "Gas Safe registered",
+    "Clear written pricing",
+    "Workmanship guaranteed"
+  ],
+  "services": {
+    "title": "Practical help for the whole home.",
+    "description": "From an urgent leak to a planned bathroom, the same engineer owns the job from diagnosis to sign off.",
+    "items": [
+      { "title": "Leaks and repairs", "description": "Tracing, isolation, pipe repair, valves, taps, traps, and fixtures." },
+      { "title": "Heating and hot water", "description": "Boiler faults, radiators, cylinders, controls, and system checks." },
+      { "title": "Drainage", "description": "Blocked sinks, slow baths, waste pipes, outside drains, and prevention." },
+      { "title": "Bathrooms", "description": "First fix, second fix, sanitaryware, showers, and careful finishing." }
+    ]
+  },
+  "work": {
+    "eyebrow": "Recent bathroom repair",
+    "title": "Diagnosed once. Repaired properly.",
+    "description": "A concealed leak had damaged the vanity and pipework. We traced the source, replaced the failed fittings, rebuilt the connections, and tested the full system before closing up.",
+    "beforeImage": "/templates/second-plumber-website/assets/before.webp",
+    "beforeAlt": "Bathroom pipework before repair",
+    "afterImage": "/templates/second-plumber-website/assets/after.webp",
+    "afterAlt": "Bathroom pipework after a clean professional repair"
+  },
+  "process": {
+    "title": "You always know what happens next.",
+    "items": [
+      { "title": "Tell us the issue", "description": "Call, email, or send photos so we can assess urgency and arrive prepared." },
+      { "title": "Approve the scope", "description": "Your engineer explains the cause, options, and price before work starts." },
+      { "title": "Test and sign off", "description": "We test the repair, clean the area, and explain any useful aftercare." }
+    ],
+    "image": "/templates/second-plumber-website/assets/pipework.jpg",
+    "imageAlt": "Professional plumber replacing copper pipework under a sink"
+  },
+  "testimonials": {
+    "title": "Trusted in homes across London.",
+    "items": [
+      { "quote": "The engineer found the leak quickly, explained the repair clearly, and left the bathroom spotless.", "name": "Priya Shah", "detail": "Islington" },
+      { "quote": "Straightforward pricing and excellent work. The new radiators heat evenly for the first time.", "name": "Martin Cole", "detail": "Wandsworth" },
+      { "quote": "They rescued a difficult bathroom installation and kept every promise they made.", "name": "Helen Murray", "detail": "Greenwich" }
+    ]
+  },
+  "contact": {
+    "title": "Tell us what needs fixing.",
+    "description": "For active leaks or no heating, call the emergency line. For planned work, send the details and we will arrange a suitable visit.",
+    "buttonLabel": "Request a visit",
+    "buttonHref": "mailto:jobs@reliablepipes.co.uk"
+  },
+  "footer": {
+    "note": "Domestic plumbing, heating, drainage, and bathroom services across London.",
+    "copyright": "© 2026 Reliable Pipes Plumbing. All rights reserved."
   }
 }

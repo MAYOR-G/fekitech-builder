@@ -12,7 +12,7 @@ export default function SecondFurnitureWebsiteTemplate({ data }: { data: Templat
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="cozy-home-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

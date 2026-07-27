@@ -4,10 +4,6 @@ import React, { useMemo } from "react";
 import { TemplateContext } from "./TemplateContext";
 import editableData from "./editable.json";
 import Main from "./Main";
-import { Pacifico, Nunito } from "next/font/google";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"], variable: "--font-pacifico" });
-const nunito = Nunito({ subsets: ["latin"], weight: ["400", "600", "700", "900"], variable: "--font-nunito" });
 
 export default function IceCreamWebsiteTemplate({ data }: { data: TemplateData }) {
   const templateData = mergeTemplateData(editableData, data);
@@ -23,10 +19,7 @@ export default function IceCreamWebsiteTemplate({ data }: { data: TemplateData }
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div 
-        style={themeStyles} 
-        className={`${pacifico.variable} ${nunito.variable} template-wrapper min-h-screen w-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)] font-nunito selection:bg-[var(--color-primary)] selection:text-white overflow-hidden`}
-      >
+      <div style={themeStyles} className="minted-scoop-template min-h-screen w-full overflow-hidden">
         <Main />
       </div>
     </TemplateContext.Provider>

@@ -12,7 +12,7 @@ export default function SecondPlumberWebsiteTemplate({ data }: { data: TemplateD
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="reliable-pipes-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>
