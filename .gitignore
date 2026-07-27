@@ -74,3 +74,15 @@ next-env.d.ts
 /tmp/
 /build-errors*.txt
 /dev.db
+
+# Exact imported templates load their media from public/templates/*/assets.
+# Keep duplicate source copies local so large template media is not pushed twice.
+/src/templates/forgepoint-construction/assets/
+/src/templates/lumen-house-design/assets/
+/src/templates/noir-house-design/assets/
+/src/templates/northcrest-roofing/assets/
+/src/templates/crownline-roofworks/assets/
+/src/templates/alder-slate-roofing/assets/
+
+# Old catalog source images are not referenced by the current template registry.
+/public/templates/catalog/
