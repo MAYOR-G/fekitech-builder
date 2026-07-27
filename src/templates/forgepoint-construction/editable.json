@@ -1,0 +1,44 @@
+{
+  "brand": {
+    "name": "SMMTC Construction",
+    "email": "projects@smmtcconstruction.co.uk",
+    "phone": "+44 20 8050 6724",
+    "address": "86 Great Portland Street, London, W1W 7LT",
+    "logo": "/templates/forgepoint-construction/assets/images/smmtc-construction-logo.svg"
+  },
+  "navigation": {
+    "ctaLabel": "Call Now!",
+    "ctaHref": "tel:+442080506724",
+    "phoneLabel": "+44 20 8050 6724",
+    "phoneHref": "tel:+442080506724"
+  },
+  "hero": {
+    "title": "UK Construction Delivered With Site Discipline",
+    "text": "Commercial refurbishment, residential build management, and reliable project delivery across London and the wider UK.",
+    "primaryCta": "Request Estimate",
+    "primaryHref": "#/contact"
+  },
+  "pages": {
+    "about": {
+      "title": "ABOUT",
+      "text": "A UK construction team built around planning, procurement, site delivery, and accountable client updates."
+    },
+    "services": {
+      "title": "BUILD SERVICES",
+      "text": "Commercial fit-out, residential renovation, structural works, and site management support for clients across the UK."
+    },
+    "projects": {
+      "title": "RECENT BUILDS",
+      "text": "A record of active sites, finished handovers, and practical construction outcomes across London and the wider UK."
+    },
+    "contact": {
+      "title": "START A UK PROJECT",
+      "text": "Send drawings, photos, or a site address and the SMMTC team will respond with a clear next step."
+    }
+  },
+  "colors": {
+    "primary": "#e0a325",
+    "background": "#f4f1e9",
+    "text": "#18212f"
+  }
+}

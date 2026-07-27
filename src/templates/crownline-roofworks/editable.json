@@ -1,0 +1,124 @@
+{
+  "brand": {
+    "name": "Crownline Roofworks",
+    "location": "Birmingham, United Kingdom",
+    "email": "team@crownlineroofworks.co.uk",
+    "phone": "+44 121 496 0735",
+    "address": "31 Colmore Row, Birmingham, B3 2BS",
+    "description": "Roof installation, emergency repairs, flat roofing and commercial roof maintenance.",
+    "logo": "/templates/crownline-roofworks/assets/images/crownline-logo.svg"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home",
+        "href": "#/home"
+      },
+      {
+        "label": "About",
+        "page": "about",
+        "href": "#/about"
+      },
+      {
+        "label": "Services",
+        "page": "services",
+        "href": "#/services"
+      },
+      {
+        "label": "Pricing",
+        "page": "pricing",
+        "href": "#/pricing"
+      },
+      {
+        "label": "Gallery",
+        "page": "gallery",
+        "href": "#/gallery"
+      },
+      {
+        "label": "Contact",
+        "page": "contact",
+        "href": "#/contact"
+      }
+    ],
+    "ctaLabel": "Request Survey",
+    "ctaHref": "#/contact",
+    "phoneLabel": "+44 121 496 0735",
+    "phoneHref": "tel:+441214960735"
+  },
+  "hero": {
+    "title": "Commercial Roofworks for Birmingham.",
+    "text": "Emergency repairs, flat roofing, and planned maintenance for busy commercial properties.",
+    "primaryCta": "Request Survey",
+    "primaryHref": "#/contact",
+    "secondaryCta": "View Services",
+    "secondaryHref": "tel:+441214960735"
+  },
+  "pages": {
+    "404": {
+      "title": "Page Not Found",
+      "text": "Guide visitors back to services, pricing, or contact without losing momentum."
+    },
+    "about": {
+      "title": "Meet Crownline Roofworks",
+      "text": "A practical, insured roofing team focused on clean surveys, careful repairs, and tidy handovers."
+    },
+    "services": {
+      "title": "Roofing Services",
+      "text": "Leak repairs, roof replacements, guttering, slate work, flat roofs, and planned commercial maintenance."
+    },
+    "single-service": {
+      "title": "Detailed Service Plans",
+      "text": "Show the scope, timings, warranty notes, and booking links for the service your customer is viewing."
+    },
+    "pricing": {
+      "title": "Clear Roofing Pricing",
+      "text": "Publish inspection fees, project ranges, and emergency call-out options customers can understand quickly."
+    },
+    "gallery": {
+      "title": "Recent Roof Work",
+      "text": "A visual record of repairs, replacements, commercial maintenance, and finished roof details."
+    },
+    "testimonials": {
+      "title": "Customer Proof",
+      "text": "Short reviews, ratings, and project outcomes from homeowners and property managers."
+    },
+    "team": {
+      "title": "The Roofing Team",
+      "text": "Introduce surveyors, installers, and support staff with roles customers can trust."
+    },
+    "faq": {
+      "title": "Roofing Questions",
+      "text": "Answer inspection timing, warranty, emergency support, materials, and quote questions."
+    },
+    "blog": {
+      "title": "Roof Care Notes",
+      "text": "Helpful seasonal guidance for spotting leaks, choosing materials, and planning maintenance."
+    },
+    "single-blog": {
+      "title": "Roofing Article",
+      "text": "Use this page for a detailed guide, project story, or customer education piece."
+    },
+    "contact": {
+      "title": "Book a Roofing Survey",
+      "text": "Make it easy for visitors to call, email, or send project details from any device."
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy",
+      "text": "Explain how enquiries, contact details, and project information are handled."
+    },
+    "cookie-policy": {
+      "title": "Cookie Policy",
+      "text": "Describe essential cookies, analytics choices, and visitor preferences."
+    },
+    "terms-of-use": {
+      "title": "Terms of Use",
+      "text": "Set expectations for estimates, website information, and service enquiries."
+    }
+  },
+  "colors": {
+    "primary": "#0f2f5f",
+    "background": "#ffffff",
+    "text": "#111827"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "lumen-house-design",
+  "name": "Lumen House Design",
+  "description": "Faithful local conversion of the original architecture source template with editable business content.",
+  "category": "Architecture",
+  "image": "/templates/lumen-house-design/preview-collage.webp",
+  "previewImages": [
+    "/templates/lumen-house-design/preview-collage.webp",
+    "/templates/lumen-house-design/assets/images/background/hero-bg.jpg",
+    "/templates/lumen-house-design/assets/images/about/about-right.jpg"
+  ],
+  "features": [
+    "Exact source-template layout",
+    "Original page flow and section structure",
+    "Editable logo, contact details and CTA links",
+    "Local assets copied into the template folder",
+    "Multi-page preview collage"
+  ]
+}

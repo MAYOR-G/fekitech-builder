@@ -19,13 +19,12 @@ export default function Hero() {
           <img 
             src={hero?.image} 
             alt="Fresh Market Produce" 
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center brightness-[1.12] saturate-[1.12]"
           />
         </motion.div>
-        {/* Darkening Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60 mix-blend-multiply z-10" />
-        {/* Subtle green tint overlay */}
-        <div className="absolute inset-0 bg-[#548D4E]/20 z-10 mix-blend-overlay" />
+        {/* Balanced overlay: readable text without dulling the produce image. */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#172016]/58 via-[#172016]/22 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#172016]/28 via-transparent to-white/16 z-10" />
       </div>
 
       {/* Content */}
@@ -36,13 +35,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-sm md:text-base font-bold tracking-[0.2em] text-[#EAF5E1] uppercase mb-6 block drop-shadow-md">
+            <span className="text-sm md:text-base font-bold tracking-[0.2em] text-[#F4FFE8] uppercase mb-6 block drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)]">
               {hero?.tagline}
             </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-[1.1] mb-6 drop-shadow-lg">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-[1.1] mb-6 drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)]">
               {hero?.headline}
             </h1>
-            <p className="text-gray-100 text-lg md:text-xl lg:text-2xl mb-10 leading-relaxed font-sans max-w-lg drop-shadow-md">
+            <p className="text-white text-lg md:text-xl lg:text-2xl mb-10 leading-relaxed font-sans max-w-lg drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]">
               {hero?.subheadline}
             </p>
             

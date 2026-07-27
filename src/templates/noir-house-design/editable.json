@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "Noir House Atelier",
+    "email": "hello@noirhouseatelier.com",
+    "phone": "+44 161 496 3104",
+    "address": "9 King Street, Manchester, M2 6AW",
+    "logo": "/templates/noir-house-design/assets/images/logos/noir-house-logo.svg"
+  },
+  "navigation": {
+    "ctaLabel": "Reserve Consultation",
+    "ctaHref": "#/contact",
+    "phoneLabel": "+44 161 496 3104",
+    "phoneHref": "tel:+441614963104"
+  },
+  "hero": {
+    "title": "Dark Interior Design With Architectural Depth",
+    "text": "Moody residential interiors, bespoke details, and finish direction for clients who want atmosphere without excess.",
+    "primaryCta": "Plan the Room",
+    "primaryHref": "#/contact"
+  },
+  "pages": {
+    "about": {
+      "title": "ABOUT NOIR",
+      "text": "A darker, sharper design studio built around contrast, proportion, lighting, and material restraint."
+    },
+    "projects": {
+      "title": "SIGNATURE SPACES",
+      "text": "A gallery of high-contrast interiors, joinery concepts, and atmospheric living spaces."
+    },
+    "contact": {
+      "title": "START THE ROOM",
+      "text": "Share the property, room goals, budget range, and timeline. We will shape the next step."
+    }
+  },
+  "colors": {
+    "primary": "#b78a55",
+    "background": "#111111",
+    "text": "#f4efe5"
+  }
+}

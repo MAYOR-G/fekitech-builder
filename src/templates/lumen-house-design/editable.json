@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "Lumen House Design",
+    "email": "studio@lumenhouse.design",
+    "phone": "+44 20 7193 4820",
+    "address": "24 Charlotte Road, London, EC2A 3PB",
+    "logo": "/templates/lumen-house-design/assets/images/logos/lumen-house-logo.svg"
+  },
+  "navigation": {
+    "ctaLabel": "Book a Studio Call",
+    "ctaHref": "#/contact",
+    "phoneLabel": "+44 20 7193 4820",
+    "phoneHref": "tel:+442071934820"
+  },
+  "hero": {
+    "title": "Modern House Design For Considered Living",
+    "text": "Interior architecture, room planning, and detail-led design for homes that need clarity before the build begins.",
+    "primaryCta": "Start a Brief",
+    "primaryHref": "#/contact"
+  },
+  "pages": {
+    "about": {
+      "title": "ABOUT LUMEN",
+      "text": "A calm residential design studio shaping interiors, architectural details, and finish palettes for buildable homes."
+    },
+    "projects": {
+      "title": "SELECTED HOMES",
+      "text": "Light-filled interiors, quiet materials, and practical room plans for modern homeowners."
+    },
+    "contact": {
+      "title": "CONTACT THE STUDIO",
+      "text": "Send the site, scope, timeline, and any references. We will reply with next steps."
+    }
+  },
+  "colors": {
+    "primary": "#a87945",
+    "background": "#f7f3ec",
+    "text": "#111827"
+  }
+}

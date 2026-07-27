@@ -1,0 +1,19 @@
+{
+  "id": "noir-house-design",
+  "name": "Noir House Atelier",
+  "description": "Faithful local conversion of the original architecture source template with editable business content.",
+  "category": "Architecture",
+  "image": "/templates/noir-house-design/preview-collage.webp",
+  "previewImages": [
+    "/templates/noir-house-design/preview-collage.webp",
+    "/templates/noir-house-design/assets/images/background/hero-bg-5.jpg",
+    "/templates/noir-house-design/assets/images/project-details/detail-1.jpg"
+  ],
+  "features": [
+    "Exact source-template layout",
+    "Original page flow and section structure",
+    "Editable logo, contact details and CTA links",
+    "Local assets copied into the template folder",
+    "Multi-page preview collage"
+  ]
+}

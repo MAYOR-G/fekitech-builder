@@ -1,0 +1,19 @@
+{
+  "id": "forgepoint-construction",
+  "name": "SMMTC Construction",
+  "description": "Faithful local conversion of the original construction source template with editable business content.",
+  "category": "Construction",
+  "image": "/templates/forgepoint-construction/preview-collage.webp",
+  "previewImages": [
+    "/templates/forgepoint-construction/preview-collage.webp",
+    "/templates/forgepoint-construction/assets/images/c837a6_0028340354594c0b95b8b6c7acfeaa26~mv2-202462.jpeg",
+    "/templates/forgepoint-construction/assets/images/c837a6_44f2f29e9f7143d9af6a5f7c4152c909~mv2-ce3047.jpeg"
+  ],
+  "features": [
+    "Exact source-template layout",
+    "Original page flow and section structure",
+    "Editable logo, contact details and CTA links",
+    "Local assets copied into the template folder",
+    "Multi-page preview collage"
+  ]
+}

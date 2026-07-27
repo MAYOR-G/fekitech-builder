@@ -1,0 +1,19 @@
+{
+  "id": "alder-slate-roofing",
+  "name": "Alder & Slate Roofing",
+  "description": "Dependable repairs, slate roofing, maintenance and replacement roofing across Manchester. Converted from the Roofora index2.html design.",
+  "category": "Services",
+  "image": "/templates/alder-slate-roofing/preview-collage.webp",
+  "previewImages": [
+    "/templates/alder-slate-roofing/preview-collage.webp",
+    "/templates/alder-slate-roofing/assets/images/about-img.jpg",
+    "/templates/alder-slate-roofing/assets/images/services-img1.jpg"
+  ],
+  "features": [
+    "Independent Roofora-derived homepage",
+    "UK roofing business details",
+    "Editable brand, hero and contact content",
+    "Internal pages included",
+    "Local assets and custom SVG logo"
+  ]
+}

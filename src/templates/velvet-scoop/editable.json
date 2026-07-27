@@ -1,0 +1,172 @@
+{
+  "brand": {
+    "name": "Velvet Scoop",
+    "logoText": "Velvet Scoop",
+    "tagline": "Premium ice cream and desserts",
+    "phone": "+44 20 7946 0824",
+    "email": "hello@velvetscoop.co.uk",
+    "address": "42 Camden Passage, London, N1 8EA",
+    "hours": "Monday-Thursday: 11:00-21:00\nFriday-Saturday: 11:00-23:00\nSunday: 12:00-20:00",
+    "topBar": "42 Camden Passage London, N1 8EA  |  Daily scoops from 11AM",
+    "colors": {
+      "primary": "#5b1c00",
+      "secondary": "#fff89a",
+      "accent": "#86bdd9",
+      "background": "#f7f8f4",
+      "text": "#5b1c00",
+      "buttonText": "#ffffff"
+    }
+  },
+  "navigation": {
+    "links": [
+      { "label": "Flavours", "href": "#/flavors", "page": "flavors" },
+      { "label": "About", "href": "#/about", "page": "about" },
+      { "label": "Book an Event", "href": "#/book-event", "page": "book-event" }
+    ],
+    "loginLabel": "Log In"
+  },
+  "hero": {
+    "title": "Ice Cream",
+    "subtitle": "Hand Crafted",
+    "buttonLabel": "Our Flavours",
+    "buttonHref": "#/flavors",
+    "image": "hero-cone",
+    "imageAlt": "Hand holding a stacked ice cream cone"
+  },
+  "flavours": {
+    "kicker": "Fresh N'Tasty!",
+    "title": "Our Flavours",
+    "description": "Small-batch scoops made with fine dairy, bright fruit and carefully chosen chocolate. Ask what is freshly churned today.",
+    "buttonLabel": "Explore Menu",
+    "buttonHref": "#/flavors",
+    "image": "flavours-wide",
+    "imageAlt": "Four ice cream scoops arranged in cups",
+    "items": [
+      { "name": "Pistachio Cream", "image": "flavour-mint", "alt": "Pale green pistachio ice cream scoop" },
+      { "name": "Dark Chocolate", "image": "flavour-chocolate", "alt": "Chocolate ice cream scoop in a bowl" },
+      { "name": "Raspberry Ripple", "image": "flavour-strawberry", "alt": "Pink raspberry ice cream scoop" },
+      { "name": "Vanilla Bean", "image": "flavour-vanilla", "alt": "Vanilla ice cream scoop in a bowl" }
+    ]
+  },
+  "dairyFree": {
+    "title": "Enjoy",
+    "subtitle": "Fresh scoops, shakes and sundaes",
+    "buttonLabel": "Order Online",
+    "buttonHref": "#order",
+    "image": "dessert-cup",
+    "imageAlt": "Pink dairy-free soft serve in a branded cup"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Our Story",
+    "description": "We make ice cream in small batches for our London dessert shop, keeping the texture smooth, the flavours honest and the service warm.",
+    "buttonLabel": "Read More",
+    "buttonHref": "#/about",
+    "image": "soft-serve-cup",
+    "imageAlt": "Rich chocolate gelato texture"
+  },
+  "desserts": {
+    "eyebrow": "Ice Cream Goodies",
+    "title": "Desserts",
+    "description": "Layered sundaes, warm waffles, sauces and toppings prepared to order. Simple, generous and made for sharing.",
+    "buttonLabel": "Menu",
+    "buttonHref": "#/flavors",
+    "image": "sundae",
+    "imageAlt": "Ice cream sundae with chocolate sauce and cherry"
+  },
+  "delivery": {
+    "title": "We Deliver",
+    "subtitle": "Get Yours",
+    "buttonLabel": "Order Online",
+    "buttonHref": "#order"
+  },
+  "gallery": {
+    "items": [
+      { "title": "Pistachio scoop", "image": "flavour-mint", "alt": "Pistachio ice cream scoop" },
+      { "title": "Chocolate scoop", "image": "flavour-chocolate", "alt": "Chocolate ice cream scoop" },
+      { "title": "Raspberry scoop", "image": "flavour-strawberry", "alt": "Raspberry ice cream scoop" },
+      { "title": "Vanilla scoop", "image": "flavour-vanilla", "alt": "Vanilla ice cream scoop" }
+    ],
+    "previousLabel": "Previous",
+    "nextLabel": "Next"
+  },
+  "pages": {
+    "flavors": {
+      "eyebrow": "Cool, Creamy, Perfect",
+      "title": "Our Menu",
+      "sectionTitle": "Flavours",
+      "columns": [
+        {
+          "title": "Ice Cream Flavours",
+          "items": [
+            { "name": "Cheesecake & Berries", "description": "Creamy cheesecake ice cream rippled with bright berry sauce.", "price": "£5", "image": "flavour-strawberry", "alt": "Berry ice cream scoop" },
+            { "name": "Chocolate Classic", "description": "A rich chocolate scoop with a smooth, deep cocoa finish.", "price": "£5", "image": "flavour-chocolate", "alt": "Chocolate ice cream scoop" },
+            { "name": "Pistachio", "description": "Velvety pistachio gelato with a naturally nutty flavour.", "price": "£5", "image": "flavour-mint", "alt": "Pistachio ice cream scoop" },
+            { "name": "Vanilla", "description": "Fragrant vanilla bean ice cream, simple and beautifully balanced.", "price": "£5", "image": "flavour-vanilla", "alt": "Vanilla ice cream scoop" },
+            { "name": "Salted Caramel", "description": "Buttery caramel folded through a lightly salted cream base.", "price": "£5", "image": "sundae", "alt": "Caramel dessert scoop" }
+          ]
+        },
+        {
+          "title": "Dairy Free Flavours",
+          "items": [
+            { "name": "Mango Sorbet", "description": "Sunny mango sorbet with a clean, tropical finish.", "price": "£5", "image": "flavour-vanilla", "alt": "Golden sorbet scoop" },
+            { "name": "Strawberry Sorbet", "description": "Fresh strawberry sorbet with a soft fruit sweetness.", "price": "£5", "image": "flavour-strawberry", "alt": "Strawberry sorbet scoop" },
+            { "name": "Dark Chocolate", "description": "Dairy-free dark chocolate with a rich cocoa body.", "price": "£5", "image": "soft-serve-cup", "alt": "Dark chocolate gelato" },
+            { "name": "Lime", "description": "Sharp lime sorbet, bright and refreshing.", "price": "£5", "image": "flavour-mint", "alt": "Lime sorbet scoop" },
+            { "name": "Marshmallow", "description": "Soft pink marshmallow sorbet with a playful finish.", "price": "£5", "image": "dessert-cup", "alt": "Pink dairy-free soft serve" }
+          ]
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Our Story",
+      "title": "About us",
+      "sections": [
+        { "eyebrow": "Behind The Scenes", "title": "Our Factory", "description": "Our gelato is prepared in small batches with patient churning, careful tasting and a calm respect for each ingredient.", "image": "about-factory", "imageAlt": "Gelato pans in a display freezer" },
+        { "eyebrow": "We Just Love Ice Cream!", "title": "Our Place", "description": "Our London shop is made for slow afternoons, quick treats and generous dessert moments with friends.", "image": "about-place", "imageAlt": "Bright gelato shop interior" }
+      ]
+    },
+    "events": {
+      "eyebrow": "Catering & More",
+      "title": "Events",
+      "introEyebrow": "For The Best Party!",
+      "introTitle": "The Best Ice Cream",
+      "description": "Bring Velvet Scoop to birthdays, launches, weddings and team gatherings. We serve smooth gelato, sorbet and toppings from a polished cart that feels easy, generous and memorable.",
+      "serviceTitle": "ICE CREAM CART",
+      "duration": "4 hr",
+      "price": "From £220",
+      "buttonLabel": "BOOK NOW",
+      "buttonHref": "#contact",
+      "image": "event-cart",
+      "imageAlt": "Vintage yellow ice cream event cart"
+    }
+  },
+  "footer": {
+    "addressTitle": "ADDRESS",
+    "contactTitle": "CONTACT",
+    "hoursTitle": "HOURS",
+    "address": "42 Camden Passage\nLondon, N1 8EA",
+    "email": "hello@velvetscoop.co.uk",
+    "phone": "Tel: +44 20 7946 0824",
+    "hours": "Open daily\n11am-10pm",
+    "legalLinks": [
+      { "label": "Terms & Conditions", "href": "#terms" },
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Accessibility Statement", "href": "#accessibility" },
+      { "label": "Refund Policy", "href": "#refunds" }
+    ],
+    "social": [
+      { "label": "Facebook", "href": "#" },
+      { "label": "Instagram", "href": "#" },
+      { "label": "X", "href": "#" }
+    ],
+    "newsletterTitle": "Mailing List",
+    "firstNameLabel": "First name*",
+    "lastNameLabel": "Last name",
+    "emailLabel": "Enter your email here*",
+    "consentLabel": "Yes, subscribe me to your newsletter.*",
+    "subscribeLabel": "Subscribe",
+    "successMessage": "Thanks. You're on the Velvet Scoop list.",
+    "copyright": "©2026 by Velvet Scoop. All rights reserved."
+  }
+}

@@ -27,8 +27,8 @@
     "primaryHref": "#contact",
     "secondaryLabel": "Explore the menu",
     "secondaryHref": "#menu",
-    "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=2000",
-    "imageAlt": "Signature sea bass dish with seasonal vegetables on a sculptural white plate",
+    "image": "/templates/assets/halcyon-dining.webp",
+    "imageAlt": "Warm restaurant and bar dining room with guests seated for dinner",
     "badge": "Spring menu now serving"
   },
   "strip": { "items": ["British produce", "Lunch Thursday–Saturday", "Private dining", "Seasonal tasting menu"] },

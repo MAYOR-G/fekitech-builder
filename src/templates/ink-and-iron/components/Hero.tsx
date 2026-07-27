@@ -41,12 +41,13 @@ export default function Hero() {
           alt="Tattoo artist doing linework"
           fill
           priority
-          className="object-cover object-center opacity-70"
+          className="object-cover object-center opacity-100 brightness-[1.28] contrast-[1.02] saturate-[1.05]"
           sizes="100vw"
         />
-        {/* Radial vignette overlay to ensure text contrast */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0A0A0A_100%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 via-[#0A0A0A]/40 to-[#0A0A0A]" />
+        {/* Clearer image with enough edge contrast for the centered hero copy. */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(10,10,10,0.5)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/42 via-[#0A0A0A]/8 to-[#0A0A0A]/62" />
+        <div className="absolute inset-0 bg-[#F4EFE5]/[0.08] mix-blend-screen" />
       </motion.div>
 
       {/* Floating Ink Particles */}
@@ -54,7 +55,7 @@ export default function Hero() {
           {inkParticles.map((particle, index) => (
             <motion.div
               key={index}
-              className="absolute rounded-full bg-[#141414]"
+              className="absolute rounded-full bg-[#F0C85A]/18"
               style={{
                 width: `${particle.size}px`,
                 height: `${particle.size}px`,
@@ -85,13 +86,13 @@ export default function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-[#C9A84C] font-semibold tracking-[0.3em] text-xs uppercase"
+            className="text-[#F0C85A] font-semibold tracking-[0.3em] text-xs uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]"
           >
             A Premium UK Studio
           </motion.p>
         </div>
 
-        <h1 className="font-display text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.85] tracking-tight text-white mb-8 text-balance-hero">
+        <h1 className="font-display text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.85] tracking-tight text-white mb-8 text-balance-hero drop-shadow-[0_6px_24px_rgba(0,0,0,0.72)]">
           <motion.span
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -106,7 +107,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-[#F5F5F5]/70 max-w-xl mx-auto text-sm md:text-base leading-relaxed mb-10"
+          className="text-white/88 max-w-xl mx-auto text-sm md:text-base leading-relaxed mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.65)]"
         >
           {content.hero.subtitle}
         </motion.p>
