@@ -14,7 +14,7 @@ function contentSecurityPolicy(nonce: string): string {
     "img-src 'self' data: blob: https:",
     "media-src 'self' blob: https:",
     "font-src 'self' data: https://fonts.gstatic.com",
-    "connect-src 'self'",
+    `connect-src 'self' https://*.supabase.co wss://*.supabase.co ${process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).origin : ""}`,
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",
