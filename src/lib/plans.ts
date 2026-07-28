@@ -157,6 +157,18 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "restaurant-website": "business",
   "second-furniture-website": "pro",
   "second-plumber-website": "business",
+  "alder-slate-roofing": "free",
+  "bakery-website": "free",
+  "carpenter-website": "free",
+  "crownline-roofworks": "free",
+  "farm-shop-website": "free",
+  "ice-cream-website": "free",
+  "industrial-construction": "free",
+  "lumen-house-design": "free",
+  "noir-house-design": "free",
+  "northcrest-roofing": "free",
+  "premium-construction": "free",
+  "velvet-scoop": "free",
 };
 
 export function isPlanId(value: unknown): value is PlanId {
