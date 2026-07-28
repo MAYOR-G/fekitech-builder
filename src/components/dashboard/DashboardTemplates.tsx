@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { TemplateCatalogCard } from "@/components/templates/TemplateCatalogCard";
+import { AlertModal } from "@/components/ui/AlertModal";
 import type { TemplateConfig } from "@/registry";
 
 export function DashboardTemplates({ templates }: { templates: TemplateConfig[] }) {
@@ -33,7 +34,6 @@ export function DashboardTemplates({ templates }: { templates: TemplateConfig[] 
     } catch (error) {
       const msg = error instanceof Error ? error.message : "Unable to create the project.";
       setMessage(msg);
-      window.alert(msg);
     } finally {
       setCreatingId(null);
     }
@@ -48,11 +48,12 @@ export function DashboardTemplates({ templates }: { templates: TemplateConfig[] 
         </div>
       </div>
       
-      {message ? (
-        <p role="status" className="mb-6 rounded-lg bg-ft-surface-alt p-3 text-sm text-ft-body">
-          {message}
-        </p>
-      ) : null}
+      <AlertModal 
+        isOpen={!!message} 
+        title="Error Creating Project" 
+        message={message} 
+        onClose={() => setMessage("")} 
+      />
 
       <div className="grid grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {templates.map((template) => (

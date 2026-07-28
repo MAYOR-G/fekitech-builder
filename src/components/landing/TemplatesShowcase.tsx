@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { getAllTemplates } from "@/registry";
 import { TemplateImage } from "@/components/templates/TemplateImage";
+import { AlertModal } from "@/components/ui/AlertModal";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 const featuredTemplateIds = [
@@ -55,7 +56,6 @@ export default function TemplatesShowcase() {
     } catch (error) {
       const msg = error instanceof Error ? error.message : "Unable to create the project.";
       setMessage(msg);
-      window.alert(msg);
     } finally {
       setCreatingId(null);
     }
@@ -64,6 +64,13 @@ export default function TemplatesShowcase() {
   return (
     <section className="relative overflow-hidden bg-white px-4 py-24 text-ft-ink sm:px-6 md:py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-ft-border" />
+
+      <AlertModal 
+        isOpen={!!message} 
+        title="Error Creating Project" 
+        message={message} 
+        onClose={() => setMessage("")} 
+      />
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
         <div className="mx-auto mb-12 flex max-w-[1280px] flex-col justify-between gap-7 md:mb-14 md:flex-row md:items-end">
@@ -142,11 +149,6 @@ export default function TemplatesShowcase() {
             ))}
           </div>
         </div>
-        {message ? (
-          <p role="status" className="mt-6 text-center text-sm font-medium text-ft-body">
-            {message}
-          </p>
-        ) : null}
       </div>
     </section>
   );
