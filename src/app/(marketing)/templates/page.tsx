@@ -23,10 +23,7 @@ export default function TemplatesPage() {
     );
   }, [search]);
 
-  // Reset page when search changes
-  useMemo(() => {
-    setCurrentPage(1);
-  }, [search]);
+
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginatedTemplates = filtered.slice(
@@ -55,7 +52,7 @@ export default function TemplatesPage() {
         <div className="mb-10 flex min-h-12 items-center rounded-xl border border-ft-border bg-white px-4 shadow-[0_8px_24px_rgba(22,31,72,0.05)] transition-shadow focus-within:border-ft-primary focus-within:shadow-[0_0_0_4px_rgba(0,185,235,0.12)]">
           <Search aria-hidden="true" className="mr-3 shrink-0 text-ft-body" size={17} />
           <label htmlFor="template-search" className="sr-only">Search templates</label>
-          <input id="template-search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search templates" className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-ft-body" />
+          <input id="template-search" value={search} onChange={(event) => { setSearch(event.target.value); setCurrentPage(1); }} placeholder="Search templates" className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-ft-body" />
         </div>
 
         {message ? <p role="status" className="mb-6 rounded-lg bg-ft-surface-alt p-3 text-sm text-ft-body">{message}</p> : null}
