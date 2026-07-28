@@ -2,7 +2,7 @@ import React from "react";
 import { useTemplateData } from "../TemplateContext";
 
 export default function Footer() {
-  const { brand, social, footer, navigation, visit, colors } = useTemplateData();
+  const { brand, social, footer, navigation, colors } = useTemplateData();
 
   return (
     <footer className="w-full pt-24 pb-12 px-6 md:px-12 flex flex-col" style={{ backgroundColor: colors.secondary, color: colors.text }}>
