@@ -38,7 +38,7 @@ export default function Menu() {
           viewport={{ once: true }}
           className="relative z-10 bg-white p-8 md:p-12 shadow-2xl max-w-md w-full"
         >
-          <h3 className="font-serif text-3xl font-bold mb-8 text-[#3D2721] text-center">Our Daily Menu</h3>
+          <h3 className="font-serif text-3xl font-bold mb-8 text-[#3D2721] text-center">{products.subtitle}</h3>
           <div className="flex flex-col gap-4 mb-8">
             {products.items.slice(0, 5).map((item: any, index: number) => (
               <div key={index} className="flex justify-between items-center text-[#3D2721]">
@@ -48,12 +48,13 @@ export default function Menu() {
             ))}
           </div>
           <div className="text-center">
-            <button 
-              className="px-8 py-3 rounded-full font-serif font-bold transition-transform hover:scale-105"
+            <a
+              href={products.buttonHref}
+              className="inline-block px-8 py-3 rounded-full font-serif font-bold transition-transform hover:scale-105"
               style={{ backgroundColor: colors.text, color: colors.primary }}
             >
-              Explore Menu
-            </button>
+              {products.buttonLabel}
+            </a>
           </div>
         </motion.div>
       </div>

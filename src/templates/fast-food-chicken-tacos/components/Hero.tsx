@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="md:max-w-sm text-[#3D2721] flex flex-col items-start pb-4">
           <h2 className="font-serif text-3xl font-bold mb-4">{hero.subheadline}</h2>
           <p className="font-sans text-lg mb-8 opacity-80 leading-relaxed">
-            Experience the finest fast food with locally sourced ingredients and bold flavors. Freshness you can taste in every bite.
+            {hero.description}
           </p>
           <a
             href={hero.ctaLink}

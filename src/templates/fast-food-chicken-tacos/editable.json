@@ -4,17 +4,14 @@
   "navigation": {
     "links": [
       { "label": "Menu", "href": "#menu" },
-      { "label": "Combos", "href": "#packages" },
-      { "label": "Our kitchen", "href": "#story" },
-      { "label": "Gallery", "href": "#gallery" },
-      { "label": "Locations", "href": "#contact" }
-    ],
-    "ctaLabel": "Order now",
-    "ctaHref": "https://example.com/order"
+      { "label": "Our kitchen", "href": "#philosophy" },
+      { "label": "Gallery", "href": "#gallery" }
+    ]
   },
   "hero": {
     "headline": "Crave",
     "subheadline": "Fast Food, Elevated.",
+    "description": "Experience the finest fast food with locally sourced ingredients and bold flavors. Freshness you can taste in every bite.",
     "cta": "Order Now",
     "ctaLink": "#menu",
     "images": [
@@ -23,71 +20,32 @@
       "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1999&auto=format&fit=crop"
     ]
   },
-  "strip": { "items": ["Buttermilk chicken", "Hot honey wings", "Loaded fries", "Grilled tacos", "Shakes made thick"] },
   "products": {
-    "title": "Pick your craving",
-    "description": "Big flavour, sharp sauces and proper portions. Go solo or turn it into a full yard feast.",
+    "subtitle": "Our Daily Menu",
+    "buttonLabel": "Explore Menu",
+    "buttonHref": "#",
     "items": [
-      { "name": "The Yardbird", "description": "Crispy thigh, pickles, shredded lettuce and comeback sauce.", "price": "£9.95", "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Crispy chicken burger with fresh toppings" },
-      { "name": "Charred chicken tacos", "description": "Three corn tacos, salsa verde, slaw and lime crema.", "price": "£10.50", "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Colourful chicken tacos with salsa and lime" },
-      { "name": "Hot honey wings", "description": "Eight crisp wings, chilli honey and ranch dust.", "price": "£8.75", "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Golden chicken wings with spicy glaze" }
+      { "name": "The Yardbird", "price": "£9.95", "image": "/templates/assets/cluck-yard-hero.webp" },
+      { "name": "Charred chicken tacos", "price": "£10.50", "image": "/templates/assets/cluck-yard-tacos.webp" },
+      { "name": "Hot honey wings", "price": "£8.75", "image": "/templates/assets/cluck-yard-hero.webp" }
     ]
   },
   "feature": {
-    "note": "Built fresh",
     "title": "Fast food with standards.",
     "description": "We brine overnight, bread in small batches and char every taco filling over flame. Sauces are made in-house and nothing waits under a heat lamp.",
     "image": "/templates/assets/cluck-yard-tacos.webp",
     "imageAlt": "Freshly assembled tacos with vibrant toppings",
-    "facts": [
-      { "value": "24h", "label": "buttermilk brine" },
-      { "value": "7", "label": "house sauces" },
-      { "value": "15m", "label": "pickup target" }
-    ],
     "buttonLabel": "See how we cook",
-    "buttonHref": "#story"
-  },
-  "packages": {
-    "title": "Combos that make sense",
-    "description": "Choose the mood, pick a heat level and let us handle the rest.",
-    "items": [
-      { "name": "Solo stack", "description": "A main, seasoned fries and any canned drink.", "price": "From £13.50", "note": "One hungry person", "features": ["Burger, wrap or tacos", "House-seasoned fries", "Any canned drink"], "buttonLabel": "Build yours", "buttonHref": "https://example.com/order" },
-      { "name": "Full yard feast", "description": "The table-filling mix for friends who want everything.", "price": "£39.95", "note": "Best value · serves 3–4", "features": ["12 wings and 4 tacos", "2 loaded fries", "4 dips and 4 drinks"], "buttonLabel": "Order the feast", "buttonHref": "https://example.com/order" },
-      { "name": "Taco night", "description": "A shareable taco spread with fries and street corn.", "price": "£29.50", "note": "Serves 2–3", "features": ["9 mixed tacos", "Large seasoned fries", "Street corn and salsa"], "buttonLabel": "Choose fillings", "buttonHref": "https://example.com/order" }
-    ]
+    "buttonHref": "#philosophy"
   },
   "gallery": {
-    "title": "Fresh out the kitchen",
-    "description": "A moving line-up of crunch, colour, char and shake-worthy finishes.",
     "rowOne": [
-      { "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Fast-food spread with chicken and tacos", "caption": "The full yard" },
-      { "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Chicken tacos with bright salsa", "caption": "Charred chicken tacos" },
-      { "image": "/templates/assets/sunny-stack-hero-v2.webp", "imageAlt": "Large premium burger", "caption": "Stacked to order" }
+      { "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Fast-food spread with chicken and tacos" },
+      { "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Chicken tacos with bright salsa" }
     ],
     "rowTwo": [
-      { "image": "/templates/assets/cluck-yard-tacos.webp", "imageAlt": "Tacos with fresh toppings", "caption": "Taco Tuesday, every day" },
-      { "image": "/templates/assets/cluck-yard-hero.webp", "imageAlt": "Loaded fries and fried chicken", "caption": "Crisp, hot, ready" },
-      { "image": "/templates/assets/ember-bun-hero-v2.webp", "imageAlt": "Flame-grilled burger", "caption": "Off the grill" }
-    ]
-  },
-  "story": {
-    "note": "Our kitchen",
-    "title": "Made fast. Never rushed.",
-    "description": "Crave began with a fryer, a taco press and an unreasonable obsession with crunch. We still prep every sauce, slaw and pickle in our Manchester kitchen.",
-    "image": "/templates/assets/cluck-yard-hero.webp",
-    "imageAlt": "Colourful selection of freshly made fast food",
-    "quote": "If it doesn't drip a little, we haven't gone far enough.",
-    "buttonLabel": "Meet the yard",
-    "buttonHref": "#story"
-  },
-  "process": {
-    "title": "Choose. Heat. Collect.",
-    "description": "Ordering stays quick, whether you're at the counter or on the sofa.",
-    "steps": [
-      { "title": "Pick it", "description": "Choose chicken, tacos, burgers, wraps or a full combo." },
-      { "title": "Set the heat", "description": "Keep it mellow, go hot honey or ask for Yard Fire." },
-      { "title": "We cook", "description": "Your order is fried, grilled and dressed from fresh." },
-      { "title": "Grab it", "description": "Collect in store or follow live delivery tracking." }
+      { "image": "/templates/assets/sunny-stack-hero-v2.webp", "imageAlt": "Large premium burger" },
+      { "image": "/templates/assets/ember-bun-hero-v2.webp", "imageAlt": "Flame-grilled burger" }
     ]
   },
   "testimonials": {
@@ -99,22 +57,11 @@
       { "quote": "Our office lunch arrived hot, labelled and exactly on time.", "name": "Marcus J.", "detail": "Team order" }
     ]
   },
-  "visit": {
-    "note": "Eat in, collect or deliver",
-    "title": "Your nearest yard is ready.",
-    "description": "Order direct for collection or delivery. Large office orders can be scheduled by email.",
-    "areasLabel": "Delivery areas",
-    "areas": ["Northern Quarter", "Ancoats", "Deansgate", "Salford"],
-    "hours": [
-      { "day": "Mon–Thu", "time": "11:30am–11pm" },
-      { "day": "Fri–Sat", "time": "11:30am–1am" },
-      { "day": "Sunday", "time": "12–10pm" }
-    ],
-    "primaryLabel": "Order delivery",
-    "primaryHref": "https://example.com/order",
-    "secondaryLabel": "Find a location",
-    "secondaryHref": "https://maps.google.com"
-  },
-  "social": { "instagram": "Crave on Instagram", "instagramHref": "https://instagram.com", "facebook": "Crave on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Crave on TikTok", "tiktokHref": "https://tiktok.com" },
-  "footer": { "note": "Big flavour from Manchester, made fresh every day.", "copyright": "© 2026 Crave Fast Food. All rights reserved." }
+  "social": { "instagramHref": "https://instagram.com", "facebookHref": "https://facebook.com", "tiktokHref": "https://tiktok.com" },
+  "footer": { 
+    "title": "Join The Neighborhood", 
+    "description": "Be the first to know about new seasonal treats, upcoming workshops, and our freshly baked schedule.", 
+    "buttonLabel": "Subscribe",
+    "copyright": "© 2026 Crave Fast Food. All rights reserved." 
+  }
 }

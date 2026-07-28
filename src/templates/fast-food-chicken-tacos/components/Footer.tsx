@@ -8,10 +8,15 @@ export default function Footer() {
     <footer className="w-full pt-24 pb-12 px-6 md:px-12 flex flex-col" style={{ backgroundColor: colors.secondary, color: colors.text }}>
       <div className="max-w-4xl mb-24">
         <h2 className="font-serif text-[10vw] md:text-[6vw] leading-[0.9] tracking-tighter font-medium mb-8">
-          Join The<br />Neighborhood
+          {footer.title ? footer.title.split(' ').map((word: string, i: number) => (
+            <React.Fragment key={i}>
+              {word}
+              {i === 1 ? <br /> : " "}
+            </React.Fragment>
+          )) : "Join The Neighborhood"}
         </h2>
         <p className="font-sans text-xl md:text-2xl font-light italic opacity-90 max-w-2xl mb-12">
-          Be the first to know about new seasonal treats, upcoming workshops, and our freshly baked schedule.
+          {footer.description}
         </p>
 
         <form className="max-w-md flex flex-col gap-4">
@@ -28,10 +33,11 @@ export default function Footer() {
             <label htmlFor="newsletter" className="text-sm opacity-80 cursor-pointer">Yes, subscribe to newsletter *</label>
           </div>
           <button 
+            type="button"
             className="mt-4 self-start px-8 py-3 rounded-full font-serif font-bold transition-transform hover:scale-105"
             style={{ backgroundColor: colors.text, color: colors.primary }}
           >
-            Subscribe
+            {footer.buttonLabel}
           </button>
         </form>
       </div>
