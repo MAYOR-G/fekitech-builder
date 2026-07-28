@@ -39,7 +39,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     ctaLabel: "Start building",
     ctaHref: "/signup",
     entitlements: {
-      maxProjects: 1,
+      maxProjects: 10,
       maxPublishedProjects: 0,
       maxVersionsPerProject: 5,
       maxAssetsPerProject: 0,

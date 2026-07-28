@@ -31,7 +31,9 @@ export function DashboardTemplates({ templates }: { templates: TemplateConfig[] 
       }
       window.location.assign(`/editor/${payload.project.id}`);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Unable to create the project.");
+      const msg = error instanceof Error ? error.message : "Unable to create the project.";
+      setMessage(msg);
+      window.alert(msg);
     } finally {
       setCreatingId(null);
     }
