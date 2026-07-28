@@ -8,20 +8,6 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:16-alpine
-        env:
-          POSTGRES_DB: fekitech_builder_test
-          POSTGRES_USER: fekitech
-          POSTGRES_PASSWORD: ci_database_password
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U fekitech -d fekitech_builder_test"
-          --health-interval 5s
-          --health-timeout 5s
-          --health-retries 20
     env:
       DATABASE_URL: postgresql://fekitech:ci_database_password@localhost:5432/fekitech_builder_test?schema=public
       BETTER_AUTH_SECRET: ci-only-auth-secret-at-least-thirty-two-characters
@@ -43,8 +29,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run prisma:generate
-      - run: npm run db:deploy
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run test
