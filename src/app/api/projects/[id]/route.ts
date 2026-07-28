@@ -26,7 +26,21 @@ export async function GET(_request: NextRequest, context: RouteContext) {
     .single();
 
   if (error || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
-  return NextResponse.json({ project });
+  
+  const mappedProject = {
+    id: project.id,
+    name: project.name,
+    templateId: project.template_id,
+    subdomain: project.subdomain,
+    customDomain: project.custom_domain,
+    customDomainVerifiedAt: project.custom_domain_verified_at,
+    isPublished: project.is_published,
+    editableData: project.editable_data,
+    createdAt: project.created_at,
+    updatedAt: project.updated_at,
+  };
+
+  return NextResponse.json({ project: mappedProject });
 }
 
 export async function PATCH(request: NextRequest, context: RouteContext) {
@@ -133,7 +147,20 @@ export async function PATCH(request: NextRequest, context: RouteContext) {
     return NextResponse.json({ error: "Unable to save the project." }, { status: 500 });
   }
 
-  return NextResponse.json({ project });
+  const mappedProject = {
+    id: project.id,
+    name: project.name,
+    templateId: project.template_id,
+    subdomain: project.subdomain,
+    customDomain: project.custom_domain,
+    customDomainVerifiedAt: project.custom_domain_verified_at,
+    isPublished: project.is_published,
+    editableData: project.editable_data,
+    createdAt: project.created_at,
+    updatedAt: project.updated_at,
+  };
+
+  return NextResponse.json({ project: mappedProject });
 }
 
 export async function DELETE(request: NextRequest, context: RouteContext) {

@@ -113,5 +113,18 @@ export async function POST(request: NextRequest) {
     details: JSON.stringify({ projectId: project.id, templateId: project.template_id }),
   });
 
-  return NextResponse.json({ project }, { status: 201 });
+  const mappedProject = {
+    id: project.id,
+    name: project.name,
+    templateId: project.template_id,
+    subdomain: project.subdomain,
+    customDomain: project.custom_domain,
+    customDomainVerifiedAt: project.custom_domain_verified_at,
+    isPublished: project.is_published,
+    editableData: project.editable_data,
+    createdAt: project.created_at,
+    updatedAt: project.updated_at,
+  };
+
+  return NextResponse.json({ project: mappedProject }, { status: 201 });
 }
