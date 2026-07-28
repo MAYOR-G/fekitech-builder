@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 
-export const projectIdSchema = z.string().cuid();
+export const projectIdSchema = z.string().uuid().or(z.string().cuid());
 export const projectNameSchema = z.string().trim().min(1).max(120);
 
 export const customDomainSchema = z.object({
@@ -24,7 +24,7 @@ export const createVersionSchema = z.object({
 }).strict();
 
 export const restoreVersionSchema = z.object({
-  versionId: z.string().cuid(),
+  versionId: z.string().uuid().or(z.string().cuid()),
 }).strict();
 
 type JsonValidationState = { nodes: number };
