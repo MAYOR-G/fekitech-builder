@@ -155,13 +155,13 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
           </div>
           <div className="pft-hero-media">
             <span className="pft-hero-halo" aria-hidden="true" />
-            <img className="pft-hero-food" src={data.hero.image} alt={data.hero.imageAlt} loading="eager" fetchPriority="high" />
+            <img className="pft-hero-food" src={data.hero.image} alt={data.hero.imageAlt} loading="eager" fetchPriority="high" data-editable-path="hero.image" data-editable-type="image" />
             <div className="pft-hero-badge" aria-label={`${data.hero.badgeValue} ${data.hero.badgeLabel}`}>
               <strong  data-editable-path="hero.badgeValue" data-editable-type="text">{data.hero.badgeValue}</strong><span  data-editable-path="hero.badgeLabel" data-editable-type="text">{data.hero.badgeLabel}</span>
             </div>
             {heroSupport.map((item, index) => (
               <div className={`pft-hero-support pft-hero-support--${index + 1}`} key={item.name}>
-                <img src={item.image} alt={item.imageAlt} loading="eager" />
+                <img src={item.image} alt={item.imageAlt} loading="eager" data-editable-path={`dishes.items.${index + 1}.image`} data-editable-type="image" />
                 <span>{item.name}</span>
               </div>
             ))}
@@ -180,7 +180,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
 
         <section className="pft-signature" id="specials">
           <div className="pft-signature-media pft-parallax-media">
-            <img src={data.signature.image} alt={data.signature.imageAlt} loading="lazy" />
+            <img src={data.signature.image} alt={data.signature.imageAlt} loading="lazy" data-editable-path="signature.image" data-editable-type="image" />
             <span className="pft-section-number" aria-hidden="true">01</span>
           </div>
           <Reveal className="pft-signature-copy" direction="right">
@@ -201,7 +201,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
           <div className="pft-dish-grid">
             {data.dishes.items.map((dish, index) => (
               <Reveal className={`pft-dish pft-dish--${index + 1}`} direction={index % 2 === 0 ? "left" : "right"} key={dish.name}>
-                <div className="pft-dish-media"><img src={dish.image} alt={dish.imageAlt} loading="lazy" /></div>
+                <div className="pft-dish-media"><img src={dish.image} alt={dish.imageAlt} loading="lazy" data-editable-path={`dishes.items.${index}.image`} data-editable-type="image" /></div>
                 <span className="pft-dish-index" aria-hidden="true">0{index + 1}</span>
                 <div className="pft-dish-copy"><h3>{dish.name}</h3><p>{dish.description}</p><strong>{dish.price}</strong></div>
               </Reveal>
@@ -231,8 +231,8 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
 
         <section className="pft-story" id="story">
           <div className="pft-story-media">
-            <img className="pft-story-primary pft-parallax-media" src={data.story.image} alt={data.story.imageAlt} loading="lazy" />
-            <img className="pft-story-secondary" src={data.story.secondaryImage} alt={data.story.secondaryImageAlt} loading="lazy" />
+            <img className="pft-story-primary pft-parallax-media" src={data.story.image} alt={data.story.imageAlt} loading="lazy" data-editable-path="story.image" data-editable-type="image" />
+            <img className="pft-story-secondary" src={data.story.secondaryImage} alt={data.story.secondaryImageAlt} loading="lazy" data-editable-path="story.secondaryImage" data-editable-type="image" />
           </div>
           <Reveal className="pft-story-copy" direction="right">
             <p className="pft-eyebrow" data-editable-path="story.eyebrow" data-editable-type="text">{data.story.eyebrow}</p><h2  data-editable-path="story.title" data-editable-type="text">{data.story.title}</h2><p  data-editable-path="story.description" data-editable-type="text">{data.story.description}</p>
@@ -245,7 +245,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
         <section className="pft-gallery" id="gallery">
           <Reveal className="pft-gallery-heading"><h2  data-editable-path="gallery.title" data-editable-type="text">{data.gallery.title}</h2><p  data-editable-path="gallery.description" data-editable-type="text">{data.gallery.description}</p></Reveal>
           <div className="pft-gallery-grid">
-            {data.gallery.images.map((item, index) => <Reveal direction="scale" className={`pft-gallery-item pft-gallery-item--${index + 1}`} key={`${item.image}-${index}`}><span aria-hidden="true">0{index + 1}</span><img src={item.image} alt={item.imageAlt} loading="lazy" /></Reveal>)}
+            {data.gallery.images.map((item, index) => <Reveal direction="scale" className={`pft-gallery-item pft-gallery-item--${index + 1}`} key={`${item.image}-${index}`}><span aria-hidden="true">0{index + 1}</span><img src={item.image} alt={item.imageAlt} loading="lazy" data-editable-path={`gallery.images.${index}.image`} data-editable-type="image" /></Reveal>)}
           </div>
         </section>
 

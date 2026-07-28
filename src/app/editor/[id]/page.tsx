@@ -5,6 +5,7 @@ import { isEditorObject, useVisualEditorStore } from "@/store/visualEditorStore"
 import VisualEditorToolbar from "@/components/visual-editor/VisualEditorToolbar";
 import VisualCanvas from "@/components/visual-editor/VisualCanvas";
 import DesignPanel from "@/components/visual-editor/DesignPanel";
+import BlocksPanel from "@/components/visual-editor/BlocksPanel";
 import "@/components/visual-editor/visual-editor.css";
 
 export default function EditorPage({ params }: { params: Promise<{ id: string }> }) {
@@ -98,6 +99,9 @@ export default function EditorPage({ params }: { params: Promise<{ id: string }>
         {/* Side panel */}
         {activePanel === "design" && (
           <DesignPanel onClose={() => setActivePanel(null)} />
+        )}
+        {activePanel === "blocks" && (
+          <BlocksPanel onClose={() => setActivePanel(null)} />
         )}
 
         {/* Canvas */}

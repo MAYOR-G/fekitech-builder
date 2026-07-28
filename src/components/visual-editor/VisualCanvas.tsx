@@ -5,7 +5,9 @@ import { getTemplate } from "@/registry";
 import { useVisualEditorStore } from "@/store/visualEditorStore";
 import { EditorContext } from "@/components/editor/blocks/EditableText";
 import FloatingTextToolbar from "./FloatingTextToolbar";
+import FloatingImageToolbar from "./FloatingImageToolbar";
 import type { CSSProperties } from "react";
+import type { TypographyPairing } from "@/lib/typography";
 
 /* ── Viewport width map ── */
 const VIEWPORT_WIDTHS = { desktop: "100%", tablet: "768px", mobile: "375px" } as const;
@@ -33,6 +35,22 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
     return typeof v === "string" && /^#[0-9a-f]{6}$/i.test(v) ? v : fallback;
   };
 
+  /* ── Typography injection ── */
+  const typography = data.typography as TypographyPairing | undefined;
+
+  useEffect(() => {
+    if (!typography) return;
+    const linkId = "ve-google-font";
+    let link = document.getElementById(linkId) as HTMLLinkElement | null;
+    if (!link) {
+      link = document.createElement("link");
+      link.id = linkId;
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+    link.href = `https://fonts.googleapis.com/css2?family=${typography.googleImport}&display=swap`;
+  }, [typography]);
+
   const templateStyles: CSSProperties & Record<`--${string}`, string> = {
     backgroundColor: colorValue("background", "#ffffff"),
     color: colorValue("text", "#111827"),
@@ -41,6 +59,15 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
     "--color-brand-primary": colorValue("primary", "#3146d3"),
     "--template-background": colorValue("background", "#ffffff"),
     "--template-text": colorValue("text", "#111827"),
+    ...(typography
+      ? {
+          "--font-display": `"${typography.displayFont}", sans-serif`,
+          "--font-heading": `"${typography.headingFont}", sans-serif`,
+          "--font-body": `"${typography.bodyFont}", sans-serif`,
+          "--font-nav": `"${typography.navFont}", sans-serif`,
+          "--font-button": `"${typography.buttonFont}", sans-serif`,
+        }
+      : {}),
   };
 
   /* ── Click handler: detect editable elements ── */
@@ -67,16 +94,23 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
 
     setSelection({ path, type, rect });
 
-    if (type === "text") {
+    if (type === "text" || type === "image") {
       setEditingPath(path);
       // Position toolbar above the element
       if (cRect) {
-        setToolbarPos({
-          top: rect.top - cRect.top - 48,
-          left: rect.left - cRect.left + rect.width / 2,
-        });
-      }
+        let left = rect.left - cRect.left + rect.width / 2;
+        const halfToolbarWidth = 100; // Approximate half width of toolbar
+        if (left < halfToolbarWidth) left = halfToolbarWidth;
+        if (left > cRect.width - halfToolbarWidth) left = cRect.width - halfToolbarWidth;
 
+        let top = rect.top - cRect.top - 48;
+        if (top < 10) top = rect.top - cRect.top + rect.height + 10; // Position below if too close to top
+
+        setToolbarPos({ top, left });
+      }
+    }
+
+    if (type === "text") {
       // Make the element contentEditable
       el.contentEditable = "true";
       el.focus();
@@ -152,10 +186,15 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
           />
         )}
 
-        {/* Floating text toolbar */}
+        {/* Floating toolbars */}
         <FloatingTextToolbar
-          visible={editingPath !== null}
+          visible={editingPath !== null && selection?.type === "text"}
           position={toolbarPos}
+        />
+        <FloatingImageToolbar
+          visible={editingPath !== null && selection?.type === "image"}
+          position={toolbarPos}
+          path={editingPath ?? ""}
         />
 
         {/* Template content */}

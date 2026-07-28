@@ -128,7 +128,7 @@ function Button({ href, children, quiet = false }: { href: string; children: Rea
 function Brand({ data }: { data: PremiumHospitalityData }) {
   return (
     <span className="pht-brand-lockup">
-      {data.brand.logo ? <img src={data.brand.logo} alt="" /> : <span className="pht-brand-mark" aria-hidden="true"><ForkKnife size={20} weight="bold" /></span>}
+      {data.brand.logo ? <img src={data.brand.logo} alt="" data-editable-path="brand.logo" data-editable-type="image" /> : <span className="pht-brand-mark" aria-hidden="true"><ForkKnife size={20} weight="bold" /></span>}
       <span><strong  data-editable-path="brand.name" data-editable-type="text">{data.brand.name}</strong><small  data-editable-path="brand.tagline" data-editable-type="text">{data.brand.tagline}</small></span>
     </span>
   );
@@ -174,7 +174,7 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
         </div>
         <div className="pht-hero-media pht-enter">
           <span className="pht-hero-shape" aria-hidden="true" />
-          <img src={data.hero.image} alt={data.hero.imageAlt} fetchPriority="high" />
+          <img src={data.hero.image} alt={data.hero.imageAlt} fetchPriority="high" data-editable-path="hero.image" data-editable-type="image" />
           <span className="pht-hero-badge" data-editable-path="hero.badge" data-editable-type="text">{data.hero.badge}</span>
           <span className="pht-doodle" aria-hidden="true">✦</span>
         </div>
@@ -196,7 +196,7 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
         <div className="pht-products-grid">
           {data.products.items.map((item, index) => (
             <article className={`pht-product pht-product--${index + 1} pht-reveal`} key={item.name}>
-              <div className="pht-product-media"><img src={item.image} alt={item.imageAlt} loading="lazy" /></div>
+              <div className="pht-product-media"><img src={item.image} alt={item.imageAlt} loading="lazy" data-editable-path={`products.items.${index}.image`} data-editable-type="image" /></div>
               <div><p>{String(index + 1).padStart(2, "0")}</p><h3>{item.name}</h3><span>{item.description}</span><strong>{item.price}</strong></div>
             </article>
           ))}
@@ -208,7 +208,7 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
   const renderFeature = () => (
     <section className="pht-section pht-feature" id="story" key="feature">
       <div className="pht-shell pht-feature-grid">
-        <div className="pht-feature-media pht-reveal"><img src={data.feature.image} alt={data.feature.imageAlt} loading="lazy" /><span  data-editable-path="feature.note" data-editable-type="text">{data.feature.note}</span></div>
+        <div className="pht-feature-media pht-reveal"><img src={data.feature.image} alt={data.feature.imageAlt} loading="lazy" data-editable-path="feature.image" data-editable-type="image" /><span  data-editable-path="feature.note" data-editable-type="text">{data.feature.note}</span></div>
         <div className="pht-feature-copy pht-reveal">
           <p className="pht-kicker" data-editable-path="feature.note" data-editable-type="text">{data.feature.note}</p><h2  data-editable-path="feature.title" data-editable-type="text">{data.feature.title}</h2><p  data-editable-path="feature.description" data-editable-type="text">{data.feature.description}</p>
           <div className="pht-facts">{data.feature.facts.map((fact) => <div key={fact.label}><strong>{fact.value}</strong><span>{fact.label}</span></div>)}</div>
@@ -247,7 +247,7 @@ export default function PremiumHospitalityTemplate({ data, variant }: { data: Pr
     <section className="pht-section pht-story" key="story">
       <div className="pht-shell pht-story-grid">
         <div className="pht-story-copy pht-reveal"><p className="pht-kicker" data-editable-path="story.note" data-editable-type="text">{data.story.note}</p><h2  data-editable-path="story.title" data-editable-type="text">{data.story.title}</h2><p  data-editable-path="story.description" data-editable-type="text">{data.story.description}</p><blockquote>“{data.story.quote}”</blockquote><Button href={data.story.buttonHref}>{data.story.buttonLabel}</Button></div>
-        <div className="pht-story-media pht-reveal"><img src={data.story.image} alt={data.story.imageAlt} loading="lazy" /></div>
+        <div className="pht-story-media pht-reveal"><img src={data.story.image} alt={data.story.imageAlt} loading="lazy" data-editable-path="story.image" data-editable-type="image" /></div>
       </div>
     </section>
   );

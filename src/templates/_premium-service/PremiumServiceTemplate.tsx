@@ -187,7 +187,7 @@ function ActionLink({ href, children, secondary = false }: { href: string; child
 
 function BrandMark({ data, variant }: { data: PremiumServiceData; variant: Variant }) {
   if (data.brand.logo) {
-    return <Image className="pst-logo-image" src={data.brand.logo} alt={`${data.brand.name} logo`} width={200} height={60} />;
+    return <Image className="pst-logo-image" src={data.brand.logo} alt={`${data.brand.name} logo`} width={200} height={60} data-editable-path="brand.logo" data-editable-type="image" />;
   }
   return (
     <span className="pst-logo-mark" aria-hidden="true">
@@ -277,7 +277,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
       <main id="main-content">
         <section className="pst-hero" id="top">
-          <Image className="pst-hero-bg" src={data.hero.image} alt={data.hero.imageAlt} fill priority sizes="100vw" />
+          <Image className="pst-hero-bg" src={data.hero.image} alt={data.hero.imageAlt} fill priority sizes="100vw" data-editable-path="hero.image" data-editable-type="image" />
           <div className="pst-hero-overlay" />
           <div className="pst-shell pst-hero-content">
             <Reveal className="pst-hero-copy">
@@ -316,7 +316,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
                 const Icon = serviceIcons[index % serviceIcons.length];
                 return (
                   <Reveal className={`pst-service pst-service--${index + 1}`} key={service.name}>
-                    {service.image ? <Image src={service.image} alt={service.imageAlt} width={600} height={400} /> : null}
+                    {service.image ? <Image src={service.image} alt={service.imageAlt} width={600} height={400} data-editable-path={`services.items.${index}.image`} data-editable-type="image" /> : null}
                     <div className="pst-service-content">
                       <Icon aria-hidden="true" size={27} weight="duotone" />
                       <h3>{service.name}</h3>
@@ -342,7 +342,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-process" id="process">
           <div className="pst-shell pst-process-grid">
-            <div className="pst-process-media"><Image src={data.process.image} alt={data.process.imageAlt} width={800} height={800} /></div>
+            <div className="pst-process-media"><Image src={data.process.image} alt={data.process.imageAlt} width={800} height={800} data-editable-path="process.image" data-editable-type="image" /></div>
             <div className="pst-process-copy">
               <Reveal className="pst-section-heading"><h2  data-editable-path="process.title" data-editable-type="text">{data.process.title}</h2><p  data-editable-path="process.description" data-editable-type="text">{data.process.description}</p></Reveal>
               <div className="pst-process-steps">
@@ -384,7 +384,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
             <div className="pst-gallery-grid">
               {data.gallery.images.map((item, index) => (
                 <Reveal className={`pst-gallery-item pst-gallery-item--${index + 1}`} key={`${item.caption}-${index}`}>
-                  <Image src={item.image} alt={item.imageAlt} width={600} height={400} /><p>{item.caption}</p>
+                  <Image src={item.image} alt={item.imageAlt} width={600} height={400} data-editable-path={`gallery.images.${index}.image`} data-editable-type="image" /><p>{item.caption}</p>
                 </Reveal>
               ))}
             </div>

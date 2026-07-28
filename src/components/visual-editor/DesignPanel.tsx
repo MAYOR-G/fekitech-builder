@@ -106,6 +106,13 @@ function PaletteSelector() {
 
 function TypographySelector() {
   const categories = getTypographyByCategory();
+  const updatePath = useVisualEditorStore((s) => s.updatePath);
+  const data = useVisualEditorStore((s) => s.data);
+  const currentTypography = data.typography as TypographyPairing | undefined;
+
+  const applyTypography = (pairing: TypographyPairing) => {
+    updatePath("typography", pairing, `Apply typography: ${pairing.name}`);
+  };
 
   return (
     <div className="space-y-5">
@@ -117,7 +124,12 @@ function TypographySelector() {
           <h3 className="ve-panel__group-label">{category}</h3>
           <div className="space-y-2">
             {pairings.map((pairing) => (
-              <TypographyCard key={pairing.id} pairing={pairing} />
+              <TypographyCard
+                key={pairing.id}
+                pairing={pairing}
+                isActive={currentTypography?.id === pairing.id}
+                onApply={() => applyTypography(pairing)}
+              />
             ))}
           </div>
         </div>
@@ -126,15 +138,27 @@ function TypographySelector() {
   );
 }
 
-function TypographyCard({ pairing }: { pairing: TypographyPairing }) {
+function TypographyCard({
+  pairing,
+  isActive,
+  onApply,
+}: {
+  pairing: TypographyPairing;
+  isActive: boolean;
+  onApply: () => void;
+}) {
   return (
     <button
       type="button"
-      className="ve-typo-card"
+      onClick={onApply}
+      className={`ve-typo-card ${isActive ? "ve-typo-card--active ring-2 ring-[#6C5CE7]" : ""}`}
       title={`Apply ${pairing.name} typography`}
     >
       <div>
-        <span className="ve-typo-card__name">{pairing.name}</span>
+        <span className="ve-typo-card__name flex items-center gap-2">
+          {pairing.name}
+          {isActive && <Check size={12} className="text-[#6C5CE7]" />}
+        </span>
         <span className="ve-typo-card__fonts">
           {pairing.displayFont}
           {pairing.bodyFont !== pairing.displayFont ? ` + ${pairing.bodyFont}` : ""}
