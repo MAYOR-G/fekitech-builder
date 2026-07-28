@@ -19,14 +19,14 @@ function App() {
   const { experiences, featuredDishes, galleryItems, menuCategories, reasons, reviews } = useTemplateData();
 
   return (
-    <div className="min-h-screen bg-dining-room text-cream">
+    <div className="min-h-screen bg-dining-room text-halcyon-table-cream">
       <Navbar />
       <main>
         <Hero />
 
         <section
           id="dishes"
-          className="page-panel bg-white px-5 py-20 text-coal lg:px-8"
+          className="page-panel bg-white px-5 py-20 text-halcyon-table-coal lg:px-8"
         >
           <div className="mx-auto max-w-7xl">
             <Reveal>
@@ -36,7 +36,7 @@ function App() {
                   title="Food photography, pricing, and appetite in the first few scrolls."
                   description="The featured dish cards are built for quick discovery: name, category, price, image, and a polished description guests can trust."
                 />
-                <p className="max-w-xl text-base leading-8 text-graphite/72 lg:justify-self-end">
+                <p className="max-w-xl text-base leading-8 text-halcyon-table-graphite/72 lg:justify-self-end">
                   Signature cards make best sellers, seasonal specials, brunch
                   favorites, chef tasting highlights, and private dining menus
                   easy to scan.
@@ -76,7 +76,7 @@ function App() {
 
         <section
           id="experience"
-          className="page-panel section-divider bg-coal px-5 py-20 lg:px-8"
+          className="page-panel section-divider bg-halcyon-table-coal px-5 py-20 lg:px-8"
         >
           <div className="mx-auto max-w-7xl">
             <Reveal>
@@ -99,7 +99,7 @@ function App() {
 
         <section
           id="why"
-          className="page-panel section-divider bg-warm-paper px-5 py-20 text-coal lg:px-8"
+          className="page-panel section-divider bg-warm-paper px-5 py-20 text-halcyon-table-coal lg:px-8"
         >
           <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.86fr_1.14fr]">
             <Reveal>
@@ -129,7 +129,7 @@ function App() {
                 tone="light"
               />
             </Reveal>
-            <div className="mt-12 rounded-[1.4rem] bg-cream/[0.035] p-3 shadow-glow sm:p-4">
+            <div className="mt-12 rounded-[1.4rem] bg-halcyon-table-cream/[0.035] p-3 shadow-glow sm:p-4">
               <div className="grid gap-3 lg:grid-cols-[1.15fr_0.9fr_0.9fr] lg:auto-rows-[270px]">
                 {galleryItems.map((item, index) => (
                   <Reveal

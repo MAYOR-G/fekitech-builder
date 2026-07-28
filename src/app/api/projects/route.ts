@@ -1,8 +1,7 @@
-import { Prisma } from "@/generated/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { enforceJsonRequest, enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
 import { requireAuth } from "@/lib/api-auth";
-import { prisma } from "@/lib/db";
+import { createClient } from "@/lib/supabase/server";
 import { createProjectSchema, isValidEditableData } from "@/lib/project-validation";
 import { getUserPlan } from "@/lib/subscriptions";
 import { canPlanUseTemplate } from "@/lib/plans";
@@ -12,22 +11,32 @@ export async function GET() {
   const sessionOrResponse = await requireAuth();
   if (sessionOrResponse instanceof NextResponse) return sessionOrResponse;
 
-  const projects = await prisma.project.findMany({
-    where: { userId: sessionOrResponse.user.id },
-    orderBy: { updatedAt: "desc" },
-    select: {
-      id: true,
-      name: true,
-      templateId: true,
-      subdomain: true,
-      customDomain: true,
-      customDomainVerifiedAt: true,
-      isPublished: true,
-      createdAt: true,
-      updatedAt: true,
-    },
-  });
-  return NextResponse.json({ projects });
+  const supabase = await createClient();
+  const { data: projects, error } = await supabase
+    .from("projects")
+    .select("id, name, template_id, subdomain, custom_domain, custom_domain_verified_at, is_published, created_at, updated_at")
+    .eq("user_id", sessionOrResponse.user.id)
+    .order("updated_at", { ascending: false });
+
+  if (error) {
+    console.error("GET /api/projects error", error);
+    return NextResponse.json({ error: "Unable to load projects." }, { status: 500 });
+  }
+
+  // Map snake_case to camelCase for frontend compatibility
+  const mapped = (projects ?? []).map((p) => ({
+    id: p.id,
+    name: p.name,
+    templateId: p.template_id,
+    subdomain: p.subdomain,
+    customDomain: p.custom_domain,
+    customDomainVerifiedAt: p.custom_domain_verified_at,
+    isPublished: p.is_published,
+    createdAt: p.created_at,
+    updatedAt: p.updated_at,
+  }));
+
+  return NextResponse.json({ projects: mapped });
 }
 
 export async function POST(request: NextRequest) {
@@ -64,49 +73,45 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  try {
-    const project = await prisma.$transaction(async (transaction) => {
-      const current = await transaction.project.count({ where: { userId: sessionOrResponse.user.id } });
-      if (current >= userPlan.definition.entitlements.maxProjects) {
-        throw new ProjectLimitError(userPlan.definition.entitlements.maxProjects);
-      }
+  const supabase = await createClient();
 
-      const created = await transaction.project.create({
-        data: {
-          name: parsed.data.name ?? `My ${template.config.name} Website`,
-          userId: sessionOrResponse.user.id,
-          templateId: parsed.data.templateId,
-          editableData: template.defaultData,
-        },
-      });
-      await transaction.activityLog.create({
-        data: {
-          userId: sessionOrResponse.user.id,
-          action: "project.created",
-          details: JSON.stringify({ projectId: created.id, templateId: created.templateId }),
-        },
-      });
-      return created;
-    }, { isolationLevel: Prisma.TransactionIsolationLevel.Serializable });
+  // Check project count
+  const { count } = await supabase
+    .from("projects")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", sessionOrResponse.user.id);
 
-    return NextResponse.json({ project }, { status: 201 });
-  } catch (error) {
-    if (error instanceof ProjectLimitError) {
-      return NextResponse.json(
-        { error: `Your plan supports up to ${error.limit} projects.` },
-        { status: 403 },
-      );
-    }
-    if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2034") {
-      return NextResponse.json({ error: "Project capacity changed. Please retry." }, { status: 409 });
-    }
+  if ((count ?? 0) >= userPlan.definition.entitlements.maxProjects) {
+    return NextResponse.json(
+      { error: `Your plan supports up to ${userPlan.definition.entitlements.maxProjects} projects.` },
+      { status: 403 },
+    );
+  }
+
+  const { data: project, error } = await supabase
+    .from("projects")
+    .insert({
+      name: parsed.data.name ?? `My ${template.config.name} Website`,
+      user_id: sessionOrResponse.user.id,
+      template_id: parsed.data.templateId,
+      editable_data: template.defaultData,
+    })
+    .select()
+    .single();
+
+  if (error) {
     console.error("POST /api/projects error", error);
     return NextResponse.json({ error: "Unable to create the project." }, { status: 500 });
   }
-}
 
-class ProjectLimitError extends Error {
-  constructor(readonly limit: number) {
-    super("Project limit reached");
-  }
+  // Log activity (using admin client to bypass RLS on activity_logs)
+  const { getAdminDb } = await import("@/lib/db");
+  const admin = getAdminDb();
+  await admin.from("activity_logs").insert({
+    user_id: sessionOrResponse.user.id,
+    action: "project.created",
+    details: JSON.stringify({ projectId: project.id, templateId: project.template_id }),
+  });
+
+  return NextResponse.json({ project }, { status: 201 });
 }

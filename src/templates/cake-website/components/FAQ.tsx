@@ -24,7 +24,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="bg-white px-5 py-24 lg:px-8 border-t border-chocolate/5">
+    <section className="bg-white px-5 py-24 lg:px-8 border-t border-sweet-cake-chocolate/5">
       <div className="mx-auto max-w-3xl">
         <Reveal>
           <SectionHeader
@@ -38,10 +38,10 @@ export function FAQ() {
         <div className="mt-16 space-y-2">
           {faqs.map((faq, index) => (
             <Reveal key={index} delay={index * 50}>
-              <details className="group border-b border-chocolate/10 bg-white">
-                <summary className="flex cursor-pointer items-center justify-between py-6 px-4 font-display text-xl text-ganache marker:content-none hover:bg-[#FFFBF7] transition-colors">
+              <details className="group border-b border-sweet-cake-chocolate/10 bg-white">
+                <summary className="flex cursor-pointer items-center justify-between py-6 px-4 font-sweet-cake-display text-xl text-sweet-cake-ganache marker:content-none hover:bg-[#FFFBF7] transition-colors">
                   <span className="pr-6">{faq.question}</span>
-                  <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-chantilly text-rose transition-transform duration-300 group-open:rotate-45">
+                  <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sweet-cake-chantilly text-sweet-cake-rose transition-transform duration-300 group-open:rotate-45">
                     <Plus className="h-4 w-4" />
                   </span>
                 </summary>

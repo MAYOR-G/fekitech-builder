@@ -44,11 +44,11 @@ export function WhyChooseUsSection() {
                 const Icon = point.icon;
                 return (
                   <motion.div variants={itemVariants} key={point.title} className="group flex gap-5">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm border border-slate-200 text-cobalt transition-colors group-hover:bg-cobalt group-hover:text-white">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm border border-slate-200 text-spark-electric-cobalt transition-colors group-hover:bg-spark-electric-cobalt group-hover:text-white">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <h3 className="font-display text-lg font-bold text-navy">
+                      <h3 className="font-spark-electric-display text-lg font-bold text-spark-electric-navy">
                         {point.title}
                       </h3>
                       <p className="mt-2 text-slate-600 leading-relaxed">
@@ -81,11 +81,11 @@ export function WhyChooseUsSection() {
             {/* Floating Trust Badge */}
             <div className="absolute -bottom-6 -left-6 md:bottom-12 md:-left-12 bg-white rounded-2xl p-6 shadow-xl border border-slate-100 max-w-xs">
               <div className="flex items-center gap-4 mb-3">
-                <div className="h-12 w-12 rounded-full bg-amber/20 text-amber flex items-center justify-center">
+                <div className="h-12 w-12 rounded-full bg-spark-electric-amber/20 text-spark-electric-amber flex items-center justify-center">
                   <ShieldCheck className="h-6 w-6" />
                 </div>
                 <div>
-                  <p className="font-bold text-navy">Fully Licensed</p>
+                  <p className="font-bold text-spark-electric-navy">Fully Licensed</p>
                   <p className="text-sm text-slate-500">Insured & Bonded</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export function WhyChooseUsSection() {
             </div>
             
             {/* Background Decorative Element */}
-            <div className="absolute -z-10 top-1/2 -right-12 w-64 h-64 bg-cyan/20 rounded-full blur-[80px]" />
+            <div className="absolute -z-10 top-1/2 -right-12 w-64 h-64 bg-spark-electric-cyan/20 rounded-full blur-[80px]" />
           </motion.div>
 
         </div>

@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-
-
-@import "tailwindcss";
-
-:root {
+.sweet-cake-template {
   color: #231715;
   background: #ffffff;
   font-synthesis: none;
@@ -12,49 +7,41 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-* {
+.sweet-cake-template *,
+.sweet-cake-template *::before,
+.sweet-cake-template *::after {
   box-sizing: border-box;
 }
-
-html {
+.sweet-cake-template {
   scroll-behavior: smooth;
 }
-
-.template-wrapper {
+.sweet-cake-template {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   background: #ffffff;
   font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
 }
-
-.template-wrapper::before {
+.sweet-cake-template::before {
   content: "";
   display: none;
 }
-
-.template-wrapper button,
-.template-wrapper a {
+.sweet-cake-template button,
+.sweet-cake-template a {
   -webkit-tap-highlight-color: transparent;
 }
-
-.template-wrapper img {
+.sweet-cake-template img {
   max-width: 100%;
 }
-
-.template-wrapper p {
+.sweet-cake-template p {
   overflow-wrap: break-word;
 }
-
-section[id] {
+.sweet-cake-template section[id] {
   scroll-margin-top: 92px;
 }
-
-::selection {
+.sweet-cake-template ::selection {
   background: rgba(201, 111, 121, 0.24);
 }
-
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -65,49 +52,45 @@ section[id] {
     filter 760ms cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform, filter;
 }
-
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
-
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+.sweet-cake-template *,
+.sweet-cake-template *::before,
+.sweet-cake-template *::after {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-
-  .reveal {
+.reveal {
     opacity: 1;
     transform: none;
     filter: none;
   }
 }
-
 /* INJECTED FROM tailwind.config.js (v3->v4 port).
    Without these `@theme` tokens, the v4 build cannot recognize
    the original v3 color utilities like `bg-gym-dark` or `font-sans` */
 @theme {
   /* colors */
-  --color-cream: #FFF3E3;
-  --color-chantilly: #fffaf4;
-  --color-blush: #f3c8c6;
-  --color-rose: #c96f79;
-  --color-petal: #f8e5df;
-  --color-cocoa: #6f4a36;
-  --color-chocolate: #3a241c;
-  --color-ganache: #231715;
-  --color-champagne: #c89f5d;
-  --color-pistachio: #9ea88a;
-  --color-almond: #ead8c6;
+  --color-sweet-cake-cream: #FFF3E3;
+  --color-sweet-cake-chantilly: #fffaf4;
+  --color-sweet-cake-blush: #f3c8c6;
+  --color-sweet-cake-rose: #c96f79;
+  --color-sweet-cake-petal: #f8e5df;
+  --color-sweet-cake-cocoa: #6f4a36;
+  --color-sweet-cake-chocolate: #3a241c;
+  --color-sweet-cake-ganache: #231715;
+  --color-sweet-cake-champagne: #c89f5d;
+  --color-sweet-cake-pistachio: #9ea88a;
+  --color-sweet-cake-almond: #ead8c6;
   /* fonts */
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Inter', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-sweet-cake-display: 'Playfair Display', 'Georgia', serif;
+  --font-sweet-cake-body: 'Inter', 'Avenir Next', 'Segoe UI', sans-serif;
   /* shadows */
   --shadow-soft: 0 24px 70px rgba(70, 39, 28, 0.13);
   --shadow-card: 0 18px 44px rgba(68, 39, 30, 0.11);
@@ -120,7 +103,6 @@ section[id] {
   --animate-rise: riseIn 700ms ease both;
   --animate-floatSoft: floatSoft 6s ease-in-out infinite;
 }
-
 @keyframes riseIn {
   0% {
     opacity: 0;
@@ -131,7 +113,6 @@ section[id] {
     transform: translateY(0);
   }
 }
-
 @keyframes floatSoft {
   0%, 100% {
     transform: translateY(0);
@@ -141,3 +122,46 @@ section[id] {
   }
 }
 
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .text-sweet-cake-cream{color:#FFF3E3;}
+  .text-sweet-cake-cream\/70{color:color-mix(in srgb, #FFF3E3 70%, transparent);}
+  .text-sweet-cake-cream\/80{color:color-mix(in srgb, #FFF3E3 80%, transparent);}
+  .border-sweet-cake-cream\/20{border-color:color-mix(in srgb, #FFF3E3 20%, transparent);}
+  .bg-sweet-cake-chantilly{background-color:#fffaf4;}
+  .text-sweet-cake-blush{color:#f3c8c6;}
+  .hover\:border-sweet-cake-blush:hover{border-color:#f3c8c6;}
+  .bg-sweet-cake-blush{background-color:#f3c8c6;}
+  .text-sweet-cake-rose\/90{color:color-mix(in srgb, #c96f79 90%, transparent);}
+  .hover\:border-sweet-cake-rose\/35:hover{border-color:color-mix(in srgb, #c96f79 35%, transparent);}
+  .focus-visible\:ring-sweet-cake-rose\/25:focus-visible{--tw-ring-color:color-mix(in srgb, #c96f79 25%, transparent);}
+  .text-sweet-cake-rose{color:#c96f79;}
+  .hover\:border-sweet-cake-rose\/40:hover{border-color:color-mix(in srgb, #c96f79 40%, transparent);}
+  .hover\:text-sweet-cake-rose:hover{color:#c96f79;}
+  .hover\:bg-sweet-cake-rose:hover{background-color:#c96f79;}
+  .text-sweet-cake-rose\/10{color:color-mix(in srgb, #c96f79 10%, transparent);}
+  .group:hover .group-hover\:text-sweet-cake-rose\/20{color:color-mix(in srgb, #c96f79 20%, transparent);}
+  .text-sweet-cake-rose\/80{color:color-mix(in srgb, #c96f79 80%, transparent);}
+  .text-sweet-cake-rose\/20{color:color-mix(in srgb, #c96f79 20%, transparent);}
+  .text-sweet-cake-cocoa{color:#6f4a36;}
+  .text-sweet-cake-cocoa\/80{color:color-mix(in srgb, #6f4a36 80%, transparent);}
+  .border-sweet-cake-chocolate\/5{border-color:color-mix(in srgb, #3a241c 5%, transparent);}
+  .bg-sweet-cake-chocolate\/5{background-color:color-mix(in srgb, #3a241c 5%, transparent);}
+  .border-sweet-cake-chocolate\/10{border-color:color-mix(in srgb, #3a241c 10%, transparent);}
+  .hover\:bg-sweet-cake-chocolate:hover{background-color:#3a241c;}
+  .border-sweet-cake-chocolate\/15{border-color:color-mix(in srgb, #3a241c 15%, transparent);}
+  .text-sweet-cake-chocolate{color:#3a241c;}
+  .text-sweet-cake-chocolate\/76{color:color-mix(in srgb, #3a241c 76%, transparent);}
+  .text-sweet-cake-chocolate\/78{color:color-mix(in srgb, #3a241c 78%, transparent);}
+  .bg-sweet-cake-chocolate\/10{background-color:color-mix(in srgb, #3a241c 10%, transparent);}
+  .text-sweet-cake-ganache{color:#231715;}
+  .bg-sweet-cake-ganache{background-color:#231715;}
+  .bg-sweet-cake-ganache\/10{background-color:color-mix(in srgb, #231715 10%, transparent);}
+  .bg-sweet-cake-ganache\/40{background-color:color-mix(in srgb, #231715 40%, transparent);}
+  .bg-sweet-cake-ganache\/30{background-color:color-mix(in srgb, #231715 30%, transparent);}
+  .hover\:text-sweet-cake-ganache:hover{color:#231715;}
+  .border-sweet-cake-ganache\/30{border-color:color-mix(in srgb, #231715 30%, transparent);}
+  .hover\:border-sweet-cake-ganache:hover{border-color:#231715;}
+  .font-sweet-cake-display{font-family:'Playfair Display', 'Georgia', serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

@@ -83,7 +83,7 @@ export default function TrustBar() {
             >
               <feature.icon className="w-8 h-8 text-[#C9A84C] opacity-80 group-hover:opacity-100 transition-opacity duration-300" strokeWidth={1.5} />
               
-              <h3 className="font-display tracking-widest text-lg text-white">
+              <h3 className="font-ink-iron-display tracking-widest text-lg text-white">
                 {feature.title}
               </h3>
               

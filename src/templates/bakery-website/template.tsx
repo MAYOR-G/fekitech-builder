@@ -25,7 +25,7 @@ export default function IceCreamWebsiteTemplate({ data }: { data: TemplateData }
     <TemplateContext.Provider value={templateData}>
       <div 
         style={themeStyles} 
-        className={`${pacifico.variable} ${nunito.variable} template-wrapper min-h-screen w-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)] font-nunito selection:bg-[var(--color-primary)] selection:text-white overflow-hidden`}
+        className={`${pacifico.variable} ${nunito.variable} sweet-blossom-template min-h-screen w-full flex flex-col bg-[var(--color-bg)] text-[var(--color-text)] font-nunito selection:bg-[var(--color-primary)] selection:text-white overflow-hidden`}
       >
         <Main />
       </div>

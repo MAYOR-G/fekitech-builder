@@ -24,7 +24,7 @@
     "primaryHref": "#contact",
     "secondaryLabel": "See the menu",
     "secondaryHref": "#menu",
-    "image": "/templates/assets/luma-slice-hero-v2.webp",
+    "image": "/templates/pizza-light-clean/assets/hero-pizza.webp",
     "imageAlt": "Luma Slice artisan margherita pizza with basil and yellow tomatoes",
     "badgeValue": "48H",
     "badgeLabel": "slow and sunny"
@@ -37,7 +37,7 @@
     "price": "$16",
     "buttonLabel": "Order this pie",
     "buttonHref": "#contact",
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=90",
+    "image": "/templates/pizza-light-clean/assets/hero-pizza.webp",
     "imageAlt": "Bright artisan margherita pizza"
   },
   "dishes": {
@@ -46,10 +46,10 @@
     "buttonLabel": "View full menu",
     "buttonHref": "#menu",
     "items": [
-      { "name": "Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Margherita pizza with basil" },
-      { "name": "Lemon and Mushroom", "description": "Mushrooms, arugula, lemon cream, herbs.", "price": "$17", "image": "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Mushroom pizza with fresh greens" },
-      { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18", "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Spicy artisan pizza with red onion" },
-      { "name": "Sunbeam Salad", "description": "Citrus, fennel, herbs, greens, toasted seeds.", "price": "$12", "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Colorful seasonal green salad" }
+      { "name": "Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16", "image": "/templates/pizza-light-clean/assets/hero-pizza.webp", "imageAlt": "Margherita pizza with basil" },
+      { "name": "Lemon and Mushroom", "description": "Mushrooms, arugula, lemon cream, herbs.", "price": "$17", "image": "/templates/pizza-light-clean/assets/produce.webp", "imageAlt": "Mushroom pizza with fresh greens" },
+      { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18", "image": "/templates/pizza-light-clean/assets/kitchen.webp", "imageAlt": "Spicy artisan pizza with red onion" },
+      { "name": "Sunbeam Salad", "description": "Citrus, fennel, herbs, greens, toasted seeds.", "price": "$12", "image": "/templates/pizza-light-clean/assets/table.webp", "imageAlt": "Colorful seasonal green salad" }
     ]
   },
   "menu": {
@@ -79,19 +79,19 @@
     "description": "Luma Slice brings together local growers, thoughtful flour, and the joy of sharing great pizza. We ferment every dough slowly and fire each pie with care so the ingredients stay bright.",
     "buttonLabel": "Come say hello",
     "buttonHref": "#gallery",
-    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=88",
+    "image": "/templates/pizza-light-clean/assets/pizzeria.webp",
     "imageAlt": "Sunlit neighborhood pizzeria interior",
-    "secondaryImage": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=900&q=88",
+    "secondaryImage": "/templates/pizza-light-clean/assets/table.webp",
     "secondaryImageAlt": "Colorful casual restaurant table"
   },
   "gallery": {
     "title": "A slice of Luma",
     "description": "Sunlit lunches, fiery ovens, shared pies, and a room full of color.",
     "images": [
-      { "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Fresh pizza ready to share" },
-      { "image": "https://images.unsplash.com/photo-1583953623787-ada99d338235?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Wood fire inside a pizza oven" },
-      { "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Friends sharing colorful food" },
-      { "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Bright modern pizzeria dining room" }
+      { "image": "/templates/pizza-light-clean/assets/pizzeria.webp", "imageAlt": "Fresh pizza ready to share" },
+      { "image": "/templates/pizza-light-clean/assets/produce.webp", "imageAlt": "Seasonal ingredients" },
+      { "image": "/templates/pizza-light-clean/assets/table.webp", "imageAlt": "Friends sharing colorful food" },
+      { "image": "/templates/pizza-light-clean/assets/kitchen.webp", "imageAlt": "Bright modern pizzeria dining room" }
     ]
   },
   "reviews": {

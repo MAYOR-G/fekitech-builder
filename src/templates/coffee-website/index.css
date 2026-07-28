@@ -1,43 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
-
-
-@import "tailwindcss";
-
 @layer base {
-  html {
+.artisan-coffee-template {
     scroll-behavior: smooth;
   }
-  
-  .template-wrapper {
-    @apply bg-coffee-light text-coffee-dark font-sans antialiased;
+.artisan-coffee-template {
+    background: #fdfbf7;
+    color: #2c2420;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
-
 @layer components {
-  .glass-panel {
-    @apply bg-coffee-light/80 backdrop-blur-md border border-coffee-cream shadow-sm;
+.glass-panel {
+    background: rgba(253, 251, 247, 0.8);
+    border: 1px solid #f2ece4;
+    box-shadow: 0 1px 2px rgba(44, 36, 32, 0.06);
+    backdrop-filter: blur(12px);
   }
-  
-  .dark-glass-panel {
-    @apply bg-coffee-dark/80 backdrop-blur-md border border-coffee-brown shadow-sm;
+.dark-glass-panel {
+    background: rgba(44, 36, 32, 0.8);
+    border: 1px solid #4a3b32;
+    box-shadow: 0 1px 2px rgba(44, 36, 32, 0.08);
+    backdrop-filter: blur(12px);
   }
 }
-
 /* INJECTED FROM tailwind.config.js (v3->v4 port).
    Without these `@theme` tokens, the v4 build cannot recognize
-   the original v3 color utilities like `bg-gym-dark` or `font-sans` */
+   the original v3 color utilities like `bg-gym-dark` or `font-artisan-coffee-sans` */
 @theme {
   /* colors */
-  --color-coffee-light: #fdfbf7;
-  --color-coffee-cream: #f2ece4;
-  --color-coffee-accent: #c0a080;
-  --color-coffee-terracotta: #c97a5e;
-  --color-coffee-green: #7b8c7c;
-  --color-coffee-brown: #4a3b32;
-  --color-coffee-dark: #2c2420;
+  --color-artisan-coffee-coffee-light: #fdfbf7;
+  --color-artisan-coffee-coffee-cream: #f2ece4;
+  --color-artisan-coffee-coffee-accent: #c0a080;
+  --color-artisan-coffee-coffee-terracotta: #c97a5e;
+  --color-artisan-coffee-coffee-green: #7b8c7c;
+  --color-artisan-coffee-coffee-brown: #4a3b32;
+  --color-artisan-coffee-coffee-dark: #2c2420;
   /* fonts */
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-artisan-coffee-sans: 'Inter', sans-serif;
+  --font-artisan-coffee-serif: 'Playfair Display', serif;
 }
 
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .bg-artisan-coffee-coffee-light{background-color:#fdfbf7;}
+  .selection\:text-artisan-coffee-coffee-light::selection{color:#fdfbf7;}
+  .bg-artisan-coffee-coffee-light\/95{background-color:color-mix(in srgb, #fdfbf7 95%, transparent);}
+  .bg-artisan-coffee-coffee-light\/90{background-color:color-mix(in srgb, #fdfbf7 90%, transparent);}
+  .hover\:text-artisan-coffee-coffee-light:hover{color:#fdfbf7;}
+  .border-artisan-coffee-coffee-light{border-color:#fdfbf7;}
+  .text-artisan-coffee-coffee-light{color:#fdfbf7;}
+  .border-artisan-coffee-coffee-light\/20{border-color:color-mix(in srgb, #fdfbf7 20%, transparent);}
+  .text-artisan-coffee-coffee-light\/70{color:color-mix(in srgb, #fdfbf7 70%, transparent);}
+  .border-artisan-coffee-coffee-light\/30{border-color:color-mix(in srgb, #fdfbf7 30%, transparent);}
+  .hover\:bg-artisan-coffee-coffee-light:hover{background-color:#fdfbf7;}
+  .text-artisan-coffee-coffee-light\/80{color:color-mix(in srgb, #fdfbf7 80%, transparent);}
+  .border-artisan-coffee-coffee-light\/50{border-color:color-mix(in srgb, #fdfbf7 50%, transparent);}
+  .focus-within\:border-artisan-coffee-coffee-light:focus-within{border-color:#fdfbf7;}
+  .text-artisan-coffee-coffee-light\/50{color:color-mix(in srgb, #fdfbf7 50%, transparent);}
+  .bg-artisan-coffee-coffee-cream{background-color:#f2ece4;}
+  .border-artisan-coffee-coffee-cream{border-color:#f2ece4;}
+  .selection\:bg-artisan-coffee-coffee-terracotta::selection{background-color:#c97a5e;}
+  .text-artisan-coffee-coffee-terracotta{color:#c97a5e;}
+  .hover\:text-artisan-coffee-coffee-terracotta:hover{color:#c97a5e;}
+  .border-artisan-coffee-coffee-terracotta{border-color:#c97a5e;}
+  .bg-artisan-coffee-coffee-terracotta{background-color:#c97a5e;}
+  .group:hover .group-hover\:text-artisan-coffee-coffee-terracotta{color:#c97a5e;}
+  .bg-artisan-coffee-coffee-terracotta\/60{background-color:color-mix(in srgb, #c97a5e 60%, transparent);}
+  .border-artisan-coffee-coffee-terracotta\/30{border-color:color-mix(in srgb, #c97a5e 30%, transparent);}
+  .border-artisan-coffee-coffee-brown\/10{border-color:color-mix(in srgb, #4a3b32 10%, transparent);}
+  .divide-artisan-coffee-coffee-brown\/20 > :not(:last-child){border-color:color-mix(in srgb, #4a3b32 20%, transparent);}
+  .border-artisan-coffee-coffee-brown\/20{border-color:color-mix(in srgb, #4a3b32 20%, transparent);}
+  .border-artisan-coffee-coffee-brown\/30{border-color:color-mix(in srgb, #4a3b32 30%, transparent);}
+  .hover\:bg-artisan-coffee-coffee-brown:hover{background-color:#4a3b32;}
+  .bg-artisan-coffee-coffee-brown\/20{background-color:color-mix(in srgb, #4a3b32 20%, transparent);}
+  .bg-artisan-coffee-coffee-brown{background-color:#4a3b32;}
+  .text-artisan-coffee-coffee-dark{color:#2c2420;}
+  .text-artisan-coffee-coffee-dark\/80{color:color-mix(in srgb, #2c2420 80%, transparent);}
+  .border-artisan-coffee-coffee-dark{border-color:#2c2420;}
+  .hover\:bg-artisan-coffee-coffee-dark:hover{background-color:#2c2420;}
+  .hover\:text-artisan-coffee-coffee-dark:hover{color:#2c2420;}
+  .hover\:border-artisan-coffee-coffee-dark:hover{border-color:#2c2420;}
+  .text-artisan-coffee-coffee-dark\/60{color:color-mix(in srgb, #2c2420 60%, transparent);}
+  .bg-artisan-coffee-coffee-dark{background-color:#2c2420;}
+  .from-artisan-coffee-coffee-dark\/90{--tw-gradient-from:color-mix(in srgb, #2c2420 90%, transparent);--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-to) var(--tw-gradient-to-position));}
+  .via-artisan-coffee-coffee-dark\/20{--tw-gradient-via:color-mix(in srgb, #2c2420 20%, transparent);--tw-gradient-via-stops:var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-via) var(--tw-gradient-via-position),var(--tw-gradient-to) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-via-stops);}
+  .bg-artisan-coffee-coffee-dark\/0{background-color:color-mix(in srgb, #2c2420 0%, transparent);}
+  .group:hover .group-hover\:bg-artisan-coffee-coffee-dark\/10{background-color:color-mix(in srgb, #2c2420 10%, transparent);}
+  .font-artisan-coffee-sans{font-family:'Inter', sans-serif;}
+  .font-artisan-coffee-serif{font-family:'Playfair Display', serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

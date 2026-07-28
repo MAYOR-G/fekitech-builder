@@ -18,7 +18,7 @@ export function ImageFrame({
   loading = "lazy",
 }: ImageFrameProps) {
   return (
-    <div className={cn("overflow-hidden bg-graphite", className)}>
+    <div className={cn("overflow-hidden bg-halcyon-table-graphite", className)}>
       <TemplateImage
         src={src}
         alt={alt}

@@ -29,7 +29,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="flex flex-col gap-6">
-            <h2 className="font-display text-4xl tracking-widest text-white">
+            <h2 className="font-ink-iron-display text-4xl tracking-widest text-white">
               INK & <span className="text-[#8B2635]">IRON</span>
             </h2>
             <p className="text-[#F5F5F5]/70 text-sm leading-relaxed max-w-[280px]">
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-display text-xl tracking-widest text-white mb-2">CONTACT</h3>
+            <h3 className="font-ink-iron-display text-xl tracking-widest text-white mb-2">CONTACT</h3>
             <ul className="flex flex-col gap-4 text-sm text-[#F5F5F5]/70">
               <li className="flex items-start gap-3 hover:text-white transition-colors cursor-pointer">
                 <MapPin className="w-5 h-5 text-[#C9A84C] shrink-0" />
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Hours */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-display text-xl tracking-widest text-white mb-2">HOURS</h3>
+            <h3 className="font-ink-iron-display text-xl tracking-widest text-white mb-2">HOURS</h3>
             <ul className="flex flex-col gap-4 text-sm text-[#F5F5F5]/70">
               <li className="flex justify-between border-b border-white/5 pb-2">
                 <span>Monday - Thursday</span>
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div className="flex flex-col gap-6">
-            <h3 className="font-display text-xl tracking-widest text-white mb-2">THE UNDERGROUND</h3>
+            <h3 className="font-ink-iron-display text-xl tracking-widest text-white mb-2">THE UNDERGROUND</h3>
             <p className="text-[#F5F5F5]/70 text-sm leading-relaxed">
               Join our mailing list for guest artist announcements, flash days, and exclusive merchandise drops.
             </p>
@@ -107,7 +107,7 @@ export default function Footer() {
 
         {/* Massive Footer Typography */}
         <div className="w-full overflow-hidden flex justify-center py-12 border-t border-white/10">
-          <h1 className="font-display text-[12vw] leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent select-none whitespace-nowrap">
+          <h1 className="font-ink-iron-display text-[12vw] leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white/10 to-transparent select-none whitespace-nowrap">
             INK & IRON
           </h1>
         </div>

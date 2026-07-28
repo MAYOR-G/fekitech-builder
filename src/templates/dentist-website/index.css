@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Jost:wght@400;500;600;700;800&display=swap");
-
-
-
-@import "tailwindcss";
-
-:root {
+.bright-dental-template {
   color: #13272b;
   background: #f8fbfa;
   font-synthesis: none;
@@ -12,16 +7,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-* {
+.bright-dental-template *,
+.bright-dental-template *::before,
+.bright-dental-template *::after {
   box-sizing: border-box;
 }
-
-html {
+.bright-dental-template {
   scroll-behavior: smooth;
 }
-
-.template-wrapper {
+.bright-dental-template {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -33,8 +27,7 @@ html {
   background-size: 76px 76px, 76px 76px, auto, auto;
   font-family: "Jost", "Avenir Next", "Segoe UI", sans-serif;
 }
-
-.template-wrapper::before {
+.bright-dental-template::before {
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -44,40 +37,32 @@ html {
     linear-gradient(115deg, rgba(255, 255, 255, 0.64), transparent 48%),
     linear-gradient(300deg, rgba(183, 138, 77, 0.13), transparent 62%);
 }
-
-.template-wrapper a,
-.template-wrapper button,
-.template-wrapper select {
+.bright-dental-template a,
+.bright-dental-template button,
+.bright-dental-template select {
   -webkit-tap-highlight-color: transparent;
 }
-
-.template-wrapper button,
-.template-wrapper select {
+.bright-dental-template button,
+.bright-dental-template select {
   cursor: pointer;
 }
-
-.template-wrapper img {
+.bright-dental-template img {
   max-width: 100%;
 }
-
-section[id] {
+.bright-dental-template section[id] {
   scroll-margin-top: 92px;
 }
-
-::selection {
+.bright-dental-template ::selection {
   background: rgba(79, 183, 174, 0.25);
 }
-
 .magnetic-link {
   --magnet-x: 0px;
   --magnet-y: 0px;
   transform: translate3d(var(--magnet-x), var(--magnet-y), 0);
 }
-
 .hero-panel {
   isolation: isolate;
 }
-
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -87,17 +72,14 @@ section[id] {
     transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
     filter 720ms cubic-bezier(0.22, 1, 0.36, 1);
 }
-
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
-
 .image-reveal {
   clip-path: inset(0 0 0 0 round 1.5rem);
 }
-
 .service-card::after {
   position: absolute;
   inset: auto 20px 20px auto;
@@ -113,82 +95,71 @@ section[id] {
     opacity 300ms ease,
     transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
-
 .service-card:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-
 .journey-card img,
 .image-reveal img {
   transform-origin: center;
 }
-
 .testimonial-track:hover {
   animation-play-state: paused;
 }
-
 @media (min-width: 1024px) {
-  .journey-rail {
+.journey-rail {
     will-change: transform;
   }
 }
-
 @media (max-width: 1023px) {
-  .journey-section {
+.journey-section {
     height: auto;
   }
-
-  .journey-rail {
+.journey-rail {
     transform: none !important;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+.bright-dental-template *,
+.bright-dental-template *::before,
+.bright-dental-template *::after {
     scroll-behavior: auto !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-
-  .reveal {
+.reveal {
     opacity: 1;
     transform: none;
     filter: none;
   }
-
-  .magnetic-link {
+.magnetic-link {
     transform: none !important;
   }
-
-  .journey-rail {
+.journey-rail {
     transform: none !important;
   }
 }
-
 /* INJECTED FROM tailwind.config.js (v3->v4 port).
    Without these `@theme` tokens, the v4 build cannot recognize
    the original v3 color utilities like `bg-gym-dark` or `font-sans` */
 @theme {
   /* colors */
-  --color-porcelain: #f8fbfa;
-  --color-pearl: #eef8f5;
-  --color-cloud: #e7f3f5;
-  --color-mint: #c8efe4;
-  --color-lagoon: #4fb7ae;
-  --color-ocean: #1d7688;
-  --color-ink: #13272b;
-  --color-graphite: #314246;
-  --color-mist: #6f8588;
-  --color-sand: #f1e5d2;
-  --color-champagne: #b78a4d;
-  --color-coral: #d97964;
+  --color-bright-dental-porcelain: #f8fbfa;
+  --color-bright-dental-pearl: #eef8f5;
+  --color-bright-dental-cloud: #e7f3f5;
+  --color-bright-dental-mint: #c8efe4;
+  --color-bright-dental-lagoon: #4fb7ae;
+  --color-bright-dental-ocean: #1d7688;
+  --color-bright-dental-ink: #13272b;
+  --color-bright-dental-graphite: #314246;
+  --color-bright-dental-mist: #6f8588;
+  --color-bright-dental-sand: #f1e5d2;
+  --color-bright-dental-champagne: #b78a4d;
+  --color-bright-dental-coral: #d97964;
   /* fonts */
-  --font-display: 'Bodoni Moda', 'Georgia', serif;
-  --font-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-bright-dental-display: 'Bodoni Moda', 'Georgia', serif;
+  --font-bright-dental-body: 'Jost', 'Avenir Next', 'Segoe UI', sans-serif;
   /* shadows */
   --shadow-soft: 0 24px 70px rgba(31, 88, 96, 0.13);
   --shadow-card: 0 18px 48px rgba(19, 39, 43, 0.09);
@@ -201,7 +172,6 @@ section[id] {
   --animate-marquee: marquee 34s linear infinite;
   --animate-softPulse: softPulse 4.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
 }
-
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -210,7 +180,6 @@ section[id] {
     transform: translateX(-50%);
   }
 }
-
 @keyframes softPulse {
   0%, 100% {
     transform: scale(1);
@@ -222,3 +191,53 @@ section[id] {
   }
 }
 
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .bg-bright-dental-porcelain{background-color:#f8fbfa;}
+  .text-bright-dental-porcelain{color:#f8fbfa;}
+  .bg-bright-dental-porcelain\/82{background-color:color-mix(in srgb, #f8fbfa 82%, transparent);}
+  .bg-bright-dental-porcelain\/96{background-color:color-mix(in srgb, #f8fbfa 96%, transparent);}
+  .bg-bright-dental-porcelain\/80{background-color:color-mix(in srgb, #f8fbfa 80%, transparent);}
+  .bg-bright-dental-pearl{background-color:#eef8f5;}
+  .text-bright-dental-mint{color:#c8efe4;}
+  .bg-bright-dental-mint{background-color:#c8efe4;}
+  .bg-bright-dental-mint\/70{background-color:color-mix(in srgb, #c8efe4 70%, transparent);}
+  .hover\:bg-bright-dental-lagoon:hover{background-color:#4fb7ae;}
+  .text-bright-dental-ocean{color:#1d7688;}
+  .border-bright-dental-ocean\/12{border-color:color-mix(in srgb, #1d7688 12%, transparent);}
+  .focus\:border-bright-dental-ocean:focus{border-color:#1d7688;}
+  .focus\:ring-bright-dental-ocean\/15:focus{--tw-ring-color:color-mix(in srgb, #1d7688 15%, transparent);}
+  .hover\:bg-bright-dental-ocean:hover{background-color:#1d7688;}
+  .focus-visible\:ring-bright-dental-ocean\/24:focus-visible{--tw-ring-color:color-mix(in srgb, #1d7688 24%, transparent);}
+  .focus-visible\:ring-bright-dental-ocean\/25:focus-visible{--tw-ring-color:color-mix(in srgb, #1d7688 25%, transparent);}
+  .hover\:border-bright-dental-ocean\/30:hover{border-color:color-mix(in srgb, #1d7688 30%, transparent);}
+  .focus-visible\:ring-bright-dental-ocean\/18:focus-visible{--tw-ring-color:color-mix(in srgb, #1d7688 18%, transparent);}
+  .bg-bright-dental-ocean{background-color:#1d7688;}
+  .hover\:border-bright-dental-ocean\/25:hover{border-color:color-mix(in srgb, #1d7688 25%, transparent);}
+  .bg-bright-dental-ocean\/90{background-color:color-mix(in srgb, #1d7688 90%, transparent);}
+  .hover\:border-bright-dental-ocean\/24:hover{border-color:color-mix(in srgb, #1d7688 24%, transparent);}
+  .border-bright-dental-ocean\/14{border-color:color-mix(in srgb, #1d7688 14%, transparent);}
+  .group:hover .group-hover\:bg-bright-dental-ocean{background-color:#1d7688;}
+  .text-bright-dental-ink{color:#13272b;}
+  .border-bright-dental-ink\/8{border-color:color-mix(in srgb, #13272b 8%, transparent);}
+  .bg-bright-dental-ink{background-color:#13272b;}
+  .border-bright-dental-ink\/12{border-color:color-mix(in srgb, #13272b 12%, transparent);}
+  .hover\:text-bright-dental-ink:hover{color:#13272b;}
+  .border-bright-dental-ink\/10{border-color:color-mix(in srgb, #13272b 10%, transparent);}
+  .bg-bright-dental-ink\/8{background-color:color-mix(in srgb, #13272b 8%, transparent);}
+  .from-bright-dental-ink\/30{--tw-gradient-from:color-mix(in srgb, #13272b 30%, transparent);--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-to) var(--tw-gradient-to-position));}
+  .border-bright-dental-ink\/7{border-color:color-mix(in srgb, #13272b 7%, transparent);}
+  .text-bright-dental-graphite\/74{color:color-mix(in srgb, #314246 74%, transparent);}
+  .text-bright-dental-graphite\/70{color:color-mix(in srgb, #314246 70%, transparent);}
+  .text-bright-dental-graphite\/66{color:color-mix(in srgb, #314246 66%, transparent);}
+  .text-bright-dental-graphite\/72{color:color-mix(in srgb, #314246 72%, transparent);}
+  .text-bright-dental-graphite{color:#314246;}
+  .text-bright-dental-graphite\/68{color:color-mix(in srgb, #314246 68%, transparent);}
+  .text-bright-dental-graphite\/64{color:color-mix(in srgb, #314246 64%, transparent);}
+  .text-bright-dental-mist{color:#6f8588;}
+  .bg-bright-dental-mist{background-color:#6f8588;}
+  .text-bright-dental-champagne{color:#b78a4d;}
+  .font-bright-dental-display{font-family:'Bodoni Moda', 'Georgia', serif;}
+  .font-bright-dental-body{font-family:'Jost', 'Avenir Next', 'Segoe UI', sans-serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

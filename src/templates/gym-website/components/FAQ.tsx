@@ -26,18 +26,18 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-gym-darker">
+    <section className="py-24 bg-iron-gym-gym-darker">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Common Questions</h2>
-          <h3 className="text-4xl md:text-5xl font-black font-display uppercase">FAQ</h3>
+          <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Common Questions</h2>
+          <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display uppercase">FAQ</h3>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
             <div 
               key={idx} 
-              className="border border-white/10 rounded-2xl overflow-hidden bg-gym-charcoal transition-colors hover:border-white/20"
+              className="border border-white/10 rounded-2xl overflow-hidden bg-iron-gym-gym-charcoal transition-colors hover:border-white/20"
             >
               <button 
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
@@ -45,7 +45,7 @@ const FAQ = () => {
               >
                 <span className="font-bold text-lg">{faq.question}</span>
                 {openIndex === idx ? (
-                  <Minus className="w-5 h-5 text-gym-accent shrink-0" />
+                  <Minus className="w-5 h-5 text-iron-gym-gym-accent shrink-0" />
                 ) : (
                   <Plus className="w-5 h-5 text-gray-400 shrink-0" />
                 )}

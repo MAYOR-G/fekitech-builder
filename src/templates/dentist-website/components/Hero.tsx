@@ -38,7 +38,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[calc(100vh-76px)] overflow-hidden bg-ink"
+      className="relative min-h-[calc(100vh-76px)] overflow-hidden bg-bright-dental-ink"
     >
       {/* Background Images Carousel */}
       <div className="absolute inset-0">
@@ -69,7 +69,7 @@ export function Hero() {
             <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/90">
               Private dental care in Chicago
             </p>
-            <h1 className="mt-4 font-display text-5xl font-medium leading-[1.05] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 font-bright-dental-display text-5xl font-medium leading-[1.05] text-white sm:text-6xl lg:text-7xl">
               Modern Dental Care For Confident Smiles
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl">
@@ -77,7 +77,7 @@ export function Hero() {
             </p>
 
             <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-              <ButtonLink href="#appointment" className="w-full sm:w-auto bg-white text-ink hover:bg-white/90">
+              <ButtonLink href="#appointment" className="w-full sm:w-auto bg-white text-bright-dental-ink hover:bg-white/90">
                 Book an Appointment
               </ButtonLink>
               <ButtonLink

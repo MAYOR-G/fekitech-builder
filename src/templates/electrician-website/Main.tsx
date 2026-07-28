@@ -17,7 +17,7 @@ export function App() {
   const { credentialBadges, serviceAreas } = useTemplateData();
 
   return (
-    <div className="flex min-h-screen flex-col font-body text-navy bg-cloud selection:bg-safety/30">
+    <div className="flex min-h-screen flex-col font-spark-electric-body text-spark-electric-navy bg-spark-electric-cloud selection:bg-spark-electric-safety/30">
       <EmergencyBanner />
       <Navbar />
 
@@ -25,7 +25,7 @@ export function App() {
         <Hero />
         
         {/* Credential Badges Banner */}
-        <div className="border-y border-white/10 bg-midnight px-5 py-6 sm:py-8 lg:px-8">
+        <div className="border-y border-white/10 bg-spark-electric-midnight px-5 py-6 sm:py-8 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-x-8 gap-y-4 sm:gap-x-12 lg:justify-between">
             {credentialBadges.map((badge, idx) => {
               const Icon = badge.icon;
@@ -38,7 +38,7 @@ export function App() {
                   key={badge.label}
                   className="flex items-center gap-3"
                 >
-                  <Icon className="h-5 w-5 text-safety" aria-hidden="true" />
+                  <Icon className="h-5 w-5 text-spark-electric-safety" aria-hidden="true" />
                   <span className="text-sm font-bold tracking-tight text-white/90">
                     {badge.label}
                   </span>
@@ -55,7 +55,7 @@ export function App() {
         <ReviewsSection />
         
         {/* Service Areas Banner */}
-        <section className="bg-mist px-5 py-12 lg:px-8 border-y border-slate-200">
+        <section className="bg-spark-electric-mist px-5 py-12 lg:px-8 border-y border-slate-200">
           <div className="mx-auto max-w-7xl text-center">
             <p className="text-xs font-black uppercase tracking-[0.15em] text-slate-500 mb-6">
               Active Service Areas
@@ -68,7 +68,7 @@ export function App() {
                   viewport={{ once: true, margin: "-10%" }}
                   transition={{ duration: 0.3, delay: idx * 0.05 }}
                   key={area}
-                  className="rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-sm border border-slate-200"
+                  className="rounded-full bg-white px-4 py-2 text-sm font-bold text-spark-electric-navy shadow-sm border border-slate-200"
                 >
                   {area}
                 </motion.span>

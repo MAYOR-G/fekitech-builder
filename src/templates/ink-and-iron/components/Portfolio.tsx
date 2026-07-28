@@ -71,7 +71,7 @@ export default function Portfolio() {
             </span>
             <span className="w-12 h-[1px] bg-[#C9A84C]" />
           </div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-7xl leading-[1.1] text-white tracking-tight uppercase">
+          <h2 className="font-ink-iron-display text-4xl md:text-5xl lg:text-7xl leading-[1.1] text-white tracking-tight uppercase">
             Featured <span className="text-[#8B2635]">Ink</span>
           </h2>
         </div>
@@ -103,7 +103,7 @@ export default function Portfolio() {
                 <p className="text-[#C9A84C] font-semibold tracking-[0.2em] text-xs uppercase mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   {item.style}
                 </p>
-                <h3 className="font-display text-2xl text-white tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                <h3 className="font-ink-iron-display text-2xl text-white tracking-wide transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
                   {item.title}
                 </h3>
               </div>

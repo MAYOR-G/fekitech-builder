@@ -24,10 +24,10 @@ export function SectionHeader({
         className
       )}
     >
-      <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.3em] text-rose/90">
+      <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sweet-cake-rose/90">
         {eyebrow}
       </p>
-      <h2 className="font-display text-4xl font-normal leading-[1.05] tracking-tight text-ganache sm:text-5xl lg:text-[4rem]">
+      <h2 className="font-sweet-cake-display text-4xl font-normal leading-[1.05] tracking-tight text-sweet-cake-ganache sm:text-5xl lg:text-[4rem]">
         {title}
       </h2>
       <p className="mt-6 text-base leading-[1.8] tracking-wide text-[#2D2D2D] sm:text-[1.05rem]">

@@ -113,7 +113,7 @@ export default function AboutSplit() {
               </span>
             </div>
 
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white mb-8 tracking-tight">
+            <h2 className="font-ink-iron-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white mb-8 tracking-tight">
               <span className="block overflow-hidden pb-2">
                 <span className="block reveal-text">WHERE REBELLION</span>
               </span>

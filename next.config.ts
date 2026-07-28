@@ -11,7 +11,7 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ["@prisma/client", "better-auth", "sharp", "nodemailer"],
+  serverExternalPackages: ["sharp", "nodemailer"],
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },

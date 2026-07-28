@@ -20,14 +20,14 @@ function App() {
   const { brand, categories, features, galleryItems, processSteps, products, testimonials } = useTemplateData();
 
   return (
-    <div className="min-h-screen bg-white text-ganache">
+    <div className="min-h-screen bg-white text-sweet-cake-ganache">
       <Navbar />
       <main>
         <Hero />
 
         <AboutStudio />
 
-        <section id="categories" className="px-5 py-32 lg:px-8 bg-white border-y border-chocolate/5">
+        <section id="categories" className="px-5 py-32 lg:px-8 bg-white border-y border-sweet-cake-chocolate/5">
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-end mb-20">
@@ -73,7 +73,7 @@ function App() {
           </div>
         </section>
 
-        <section id="process" className="px-5 py-32 lg:px-8 bg-white border-t border-chocolate/5">
+        <section id="process" className="px-5 py-32 lg:px-8 bg-white border-t border-sweet-cake-chocolate/5">
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <SectionHeader
@@ -93,7 +93,7 @@ function App() {
           </div>
         </section>
 
-        <section id="why" className="bg-ganache px-5 py-32 text-cream lg:px-8">
+        <section id="why" className="bg-sweet-cake-ganache px-5 py-32 text-sweet-cake-cream lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.8fr_1.2fr]">
             <Reveal>
               <div className="sticky top-32">
@@ -101,7 +101,7 @@ function App() {
                   eyebrow="The Standard"
                   title="Desserts that taste deeply considered."
                   description={`${brand.name} pairs design-led finishing with reliable ordering, careful packaging, and flavours guests remember.`}
-                  className="[&_h2]:text-cream [&_p:last-child]:text-cream/70"
+                  className="[&_h2]:text-sweet-cake-cream [&_p:last-child]:text-sweet-cake-cream/70"
                 />
               </div>
             </Reveal>
@@ -134,7 +134,7 @@ function App() {
           </div>
         </section>
 
-        <section id="testimonials" className="bg-white px-5 py-32 lg:px-8 border-t border-chocolate/5">
+        <section id="testimonials" className="bg-white px-5 py-32 lg:px-8 border-t border-sweet-cake-chocolate/5">
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <SectionHeader

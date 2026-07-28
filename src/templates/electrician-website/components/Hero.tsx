@@ -41,7 +41,7 @@ export function Hero() {
   }, [heroSlides.length]);
 
   return (
-    <section id="top" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-navy pt-20">
+    <section id="top" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-spark-electric-navy pt-20">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence initial={false} mode="sync">
@@ -77,8 +77,8 @@ export function Hero() {
             </span>
           </motion.div>
           
-          <motion.h1 variants={itemVariants} className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Modern <span className="text-amber">Electrical Work</span>, Handled With Precision.
+          <motion.h1 variants={itemVariants} className="font-spark-electric-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Modern <span className="text-spark-electric-amber">Electrical Work</span>, Handled With Precision.
           </motion.h1>
           
           <motion.p variants={itemVariants} className="mt-6 text-lg sm:text-xl leading-relaxed text-white max-w-2xl font-medium">
@@ -91,7 +91,7 @@ export function Hero() {
               Book an inspection
             </ButtonLink>
             <ButtonLink href={`tel:${brand.emergencyPhone.replace(/\D/g, '')}`} variant="secondary" className="text-base h-14 px-8 group bg-white/10 hover:bg-white/20 border-white/20 backdrop-blur-md">
-              <PhoneCall className="mr-2 h-5 w-5 text-cyan group-hover:text-white transition-colors" />
+              <PhoneCall className="mr-2 h-5 w-5 text-spark-electric-cyan group-hover:text-white transition-colors" />
               {brand.emergencyPhone}
             </ButtonLink>
           </motion.div>

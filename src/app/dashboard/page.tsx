@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { LayoutTemplate, PlusCircle } from "lucide-react";
-import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { LogoutButton } from "@/components/account/LogoutButton";
 import { TestPlanSwitcher } from "@/components/account/TestPlanSwitcher";
-import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { createClient } from "@/lib/supabase/server";
+import { getAdminDb } from "@/lib/db";
 import { getUserPlan, isAuthorizedPlanTester } from "@/lib/subscriptions";
 import { LogoMark } from "@/components/ui/LogoMark";
 
@@ -16,17 +15,22 @@ function getPublishedUrl(subdomain: string): string {
 }
 
 export default async function DashboardPage() {
-  const session = await auth.api.getSession({ headers: await headers() });
-  if (!session) redirect("/login?redirect=/dashboard");
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/login?redirect=/dashboard");
 
-  const [projects, userPlan, canTestPlans] = await Promise.all([
-    prisma.project.findMany({
-      where: { userId: session.user.id },
-      orderBy: { updatedAt: "desc" },
-    }),
-    getUserPlan(session.user.id),
-    isAuthorizedPlanTester(session.user.id, session.user.email),
+  const admin = getAdminDb();
+  const [projectsResult, userPlan, canTestPlans] = await Promise.all([
+    admin
+      .from("projects")
+      .select("*")
+      .eq("user_id", user.id)
+      .order("updated_at", { ascending: false }),
+    getUserPlan(user.id),
+    isAuthorizedPlanTester(user.id, user.email ?? ""),
   ]);
+
+  const projects = projectsResult.data ?? [];
 
   return (
     <div className="min-h-screen bg-ft-surface text-ft-ink">
@@ -62,7 +66,7 @@ export default async function DashboardPage() {
             <article key={project.id} className="group overflow-hidden rounded-2xl border border-ft-border bg-white shadow-[0_10px_30px_rgba(22,31,72,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_44px_rgba(22,31,72,0.11)]">
               <div className="relative flex h-40 items-center justify-center bg-[linear-gradient(145deg,#f1f6ff,#f8f5ff)]">
                 <LayoutTemplate aria-hidden="true" size={48} className="text-gray-400" />
-                {project.isPublished && project.subdomain ? (
+                {project.is_published && project.subdomain ? (
                   <a
                     href={getPublishedUrl(project.subdomain)}
                     target="_blank"
@@ -75,7 +79,7 @@ export default async function DashboardPage() {
               </div>
               <div className="border-t border-ft-border-light p-5">
                 <h2 className="mb-1 truncate text-lg font-bold">{project.name}</h2>
-                <p className="mb-4 text-sm text-ft-body">Last edited {project.updatedAt.toLocaleDateString()}</p>
+                <p className="mb-4 text-sm text-ft-body">Last edited {new Date(project.updated_at).toLocaleDateString()}</p>
                 <Link href={`/editor/${project.id}`} className="block min-h-11 rounded-xl bg-ft-surface-alt px-4 py-2.5 text-center font-semibold text-ft-ink transition-colors hover:bg-ft-primary hover:text-white">
                   Edit website
                 </Link>

@@ -15,28 +15,28 @@ export function PricingCard({ plan }: PricingCardProps) {
       className={cn(
         "relative flex h-full flex-col overflow-hidden rounded-[1.45rem] border p-6 shadow-card transition duration-300 hover:-translate-y-1.5",
         plan.highlighted
-          ? "border-cobalt/28 bg-circuit-hero text-white shadow-glow"
-          : "border-line/80 bg-white/95 text-navy hover:border-cobalt/24 hover:shadow-blue"
+          ? "border-spark-electric-cobalt/28 bg-circuit-hero text-white shadow-glow"
+          : "border-spark-electric-line/80 bg-white/95 text-spark-electric-navy hover:border-spark-electric-cobalt/24 hover:shadow-blue"
       )}
     >
       <div
         className={cn(
           "absolute -right-16 -top-16 h-40 w-40 rounded-full blur-2xl",
-          plan.highlighted ? "bg-cyan/20" : "bg-cobalt/10"
+          plan.highlighted ? "bg-spark-electric-cyan/20" : "bg-spark-electric-cobalt/10"
         )}
       />
       {plan.highlighted ? (
-        <span className="relative mb-5 inline-flex w-fit rounded-full bg-safety px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-navy">
+        <span className="relative mb-5 inline-flex w-fit rounded-full bg-spark-electric-safety px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-spark-electric-navy">
           Popular inspection
         </span>
       ) : null}
-      <h3 className="relative font-display text-3xl font-extrabold tracking-[-0.05em]">
+      <h3 className="relative font-spark-electric-display text-3xl font-extrabold tracking-[-0.05em]">
         {plan.name}
       </h3>
       <p
         className={cn(
           "relative mt-4 text-[15px] leading-7",
-          plan.highlighted ? "text-white/68" : "text-steel/72"
+          plan.highlighted ? "text-white/68" : "text-spark-electric-steel/72"
         )}
       >
         {plan.description}
@@ -47,8 +47,8 @@ export function PricingCard({ plan }: PricingCardProps) {
         </p>
         <p
           className={cn(
-            "mt-2 font-display text-4xl font-extrabold tracking-[-0.06em]",
-            plan.highlighted ? "text-safety" : "text-cobalt"
+            "mt-2 font-spark-electric-display text-4xl font-extrabold tracking-[-0.06em]",
+            plan.highlighted ? "text-spark-electric-safety" : "text-spark-electric-cobalt"
           )}
         >
           {plan.price}
@@ -60,11 +60,11 @@ export function PricingCard({ plan }: PricingCardProps) {
             <Check
               className={cn(
                 "mt-0.5 h-5 w-5 shrink-0",
-                plan.highlighted ? "text-safety" : "text-cobalt"
+                plan.highlighted ? "text-spark-electric-safety" : "text-spark-electric-cobalt"
               )}
               aria-hidden="true"
             />
-            <span className={plan.highlighted ? "text-white/76" : "text-steel/78"}>
+            <span className={plan.highlighted ? "text-white/76" : "text-spark-electric-steel/78"}>
               {feature}
             </span>
           </li>

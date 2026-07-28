@@ -7,7 +7,7 @@ export default function TrustStrip() {
   const siteContent = useTemplateData();
 
   return (
-    <section className="bg-brand-black py-12 px-6 border-b border-white/5">
+    <section className="bg-barber-brand-black py-12 px-6 border-b border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {siteContent.trust.map((item, index) => (
@@ -19,8 +19,8 @@ export default function TrustStrip() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center md:text-left"
             >
-              <h3 className="text-brand-accent font-heading text-lg md:text-xl tracking-wider mb-2 uppercase">{item.title}</h3>
-              <p className="text-brand-cream/60 text-sm">{item.description}</p>
+              <h3 className="text-barber-brand-accent font-barber-heading text-lg md:text-xl tracking-wider mb-2 uppercase">{item.title}</h3>
+              <p className="text-barber-brand-cream/60 text-sm">{item.description}</p>
             </motion.div>
           ))}
         </div>

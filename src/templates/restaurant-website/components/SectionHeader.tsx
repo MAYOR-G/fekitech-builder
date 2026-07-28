@@ -30,15 +30,15 @@ export function SectionHeader({
       <p
         className={cn(
           "mb-4 text-xs font-extrabold uppercase tracking-[0.22em]",
-          isLight ? "text-ember" : "text-flame"
+          isLight ? "text-halcyon-table-ember" : "text-halcyon-table-flame"
         )}
       >
         {eyebrow}
       </p>
       <h2
         className={cn(
-          "font-display text-4xl font-semibold leading-[1.02] sm:text-5xl lg:text-[3.5rem]",
-          isLight ? "text-cream" : "text-coal"
+          "font-halcyon-table-display text-4xl font-semibold leading-[1.02] sm:text-5xl lg:text-[3.5rem]",
+          isLight ? "text-halcyon-table-cream" : "text-halcyon-table-coal"
         )}
       >
         {title}
@@ -47,7 +47,7 @@ export function SectionHeader({
         <p
           className={cn(
             "mt-5 text-base leading-8 sm:text-lg",
-            isLight ? "text-cream/68" : "text-graphite/72"
+            isLight ? "text-halcyon-table-cream/68" : "text-halcyon-table-graphite/72"
           )}
         >
           {description}

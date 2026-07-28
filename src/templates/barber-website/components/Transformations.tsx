@@ -9,7 +9,7 @@ export default function Transformations() {
   const siteContent = useTemplateData();
 
   return (
-    <section className="py-24 px-6 bg-brand-charcoal">
+    <section className="py-24 px-6 bg-barber-brand-charcoal">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -17,8 +17,8 @@ export default function Transformations() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-heading mb-4 text-brand-cream">TRANSFORMATIONS</h2>
-          <p className="text-brand-cream/60 max-w-xl mx-auto">Hover to reveal the process.</p>
+          <h2 className="text-4xl md:text-6xl font-barber-heading mb-4 text-barber-brand-cream">TRANSFORMATIONS</h2>
+          <p className="text-barber-brand-cream/60 max-w-xl mx-auto">Hover to reveal the process.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -38,7 +38,7 @@ export default function Transformations() {
                 decoding="async"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute top-4 left-4 bg-brand-black/80 backdrop-blur-sm text-brand-cream px-3 py-1 text-xs uppercase font-bold tracking-widest">
+              <div className="absolute top-4 left-4 bg-barber-brand-black/80 backdrop-blur-sm text-barber-brand-cream px-3 py-1 text-xs uppercase font-bold tracking-widest">
                 Before
               </div>
               
@@ -50,21 +50,21 @@ export default function Transformations() {
                   decoding="async"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-brand-accent text-brand-black px-3 py-1 text-xs uppercase font-bold tracking-widest z-10">
+                <div className="absolute top-4 right-4 bg-barber-brand-accent text-barber-brand-black px-3 py-1 text-xs uppercase font-bold tracking-widest z-10">
                   After
                 </div>
               </div>
 
               {/* Center icon indicator */}
               <div className="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
-                <div className="bg-brand-black/50 backdrop-blur-md p-3 rounded-full text-brand-cream border border-white/10">
+                <div className="bg-barber-brand-black/50 backdrop-blur-md p-3 rounded-full text-barber-brand-cream border border-white/10">
                   <ArrowRightLeft size={24} />
                 </div>
               </div>
 
               {/* Label */}
               <div className="absolute bottom-4 left-4 right-4 text-center">
-                <span className="bg-brand-black/80 backdrop-blur-sm text-brand-cream px-4 py-2 text-sm uppercase tracking-widest inline-block shadow-xl">
+                <span className="bg-barber-brand-black/80 backdrop-blur-sm text-barber-brand-cream px-4 py-2 text-sm uppercase tracking-widest inline-block shadow-xl">
                   {item.label}
                 </span>
               </div>

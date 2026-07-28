@@ -6,14 +6,14 @@ import editableData from "./editable.json";
 import Main from "./Main";
 
 const themeStyles = {
-  "--color-charcoal": "#141414",
-  "--color-deep-black": "#0A0A0A",
-  "--color-gold": "#C9A84C",
-  "--color-blood": "#8B2635",
-  "--color-off-white": "#F5F5F5",
-  "--color-muted-gray": "#6B6B6B",
-  "--font-display": "var(--font-anton), sans-serif",
-  "--font-sans": "var(--font-inter), sans-serif",
+  "--color-ink-iron-charcoal": "#141414",
+  "--color-ink-iron-deep-black": "#0A0A0A",
+  "--color-ink-iron-gold": "#C9A84C",
+  "--color-ink-iron-blood": "#8B2635",
+  "--color-ink-iron-off-white": "#F5F5F5",
+  "--color-ink-iron-muted-gray": "#6B6B6B",
+  "--font-ink-iron-display": "var(--font-ink-iron-anton), sans-serif",
+  "--font-ink-iron-sans": "var(--font-ink-iron-inter), sans-serif",
   "--background": "#0A0A0A",
   "--foreground": "#F5F5F5"
 } as React.CSSProperties;
@@ -23,7 +23,7 @@ export default function InkAndIronTemplate({ data }: { data: TemplateData }) {
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="ink-iron-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

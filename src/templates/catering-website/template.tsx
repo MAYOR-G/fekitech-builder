@@ -20,11 +20,9 @@ import { SectionHeader } from "./components/SectionHeader";
 import { ServiceCard } from "./components/ServiceCard";
 import { TestimonialCard } from "./components/TestimonialCard";
 const themeStyles = {
-  "--color-white": "#ffffff",
-  "--color-black": "#0a0a0a",
-  "--color-charcoal": "#171717",
-  "--color-cream": "#f5f5f0",
-  "--color-stone": "#2a2a2a",
+  "--color-catering-co-charcoal": "#171717",
+  "--color-catering-co-cream": "#f5f5f0",
+  "--color-catering-co-stone": "#2a2a2a",
 } as React.CSSProperties;
 
 export default function CateringWebsiteTemplate({ data }: { data: TemplateData }) {
@@ -33,17 +31,17 @@ export default function CateringWebsiteTemplate({ data }: { data: TemplateData }
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper min-h-screen bg-white text-black font-sans">
+      <div style={themeStyles} className="catering-co-template min-h-screen bg-white text-black font-catering-co-sans">
         <Navbar />
         <Hero />
         <section className="bg-white px-5 py-20 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-gold">About the studio</p>
-            <h2 className="mt-5 font-display text-5xl font-medium text-charcoal">{about.title}</h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-ink">{about.text}</p>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-catering-co-gold">About the studio</p>
+            <h2 className="mt-5 font-catering-co-display text-5xl font-medium text-catering-co-charcoal">{about.title}</h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-catering-co-ink">{about.text}</p>
           </div>
         </section>
-        <section id="services" className="bg-charcoal px-5 py-24 lg:px-8">
+        <section id="services" className="bg-catering-co-charcoal px-5 py-24 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeader eyebrow="What we do" title="Considered catering for memorable gatherings" dark />
             <div className="mt-14 grid gap-8 md:grid-cols-3">
@@ -54,7 +52,7 @@ export default function CateringWebsiteTemplate({ data }: { data: TemplateData }
             </div>
           </div>
         </section>
-        <section className="bg-linen px-5 py-24 lg:px-8">
+        <section className="bg-catering-co-linen px-5 py-24 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeader eyebrow="Packages" title="Flexible service, shaped around your event" />
             <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -70,7 +68,7 @@ export default function CateringWebsiteTemplate({ data }: { data: TemplateData }
             </div>
           </div>
         </section>
-        <section className="bg-charcoal px-5 py-24 lg:px-8">
+        <section className="bg-catering-co-charcoal px-5 py-24 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeader eyebrow="Recent tables" title="Food, atmosphere, and details in harmony" dark />
             <div className="mt-14 grid auto-rows-[20rem] gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +76,7 @@ export default function CateringWebsiteTemplate({ data }: { data: TemplateData }
             </div>
           </div>
         </section>
-        <section className="bg-linen px-5 py-24 lg:px-8">
+        <section className="bg-catering-co-linen px-5 py-24 lg:px-8">
           <div className="mx-auto max-w-7xl grid gap-6 lg:grid-cols-3">
             {templateData.testimonials.map((testimonial) => <TestimonialCard key={testimonial.name} testimonial={testimonial} />)}
           </div>

@@ -1,9 +1,9 @@
-import { Prisma } from "@/generated/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
 import { requireAuth } from "@/lib/api-auth";
-import { prisma } from "@/lib/db";
-import { databaseJsonObject, projectIdSchema } from "@/lib/project-validation";
+import { createClient } from "@/lib/supabase/server";
+import { getAdminDb } from "@/lib/db";
+import { projectIdSchema } from "@/lib/project-validation";
 import { getUserPlan } from "@/lib/subscriptions";
 
 type RouteContext = { params: Promise<{ id: string }> };
@@ -25,47 +25,49 @@ export async function POST(request: NextRequest, context: RouteContext) {
   if (rateLimit) return rateLimit;
   const plan = await getUserPlan(sessionOrResponse.user.id);
 
-  try {
-    const project = await prisma.$transaction(async (transaction) => {
-      const source = await transaction.project.findFirst({
-        where: { id: id.data, userId: sessionOrResponse.user.id },
-      });
-      if (!source) throw new DuplicateError("Project not found.", 404);
-      const count = await transaction.project.count({ where: { userId: sessionOrResponse.user.id } });
-      if (count >= plan.definition.entitlements.maxProjects) {
-        throw new DuplicateError(`Your ${plan.definition.name} plan project limit has been reached.`, 403);
-      }
-      const duplicate = await transaction.project.create({
-        data: {
-          userId: source.userId,
-          name: `${source.name} copy`.slice(0, 120),
-          templateId: source.templateId,
-          editableData: databaseJsonObject(source.editableData),
-          dataVersion: source.dataVersion,
-        },
-      });
-      await transaction.activityLog.create({
-        data: {
-          userId: source.userId,
-          action: "project.duplicated",
-          details: JSON.stringify({ sourceProjectId: source.id, projectId: duplicate.id }),
-        },
-      });
-      return duplicate;
-    }, { isolationLevel: Prisma.TransactionIsolationLevel.Serializable });
-    return NextResponse.json({ project }, { status: 201 });
-  } catch (error) {
-    if (error instanceof DuplicateError) return NextResponse.json({ error: error.message }, { status: error.status });
-    if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2034") {
-      return NextResponse.json({ error: "Project capacity changed. Please retry." }, { status: 409 });
-    }
-    console.error("POST project duplicate error", error);
+  const supabase = await createClient();
+
+  const { data: source, error: fetchError } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
+
+  if (fetchError || !source) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
+  const { count } = await supabase
+    .from("projects")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", sessionOrResponse.user.id);
+
+  if ((count ?? 0) >= plan.definition.entitlements.maxProjects) {
+    return NextResponse.json({ error: `Your ${plan.definition.name} plan project limit has been reached.` }, { status: 403 });
+  }
+
+  const { data: duplicate, error: insertError } = await supabase
+    .from("projects")
+    .insert({
+      user_id: source.user_id,
+      name: `${source.name} copy`.slice(0, 120),
+      template_id: source.template_id,
+      editable_data: source.editable_data,
+      data_version: source.data_version,
+    })
+    .select()
+    .single();
+
+  if (insertError || !duplicate) {
+    console.error("POST project duplicate error", insertError);
     return NextResponse.json({ error: "Unable to duplicate the project." }, { status: 500 });
   }
-}
 
-class DuplicateError extends Error {
-  constructor(message: string, readonly status: number) {
-    super(message);
-  }
+  const admin = getAdminDb();
+  await admin.from("activity_logs").insert({
+    user_id: source.user_id,
+    action: "project.duplicated",
+    details: JSON.stringify({ sourceProjectId: source.id, projectId: duplicate.id }),
+  });
+
+  return NextResponse.json({ project: duplicate }, { status: 201 });
 }

@@ -8,14 +8,14 @@ import { TemplateImage } from "@/components/templates/TemplateImage";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 const featuredTemplateIds = [
+  "cake-bakery-premium",
+  "gym-website",
+  "crownline-roofworks",
+  "bakery-website",
   "burger-light-clean",
   "farm-shop-website",
   "fast-food-chicken-tacos",
-  "cake-bakery-premium",
-  "gym-website",
   "premium-coffee-website",
-  "bakery-website",
-  "premium-restaurant",
 ] as const;
 
 export default function TemplatesShowcase() {
@@ -120,6 +120,7 @@ export default function TemplatesShowcase() {
                   <div className="absolute inset-x-3 bottom-3 flex gap-2 rounded-lg bg-white p-2 shadow-md md:translate-y-[calc(100%+1rem)] md:transition-transform md:duration-300 md:group-hover:translate-y-0 md:group-focus-within:translate-y-0">
                     <Link
                       href={`/preview/${template.id}`}
+                      prefetch={false}
                       className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md border border-ft-border px-2 text-xs font-semibold text-ft-ink transition hover:border-ft-primary hover:text-ft-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/20"
                     >
                       Preview

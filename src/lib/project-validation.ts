@@ -1,8 +1,12 @@
 import { z } from "zod";
-import type { Prisma } from "@/generated/prisma";
+
 
 export const projectIdSchema = z.string().cuid();
 export const projectNameSchema = z.string().trim().min(1).max(120);
+
+export const customDomainSchema = z.object({
+  customDomain: z.string().trim().min(3).max(255).regex(/^[a-zA-Z0-9.-]+$/),
+}).strict();
 
 export const createProjectSchema = z.object({
   templateId: z.string().trim().min(1).max(80).regex(/^[a-z0-9-]+$/),
@@ -43,12 +47,12 @@ function validateJsonNode(value: unknown, depth: number, state: JsonValidationSt
   return false;
 }
 
-export function isValidEditableData(value: unknown): value is Prisma.InputJsonObject {
+export function isValidEditableData(value: unknown): value is Record<string, any> {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   return validateJsonNode(value, 0, { nodes: 0 });
 }
 
-export function databaseJsonObject(value: Prisma.JsonValue): Prisma.InputJsonObject {
+export function databaseJsonObject(value: any): Record<string, any> {
   if (!isValidEditableData(value)) throw new Error("Stored project data is not a JSON object.");
   return value;
 }

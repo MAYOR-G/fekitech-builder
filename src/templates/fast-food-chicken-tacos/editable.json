@@ -1,5 +1,5 @@
 {
-  "colors": { "primary": "#FFB5F2", "secondary": "#FBE49F", "background": "#FDF9F1", "text": "#3D2721" },
+  "colors": { "primary": "#D9480F", "secondary": "#FBE49F", "background": "#FDF9F1", "text": "#3D2721" },
   "brand": { "name": "Crave", "tagline": "Chicken, tacos & good times", "logo": "", "phone": "+44 161 555 0188", "email": "orders@crave.co.uk", "address": "42 Oldham Street, Manchester M1 1JN" },
   "navigation": {
     "links": [
@@ -73,7 +73,7 @@
   "story": {
     "note": "Our kitchen",
     "title": "Made fast. Never rushed.",
-    "description": "Cluck & Yard began with a fryer, a taco press and an unreasonable obsession with crunch. We still prep every sauce, slaw and pickle in our Manchester kitchen.",
+    "description": "Crave began with a fryer, a taco press and an unreasonable obsession with crunch. We still prep every sauce, slaw and pickle in our Manchester kitchen.",
     "image": "/templates/assets/cluck-yard-hero.webp",
     "imageAlt": "Colourful selection of freshly made fast food",
     "quote": "If it doesn't drip a little, we haven't gone far enough.",
@@ -115,6 +115,6 @@
     "secondaryLabel": "Find a location",
     "secondaryHref": "https://maps.google.com"
   },
-  "social": { "instagram": "Cluck & Yard on Instagram", "instagramHref": "https://instagram.com", "facebook": "Cluck & Yard on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Cluck & Yard on TikTok", "tiktokHref": "https://tiktok.com" },
-  "footer": { "note": "Big flavour from Manchester, made fresh every day.", "copyright": "© 2026 Cluck & Yard. All rights reserved." }
+  "social": { "instagram": "Crave on Instagram", "instagramHref": "https://instagram.com", "facebook": "Crave on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Crave on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Big flavour from Manchester, made fresh every day.", "copyright": "© 2026 Crave Fast Food. All rights reserved." }
 }

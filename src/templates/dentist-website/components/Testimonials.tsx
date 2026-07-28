@@ -10,7 +10,7 @@ export function Testimonials() {
   const items = [...testimonials, ...testimonials];
 
   return (
-    <section className="overflow-hidden bg-pearl px-5 py-20 lg:px-8">
+    <section className="overflow-hidden bg-bright-dental-pearl px-5 py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <SectionHeader
@@ -27,9 +27,9 @@ export function Testimonials() {
           {items.map((testimonial, index) => (
             <article
               key={`${testimonial.name}-${index}`}
-              className="w-[min(86vw,390px)] shrink-0 rounded-[1.5rem] border border-ink/8 bg-white p-6 shadow-card"
+              className="w-[min(86vw,390px)] shrink-0 rounded-[1.5rem] border border-bright-dental-ink/8 bg-white p-6 shadow-card"
             >
-              <div className="flex items-center gap-1 text-champagne">
+              <div className="flex items-center gap-1 text-bright-dental-champagne">
                 {Array.from({ length: 5 }).map((_, starIndex) => (
                   <Star
                     key={starIndex}
@@ -37,16 +37,16 @@ export function Testimonials() {
                     aria-hidden="true"
                   />
                 ))}
-                <span className="ml-2 text-sm font-semibold text-ink">
+                <span className="ml-2 text-sm font-semibold text-bright-dental-ink">
                   {testimonial.rating}
                 </span>
               </div>
-              <p className="mt-6 text-lg leading-8 text-ink">
+              <p className="mt-6 text-lg leading-8 text-bright-dental-ink">
                 &quot;{testimonial.quote}&quot;
               </p>
-              <div className="mt-7 border-t border-ink/8 pt-5">
-                <p className="font-semibold text-ink">{testimonial.name}</p>
-                <p className="mt-1 text-sm text-graphite/64">
+              <div className="mt-7 border-t border-bright-dental-ink/8 pt-5">
+                <p className="font-semibold text-bright-dental-ink">{testimonial.name}</p>
+                <p className="mt-1 text-sm text-bright-dental-graphite/64">
                   {testimonial.treatment}
                 </p>
               </div>

@@ -8,7 +8,7 @@ export default function Locations() {
   const siteContent = useTemplateData();
 
   return (
-    <section className="py-32 px-6 bg-white text-brand-black">
+    <section className="py-32 px-6 bg-white text-coffee-brand-black">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-6xl md:text-8xl mb-20 text-center">LOCATIONS</h2>
         
@@ -27,9 +27,9 @@ export default function Locations() {
                 alt={loc.city} 
                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-brand-black/20 group-hover:bg-transparent transition-colors duration-500" />
-              <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-brand-black/80 to-transparent">
-                <h3 className="text-3xl text-white group-hover:text-brand-accent transition-colors">{loc.city}</h3>
+              <div className="absolute inset-0 bg-coffee-brand-black/20 group-hover:bg-transparent transition-colors duration-500" />
+              <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-coffee-brand-black/80 to-transparent">
+                <h3 className="text-3xl text-white group-hover:text-coffee-brand-accent transition-colors">{loc.city}</h3>
               </div>
             </motion.div>
           ))}

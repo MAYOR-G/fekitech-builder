@@ -2,22 +2,36 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowLeft, Search } from "lucide-react";
+import { ArrowLeft, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { LogoMark } from "@/components/ui/LogoMark";
 import { TemplateCatalogCard } from "@/components/templates/TemplateCatalogCard";
 import { getAllTemplates } from "@/registry";
 
 const templates = getAllTemplates();
 
-
+const ITEMS_PER_PAGE = 27;
 
 export default function TemplatesPage() {
   const [search, setSearch] = useState("");
   const [message, setMessage] = useState("");
   const [creatingId, setCreatingId] = useState<string | null>(null);
-  const filtered = useMemo(
-    () => templates.filter((template) => template.name.toLowerCase().includes(search.trim().toLowerCase())),
-    [search],
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const filtered = useMemo(() => {
+    return templates.filter((template) => 
+      template.name.toLowerCase().includes(search.trim().toLowerCase())
+    );
+  }, [search]);
+
+  // Reset page when search changes
+  useMemo(() => {
+    setCurrentPage(1);
+  }, [search]);
+
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const paginatedTemplates = filtered.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
   );
 
   return (
@@ -45,45 +59,90 @@ export default function TemplatesPage() {
         </div>
 
         {message ? <p role="status" className="mb-6 rounded-lg bg-ft-surface-alt p-3 text-sm text-ft-body">{message}</p> : null}
+        
         {filtered.length === 0 ? (
           <div className="rounded-xl border border-ft-border p-8 text-center">
             <h2 className="font-semibold">No matching templates</h2>
             <p className="mt-2 text-sm text-ft-body">Try a broader search term.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((template) => {
-              return (
-                <TemplateCatalogCard
-                  key={template.id}
-                  template={template}
-                  creating={creatingId === template.id}
-                  onStart={async () => {
-                          setCreatingId(template.id);
-                          setMessage("");
-                          try {
-                            const response = await fetch("/api/projects", {
-                              method: "POST",
-                              headers: { "Content-Type": "application/json" },
-                              body: JSON.stringify({ templateId: template.id }),
-                            });
-                            const payload = (await response.json()) as { project?: { id: string }; error?: string };
-                            if (response.status === 401) {
-                              window.location.assign(`/login?redirect=${encodeURIComponent("/templates")}`);
-                              return;
+          <>
+            <div className="grid grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+              {paginatedTemplates.map((template) => {
+                return (
+                  <TemplateCatalogCard
+                    key={template.id}
+                    template={template}
+                    creating={creatingId === template.id}
+                    onStart={async () => {
+                            setCreatingId(template.id);
+                            setMessage("");
+                            try {
+                              const response = await fetch("/api/projects", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({ templateId: template.id }),
+                              });
+                              const payload = (await response.json()) as { project?: { id: string }; error?: string };
+                              if (response.status === 401) {
+                                window.location.assign(`/login?redirect=${encodeURIComponent("/templates")}`);
+                                return;
+                              }
+                              if (!response.ok || !payload.project) throw new Error(payload.error ?? "Unable to create the project.");
+                              window.location.assign(`/editor/${payload.project.id}`);
+                            } catch (error) {
+                              setMessage(error instanceof Error ? error.message : "Unable to create the project.");
+                            } finally {
+                              setCreatingId(null);
                             }
-                            if (!response.ok || !payload.project) throw new Error(payload.error ?? "Unable to create the project.");
-                            window.location.assign(`/editor/${payload.project.id}`);
-                          } catch (error) {
-                            setMessage(error instanceof Error ? error.message : "Unable to create the project.");
-                          } finally {
-                            setCreatingId(null);
-                          }
-                  }}
-                />
-              );
-            })}
-          </div>
+                    }}
+                  />
+                );
+              })}
+            </div>
+            
+            {/* Pagination Controls */}
+            <div className="mt-16 flex items-center justify-between border-t border-ft-border pt-6">
+              <div className="text-sm text-ft-body">
+                Showing <span className="font-semibold text-ft-ink">{(currentPage - 1) * ITEMS_PER_PAGE + 1}</span> to <span className="font-semibold text-ft-ink">{Math.min(currentPage * ITEMS_PER_PAGE, filtered.length)}</span> of <span className="font-semibold text-ft-ink">{filtered.length}</span> templates
+              </div>
+              
+              {totalPages > 1 && (
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
+                  >
+                    <ChevronLeft size={16} /> Previous
+                  </button>
+                  {/* Page numbers */}
+                  <div className="hidden md:flex items-center gap-1">
+                    {Array.from({ length: totalPages }).map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setCurrentPage(i + 1)}
+                        className={`inline-flex h-10 w-10 items-center justify-center rounded-lg text-sm font-medium transition-colors ${
+                          currentPage === i + 1
+                            ? "bg-ft-primary text-white"
+                            : "hover:bg-ft-surface-alt text-ft-ink"
+                        }`}
+                      >
+                        {i + 1}
+                      </button>
+                    ))}
+                  </div>
+                  <button
+                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
+                  >
+                    Next <ChevronRight size={16} />
+                  </button>
+                </div>
+              )}
+            </div>
+          </>
         )}
       </main>
     </div>

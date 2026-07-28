@@ -3,11 +3,9 @@
   "name": "Northcrest Roofing",
   "description": "Residential and commercial roofing specialists serving London and surrounding areas. Converted from the Roofora index.html design.",
   "category": "Services",
-  "image": "/templates/northcrest-roofing/preview-collage.webp",
+  "image": "/templates/northcrest-roofing.webp",
   "previewImages": [
-    "/templates/northcrest-roofing/preview-collage.webp",
-    "/templates/northcrest-roofing/assets/images/about-img.jpg",
-    "/templates/northcrest-roofing/assets/images/services-img1.jpg"
+    "/templates/northcrest-roofing.webp"
   ],
   "features": [
     "Independent Roofora-derived homepage",

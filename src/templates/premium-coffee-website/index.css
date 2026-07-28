@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap');
-
-
-
-@import "tailwindcss";
-
 @layer base {
-  .template-wrapper {
-    @apply font-body bg-brand-black text-brand-cream antialiased;
+.premium-coffee-template {
+    background: #0a0a0a;
+    color: #f4f1eb;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .template-wrapper h1, h2, h3, h4, h5, h6 {
-    @apply font-heading uppercase tracking-wide;
+.premium-coffee-template h1,
+.premium-coffee-template h2,
+.premium-coffee-template h3,
+.premium-coffee-template h4,
+.premium-coffee-template h5,
+.premium-coffee-template h6 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
   }
 }
-
 .text-stroke {
   -webkit-text-stroke: 1px #f4f1eb;
   color: transparent;
@@ -20,20 +25,58 @@
 .text-stroke-hover:hover {
   color: #f4f1eb;
 }
-
 /* INJECTED FROM tailwind.config.js (v3->v4 port).
    Without these `@theme` tokens, the v4 build cannot recognize
    the original v3 color utilities like `bg-gym-dark` or `font-sans` */
 @theme {
   /* colors */
-  --color-brand-black: #0a0a0a;
-  --color-brand-charcoal: #1a1a1a;
-  --color-brand-cream: #f4f1eb;
-  --color-brand-accent: #e63946;
-  --color-brand-beige: #d5c7b3;
+  --color-coffee-brand-black: #0a0a0a;
+  --color-coffee-brand-charcoal: #1a1a1a;
+  --color-coffee-brand-cream: #f4f1eb;
+  --color-coffee-brand-accent: #e63946;
+  --color-coffee-brand-beige: #d5c7b3;
   /* fonts */
-  --font-heading: 'Oswald', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-accent: 'Playfair Display', serif;
+  --font-coffee-heading: 'Oswald', sans-serif;
+  --font-coffee-body: 'Inter', sans-serif;
+  --font-coffee-accent: 'Playfair Display', serif;
 }
 
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .bg-coffee-brand-black{background-color:#0a0a0a;}
+  .border-coffee-brand-black{border-color:#0a0a0a;}
+  .hover\:text-coffee-brand-black:hover{color:#0a0a0a;}
+  .text-coffee-brand-black{color:#0a0a0a;}
+  .from-coffee-brand-black\/80{--tw-gradient-from:color-mix(in srgb, #0a0a0a 80%, transparent);--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-to) var(--tw-gradient-to-position));}
+  .via-coffee-brand-black\/40{--tw-gradient-via:color-mix(in srgb, #0a0a0a 40%, transparent);--tw-gradient-via-stops:var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-via) var(--tw-gradient-via-position),var(--tw-gradient-to) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-via-stops);}
+  .to-coffee-brand-black{--tw-gradient-to:#0a0a0a;}
+  .bg-coffee-brand-black\/20{background-color:color-mix(in srgb, #0a0a0a 20%, transparent);}
+  .bg-coffee-brand-black\/40{background-color:color-mix(in srgb, #0a0a0a 40%, transparent);}
+  .group:hover .group-hover\:bg-coffee-brand-black\/20{background-color:color-mix(in srgb, #0a0a0a 20%, transparent);}
+  .bg-coffee-brand-black\/90{background-color:color-mix(in srgb, #0a0a0a 90%, transparent);}
+  .bg-coffee-brand-charcoal{background-color:#1a1a1a;}
+  .border-coffee-brand-charcoal{border-color:#1a1a1a;}
+  .text-coffee-brand-cream{color:#f4f1eb;}
+  .text-coffee-brand-cream\/80{color:color-mix(in srgb, #f4f1eb 80%, transparent);}
+  .border-coffee-brand-cream{border-color:#f4f1eb;}
+  .hover\:bg-coffee-brand-cream:hover{background-color:#f4f1eb;}
+  .border-coffee-brand-cream\/5{border-color:color-mix(in srgb, #f4f1eb 5%, transparent);}
+  .text-coffee-brand-cream\/10{color:color-mix(in srgb, #f4f1eb 10%, transparent);}
+  .text-coffee-brand-cream\/60{color:color-mix(in srgb, #f4f1eb 60%, transparent);}
+  .border-coffee-brand-cream\/10{border-color:color-mix(in srgb, #f4f1eb 10%, transparent);}
+  .text-coffee-brand-cream\/40{color:color-mix(in srgb, #f4f1eb 40%, transparent);}
+  .hover\:text-coffee-brand-cream:hover{color:#f4f1eb;}
+  .group:hover .group-hover\:text-coffee-brand-cream{color:#f4f1eb;}
+  .selection\:bg-coffee-brand-accent::selection{background-color:#e63946;}
+  .border-coffee-brand-accent{border-color:#e63946;}
+  .text-coffee-brand-accent{color:#e63946;}
+  .hover\:text-coffee-brand-accent:hover{color:#e63946;}
+  .bg-coffee-brand-accent{background-color:#e63946;}
+  .hover\:bg-coffee-brand-accent:hover{background-color:#e63946;}
+  .group:hover .group-hover\:text-coffee-brand-accent{color:#e63946;}
+  .group:hover .group-hover\:border-coffee-brand-accent\/50{border-color:color-mix(in srgb, #e63946 50%, transparent);}
+  .font-coffee-heading{font-family:'Oswald', sans-serif;}
+  .font-coffee-body{font-family:'Inter', sans-serif;}
+  .font-coffee-accent{font-family:'Playfair Display', serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

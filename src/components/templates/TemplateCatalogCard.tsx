@@ -120,6 +120,7 @@ export function TemplateCatalogCard({
         >
           <Link
             href={`/preview/${template.id}`}
+            prefetch={false}
             className="inline-flex min-h-11 flex-1 items-center justify-center rounded-lg border border-ft-border bg-white px-3 text-sm font-semibold text-ft-ink transition hover:border-ft-primary hover:text-ft-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/20"
           >
             Preview

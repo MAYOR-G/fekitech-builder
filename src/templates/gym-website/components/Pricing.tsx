@@ -49,11 +49,11 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="py-24 bg-gym-charcoal relative z-30">
+    <section className="py-24 bg-iron-gym-gym-charcoal relative z-30">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Memberships</h2>
-          <h3 className="text-4xl md:text-5xl font-black font-display uppercase">Invest In Your Health</h3>
+          <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Memberships</h2>
+          <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display uppercase">Invest In Your Health</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -64,32 +64,32 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className={`relative rounded-3xl p-8 border ${plan.recommended ? 'bg-gym-darker border-gym-accent' : 'bg-gym-dark border-white/10'} flex flex-col`}
+              className={`relative rounded-3xl p-8 border ${plan.recommended ? 'bg-iron-gym-gym-darker border-iron-gym-gym-accent' : 'bg-iron-gym-gym-dark border-white/10'} flex flex-col`}
             >
               {plan.recommended && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gym-accent text-gym-darker font-bold uppercase tracking-wider text-xs px-4 py-1 rounded-full">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-iron-gym-gym-accent text-iron-gym-gym-darker font-bold uppercase tracking-wider text-xs px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
               
-              <h4 className="text-2xl font-black font-display uppercase mb-2">{plan.name}</h4>
+              <h4 className="text-2xl font-black font-iron-gym-display uppercase mb-2">{plan.name}</h4>
               <p className="text-gray-400 text-sm mb-6 h-10">{plan.desc}</p>
               
               <div className="mb-8 flex items-baseline gap-1">
-                <span className="text-5xl font-black font-display">{plan.price}</span>
+                <span className="text-5xl font-black font-iron-gym-display">{plan.price}</span>
                 <span className="text-gray-400 font-medium">{plan.period}</span>
               </div>
               
               <ul className="flex-1 space-y-4 mb-8">
                 {plan.features.map((feat, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
-                    <Check className={`w-5 h-5 shrink-0 ${plan.recommended ? 'text-gym-accent' : 'text-gray-500'}`} />
+                    <Check className={`w-5 h-5 shrink-0 ${plan.recommended ? 'text-iron-gym-gym-accent' : 'text-gray-500'}`} />
                     <span>{feat}</span>
                   </li>
                 ))}
               </ul>
               
-              <button className={`w-full py-4 rounded-full font-bold uppercase tracking-wider text-sm transition-colors ${plan.recommended ? 'bg-gym-accent text-gym-darker hover:bg-gym-accentHover' : 'bg-white/5 text-white hover:bg-white/10'}`}>
+              <button className={`w-full py-4 rounded-full font-bold uppercase tracking-wider text-sm transition-colors ${plan.recommended ? 'bg-iron-gym-gym-accent text-iron-gym-gym-darker hover:bg-iron-gym-gym-accentHover' : 'bg-white/5 text-white hover:bg-white/10'}`}>
                 Select Plan
               </button>
             </motion.div>

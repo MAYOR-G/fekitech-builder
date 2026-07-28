@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2">
-            <span className="font-display text-2xl tracking-widest text-white flex items-center gap-1">
+            <span className="font-ink-iron-display text-2xl tracking-widest text-white flex items-center gap-1">
               INK <span className="text-[#C9A84C]">&</span> IRON
               <Droplet className="w-4 h-4 text-[#C9A84C] opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300" />
             </span>
@@ -107,7 +107,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-display text-4xl tracking-widest hover:text-[#C9A84C] transition-colors"
+                  className="font-ink-iron-display text-4xl tracking-widest hover:text-[#C9A84C] transition-colors"
                 >
                   {link.name}
                 </Link>

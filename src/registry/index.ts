@@ -54,6 +54,8 @@ import secondPlumberConfig from "../templates/second-plumber-website/config.json
 import secondPlumberEditable from "../templates/second-plumber-website/editable.json";
 import velvetScoopConfig from "../templates/velvet-scoop/config.json";
 import velvetScoopEditable from "../templates/velvet-scoop/editable.json";
+import fastFoodChickenTacosConfig from "../templates/fast-food-chicken-tacos/config.json";
+import fastFoodChickenTacosEditable from "../templates/fast-food-chicken-tacos/editable.json";
 
 
 export type TemplateConfig = {
@@ -101,6 +103,7 @@ const components = {
   "second-furniture-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-furniture-website/template")),
   "second-plumber-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-plumber-website/template")),
   "velvet-scoop": dynamic<{ data: TemplateData }>(() => import("../templates/velvet-scoop/template")),
+  "fast-food-chicken-tacos": dynamic<{ data: TemplateData }>(() => import("../templates/fast-food-chicken-tacos/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -132,6 +135,7 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "second-furniture-website": { config: secondFurnitureConfig, component: components["second-furniture-website"], defaultData: normalizeData(secondFurnitureEditable) },
   "second-plumber-website": { config: secondPlumberConfig, component: components["second-plumber-website"], defaultData: normalizeData(secondPlumberEditable) },
   "velvet-scoop": { config: velvetScoopConfig, component: components["velvet-scoop"], defaultData: normalizeData(velvetScoopEditable) },
+  "fast-food-chicken-tacos": { config: fastFoodChickenTacosConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodChickenTacosEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

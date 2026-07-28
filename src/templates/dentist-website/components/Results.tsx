@@ -65,7 +65,7 @@ export function Results() {
 
         <div className="mt-16 relative mx-auto max-w-5xl">
           {/* Carousel Container */}
-          <div className="relative h-[600px] w-full overflow-hidden rounded-[2rem] bg-porcelain shadow-2xl border border-slate-100">
+          <div className="relative h-[600px] w-full overflow-hidden rounded-[2rem] bg-bright-dental-porcelain shadow-2xl border border-slate-100">
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={currentIndex}
@@ -92,7 +92,7 @@ export function Results() {
                         className="w-full h-full object-cover"
                         style={{ filter: "brightness(0.9) contrast(0.85) sepia(0.3) hue-rotate(-5deg)" }}
                       />
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold tracking-widest text-ink shadow-sm">
+                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold tracking-widest text-bright-dental-ink shadow-sm">
                         BEFORE
                       </div>
                     </div>
@@ -102,7 +102,7 @@ export function Results() {
                         alt="After treatment"
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute top-4 right-4 bg-ocean/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold tracking-widest text-white shadow-sm">
+                      <div className="absolute top-4 right-4 bg-bright-dental-ocean/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold tracking-widest text-white shadow-sm">
                         AFTER
                       </div>
                     </div>
@@ -110,15 +110,15 @@ export function Results() {
 
                   {/* Content Area */}
                   <div className="w-full md:w-1/3 h-1/2 md:h-full bg-white p-8 md:p-12 flex flex-col justify-center">
-                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-ocean mb-3">
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-bright-dental-ocean mb-3">
                       {activeCase.treatment}
                     </p>
-                    <h3 className="font-display text-3xl font-bold leading-tight text-ink mb-4">
+                    <h3 className="font-bright-dental-display text-3xl font-bold leading-tight text-bright-dental-ink mb-4">
                       {activeCase.title}
                     </h3>
                     <div className="h-px w-12 bg-slate-200 mb-4" />
                     <p className="text-slate-600 leading-relaxed text-sm">
-                      Typical timeline shown for context: <span className="font-semibold text-ink">{activeCase.timeline}</span>. Final
+                      Typical timeline shown for context: <span className="font-semibold text-bright-dental-ink">{activeCase.timeline}</span>. Final
                       recommendations depend on clinical examination and baseline oral health.
                     </p>
                   </div>
@@ -131,14 +131,14 @@ export function Results() {
             <div className="absolute bottom-6 md:bottom-12 right-6 md:right-[calc(33.333%-1.5rem)] flex gap-2 z-10 transform translate-x-full pr-8">
               <button
                 onClick={prevSlide}
-                className="h-12 w-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-ink hover:bg-slate-50 hover:scale-105 transition-all"
+                className="h-12 w-12 rounded-full bg-white shadow-md border border-slate-100 flex items-center justify-center text-bright-dental-ink hover:bg-slate-50 hover:scale-105 transition-all"
                 aria-label="Previous case"
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
               <button
                 onClick={nextSlide}
-                className="h-12 w-12 rounded-full bg-ocean shadow-md flex items-center justify-center text-white hover:bg-ocean-dark hover:scale-105 transition-all"
+                className="h-12 w-12 rounded-full bg-bright-dental-ocean shadow-md flex items-center justify-center text-white hover:bg-bright-dental-lagoon hover:scale-105 transition-all"
                 aria-label="Next case"
               >
                 <ChevronRight className="h-5 w-5" />
@@ -152,7 +152,7 @@ export function Results() {
             viewport={{ once: true }}
             className="mt-8 text-center"
           >
-            <span className="inline-flex items-center gap-2 rounded-full bg-mist px-4 py-2 text-sm font-medium text-slate-600">
+            <span className="inline-flex items-center gap-2 rounded-full bg-bright-dental-mist px-4 py-2 text-sm font-medium text-slate-600">
               <span className="h-1.5 w-1.5 rounded-full bg-slate-400" />
               Results vary by patient.
             </span>

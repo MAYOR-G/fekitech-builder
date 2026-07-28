@@ -16,7 +16,7 @@ export default function DentistWebsiteTemplate({ data }: { data: TemplateData })
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="bright-dental-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

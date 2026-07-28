@@ -24,14 +24,14 @@ export function FAQ() {
           className="mb-16"
         />
         
-        <div className="border-t border-oat">
+        <div className="border-t border-catering-co-oat">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <article 
                 key={index} 
                 className={cn(
-                  "border-b border-oat bg-white transition-all duration-300",
+                  "border-b border-catering-co-oat bg-white transition-all duration-300",
                   isOpen ? "pb-6" : ""
                 )}
               >
@@ -40,10 +40,10 @@ export function FAQ() {
                   onClick={() => toggleFAQ(index)}
                   aria-expanded={isOpen}
                 >
-                  <h3 className="pr-8 font-display text-2xl font-medium text-charcoal">
+                  <h3 className="pr-8 font-catering-co-display text-2xl font-medium text-catering-co-charcoal">
                     {faq.question}
                   </h3>
-                  <span className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-charcoal transition-transform duration-300", isOpen && "rotate-180 text-gold")}>
+                  <span className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-catering-co-charcoal transition-transform duration-300", isOpen && "rotate-180 text-catering-co-gold")}>
                     <ChevronDown className="h-5 w-5" />
                   </span>
                 </button>
@@ -53,7 +53,7 @@ export function FAQ() {
                     isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                   )}
                 >
-                  <p className="max-w-3xl pb-2 text-base leading-[1.8] text-ink sm:text-lg">
+                  <p className="max-w-3xl pb-2 text-base leading-[1.8] text-catering-co-ink sm:text-lg">
                     {faq.answer}
                   </p>
                 </div>

@@ -1,6 +1,6 @@
 import { createHmac, randomUUID } from "node:crypto";
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/db";
+import { getAdminDb } from "@/lib/db";
 
 export function enforceJsonRequest(request: NextRequest, maxBytes = 512 * 1024): NextResponse | null {
   const contentType = request.headers.get("content-type")?.split(";", 1)[0].trim();
@@ -43,8 +43,8 @@ export function enforceSameOrigin(request: NextRequest): NextResponse | null {
 }
 
 function rateLimitSecret(): string {
-  const secret = process.env.RATE_LIMIT_KEY_SECRET ?? process.env.BETTER_AUTH_SECRET;
-  if (!secret) throw new Error("RATE_LIMIT_KEY_SECRET or BETTER_AUTH_SECRET must be configured.");
+  const secret = process.env.RATE_LIMIT_KEY_SECRET ?? process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!secret) throw new Error("RATE_LIMIT_KEY_SECRET or SUPABASE_SERVICE_ROLE_KEY must be configured.");
   return secret;
 }
 
@@ -65,33 +65,49 @@ export async function enforceRateLimit(options: {
   windowSeconds: number;
 }): Promise<NextResponse | null> {
   const key = `api:${options.scope}:${protectedRateLimitKey(options.scope, options.identifier)}`;
-  const now = BigInt(Date.now());
-  const windowMs = BigInt(options.windowSeconds * 1000);
+  const now = Date.now();
+  const windowMs = options.windowSeconds * 1000;
 
-  const rows = await prisma.$queryRaw<Array<{ count: number; lastRequest: bigint }>>`
-    INSERT INTO "rate_limit" ("id", "key", "count", "lastRequest")
-    VALUES (${randomUUID()}, ${key}, 1, ${now})
-    ON CONFLICT ("key") DO UPDATE SET
-      "count" = CASE
-        WHEN ${now} - "rate_limit"."lastRequest" >= ${windowMs} THEN 1
-        ELSE "rate_limit"."count" + 1
-      END,
-      "lastRequest" = CASE
-        WHEN ${now} - "rate_limit"."lastRequest" >= ${windowMs} THEN ${now}
-        ELSE "rate_limit"."lastRequest"
-      END
-    RETURNING "count", "lastRequest"
-  `;
+  const db = getAdminDb();
 
-  const result = rows[0];
-  if (!result || result.count <= options.max) return null;
+  // Try to get existing record
+  const { data: existing } = await db
+    .from("rate_limits")
+    .select("id, count, last_request")
+    .eq("key", key)
+    .single();
 
-  const retryAfter = Math.max(
-    1,
-    Math.ceil((Number(result.lastRequest + windowMs - now)) / 1000),
-  );
-  return NextResponse.json(
-    { error: "Too many requests. Please try again later." },
-    { status: 429, headers: { "Retry-After": String(retryAfter) } },
-  );
+  if (existing) {
+    const elapsed = now - Number(existing.last_request);
+    if (elapsed >= windowMs) {
+      // Window expired, reset
+      await db
+        .from("rate_limits")
+        .update({ count: 1, last_request: now })
+        .eq("id", existing.id);
+      return null;
+    } else {
+      // Within window, increment
+      const newCount = existing.count + 1;
+      await db
+        .from("rate_limits")
+        .update({ count: newCount })
+        .eq("id", existing.id);
+
+      if (newCount > options.max) {
+        const retryAfter = Math.max(1, Math.ceil((Number(existing.last_request) + windowMs - now) / 1000));
+        return NextResponse.json(
+          { error: "Too many requests. Please try again later." },
+          { status: 429, headers: { "Retry-After": String(retryAfter) } },
+        );
+      }
+      return null;
+    }
+  } else {
+    // First request in this window
+    await db
+      .from("rate_limits")
+      .insert({ id: randomUUID(), key, count: 1, last_request: now });
+    return null;
+  }
 }

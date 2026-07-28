@@ -14,7 +14,7 @@ export default function Testimonials() {
     <section className="w-full flex flex-col md:flex-row" style={{ backgroundColor: colors.primary }}>
       <div className="w-full md:w-1/2 p-12 md:p-24 flex items-start">
         <h2 
-          className="font-serif text-[12vw] md:text-[6vw] font-bold leading-[0.9] tracking-tighter sticky top-32"
+          className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.9] tracking-tighter sticky top-32"
           style={{ color: colors.text }}
         >
           {testimonials.title.split(' ').map((word: string, i: number) => (

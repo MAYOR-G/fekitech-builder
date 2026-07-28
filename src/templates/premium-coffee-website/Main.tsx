@@ -15,7 +15,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="bg-brand-black min-h-screen text-brand-cream font-body selection:bg-brand-accent selection:text-white">
+    <div className="bg-coffee-brand-black min-h-screen text-coffee-brand-cream font-coffee-body selection:bg-coffee-brand-accent selection:text-white">
       <Navbar />
       <main>
         <Hero />

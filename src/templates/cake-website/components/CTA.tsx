@@ -16,14 +16,14 @@ export function CTA() {
             className="min-h-[360px] rounded-none"
             imageClassName="opacity-92"
           />
-          <div className="p-8 text-cream sm:p-12 lg:p-16">
-            <p className="text-xs font-black uppercase tracking-[0.26em] text-blush">
+          <div className="p-8 text-sweet-cake-cream sm:p-12 lg:p-16">
+            <p className="text-xs font-black uppercase tracking-[0.26em] text-sweet-cake-blush">
               Orders and consultations
             </p>
-            <h2 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
+            <h2 className="mt-4 font-sweet-cake-display text-4xl font-semibold leading-tight sm:text-5xl">
               Bring the date, the mood, and a table worth gathering around.
             </h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-cream/80">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-sweet-cake-cream/80">
               Share your occasion details and we will guide cake size, flavours,
               finish, packaging, and delivery timing with a polished proposal.
             </p>

@@ -8,7 +8,7 @@ export default function Wholesale() {
   const siteContent = useTemplateData();
 
   return (
-    <section className="py-32 px-6 bg-brand-charcoal">
+    <section className="py-32 px-6 bg-coffee-brand-charcoal">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
@@ -18,8 +18,8 @@ export default function Wholesale() {
           className="w-full lg:w-5/12"
         >
           <h2 className="text-5xl md:text-7xl mb-8 leading-tight"><EditableText section="wholesale" field="title" value={siteContent?.wholesale?.title} as="span" /></h2>
-          <p className="text-lg text-brand-cream/80 mb-12"><EditableText section="wholesale" field="text" value={siteContent?.wholesale?.text} as="span" /></p>
-          <button className="bg-white text-brand-black px-8 py-4 uppercase font-bold tracking-widest hover:bg-brand-accent hover:text-white transition-colors duration-300">
+          <p className="text-lg text-coffee-brand-cream/80 mb-12"><EditableText section="wholesale" field="text" value={siteContent?.wholesale?.text} as="span" /></p>
+          <button className="bg-white text-coffee-brand-black px-8 py-4 uppercase font-bold tracking-widest hover:bg-coffee-brand-accent hover:text-white transition-colors duration-300">
             Enquire Now
           </button>
         </motion.div>
@@ -41,7 +41,7 @@ export default function Wholesale() {
             transition={{ duration: 0.8, delay: 0.3 }}
             src={siteContent?.wholesale?.image2} 
             alt="Barista" 
-            className="absolute -bottom-16 -left-8 md:-left-16 w-1/2 aspect-square object-cover border-8 border-brand-charcoal shadow-2xl"
+            className="absolute -bottom-16 -left-8 md:-left-16 w-1/2 aspect-square object-cover border-8 border-coffee-brand-charcoal shadow-2xl"
           />
         </div>
       </div>

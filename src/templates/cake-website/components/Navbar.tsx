@@ -39,14 +39,14 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label={brand.name}>
-          <span className="grid h-11 w-11 place-items-center rounded-full bg-ganache font-display text-lg font-semibold text-cream shadow-card">
+          <span className="grid h-11 w-11 place-items-center rounded-full bg-sweet-cake-ganache font-sweet-cake-display text-lg font-semibold text-sweet-cake-cream shadow-card">
             SD
           </span>
           <span className="leading-none">
-            <span className="block font-display text-xl font-semibold tracking-wide text-ganache">
+            <span className="block font-sweet-cake-display text-xl font-semibold tracking-wide text-sweet-cake-ganache">
               {brand.name}
             </span>
-            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.24em] text-cocoa/80 sm:block">
+            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.24em] text-sweet-cake-cocoa/80 sm:block">
               Bristol cake studio
             </span>
           </span>
@@ -57,7 +57,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[15px] font-extrabold text-chocolate/76 transition hover:text-ganache"
+              className="text-[15px] font-extrabold text-sweet-cake-chocolate/76 transition hover:text-sweet-cake-ganache"
             >
               {link.label}
             </a>
@@ -72,7 +72,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-full border border-chocolate/15 bg-white/75 text-ganache transition hover:-translate-y-0.5 hover:bg-white lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full border border-sweet-cake-chocolate/15 bg-white/75 text-sweet-cake-ganache transition hover:-translate-y-0.5 hover:bg-white lg:hidden"
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-label="Toggle navigation menu"
@@ -83,7 +83,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid overflow-hidden border-t border-chocolate/10 bg-[#FFFBF7] transition-all duration-300 lg:hidden",
+          "grid overflow-hidden border-t border-sweet-cake-chocolate/10 bg-[#FFFBF7] transition-all duration-300 lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
@@ -94,7 +94,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-full px-4 py-3 text-[15px] font-extrabold text-chocolate/78 transition hover:bg-white/70 hover:text-ganache"
+                className="block rounded-full px-4 py-3 text-[15px] font-extrabold text-sweet-cake-chocolate/78 transition hover:bg-white/70 hover:text-sweet-cake-ganache"
               >
                 {link.label}
               </a>

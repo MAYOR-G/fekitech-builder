@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { authClient } from "@/lib/auth-client";
+import { createClient } from "@/lib/supabase/client";
 import { LogoMark } from "@/components/ui/LogoMark";
 
 export default function ForgotPasswordPage() {
@@ -21,9 +21,9 @@ export default function ForgotPasswordPage() {
             event.preventDefault();
             setIsSubmitting(true);
             const email = new FormData(event.currentTarget).get("email");
-            await authClient.requestPasswordReset({
-              email: String(email),
-              redirectTo: "/reset-password",
+            const supabase = createClient();
+            await supabase.auth.resetPasswordForEmail(String(email), {
+              redirectTo: `${window.location.origin}/reset-password`,
             });
             setMessage("If an account exists for that email, a reset link has been sent.");
             setIsSubmitting(false);

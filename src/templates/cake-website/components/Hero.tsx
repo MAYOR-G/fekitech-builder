@@ -31,7 +31,7 @@ export function Hero() {
             <span className="h-px w-10 bg-white/60" />
           </p>
 
-          <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.6rem]">
+          <h1 className="font-sweet-cake-display text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.6rem]">
             {hero.title}
           </h1>
 
@@ -42,7 +42,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <ButtonLink
               href={hero.primaryHref}
-              className="flex min-h-[3.5rem] items-center justify-center gap-2 rounded-full bg-white px-8 text-[0.85rem] font-bold uppercase tracking-[0.1em] text-ganache hover:bg-rose hover:text-white transition-colors"
+              className="flex min-h-[3.5rem] items-center justify-center gap-2 rounded-full bg-white px-8 text-[0.85rem] font-bold uppercase tracking-[0.1em] text-sweet-cake-ganache hover:bg-sweet-cake-rose hover:text-white transition-colors"
             >
               {hero.primaryLabel}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

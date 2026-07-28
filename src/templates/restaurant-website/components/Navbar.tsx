@@ -11,17 +11,17 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-cream/10 bg-coal/28">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-halcyon-table-cream/10 bg-halcyon-table-coal/28">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label={brand.name}>
-          <span className="grid h-11 w-11 place-items-center rounded-full bg-ember text-coal shadow-ember">
+          <span className="grid h-11 w-11 place-items-center rounded-full bg-halcyon-table-ember text-halcyon-table-coal shadow-halcyon-table-ember">
             <Flame className="h-5 w-5" aria-hidden="true" />
           </span>
           <span className="leading-none">
-            <span className="block font-display text-2xl font-semibold text-cream">
+            <span className="block font-halcyon-table-display text-2xl font-semibold text-halcyon-table-cream">
               {brand.name}
             </span>
-            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-sage sm:block">
+            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-halcyon-table-sage sm:block">
               Seasonal British dining
             </span>
           </span>
@@ -32,7 +32,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[15px] font-bold text-cream/68 transition hover:text-ember"
+              className="text-[15px] font-bold text-halcyon-table-cream/68 transition hover:text-halcyon-table-ember"
             >
               {link.label}
             </a>
@@ -47,7 +47,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-full border border-cream/14 bg-cream/[0.06] text-cream transition hover:bg-cream/[0.1] lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full border border-halcyon-table-cream/14 bg-halcyon-table-cream/[0.06] text-halcyon-table-cream transition hover:bg-halcyon-table-cream/[0.1] lg:hidden"
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-label="Toggle navigation menu"
@@ -58,7 +58,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid overflow-hidden border-t border-cream/10 bg-coal/96 transition-all duration-300 lg:hidden",
+          "grid overflow-hidden border-t border-halcyon-table-cream/10 bg-halcyon-table-coal/96 transition-all duration-300 lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
@@ -69,7 +69,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-full px-4 py-3 text-[15px] font-bold text-cream/76 transition hover:bg-cream/[0.08] hover:text-ember"
+                className="block rounded-full px-4 py-3 text-[15px] font-bold text-halcyon-table-cream/76 transition hover:bg-halcyon-table-cream/[0.08] hover:text-halcyon-table-ember"
               >
                 {link.label}
               </a>

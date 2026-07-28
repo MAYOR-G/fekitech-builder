@@ -80,7 +80,7 @@ export default function ServicesPreview() {
                 Our Expertise
               </span>
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white tracking-tight">
+            <h2 className="font-ink-iron-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-white tracking-tight">
               SERVICES
             </h2>
           </div>
@@ -104,10 +104,10 @@ export default function ServicesPreview() {
               className="group relative flex flex-col pt-8 border-t border-white/10 hover:border-[#C9A84C]/50 transition-colors duration-500 cursor-pointer"
             >
               <div className="flex justify-between items-start mb-6">
-                <h3 className="font-display text-2xl md:text-3xl tracking-wide text-white group-hover:text-[#C9A84C] transition-colors duration-500">
+                <h3 className="font-ink-iron-display text-2xl md:text-3xl tracking-wide text-white group-hover:text-[#C9A84C] transition-colors duration-500">
                   {service.title}
                 </h3>
-                <span className="font-display text-xl text-white/20 group-hover:text-[#C9A84C]/50 transition-colors duration-500">
+                <span className="font-ink-iron-display text-xl text-white/20 group-hover:text-[#C9A84C]/50 transition-colors duration-500">
                   {service.number}
                 </span>
               </div>

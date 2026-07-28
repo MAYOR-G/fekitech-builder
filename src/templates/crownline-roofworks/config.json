@@ -3,11 +3,9 @@
   "name": "Crownline Roofworks",
   "description": "Roof installation, emergency repairs, flat roofing and commercial roof maintenance. Converted from the Roofora index3.html design.",
   "category": "Services",
-  "image": "/templates/crownline-roofworks/preview-collage.webp",
+  "image": "/templates/crownline-roofworks.webp",
   "previewImages": [
-    "/templates/crownline-roofworks/preview-collage.webp",
-    "/templates/crownline-roofworks/assets/images/about-img.jpg",
-    "/templates/crownline-roofworks/assets/images/services-img1.jpg"
+    "/templates/crownline-roofworks.webp"
   ],
   "features": [
     "Independent Roofora-derived homepage",

@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-gym-charcoal overflow-hidden">
+    <section id="about" className="py-24 bg-iron-gym-gym-charcoal overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div 
@@ -22,7 +22,7 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-gym-accent rounded-full blur-3xl opacity-20 z-0"></div>
+            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-iron-gym-gym-accent rounded-full blur-3xl opacity-20 z-0"></div>
           </motion.div>
 
           <motion.div 
@@ -31,8 +31,8 @@ const About = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Welcome to Forge</h2>
-            <h3 className="text-4xl md:text-5xl font-black font-display mb-6 leading-tight">
+            <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Welcome to Forge</h2>
+            <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display mb-6 leading-tight">
               MORE THAN A GYM.<br />IT&apos;S A LIFESTYLE.
             </h3>
             <p className="text-gray-400 text-lg mb-6 leading-relaxed">
@@ -45,7 +45,7 @@ const About = () => {
             <div className="flex flex-col gap-4">
               {['State-of-the-art facility', 'Elite personal trainers', 'Results-driven approach'].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gym-accent rounded-full"></div>
+                  <div className="w-2 h-2 bg-iron-gym-gym-accent rounded-full"></div>
                   <span className="font-semibold text-white">{feature}</span>
                 </div>
               ))}

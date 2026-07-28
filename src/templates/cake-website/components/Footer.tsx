@@ -6,18 +6,18 @@ export function Footer() {
   const { brand, navLinks, openingHours } = useTemplateData();
 
   return (
-    <footer id="contact" className="border-t border-[#F0F0F0] bg-white px-5 py-16 text-ganache lg:px-8">
+    <footer id="contact" className="border-t border-[#F0F0F0] bg-white px-5 py-16 text-sweet-cake-ganache lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.25fr_0.75fr_1fr_0.9fr]">
         <div>
           <a href="#top" className="flex items-center gap-3">
-            <span className="grid h-12 w-12 place-items-center rounded-full bg-ganache font-display text-lg font-semibold text-cream shadow-card">
+            <span className="grid h-12 w-12 place-items-center rounded-full bg-sweet-cake-ganache font-sweet-cake-display text-lg font-semibold text-sweet-cake-cream shadow-card">
               VC
             </span>
             <span className="leading-none">
-              <span className="block font-display text-2xl font-semibold">
+              <span className="block font-sweet-cake-display text-2xl font-semibold">
                 {brand.name}
               </span>
-              <span className="mt-1 block text-[11px] font-black uppercase tracking-[0.24em] text-cocoa">
+              <span className="mt-1 block text-[11px] font-black uppercase tracking-[0.24em] text-sweet-cake-cocoa">
                 Cake atelier
               </span>
             </span>
@@ -33,7 +33,7 @@ export function Footer() {
               <a
                 key={label}
                 href="#top"
-                className="grid h-10 w-10 place-items-center rounded-full border border-chocolate/15 text-ganache transition hover:-translate-y-0.5 hover:border-rose/40 hover:bg-[#FFFBF7] hover:text-rose"
+                className="grid h-10 w-10 place-items-center rounded-full border border-sweet-cake-chocolate/15 text-sweet-cake-ganache transition hover:-translate-y-0.5 hover:border-sweet-cake-rose/40 hover:bg-[#FFFBF7] hover:text-sweet-cake-rose"
                 aria-label={label}
               >
                 <Icon className="h-4 w-4" />
@@ -43,13 +43,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-rose">
+          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-sweet-cake-rose">
             Quick links
           </h3>
           <ul className="mt-5 space-y-3">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="text-[15px] text-[#2D2D2D] transition hover:text-rose">
+                <a href={link.href} className="text-[15px] text-[#2D2D2D] transition hover:text-sweet-cake-rose">
                   {link.label}
                 </a>
               </li>
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-rose">
+          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-sweet-cake-rose">
             Visit
           </h3>
           <address className="mt-5 not-italic text-[15px] leading-7 text-[#2D2D2D]">
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-rose">
+          <h3 className="text-sm font-black uppercase tracking-[0.22em] text-sweet-cake-rose">
             Opening hours
           </h3>
           <ul className="mt-5 space-y-3 text-[15px] text-[#2D2D2D]">

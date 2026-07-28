@@ -6,6 +6,7 @@ import { Monitor, Tablet, Smartphone } from "lucide-react";
 export function PreviewBar({ templateId, templateName }: { templateId: string; templateName: string }) {
   const router = useRouter();
   const [device, setDevice] = useState<"desktop" | "tablet" | "mobile">("desktop");
+  const frameSrc = `/preview/${encodeURIComponent(templateId)}?frame=1&isolate=${encodeURIComponent(templateId)}`;
   
   const handleUseTemplate = async () => {
     try {
@@ -72,9 +73,11 @@ export function PreviewBar({ templateId, templateName }: { templateId: string; t
           }`}
         >
            <iframe 
-             src={`/preview/${templateId}?frame=1`} 
+             key={`${templateId}-${device}`}
+             src={frameSrc}
              className="w-full h-full border-none"
              title={`${templateName} Preview`}
+             referrerPolicy="no-referrer"
            />
         </div>
       </div>

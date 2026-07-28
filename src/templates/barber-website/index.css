@@ -1,54 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
-
-
-
-@import "tailwindcss";
-
 @layer base {
-  html {
+  .classic-barber-template {
     scroll-behavior: smooth;
   }
-  .template-wrapper {
-    @apply bg-brand-charcoal text-brand-cream font-sans antialiased selection:bg-brand-accent selection:text-white;
+.classic-barber-template {
+    background: #151515;
+    color: #fdfbf7;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  
-  .template-wrapper h1, h2, h3, h4, h5, h6 {
-    @apply font-heading uppercase tracking-wide;
+.classic-barber-template h1,
+.classic-barber-template h2,
+.classic-barber-template h3,
+.classic-barber-template h4,
+.classic-barber-template h5,
+.classic-barber-template h6 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+  }
+  .classic-barber-template ::selection {
+    background: #C5A059;
+    color: #ffffff;
   }
 }
-
 @layer utilities {
-  .text-stroke-1 {
+.text-stroke-1 {
     -webkit-text-stroke: 1px currentColor;
     color: transparent;
   }
-  .text-stroke-2 {
+.text-stroke-2 {
     -webkit-text-stroke: 2px currentColor;
     color: transparent;
   }
-  
-  .hide-scrollbar::-webkit-scrollbar {
+.hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  .hide-scrollbar {
+.hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
-
 /* INJECTED FROM tailwind.config.js (v3->v4 port).
    Without these `@theme` tokens, the v4 build cannot recognize
    the original v3 color utilities like `bg-gym-dark` or `font-sans` */
 @theme {
   /* colors */
-  --color-brand-black: #0a0a0a;
-  --color-brand-charcoal: #151515;
-  --color-brand-cream: #fdfbf7;
-  --color-brand-accent: #C5A059;
-  --color-brand-muted: #8A8A8A;
+  --color-barber-brand-black: #0a0a0a;
+  --color-barber-brand-charcoal: #151515;
+  --color-barber-brand-cream: #fdfbf7;
+  --color-barber-brand-accent: #C5A059;
+  --color-barber-brand-muted: #8A8A8A;
   /* fonts */
-  --font-sans: 'Inter', sans-serif;
-  --font-heading: 'Oswald', sans-serif;
-  --font-accent: 'Playfair Display', serif;
+  --font-barber-sans: 'Inter', sans-serif;
+  --font-barber-heading: 'Oswald', sans-serif;
+  --font-barber-accent: 'Playfair Display', serif;
 }
 
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .bg-barber-brand-black{background-color:#0a0a0a;}
+  .selection\:text-barber-brand-black::selection{color:#0a0a0a;}
+  .text-barber-brand-black{color:#0a0a0a;}
+  .from-barber-brand-black\/80{--tw-gradient-from:color-mix(in srgb, #0a0a0a 80%, transparent);--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-to) var(--tw-gradient-to-position));}
+  .bg-barber-brand-black\/80{background-color:color-mix(in srgb, #0a0a0a 80%, transparent);}
+  .bg-barber-brand-black\/50{background-color:color-mix(in srgb, #0a0a0a 50%, transparent);}
+  .hover\:bg-barber-brand-charcoal:hover{background-color:#151515;}
+  .bg-barber-brand-charcoal{background-color:#151515;}
+  .from-barber-brand-charcoal{--tw-gradient-from:#151515;--tw-gradient-stops:var(--tw-gradient-via-stops,var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-to) var(--tw-gradient-to-position));}
+  .via-barber-brand-charcoal\/40{--tw-gradient-via:color-mix(in srgb, #151515 40%, transparent);--tw-gradient-via-stops:var(--tw-gradient-position),var(--tw-gradient-from) var(--tw-gradient-from-position),var(--tw-gradient-via) var(--tw-gradient-via-position),var(--tw-gradient-to) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-via-stops);}
+  .to-barber-brand-charcoal\/20{--tw-gradient-to:color-mix(in srgb, #151515 20%, transparent);}
+  .bg-barber-brand-charcoal\/95{background-color:color-mix(in srgb, #151515 95%, transparent);}
+  .text-barber-brand-cream{color:#fdfbf7;}
+  .text-barber-brand-cream\/70{color:color-mix(in srgb, #fdfbf7 70%, transparent);}
+  .text-barber-brand-cream\/60{color:color-mix(in srgb, #fdfbf7 60%, transparent);}
+  .text-barber-brand-cream\/80{color:color-mix(in srgb, #fdfbf7 80%, transparent);}
+  .text-barber-brand-cream\/40{color:color-mix(in srgb, #fdfbf7 40%, transparent);}
+  .hover\:text-barber-brand-cream:hover{color:#fdfbf7;}
+  .hover\:bg-barber-brand-cream:hover{background-color:#fdfbf7;}
+  .border-barber-brand-cream\/30{border-color:color-mix(in srgb, #fdfbf7 30%, transparent);}
+  .hover\:bg-barber-brand-cream\/10:hover{background-color:color-mix(in srgb, #fdfbf7 10%, transparent);}
+  .group:hover .group-hover\:text-barber-brand-cream{color:#fdfbf7;}
+  .text-barber-brand-cream\/30{color:color-mix(in srgb, #fdfbf7 30%, transparent);}
+  .selection\:bg-barber-brand-accent::selection{background-color:#C5A059;}
+  .bg-barber-brand-accent{background-color:#C5A059;}
+  .hover\:text-barber-brand-accent:hover{color:#C5A059;}
+  .text-barber-brand-accent{color:#C5A059;}
+  .group:hover .group-hover\:text-barber-brand-accent{color:#C5A059;}
+  .font-barber-heading{font-family:'Oswald', sans-serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

@@ -57,7 +57,7 @@ export function Services() {
               title="Care that moves from prevention to confident smile design."
               description="Each service card is written for real patient decisions: what the treatment helps with, how it is planned, and where comfort matters."
             />
-            <p className="max-w-xl text-base leading-8 text-graphite/68 lg:justify-self-end">
+            <p className="max-w-xl text-base leading-8 text-bright-dental-graphite/68 lg:justify-self-end">
               The template uses balanced content, real-world treatment language,
               and visual previews that can be replaced with client photography.
             </p>
@@ -70,7 +70,7 @@ export function Services() {
             return (
               <Reveal key={service.title} delay={index * 70}>
                 <article
-                  className="service-card group relative h-full overflow-hidden rounded-[1.35rem] border border-ink/8 bg-porcelain p-5 shadow-card transition duration-300 hover:-translate-y-1 hover:border-ocean/24 hover:shadow-soft"
+                  className="service-card group relative h-full overflow-hidden rounded-[1.35rem] border border-bright-dental-ink/8 bg-bright-dental-porcelain p-5 shadow-card transition duration-300 hover:-translate-y-1 hover:border-bright-dental-ocean/24 hover:shadow-soft"
                   onMouseEnter={(event) =>
                     showPreview(event, service.image, service.title)
                   }
@@ -80,23 +80,23 @@ export function Services() {
                   }
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <span className="grid h-12 w-12 place-items-center rounded-full bg-white text-ocean shadow-insetGlow">
+                    <span className="grid h-12 w-12 place-items-center rounded-full bg-white text-bright-dental-ocean shadow-insetGlow">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </span>
-                    <span className="rounded-full border border-ocean/14 bg-white/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-ocean">
+                    <span className="rounded-full border border-bright-dental-ocean/14 bg-white/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-bright-dental-ocean">
                       {service.detail}
                     </span>
                   </div>
-                  <h3 className="mt-8 font-display text-3xl font-semibold leading-tight text-ink">
+                  <h3 className="mt-8 font-bright-dental-display text-3xl font-semibold leading-tight text-bright-dental-ink">
                     {service.title}
                   </h3>
-                  <p className="mt-4 text-base leading-8 text-graphite/70">
+                  <p className="mt-4 text-base leading-8 text-bright-dental-graphite/70">
                     {service.description}
                   </p>
-                  <div className="mt-8 h-px bg-ink/8" />
+                  <div className="mt-8 h-px bg-bright-dental-ink/8" />
                   <a
                     href="#appointment"
-                    className="mt-5 inline-flex text-sm font-semibold text-ocean transition hover:text-ink focus:outline-none focus-visible:rounded-full focus-visible:ring-4 focus-visible:ring-ocean/18"
+                    className="mt-5 inline-flex text-sm font-semibold text-bright-dental-ocean transition hover:text-bright-dental-ink focus:outline-none focus-visible:rounded-full focus-visible:ring-4 focus-visible:ring-bright-dental-ocean/18"
                   >
                     Discuss this treatment
                   </a>
@@ -124,7 +124,7 @@ export function Services() {
             className="h-full w-full rounded-[1rem] object-cover"
           />
         ) : null}
-        <span className="absolute bottom-4 left-4 rounded-full bg-white/86 px-3 py-1 text-xs font-semibold text-ink backdrop-blur">
+        <span className="absolute bottom-4 left-4 rounded-full bg-white/86 px-3 py-1 text-xs font-semibold text-bright-dental-ink backdrop-blur">
           {preview.title}
         </span>
       </div>

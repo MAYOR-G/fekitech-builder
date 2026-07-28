@@ -12,7 +12,7 @@ export default function FromRoastHouse() {
   ];
 
   return (
-    <section className="py-32 px-6 bg-white text-brand-black">
+    <section className="py-32 px-6 bg-white text-coffee-brand-black">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
@@ -52,7 +52,7 @@ export default function FromRoastHouse() {
                 transition={{ delay: 0.2 + (idx * 0.1) }}
                 className="flex items-center gap-4 text-lg"
               >
-                <div className="bg-brand-accent p-1 rounded-full text-white">
+                <div className="bg-coffee-brand-accent p-1 rounded-full text-white">
                   <Check size={16} />
                 </div>
                 {benefit}
@@ -65,7 +65,7 @@ export default function FromRoastHouse() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="bg-brand-black text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-brand-accent transition-colors"
+            className="bg-coffee-brand-black text-white px-8 py-4 uppercase font-bold tracking-widest hover:bg-coffee-brand-accent transition-colors"
           >
             Explore Subscriptions
           </motion.button>

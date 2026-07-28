@@ -8,12 +8,12 @@ import { useTemplateData } from '../TemplateContext';
 const FeaturedMenu = () => {
   const siteContent = useTemplateData();
   return (
-    <section id="menu" className="py-24 bg-coffee-cream">
+    <section id="menu" className="py-24 bg-artisan-coffee-coffee-cream">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
           <motion.h2 
-            className="font-serif text-4xl md:text-5xl text-coffee-dark mb-4"
+            className="font-artisan-coffee-serif text-4xl md:text-5xl text-artisan-coffee-coffee-dark mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -22,7 +22,7 @@ const FeaturedMenu = () => {
             Curated Menu
           </motion.h2>
           <motion.div 
-            className="h-px w-24 bg-coffee-terracotta mx-auto"
+            className="h-px w-24 bg-artisan-coffee-coffee-terracotta mx-auto"
             initial={{ width: 0 }}
             whileInView={{ width: 96 }}
             viewport={{ once: true }}
@@ -39,16 +39,16 @@ const FeaturedMenu = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-sans text-2xl font-light text-coffee-dark mb-8 border-b border-coffee-brown/20 pb-4">Classic & Signature</h3>
+            <h3 className="font-artisan-coffee-sans text-2xl font-light text-artisan-coffee-coffee-dark mb-8 border-b border-artisan-coffee-coffee-brown/20 pb-4">Classic & Signature</h3>
             <div className="space-y-8 mb-12">
               {siteContent.menu.drinks.map((drink, index) => (
                 <div key={index} className="group relative">
                   <div className="flex justify-between items-baseline mb-1">
-                    <h4 className="font-serif text-xl text-coffee-dark group-hover:text-coffee-terracotta transition-colors">{drink.name}</h4>
-                    <div className="flex-1 border-b border-dotted border-coffee-brown/30 mx-4 relative top-[-6px]" />
-                    <span className="font-sans text-coffee-dark/80">{drink.price}</span>
+                    <h4 className="font-artisan-coffee-serif text-xl text-artisan-coffee-coffee-dark group-hover:text-artisan-coffee-coffee-terracotta transition-colors">{drink.name}</h4>
+                    <div className="flex-1 border-b border-dotted border-artisan-coffee-coffee-brown/30 mx-4 relative top-[-6px]" />
+                    <span className="font-artisan-coffee-sans text-artisan-coffee-coffee-dark/80">{drink.price}</span>
                   </div>
-                  <p className="font-light text-sm text-coffee-dark/60">{drink.description}</p>
+                  <p className="font-light text-sm text-artisan-coffee-coffee-dark/60">{drink.description}</p>
                 </div>
               ))}
             </div>
@@ -69,16 +69,16 @@ const FeaturedMenu = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="font-sans text-2xl font-light text-coffee-dark mb-8 border-b border-coffee-brown/20 pb-4">Bakery & Bites</h3>
+            <h3 className="font-artisan-coffee-sans text-2xl font-light text-artisan-coffee-coffee-dark mb-8 border-b border-artisan-coffee-coffee-brown/20 pb-4">Bakery & Bites</h3>
             <div className="space-y-8 mb-12">
               {siteContent.menu.food.map((item, index) => (
                 <div key={index} className="group relative">
                   <div className="flex justify-between items-baseline mb-1">
-                    <h4 className="font-serif text-xl text-coffee-dark group-hover:text-coffee-terracotta transition-colors">{item.name}</h4>
-                    <div className="flex-1 border-b border-dotted border-coffee-brown/30 mx-4 relative top-[-6px]" />
-                    <span className="font-sans text-coffee-dark/80">{item.price}</span>
+                    <h4 className="font-artisan-coffee-serif text-xl text-artisan-coffee-coffee-dark group-hover:text-artisan-coffee-coffee-terracotta transition-colors">{item.name}</h4>
+                    <div className="flex-1 border-b border-dotted border-artisan-coffee-coffee-brown/30 mx-4 relative top-[-6px]" />
+                    <span className="font-artisan-coffee-sans text-artisan-coffee-coffee-dark/80">{item.price}</span>
                   </div>
-                  <p className="font-light text-sm text-coffee-dark/60">{item.description}</p>
+                  <p className="font-light text-sm text-artisan-coffee-coffee-dark/60">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -96,7 +96,7 @@ const FeaturedMenu = () => {
         
         <div className="mt-16 text-center">
           <motion.button 
-            className="border border-coffee-dark text-coffee-dark px-8 py-3 rounded-none font-medium hover:bg-coffee-dark hover:text-coffee-light transition-colors uppercase tracking-widest text-sm"
+            className="border border-artisan-coffee-coffee-dark text-artisan-coffee-coffee-dark px-8 py-3 rounded-none font-medium hover:bg-artisan-coffee-coffee-dark hover:text-artisan-coffee-coffee-light transition-colors uppercase tracking-widest text-sm"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

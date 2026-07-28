@@ -21,7 +21,7 @@ export function AppointmentCTA() {
   };
 
   return (
-    <section id="appointment" className="bg-ink px-5 py-20 text-white lg:px-8">
+    <section id="appointment" className="bg-bright-dental-ink px-5 py-20 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-stretch">
         <Reveal>
           <div className="relative min-h-[620px] overflow-hidden rounded-[2rem] border border-white/12 shadow-soft">
@@ -33,10 +33,10 @@ export function AppointmentCTA() {
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,39,43,0.12)_0%,rgba(19,39,43,0.78)_100%)]" />
             <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-mint">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-bright-dental-mint">
                 Book a visit
               </p>
-              <h2 className="mt-4 font-display text-5xl font-semibold leading-[1.02]">
+              <h2 className="mt-4 font-bright-dental-display text-5xl font-semibold leading-[1.02]">
                 Start with a calm conversation.
               </h2>
               <p className="mt-5 max-w-xl text-base leading-8 text-white/76">
@@ -50,17 +50,17 @@ export function AppointmentCTA() {
         <Reveal delay={120}>
           <form
             onSubmit={handleSubmit}
-            className="h-full rounded-[2rem] border border-white/12 bg-white p-5 text-ink shadow-soft sm:p-7"
+            className="h-full rounded-[2rem] border border-white/12 bg-white p-5 text-bright-dental-ink shadow-soft sm:p-7"
           >
             <div className="flex items-center gap-3">
-              <span className="grid h-12 w-12 place-items-center rounded-full bg-pearl text-ocean">
+              <span className="grid h-12 w-12 place-items-center rounded-full bg-bright-dental-pearl text-bright-dental-ocean">
                 <CalendarCheck className="h-6 w-6" aria-hidden="true" />
               </span>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-ocean">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-bright-dental-ocean">
                   Appointment request
                 </p>
-                <h3 className="font-display text-3xl font-semibold">
+                <h3 className="font-bright-dental-display text-3xl font-semibold">
                   Tell us what you need.
                 </h3>
               </div>
@@ -78,7 +78,7 @@ export function AppointmentCTA() {
                   onChange={(event) =>
                     setForm((current) => ({ ...current, name: event.target.value }))
                   }
-                  className="min-h-12 w-full rounded-[0.9rem] border border-ink/12 bg-porcelain px-4 text-base outline-none transition focus:border-ocean focus:ring-4 focus:ring-ocean/15"
+                  className="min-h-12 w-full rounded-[0.9rem] border border-bright-dental-ink/12 bg-bright-dental-porcelain px-4 text-base outline-none transition focus:border-bright-dental-ocean focus:ring-4 focus:ring-bright-dental-ocean/15"
                   placeholder="Alex Morgan"
                 />
               </div>
@@ -94,7 +94,7 @@ export function AppointmentCTA() {
                   onChange={(event) =>
                     setForm((current) => ({ ...current, email: event.target.value }))
                   }
-                  className="min-h-12 w-full rounded-[0.9rem] border border-ink/12 bg-porcelain px-4 text-base outline-none transition focus:border-ocean focus:ring-4 focus:ring-ocean/15"
+                  className="min-h-12 w-full rounded-[0.9rem] border border-bright-dental-ink/12 bg-bright-dental-porcelain px-4 text-base outline-none transition focus:border-bright-dental-ocean focus:ring-4 focus:ring-bright-dental-ocean/15"
                   placeholder="alex@example.com"
                 />
               </div>
@@ -110,7 +110,7 @@ export function AppointmentCTA() {
                   onChange={(event) =>
                     setForm((current) => ({ ...current, phone: event.target.value }))
                   }
-                  className="min-h-12 w-full rounded-[0.9rem] border border-ink/12 bg-porcelain px-4 text-base outline-none transition focus:border-ocean focus:ring-4 focus:ring-ocean/15"
+                  className="min-h-12 w-full rounded-[0.9rem] border border-bright-dental-ink/12 bg-bright-dental-porcelain px-4 text-base outline-none transition focus:border-bright-dental-ocean focus:ring-4 focus:ring-bright-dental-ocean/15"
                   placeholder="(312) 555-0198"
                 />
               </div>
@@ -128,7 +128,7 @@ export function AppointmentCTA() {
                       visitType: event.target.value,
                     }))
                   }
-                  className="min-h-12 w-full rounded-[0.9rem] border border-ink/12 bg-porcelain px-4 text-base outline-none transition focus:border-ocean focus:ring-4 focus:ring-ocean/15"
+                  className="min-h-12 w-full rounded-[0.9rem] border border-bright-dental-ink/12 bg-bright-dental-porcelain px-4 text-base outline-none transition focus:border-bright-dental-ocean focus:ring-4 focus:ring-bright-dental-ocean/15"
                 >
                   {appointmentOptions.map((option) => (
                     <option key={option}>{option}</option>
@@ -148,20 +148,20 @@ export function AppointmentCTA() {
                 onChange={(event) =>
                   setForm((current) => ({ ...current, message: event.target.value }))
                 }
-                className="min-h-36 w-full rounded-[0.9rem] border border-ink/12 bg-porcelain px-4 py-3 text-base outline-none transition focus:border-ocean focus:ring-4 focus:ring-ocean/15"
+                className="min-h-36 w-full rounded-[0.9rem] border border-bright-dental-ink/12 bg-bright-dental-porcelain px-4 py-3 text-base outline-none transition focus:border-bright-dental-ocean focus:ring-4 focus:ring-bright-dental-ocean/15"
                 placeholder="Share a concern, preferred appointment time, or treatment interest."
               />
             </div>
 
             <button
               type="submit"
-              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-ink px-6 text-sm font-semibold text-white transition hover:bg-ocean focus:outline-none focus-visible:ring-4 focus-visible:ring-ocean/24"
+              className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-bright-dental-ink px-6 text-sm font-semibold text-white transition hover:bg-bright-dental-ocean focus:outline-none focus-visible:ring-4 focus-visible:ring-bright-dental-ocean/24"
             >
               Send Request
               <Send className="h-4 w-4" aria-hidden="true" />
             </button>
 
-            <p className="mt-5 text-sm leading-6 text-graphite/66">
+            <p className="mt-5 text-sm leading-6 text-bright-dental-graphite/66">
               This frontend form is a template placeholder. Connect it to a
               secure booking or intake provider before collecting patient data.
             </p>

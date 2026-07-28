@@ -9,7 +9,7 @@ import { useTemplateData } from '../TemplateContext';
 const VisitUs = () => {
   const siteContent = useTemplateData();
   return (
-    <section id="visit" className="py-24 bg-coffee-dark text-coffee-light">
+    <section id="visit" className="py-24 bg-artisan-coffee-coffee-dark text-artisan-coffee-coffee-light">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -20,22 +20,22 @@ const VisitUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-serif text-4xl md:text-5xl mb-12">Visit Our Coffee House</h2>
+            <h2 className="font-artisan-coffee-serif text-4xl md:text-5xl mb-12">Visit Our Coffee House</h2>
             
-            <div className="space-y-8 font-sans font-light">
+            <div className="space-y-8 font-artisan-coffee-sans font-light">
               <div className="flex items-start gap-4">
-                <MapPin className="text-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
+                <MapPin className="text-artisan-coffee-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-medium text-lg mb-1">Location</h4>
-                  <p className="text-coffee-light/80"><EditableText section="visit" field="address" value={siteContent?.visit?.address} as="span" /></p>
+                  <p className="text-artisan-coffee-coffee-light/80"><EditableText section="visit" field="address" value={siteContent?.visit?.address} as="span" /></p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <Clock className="text-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
+                <Clock className="text-artisan-coffee-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-medium text-lg mb-1">Hours</h4>
-                  <ul className="text-coffee-light/80 space-y-1">
+                  <ul className="text-artisan-coffee-coffee-light/80 space-y-1">
                     {siteContent.visit.hours.map((h, i) => (
                       <li key={i} className="flex justify-between w-48">
                         <span>{h.day}</span>
@@ -47,25 +47,25 @@ const VisitUs = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <Phone className="text-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
+                <Phone className="text-artisan-coffee-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-medium text-lg mb-1">Contact</h4>
-                  <p className="text-coffee-light/80"><EditableText section="visit" field="phone" value={siteContent?.visit?.phone} as="span" /></p>
+                  <p className="text-artisan-coffee-coffee-light/80"><EditableText section="visit" field="phone" value={siteContent?.visit?.phone} as="span" /></p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <Mail className="text-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
+                <Mail className="text-artisan-coffee-coffee-terracotta shrink-0 mt-1" size={24} strokeWidth={1.5} />
                 <div>
                   <h4 className="font-medium text-lg mb-1">Email</h4>
-                  <p className="text-coffee-light/80"><EditableText section="visit" field="email" value={siteContent?.visit?.email} as="span" /></p>
+                  <p className="text-artisan-coffee-coffee-light/80"><EditableText section="visit" field="email" value={siteContent?.visit?.email} as="span" /></p>
                 </div>
               </div>
             </div>
           </motion.div>
 
           <motion.div
-            className="aspect-[4/3] bg-coffee-brown relative overflow-hidden"
+            className="aspect-[4/3] bg-artisan-coffee-coffee-brown relative overflow-hidden"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}

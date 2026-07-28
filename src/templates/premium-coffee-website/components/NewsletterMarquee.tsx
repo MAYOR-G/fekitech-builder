@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function NewsletterMarquee() {
   return (
-    <section className="bg-brand-accent text-white overflow-hidden py-24">
+    <section className="bg-coffee-brand-accent text-white overflow-hidden py-24">
       <div className="max-w-4xl mx-auto px-6 text-center mb-24">
         <h2 className="text-5xl md:text-7xl mb-6">ALL THE LATEST BREWS</h2>
         <p className="text-lg mb-12 opacity-90">Join our newsletter for fresh roasts, brew guides, and exclusive offers.</p>
@@ -12,7 +12,7 @@ export default function NewsletterMarquee() {
           <input 
             type="email" 
             placeholder="ENTER YOUR EMAIL" 
-            className="bg-transparent border-none outline-none flex-grow placeholder-white/50 text-white font-body uppercase tracking-widest"
+            className="bg-transparent border-none outline-none flex-grow placeholder-white/50 text-white font-coffee-body uppercase tracking-widest"
           />
           <button type="submit" className="hover:translate-x-2 transition-transform">
             <ArrowRight size={24} />
@@ -20,7 +20,7 @@ export default function NewsletterMarquee() {
         </form>
       </div>
 
-      <div className="w-full flex whitespace-nowrap opacity-50 text-4xl md:text-6xl font-heading uppercase tracking-widest pointer-events-none">
+      <div className="w-full flex whitespace-nowrap opacity-50 text-4xl md:text-6xl font-coffee-heading uppercase tracking-widest pointer-events-none">
         <motion.div
           animate={{ x: [0, -1035] }}
           transition={{ ease: "linear", duration: 15, repeat: Infinity }}

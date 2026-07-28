@@ -18,7 +18,7 @@ export function ImageFrame({
   loading = "lazy",
 }: ImageFrameProps) {
   return (
-    <div className={cn("overflow-hidden bg-linen", className)}>
+    <div className={cn("overflow-hidden bg-catering-co-linen", className)}>
       <TemplateImage
         src={src}
         alt={alt}

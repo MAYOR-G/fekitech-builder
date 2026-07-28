@@ -69,21 +69,21 @@ export function HorizontalJourney() {
                 >
                   <div className={`hidden lg:block w-1/2 ${isEven ? "text-left pl-12" : "text-right pr-12"}`}>
                     <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-sm border border-white/50">
-                      <h3 className="font-display text-2xl font-extrabold text-navy">{step.title}</h3>
+                      <h3 className="font-bright-dental-display text-2xl font-extrabold text-bright-dental-ink">{step.title}</h3>
                       <p className="mt-3 text-lg text-slate-900 font-medium leading-relaxed">{step.description}</p>
                     </div>
                   </div>
                   
                   {/* Center Dot */}
                   <div className="relative z-10 flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-white border-[6px] border-slate-50 shadow-xl transition-transform hover:scale-110">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal text-white shadow-inner">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-bright-dental-ocean text-white shadow-inner">
                       <step.icon className="h-6 w-6" strokeWidth={2.5} />
                     </div>
                   </div>
 
                   <div className={`lg:w-1/2 ${isEven ? "lg:pr-12" : "lg:pl-12"}`}>
                     <div className="lg:hidden bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-sm border border-white/50">
-                      <h3 className="font-display text-xl font-extrabold text-navy">{step.title}</h3>
+                      <h3 className="font-bright-dental-display text-xl font-extrabold text-bright-dental-ink">{step.title}</h3>
                       <p className="mt-2 text-slate-900 font-medium leading-relaxed">{step.description}</p>
                     </div>
                   </div>

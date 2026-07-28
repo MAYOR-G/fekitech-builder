@@ -9,7 +9,7 @@ export default function About() {
   const siteContent = useTemplateData();
 
   return (
-    <section className="py-24 md:py-32 px-6 bg-brand-charcoal">
+    <section className="py-24 md:py-32 px-6 bg-barber-brand-charcoal">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
@@ -33,10 +33,10 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full lg:w-1/2"
         >
-          <h2 className="text-4xl md:text-6xl font-heading mb-8 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-barber-heading mb-8 leading-tight">
             <EditableText section="about" field="headline" value={siteContent?.about?.headline} as="span" />
           </h2>
-          <p className="text-lg text-brand-cream/70 leading-relaxed font-light">
+          <p className="text-lg text-barber-brand-cream/70 leading-relaxed font-light">
             <EditableText section="about" field="text" value={siteContent?.about?.text} as="span" />
           </p>
           <div className="mt-12">

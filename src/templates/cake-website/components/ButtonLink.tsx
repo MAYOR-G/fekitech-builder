@@ -18,9 +18,9 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   const styles = {
     primary:
-      "bg-ganache text-cream shadow-soft hover:-translate-y-0.5 hover:bg-chocolate hover:shadow-card",
+      "bg-sweet-cake-ganache text-sweet-cake-cream shadow-soft hover:-translate-y-0.5 hover:bg-sweet-cake-chocolate hover:shadow-card",
     secondary:
-      "border border-chocolate/15 bg-white/76 text-chocolate shadow-insetLine hover:-translate-y-0.5 hover:border-rose/35 hover:bg-white",
+      "border border-sweet-cake-chocolate/15 bg-white/76 text-sweet-cake-chocolate shadow-insetLine hover:-translate-y-0.5 hover:border-sweet-cake-rose/35 hover:bg-white",
     light:
       "border border-white/25 bg-white/12 text-white shadow-insetLine hover:-translate-y-0.5 hover:bg-white/20",
   };
@@ -29,7 +29,7 @@ export function ButtonLink({
     <a
       href={href}
       className={cn(
-        "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-[15px] font-extrabold transition duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose/25",
+        "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 text-[15px] font-extrabold transition duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-sweet-cake-rose/25",
         styles[variant],
         className
       )}

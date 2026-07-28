@@ -92,7 +92,7 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        <h1 className="font-display text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.85] tracking-tight text-white mb-8 text-balance-hero drop-shadow-[0_6px_24px_rgba(0,0,0,0.72)]">
+        <h1 className="font-ink-iron-display text-[4rem] sm:text-[6rem] md:text-[8rem] leading-[0.85] tracking-tight text-white mb-8 text-balance-hero drop-shadow-[0_6px_24px_rgba(0,0,0,0.72)]">
           <motion.span
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

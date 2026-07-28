@@ -1,8 +1,8 @@
-import { Prisma } from "@/generated/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { enforceJsonRequest, enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
 import { requireAuth } from "@/lib/api-auth";
-import { prisma } from "@/lib/db";
+import { createClient } from "@/lib/supabase/server";
+import { getAdminDb } from "@/lib/db";
 import { isValidEditableData, projectIdSchema, updateProjectSchema } from "@/lib/project-validation";
 import { isSubdomainAvailable, validateSubdomain } from "@/lib/subdomains";
 import { getStorage } from "@/lib/storage";
@@ -17,10 +17,15 @@ export async function GET(_request: NextRequest, context: RouteContext) {
   const id = projectIdSchema.safeParse((await context.params).id);
   if (!id.success) return NextResponse.json({ error: "Project not found." }, { status: 404 });
 
-  const project = await prisma.project.findFirst({
-    where: { id: id.data, userId: sessionOrResponse.user.id },
-  });
-  if (!project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+  const supabase = await createClient();
+  const { data: project, error } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
+
+  if (error || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
   return NextResponse.json({ project });
 }
 
@@ -52,12 +57,18 @@ export async function PATCH(request: NextRequest, context: RouteContext) {
     return NextResponse.json({ error: "The project update is invalid or too large." }, { status: 400 });
   }
 
-  const existing = await prisma.project.findFirst({
-    where: { id: id.data, userId: sessionOrResponse.user.id },
-  });
-  if (!existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+  const supabase = await createClient();
+  const { data: existing, error: fetchError } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
+
+  if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
   if (editableData !== undefined) {
-    const template = getTemplate(existing.templateId);
+    const template = getTemplate(existing.template_id);
     if (!template || !isCompatibleTemplateData(template.defaultData, editableData)) {
       return NextResponse.json({ error: "The project data does not match this template." }, { status: 400 });
     }
@@ -77,40 +88,52 @@ export async function PATCH(request: NextRequest, context: RouteContext) {
     }
   }
 
-  try {
-    const project = await prisma.$transaction(async (transaction) => {
-      if (nextSubdomain !== undefined && nextSubdomain !== existing.subdomain) {
-        if (existing.subdomain) {
-          await transaction.subdomainReservation.upsert({
-            where: { subdomain: existing.subdomain },
-            create: { subdomain: existing.subdomain, userId: existing.userId, projectId: existing.id, releasedAt: new Date() },
-            update: { releasedAt: new Date() },
-          });
-        }
-        if (nextSubdomain) {
-          await transaction.subdomainReservation.create({
-            data: { subdomain: nextSubdomain, userId: existing.userId, projectId: existing.id },
-          });
-        }
-      }
+  const admin = getAdminDb();
 
-      return transaction.project.update({
-        where: { id: existing.id },
-        data: {
-          name: parsed.data.name,
-          editableData,
-          subdomain: nextSubdomain,
-        },
-      });
-    }, { isolationLevel: Prisma.TransactionIsolationLevel.Serializable });
-    return NextResponse.json({ project });
-  } catch (error) {
-    if (error instanceof Prisma.PrismaClientKnownRequestError && ["P2002", "P2034"].includes(error.code)) {
-      return NextResponse.json({ error: "That hostname was reserved by another request." }, { status: 409 });
+  // Handle subdomain reservation changes
+  if (nextSubdomain !== undefined && nextSubdomain !== existing.subdomain) {
+    if (existing.subdomain) {
+      await admin
+        .from("subdomain_reservations")
+        .upsert({
+          subdomain: existing.subdomain,
+          user_id: existing.user_id,
+          project_id: existing.id,
+          released_at: new Date().toISOString(),
+        }, { onConflict: "subdomain" });
     }
-    console.error("PATCH /api/projects/[id] error", error);
+    if (nextSubdomain) {
+      const { error: reserveError } = await admin
+        .from("subdomain_reservations")
+        .insert({
+          subdomain: nextSubdomain,
+          user_id: existing.user_id,
+          project_id: existing.id,
+        });
+      if (reserveError) {
+        return NextResponse.json({ error: "That hostname was reserved by another request." }, { status: 409 });
+      }
+    }
+  }
+
+  const updateData: Record<string, unknown> = {};
+  if (parsed.data.name !== undefined) updateData.name = parsed.data.name;
+  if (editableData !== undefined) updateData.editable_data = editableData;
+  if (nextSubdomain !== undefined) updateData.subdomain = nextSubdomain;
+
+  const { data: project, error: updateError } = await supabase
+    .from("projects")
+    .update(updateData)
+    .eq("id", existing.id)
+    .select()
+    .single();
+
+  if (updateError) {
+    console.error("PATCH /api/projects/[id] error", updateError);
     return NextResponse.json({ error: "Unable to save the project." }, { status: 500 });
   }
+
+  return NextResponse.json({ project });
 }
 
 export async function DELETE(request: NextRequest, context: RouteContext) {
@@ -129,38 +152,51 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
   });
   if (rateLimit) return rateLimit;
 
-  const existing = await prisma.project.findFirst({
-    where: { id: id.data, userId: sessionOrResponse.user.id },
-    select: {
-      id: true,
-      userId: true,
-      subdomain: true,
-      assets: { where: { deletedAt: null }, select: { storageKey: true } },
-    },
-  });
-  if (!existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+  const supabase = await createClient();
+  const { data: existing, error: fetchError } = await supabase
+    .from("projects")
+    .select("id, user_id, subdomain")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
 
-  await prisma.$transaction(async (transaction) => {
-    if (existing.subdomain) {
-      await transaction.subdomainReservation.upsert({
-        where: { subdomain: existing.subdomain },
-        create: { subdomain: existing.subdomain, userId: existing.userId, releasedAt: new Date() },
-        update: { projectId: null, releasedAt: new Date() },
-      });
-    }
-    await transaction.project.delete({ where: { id: existing.id } });
-    await transaction.activityLog.create({
-      data: {
-        userId: existing.userId,
-        action: "project.deleted",
-        details: JSON.stringify({ projectId: existing.id }),
-      },
-    });
+  if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
+  // Get assets for cleanup
+  const { data: assets } = await supabase
+    .from("assets")
+    .select("storage_key")
+    .eq("project_id", existing.id)
+    .is("deleted_at", null);
+
+  const admin = getAdminDb();
+
+  // Release subdomain
+  if (existing.subdomain) {
+    await admin
+      .from("subdomain_reservations")
+      .upsert({
+        subdomain: existing.subdomain,
+        user_id: existing.user_id,
+        project_id: null,
+        released_at: new Date().toISOString(),
+      }, { onConflict: "subdomain" });
+  }
+
+  // Delete the project (cascades to versions, assets)
+  await supabase.from("projects").delete().eq("id", existing.id);
+
+  // Log activity
+  await admin.from("activity_logs").insert({
+    user_id: existing.user_id,
+    action: "project.deleted",
+    details: JSON.stringify({ projectId: existing.id }),
   });
 
-  if (existing.assets.length > 0) {
+  // Cleanup storage
+  if (assets && assets.length > 0) {
     const storage = getStorage();
-    const cleanup = await Promise.allSettled(existing.assets.map((asset) => storage.delete(asset.storageKey)));
+    const cleanup = await Promise.allSettled(assets.map((asset) => storage.delete(asset.storage_key)));
     if (cleanup.some((result) => result.status === "rejected")) {
       console.error("Some project assets could not be removed from storage", { projectId: existing.id });
     }

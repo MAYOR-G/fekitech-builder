@@ -25,22 +25,22 @@ export function ReviewsSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="flex flex-col justify-between rounded-3xl border border-slate-100 bg-mist p-8 shadow-sm"
+              className="flex flex-col justify-between rounded-3xl border border-slate-100 bg-spark-electric-mist p-8 shadow-sm"
             >
-              <div className="flex gap-1 text-amber mb-6">
+              <div className="flex gap-1 text-spark-electric-amber mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
               </div>
-              <blockquote className="text-lg leading-relaxed text-navy mb-8">
+              <blockquote className="text-lg leading-relaxed text-spark-electric-navy mb-8">
                 &quot;{testimonial.quote}&quot;
               </blockquote>
               <figcaption className="flex items-center gap-4 border-t border-slate-200 pt-6 mt-auto">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cobalt/10 text-cobalt font-bold">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-spark-electric-cobalt/10 text-spark-electric-cobalt font-bold">
                   {testimonial.initials}
                 </div>
                 <div>
-                  <div className="font-bold text-navy">{testimonial.name}</div>
+                  <div className="font-bold text-spark-electric-navy">{testimonial.name}</div>
                   <div className="text-sm text-slate-500">{testimonial.title} • {testimonial.location}</div>
                 </div>
               </figcaption>

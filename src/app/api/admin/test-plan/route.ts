@@ -1,109 +1,60 @@
 import { NextRequest, NextResponse } from "next/server";
-import { z } from "zod";
+import { getAdminDb } from "@/lib/db";
 import { requireAuth } from "@/lib/api-auth";
-import { enforceJsonRequest, enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
-import { prisma } from "@/lib/db";
-import { getPlan, PLAN_IDS } from "@/lib/plans";
-import {
-  getUserPlan,
-  isAuthorizedPlanTester,
-  isPlanTestModeEnabled,
-} from "@/lib/subscriptions";
+import { enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
+import { z } from "zod";
 
-const requestSchema = z.object({
-  planId: z.enum(PLAN_IDS),
+const testPlanSchema = z.object({
+  planId: z.string().min(1),
+  status: z.enum(["active", "past_due", "canceled"]).optional().default("active"),
 });
 
-async function authorize() {
-  const sessionOrResponse = await requireAuth();
-  if (sessionOrResponse instanceof NextResponse) return sessionOrResponse;
-
-  const authorized = await isAuthorizedPlanTester(
-    sessionOrResponse.user.id,
-    sessionOrResponse.user.email,
-  );
-  if (!authorized) {
-    return NextResponse.json({ error: "Test plan access is not available." }, { status: 403 });
-  }
-  return sessionOrResponse;
-}
-
-export async function GET() {
-  if (!isPlanTestModeEnabled()) {
-    return NextResponse.json({ enabled: false }, { status: 404 });
-  }
-
-  const sessionOrResponse = await authorize();
-  if (sessionOrResponse instanceof NextResponse) return sessionOrResponse;
-  const plan = await getUserPlan(sessionOrResponse.user.id);
-
-  return NextResponse.json({ enabled: true, planId: plan.id, source: plan.source });
-}
-
+/**
+ * ONLY ALLOWED IN DEVELOPMENT MODE
+ * Used for testing the subscription boundary locally.
+ */
 export async function POST(request: NextRequest) {
-  if (!isPlanTestModeEnabled()) {
-    return NextResponse.json({ error: "Test plan mode is disabled." }, { status: 404 });
+  if (process.env.NODE_ENV !== "development") {
+    return NextResponse.json({ error: "Not found." }, { status: 404 });
   }
 
   const originError = enforceSameOrigin(request);
   if (originError) return originError;
-  const contentError = enforceJsonRequest(request, 8 * 1024);
-  if (contentError) return contentError;
-
-  const sessionOrResponse = await authorize();
+  const sessionOrResponse = await requireAuth();
   if (sessionOrResponse instanceof NextResponse) return sessionOrResponse;
 
   const rateLimit = await enforceRateLimit({
-    scope: "test-plan-change",
+    scope: "admin-test-plan",
     identifier: sessionOrResponse.user.id,
-    max: 20,
-    windowSeconds: 60 * 60,
+    max: 10,
+    windowSeconds: 60,
   });
   if (rateLimit) return rateLimit;
 
-  const parsed = requestSchema.safeParse(await request.json().catch(() => null));
+  const parsed = testPlanSchema.safeParse(await request.json().catch(() => null));
   if (!parsed.success) {
-    return NextResponse.json({ error: "Select a valid test plan." }, { status: 400 });
+    return NextResponse.json({ error: "Invalid plan parameters." }, { status: 400 });
   }
 
-  const previous = await getUserPlan(sessionOrResponse.user.id);
-  const periodEnd = new Date(Date.now() + 24 * 60 * 60 * 1000);
+  const admin = getAdminDb();
+  
+  // Upsert the testing subscription
+  const { error } = await admin
+    .from("subscriptions")
+    .upsert({
+      user_id: sessionOrResponse.user.id,
+      plan_id: parsed.data.planId,
+      status: parsed.data.status,
+      current_period_end: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+      updated_at: new Date().toISOString()
+    }, {
+      onConflict: "user_id"
+    });
 
-  await prisma.$transaction([
-    prisma.subscription.upsert({
-      where: { userId_source: { userId: sessionOrResponse.user.id, source: "test" } },
-      create: {
-        userId: sessionOrResponse.user.id,
-        planId: parsed.data.planId,
-        status: "active",
-        source: "test",
-        currentPeriodEnd: periodEnd,
-      },
-      update: {
-        planId: parsed.data.planId,
-        status: "active",
-        currentPeriodEnd: periodEnd,
-        provider: null,
-        providerCustomerId: null,
-        providerSubscriptionId: null,
-      },
-    }),
-    prisma.activityLog.create({
-      data: {
-        userId: sessionOrResponse.user.id,
-        action: "test_plan.changed",
-        details: JSON.stringify({
-          previousPlan: previous.id,
-          nextPlan: parsed.data.planId,
-          expiresAt: periodEnd.toISOString(),
-        }),
-      },
-    }),
-  ]);
+  if (error) {
+    console.error("Test plan assignment failed:", error);
+    return NextResponse.json({ error: "Failed to assign plan." }, { status: 500 });
+  }
 
-  return NextResponse.json({
-    plan: getPlan(parsed.data.planId),
-    source: "test",
-    expiresAt: periodEnd.toISOString(),
-  });
+  return NextResponse.json({ success: true, plan: parsed.data.planId, status: parsed.data.status });
 }

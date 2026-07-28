@@ -44,19 +44,19 @@ export function ServicesSection() {
               <motion.article
                 variants={itemVariants}
                 key={service.title}
-                className="group relative flex flex-col items-start justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-cobalt/20"
+                className="group relative flex flex-col items-start justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-spark-electric-cobalt/20"
               >
                 <div className="flex w-full items-center justify-between">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 border border-slate-100 text-cobalt transition-colors group-hover:bg-cobalt group-hover:text-white group-hover:border-transparent">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 border border-slate-100 text-spark-electric-cobalt transition-colors group-hover:bg-spark-electric-cobalt group-hover:text-white group-hover:border-transparent">
                     <Icon className="h-6 w-6" aria-hidden="true" />
                   </span>
-                  <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:bg-amber/10 group-hover:text-amber">
+                  <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:bg-spark-electric-amber/10 group-hover:text-spark-electric-amber">
                     {service.tag}
                   </span>
                 </div>
                 
                 <div className="mt-8">
-                  <h3 className="font-display text-xl font-bold tracking-tight text-navy">
+                  <h3 className="font-spark-electric-display text-xl font-bold tracking-tight text-spark-electric-navy">
                     {service.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600">
@@ -64,7 +64,7 @@ export function ServicesSection() {
                   </p>
                 </div>
                 
-                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyan to-cobalt opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-spark-electric-cyan to-spark-electric-cobalt opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               </motion.article>
             );
           })}

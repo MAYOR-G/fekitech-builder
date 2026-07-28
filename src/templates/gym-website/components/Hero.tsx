@@ -9,7 +9,7 @@ const Hero = () => {
   const content = useTemplateData();
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gym-darker">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-iron-gym-gym-darker">
       {/* Background Media */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -18,6 +18,8 @@ const Hero = () => {
           src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" 
           alt="Gym interior with barbell" 
           className="w-full h-full object-cover"
+          priority
+          loading="eager"
         />
       </div>
 
@@ -28,11 +30,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl md:text-8xl font-black font-display leading-[0.9] tracking-tighter uppercase mb-6"
+            className="text-6xl md:text-8xl font-black font-iron-gym-display leading-[0.9] tracking-tighter uppercase mb-6"
           >
             <span className="block">{content.hero.title1 || "TRAIN SMARTER."}</span>
             <span className="block">{content.hero.title2 || "MOVE BETTER."}</span>
-            <span className="block text-gym-accent">{content.hero.titleHighlight || "BUILD STRENGTH."}</span>
+            <span className="block text-iron-gym-gym-accent">{content.hero.titleHighlight || "BUILD STRENGTH."}</span>
           </motion.h1>
           
           <motion.p 
@@ -50,7 +52,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap gap-4"
           >
-            <button className="bg-gym-accent text-gym-darker font-bold px-8 py-4 rounded-full flex items-center gap-2 hover:bg-gym-accentHover transition-colors group">
+            <button className="bg-iron-gym-gym-accent text-iron-gym-gym-darker font-bold px-8 py-4 rounded-full flex items-center gap-2 hover:bg-iron-gym-gym-accentHover transition-colors group">
               {content.hero.button}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -74,7 +76,7 @@ const Hero = () => {
           <motion.div 
             animate={{ y: [-48, 48] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
-            className="w-full h-full bg-gym-accent"
+            className="w-full h-full bg-iron-gym-gym-accent"
           />
         </div>
       </motion.div>

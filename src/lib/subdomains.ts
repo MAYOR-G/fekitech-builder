@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/db";
+import { getAdminDb } from "@/lib/db";
 
 const RESERVED_SUBDOMAINS = new Set([
   "admin", "api", "app", "assets", "auth", "billing", "blog", "cdn", "dashboard",
@@ -29,10 +29,24 @@ export function slugifySubdomain(input: string): string {
 }
 
 export async function isSubdomainAvailable(subdomain: string, projectId?: string): Promise<boolean> {
-  const [project, reservation] = await Promise.all([
-    prisma.project.findUnique({ where: { subdomain }, select: { id: true } }),
-    prisma.subdomainReservation.findUnique({ where: { subdomain }, select: { projectId: true } }),
+  const admin = getAdminDb();
+
+  const [projectResult, reservationResult] = await Promise.all([
+    admin
+      .from("projects")
+      .select("id")
+      .eq("subdomain", subdomain)
+      .single(),
+    admin
+      .from("subdomain_reservations")
+      .select("project_id")
+      .eq("subdomain", subdomain)
+      .single(),
   ]);
+
+  const project = projectResult.data;
+  const reservation = reservationResult.data;
+
   if (project && project.id !== projectId) return false;
-  return !reservation || reservation.projectId === projectId;
+  return !reservation || reservation.project_id === projectId;
 }

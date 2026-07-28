@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/db";
+import { getAdminDb } from "@/lib/db";
 import {
   canPlanUseTemplate,
   getPlan,
@@ -17,8 +17,8 @@ export type UserPlan = {
   periodEnd: Date | null;
 };
 
-function isCurrent(periodEnd: Date | null): boolean {
-  return periodEnd === null || periodEnd >= new Date();
+function isCurrent(periodEnd: string | null): boolean {
+  return periodEnd === null || new Date(periodEnd) >= new Date();
 }
 
 export function isPlanTestModeEnabled(): boolean {
@@ -40,32 +40,37 @@ export async function isAuthorizedPlanTester(userId: string, email: string): Pro
   if (!isPlanTestModeEnabled()) return false;
   if (!getPlanTestAdminEmails().has(email.toLowerCase())) return false;
 
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { role: true },
-  });
+  const admin = getAdminDb();
+  const { data: profile } = await admin
+    .from("profiles")
+    .select("role")
+    .eq("id", userId)
+    .single();
 
-  return user?.role === "admin";
+  return profile?.role === "admin";
 }
 
 export async function getUserPlan(userId: string): Promise<UserPlan> {
-  const subscriptions = await prisma.subscription.findMany({
-    where: { userId, status: ACTIVE_STATUS },
-    orderBy: { updatedAt: "desc" },
-  });
+  const admin = getAdminDb();
+  const { data: subscriptions } = await admin
+    .from("subscriptions")
+    .select("*")
+    .eq("user_id", userId)
+    .eq("status", ACTIVE_STATUS)
+    .order("updated_at", { ascending: false });
 
-  const usable = subscriptions.filter((subscription) => isCurrent(subscription.currentPeriodEnd));
+  const usable = (subscriptions ?? []).filter((subscription) => isCurrent(subscription.current_period_end));
   const active = isPlanTestModeEnabled()
     ? usable.find((subscription) => subscription.source === TEST_SOURCE) ??
       usable.find((subscription) => subscription.source !== TEST_SOURCE)
     : usable.find((subscription) => subscription.source !== TEST_SOURCE);
 
-  const planId = normalizePlanId(active?.planId);
+  const planId = normalizePlanId(active?.plan_id);
   return {
     id: planId,
     definition: getPlan(planId),
     source: active ? (active.source as UserPlan["source"]) : "free",
-    periodEnd: active?.currentPeriodEnd ?? null,
+    periodEnd: active?.current_period_end ? new Date(active.current_period_end) : null,
   };
 }
 
@@ -80,7 +85,13 @@ export async function canCreateProject(userId: string): Promise<{
   plan: PlanId;
 }> {
   const userPlan = await getUserPlan(userId);
-  const current = await prisma.project.count({ where: { userId } });
+  const admin = getAdminDb();
+  const { count } = await admin
+    .from("projects")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", userId);
+
+  const current = count ?? 0;
   const limit = userPlan.definition.entitlements.maxProjects;
 
   return { allowed: current < limit, limit, current, plan: userPlan.id };
@@ -96,8 +107,14 @@ export async function canPublishProject(userId: string, alreadyPublished = false
     return { allowed: false, reason: "Publishing requires a Starter plan or higher.", plan };
   }
 
-  const publishedCount = await prisma.project.count({ where: { userId, isPublished: true } });
-  if (!alreadyPublished && publishedCount >= plan.definition.entitlements.maxPublishedProjects) {
+  const admin = getAdminDb();
+  const { count: publishedCount } = await admin
+    .from("projects")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", userId)
+    .eq("is_published", true);
+
+  if (!alreadyPublished && (publishedCount ?? 0) >= plan.definition.entitlements.maxPublishedProjects) {
     return {
       allowed: false,
       reason: `Your ${plan.definition.name} plan supports ${plan.definition.entitlements.maxPublishedProjects} published websites.`,

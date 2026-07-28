@@ -13,7 +13,7 @@ export default function RestaurantWebsiteTemplate({ data }: { data: TemplateData
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="halcyon-table-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

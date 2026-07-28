@@ -53,7 +53,7 @@ export default function BookingCTA() {
       <div className="relative z-10 max-w-[1000px] mx-auto px-6 text-center flex flex-col items-center">
         <h2 
           ref={textRef}
-          className="font-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase bg-clip-text text-transparent bg-[linear-gradient(to_right,#FFFFFF_0%,#FFFFFF_45%,#8B2635_50%,#FFFFFF_55%,#FFFFFF_100%)] bg-[length:200%_auto] mb-8"
+          className="font-ink-iron-display text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight uppercase bg-clip-text text-transparent bg-[linear-gradient(to_right,#FFFFFF_0%,#FFFFFF_45%,#8B2635_50%,#FFFFFF_55%,#FFFFFF_100%)] bg-[length:200%_auto] mb-8"
         >
           READY FOR NEW INK?
         </h2>

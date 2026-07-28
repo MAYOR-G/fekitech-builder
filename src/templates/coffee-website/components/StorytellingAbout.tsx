@@ -21,10 +21,10 @@ const StorytellingAbout = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="font-serif text-4xl md:text-5xl text-coffee-dark mb-4"><EditableText section="about" field="headline" value={siteContent?.about?.headline} as="span" /></h2>
-            <h3 className="font-sans text-coffee-terracotta tracking-widest uppercase text-sm mb-8"><EditableText section="about" field="subheadline" value={siteContent?.about?.subheadline} as="span" /></h3>
+            <h2 className="font-artisan-coffee-serif text-4xl md:text-5xl text-artisan-coffee-coffee-dark mb-4"><EditableText section="about" field="headline" value={siteContent?.about?.headline} as="span" /></h2>
+            <h3 className="font-artisan-coffee-sans text-artisan-coffee-coffee-terracotta tracking-widest uppercase text-sm mb-8"><EditableText section="about" field="subheadline" value={siteContent?.about?.subheadline} as="span" /></h3>
             
-            <div className="space-y-6 text-coffee-dark/80 font-light leading-relaxed">
+            <div className="space-y-6 text-artisan-coffee-coffee-dark/80 font-light leading-relaxed">
               <p className="text-lg"><EditableText section="about" field="text1" value={siteContent?.about?.text1} as="span" /></p>
               <p className="text-lg"><EditableText section="about" field="text2" value={siteContent?.about?.text2} as="span" /></p>
             </div>
@@ -53,7 +53,7 @@ const StorytellingAbout = () => {
           >
             <div className="aspect-[4/5] w-full relative overflow-hidden shadow-2xl">
               <motion.div
-                className="absolute inset-0 bg-coffee-cream z-10"
+                className="absolute inset-0 bg-artisan-coffee-coffee-cream z-10"
                 initial={{ scaleY: 1 }}
                 whileInView={{ scaleY: 0 }}
                 viewport={{ once: true }}
@@ -67,8 +67,8 @@ const StorytellingAbout = () => {
               />
             </div>
             {/* Decorative block */}
-            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-coffee-cream -z-10" />
-            <div className="absolute -top-8 -right-8 w-32 h-32 border border-coffee-terracotta/30 -z-10" />
+            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-artisan-coffee-coffee-cream -z-10" />
+            <div className="absolute -top-8 -right-8 w-32 h-32 border border-artisan-coffee-coffee-terracotta/30 -z-10" />
           </motion.div>
 
         </div>

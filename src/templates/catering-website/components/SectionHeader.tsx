@@ -28,15 +28,15 @@ export function SectionHeader({
       <p
         className={cn(
           "mb-6 text-xs font-bold uppercase tracking-[0.25em]",
-          dark ? "text-gold" : "text-gold"
+          dark ? "text-catering-co-gold" : "text-catering-co-gold"
         )}
       >
         {eyebrow}
       </p>
       <h2
         className={cn(
-          "font-display text-5xl font-medium leading-[1.04] tracking-[-0.01em] sm:text-6xl",
-          dark ? "text-ivory" : "text-charcoal"
+          "font-catering-co-display text-5xl font-medium leading-[1.04] tracking-[-0.01em] sm:text-6xl",
+          dark ? "text-catering-co-ivory" : "text-catering-co-charcoal"
         )}
       >
         {title}
@@ -46,7 +46,7 @@ export function SectionHeader({
           className={cn(
             "mt-6 text-base leading-[1.75] sm:text-lg",
             align === "center" && "mx-auto max-w-2xl",
-            dark ? "text-cream/80" : "text-ink"
+            dark ? "text-catering-co-cream/80" : "text-catering-co-ink"
           )}
         >
           {description}

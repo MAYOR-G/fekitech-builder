@@ -1,11 +1,11 @@
 import { randomBytes } from "node:crypto";
-import { Prisma } from "@/generated/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
 import { requireAuth } from "@/lib/api-auth";
-import { prisma } from "@/lib/db";
+import { createClient } from "@/lib/supabase/server";
+import { getAdminDb } from "@/lib/db";
 import { canPlanUseTemplate } from "@/lib/plans";
-import { databaseJsonObject, projectIdSchema } from "@/lib/project-validation";
+import { projectIdSchema } from "@/lib/project-validation";
 import { canPublishProject } from "@/lib/subscriptions";
 import { slugifySubdomain } from "@/lib/subdomains";
 
@@ -27,86 +27,112 @@ export async function POST(request: NextRequest, context: RouteContext) {
   });
   if (rateLimit) return rateLimit;
 
-  const existing = await prisma.project.findFirst({
-    where: { id: id.data, userId: sessionOrResponse.user.id },
-  });
-  if (!existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+  const supabase = await createClient();
+  const { data: existing, error: fetchError } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
 
-  const access = await canPublishProject(sessionOrResponse.user.id, existing.isPublished);
+  if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
+  const access = await canPublishProject(sessionOrResponse.user.id, existing.is_published);
   if (!access.allowed) return NextResponse.json({ error: access.reason }, { status: 403 });
-  if (!canPlanUseTemplate(access.plan.id, existing.templateId)) {
+  if (!canPlanUseTemplate(access.plan.id, existing.template_id)) {
     return NextResponse.json({ error: "Your current plan does not include this template." }, { status: 403 });
   }
 
-  try {
-    const updated = await prisma.$transaction(async (transaction) => {
-      const project = await transaction.project.findFirst({
-        where: { id: existing.id, userId: sessionOrResponse.user.id },
-      });
-      if (!project) throw new PublishError("Project not found.", 404);
+  const admin = getAdminDb();
 
-      const publishedCount = await transaction.project.count({
-        where: { userId: project.userId, isPublished: true, id: { not: project.id } },
-      });
-      if (publishedCount >= access.plan.definition.entitlements.maxPublishedProjects) {
-        throw new PublishError("Your published website limit has been reached.", 403);
-      }
+  // Check published count
+  const { count: publishedCount } = await supabase
+    .from("projects")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", sessionOrResponse.user.id)
+    .eq("is_published", true)
+    .neq("id", existing.id);
 
-      const subdomain = project.subdomain ?? await allocateSubdomain(transaction, project.name, project.id, project.userId);
-      if (project.subdomain) {
-        const reservation = await transaction.subdomainReservation.findUnique({ where: { subdomain } });
-        if (reservation && reservation.projectId !== project.id) {
-          throw new PublishError("The selected subdomain is no longer available.", 409);
-        }
-        if (!reservation) {
-          await transaction.subdomainReservation.create({
-            data: { subdomain, projectId: project.id, userId: project.userId },
-          });
-        }
-      }
+  if ((publishedCount ?? 0) >= access.plan.definition.entitlements.maxPublishedProjects) {
+    return NextResponse.json({ error: "Your published website limit has been reached." }, { status: 403 });
+  }
 
-      const publishedAt = new Date();
-      const version = await transaction.templateVersion.create({
-        data: {
-          projectId: project.id,
-          versionName: `Published ${publishedAt.toISOString()}`,
-          editableData: databaseJsonObject(project.editableData),
-          dataVersion: project.dataVersion,
-          isPublishSnapshot: true,
-          publishedAt,
-        },
-      });
-
-      await transaction.activityLog.create({
-        data: {
-          userId: project.userId,
-          action: "project.published",
-          details: JSON.stringify({ projectId: project.id, versionId: version.id, subdomain }),
-        },
-      });
-
-      return transaction.project.update({
-        where: { id: project.id },
-        data: {
-          isPublished: true,
-          publishedAt,
-          subdomain,
-          publishedVersionId: version.id,
-        },
-      });
-    }, { isolationLevel: Prisma.TransactionIsolationLevel.Serializable });
-
-    const rootDomain = process.env.ROOT_DOMAIN ?? "localhost:3000";
-    const protocol = rootDomain.startsWith("localhost") || rootDomain.startsWith("127.0.0.1") ? "http" : "https";
-    return NextResponse.json({ project: updated, url: `${protocol}://${updated.subdomain}.${rootDomain}` });
-  } catch (error) {
-    if (error instanceof PublishError) return NextResponse.json({ error: error.message }, { status: error.status });
-    if (error instanceof Prisma.PrismaClientKnownRequestError && ["P2002", "P2034"].includes(error.code)) {
-      return NextResponse.json({ error: "Publishing conflicted with another request. Please retry." }, { status: 409 });
+  // Allocate subdomain if needed
+  let subdomain = existing.subdomain;
+  if (!subdomain) {
+    subdomain = await allocateSubdomain(admin, existing.name, existing.id, existing.user_id);
+    if (!subdomain) {
+      return NextResponse.json({ error: "Unable to allocate a subdomain. Please choose one manually." }, { status: 409 });
     }
-    console.error("POST project publish error", error);
+  } else {
+    // Verify reservation is still valid
+    const { data: reservation } = await admin
+      .from("subdomain_reservations")
+      .select("project_id")
+      .eq("subdomain", subdomain)
+      .single();
+
+    if (reservation && reservation.project_id !== existing.id) {
+      return NextResponse.json({ error: "The selected subdomain is no longer available." }, { status: 409 });
+    }
+    if (!reservation) {
+      await admin.from("subdomain_reservations").insert({
+        subdomain,
+        project_id: existing.id,
+        user_id: existing.user_id,
+      });
+    }
+  }
+
+  const publishedAt = new Date().toISOString();
+
+  // Create publish snapshot version
+  const { data: version, error: versionError } = await admin
+    .from("template_versions")
+    .insert({
+      project_id: existing.id,
+      version_name: `Published ${publishedAt}`,
+      editable_data: existing.editable_data,
+      data_version: existing.data_version,
+      is_publish_snapshot: true,
+      published_at: publishedAt,
+    })
+    .select()
+    .single();
+
+  if (versionError || !version) {
+    console.error("POST project publish version error", versionError);
     return NextResponse.json({ error: "Unable to publish the project." }, { status: 500 });
   }
+
+  // Update project
+  const { data: updated, error: updateError } = await supabase
+    .from("projects")
+    .update({
+      is_published: true,
+      published_at: publishedAt,
+      subdomain,
+      published_version_id: version.id,
+    })
+    .eq("id", existing.id)
+    .select()
+    .single();
+
+  if (updateError) {
+    console.error("POST project publish update error", updateError);
+    return NextResponse.json({ error: "Unable to publish the project." }, { status: 500 });
+  }
+
+  // Log activity
+  await admin.from("activity_logs").insert({
+    user_id: existing.user_id,
+    action: "project.published",
+    details: JSON.stringify({ projectId: existing.id, versionId: version.id, subdomain }),
+  });
+
+  const rootDomain = process.env.ROOT_DOMAIN ?? "localhost:3000";
+  const protocol = rootDomain.startsWith("localhost") || rootDomain.startsWith("127.0.0.1") ? "http" : "https";
+  return NextResponse.json({ project: updated, url: `${protocol}://${updated.subdomain}.${rootDomain}` });
 }
 
 export async function DELETE(request: NextRequest, context: RouteContext) {
@@ -117,50 +143,55 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
   const id = projectIdSchema.safeParse((await context.params).id);
   if (!id.success) return NextResponse.json({ error: "Project not found." }, { status: 404 });
 
-  const project = await prisma.project.findFirst({
-    where: { id: id.data, userId: sessionOrResponse.user.id },
-    select: { id: true },
+  const supabase = await createClient();
+  const { data: project, error: fetchError } = await supabase
+    .from("projects")
+    .select("id")
+    .eq("id", id.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .single();
+
+  if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
+  const { error: updateError } = await supabase
+    .from("projects")
+    .update({ is_published: false, published_version_id: null })
+    .eq("id", project.id);
+
+  if (updateError) {
+    return NextResponse.json({ error: "Unable to unpublish." }, { status: 500 });
+  }
+
+  const admin = getAdminDb();
+  await admin.from("activity_logs").insert({
+    user_id: sessionOrResponse.user.id,
+    action: "project.unpublished",
+    details: JSON.stringify({ projectId: project.id }),
   });
-  if (!project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
-  await prisma.$transaction([
-    prisma.project.update({
-      where: { id: project.id },
-      data: { isPublished: false, publishedVersionId: null },
-    }),
-    prisma.activityLog.create({
-      data: {
-        userId: sessionOrResponse.user.id,
-        action: "project.unpublished",
-        details: JSON.stringify({ projectId: project.id }),
-      },
-    }),
-  ]);
+
   return NextResponse.json({ success: true });
 }
 
 async function allocateSubdomain(
-  transaction: Prisma.TransactionClient,
+  admin: ReturnType<typeof getAdminDb>,
   projectName: string,
   projectId: string,
   userId: string,
-): Promise<string> {
+): Promise<string | null> {
   const base = slugifySubdomain(projectName);
   for (let attempt = 0; attempt < 20; attempt += 1) {
     const suffix = attempt === 0 ? "" : `-${randomBytes(3).toString("hex")}`;
     const candidate = `${base.slice(0, 63 - suffix.length)}${suffix}`;
-    const inserted = await transaction.$queryRaw<Array<{ subdomain: string }>>`
-      INSERT INTO "subdomain_reservation" ("subdomain", "userId", "projectId", "reservedAt")
-      VALUES (${candidate}, ${userId}, ${projectId}, NOW())
-      ON CONFLICT ("subdomain") DO NOTHING
-      RETURNING "subdomain"
-    `;
-    if (inserted[0]) return candidate;
-  }
-  throw new PublishError("Unable to allocate a subdomain. Please choose one manually.", 409);
-}
 
-class PublishError extends Error {
-  constructor(message: string, readonly status: number) {
-    super(message);
+    const { error } = await admin
+      .from("subdomain_reservations")
+      .insert({
+        subdomain: candidate,
+        user_id: userId,
+        project_id: projectId,
+      });
+
+    if (!error) return candidate;
   }
+  return null;
 }

@@ -23,10 +23,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 bg-gym-charcoal overflow-hidden">
+    <section className="py-24 bg-iron-gym-gym-darker overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm text-center">Success Stories</h2>
-        <h3 className="text-4xl md:text-5xl font-black font-display uppercase text-center mb-16">Don&apos;t Just Take Our Word</h3>
+        <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm text-center">Success Stories</h2>
+        <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display uppercase text-center mb-16">Don&apos;t Just Take Our Word</h3>
 
         <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar">
           {testimonials.map((test, idx) => (
@@ -36,12 +36,12 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="min-w-[320px] md:min-w-[400px] bg-gym-dark rounded-3xl p-8 snap-center border border-white/5 relative"
+              className="min-w-[320px] md:min-w-[400px] bg-iron-gym-gym-dark rounded-3xl p-8 snap-center border border-white/5 relative"
             >
               <Quote className="absolute top-8 right-8 w-12 h-12 text-white/5" />
-              <div className="mb-6 text-gym-accent font-bold text-sm tracking-wider uppercase">{test.goal}</div>
+              <div className="mb-6 text-iron-gym-gym-accent font-bold text-sm tracking-wider uppercase">{test.goal}</div>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">&quot;{test.text}&quot;</p>
-              <div className="font-display font-bold text-xl">{test.name}</div>
+              <div className="font-iron-gym-display font-bold text-xl">{test.name}</div>
             </motion.div>
           ))}
         </div>

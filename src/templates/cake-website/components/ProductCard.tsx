@@ -20,28 +20,28 @@ export function ProductCard({ product }: ProductCardProps) {
           className="h-80 rounded-t-sm rounded-b-none"
           imageClassName={`transition-transform duration-[1.5s] ease-out group-hover:scale-105 ${imagePosition}`}
         >
-          <span className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-ganache shadow-sm border border-white/40">
+          <span className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-sweet-cake-ganache shadow-sm border border-white/40">
             {product.badge}
           </span>
         </ImageFrame>
       </div>
-      <div className="flex flex-col flex-1 p-8 text-center bg-white border-b border-l border-r border-chocolate/5">
-        <p className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-rose/80 mb-3">
+      <div className="flex flex-col flex-1 p-8 text-center bg-white border-b border-l border-r border-sweet-cake-chocolate/5">
+        <p className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-sweet-cake-rose/80 mb-3">
           {product.category}
         </p>
-        <h3 className="font-display text-3xl font-normal leading-tight text-ganache mb-4">
+        <h3 className="font-sweet-cake-display text-3xl font-normal leading-tight text-sweet-cake-ganache mb-4">
           {product.name}
         </h3>
         <p className="flex-1 text-[0.95rem] leading-[1.8] tracking-wide text-[#2D2D2D] mb-6 max-w-sm mx-auto">
           {product.description}
         </p>
         <div className="mt-auto flex flex-col items-center gap-4">
-          <p className="text-xl font-black text-ganache">
+          <p className="text-xl font-black text-sweet-cake-ganache">
             {product.price}
           </p>
           <a
             href="#order"
-            className="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-ganache border-b border-ganache/30 pb-1 hover:border-ganache transition-colors"
+            className="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-sweet-cake-ganache border-b border-sweet-cake-ganache/30 pb-1 hover:border-sweet-cake-ganache transition-colors"
           >
             Request this style
           </a>

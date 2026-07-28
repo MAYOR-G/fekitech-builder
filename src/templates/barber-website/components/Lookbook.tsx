@@ -11,7 +11,7 @@ export default function Lookbook() {
   const gallery = siteContent.styles.slice(0, 4);
 
   return (
-    <section id="lookbook" className="py-24 px-6 bg-brand-charcoal">
+    <section id="lookbook" className="py-24 px-6 bg-barber-brand-charcoal">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -19,8 +19,8 @@ export default function Lookbook() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-heading mb-4 text-brand-cream">THE LOOKBOOK</h2>
-          <p className="text-brand-cream/60 max-w-xl mx-auto">Curated styles from our latest sessions.</p>
+          <h2 className="text-4xl md:text-6xl font-barber-heading mb-4 text-barber-brand-cream">THE LOOKBOOK</h2>
+          <p className="text-barber-brand-cream/60 max-w-xl mx-auto">Curated styles from our latest sessions.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -39,8 +39,8 @@ export default function Lookbook() {
                 decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
-                <span className="text-2xl font-heading uppercase tracking-widest text-brand-cream translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-barber-brand-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                <span className="text-2xl font-barber-heading uppercase tracking-widest text-barber-brand-cream translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   {item.name}
                 </span>
               </div>

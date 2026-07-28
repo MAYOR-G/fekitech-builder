@@ -9,7 +9,7 @@ export function PricingSection() {
   const { pricingPlans } = useTemplateData();
 
   return (
-    <section id="pricing" className="bg-mist px-5 py-24 sm:py-32 lg:px-8">
+    <section id="pricing" className="bg-spark-electric-mist px-5 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="Clear Pricing"
@@ -28,12 +28,12 @@ export function PricingSection() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className={`flex flex-col justify-between rounded-3xl p-8 ring-1 transition-all hover:shadow-xl ${
                 plan.highlighted
-                  ? "bg-navy text-white ring-navy shadow-deep transform lg:-translate-y-4"
-                  : "bg-white text-navy ring-slate-200 shadow-card"
+                  ? "bg-spark-electric-navy text-white ring-spark-electric-navy shadow-deep transform lg:-translate-y-4"
+                  : "bg-white text-spark-electric-navy ring-slate-200 shadow-card"
               }`}
             >
               <div>
-                <h3 className={`font-display text-xl font-bold ${plan.highlighted ? "text-cyan" : "text-navy"}`}>
+                <h3 className={`font-spark-electric-display text-xl font-bold ${plan.highlighted ? "text-spark-electric-cyan" : "text-spark-electric-navy"}`}>
                   {plan.name}
                 </h3>
                 <div className="mt-4 flex items-baseline text-4xl font-extrabold tracking-tight">
@@ -45,7 +45,7 @@ export function PricingSection() {
                 <ul className="mt-8 space-y-4">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex gap-3 text-sm">
-                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.highlighted ? "text-amber" : "text-cobalt"}`} />
+                      <CheckCircle2 className={`h-5 w-5 shrink-0 ${plan.highlighted ? "text-spark-electric-amber" : "text-spark-electric-cobalt"}`} />
                       <span className={plan.highlighted ? "text-white" : "text-slate-700"}>{feature}</span>
                     </li>
                   ))}

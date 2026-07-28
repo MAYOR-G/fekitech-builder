@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useTemplateData } from './TemplateContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -22,14 +22,13 @@ export default function Main() {
   const data = useTemplateData();
   const [activePage, setActivePage] = useState("Home");
 
-  useEffect(() => {
-    const root = document.documentElement;
-    root.style.setProperty('--color-primary', data.colors.primary);
-    root.style.setProperty('--color-secondary', data.colors.secondary);
-    root.style.setProperty('--color-accent', data.colors.accent);
-    root.style.setProperty('--color-text', data.colors.text);
-    root.style.setProperty('--color-background', data.colors.background);
-  }, [data.colors]);
+  const themeStyles = {
+    "--color-primary": data.colors.primary,
+    "--color-secondary": data.colors.secondary,
+    "--color-accent": data.colors.accent,
+    "--color-text": data.colors.text,
+    "--color-background": data.colors.background,
+  } as React.CSSProperties;
 
   const renderPage = () => {
     switch (activePage) {
@@ -100,7 +99,7 @@ export default function Main() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] font-sans flex flex-col overflow-x-hidden antialiased">
+    <div style={themeStyles} className="premium-construction-template min-h-screen bg-[var(--color-background)] text-[var(--color-text)] font-sans flex flex-col overflow-x-hidden antialiased">
       <style dangerouslySetInnerHTML={{__html: `
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
         
@@ -112,7 +111,7 @@ export default function Main() {
           font-family: 'Inter', sans-serif;
         }
 
-        ::selection {
+        .premium-construction-template ::selection {
           background-color: var(--color-primary);
           color: white;
         }

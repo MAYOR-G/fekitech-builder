@@ -22,11 +22,11 @@ export function AboutClinic() {
                 loading="lazy"
               />
             </div>
-            <div className="absolute -bottom-8 left-5 max-w-[330px] rounded-[1.5rem] border border-ink/8 bg-white/86 p-5 shadow-card backdrop-blur-xl sm:left-10">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-ocean">
+            <div className="absolute -bottom-8 left-5 max-w-[330px] rounded-[1.5rem] border border-bright-dental-ink/8 bg-white/86 p-5 shadow-card backdrop-blur-xl sm:left-10">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-bright-dental-ocean">
                 Comfort first
               </p>
-              <p className="mt-2 text-sm leading-6 text-graphite/74">
+              <p className="mt-2 text-sm leading-6 text-bright-dental-graphite/74">
                 Every visit is paced around clarity, privacy, and gentle care
                 before a handpiece ever turns on.
               </p>
@@ -48,11 +48,11 @@ export function AboutClinic() {
               const Icon = item.icon;
               return (
                 <Reveal key={item.label} delay={index * 75}>
-                  <div className="flex min-h-16 items-center gap-3 rounded-full border border-ink/8 bg-white/70 px-4 py-3 shadow-insetGlow">
-                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-pearl text-ocean">
+                  <div className="flex min-h-16 items-center gap-3 rounded-full border border-bright-dental-ink/8 bg-white/70 px-4 py-3 shadow-insetGlow">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-bright-dental-pearl text-bright-dental-ocean">
                       <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
-                    <span className="text-sm font-semibold text-ink">
+                    <span className="text-sm font-semibold text-bright-dental-ink">
                       {item.label}
                     </span>
                   </div>
@@ -62,13 +62,13 @@ export function AboutClinic() {
           </div>
 
           <Reveal delay={210}>
-            <div className="mt-9 grid gap-6 rounded-[1.5rem] border border-ocean/12 bg-white/78 p-5 shadow-card backdrop-blur md:grid-cols-[1fr_auto] md:items-center">
+            <div className="mt-9 grid gap-6 rounded-[1.5rem] border border-bright-dental-ocean/12 bg-white/78 p-5 shadow-card backdrop-blur md:grid-cols-[1fr_auto] md:items-center">
               <div>
-                <div className="flex items-center gap-2 text-sm font-semibold text-ink">
-                  <CheckCircle2 className="h-5 w-5 text-ocean" aria-hidden="true" />
+                <div className="flex items-center gap-2 text-sm font-semibold text-bright-dental-ink">
+                  <CheckCircle2 className="h-5 w-5 text-bright-dental-ocean" aria-hidden="true" />
                   Transparent treatment planning
                 </div>
-                <p className="mt-3 text-sm leading-7 text-graphite/70">
+                <p className="mt-3 text-sm leading-7 text-bright-dental-graphite/70">
                   Patients receive realistic timelines, conservative options,
                   and documented recommendations before committing to care.
                 </p>
@@ -82,7 +82,7 @@ export function AboutClinic() {
       </div>
 
       <Reveal>
-        <div className="mx-auto mt-20 grid max-w-7xl gap-6 rounded-[2rem] border border-ink/8 bg-ink p-4 shadow-soft lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:p-6">
+        <div className="mx-auto mt-20 grid max-w-7xl gap-6 rounded-[2rem] border border-bright-dental-ink/8 bg-bright-dental-ink p-4 shadow-soft lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:p-6">
           <div className="relative min-h-[340px] overflow-hidden rounded-[1.5rem]">
             <TemplateImage
               src={clinicImages.videoPoster}
@@ -92,10 +92,10 @@ export function AboutClinic() {
             />
           </div>
           <div className="px-2 py-5 text-white lg:px-8">
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-mint">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-bright-dental-mint">
               Inside our clinic
             </p>
-            <h3 className="mt-4 font-display text-4xl font-semibold leading-tight">
+            <h3 className="mt-4 font-bright-dental-display text-4xl font-semibold leading-tight">
               A quiet look at the rooms, tools, and patient flow.
             </h3>
             <p className="mt-5 text-base leading-8 text-white/72">

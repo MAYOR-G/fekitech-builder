@@ -35,8 +35,8 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-out",
         solid
-          ? "border-b border-oat bg-white/96 text-charcoal shadow-[0_2px_12px_rgba(0,0,0,0.06)] backdrop-blur"
-          : "border-b border-oat/80 bg-[#fbfaf6]/92 text-charcoal backdrop-blur"
+          ? "border-b border-catering-co-oat bg-white/96 text-catering-co-charcoal shadow-[0_2px_12px_rgba(0,0,0,0.06)] backdrop-blur"
+          : "border-b border-catering-co-oat/80 bg-[#fbfaf6]/92 text-catering-co-charcoal backdrop-blur"
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -44,16 +44,16 @@ export function Navbar() {
           <span
             className={cn(
               "grid h-11 w-11 place-items-center rounded-full shadow-card transition-colors duration-300",
-              solid ? "bg-charcoal text-cream" : "bg-olive text-white"
+              solid ? "bg-catering-co-charcoal text-catering-co-cream" : "bg-catering-co-olive text-white"
             )}
           >
             <UtensilsCrossed className="h-5 w-5" aria-hidden="true" />
           </span>
           <span className="leading-none">
-            <span className="block font-display text-xl font-semibold text-charcoal">
+            <span className="block font-catering-co-display text-xl font-semibold text-catering-co-charcoal">
               {brand.name}
             </span>
-            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-olive sm:block">
+            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.22em] text-catering-co-olive sm:block">
               London event catering
             </span>
           </span>
@@ -65,8 +65,8 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-[15px] font-extrabold transition hover:text-gold",
-                "text-ink"
+                "text-[15px] font-extrabold transition hover:text-catering-co-gold",
+                "text-catering-co-ink"
               )}
             >
               {link.label}
@@ -85,8 +85,8 @@ export function Navbar() {
           className={cn(
             "grid h-11 w-11 place-items-center rounded-md border transition hover:-translate-y-0.5 lg:hidden",
             solid
-              ? "border-oat bg-white text-charcoal"
-              : "border-oat bg-white text-charcoal"
+              ? "border-catering-co-oat bg-white text-catering-co-charcoal"
+              : "border-catering-co-oat bg-white text-catering-co-charcoal"
           )}
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
@@ -98,7 +98,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid overflow-hidden border-t border-oat bg-white transition-all duration-300 lg:hidden",
+          "grid overflow-hidden border-t border-catering-co-oat bg-white transition-all duration-300 lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
@@ -109,7 +109,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-md px-4 py-3 text-[15px] font-extrabold text-ink transition hover:bg-linen hover:text-gold"
+                className="block rounded-md px-4 py-3 text-[15px] font-extrabold text-catering-co-ink transition hover:bg-catering-co-linen hover:text-catering-co-gold"
               >
                 {link.label}
               </a>

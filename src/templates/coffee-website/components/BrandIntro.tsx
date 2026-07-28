@@ -15,9 +15,9 @@ const IconMap: Record<string, React.ElementType> = {
 const BrandIntro = () => {
   const siteContent = useTemplateData();
   return (
-    <section className="py-12 bg-coffee-cream text-coffee-dark border-b border-coffee-light">
+    <section className="py-12 bg-artisan-coffee-coffee-cream text-artisan-coffee-coffee-dark border-b border-artisan-coffee-coffee-light">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-coffee-brown/20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-artisan-coffee-coffee-brown/20">
           {siteContent.brandIntro.features.map((feature, index) => {
             const Icon = IconMap[feature.icon];
             return (
@@ -29,10 +29,10 @@ const BrandIntro = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
               >
-                <div className="mb-4 text-coffee-terracotta">
+                <div className="mb-4 text-artisan-coffee-coffee-terracotta">
                   {Icon && <Icon size={32} strokeWidth={1.5} />}
                 </div>
-                <h3 className="font-sans font-medium text-sm tracking-widest uppercase text-coffee-dark/80">
+                <h3 className="font-artisan-coffee-sans font-medium text-sm tracking-widest uppercase text-artisan-coffee-coffee-dark/80">
                   {feature.title}
                 </h3>
               </motion.div>

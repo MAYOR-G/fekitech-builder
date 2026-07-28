@@ -1,14 +1,29 @@
-import { auth } from "./auth";
+import { createClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
-import { headers } from "next/headers";
+
+export type AuthSession = {
+  user: {
+    id: string;
+    email: string;
+  };
+};
 
 /**
- * Get the current authenticated session from Better Auth.
+ * Get the current authenticated session from Supabase Auth.
  * Returns null if no valid session.
  */
-export async function getSession() {
-    const session = await auth.api.getSession({ headers: await headers() });
-    return session;
+export async function getSession(): Promise<AuthSession | null> {
+  const supabase = await createClient();
+  const { data: { user }, error } = await supabase.auth.getUser();
+
+  if (error || !user) return null;
+
+  return {
+    user: {
+      id: user.id,
+      email: user.email ?? "",
+    },
+  };
 }
 
 /**
@@ -18,13 +33,13 @@ export async function getSession() {
  *   if (sessionOrResponse instanceof NextResponse) return sessionOrResponse;
  *   const { user } = sessionOrResponse;
  */
-export async function requireAuth() {
-    const session = await getSession();
-    if (!session) {
-        return NextResponse.json(
-            { error: "Unauthorized. Please sign in." },
-            { status: 401 }
-        );
-    }
-    return session;
+export async function requireAuth(): Promise<AuthSession | NextResponse> {
+  const session = await getSession();
+  if (!session) {
+    return NextResponse.json(
+      { error: "Unauthorized. Please sign in." },
+      { status: 401 },
+    );
+  }
+  return session;
 }

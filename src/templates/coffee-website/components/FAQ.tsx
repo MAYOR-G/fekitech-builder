@@ -10,12 +10,12 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-coffee-cream">
+    <section className="py-24 bg-artisan-coffee-coffee-cream">
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="text-center mb-16">
           <motion.h2 
-            className="font-serif text-3xl md:text-4xl text-coffee-dark mb-4"
+            className="font-artisan-coffee-serif text-3xl md:text-4xl text-artisan-coffee-coffee-dark mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -32,7 +32,7 @@ const FAQ = () => {
             return (
               <motion.div 
                 key={index}
-                className="border-b border-coffee-brown/20 pb-4"
+                className="border-b border-artisan-coffee-coffee-brown/20 pb-4"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -42,10 +42,10 @@ const FAQ = () => {
                   className="flex justify-between items-center w-full text-left py-4 focus:outline-none"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <h3 className={`font-sans text-lg transition-colors ${isOpen ? 'text-coffee-terracotta' : 'text-coffee-dark'}`}>
+                  <h3 className={`font-artisan-coffee-sans text-lg transition-colors ${isOpen ? 'text-artisan-coffee-coffee-terracotta' : 'text-artisan-coffee-coffee-dark'}`}>
                     {item.question}
                   </h3>
-                  <div className="text-coffee-dark shrink-0 ml-4">
+                  <div className="text-artisan-coffee-coffee-dark shrink-0 ml-4">
                     {isOpen ? <Minus size={20} /> : <Plus size={20} />}
                   </div>
                 </button>
@@ -59,7 +59,7 @@ const FAQ = () => {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <p className="font-light text-coffee-dark/80 pb-6 pt-2 leading-relaxed">
+                      <p className="font-light text-artisan-coffee-coffee-dark/80 pb-6 pt-2 leading-relaxed">
                         {item.answer}
                       </p>
                     </motion.div>

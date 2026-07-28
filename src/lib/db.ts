@@ -1,14 +1,13 @@
-import { PrismaClient } from "@/generated/prisma";
+import { createServiceClient } from "@/lib/supabase/server";
 
-// Prevent multiple Prisma instances in dev (Next.js hot reload)
-const globalForPrisma = globalThis as unknown as {
-    prisma: PrismaClient | undefined;
-};
-
-export const prisma =
-    globalForPrisma.prisma ??
-    new PrismaClient({
-        log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
-    });
-
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+/**
+ * Supabase admin client for server-side database operations.
+ * Uses the service_role key to bypass RLS for trusted server code.
+ *
+ * This replaces the previous Prisma client.
+ * For user-scoped operations in Route Handlers, use createClient() from
+ * @/lib/supabase/server instead (which respects RLS).
+ */
+export function getAdminDb() {
+  return createServiceClient();
+}

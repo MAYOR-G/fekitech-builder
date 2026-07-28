@@ -21,7 +21,7 @@ export function StickyStory() {
   const { storyCards } = useTemplateData();
 
   return (
-    <section className="bg-porcelain px-5 py-24 sm:py-32 lg:px-8 overflow-hidden">
+    <section className="bg-bright-dental-porcelain px-5 py-24 sm:py-32 lg:px-8 overflow-hidden">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
           
@@ -40,12 +40,12 @@ export function StickyStory() {
               loading="lazy"
             />
             {/* Subtle overlay gradient to frame the image perfectly */}
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-bright-dental-ink/30 via-transparent to-transparent" />
             
             {/* Floating Badge */}
             <div className="absolute bottom-8 left-8 right-8 md:right-auto bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white">
-              <p className="text-sm font-bold uppercase tracking-widest text-ocean mb-1">Clinic Environment</p>
-              <p className="font-display text-xl font-bold text-ink">Designed for comfort & safety.</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-bright-dental-ocean mb-1">Clinic Environment</p>
+              <p className="font-bright-dental-display text-xl font-bold text-bright-dental-ink">Designed for comfort & safety.</p>
             </div>
           </motion.div>
 
@@ -68,11 +68,11 @@ export function StickyStory() {
                 const Icon = card.icon;
                 return (
                   <motion.div variants={itemVariants} key={card.title} className="group flex gap-6">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm border border-slate-100 text-ocean transition-all duration-300 group-hover:scale-110 group-hover:bg-ocean group-hover:text-white">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white shadow-sm border border-slate-100 text-bright-dental-ocean transition-all duration-300 group-hover:scale-110 group-hover:bg-bright-dental-ocean group-hover:text-white">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-bold text-ink">
+                      <h3 className="font-bright-dental-display text-xl font-bold text-bright-dental-ink">
                         {card.title}
                       </h3>
                       <p className="mt-2 text-slate-600 leading-relaxed">

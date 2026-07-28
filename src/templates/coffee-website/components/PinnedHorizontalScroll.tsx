@@ -28,7 +28,7 @@ const PinnedHorizontalScroll = () => {
     <section
       ref={targetRef}
       style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
-      className={`relative bg-coffee-dark text-coffee-light ${
+      className={`relative bg-artisan-coffee-coffee-dark text-artisan-coffee-coffee-light ${
         reducedMotion ? "py-20" : "min-h-svh"
       }`}
       id="journey"
@@ -44,8 +44,8 @@ const PinnedHorizontalScroll = () => {
         
         {/* Intro Text floating on the left */}
         <div className="absolute top-16 left-6 md:left-16 z-10">
-          <h2 className="font-serif text-3xl md:text-5xl text-coffee-light">From Bean<br/>To Cup.</h2>
-          <div className="h-px w-16 bg-coffee-terracotta mt-4" />
+          <h2 className="font-artisan-coffee-serif text-3xl md:text-5xl text-artisan-coffee-coffee-light">From Bean<br/>To Cup.</h2>
+          <div className="h-px w-16 bg-artisan-coffee-coffee-terracotta mt-4" />
         </div>
 
         <motion.div
@@ -66,17 +66,17 @@ const PinnedHorizontalScroll = () => {
                   : "h-[60vh] w-[85vw] shrink-0 md:h-[70vh] md:w-[60vw] lg:w-[45vw]"
               }`}
             >
-              <div className="relative w-full h-full overflow-hidden shadow-2xl bg-coffee-brown/20">
+              <div className="relative w-full h-full overflow-hidden shadow-2xl bg-artisan-coffee-coffee-brown/20">
                 <TemplateImage 
                   src={step.image} 
                   alt={step.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-coffee-dark/90 via-coffee-dark/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-artisan-coffee-coffee-dark/90 via-artisan-coffee-coffee-dark/20 to-transparent" />
                 
                 <div className="absolute bottom-0 left-0 p-8 w-full">
-                  <h3 className="font-serif text-3xl mb-3 text-coffee-light">{step.title}</h3>
-                  <p className="font-sans font-light text-coffee-light/80 text-lg max-w-md">
+                  <h3 className="font-artisan-coffee-serif text-3xl mb-3 text-artisan-coffee-coffee-light">{step.title}</h3>
+                  <p className="font-artisan-coffee-sans font-light text-artisan-coffee-coffee-light/80 text-lg max-w-md">
                     {step.description}
                   </p>
                 </div>

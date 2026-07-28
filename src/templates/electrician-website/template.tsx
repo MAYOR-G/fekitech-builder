@@ -13,7 +13,7 @@ export default function ElectricianWebsiteTemplate({ data }: { data: TemplateDat
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="spark-electric-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

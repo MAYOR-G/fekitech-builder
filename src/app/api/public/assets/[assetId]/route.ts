@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { getSession } from "@/lib/api-auth";
+import { getAdminDb } from "@/lib/db";
 import { projectIdSchema } from "@/lib/project-validation";
 import { getStorage } from "@/lib/storage";
 
@@ -12,27 +12,39 @@ export async function GET(request: NextRequest, context: RouteContext) {
   const assetId = projectIdSchema.safeParse((await context.params).assetId);
   if (!assetId.success) return new NextResponse(null, { status: 404 });
 
-  const asset = await prisma.asset.findFirst({
-    where: { id: assetId.data, deletedAt: null },
-    include: { project: { select: { userId: true, isPublished: true } } },
-  });
-  if (!asset) return new NextResponse(null, { status: 404 });
+  const admin = getAdminDb();
+  const { data: asset } = await admin
+    .from("assets")
+    .select(`
+      id,
+      storage_key,
+      mime_type,
+      projects!assets_project_id_fkey (user_id, is_published)
+    `)
+    .eq("id", assetId.data)
+    .is("deleted_at", null)
+    .single();
 
-  let canRead = asset.project.isPublished;
+  if (!asset || !asset.projects) return new NextResponse(null, { status: 404 });
+
+  // @ts-expect-error Supabase join types
+  const project = asset.projects as { user_id: string; is_published: boolean };
+
+  let canRead = project.is_published;
   if (!canRead) {
-    const session = await auth.api.getSession({ headers: request.headers });
-    canRead = session?.user.id === asset.project.userId;
+    const session = await getSession();
+    canRead = session?.user.id === project.user_id;
   }
   if (!canRead) return new NextResponse(null, { status: 404 });
 
-  const object = await getStorage().get(asset.storageKey, asset.mimeType);
+  const object = await getStorage().get(asset.storage_key, asset.mime_type);
   if (!object) return new NextResponse(null, { status: 404 });
 
   return new NextResponse(new Uint8Array(object.body), {
     headers: {
       "Content-Type": object.contentType,
       "Content-Length": String(object.body.length),
-      "Cache-Control": asset.project.isPublished ? "public, max-age=31536000, immutable" : "private, no-store",
+      "Cache-Control": project.is_published ? "public, max-age=31536000, immutable" : "private, no-store",
       "Content-Security-Policy": "default-src 'none'; sandbox",
       "X-Content-Type-Options": "nosniff",
     },

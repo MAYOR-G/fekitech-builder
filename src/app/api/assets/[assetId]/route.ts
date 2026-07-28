@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { enforceRateLimit, enforceSameOrigin } from "@/lib/api-security";
 import { requireAuth } from "@/lib/api-auth";
-import { prisma } from "@/lib/db";
+import { getAdminDb } from "@/lib/db";
+import { createClient } from "@/lib/supabase/server";
 import { projectIdSchema } from "@/lib/project-validation";
 import { getStorage } from "@/lib/storage";
 
@@ -23,25 +24,36 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
   });
   if (rateLimit) return rateLimit;
 
-  const asset = await prisma.asset.findFirst({
-    where: { id: assetId.data, userId: sessionOrResponse.user.id, deletedAt: null },
-  });
-  if (!asset) return NextResponse.json({ error: "Asset not found." }, { status: 404 });
+  const supabase = await createClient();
+  const { data: asset, error: fetchError } = await supabase
+    .from("assets")
+    .select("id, project_id, storage_key")
+    .eq("id", assetId.data)
+    .eq("user_id", sessionOrResponse.user.id)
+    .is("deleted_at", null)
+    .single();
 
-  await prisma.$transaction([
-    prisma.asset.update({ where: { id: asset.id }, data: { deletedAt: new Date() } }),
-    prisma.activityLog.create({
-      data: {
-        userId: sessionOrResponse.user.id,
-        action: "asset.deleted",
-        details: JSON.stringify({ projectId: asset.projectId, assetId: asset.id }),
-      },
-    }),
-  ]);
-  try {
-    await getStorage().delete(asset.storageKey);
-  } catch (error) {
-    console.error("Deleted asset storage cleanup failed", { assetId: asset.id, error });
+  if (fetchError || !asset) return NextResponse.json({ error: "Asset not found." }, { status: 404 });
+
+  const { error: updateError } = await supabase
+    .from("assets")
+    .update({ deleted_at: new Date().toISOString() })
+    .eq("id", asset.id);
+
+  if (!updateError) {
+    const admin = getAdminDb();
+    await admin.from("activity_logs").insert({
+      user_id: sessionOrResponse.user.id,
+      action: "asset.deleted",
+      details: JSON.stringify({ projectId: asset.project_id, assetId: asset.id }),
+    });
+
+    try {
+      await getStorage().delete(asset.storage_key);
+    } catch (error) {
+      console.error("Deleted asset storage cleanup failed", { assetId: asset.id, error });
+    }
   }
+
   return NextResponse.json({ success: true });
 }

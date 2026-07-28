@@ -17,16 +17,16 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gym-dark text-white font-sans selection:bg-gym-accent selection:text-gym-darker">
+    <div className="min-h-screen bg-iron-gym-gym-dark text-white font-iron-gym-sans selection:bg-iron-gym-gym-accent selection:text-iron-gym-gym-darker">
       <header className="fixed top-0 w-full z-50 glass-panel border-b-0 py-4 px-6 flex justify-between items-center transition-all">
-        <div className="font-display font-black text-2xl tracking-tighter text-white">FORGE<span className="text-gym-accent">.</span></div>
+        <div className="font-iron-gym-display font-black text-2xl tracking-tighter text-white">FORGE<span className="text-iron-gym-gym-accent">.</span></div>
         <nav className="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-gray-300">
-          <a href="#about" className="hover:text-gym-accent transition-colors">About</a>
-          <a href="#programs" className="hover:text-gym-accent transition-colors">Programs</a>
-          <a href="#trainers" className="hover:text-gym-accent transition-colors">Trainers</a>
-          <a href="#schedule" className="hover:text-gym-accent transition-colors">Schedule</a>
+          <a href="#about" className="hover:text-iron-gym-gym-accent transition-colors">About</a>
+          <a href="#programs" className="hover:text-iron-gym-gym-accent transition-colors">Programs</a>
+          <a href="#trainers" className="hover:text-iron-gym-gym-accent transition-colors">Trainers</a>
+          <a href="#schedule" className="hover:text-iron-gym-gym-accent transition-colors">Schedule</a>
         </nav>
-        <button className="bg-gym-accent text-gym-darker font-bold px-6 py-2 rounded-full hover:bg-gym-accentHover transition-colors uppercase tracking-widest text-sm">
+        <button className="bg-iron-gym-gym-accent text-iron-gym-gym-darker font-bold px-6 py-2 rounded-full hover:bg-iron-gym-gym-accentHover transition-colors uppercase tracking-widest text-sm">
           Join Now
         </button>
       </header>

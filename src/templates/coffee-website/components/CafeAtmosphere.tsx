@@ -8,7 +8,7 @@ import { useTemplateData } from '../TemplateContext';
 const CafeAtmosphere = () => {
   const siteContent = useTemplateData();
   return (
-    <section className="py-24 bg-coffee-light overflow-hidden">
+    <section className="py-24 bg-artisan-coffee-coffee-light overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -18,8 +18,8 @@ const CafeAtmosphere = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-serif text-4xl md:text-5xl text-coffee-dark mb-4">The Atmosphere</h2>
-            <p className="font-sans font-light text-coffee-dark/80 max-w-md text-lg">
+            <h2 className="font-artisan-coffee-serif text-4xl md:text-5xl text-artisan-coffee-coffee-dark mb-4">The Atmosphere</h2>
+            <p className="font-artisan-coffee-sans font-light text-artisan-coffee-coffee-dark/80 max-w-md text-lg">
               A space designed for connection, quiet moments, and the enjoyment of craft coffee.
             </p>
           </motion.div>
@@ -30,7 +30,7 @@ const CafeAtmosphere = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <button className="text-coffee-terracotta border-b border-coffee-terracotta pb-1 font-sans uppercase tracking-widest text-sm hover:text-coffee-dark hover:border-coffee-dark transition-colors">
+            <button className="text-artisan-coffee-coffee-terracotta border-b border-artisan-coffee-coffee-terracotta pb-1 font-artisan-coffee-sans uppercase tracking-widest text-sm hover:text-artisan-coffee-coffee-dark hover:border-artisan-coffee-coffee-dark transition-colors">
               Follow our journey
             </button>
           </motion.div>

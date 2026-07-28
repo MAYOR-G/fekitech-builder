@@ -54,7 +54,7 @@ const PinnedHorizontalScroll = () => {
       ref={targetRef}
       id="programs"
       style={sectionHeight ? { height: `${sectionHeight}px` } : undefined}
-      className={`relative bg-gym-dark ${reducedMotion ? "py-20" : "min-h-svh"}`}
+      className={`relative bg-iron-gym-gym-darker ${reducedMotion ? "py-20" : "min-h-svh"}`}
     >
       <div
         ref={viewportRef}
@@ -66,8 +66,8 @@ const PinnedHorizontalScroll = () => {
       >
         
         <div className="max-w-7xl mx-auto px-6 w-full mb-12">
-          <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Programs</h2>
-          <h3 className="text-4xl md:text-6xl font-black font-display uppercase">Choose Your Path</h3>
+          <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Programs</h2>
+          <h3 className="text-4xl md:text-6xl font-black font-iron-gym-display uppercase">Choose Your Path</h3>
         </div>
 
         <motion.div
@@ -94,14 +94,14 @@ const PinnedHorizontalScroll = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
               <div className="absolute bottom-0 left-0 p-8 w-full">
-                <h4 className="text-3xl font-black font-display uppercase mb-3 text-white group-hover:text-gym-accent transition-colors">
+                <h4 className="text-3xl font-black font-iron-gym-display uppercase mb-3 text-white group-hover:text-iron-gym-gym-accent transition-colors">
                   {program.title}
                 </h4>
                 <p className="text-gray-300 mb-6 text-lg">
                   {program.desc}
                 </p>
                 <div className="flex items-center gap-2 text-white font-bold uppercase tracking-wider text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                  Explore Program <ArrowRight className="w-4 h-4 text-gym-accent" />
+                  Explore Program <ArrowRight className="w-4 h-4 text-iron-gym-gym-accent" />
                 </div>
               </div>
             </div>

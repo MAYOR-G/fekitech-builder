@@ -24,7 +24,7 @@
     "primaryHref": "#contact",
     "secondaryLabel": "Explore menu",
     "secondaryHref": "#menu",
-    "image": "/templates/assets/forno-nero-hero-v2.webp",
+    "image": "/templates/pizza-dark-premium/assets/hero-pizza.webp",
     "imageAlt": "Forno Nero wood-fired salami and mushroom pizza with blistered crust",
     "badgeValue": "48H",
     "badgeLabel": "slow fermented"
@@ -37,7 +37,7 @@
     "price": "$18",
     "buttonLabel": "Reserve and taste",
     "buttonHref": "#contact",
-    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1600&q=90",
+    "image": "/templates/pizza-dark-premium/assets/hero-pizza.webp",
     "imageAlt": "Artisan margherita pizza fresh from the oven"
   },
   "dishes": {
@@ -46,10 +46,10 @@
     "buttonLabel": "See the menu",
     "buttonHref": "#menu",
     "items": [
-      { "name": "Nero Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$18", "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1100&q=88", "imageAlt": "Classic margherita pizza" },
-      { "name": "Funghi and Truffle", "description": "Wild mushrooms, fior di latte, truffle crema.", "price": "$22", "image": "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Mushroom pizza with herbs" },
-      { "name": "Charred Rapini", "description": "Rapini, garlic, lemon, chile, pecorino.", "price": "$12", "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Charred greens on a ceramic plate" },
-      { "name": "Tiramisu al Fuoco", "description": "Mascarpone, espresso, cocoa, smoked salt.", "price": "$11", "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Tiramisu dusted with cocoa" }
+      { "name": "Nero Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$18", "image": "/templates/pizza-dark-premium/assets/hero-pizza.webp", "imageAlt": "Classic margherita pizza" },
+      { "name": "Funghi and Truffle", "description": "Wild mushrooms, fior di latte, truffle crema.", "price": "$22", "image": "/templates/pizza-dark-premium/assets/restaurant.webp", "imageAlt": "Mushroom pizza with herbs" },
+      { "name": "Charred Rapini", "description": "Rapini, garlic, lemon, chile, pecorino.", "price": "$12", "image": "/templates/pizza-dark-premium/assets/chef.webp", "imageAlt": "Charred greens on a ceramic plate" },
+      { "name": "Tiramisu al Fuoco", "description": "Mascarpone, espresso, cocoa, smoked salt.", "price": "$11", "image": "/templates/pizza-dark-premium/assets/dining.webp", "imageAlt": "Tiramisu dusted with cocoa" }
     ]
   },
   "menu": {
@@ -79,19 +79,19 @@
     "description": "Forno Nero is where time-honored technique meets a restless passion for better. We work with local farmers, slow-ferment our dough for 48 hours, and fire every pizza in our hand-built oven.",
     "buttonLabel": "Meet our makers",
     "buttonHref": "#gallery",
-    "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=88",
+    "image": "/templates/pizza-dark-premium/assets/chef.webp",
     "imageAlt": "Chef shaping dough in a dark open kitchen",
-    "secondaryImage": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=900&q=88",
+    "secondaryImage": "/templates/pizza-dark-premium/assets/restaurant.webp",
     "secondaryImageAlt": "Candlelit restaurant dining room"
   },
   "gallery": {
     "title": "A glimpse inside",
     "description": "Hands in flour, glowing embers, long tables, and the final blistered crust.",
     "images": [
-      { "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=88", "imageAlt": "Pizza topped with basil" },
-      { "image": "https://images.unsplash.com/photo-1583953623787-ada99d338235?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Flames in a wood-fired oven" },
-      { "image": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=88", "imageAlt": "Chef at work in the kitchen" },
-      { "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88", "imageAlt": "Intimate restaurant interior" }
+      { "image": "/templates/pizza-dark-premium/assets/restaurant.webp", "imageAlt": "Pizza restaurant dining room" },
+      { "image": "/templates/pizza-dark-premium/assets/dining.webp", "imageAlt": "Intimate table setting" },
+      { "image": "/templates/pizza-dark-premium/assets/chef.webp", "imageAlt": "Chef at work in the kitchen" },
+      { "image": "/templates/pizza-dark-premium/assets/hero-pizza.webp", "imageAlt": "Wood-fired pizza" }
     ]
   },
   "reviews": {

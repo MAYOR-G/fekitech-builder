@@ -10,7 +10,7 @@ export default function ServicesList() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-24 md:py-32 px-6 bg-brand-black">
+    <section id="services" className="py-24 md:py-32 px-6 bg-barber-brand-black">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -18,8 +18,8 @@ export default function ServicesList() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-heading mb-4 text-brand-cream">OUR SERVICES</h2>
-          <div className="w-16 h-1 bg-brand-accent"></div>
+          <h2 className="text-4xl md:text-6xl font-barber-heading mb-4 text-barber-brand-cream">OUR SERVICES</h2>
+          <div className="w-16 h-1 bg-barber-brand-accent"></div>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-16 relative">
@@ -36,12 +36,12 @@ export default function ServicesList() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-heading uppercase group-hover:text-brand-accent transition-colors duration-300">
+                  <h3 className="text-2xl md:text-3xl font-barber-heading uppercase group-hover:text-barber-brand-accent transition-colors duration-300">
                     {service.name}
                   </h3>
-                  <p className="text-brand-cream/60 mt-2 font-light">{service.description}</p>
+                  <p className="text-barber-brand-cream/60 mt-2 font-light">{service.description}</p>
                 </div>
-                <div className="text-xl font-heading text-brand-cream/40 group-hover:text-brand-cream transition-colors duration-300">
+                <div className="text-xl font-barber-heading text-barber-brand-cream/40 group-hover:text-barber-brand-cream transition-colors duration-300">
                   {service.price}
                 </div>
               </motion.div>
@@ -69,9 +69,9 @@ export default function ServicesList() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="absolute inset-0 bg-brand-charcoal flex items-center justify-center rounded-sm border border-white/5"
+                  className="absolute inset-0 bg-barber-brand-charcoal flex items-center justify-center rounded-sm border border-white/5"
                 >
-                  <p className="text-brand-cream/30 font-heading tracking-widest uppercase text-lg">Hover to preview</p>
+                  <p className="text-barber-brand-cream/30 font-barber-heading tracking-widest uppercase text-lg">Hover to preview</p>
                 </motion.div>
               )}
             </AnimatePresence>

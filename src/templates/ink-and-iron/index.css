@@ -1,45 +1,44 @@
-@import "tailwindcss";
-
 @theme {
-  --color-charcoal: #141414;
-  --color-deep-black: #0A0A0A;
-  --color-gold: #C9A84C;
-  --color-blood: #8B2635;
-  --color-off-white: #F5F5F5;
-  --color-muted-gray: #6B6B6B;
-  --font-display: var(--font-anton), sans-serif;
-  --font-sans: var(--font-inter), sans-serif;
+  --color-ink-iron-charcoal: #141414;
+  --color-ink-iron-deep-black: #0A0A0A;
+  --color-ink-iron-gold: #C9A84C;
+  --color-ink-iron-blood: #8B2635;
+  --color-ink-iron-off-white: #F5F5F5;
+  --color-ink-iron-muted-gray: #6B6B6B;
+  --font-ink-iron-display: var(--font-ink-iron-anton), sans-serif;
+  --font-ink-iron-sans: var(--font-ink-iron-inter), sans-serif;
 }
-
 /* Base resets & utilities */
 @layer base {
-  :root {
+.ink-iron-template {
     --background: #0A0A0A;
     --foreground: #F5F5F5;
   }
-  
-  .template-wrapper {
+.ink-iron-template {
     background-color: var(--background);
     color: var(--foreground);
   }
 }
-
 /* Custom classes for animations */
 @layer utilities {
-  .clip-path-reveal {
+.clip-path-reveal {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  
-  .clip-path-hide {
+.clip-path-hide {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   }
-
-  .text-shadow-glow {
+.text-shadow-glow {
     text-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
   }
-
   /* Utility for keeping track of line wrapping limit */
-  .text-balance-hero {
+.text-balance-hero {
     text-wrap: balance;
   }
 }
+
+/* GENERATED TEMPLATE TOKEN FALLBACKS START */
+@layer utilities {
+  .font-ink-iron-display{font-family:var(--font-ink-iron-anton), sans-serif;}
+  .font-ink-iron-sans{font-family:var(--font-ink-iron-inter), sans-serif;}
+}
+/* GENERATED TEMPLATE TOKEN FALLBACKS END */

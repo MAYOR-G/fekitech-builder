@@ -9,7 +9,7 @@ export function CtaSection() {
   const { brand } = useTemplateData();
 
   return (
-    <section id="contact" className="relative py-32 sm:py-48 overflow-hidden bg-navy">
+    <section id="contact" className="relative py-32 sm:py-48 overflow-hidden bg-spark-electric-navy">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <TemplateImage 
@@ -31,14 +31,14 @@ export function CtaSection() {
           <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md mb-6">
             Ready to dispatch
           </span>
-          <h2 className="mx-auto max-w-3xl font-display text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <h2 className="mx-auto max-w-3xl font-spark-electric-display text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Need an electrician right now?
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-white">
             Whether it&apos;s an emergency outage, a tripping breaker, or a planned panel upgrade, our licensed team is ready to deploy.
           </p>
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row w-full sm:w-auto">
-            <ButtonLink href={`tel:${brand.emergencyPhone.replace(/\D/g, '')}`} variant="yellow" className="w-full sm:w-auto text-base h-16 px-10 shadow-xl shadow-amber/20 hover:-translate-y-1 transition-transform">
+            <ButtonLink href={`tel:${brand.emergencyPhone.replace(/\D/g, '')}`} variant="yellow" className="w-full sm:w-auto text-base h-16 px-10 shadow-xl shadow-spark-electric-amber/20 hover:-translate-y-1 transition-transform">
               <PhoneCall className="mr-3 h-6 w-6" />
               Call {brand.emergencyPhone}
             </ButtonLink>

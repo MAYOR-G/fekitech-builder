@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTemplateData } from './TemplateContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -14,18 +14,16 @@ import Footer from './components/Footer';
 export default function Main() {
   const data = useTemplateData();
 
-  useEffect(() => {
-    // Inject CSS variables for colors
-    const root = document.documentElement;
-    root.style.setProperty('--color-primary', data.colors.primary);
-    root.style.setProperty('--color-secondary', data.colors.secondary);
-    root.style.setProperty('--color-accent', data.colors.accent);
-    root.style.setProperty('--color-text', data.colors.text);
-    root.style.setProperty('--color-background', data.colors.background);
-  }, [data.colors]);
+  const themeStyles = {
+    "--color-primary": data.colors.primary,
+    "--color-secondary": data.colors.secondary,
+    "--color-accent": data.colors.accent,
+    "--color-text": data.colors.text,
+    "--color-background": data.colors.background,
+  } as React.CSSProperties;
 
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] font-sans flex flex-col overflow-x-hidden antialiased">
+    <div style={themeStyles} className="timber-craft-template min-h-screen bg-[var(--color-background)] text-[var(--color-text)] font-sans flex flex-col overflow-x-hidden antialiased">
       <style dangerouslySetInnerHTML={{__html: `
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
         
@@ -37,7 +35,7 @@ export default function Main() {
           font-family: 'Inter', sans-serif;
         }
 
-        ::selection {
+        .timber-craft-template ::selection {
           background-color: var(--color-primary);
           color: white;
         }

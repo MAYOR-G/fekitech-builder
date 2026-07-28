@@ -19,7 +19,7 @@ export default function BarberWebsiteTemplate({ data }: { data: TemplateData }) 
 
   return (
     <TemplateContext.Provider value={templateData}>
-      <div style={themeStyles} className="template-wrapper h-full w-full">
+      <div style={themeStyles} className="classic-barber-template h-full w-full">
         <Main />
       </div>
     </TemplateContext.Provider>

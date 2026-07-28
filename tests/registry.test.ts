@@ -1,7 +1,26 @@
 import { describe, expect, it } from "vitest";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { canPlanUseTemplate } from "@/lib/plans";
 import { isValidEditableData } from "@/lib/project-validation";
 import { getAllTemplates, getTemplate } from "@/registry";
+
+function readTemplateFiles(dir: string, extension: string): string[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) return readTemplateFiles(path, extension);
+    return entry.isFile() && path.endsWith(extension) ? [path] : [];
+  });
+}
+
+function collectStrings(value: unknown): string[] {
+  if (typeof value === "string") return [value];
+  if (Array.isArray(value)) return value.flatMap(collectStrings);
+  if (value && typeof value === "object") {
+    return Object.values(value).flatMap(collectStrings);
+  }
+  return [];
+}
 
 describe("production template registry", () => {
   it("contains every production template with valid default data", () => {
@@ -23,26 +42,66 @@ describe("production template registry", () => {
       "dentist-website",
       "electrician-website",
       "farm-shop-website",
-      "ink-and-iron"
+      "ink-and-iron",
+      "alder-slate-roofing",
+      "burger-dark-premium",
+      "catering-company-premium",
+      "catering-website",
+      "coffee-website",
+      "crownline-roofworks",
+      "fast-food-chicken-tacos",
+      "forgepoint-construction",
+      "ice-cream-website",
+      "noir-house-design",
+      "northcrest-roofing",
+      "pastries-snacks-premium",
+      "pizza-dark-premium",
+      "pizza-light-clean",
+      "plumbing-company-premium",
+      "premium-restaurant",
+      "restaurant-website",
+      "second-furniture-website",
+      "second-plumber-website",
+      "velvet-scoop"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
+      "alder-slate-roofing",
       "bakery-website",
       "barber-website",
+      "burger-dark-premium",
       "burger-light-clean",
       "cake-bakery-premium",
       "cake-website",
       "carpenter-website",
+      "catering-company-premium",
+      "catering-website",
       "cleaning-agency-premium",
+      "coffee-website",
+      "crownline-roofworks",
       "dentist-website",
       "electrician-website",
       "farm-shop-website",
+      "fast-food-chicken-tacos",
+      "forgepoint-construction",
       "gym-website",
+      "ice-cream-website",
       "industrial-construction",
       "ink-and-iron",
       "lumen-house-design",
+      "noir-house-design",
+      "northcrest-roofing",
+      "pastries-snacks-premium",
+      "pizza-dark-premium",
+      "pizza-light-clean",
+      "plumbing-company-premium",
       "premium-coffee-website",
       "premium-construction",
-      "roofing-agency-premium"
+      "premium-restaurant",
+      "restaurant-website",
+      "roofing-agency-premium",
+      "second-furniture-website",
+      "second-plumber-website",
+      "velvet-scoop"
     ]);
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
@@ -68,6 +127,26 @@ describe("production template registry", () => {
       "electrician-website",
       "farm-shop-website",
       "ink-and-iron",
+      "alder-slate-roofing",
+      "burger-dark-premium",
+      "catering-company-premium",
+      "catering-website",
+      "coffee-website",
+      "crownline-roofworks",
+      "fast-food-chicken-tacos",
+      "forgepoint-construction",
+      "ice-cream-website",
+      "noir-house-design",
+      "northcrest-roofing",
+      "pastries-snacks-premium",
+      "pizza-dark-premium",
+      "pizza-light-clean",
+      "plumbing-company-premium",
+      "premium-restaurant",
+      "restaurant-website",
+      "second-furniture-website",
+      "second-plumber-website",
+      "velvet-scoop",
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -83,5 +162,122 @@ describe("production template registry", () => {
     expect(canPlanUseTemplate("pro", "premium-coffee-website")).toBe(true);
     expect(canPlanUseTemplate("pro", "unknown-template")).toBe(false);
     expect(canPlanUseTemplate("agency", "unknown-template")).toBe(true);
+  });
+
+  it("keeps template styles isolated from the builder shell", () => {
+    const templateRoot = join(process.cwd(), "src/templates");
+    const cssFiles = readTemplateFiles(templateRoot, ".css");
+    const tsxFiles = readTemplateFiles(templateRoot, ".tsx");
+    const filesWithBareImport = cssFiles.filter((file) =>
+      readFileSync(file, "utf8").split(/\r?\n/).some((line) => line.trim() === "@import")
+    );
+
+    expect(filesWithBareImport).toEqual([]);
+    expect(tsxFiles.filter((file) => readFileSync(file, "utf8").includes("template-wrapper"))).toEqual([]);
+    expect(tsxFiles.filter((file) => readFileSync(file, "utf8").includes("document.documentElement"))).toEqual([]);
+
+    for (const templateId of ["alder-slate-roofing", "crownline-roofworks", "northcrest-roofing"]) {
+      const component = readFileSync(join(templateRoot, templateId, "template.tsx"), "utf8");
+      expect(component).not.toContain('import "./styles.css"');
+    }
+
+    const redesignedTemplateIds = [
+      "burger-dark-premium",
+      "pizza-dark-premium",
+      "pizza-light-clean",
+      "ice-cream-website",
+      "second-furniture-website",
+      "second-plumber-website",
+    ];
+
+    for (const templateId of redesignedTemplateIds) {
+      const sourceFiles = readTemplateFiles(join(templateRoot, templateId), ".tsx");
+      const source = sourceFiles.map((file) => readFileSync(file, "utf8")).join("\n");
+      expect(source).not.toContain("../_premium-");
+      expect(source).not.toContain("template-wrapper");
+
+      const editablePath = join(templateRoot, templateId, "editable.json");
+      const editableData = JSON.parse(readFileSync(editablePath, "utf8")) as unknown;
+      const imagePaths = collectStrings(editableData).filter((value) =>
+        value.startsWith(`/templates/${templateId}/assets/`)
+      );
+
+      expect(imagePaths.length).toBeGreaterThan(0);
+      for (const imagePath of imagePaths) {
+        expect(existsSync(join(process.cwd(), "public", imagePath))).toBe(true);
+      }
+
+      const remoteImages = collectStrings(editableData).filter((value) =>
+        /^https?:\/\/.+\.(avif|gif|jpe?g|png|webp)(\?.*)?$/i.test(value)
+      );
+      expect(remoteImages).toEqual([]);
+    }
+
+    const coffeeSource = readTemplateFiles(join(templateRoot, "premium-coffee-website"), ".tsx")
+      .map((file) => readFileSync(file, "utf8"))
+      .join("\n");
+    const barberSource = readTemplateFiles(join(templateRoot, "barber-website"), ".tsx")
+      .map((file) => readFileSync(file, "utf8"))
+      .join("\n");
+
+    expect(coffeeSource).toContain("premium-coffee-template");
+    expect(coffeeSource).not.toMatch(/\b(?:bg|text|border|font)-brand-/);
+    expect(barberSource).toContain("classic-barber-template");
+    expect(barberSource).not.toMatch(/\b(?:bg|text|border|font)-brand-/);
+
+    const legacyTokenPrefixes = {
+      "cake-website": "sweet-cake",
+      "catering-website": "catering-co",
+      "coffee-website": "artisan-coffee",
+      "dentist-website": "bright-dental",
+      "electrician-website": "spark-electric",
+      "gym-website": "iron-gym",
+      "ink-and-iron": "ink-iron",
+      "restaurant-website": "halcyon-table",
+      "premium-coffee-website": "coffee-brand",
+      "barber-website": "barber-brand",
+    };
+
+    for (const [templateId, prefix] of Object.entries(legacyTokenPrefixes)) {
+      const templateSource = readTemplateFiles(join(templateRoot, templateId), ".tsx")
+        .map((file) => readFileSync(file, "utf8"))
+        .join("\n");
+      const cssSource = readTemplateFiles(join(templateRoot, templateId), ".css")
+        .map((file) => readFileSync(file, "utf8"))
+        .join("\n");
+      const colorTokens = [...cssSource.matchAll(/--color-([a-z0-9-]+):/g)].map((match) => match[1]);
+
+      for (const token of colorTokens) {
+        expect(token.startsWith(prefix)).toBe(true);
+      }
+
+      expect(templateSource).not.toMatch(/\bfont-(display|heading|body|sans|serif|accent)\b/);
+    }
+
+    const requiredTemplateUtilities = [
+      ["premium-coffee-website", ".bg-coffee-brand-accent"],
+      ["premium-coffee-website", ".text-coffee-brand-accent"],
+      ["barber-website", ".bg-barber-brand-accent"],
+      ["barber-website", ".text-barber-brand-accent"],
+      ["gym-website", ".bg-iron-gym-gym-accent"],
+      ["gym-website", ".text-iron-gym-gym-accent"],
+      ["gym-website", ".hover\\:bg-iron-gym-gym-accentHover:hover"],
+      ["electrician-website", ".bg-spark-electric-safety"],
+      ["electrician-website", ".text-spark-electric-safety"],
+      ["electrician-website", ".text-spark-electric-navy"],
+      ["coffee-website", ".text-artisan-coffee-coffee-terracotta"],
+      ["catering-website", ".bg-catering-co-gold"],
+      ["restaurant-website", ".text-halcyon-table-flame"],
+      ["dentist-website", ".bg-bright-dental-ocean"],
+    ];
+
+    for (const [templateId, utility] of requiredTemplateUtilities) {
+      const cssSource = readTemplateFiles(join(templateRoot, templateId), ".css")
+        .map((file) => readFileSync(file, "utf8"))
+        .join("\n");
+
+      expect(cssSource).toContain("GENERATED TEMPLATE TOKEN FALLBACKS START");
+      expect(cssSource).toContain(utility);
+    }
   });
 });

@@ -19,7 +19,7 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-brand-black z-0">
+      <div className="absolute inset-0 bg-barber-brand-black z-0">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentImageIndex}
@@ -32,7 +32,7 @@ export default function Hero() {
             className="absolute inset-0 w-full h-full object-cover"
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/40 to-brand-charcoal/20 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-barber-brand-charcoal via-barber-brand-charcoal/40 to-barber-brand-charcoal/20 z-10" />
       </div>
 
       <div className="relative z-20 max-w-5xl mx-auto px-6 text-center pt-20">
@@ -41,17 +41,17 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-brand-cream leading-tight mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-barber-heading font-bold text-barber-brand-cream leading-tight mb-6">
             <EditableText section="hero" field="headline" value={siteContent?.hero?.headline} as="span" />
           </h1>
-          <p className="text-lg md:text-xl text-brand-cream/80 max-w-2xl mx-auto font-light mb-10">
+          <p className="text-lg md:text-xl text-barber-brand-cream/80 max-w-2xl mx-auto font-light mb-10">
             <EditableText section="hero" field="subtext" value={siteContent?.hero?.subtext} as="span" />
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#booking" className="bg-brand-accent text-brand-black px-8 py-4 uppercase font-bold tracking-widest text-sm hover:bg-brand-cream transition-colors w-full sm:w-auto">
+            <a href="#booking" className="bg-barber-brand-accent text-barber-brand-black px-8 py-4 uppercase font-bold tracking-widest text-sm hover:bg-barber-brand-cream transition-colors w-full sm:w-auto">
               <EditableText section="hero" field="cta" value={siteContent?.hero?.cta} as="span" />
             </a>
-            <a href="#services" className="border border-brand-cream/30 text-brand-cream px-8 py-4 uppercase font-bold tracking-widest text-sm hover:bg-brand-cream/10 transition-colors w-full sm:w-auto">
+            <a href="#services" className="border border-barber-brand-cream/30 text-barber-brand-cream px-8 py-4 uppercase font-bold tracking-widest text-sm hover:bg-barber-brand-cream/10 transition-colors w-full sm:w-auto">
               <EditableText section="hero" field="secondaryCta" value={siteContent?.hero?.secondaryCta} as="span" />
             </a>
           </div>

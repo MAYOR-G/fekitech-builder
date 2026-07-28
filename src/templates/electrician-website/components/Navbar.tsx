@@ -11,17 +11,17 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/70 bg-white/86 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-spark-electric-line/70 bg-white/86 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label={brand.name}>
-          <span className="grid h-11 w-11 place-items-center rounded-xl bg-cobalt text-white shadow-blue">
+          <span className="grid h-11 w-11 place-items-center rounded-xl bg-spark-electric-cobalt text-white shadow-blue">
             <Zap className="h-5 w-5 fill-white" aria-hidden="true" />
           </span>
           <span>
-            <span className="block font-display text-xl font-extrabold tracking-[-0.04em] text-navy">
+            <span className="block font-spark-electric-display text-xl font-extrabold tracking-[-0.04em] text-spark-electric-navy">
               {brand.name}
             </span>
-            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.18em] text-cobalt sm:block">
+            <span className="mt-1 hidden text-[11px] font-black uppercase tracking-[0.18em] text-spark-electric-cobalt sm:block">
               Licensed electrical contractors
             </span>
           </span>
@@ -32,7 +32,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[15px] font-extrabold text-steel/76 transition hover:text-cobalt"
+              className="text-[15px] font-extrabold text-spark-electric-steel/76 transition hover:text-spark-electric-cobalt"
             >
               {link.label}
             </a>
@@ -47,7 +47,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-white text-navy transition hover:border-cobalt/30 lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-xl border border-spark-electric-line bg-white text-spark-electric-navy transition hover:border-spark-electric-cobalt/30 lg:hidden"
           onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-label="Toggle navigation menu"
@@ -58,7 +58,7 @@ export function Navbar() {
 
       <div
         className={cn(
-          "grid overflow-hidden border-t border-line bg-white transition-all duration-300 lg:hidden",
+          "grid overflow-hidden border-t border-spark-electric-line bg-white transition-all duration-300 lg:hidden",
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}
       >
@@ -69,14 +69,14 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-xl px-4 py-3 text-[15px] font-extrabold text-steel/80 transition hover:bg-mist hover:text-cobalt"
+                className="block rounded-xl px-4 py-3 text-[15px] font-extrabold text-spark-electric-steel/80 transition hover:bg-spark-electric-mist hover:text-spark-electric-cobalt"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="tel:+13125550119"
-              className="mt-2 flex min-h-12 items-center justify-center gap-2 rounded-xl bg-safety px-5 text-[15px] font-extrabold text-navy"
+              className="mt-2 flex min-h-12 items-center justify-center gap-2 rounded-xl bg-spark-electric-safety px-5 text-[15px] font-extrabold text-spark-electric-navy"
             >
               <PhoneCall className="h-4 w-4" />
               Emergency Call

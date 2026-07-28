@@ -26,14 +26,14 @@ const trainers = [
 
 const Trainers = () => {
   return (
-    <section id="trainers" className="py-24 bg-gym-darker">
+    <section id="trainers" className="py-24 bg-iron-gym-gym-darker">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
-            <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Expert Coaching</h2>
-            <h3 className="text-4xl md:text-5xl font-black font-display uppercase">Meet Your Trainers</h3>
+            <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Expert Coaching</h2>
+            <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display uppercase">Meet Your Trainers</h3>
           </div>
-          <button className="text-white font-bold hover:text-gym-accent transition-colors flex items-center gap-2 uppercase tracking-wider text-sm">
+          <button className="text-white font-bold hover:text-iron-gym-gym-accent transition-colors flex items-center gap-2 uppercase tracking-wider text-sm">
             View All Trainers
           </button>
         </div>
@@ -56,11 +56,11 @@ const Trainers = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
               
               <div className="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                <span className="text-gym-accent font-bold text-sm tracking-wider uppercase mb-1">{trainer.specialty}</span>
-                <h4 className="text-3xl font-black font-display text-white mb-1">{trainer.name}</h4>
+                <span className="text-iron-gym-gym-accent font-bold text-sm tracking-wider uppercase mb-1">{trainer.specialty}</span>
+                <h4 className="text-3xl font-black font-iron-gym-display text-white mb-1">{trainer.name}</h4>
                 <p className="text-gray-300 text-sm mb-6">{trainer.experience}</p>
                 
-                <button className="bg-white text-gym-darker font-bold py-3 rounded-full uppercase tracking-wider text-sm hover:bg-gym-accent transition-colors opacity-0 group-hover:opacity-100 duration-300">
+                <button className="bg-white text-iron-gym-gym-darker font-bold py-3 rounded-full uppercase tracking-wider text-sm hover:bg-iron-gym-gym-accent transition-colors opacity-0 group-hover:opacity-100 duration-300">
                   Book Session
                 </button>
               </div>

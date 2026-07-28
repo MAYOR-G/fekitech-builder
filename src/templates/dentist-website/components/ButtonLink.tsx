@@ -16,11 +16,11 @@ type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 const variantStyles = {
   primary:
-    "bg-ink text-porcelain shadow-soft hover:bg-[#0b1d20] focus-visible:ring-ocean/25",
+    "bg-bright-dental-ink text-bright-dental-porcelain shadow-soft hover:bg-[#0b1d20] focus-visible:ring-bright-dental-ocean/25",
   secondary:
-    "border border-ink/12 bg-white/72 text-ink shadow-insetGlow hover:border-ocean/30 hover:bg-white focus-visible:ring-ocean/18",
+    "border border-bright-dental-ink/12 bg-white/72 text-bright-dental-ink shadow-insetGlow hover:border-bright-dental-ocean/30 hover:bg-white focus-visible:ring-bright-dental-ocean/18",
   light:
-    "border border-white/46 bg-white/72 text-ink shadow-insetGlow backdrop-blur-xl hover:bg-white focus-visible:ring-white/45",
+    "border border-white/46 bg-white/72 text-bright-dental-ink shadow-insetGlow backdrop-blur-xl hover:bg-white focus-visible:ring-white/45",
 };
 
 export function ButtonLink({

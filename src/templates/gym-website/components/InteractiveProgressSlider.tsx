@@ -36,11 +36,11 @@ const InteractiveProgressSlider = () => {
   };
 
   return (
-    <section className="py-24 bg-gym-charcoal overflow-hidden">
+    <section className="py-24 bg-iron-gym-gym-charcoal overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Real Results</h2>
-          <h3 className="text-4xl md:text-5xl font-black font-display uppercase mb-6">Progress Takes Consistency</h3>
+          <h2 className="text-iron-gym-gym-accent font-bold tracking-widest uppercase mb-4 text-sm">Real Results</h2>
+          <h3 className="text-4xl md:text-5xl font-black font-iron-gym-display uppercase mb-6">Progress Takes Consistency</h3>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             We focus on improving strength, posture, and confidence. See how structured training and expert coaching transform our members&apos; capabilities.
           </p>
@@ -62,7 +62,7 @@ const InteractiveProgressSlider = () => {
             alt="Strong athlete maintaining great posture and muscle tone" 
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
-          <div className="absolute top-4 right-4 bg-gym-dark/80 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm z-10 border border-white/10">
+          <div className="absolute top-4 right-4 bg-iron-gym-gym-dark/80 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm z-10 border border-white/10">
             Current Capacity
           </div>
 
@@ -76,7 +76,7 @@ const InteractiveProgressSlider = () => {
               alt="Person starting their fitness journey" 
               className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-80"
             />
-            <div className="absolute top-4 left-4 bg-gym-dark/80 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm z-10 border border-white/10">
+            <div className="absolute top-4 left-4 bg-iron-gym-gym-dark/80 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm z-10 border border-white/10">
               Starting Point
             </div>
           </div>
@@ -88,8 +88,8 @@ const InteractiveProgressSlider = () => {
           >
             <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-none">
               <div className="flex gap-1">
-                <div className="w-[2px] h-4 bg-gym-darker rounded-full"></div>
-                <div className="w-[2px] h-4 bg-gym-darker rounded-full"></div>
+                <div className="w-[2px] h-4 bg-iron-gym-gym-darker rounded-full"></div>
+                <div className="w-[2px] h-4 bg-iron-gym-gym-darker rounded-full"></div>
               </div>
             </div>
           </div>
