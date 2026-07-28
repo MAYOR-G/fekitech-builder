@@ -260,7 +260,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
         <div className="pst-shell pst-header-inner">
           <a className="pst-brand" href="#top" aria-label={`${data.brand.name} home`}>
             <BrandMark data={data} variant={variant} />
-            <span><strong>{data.brand.name}</strong><small>{data.brand.tagline}</small></span>
+            <span><strong  data-editable-path="brand.name" data-editable-type="text">{data.brand.name}</strong><small  data-editable-path="brand.tagline" data-editable-type="text">{data.brand.tagline}</small></span>
           </a>
           <nav className={`pst-nav ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
             {data.navigation.links.map((link) => <a key={`${link.label}-${link.href}`} href={link.href} onClick={() => setMenuOpen(false)}>{link.label}</a>)}
@@ -281,9 +281,9 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
           <div className="pst-hero-overlay" />
           <div className="pst-shell pst-hero-content">
             <Reveal className="pst-hero-copy">
-              <p className="pst-eyebrow">{data.hero.eyebrow}</p>
-              <h1>{data.hero.title}</h1>
-              <p className="pst-hero-description">{data.hero.description}</p>
+              <p className="pst-eyebrow" data-editable-path="hero.eyebrow" data-editable-type="text">{data.hero.eyebrow}</p>
+              <h1  data-editable-path="hero.title" data-editable-type="text">{data.hero.title}</h1>
+              <p className="pst-hero-description" data-editable-path="hero.description" data-editable-type="text">{data.hero.description}</p>
               <div className="pst-actions">
                 <ActionLink href={data.hero.primaryHref}>{data.hero.primaryLabel}</ActionLink>
                 <ActionLink href={data.hero.secondaryHref} secondary>{data.hero.secondaryLabel}</ActionLink>
@@ -308,8 +308,8 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
         <section className="pst-section pst-services" id="services">
           <div className="pst-shell">
             <Reveal className="pst-section-heading">
-              <h2>{data.services.title}</h2>
-              <p>{data.services.description}</p>
+              <h2  data-editable-path="services.title" data-editable-type="text">{data.services.title}</h2>
+              <p  data-editable-path="services.description" data-editable-type="text">{data.services.description}</p>
             </Reveal>
             <div className="pst-services-grid">
               {data.services.items.map((service, index) => {
@@ -332,9 +332,9 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
         <section className="pst-section pst-comparison" id="results">
           <div className="pst-shell pst-comparison-grid">
             <Reveal className="pst-comparison-copy">
-              <p className="pst-eyebrow">{data.comparison.eyebrow}</p>
-              <h2>{data.comparison.title}</h2>
-              <p>{data.comparison.description}</p>
+              <p className="pst-eyebrow" data-editable-path="comparison.eyebrow" data-editable-type="text">{data.comparison.eyebrow}</p>
+              <h2  data-editable-path="comparison.title" data-editable-type="text">{data.comparison.title}</h2>
+              <p  data-editable-path="comparison.description" data-editable-type="text">{data.comparison.description}</p>
             </Reveal>
             <Reveal><BeforeAfter data={data.comparison} /></Reveal>
           </div>
@@ -344,7 +344,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
           <div className="pst-shell pst-process-grid">
             <div className="pst-process-media"><Image src={data.process.image} alt={data.process.imageAlt} width={800} height={800} /></div>
             <div className="pst-process-copy">
-              <Reveal className="pst-section-heading"><h2>{data.process.title}</h2><p>{data.process.description}</p></Reveal>
+              <Reveal className="pst-section-heading"><h2  data-editable-path="process.title" data-editable-type="text">{data.process.title}</h2><p  data-editable-path="process.description" data-editable-type="text">{data.process.description}</p></Reveal>
               <div className="pst-process-steps">
                 {data.process.steps.map((step, index) => (
                   <Reveal className="pst-process-step" key={step.title}>
@@ -358,7 +358,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-packages" id="packages">
           <div className="pst-shell">
-            <Reveal className="pst-section-heading"><h2>{data.packages.title}</h2><p>{data.packages.description}</p></Reveal>
+            <Reveal className="pst-section-heading"><h2  data-editable-path="packages.title" data-editable-type="text">{data.packages.title}</h2><p  data-editable-path="packages.description" data-editable-type="text">{data.packages.description}</p></Reveal>
             <div className="pst-package-grid">
               {data.packages.items.map((item, index) => (
                 <Reveal className={`pst-package ${index === 0 ? "pst-package--featured" : ""}`} key={item.name}>
@@ -380,7 +380,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-gallery" id="gallery">
           <div className="pst-shell">
-            <Reveal className="pst-section-heading"><h2>{data.gallery.title}</h2><p>{data.gallery.description}</p></Reveal>
+            <Reveal className="pst-section-heading"><h2  data-editable-path="gallery.title" data-editable-type="text">{data.gallery.title}</h2><p  data-editable-path="gallery.description" data-editable-type="text">{data.gallery.description}</p></Reveal>
             <div className="pst-gallery-grid">
               {data.gallery.images.map((item, index) => (
                 <Reveal className={`pst-gallery-item pst-gallery-item--${index + 1}`} key={`${item.caption}-${index}`}>
@@ -393,7 +393,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-testimonials" id="reviews">
           <div className="pst-shell">
-            <Reveal className="pst-section-heading"><h2>{data.testimonials.title}</h2><p>{data.testimonials.description}</p></Reveal>
+            <Reveal className="pst-section-heading"><h2  data-editable-path="testimonials.title" data-editable-type="text">{data.testimonials.title}</h2><p  data-editable-path="testimonials.description" data-editable-type="text">{data.testimonials.description}</p></Reveal>
             <div className="pst-testimonial-grid">
               {data.testimonials.items.map((item, index) => (
                 <Reveal className={`pst-testimonial pst-testimonial--${index + 1}`} key={item.name}>
@@ -407,7 +407,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
         <section className="pst-section pst-areas" id="areas">
           <div className="pst-shell pst-areas-grid">
-            <Reveal><MapPin aria-hidden="true" size={32} weight="duotone" /><h2>{data.areas.title}</h2><p>{data.areas.description}</p></Reveal>
+            <Reveal><MapPin aria-hidden="true" size={32} weight="duotone" /><h2  data-editable-path="areas.title" data-editable-type="text">{data.areas.title}</h2><p  data-editable-path="areas.description" data-editable-type="text">{data.areas.description}</p></Reveal>
             <div className="pst-area-list">{data.areas.items.map((area) => <span key={area}>{area}</span>)}</div>
           </div>
         </section>
@@ -415,13 +415,13 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
         <section className="pst-section pst-contact" id="contact">
           <div className="pst-shell pst-contact-panel">
             <Reveal className="pst-contact-copy">
-              <p className="pst-eyebrow">{data.contact.eyebrow}</p><h2>{data.contact.title}</h2><p>{data.contact.description}</p>
+              <p className="pst-eyebrow" data-editable-path="contact.eyebrow" data-editable-type="text">{data.contact.eyebrow}</p><h2  data-editable-path="contact.title" data-editable-type="text">{data.contact.title}</h2><p  data-editable-path="contact.description" data-editable-type="text">{data.contact.description}</p>
               <div className="pst-actions"><ActionLink href={data.contact.primaryHref}>{data.contact.primaryLabel}</ActionLink><ActionLink href={data.contact.secondaryHref} secondary>{data.contact.secondaryLabel}</ActionLink></div>
             </Reveal>
             <div className="pst-contact-details">
-              <a href={`tel:${data.brand.phone.replace(/\s/g, "")}`}><Phone aria-hidden="true" size={20} /><span>{data.brand.phone}</span></a>
-              <a href={`mailto:${data.brand.email}`}><EnvelopeSimple aria-hidden="true" size={20} /><span>{data.brand.email}</span></a>
-              <p><MapPin aria-hidden="true" size={20} /><span>{data.brand.address}</span></p>
+              <a href={`tel:${data.brand.phone.replace(/\s/g, "")}`}><Phone aria-hidden="true" size={20} /><span  data-editable-path="brand.phone" data-editable-type="text">{data.brand.phone}</span></a>
+              <a href={`mailto:${data.brand.email}`}><EnvelopeSimple aria-hidden="true" size={20} /><span  data-editable-path="brand.email" data-editable-type="text">{data.brand.email}</span></a>
+              <p><MapPin aria-hidden="true" size={20} /><span  data-editable-path="brand.address" data-editable-type="text">{data.brand.address}</span></p>
               <div className="pst-hours"><Clock aria-hidden="true" size={20} /><div>{data.contact.hours.map((item) => <p key={item.day}><span>{item.day}</span><strong>{item.time}</strong></p>)}</div></div>
             </div>
           </div>
@@ -430,7 +430,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
 
       <footer className="pst-footer">
         <div className="pst-shell pst-footer-grid">
-          <div><a className="pst-brand" href="#top"><BrandMark data={data} variant={variant} /><span><strong>{data.brand.name}</strong><small>{data.footer.note}</small></span></a></div>
+          <div><a className="pst-brand" href="#top"><BrandMark data={data} variant={variant} /><span><strong  data-editable-path="brand.name" data-editable-type="text">{data.brand.name}</strong><small  data-editable-path="footer.note" data-editable-type="text">{data.footer.note}</small></span></a></div>
           <nav aria-label="Footer navigation">{data.navigation.links.map((link) => <a key={`footer-${link.label}`} href={link.href}>{link.label}</a>)}</nav>
           <div className="pst-socials">
             <a href={data.social.instagramHref} aria-label={data.social.instagram}><InstagramLogo size={20} /></a>
@@ -438,7 +438,7 @@ export default function PremiumServiceTemplate({ data, variant }: { data: Premiu
             <a href={data.social.linkedinHref} aria-label={data.social.linkedin}><LinkedinLogo size={20} /></a>
           </div>
         </div>
-        <div className="pst-shell pst-footer-bottom"><span>{data.footer.copyright}</span><a href={`mailto:${data.brand.email}`}>{data.brand.email}</a></div>
+        <div className="pst-shell pst-footer-bottom"><span  data-editable-path="footer.copyright" data-editable-type="text">{data.footer.copyright}</span><a href={`mailto:${data.brand.email}`} data-editable-path="brand.email" data-editable-type="text">{data.brand.email}</a></div>
       </footer>
     </div>
   );

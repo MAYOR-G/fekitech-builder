@@ -1,17 +1,23 @@
 "use client";
 
 import { use, useEffect, useState } from "react";
-import Canvas from "@/components/editor/Canvas";
-import Sidebar from "@/components/editor/Sidebar";
-import { isEditorObject, useEditorStore } from "@/store/editorStore";
+import { isEditorObject, useVisualEditorStore } from "@/store/visualEditorStore";
+import VisualEditorToolbar from "@/components/visual-editor/VisualEditorToolbar";
+import VisualCanvas from "@/components/visual-editor/VisualCanvas";
+import DesignPanel from "@/components/visual-editor/DesignPanel";
+import "@/components/visual-editor/visual-editor.css";
 
 export default function EditorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id: projectId } = use(params);
   const [templateId, setTemplateId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
-  const saveStatus = useEditorStore((state) => state.saveStatus);
 
+  const saveStatus = useVisualEditorStore((s) => s.saveStatus);
+  const activePanel = useVisualEditorStore((s) => s.activePanel);
+  const setActivePanel = useVisualEditorStore((s) => s.setActivePanel);
+
+  /* ── Load project ── */
   useEffect(() => {
     const controller = new AbortController();
     void fetch(`/api/projects/${projectId}`, { signal: controller.signal })
@@ -22,9 +28,12 @@ export default function EditorPage({ params }: { params: Promise<{ id: string }>
         };
         if (!response.ok || !payload.project) throw new Error(payload.error ?? "Unable to load the project.");
         if (!isEditorObject(payload.project.editableData)) throw new Error("The project data is invalid.");
-        useEditorStore.getState().setTemplateData(payload.project.editableData);
-        useEditorStore.getState().setProjectId(projectId);
-        useEditorStore.getState().setProjectName(payload.project.name);
+        useVisualEditorStore.getState().init(
+          projectId,
+          payload.project.name,
+          payload.project.templateId,
+          payload.project.editableData,
+        );
         setTemplateId(payload.project.templateId);
       })
       .catch((caught: unknown) => {
@@ -36,35 +45,64 @@ export default function EditorPage({ params }: { params: Promise<{ id: string }>
     return () => controller.abort();
   }, [projectId]);
 
+  /* ── Warn on unsaved exit ── */
   useEffect(() => {
-    const warnBeforeUnload = (event: BeforeUnloadEvent) => {
-      if (saveStatus === "dirty" || saveStatus === "saving" || saveStatus === "error") event.preventDefault();
+    const handler = (e: BeforeUnloadEvent) => {
+      if (saveStatus === "dirty" || saveStatus === "saving" || saveStatus === "error") e.preventDefault();
     };
-    window.addEventListener("beforeunload", warnBeforeUnload);
-    return () => window.removeEventListener("beforeunload", warnBeforeUnload);
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
   }, [saveStatus]);
 
-  if (isLoading) return <div className="flex flex-1 items-center justify-center bg-ft-gray-soft" role="status">Loading project…</div>;
+  /* ── Loading state ── */
+  if (isLoading) {
+    return (
+      <div className="flex h-screen flex-col bg-[#0E0E14]">
+        <div className="h-[52px] bg-[#111118] border-b border-white/[0.06]" />
+        <div className="flex flex-1 items-center justify-center">
+          <div className="ve-loading-spinner" />
+        </div>
+      </div>
+    );
+  }
+
+  /* ── Error state ── */
   if (error || !templateId) {
     return (
-      <div className="flex flex-1 items-center justify-center bg-ft-gray-soft p-6">
-        <div className="max-w-md rounded-xl border border-red-200 bg-white p-6 text-center">
-          <h1 className="text-lg font-semibold text-ft-ink">Editor unavailable</h1>
-          <p className="mt-2 text-sm text-red-700" role="alert">{error || "The project could not be found."}</p>
-          <button type="button" onClick={() => window.location.reload()} className="mt-4 min-h-11 rounded-lg bg-ft-primary px-4 py-2 font-semibold text-white">Retry</button>
+      <div className="flex h-screen flex-col bg-[#0E0E14]">
+        <div className="h-[52px] bg-[#111118] border-b border-white/[0.06]" />
+        <div className="flex flex-1 items-center justify-center p-6">
+          <div className="max-w-md rounded-xl bg-[#14141C] border border-white/[0.08] p-8 text-center">
+            <h1 className="text-lg font-semibold text-white">Editor unavailable</h1>
+            <p className="mt-3 text-sm text-red-400" role="alert">
+              {error || "The project could not be found."}
+            </p>
+            <button
+              type="button"
+              onClick={() => window.location.reload()}
+              className="mt-5 min-h-11 rounded-lg bg-[#6C5CE7] px-6 py-2 font-semibold text-white hover:bg-[#5A4BD1]"
+            >
+              Retry
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <>
-      <aside className="z-10 flex w-80 shrink-0 flex-col border-r border-ft-border bg-white shadow-sm">
-        <Sidebar />
-      </aside>
-      <div className="relative flex flex-1 items-center justify-center overflow-auto bg-ft-gray-soft p-4 sm:p-8">
-        <Canvas templateId={templateId} />
+    <div className="flex h-screen flex-col overflow-hidden bg-[#0E0E14]">
+      <VisualEditorToolbar />
+
+      <div className="flex flex-1 overflow-hidden">
+        {/* Side panel */}
+        {activePanel === "design" && (
+          <DesignPanel onClose={() => setActivePanel(null)} />
+        )}
+
+        {/* Canvas */}
+        <VisualCanvas templateId={templateId} />
       </div>
-    </>
+    </div>
   );
 }

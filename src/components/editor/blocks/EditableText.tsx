@@ -28,21 +28,21 @@ export default function EditableText({
   const updateField = useEditorStore((state) => state.updateField);
   const content = value || fallback;
 
-  if (!isEditing) return <Component className={className} style={style}>{content}</Component>;
-
-  const handleBlur = (event: FocusEvent<HTMLElement>) => {
-    const nextValue = event.currentTarget.textContent?.trim() ?? "";
-    if (nextValue !== value) updateField(section, field, nextValue);
-  };
+  if (isEditing) {
+    return (
+      <Component
+        className={className}
+        style={style}
+        data-editable-path={`${section}.${field}`}
+        data-editable-type="text"
+      >
+        {content}
+      </Component>
+    );
+  }
 
   return (
-    <Component
-      contentEditable
-      suppressContentEditableWarning
-      onBlur={handleBlur}
-      className={`cursor-text rounded border border-transparent outline-none transition-colors hover:border-ft-primary/50 focus:border-ft-primary ${className}`}
-      style={style}
-    >
+    <Component className={className} style={style}>
       {content}
     </Component>
   );

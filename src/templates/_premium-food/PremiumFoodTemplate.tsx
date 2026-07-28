@@ -128,7 +128,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
       <header className="pft-header">
         <a className="pft-wordmark" href="#top" aria-label={`${data.brand.name} home`}>
           <span className="pft-mark" aria-hidden="true">{isPizza ? "◒" : "≋"}</span>
-          <span>{data.brand.name}</span>
+          <span  data-editable-path="brand.name" data-editable-type="text">{data.brand.name}</span>
         </a>
         <nav className="pft-nav" aria-label="Primary navigation">
           {data.navigation.links.map((link) => <a key={`${link.label}-${link.href}`} href={link.href}>{link.label}</a>)}
@@ -144,9 +144,9 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
             <span className="pft-scribble pft-scribble--two" />
           </div>
           <div className="pft-hero-copy">
-            <p className="pft-eyebrow">{data.hero.eyebrow}</p>
-            <h1>{data.hero.title}</h1>
-            <p className="pft-lede">{data.hero.description}</p>
+            <p className="pft-eyebrow" data-editable-path="hero.eyebrow" data-editable-type="text">{data.hero.eyebrow}</p>
+            <h1  data-editable-path="hero.title" data-editable-type="text">{data.hero.title}</h1>
+            <p className="pft-lede" data-editable-path="hero.description" data-editable-type="text">{data.hero.description}</p>
             <div className="pft-actions">
               <ActionLink href={data.hero.primaryHref}>{data.hero.primaryLabel}</ActionLink>
               <ActionLink href={data.hero.secondaryHref} secondary>{data.hero.secondaryLabel}</ActionLink>
@@ -157,7 +157,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
             <span className="pft-hero-halo" aria-hidden="true" />
             <img className="pft-hero-food" src={data.hero.image} alt={data.hero.imageAlt} loading="eager" fetchPriority="high" />
             <div className="pft-hero-badge" aria-label={`${data.hero.badgeValue} ${data.hero.badgeLabel}`}>
-              <strong>{data.hero.badgeValue}</strong><span>{data.hero.badgeLabel}</span>
+              <strong  data-editable-path="hero.badgeValue" data-editable-type="text">{data.hero.badgeValue}</strong><span  data-editable-path="hero.badgeLabel" data-editable-type="text">{data.hero.badgeLabel}</span>
             </div>
             {heroSupport.map((item, index) => (
               <div className={`pft-hero-support pft-hero-support--${index + 1}`} key={item.name}>
@@ -184,18 +184,18 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
             <span className="pft-section-number" aria-hidden="true">01</span>
           </div>
           <Reveal className="pft-signature-copy" direction="right">
-            <p className="pft-eyebrow">{data.signature.eyebrow}</p>
-            <h2>{data.signature.title}</h2>
-            <p>{data.signature.description}</p>
-            <strong className="pft-price">{data.signature.price}</strong>
+            <p className="pft-eyebrow" data-editable-path="signature.eyebrow" data-editable-type="text">{data.signature.eyebrow}</p>
+            <h2  data-editable-path="signature.title" data-editable-type="text">{data.signature.title}</h2>
+            <p  data-editable-path="signature.description" data-editable-type="text">{data.signature.description}</p>
+            <strong className="pft-price" data-editable-path="signature.price" data-editable-type="text">{data.signature.price}</strong>
             <ActionLink href={data.signature.buttonHref}>{data.signature.buttonLabel}</ActionLink>
           </Reveal>
         </section>
 
         <section className="pft-dishes" id="menu">
           <Reveal className="pft-section-heading">
-            <h2>{data.dishes.title}</h2>
-            <p>{data.dishes.description}</p>
+            <h2  data-editable-path="dishes.title" data-editable-type="text">{data.dishes.title}</h2>
+            <p  data-editable-path="dishes.description" data-editable-type="text">{data.dishes.description}</p>
             <ActionLink href={data.dishes.buttonHref} secondary>{data.dishes.buttonLabel}</ActionLink>
           </Reveal>
           <div className="pft-dish-grid">
@@ -212,7 +212,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
         <div className="pft-rip pft-rip--menu" aria-hidden="true" />
 
         <section className="pft-menu-ledger">
-          <Reveal className="pft-menu-intro"><h2>{data.menu.title}</h2><p>{data.menu.description}</p></Reveal>
+          <Reveal className="pft-menu-intro"><h2  data-editable-path="menu.title" data-editable-type="text">{data.menu.title}</h2><p  data-editable-path="menu.description" data-editable-type="text">{data.menu.description}</p></Reveal>
           <div className="pft-menu-categories">
             {data.menu.categories.map((category) => (
               <Reveal className="pft-menu-category" key={category.name}>
@@ -235,7 +235,7 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
             <img className="pft-story-secondary" src={data.story.secondaryImage} alt={data.story.secondaryImageAlt} loading="lazy" />
           </div>
           <Reveal className="pft-story-copy" direction="right">
-            <p className="pft-eyebrow">{data.story.eyebrow}</p><h2>{data.story.title}</h2><p>{data.story.description}</p>
+            <p className="pft-eyebrow" data-editable-path="story.eyebrow" data-editable-type="text">{data.story.eyebrow}</p><h2  data-editable-path="story.title" data-editable-type="text">{data.story.title}</h2><p  data-editable-path="story.description" data-editable-type="text">{data.story.description}</p>
             <ActionLink href={data.story.buttonHref} secondary>{data.story.buttonLabel}</ActionLink>
           </Reveal>
         </section>
@@ -243,14 +243,14 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
         <div className="pft-rip pft-rip--story" aria-hidden="true" />
 
         <section className="pft-gallery" id="gallery">
-          <Reveal className="pft-gallery-heading"><h2>{data.gallery.title}</h2><p>{data.gallery.description}</p></Reveal>
+          <Reveal className="pft-gallery-heading"><h2  data-editable-path="gallery.title" data-editable-type="text">{data.gallery.title}</h2><p  data-editable-path="gallery.description" data-editable-type="text">{data.gallery.description}</p></Reveal>
           <div className="pft-gallery-grid">
             {data.gallery.images.map((item, index) => <Reveal direction="scale" className={`pft-gallery-item pft-gallery-item--${index + 1}`} key={`${item.image}-${index}`}><span aria-hidden="true">0{index + 1}</span><img src={item.image} alt={item.imageAlt} loading="lazy" /></Reveal>)}
           </div>
         </section>
 
         <section className="pft-reviews" id="reviews">
-          <Reveal><h2>{data.reviews.title}</h2></Reveal>
+          <Reveal><h2  data-editable-path="reviews.title" data-editable-type="text">{data.reviews.title}</h2></Reveal>
           <div className="pft-review-grid">
             {data.reviews.items.map((review) => (
               <Reveal className="pft-review" key={review.name}>
@@ -263,22 +263,22 @@ export default function PremiumFoodTemplate({ data, variant }: { data: PremiumFo
 
         <section className="pft-contact" id="contact">
           <Reveal className="pft-contact-cta">
-            <h2>{data.contact.title}</h2><p>{data.contact.description}</p>
+            <h2  data-editable-path="contact.title" data-editable-type="text">{data.contact.title}</h2><p  data-editable-path="contact.description" data-editable-type="text">{data.contact.description}</p>
             <div className="pft-actions"><ActionLink href={data.contact.primaryHref}>{data.contact.primaryLabel}</ActionLink><ActionLink href={data.contact.secondaryHref} secondary>{data.contact.secondaryLabel}</ActionLink></div>
           </Reveal>
           <div className="pft-contact-details">
             <Reveal className="pft-detail"><Clock aria-hidden="true" /><div><h3>Opening hours</h3>{data.contact.hours.map((hour) => <p key={hour.day}><span>{hour.day}</span><strong>{hour.time}</strong></p>)}</div></Reveal>
-            <Reveal className="pft-detail"><MapPin aria-hidden="true" /><div><h3>Find us</h3><p>{data.brand.address}</p><a href={data.contact.secondaryHref}>Get directions</a></div></Reveal>
-            <Reveal className="pft-detail"><Phone aria-hidden="true" /><div><h3>Talk to us</h3><a href={`tel:${data.brand.phone}`}>{data.brand.phone}</a><a href={`mailto:${data.brand.email}`}><EnvelopeSimple aria-hidden="true" />{data.brand.email}</a></div></Reveal>
+            <Reveal className="pft-detail"><MapPin aria-hidden="true" /><div><h3>Find us</h3><p  data-editable-path="brand.address" data-editable-type="text">{data.brand.address}</p><a href={data.contact.secondaryHref}>Get directions</a></div></Reveal>
+            <Reveal className="pft-detail"><Phone aria-hidden="true" /><div><h3>Talk to us</h3><a href={`tel:${data.brand.phone}`} data-editable-path="brand.phone" data-editable-type="text">{data.brand.phone}</a><a href={`mailto:${data.brand.email}`}><EnvelopeSimple aria-hidden="true" />{data.brand.email}</a></div></Reveal>
           </div>
         </section>
       </main>
 
       <footer className="pft-footer">
-        <div><a className="pft-wordmark" href="#top"><span className="pft-mark" aria-hidden="true">{isPizza ? "◒" : "≋"}</span>{data.brand.name}</a><p>{data.footer.note}</p></div>
+        <div><a className="pft-wordmark" href="#top"><span className="pft-mark" aria-hidden="true">{isPizza ? "◒" : "≋"}</span>{data.brand.name}</a><p  data-editable-path="footer.note" data-editable-type="text">{data.footer.note}</p></div>
         <div className="pft-footer-links">{data.navigation.links.map((link) => <a key={`${link.label}-footer`} href={link.href}>{link.label}</a>)}</div>
-        <div className="pft-socials"><a href={data.social.instagramHref}><InstagramLogo aria-hidden="true" />{data.social.instagram}</a><a href={data.social.facebookHref}>{data.social.facebook}</a><a href={data.social.tiktokHref}>{data.social.tiktok}</a></div>
-        <p className="pft-copyright">{data.footer.copyright}</p>
+        <div className="pft-socials"><a href={data.social.instagramHref}><InstagramLogo aria-hidden="true" />{data.social.instagram}</a><a href={data.social.facebookHref} data-editable-path="social.facebook" data-editable-type="text">{data.social.facebook}</a><a href={data.social.tiktokHref} data-editable-path="social.tiktok" data-editable-type="text">{data.social.tiktok}</a></div>
+        <p className="pft-copyright" data-editable-path="footer.copyright" data-editable-type="text">{data.footer.copyright}</p>
       </footer>
     </div>
   );
