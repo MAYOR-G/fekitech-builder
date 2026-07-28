@@ -7,6 +7,8 @@ import { createClient } from "@/lib/supabase/server";
 import { getAdminDb } from "@/lib/db";
 import { getUserPlan, isAuthorizedPlanTester } from "@/lib/subscriptions";
 import { LogoMark } from "@/components/ui/LogoMark";
+import { getAllTemplates } from "@/registry";
+import { DashboardTemplates } from "@/components/dashboard/DashboardTemplates";
 
 function getPublishedUrl(subdomain: string): string {
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN ?? "localhost:3000";
@@ -86,13 +88,9 @@ export default async function DashboardPage() {
               </div>
             </article>
           ))}
-
-          <Link href="/templates" className="flex min-h-72 flex-col items-center justify-center rounded-2xl border-2 border-dashed border-ft-border bg-white p-6 text-ft-body transition-all hover:-translate-y-1 hover:border-ft-primary hover:bg-ft-surface-cool hover:text-ft-primary">
-            <PlusCircle aria-hidden="true" size={48} className="mb-4" />
-            <span className="font-medium">Create a website</span>
-            {projects.length === 0 ? <span className="mt-2 text-center text-sm text-ft-body">Choose a template to start your first project.</span> : null}
-          </Link>
         </div>
+
+        <DashboardTemplates templates={getAllTemplates()} />
       </main>
     </div>
   );

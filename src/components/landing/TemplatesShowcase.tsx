@@ -45,7 +45,7 @@ export default function TemplatesShowcase() {
       };
 
       if (response.status === 401) {
-        window.location.assign(`/login?redirect=${encodeURIComponent("/")}`);
+        window.location.assign(`/login?redirect=${encodeURIComponent(`/dashboard/create?templateId=${templateId}`)}`);
         return;
       }
       if (!response.ok || !payload.project) {

@@ -19,7 +19,7 @@ export function PreviewBar({ templateId, templateName }: { templateId: string; t
         const data = await res.json();
         router.push(`/editor/${data.project.id}`);
       } else if (res.status === 401) {
-        window.location.href = `/login?redirect=/templates`;
+        window.location.href = `/login?redirect=${encodeURIComponent(`/dashboard/create?templateId=${templateId}`)}`;
       } else {
         alert("Failed to create project");
       }

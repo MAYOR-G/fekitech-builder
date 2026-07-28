@@ -82,7 +82,7 @@ export default function TemplatesPage() {
                               });
                               const payload = (await response.json()) as { project?: { id: string }; error?: string };
                               if (response.status === 401) {
-                                window.location.assign(`/login?redirect=${encodeURIComponent("/templates")}`);
+                                window.location.assign(`/login?redirect=${encodeURIComponent(`/dashboard/create?templateId=${template.id}`)}`);
                                 return;
                               }
                               if (!response.ok || !payload.project) throw new Error(payload.error ?? "Unable to create the project.");
