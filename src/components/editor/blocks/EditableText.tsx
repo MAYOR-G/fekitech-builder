@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, type CSSProperties, type ElementType, type FocusEvent } from "react";
+import { createContext, useContext, type CSSProperties, type ElementType } from "react";
 import { useEditorStore } from "@/store/editorStore";
 
 export const EditorContext = createContext(false);
