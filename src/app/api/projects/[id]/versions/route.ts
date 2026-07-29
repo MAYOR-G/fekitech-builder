@@ -20,6 +20,8 @@ export async function GET(_request: NextRequest, context: RouteContext) {
     .select("id")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (!project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -73,6 +75,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("*")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });

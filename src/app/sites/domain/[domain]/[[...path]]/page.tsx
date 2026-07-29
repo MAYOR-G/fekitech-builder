@@ -17,6 +17,8 @@ async function getProject(domain: string) {
     .eq("custom_domain", domain)
     .not("custom_domain_verified_at", "is", null)
     .eq("is_published", true)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .not("published_version_id", "is", null)
     .single();
     

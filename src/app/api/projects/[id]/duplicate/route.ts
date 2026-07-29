@@ -32,6 +32,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("*")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !source) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -39,7 +41,9 @@ export async function POST(request: NextRequest, context: RouteContext) {
   const { count } = await supabase
     .from("projects")
     .select("id", { count: "exact", head: true })
-    .eq("user_id", sessionOrResponse.user.id);
+    .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null);
 
   if ((count ?? 0) >= plan.definition.entitlements.maxProjects) {
     return NextResponse.json({ error: `Your ${plan.definition.name} plan project limit has been reached.` }, { status: 403 });
@@ -53,6 +57,7 @@ export async function POST(request: NextRequest, context: RouteContext) {
       template_id: source.template_id,
       editable_data: source.editable_data,
       data_version: source.data_version,
+      status: "ready",
     })
     .select()
     .single();

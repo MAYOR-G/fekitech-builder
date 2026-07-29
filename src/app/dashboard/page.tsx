@@ -4,11 +4,11 @@ import { redirect } from "next/navigation";
 import { LogoutButton } from "@/components/account/LogoutButton";
 import { TestPlanSwitcher } from "@/components/account/TestPlanSwitcher";
 import { createClient } from "@/lib/supabase/server";
-import { getAdminDb } from "@/lib/db";
 import { getUserPlan, isAuthorizedPlanTester } from "@/lib/subscriptions";
 import { LogoMark } from "@/components/ui/LogoMark";
 import { getAllTemplates } from "@/registry";
 import { DashboardTemplates } from "@/components/dashboard/DashboardTemplates";
+import { DeleteProjectButton } from "@/components/dashboard/DeleteProjectButton";
 
 function getPublishedUrl(subdomain: string): string {
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN ?? "localhost:3000";
@@ -21,12 +21,13 @@ export default async function DashboardPage() {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login?redirect=/dashboard");
 
-  const admin = getAdminDb();
   const [projectsResult, userPlan, canTestPlans] = await Promise.all([
-    admin
+    supabase
       .from("projects")
       .select("*")
       .eq("user_id", user.id)
+      .eq("status", "ready")
+      .is("deleted_at", null)
       .order("updated_at", { ascending: false }),
     getUserPlan(user.id),
     isAuthorizedPlanTester(user.id, user.email ?? ""),
@@ -82,9 +83,12 @@ export default async function DashboardPage() {
               <div className="border-t border-ft-border-light p-5">
                 <h2 className="mb-1 truncate text-lg font-bold">{project.name}</h2>
                 <p className="mb-4 text-sm text-ft-body">Last edited {new Date(project.updated_at).toLocaleDateString()}</p>
-                <Link href={`/editor/${project.id}`} className="block min-h-11 rounded-xl bg-ft-surface-alt px-4 py-2.5 text-center font-semibold text-ft-ink transition-colors hover:bg-ft-primary hover:text-white">
-                  Edit website
-                </Link>
+                <div className="flex gap-2">
+                  <Link href={`/editor/${project.id}`} className="flex min-h-11 flex-1 items-center justify-center rounded-xl bg-ft-surface-alt px-4 py-2.5 text-center font-semibold text-ft-ink transition-colors hover:bg-ft-primary hover:text-white">
+                    Edit website
+                  </Link>
+                  <DeleteProjectButton projectId={project.id} projectName={project.name} />
+                </div>
               </div>
             </article>
           ))}

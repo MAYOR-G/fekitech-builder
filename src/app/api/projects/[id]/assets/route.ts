@@ -60,6 +60,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("id")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -89,10 +91,10 @@ export async function POST(request: NextRequest, context: RouteContext) {
       user_id: sessionOrResponse.user.id,
       original_name: file.name.substring(0, 200),
       storage_key: storageKey,
-      file_size: file.size,
+      byte_size: file.size,
       mime_type: file.type,
     })
-    .select("id, original_name, file_size, mime_type, created_at")
+    .select("id, original_name, byte_size, mime_type, created_at")
     .single();
 
   if (insertError || !asset) {
@@ -113,7 +115,7 @@ export async function POST(request: NextRequest, context: RouteContext) {
   const mapped = {
     id: asset.id,
     originalName: asset.original_name,
-    fileSize: asset.file_size,
+    fileSize: asset.byte_size,
     mimeType: asset.mime_type,
     createdAt: asset.created_at,
     url: `/api/public/assets/${asset.id}`
@@ -135,13 +137,15 @@ export async function GET(_request: NextRequest, context: RouteContext) {
     .select("id")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (!project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
 
   const { data: assets } = await supabase
     .from("assets")
-    .select("id, original_name, file_size, mime_type, created_at")
+    .select("id, original_name, byte_size, mime_type, created_at")
     .eq("project_id", project.id)
     .is("deleted_at", null)
     .order("created_at", { ascending: false });
@@ -149,7 +153,7 @@ export async function GET(_request: NextRequest, context: RouteContext) {
   const mapped = (assets ?? []).map(a => ({
     id: a.id,
     originalName: a.original_name,
-    fileSize: a.file_size,
+    fileSize: a.byte_size,
     mimeType: a.mime_type,
     createdAt: a.created_at,
     url: `/api/public/assets/${a.id}`

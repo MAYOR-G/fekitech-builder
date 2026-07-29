@@ -1,5 +1,6 @@
 "use client";
 import React, { createContext, useContext, ReactNode } from 'react';
+import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
 import defaultData from './editable.json';
 
 type EditableData = typeof defaultData;
@@ -8,12 +9,11 @@ const TemplateContext = createContext<EditableData>(defaultData);
 
 interface TemplateProviderProps {
   children: ReactNode;
-  data?: Partial<EditableData>;
+  data?: TemplateData;
 }
 
 export function TemplateProvider({ children, data }: TemplateProviderProps) {
-  // Merge provided data with defaults
-  const mergedData = { ...defaultData, ...data } as EditableData;
+  const mergedData = mergeTemplateData(defaultData, data) as EditableData;
   return (
     <TemplateContext.Provider value={mergedData}>
       {children}

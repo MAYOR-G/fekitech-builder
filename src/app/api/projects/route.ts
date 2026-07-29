@@ -14,8 +14,10 @@ export async function GET() {
   const supabase = await createClient();
   const { data: projects, error } = await supabase
     .from("projects")
-    .select("id, name, template_id, subdomain, custom_domain, custom_domain_verified_at, is_published, created_at, updated_at")
+    .select("id, name, template_id, subdomain, custom_domain, custom_domain_verified_at, is_published, status, created_at, updated_at")
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .order("updated_at", { ascending: false });
 
   if (error) {
@@ -79,7 +81,9 @@ export async function POST(request: NextRequest) {
   const { count } = await supabase
     .from("projects")
     .select("id", { count: "exact", head: true })
-    .eq("user_id", sessionOrResponse.user.id);
+    .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null);
 
   if ((count ?? 0) >= userPlan.definition.entitlements.maxProjects) {
     return NextResponse.json(
@@ -95,6 +99,7 @@ export async function POST(request: NextRequest) {
       user_id: sessionOrResponse.user.id,
       template_id: parsed.data.templateId,
       editable_data: template.defaultData,
+      status: "ready",
     })
     .select()
     .single();

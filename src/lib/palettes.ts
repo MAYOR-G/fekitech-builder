@@ -1,16 +1,29 @@
 /** Semantic color palette system for the visual editor */
 
 export type PaletteTokens = {
+  pageBackground: string;
+  sectionAlt: string;
+  cardBackground: string;
+  headingText: string;
+  bodyText: string;
+  mutedText: string;
   background: string;
   surface: string;
   card: string;
   textPrimary: string;
   textSecondary: string;
+  primary: string;
+  secondary: string;
   accent: string;
   accentSecondary: string;
   buttonBg: string;
   buttonText: string;
+  link: string;
   border: string;
+  icon: string;
+  footerBg: string;
+  footerText: string;
+  footerMuted: string;
 };
 
 export type Palette = {
@@ -37,8 +50,32 @@ export const PALETTE_GROUPS = [
   "Pastel",
 ] as const;
 
-function p(id: string, name: string, group: string, tokens: PaletteTokens): Palette {
-  return { id, name, group, tokens };
+type BasePaletteTokens = Pick<
+  PaletteTokens,
+  "background" | "surface" | "card" | "textPrimary" | "textSecondary" | "accent" | "accentSecondary" | "buttonBg" | "buttonText" | "border"
+> & Partial<PaletteTokens>;
+
+function completeTokens(tokens: BasePaletteTokens): PaletteTokens {
+  return {
+    pageBackground: tokens.pageBackground ?? tokens.background,
+    sectionAlt: tokens.sectionAlt ?? tokens.surface,
+    cardBackground: tokens.cardBackground ?? tokens.card,
+    headingText: tokens.headingText ?? tokens.textPrimary,
+    bodyText: tokens.bodyText ?? tokens.textPrimary,
+    mutedText: tokens.mutedText ?? tokens.textSecondary,
+    primary: tokens.primary ?? tokens.accent,
+    secondary: tokens.secondary ?? tokens.accentSecondary,
+    link: tokens.link ?? tokens.accent,
+    icon: tokens.icon ?? tokens.accent,
+    footerBg: tokens.footerBg ?? tokens.textPrimary,
+    footerText: tokens.footerText ?? tokens.buttonText,
+    footerMuted: tokens.footerMuted ?? tokens.textSecondary,
+    ...tokens,
+  };
+}
+
+function p(id: string, name: string, group: string, tokens: BasePaletteTokens): Palette {
+  return { id, name, group, tokens: completeTokens(tokens) };
 }
 
 export const PALETTES: Palette[] = [
@@ -135,12 +172,21 @@ export const PALETTES: Palette[] = [
   p("pa-5","Cotton Candy","Pastel",{background:"#FDF2F8",surface:"#FCE7F3",card:"#FFFFFF",textPrimary:"#4A1942",textSecondary:"#8B5C84",accent:"#EC4899",accentSecondary:"#F472B6",buttonBg:"#DB2777",buttonText:"#FFFFFF",border:"#F9A8D4"}),
 ];
 
-/** Map palette tokens to the simple color structure templates expect */
-export function paletteToEditorColors(tokens: PaletteTokens): { primary: string; background: string; text: string } {
+/** Map palette tokens to the color structure templates and the editor understand. */
+export function paletteToEditorColors(tokens: PaletteTokens): PaletteTokens & {
+  primary: string;
+  secondary: string;
+  background: string;
+  text: string;
+} {
   return {
-    primary: tokens.accent,
-    background: tokens.background,
-    text: tokens.textPrimary,
+    ...tokens,
+    primary: tokens.primary,
+    secondary: tokens.secondary,
+    background: tokens.pageBackground,
+    surface: tokens.surface,
+    card: tokens.cardBackground,
+    text: tokens.bodyText,
   };
 }
 

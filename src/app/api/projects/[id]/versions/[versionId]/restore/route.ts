@@ -4,7 +4,6 @@ import { requireAuth } from "@/lib/api-auth";
 import { createClient } from "@/lib/supabase/server";
 import { getAdminDb } from "@/lib/db";
 import { projectIdSchema } from "@/lib/project-validation";
-import { getUserPlan } from "@/lib/subscriptions";
 
 type RouteContext = { params: Promise<{ id: string; versionId: string }> };
 
@@ -27,9 +26,6 @@ export async function POST(request: NextRequest, context: RouteContext) {
   });
   if (rateLimit) return rateLimit;
 
-  // Enforce access control and quota limits (though restoration doesn't create a new project/version)
-  const plan = await getUserPlan(sessionOrResponse.user.id);
-  
   const supabase = await createClient();
 
   // Validate Project
@@ -38,6 +34,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("id")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (projectError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });

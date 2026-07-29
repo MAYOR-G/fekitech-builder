@@ -16,6 +16,8 @@ async function getPublishedProject(subdomain: string) {
     `)
     .eq("subdomain", subdomain)
     .eq("is_published", true)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .not("published_version_id", "is", null)
     .single();
 

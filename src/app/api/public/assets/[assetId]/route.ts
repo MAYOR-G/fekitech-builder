@@ -19,7 +19,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
       id,
       storage_key,
       mime_type,
-      projects!assets_project_id_fkey (user_id, is_published)
+      projects!assets_project_id_fkey (user_id, is_published, status, deleted_at)
     `)
     .eq("id", assetId.data)
     .is("deleted_at", null)
@@ -28,12 +28,13 @@ export async function GET(request: NextRequest, context: RouteContext) {
   if (!asset || !asset.projects) return new NextResponse(null, { status: 404 });
 
   // @ts-expect-error Supabase join types
-  const project = asset.projects as { user_id: string; is_published: boolean };
+  const project = asset.projects as { user_id: string; is_published: boolean; status?: string; deleted_at?: string | null };
+  const isActiveProject = project.status !== "deleted" && !project.deleted_at;
 
-  let canRead = project.is_published;
+  let canRead = isActiveProject && project.is_published;
   if (!canRead) {
     const session = await getSession();
-    canRead = session?.user.id === project.user_id;
+    canRead = isActiveProject && session?.user.id === project.user_id;
   }
   if (!canRead) return new NextResponse(null, { status: 404 });
 

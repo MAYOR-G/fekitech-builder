@@ -8,12 +8,14 @@ type Props = {
   position: { top: number; left: number };
   visible: boolean;
   path: string;
+  altPath?: string;
 };
 
 export default function FloatingImageToolbar({
   position,
   visible,
   path,
+  altPath,
 }: Props) {
   const [isUploading, setIsUploading] = useState(false);
   const projectId = useVisualEditorStore((state) => state.projectId);
@@ -96,6 +98,24 @@ export default function FloatingImageToolbar({
       >
         <Trash2 size={14} />
       </button>
+
+      {altPath ? (
+        <>
+          <div className="ve-floating-toolbar__divider" />
+          <button
+            type="button"
+            onClick={() => {
+              const alt = window.prompt("Image alt text");
+              if (alt !== null) updatePath(altPath, alt, `Edit alt text: ${altPath}`);
+            }}
+            className="ve-floating-toolbar__btn"
+            aria-label="Edit alt text"
+            title="Edit alt text"
+          >
+            Alt
+          </button>
+        </>
+      ) : null}
     </div>
   );
 }

@@ -8,11 +8,13 @@ export type EditorValue = string | number | boolean | null | EditorObject | Edit
 export type EditorObject = { [key: string]: EditorValue };
 export type SaveStatus = "idle" | "dirty" | "saving" | "saved" | "error";
 export type Viewport = "desktop" | "tablet" | "mobile";
-export type PanelId = "design" | "pages" | "navigation" | "blocks" | "images" | null;
+export type PanelId = "design" | "blocks" | "history" | "images" | null;
 
 export type Selection = {
   path: string;            // e.g. "hero.title"
   type: "text" | "image" | "link" | "section" | "item";
+  hrefPath?: string;
+  altPath?: string;
   sectionId?: string;
   rect?: DOMRect;
 } | null;

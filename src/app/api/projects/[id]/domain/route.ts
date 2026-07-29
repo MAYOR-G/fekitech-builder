@@ -44,7 +44,9 @@ export async function POST(request: NextRequest, context: RouteContext) {
   const { count } = await admin
     .from("projects")
     .select("id", { count: "exact", head: true })
-    .eq("custom_domain", domain);
+    .eq("custom_domain", domain)
+    .neq("status", "deleted")
+    .is("deleted_at", null);
 
   if ((count ?? 0) > 0) {
     return NextResponse.json({ error: "This domain is already connected to another project." }, { status: 409 });
@@ -56,6 +58,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("id, custom_domain")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -98,6 +102,8 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
     .select("id, custom_domain")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });

@@ -33,6 +33,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .select("*")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -50,6 +52,8 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .from("projects")
     .select("id", { count: "exact", head: true })
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .eq("is_published", true)
     .neq("id", existing.id);
 
@@ -149,6 +153,8 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
     .select("id")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .eq("status", "ready")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });

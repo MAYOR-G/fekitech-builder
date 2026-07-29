@@ -23,6 +23,8 @@ export async function GET(_request: NextRequest, context: RouteContext) {
     .select("*")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .neq("status", "deleted")
+    .is("deleted_at", null)
     .single();
 
   if (error || !project) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -77,6 +79,8 @@ export async function PATCH(request: NextRequest, context: RouteContext) {
     .select("*")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .neq("status", "deleted")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -185,6 +189,8 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
     .select("id, user_id, subdomain")
     .eq("id", id.data)
     .eq("user_id", sessionOrResponse.user.id)
+    .neq("status", "deleted")
+    .is("deleted_at", null)
     .single();
 
   if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
@@ -210,8 +216,23 @@ export async function DELETE(request: NextRequest, context: RouteContext) {
       }, { onConflict: "subdomain" });
   }
 
-  // Delete the project (cascades to versions, assets)
-  await supabase.from("projects").delete().eq("id", existing.id);
+  const deletedAt = new Date().toISOString();
+  const { error: deleteError } = await supabase
+    .from("projects")
+    .update({
+      status: "deleted",
+      deleted_at: deletedAt,
+      is_published: false,
+      published_at: null,
+      published_version_id: null,
+      subdomain: null,
+    })
+    .eq("id", existing.id);
+
+  if (deleteError) {
+    console.error("DELETE /api/projects/[id] error", deleteError);
+    return NextResponse.json({ error: "Unable to delete the project." }, { status: 500 });
+  }
 
   // Log activity
   await admin.from("activity_logs").insert({
