@@ -18,19 +18,15 @@ const templates = [
   "gym-website",
   "burger-dark-premium",
   "burger-light-clean",
-  "pizza-dark-premium",
   "pizza-light-clean",
   "cleaning-agency-premium",
   "roofing-agency-premium",
-  "plumbing-company-premium",
   "second-furniture-website",
   "cake-website",
-  "catering-website",
   "coffee-website",
   "dentist-website",
   "electrician-website",
   "ink-and-iron",
-  "restaurant-website",
   "second-plumber-website"
 ];
 

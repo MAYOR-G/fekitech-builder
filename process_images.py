@@ -4,12 +4,10 @@ from PIL import Image
 
 templates = [
     "cake-website",
-    "catering-website",
     "coffee-website",
     "dentist-website",
     "electrician-website",
     "ink-and-iron",
-    "restaurant-website",
     "second-plumber-website"
 ]
 

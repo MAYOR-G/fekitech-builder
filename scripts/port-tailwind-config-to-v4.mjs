@@ -90,7 +90,7 @@ function normalizeFontFamily(value) {
 
 const templatesToProcess = [
   'gym-website', 'electrician-website', 'dentist-website', 'estate-agent-website',
-  'furniture-website', 'hotel-website', 'restaurant-website', 'cake-website',
+  'furniture-website', 'hotel-website', 'cake-website',
   'salon-website', 'coffee-website', 'barber-website', 'plumber-website',
   'premium-coffee-website', 'second-electrician-website', 'second-furniture-website',
   'second-plumber-website',

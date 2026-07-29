@@ -56,6 +56,18 @@ import velvetScoopConfig from "../templates/velvet-scoop/config.json";
 import velvetScoopEditable from "../templates/velvet-scoop/editable.json";
 import fastFoodChickenTacosConfig from "../templates/fast-food-chicken-tacos/config.json";
 import fastFoodChickenTacosEditable from "../templates/fast-food-chicken-tacos/editable.json";
+import cateringCompanyConfig from "../templates/catering-company-premium/config.json";
+import cateringCompanyEditable from "../templates/catering-company-premium/editable.json";
+import coffeeWebsiteConfig from "../templates/coffee-website/config.json";
+import coffeeWebsiteEditable from "../templates/coffee-website/editable.json";
+import forgepointConstructionConfig from "../templates/forgepoint-construction/config.json";
+import forgepointConstructionEditable from "../templates/forgepoint-construction/editable.json";
+import pastriesSnacksConfig from "../templates/pastries-snacks-premium/config.json";
+import pastriesSnacksEditable from "../templates/pastries-snacks-premium/editable.json";
+import pizzaLightConfig from "../templates/pizza-light-clean/config.json";
+import pizzaLightEditable from "../templates/pizza-light-clean/editable.json";
+import premiumRestaurantConfig from "../templates/premium-restaurant/config.json";
+import premiumRestaurantEditable from "../templates/premium-restaurant/editable.json";
 
 
 export type TemplateConfig = {
@@ -104,6 +116,12 @@ const components = {
   "second-plumber-website": dynamic<{ data: TemplateData }>(() => import("../templates/second-plumber-website/template")),
   "velvet-scoop": dynamic<{ data: TemplateData }>(() => import("../templates/velvet-scoop/template")),
   "fast-food-chicken-tacos": dynamic<{ data: TemplateData }>(() => import("../templates/fast-food-chicken-tacos/template")),
+  "catering-company-premium": dynamic<{ data: TemplateData }>(() => import("../templates/catering-company-premium/template")),
+  "coffee-website": dynamic<{ data: TemplateData }>(() => import("../templates/coffee-website/template")),
+  "forgepoint-construction": dynamic<{ data: TemplateData }>(() => import("../templates/forgepoint-construction/template")),
+  "pastries-snacks-premium": dynamic<{ data: TemplateData }>(() => import("../templates/pastries-snacks-premium/template")),
+  "pizza-light-clean": dynamic<{ data: TemplateData }>(() => import("../templates/pizza-light-clean/template")),
+  "premium-restaurant": dynamic<{ data: TemplateData }>(() => import("../templates/premium-restaurant/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -136,6 +154,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "second-plumber-website": { config: secondPlumberConfig, component: components["second-plumber-website"], defaultData: normalizeData(secondPlumberEditable) },
   "velvet-scoop": { config: velvetScoopConfig, component: components["velvet-scoop"], defaultData: normalizeData(velvetScoopEditable) },
   "fast-food-chicken-tacos": { config: fastFoodChickenTacosConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodChickenTacosEditable) },
+  "catering-company-premium": { config: cateringCompanyConfig, component: components["catering-company-premium"], defaultData: normalizeData(cateringCompanyEditable) },
+  "coffee-website": { config: coffeeWebsiteConfig, component: components["coffee-website"], defaultData: normalizeData(coffeeWebsiteEditable) },
+  "forgepoint-construction": { config: forgepointConstructionConfig, component: components["forgepoint-construction"], defaultData: normalizeData(forgepointConstructionEditable) },
+  "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
+  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
+  "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

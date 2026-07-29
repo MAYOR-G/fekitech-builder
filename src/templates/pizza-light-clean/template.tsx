@@ -59,23 +59,6 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
         </div>
       </section>
 
-      <section className="ls-favourites" id="menu">
-        <div className="ls-favourites-head">
-          <h2>{content.dishes.title}</h2>
-          <p>{content.dishes.description}</p>
-        </div>
-        <div className="ls-favourite-grid">
-          {content.dishes.items.map((dish, index) => (
-            <article key={dish.name}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{dish.name}</h3>
-              <p>{dish.description}</p>
-              <strong>{dish.price}</strong>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="ls-signature">
         <div className="ls-signature-image">
           <TemplateImage src={content.signature.image} alt={content.signature.imageAlt} width={1200} height={1000} />
@@ -89,7 +72,7 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
         </div>
       </section>
 
-      <section className="ls-menu-board">
+      <section className="ls-menu-board" id="menu">
         <div className="ls-menu-board-title">
           <h2>{content.menu.title}</h2>
           <p>{content.menu.description}</p>
@@ -115,8 +98,8 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
           <div><h2>{content.gallery.title}</h2><p>{content.gallery.description}</p></div>
         </div>
         <div className="ls-gallery-side">
-          {content.gallery.images.slice(1, 4).map((item) => (
-            <TemplateImage key={item.image} src={item.image} alt={item.imageAlt} width={900} height={900} />
+          {content.gallery.images.slice(1, 4).map((item, index) => (
+            <TemplateImage key={`${item.image}-${index}`} src={item.image} alt={item.imageAlt} width={900} height={900} />
           ))}
         </div>
       </section>
@@ -137,7 +120,7 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
           {content.reviews.items.map((review) => (
             <blockquote key={review.name}>
               <p>“{review.quote}”</p>
-              <footer><strong>{review.name}</strong><span>{review.detail}</span></footer>
+              <div className="ls-review-author"><strong>{review.name}</strong><span>{review.detail}</span></div>
             </blockquote>
           ))}
         </div>
@@ -157,14 +140,48 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
       </section>
 
       <footer className="ls-footer">
-        <a className="ls-logo" href="#"><span>L</span>{content.brand.name}</a>
-        <p>{content.footer.note}</p>
-        <div>
-          <a href={content.social.instagramHref}>{content.social.instagram}</a>
-          <a href={content.social.facebookHref}>{content.social.facebook}</a>
-          <a href={content.social.tiktokHref}>{content.social.tiktok}</a>
+        <div className="ls-footer-brand">
+          <a className="ls-logo" href="#"><span>L</span>{content.brand.name}</a>
+          <p>{content.footer.note}</p>
+          <a href={content.contact.primaryHref}>{content.contact.primaryLabel}<ArrowRight aria-hidden="true" /></a>
         </div>
-        <small>{content.footer.copyright}</small>
+
+        <div className="ls-footer-column">
+          <h3>Explore</h3>
+          {content.navigation.links.map((link) => (
+            <a key={link.label} href={link.href}>{link.label}</a>
+          ))}
+        </div>
+
+        <div className="ls-footer-column">
+          <h3>Menu</h3>
+          {content.menu.categories.slice(0, 3).map((category) => (
+            <a key={category.name} href="#menu">{category.name}</a>
+          ))}
+        </div>
+
+        <div className="ls-footer-column">
+          <h3>Visit</h3>
+          <a href={`tel:${content.brand.phone.replace(/\s/g, "")}`}>{content.brand.phone}</a>
+          <a href={`mailto:${content.brand.email}`}>{content.brand.email}</a>
+          <p>{content.brand.address}</p>
+        </div>
+
+        <div className="ls-footer-hours">
+          <h3>Hours</h3>
+          {content.contact.hours.map((item) => (
+            <p key={item.day}><span>{item.day}</span><strong>{item.time}</strong></p>
+          ))}
+        </div>
+
+        <div className="ls-footer-bottom">
+          <small>{content.footer.copyright}</small>
+          <div>
+            <a href={content.social.instagramHref}>{content.social.instagram}</a>
+            <a href={content.social.facebookHref}>{content.social.facebook}</a>
+            <a href={content.social.tiktokHref}>{content.social.tiktok}</a>
+          </div>
+        </div>
       </footer>
     </main>
   );

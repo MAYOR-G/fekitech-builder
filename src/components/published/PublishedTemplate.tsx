@@ -15,7 +15,7 @@ export function PublishedTemplate({
   const TemplateComponent = template.component;
   return (
     <main className="min-h-screen bg-white">
-      <TemplateRuntime data={data} templateId={templateId}>
+      <TemplateRuntime data={data} defaultData={template.defaultData} templateId={templateId}>
         <TemplateComponent data={data} />
       </TemplateRuntime>
     </main>

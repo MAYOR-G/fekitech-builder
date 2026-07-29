@@ -6,55 +6,54 @@ export default function Hero() {
   const { hero } = useTemplateData();
 
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden" id="top">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={hero.image}
-          alt={hero.imageAlt}
-          className="w-full h-full object-cover scale-105"
-        />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-[#3C2A21]/70 mix-blend-multiply" />
-      </div>
-
-      <div className="relative z-10 w-full max-w-[1000px] mx-auto px-6 lg:px-12 pt-32 pb-20 text-center flex flex-col items-center">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#26352e] text-white" id="top">
+      <img
+        src={hero.image}
+        alt={hero.imageAlt}
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,31,25,0.78)_0%,rgba(20,31,25,0.5)_44%,rgba(20,31,25,0.08)_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#26352e] to-transparent" />
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-[1480px] items-center px-6 pb-20 pt-32 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="flex flex-col items-center"
+          className="flex max-w-3xl flex-col items-start rounded-[1.75rem] border border-white/18 bg-[#26352e]/38 p-6 shadow-[0_28px_90px_rgba(0,0,0,0.22)] backdrop-blur-sm sm:p-8 lg:p-10"
         >
-          <span className="text-[#F7F5F0] text-[11px] font-bold uppercase tracking-[0.3em] mb-8 bg-[#556B2F] px-5 py-2 rounded-full">
+          <span className="mb-7 rounded-full bg-white/88 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-[#344436]">
             {hero.note}
           </span>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-[6rem] leading-[1.05] tracking-tight text-white mb-8 drop-shadow-sm">
+          <h1 className="mb-7 max-w-[10ch] font-serif text-5xl leading-[0.96] tracking-[-0.045em] text-white md:text-7xl lg:text-[6.4rem]">
             {hero.title.split(' ').map((word, i) => (
-              <span key={i} className={i === 1 || i === 4 ? "italic font-light opacity-90 text-[#F7F5F0]" : ""}>
+              <span key={i} className={i === 1 || i === 4 ? "italic font-light text-[#f1c49b]" : ""}>
                 {word}{' '}
               </span>
             ))}
           </h1>
-          <p className="text-white/90 text-lg md:text-xl leading-relaxed max-w-2xl mb-12 drop-shadow-sm">
+          <p className="mb-10 max-w-xl text-lg leading-8 text-white/88 md:text-xl">
             {hero.description}
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <a
               href={hero.primaryHref}
-              className="px-10 py-5 bg-[#F7F5F0] text-[#3C2A21] text-[12px] uppercase tracking-[0.2em] font-bold hover:bg-[#556B2F] hover:text-white transition-colors"
+              className="px-9 py-4 bg-[#f1c49b] text-[#26352e] text-[12px] uppercase tracking-[0.18em] font-bold hover:bg-white transition-colors"
             >
               {hero.primaryLabel}
             </a>
             {hero.secondaryLabel && (
               <a
                 href={hero.secondaryHref}
-                className="text-[12px] uppercase tracking-[0.2em] font-medium text-white hover:text-[#E3E0D6] transition-colors pb-1 border-b border-white hover:border-[#E3E0D6]"
+                className="border-b border-white/50 pb-1 text-[12px] font-bold uppercase tracking-[0.18em] text-white transition-colors hover:text-[#f1c49b]"
               >
                 {hero.secondaryLabel}
               </a>
             )}
           </div>
         </motion.div>
+      </div>
+      <div className="absolute bottom-6 right-6 z-10 hidden rounded-2xl bg-white px-5 py-4 text-sm font-bold text-[#26352e] shadow-lg md:block">
+        {hero.badge}
       </div>
     </section>
   );

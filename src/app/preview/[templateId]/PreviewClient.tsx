@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Monitor, Tablet, Smartphone } from "lucide-react";
 
-export function PreviewBar({ templateId, templateName }: { templateId: string; templateName: string }) {
+export function PreviewBar({ templateId, templateName, backHref = "/templates" }: { templateId: string; templateName: string; backHref?: string }) {
   const router = useRouter();
   const [device, setDevice] = useState<"desktop" | "tablet" | "mobile">("desktop");
   const frameSrc = `/preview/${encodeURIComponent(templateId)}?frame=1&isolate=${encodeURIComponent(templateId)}`;
@@ -34,7 +34,7 @@ export function PreviewBar({ templateId, templateName }: { templateId: string; t
       {/* Header */}
       <div className="flex h-14 shrink-0 items-center justify-between bg-ft-ink px-4 md:px-6 text-white border-b border-white/10">
         <div className="flex flex-1 items-center gap-4">
-          <a href="/templates" className="flex items-center gap-2 text-sm font-semibold hover:text-white/80 transition">
+          <a href={backHref} className="flex items-center gap-2 text-sm font-semibold hover:text-white/80 transition">
             <span>←</span> <span className="hidden sm:inline">Back to Templates</span>
           </a>
           <span className="hidden sm:inline text-sm text-white/40">|</span>

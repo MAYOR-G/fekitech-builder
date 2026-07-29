@@ -9,11 +9,6 @@ const templateTokenAliases = {
     oldColors: ["almond", "blush", "champagne", "chantilly", "chocolate", "cocoa", "cream", "ganache", "petal", "pistachio", "rose"],
     oldFonts: ["body", "display"],
   },
-  "catering-website": {
-    prefix: "catering-co",
-    oldColors: ["charcoal", "cream", "stone", "ivory", "ink", "gold", "olive", "linen", "oat"],
-    oldFonts: ["sans"],
-  },
   "coffee-website": {
     prefix: "artisan-coffee",
     oldColors: ["coffee-accent", "coffee-brown", "coffee-cream", "coffee-dark", "coffee-green", "coffee-light", "coffee-terracotta"],
@@ -38,11 +33,6 @@ const templateTokenAliases = {
     prefix: "ink-iron",
     oldColors: ["charcoal", "deep-black", "gold", "blood", "off-white", "muted-gray"],
     oldFonts: ["anton", "display", "inter", "sans"],
-  },
-  "restaurant-website": {
-    prefix: "halcyon-table",
-    oldColors: ["coal", "ember", "cream", "ash", "wine", "basil", "bone", "parchment", "smoke", "sage", "flame", "graphite"],
-    oldFonts: ["body", "display"],
   },
 };
 

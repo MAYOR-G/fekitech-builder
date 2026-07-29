@@ -1,6 +1,6 @@
 {
   "colors": { "primary": "#5E7451", "secondary": "#D6A07A", "background": "#F7F6F0", "text": "#26352E" },
-  "brand": { "name": "Harvest & Feast", "tagline": "Food for remarkable gatherings", "logo": "", "phone": "+44 113 555 0129", "email": "events@harvestandfeast.co.uk", "address": "4 Crown Point Road, Leeds LS10 1EL" },
+  "brand": { "name": "Grace Catering", "tagline": "Food for remarkable gatherings", "logo": "", "phone": "+44 113 555 0129", "email": "events@gracecatering.co.uk", "address": "4 Crown Point Road, Leeds LS10 1EL" },
   "navigation": {
     "links": [
       { "label": "Services", "href": "#menu" },
@@ -20,8 +20,8 @@
     "primaryHref": "#contact",
     "secondaryLabel": "Explore our menus",
     "secondaryHref": "#packages",
-    "image": "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2000&auto=format&fit=crop",
-    "imageAlt": "Elegant daylight wedding table prepared by a professional caterer",
+    "image": "/templates/assets/gather-grace-hero.webp",
+    "imageAlt": "Bright catering table with colourful plated food and elegant place settings",
     "badge": "Dates open for 2026"
   },
   "strip": { "items": ["Weddings", "Corporate events", "Private parties", "Buffets", "Canapés", "Cultural menus"] },
@@ -116,6 +116,6 @@
     "secondaryLabel": "Call our planner",
     "secondaryHref": "tel:+441135550129"
   },
-  "social": { "instagram": "Harvest & Feast on Instagram", "instagramHref": "https://instagram.com", "facebook": "Harvest & Feast on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Harvest & Feast on TikTok", "tiktokHref": "https://tiktok.com" },
-  "footer": { "note": "Thoughtful catering for gatherings across Yorkshire.", "copyright": "© 2026 Harvest & Feast. All rights reserved." }
+  "social": { "instagram": "Grace Catering on Instagram", "instagramHref": "https://instagram.com", "facebook": "Grace Catering on Facebook", "facebookHref": "https://facebook.com", "tiktok": "Grace Catering on TikTok", "tiktokHref": "https://tiktok.com" },
+  "footer": { "note": "Thoughtful catering for gatherings across Yorkshire.", "copyright": "© 2026 Grace Catering. All rights reserved." }
 }

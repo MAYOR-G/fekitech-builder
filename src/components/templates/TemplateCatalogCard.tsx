@@ -10,12 +10,14 @@ import { TemplateImage } from "./TemplateImage";
 type TemplateCatalogCardProps = {
   template: TemplateConfig;
   creating: boolean;
+  previewHref?: string;
   onStart: () => Promise<void>;
 };
 
 export function TemplateCatalogCard({
   template,
   creating,
+  previewHref,
   onStart,
 }: TemplateCatalogCardProps) {
   const images =
@@ -119,7 +121,7 @@ export function TemplateCatalogCard({
           } md:translate-y-[calc(100%+1rem)] md:group-hover:translate-y-0 md:group-focus-within:translate-y-0`}
         >
           <Link
-            href={`/preview/${template.id}`}
+            href={previewHref ?? `/preview/${template.id}`}
             prefetch={false}
             className="inline-flex min-h-11 flex-1 items-center justify-center rounded-lg border border-ft-border bg-white px-3 text-sm font-semibold text-ft-ink transition hover:border-ft-primary hover:text-ft-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ft-primary/20"
           >

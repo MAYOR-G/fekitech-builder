@@ -8,14 +8,12 @@ const fallbackEnd = "/* GENERATED TEMPLATE TOKEN FALLBACKS END */";
 const templateCssFiles = [
   "barber-website/index.css",
   "cake-website/index.css",
-  "catering-website/index.css",
   "coffee-website/index.css",
   "dentist-website/index.css",
   "electrician-website/index.css",
   "gym-website/index.css",
   "ink-and-iron/index.css",
   "premium-coffee-website/index.css",
-  "restaurant-website/index.css",
 ];
 
 const colorUtilities = new Map([

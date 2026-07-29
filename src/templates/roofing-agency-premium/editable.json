@@ -96,7 +96,7 @@
       {
         "name": "Roof inspections",
         "description": "Photo-documented assessments for homeowners, buyers, sellers, and facility teams.",
-        "image": "https://images.unsplash.com/photo-1599809275671-50798eb1151a?auto=format&fit=crop&w=600&q=80",
+        "image": "/templates/assets/northline-crew.webp",
         "imageAlt": "Detailed roof inspection"
       },
       {

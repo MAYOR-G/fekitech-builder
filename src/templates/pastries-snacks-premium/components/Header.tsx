@@ -19,49 +19,41 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-[#111111] text-[#F9F9F9] py-4" : "bg-transparent text-[#111111] py-8"
-        }`}
+        className={scrolled ? "gf-header is-scrolled" : "gf-header"}
       >
-        <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex items-center justify-between">
-          <a href="#top" className="flex items-center gap-2 z-50">
+        <div className="gf-header-inner">
+          <a href="#top" className="gf-logo">
             {brand.logo ? (
-              <img src={brand.logo} alt={brand.name} className={`h-8 w-auto transition-all ${scrolled ? "invert" : ""}`} />
+              <img src={brand.logo} alt={brand.name} />
             ) : (
-              <span className="font-serif text-3xl font-bold tracking-tighter uppercase">
-                {brand.name}
-              </span>
+              <span>{brand.name}</span>
             )}
           </a>
 
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="gf-nav">
             {navigation.links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-semibold tracking-wide uppercase hover:text-[#E5B53A] transition-colors"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="gf-header-cta">
             <a
               href={navigation.ctaHref}
-              className={`px-8 py-3 text-sm font-bold uppercase tracking-widest transition-colors ${
-                scrolled 
-                  ? "bg-[#E5B53A] text-[#111111] hover:bg-[#F9F9F9]" 
-                  : "bg-[#111111] text-[#F9F9F9] hover:bg-[#E5B53A] hover:text-[#111111]"
-              }`}
             >
               {navigation.ctaLabel}
             </a>
           </div>
 
           <button
-            className="md:hidden z-50"
+            className="gf-mobile-button"
             onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+            type="button"
           >
             <List size={32} />
           </button>
@@ -75,15 +67,15 @@ export default function Header() {
             animate={{ opacity: 1, clipPath: "circle(150% at 100% 0)" }}
             exit={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-[60] bg-[#111111] text-[#F9F9F9] flex flex-col"
+            className="gf-mobile-menu"
           >
-            <div className="flex items-center justify-between p-6">
-              <span className="font-serif text-2xl font-bold uppercase">{brand.name}</span>
-              <button onClick={() => setMenuOpen(false)}>
+            <div className="gf-mobile-top">
+              <span>{brand.name}</span>
+              <button onClick={() => setMenuOpen(false)} aria-label="Close menu" type="button">
                 <X size={32} />
               </button>
             </div>
-            <div className="flex-1 flex flex-col px-12 justify-center gap-6">
+            <div className="gf-mobile-links">
               {navigation.links.map((link, i) => (
                 <motion.a
                   key={link.label}
@@ -92,7 +84,6 @@ export default function Header() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 + i * 0.1 }}
-                  className="font-serif text-5xl font-bold uppercase hover:text-[#E5B53A] transition-colors"
                 >
                   {link.label}
                 </motion.a>
@@ -102,7 +93,7 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
                 href={navigation.ctaHref}
-                className="mt-8 px-10 py-4 bg-[#E5B53A] text-[#111111] text-sm font-bold uppercase tracking-widest self-start"
+                className="gf-mobile-cta"
               >
                 {navigation.ctaLabel}
               </motion.a>

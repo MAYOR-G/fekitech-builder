@@ -52,7 +52,13 @@ describe("production template registry", () => {
       "second-furniture-website",
       "second-plumber-website",
       "velvet-scoop",
-      "fast-food-chicken-tacos"
+      "fast-food-chicken-tacos",
+      "catering-company-premium",
+      "coffee-website",
+      "forgepoint-construction",
+      "pastries-snacks-premium",
+      "pizza-light-clean",
+      "premium-restaurant"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -63,12 +69,15 @@ describe("production template registry", () => {
       "cake-bakery-premium",
       "cake-website",
       "carpenter-website",
+      "catering-company-premium",
       "cleaning-agency-premium",
+      "coffee-website",
       "crownline-roofworks",
       "dentist-website",
       "electrician-website",
       "farm-shop-website",
       "fast-food-chicken-tacos",
+      "forgepoint-construction",
       "gym-website",
       "ice-cream-website",
       "industrial-construction",
@@ -76,8 +85,11 @@ describe("production template registry", () => {
       "lumen-house-design",
       "noir-house-design",
       "northcrest-roofing",
+      "pastries-snacks-premium",
+      "pizza-light-clean",
       "premium-coffee-website",
       "premium-construction",
+      "premium-restaurant",
       "roofing-agency-premium",
       "second-furniture-website",
       "second-plumber-website",
@@ -125,8 +137,8 @@ describe("production template registry", () => {
   });
 
   it("offers a validated entitlement boundary at every paid tier", () => {
-    expect(canPlanUseTemplate("free", "catering-website")).toBe(false);
-    expect(canPlanUseTemplate("business", "catering-website")).toBe(true);
+    expect(canPlanUseTemplate("free", "catering-company-premium")).toBe(false);
+    expect(canPlanUseTemplate("business", "catering-company-premium")).toBe(true);
     expect(canPlanUseTemplate("business", "second-plumber-website")).toBe(true);
     expect(canPlanUseTemplate("business", "premium-coffee-website")).toBe(false);
     expect(canPlanUseTemplate("pro", "premium-coffee-website")).toBe(true);
@@ -153,7 +165,6 @@ describe("production template registry", () => {
 
     const redesignedTemplateIds = [
       "burger-dark-premium",
-      "pizza-dark-premium",
       "pizza-light-clean",
       "ice-cream-website",
       "second-furniture-website",
@@ -197,13 +208,11 @@ describe("production template registry", () => {
 
     const legacyTokenPrefixes = {
       "cake-website": "sweet-cake",
-      "catering-website": "catering-co",
       "coffee-website": "artisan-coffee",
       "dentist-website": "bright-dental",
       "electrician-website": "spark-electric",
       "gym-website": "iron-gym",
       "ink-and-iron": "ink-iron",
-      "restaurant-website": "halcyon-table",
       "premium-coffee-website": "coffee-brand",
       "barber-website": "barber-brand",
     };
@@ -236,8 +245,6 @@ describe("production template registry", () => {
       ["electrician-website", ".text-spark-electric-safety"],
       ["electrician-website", ".text-spark-electric-navy"],
       ["coffee-website", ".text-artisan-coffee-coffee-terracotta"],
-      ["catering-website", ".bg-catering-co-gold"],
-      ["restaurant-website", ".text-halcyon-table-flame"],
       ["dentist-website", ".bg-bright-dental-ocean"],
     ];
 

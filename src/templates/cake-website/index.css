@@ -42,7 +42,7 @@
 .sweet-cake-template ::selection {
   background: rgba(201, 111, 121, 0.24);
 }
-.reveal {
+.sweet-cake-template .reveal {
   opacity: 0;
   transform: translateY(30px);
   filter: blur(7px);
@@ -52,7 +52,7 @@
     filter 760ms cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform, filter;
 }
-.reveal.is-visible {
+.sweet-cake-template .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
@@ -66,7 +66,7 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-.reveal {
+.sweet-cake-template .reveal {
     opacity: 1;
     transform: none;
     filter: none;

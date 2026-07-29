@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ArrowLeft, Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { LogoMark } from "@/components/ui/LogoMark";
 import { TemplateCatalogCard } from "@/components/templates/TemplateCatalogCard";
@@ -12,10 +13,12 @@ const templates = getAllTemplates();
 const ITEMS_PER_PAGE = 27;
 
 export default function TemplatesPage() {
-  const [search, setSearch] = useState("");
+  const urlParams = useSearchParams();
+  const initialPage = Number(urlParams.get("page"));
+  const [search, setSearch] = useState(urlParams.get("q") ?? "");
   const [message, setMessage] = useState("");
   const [creatingId, setCreatingId] = useState<string | null>(null);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(Number.isInteger(initialPage) && initialPage > 0 ? initialPage : 1);
 
   const filtered = useMemo(() => {
     return templates.filter((template) => 
@@ -23,13 +26,20 @@ export default function TemplatesPage() {
     );
   }, [search]);
 
-
-
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const safeCurrentPage = Math.min(currentPage, Math.max(totalPages, 1));
   const paginatedTemplates = filtered.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    (safeCurrentPage - 1) * ITEMS_PER_PAGE,
+    safeCurrentPage * ITEMS_PER_PAGE
   );
+  const returnPath = `/templates?page=${safeCurrentPage}${search.trim() ? `&q=${encodeURIComponent(search.trim())}` : ""}`;
+
+  useEffect(() => {
+    const nextPath = `/templates?page=${safeCurrentPage}${search.trim() ? `&q=${encodeURIComponent(search.trim())}` : ""}`;
+    if (window.location.pathname + window.location.search !== nextPath) {
+      window.history.replaceState(null, "", nextPath);
+    }
+  }, [safeCurrentPage, search]);
 
   return (
     <div className="min-h-screen bg-white text-ft-ink">
@@ -71,6 +81,7 @@ export default function TemplatesPage() {
                     key={template.id}
                     template={template}
                     creating={creatingId === template.id}
+                    previewHref={`/preview/${template.id}?from=${encodeURIComponent(returnPath)}`}
                     onStart={async () => {
                             setCreatingId(template.id);
                             setMessage("");
@@ -101,14 +112,14 @@ export default function TemplatesPage() {
             {/* Pagination Controls */}
             <div className="mt-16 flex items-center justify-between border-t border-ft-border pt-6">
               <div className="text-sm text-ft-body">
-                Showing <span className="font-semibold text-ft-ink">{(currentPage - 1) * ITEMS_PER_PAGE + 1}</span> to <span className="font-semibold text-ft-ink">{Math.min(currentPage * ITEMS_PER_PAGE, filtered.length)}</span> of <span className="font-semibold text-ft-ink">{filtered.length}</span> templates
+                Showing <span className="font-semibold text-ft-ink">{(safeCurrentPage - 1) * ITEMS_PER_PAGE + 1}</span> to <span className="font-semibold text-ft-ink">{Math.min(safeCurrentPage * ITEMS_PER_PAGE, filtered.length)}</span> of <span className="font-semibold text-ft-ink">{filtered.length}</span> templates
               </div>
               
               {totalPages > 1 && (
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-                    disabled={currentPage === 1}
+                    disabled={safeCurrentPage === 1}
                     className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
                   >
                     <ChevronLeft size={16} /> Previous
@@ -120,7 +131,7 @@ export default function TemplatesPage() {
                         key={i}
                         onClick={() => setCurrentPage(i + 1)}
                         className={`inline-flex h-10 w-10 items-center justify-center rounded-lg text-sm font-medium transition-colors ${
-                          currentPage === i + 1
+                          safeCurrentPage === i + 1
                             ? "bg-ft-primary text-white"
                             : "hover:bg-ft-surface-alt text-ft-ink"
                         }`}
@@ -131,7 +142,7 @@ export default function TemplatesPage() {
                   </div>
                   <button
                     onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-                    disabled={currentPage === totalPages}
+                    disabled={safeCurrentPage === totalPages}
                     className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
                   >
                     Next <ChevronRight size={16} />

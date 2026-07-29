@@ -6,6 +6,7 @@ import { isValidEditableData } from "@/lib/project-validation";
 import { isPlanTestModeEnabled } from "@/lib/subscriptions";
 import { slugifySubdomain, validateSubdomain } from "@/lib/subdomains";
 import { bindTemplateContent, isCompatibleTemplateData, mergeTemplateData } from "@/lib/template-data";
+import { runtimeStyleOptions, templateRuntimeCss, templateVariables } from "@/lib/template-runtime-style";
 
 afterEach(() => vi.unstubAllEnvs());
 
@@ -170,6 +171,64 @@ describe("editable data and test-mode safety", () => {
       },
     })).toBe(true);
     expect(isCompatibleTemplateData(defaults, { typography: null })).toBe(true);
+  });
+
+  it("does not apply shared palette CSS to untouched original template data", () => {
+    const defaults = {
+      colors: {
+        primary: "#ff7a1a",
+        background: "#101010",
+        text: "#ffffff",
+      },
+    };
+
+    const originalOptions = runtimeStyleOptions(defaults, defaults);
+    expect(originalOptions.palette).toBe(false);
+    expect(templateRuntimeCss("[data-template-runtime=\"sample\"]", originalOptions)).toBe("");
+    expect(templateVariables(defaults, { includeRootColors: originalOptions.palette })).not.toHaveProperty("backgroundColor");
+
+    const legacyNormalized = {
+      colors: {
+        primary: "#ff7a1a",
+        accent: "#ff7a1a",
+        secondary: "#eef2ff",
+        background: "#101010",
+        text: "#ffffff",
+        buttonText: "#ffffff",
+      },
+    };
+    expect(runtimeStyleOptions(legacyNormalized, defaults).palette).toBe(false);
+
+    const customized = {
+      colors: {
+        primary: "#3146d3",
+        background: "#ffffff",
+        text: "#111827",
+      },
+    };
+    const customizedOptions = runtimeStyleOptions(customized, defaults);
+    expect(customizedOptions.palette).toBe(true);
+    expect(templateRuntimeCss("[data-template-runtime=\"sample\"]", customizedOptions)).toContain("--template-button-bg");
+    expect(templateVariables(customized, { includeRootColors: customizedOptions.palette })).toHaveProperty("backgroundColor", "#ffffff");
+
+    const typographyDefaults = {
+      typography: {
+        id: "original",
+        name: "Original",
+        category: "Original",
+        displayFont: "Georgia",
+        headingFont: "Georgia",
+        bodyFont: "Arial",
+        navFont: "Arial",
+        buttonFont: "Arial",
+        scale: 1,
+        headingWeight: 700,
+        bodyWeight: 400,
+        lineHeight: 1.6,
+        letterSpacing: "0em",
+      },
+    };
+    expect(runtimeStyleOptions(typographyDefaults, typographyDefaults).typography).toBe(false);
   });
 
   it("cannot enable plan testing in production", () => {

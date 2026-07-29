@@ -93,11 +93,15 @@ function isTextPath(path: string): boolean {
   return !isImagePath(path) && !isHrefPath(path) && !isAltPath(path) && !/(icon)$/i.test(path);
 }
 
-function buildOccurrenceMap(entries: Array<{ path: string; value: string }>, predicate: (path: string) => boolean) {
+function buildOccurrenceMap(
+  entries: Array<{ path: string; value: string }>,
+  predicate: (path: string) => boolean,
+  normalize = normalizeText,
+) {
   const map = new Map<string, string[]>();
   for (const entry of entries) {
     if (!predicate(entry.path)) continue;
-    const text = normalizeText(entry.value);
+    const text = normalize(entry.value);
     if (!text) continue;
     const list = map.get(text) ?? [];
     list.push(entry.path);
@@ -113,13 +117,18 @@ function takeOccurrence(map: Map<string, string[]>, key: string) {
 }
 
 function normalizeUrl(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  if (trimmed.startsWith("#") || /^(mailto|tel|sms):/i.test(trimmed)) return trimmed;
   try {
-    const url = new URL(value, window.location.origin);
+    const url = new URL(trimmed, window.location.origin);
     const encodedImageUrl = url.searchParams.get("url");
     if (encodedImageUrl) return decodeURIComponent(encodedImageUrl);
-    return url.pathname + url.search + url.hash;
+    if (url.origin === window.location.origin) return url.pathname + url.search + url.hash;
+    if (url.pathname === "/" && !url.search && !url.hash) return `${url.protocol}//${url.host}`;
+    return url.href;
   } catch {
-    return value;
+    return trimmed;
   }
 }
 
@@ -203,7 +212,7 @@ function hardcodedImagePath(templateId: string, src: string, index: number) {
 export function bindTemplateDom(root: HTMLElement, data: EditorObject, templateId: string, editable: boolean) {
   const entries = flattenEditableStrings(data);
   const textMap = buildOccurrenceMap(entries, isTextPath);
-  const urlMap = buildOccurrenceMap(entries, (path) => isImagePath(path) || isHrefPath(path));
+  const urlMap = buildOccurrenceMap(entries, (path) => isImagePath(path) || isHrefPath(path), normalizeUrl);
   const altMap = buildOccurrenceMap(entries, isAltPath);
   const textSeen = new Map<string, number>();
   const linkSeen = new Map<string, number>();

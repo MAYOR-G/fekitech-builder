@@ -11,7 +11,7 @@ export default async function TemplatePreviewPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const { templateId } = await params;
-  const { frame } = await searchParams;
+  const { frame, from } = await searchParams;
   const template = getTemplate(templateId);
   if (!template?.config || !template?.component) {
     notFound();
@@ -22,13 +22,16 @@ export default async function TemplatePreviewPage({
 
   if (frame === "1") {
     return (
-      <TemplateRuntime data={defaultData} templateId={templateId}>
+      <TemplateRuntime data={defaultData} defaultData={defaultData} templateId={templateId}>
         <TemplateComponent data={defaultData} />
       </TemplateRuntime>
     );
   }
 
+  const fromValue = Array.isArray(from) ? from[0] : from;
+  const backHref = typeof fromValue === "string" && fromValue.startsWith("/templates") ? fromValue : "/templates";
+
   return (
-    <PreviewBar templateId={templateId} templateName={config.name} />
+    <PreviewBar templateId={templateId} templateName={config.name} backHref={backHref} />
   );
 }

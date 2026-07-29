@@ -1,46 +1,45 @@
 import React from "react";
 import { useTemplateData } from "../TemplateContext";
-import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
+import { InstagramLogo, FacebookLogo, TiktokLogo } from "@phosphor-icons/react";
 
 export default function Footer() {
   const { brand, social, footer, navigation, visit, packages } = useTemplateData();
+  const hours = visit?.hours ?? [
+    { day: "Tue - Fri", time: "7 AM - 5 PM" },
+    { day: "Saturday", time: "8 AM - 4 PM" },
+    { day: "Sunday", time: "Pre-orders only" },
+  ];
+  const areas = visit?.areas ?? ["Birmingham", "Solihull", "Wolverhampton", "Coventry"];
 
   return (
-    <footer className="bg-[#111111] text-[#F9F9F9] pt-32">
-      {/* Packages Section integrated into top of footer for this template */}
+    <footer className="gf-footer">
       {packages && (
-        <div className="max-w-[1600px] mx-auto px-6 md:px-12 mb-32 border-b border-[#333333] pb-32">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="gf-packages" id="packages">
+          <div className="gf-package-head">
             <div>
-              <div className="inline-block bg-[#E5B53A] text-[#111111] px-4 py-1 font-bold text-xs uppercase tracking-widest mb-6">
-                Packages
-              </div>
-              <h2 className="font-serif text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-4 leading-[0.9]">
-                {packages.title}
-              </h2>
+              <span>Packages</span>
+              <h2>{packages.title}</h2>
             </div>
-            <p className="text-[#A0A0A0] text-xl font-medium max-w-sm text-right">
-              {packages.description}
-            </p>
+            <p>{packages.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="gf-package-grid">
             {packages.items.map((pkg, idx) => (
-              <div key={pkg.name} className={`p-10 border ${idx === 1 ? 'border-[#E5B53A] bg-[#E5B53A] text-[#111111]' : 'border-[#333333] hover:border-[#E5B53A] transition-colors'}`}>
-                <h3 className="font-serif text-3xl font-bold uppercase tracking-tighter mb-2">{pkg.name}</h3>
-                <div className="text-2xl font-bold mb-6">{pkg.price}</div>
-                <p className={`font-medium mb-8 ${idx === 1 ? 'text-[#111111]/80' : 'text-[#A0A0A0]'}`}>{pkg.description}</p>
+              <div key={pkg.name} className={idx === 1 ? "gf-package is-featured" : "gf-package"}>
+                <h3>{pkg.name}</h3>
+                <div>{pkg.price}</div>
+                <p>{pkg.description}</p>
                 
-                <ul className="space-y-4 mb-10">
+                <ul>
                   {pkg.features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm font-medium">
-                      <span className="mt-1">●</span>
+                    <li key={i}>
+                      <span aria-hidden="true">+</span>
                       <span>{f}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <a href={pkg.buttonHref} className={`block w-full py-4 text-center text-sm font-bold uppercase tracking-widest transition-colors ${idx === 1 ? 'bg-[#111111] text-[#F9F9F9] hover:bg-[#F9F9F9] hover:text-[#111111]' : 'bg-[#E5B53A] text-[#111111] hover:bg-[#F9F9F9]'}`}>
+                <a href={pkg.buttonHref}>
                   {pkg.buttonLabel}
                 </a>
               </div>
@@ -49,73 +48,74 @@ export default function Footer() {
         </div>
       )}
 
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
-          
-          {visit && (
-            <>
-              <div className="md:col-span-5">
-                <h2 className="font-serif text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-8 leading-[0.9]">
-                  {visit.title}
-                </h2>
-                <p className="text-[#A0A0A0] text-xl font-medium mb-10 max-w-md">
-                  {visit.description}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a href={visit.primaryHref} className="px-10 py-5 bg-[#E5B53A] text-[#111111] text-sm font-bold uppercase tracking-widest hover:bg-[#F9F9F9] transition-colors text-center">
-                    {visit.primaryLabel}
-                  </a>
-                </div>
-              </div>
+      <div className="gf-footer-inner">
+        <div className="gf-visit-grid">
+          <div className="gf-visit-main">
+            <h2>{visit?.title ?? "Pastry for mornings, meetings and parties."}</h2>
+            <p>{visit?.description ?? footer.note}</p>
+            <div>
+              <a href={visit?.primaryHref ?? `mailto:${brand.email}`}>
+                {visit?.primaryLabel ?? "Plan an order"}
+              </a>
+            </div>
+          </div>
 
-              <div className="md:col-span-2 md:col-start-7">
-                <h4 className="font-bold uppercase tracking-widest text-[#E5B53A] mb-6 text-sm">Hours</h4>
-                <ul className="space-y-3 font-medium text-[#F9F9F9] text-sm">
-                  {visit.hours.map((h, i) => (
-                    <li key={i} className="flex justify-between border-b border-[#333333] pb-2">
-                      <span className="text-[#A0A0A0]">{h.day}</span>
-                      <span>{h.time}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="gf-footer-column">
+            <h4>Hours</h4>
+            <ul>
+              {hours.map((h, i) => (
+                <li key={i}>
+                  <span>{h.day}</span>
+                  <span>{h.time}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-              <div className="md:col-span-3">
-                <h4 className="font-bold uppercase tracking-widest text-[#E5B53A] mb-6 text-sm">Location</h4>
-                <p className="font-medium text-[#F9F9F9] text-sm leading-relaxed mb-6">
-                  <span className="text-[#A0A0A0]">{visit.areasLabel}</span><br />
-                  {visit.areas.join(", ")}<br /><br />
-                  {brand.address}
-                </p>
-                <a href={`mailto:${brand.email}`} className="text-[#E5B53A] font-bold text-sm hover:text-[#F9F9F9] transition-colors block mb-2 uppercase tracking-wide">
-                  {brand.email}
-                </a>
-                <a href={`tel:${brand.phone.replace(/\s/g, "")}`} className="text-[#E5B53A] font-bold text-sm hover:text-[#F9F9F9] transition-colors uppercase tracking-wide">
-                  {brand.phone}
-                </a>
-              </div>
-            </>
-          )}
+          <div className="gf-footer-column">
+            <h4>Visit</h4>
+            <p>
+              <span>{visit?.areasLabel ?? "Delivery and collection"}</span><br />
+              {areas.join(", ")}<br /><br />
+              {brand.address}
+            </p>
+            <a href={`mailto:${brand.email}`}>
+              {brand.email}
+            </a>
+            <a href={`tel:${brand.phone.replace(/\s/g, "")}`}>
+              {brand.phone}
+            </a>
+          </div>
 
+          <div className="gf-footer-column gf-footer-nav">
+            <h4>Explore</h4>
+            {navigation.links.map((link) => (
+              <a key={link.label} href={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-[#333333] text-sm font-medium text-[#A0A0A0]">
-          <div className="flex items-center gap-4 mb-4 md:mb-0">
+        <div className="gf-footer-bottom">
+          <div>
             {brand.logo ? (
-              <img src={brand.logo} alt={brand.name} className="h-6 w-auto invert opacity-50" />
+              <img src={brand.logo} alt={brand.name} />
             ) : (
-              <span className="font-serif font-bold tracking-tighter uppercase text-[#F9F9F9]">{brand.name}</span>
+              <span>{brand.name}</span>
             )}
-            <span className="hidden md:inline-block">/</span>
             <p>{footer.copyright}</p>
           </div>
           
-          <div className="flex items-center gap-6">
-            <a href={social.instagramHref} className="hover:text-[#E5B53A] transition-colors flex items-center gap-2 uppercase tracking-widest text-xs">
+          <div>
+            <a href={social.instagramHref}>
               <InstagramLogo size={20} /> Instagram
             </a>
-            <a href={social.facebookHref} className="hover:text-[#E5B53A] transition-colors flex items-center gap-2 uppercase tracking-widest text-xs">
+            <a href={social.facebookHref}>
               <FacebookLogo size={20} /> Facebook
+            </a>
+            <a href={social.tiktokHref}>
+              <TiktokLogo size={20} /> TikTok
             </a>
           </div>
         </div>

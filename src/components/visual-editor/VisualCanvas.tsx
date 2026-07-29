@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getTemplate } from "@/registry";
 import { isEditorObject, useVisualEditorStore, type EditorObject } from "@/store/visualEditorStore";
 import { bindTemplateDom, stableHash } from "@/lib/editor-dom";
-import { templateRuntimeCss, templateVariables, useTypographyFontHref } from "@/lib/template-runtime-style";
+import { runtimeStyleOptions, templateRuntimeCss, templateVariables, useTypographyFontHref } from "@/lib/template-runtime-style";
 import FloatingTextToolbar from "./FloatingTextToolbar";
 import FloatingImageToolbar from "./FloatingImageToolbar";
 import FloatingIconToolbar from "./FloatingIconToolbar";
@@ -51,7 +51,10 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
   const TemplateComponent = template?.component;
 
   const fontHref = useTypographyFontHref(data);
-  const templateStyles = templateVariables(data);
+  const defaultData = isEditorObject(template?.defaultData) ? template.defaultData : undefined;
+  const runtimeStyles = runtimeStyleOptions(data, defaultData);
+  const templateStyles = templateVariables(data, { includeRootColors: runtimeStyles.palette });
+  const runtimeCss = templateRuntimeCss(`[data-template-runtime="${templateId}"]`, runtimeStyles);
 
   useEffect(() => {
     const root = canvasRef.current?.querySelector<HTMLElement>(".ve-canvas__content");
@@ -255,7 +258,7 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
         {/* Template content */}
         <div className="ve-canvas__content" data-template-runtime={templateId} style={templateStyles}>
           {fontHref && <link rel="stylesheet" href={fontHref} />}
-          <style dangerouslySetInnerHTML={{ __html: templateRuntimeCss(`[data-template-runtime="${templateId}"]`) }} />
+          {runtimeCss && <style dangerouslySetInnerHTML={{ __html: runtimeCss }} />}
           <TemplateComponent data={data} />
         </div>
       </div>

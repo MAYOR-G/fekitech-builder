@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const TEMPLATES = path.join(process.cwd(), 'src/templates');
-const broken = ['cake-website', 'furniture-website', 'hotel-website', 'restaurant-website'];
+const broken = ['cake-website', 'furniture-website', 'hotel-website'];
 
 for (const t of broken) {
   const mainFile = path.join(TEMPLATES, t, 'Main.tsx');

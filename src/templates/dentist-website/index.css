@@ -55,15 +55,15 @@
 .bright-dental-template ::selection {
   background: rgba(79, 183, 174, 0.25);
 }
-.magnetic-link {
+.bright-dental-template .magnetic-link {
   --magnet-x: 0px;
   --magnet-y: 0px;
   transform: translate3d(var(--magnet-x), var(--magnet-y), 0);
 }
-.hero-panel {
+.bright-dental-template .hero-panel {
   isolation: isolate;
 }
-.reveal {
+.bright-dental-template .reveal {
   opacity: 0;
   transform: translateY(28px);
   filter: blur(6px);
@@ -72,15 +72,15 @@
     transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
     filter 720ms cubic-bezier(0.22, 1, 0.36, 1);
 }
-.reveal.is-visible {
+.bright-dental-template .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
 }
-.image-reveal {
+.bright-dental-template .image-reveal {
   clip-path: inset(0 0 0 0 round 1.5rem);
 }
-.service-card::after {
+.bright-dental-template .service-card::after {
   position: absolute;
   inset: auto 20px 20px auto;
   width: 90px;
@@ -95,27 +95,27 @@
     opacity 300ms ease,
     transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
-.service-card:hover::after {
+.bright-dental-template .service-card:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-.journey-card img,
-.image-reveal img {
+.bright-dental-template .journey-card img,
+.bright-dental-template .image-reveal img {
   transform-origin: center;
 }
-.testimonial-track:hover {
+.bright-dental-template .testimonial-track:hover {
   animation-play-state: paused;
 }
 @media (min-width: 1024px) {
-.journey-rail {
+.bright-dental-template .journey-rail {
     will-change: transform;
   }
 }
 @media (max-width: 1023px) {
-.journey-section {
+.bright-dental-template .journey-section {
     height: auto;
   }
-.journey-rail {
+.bright-dental-template .journey-rail {
     transform: none !important;
   }
 }
@@ -128,15 +128,15 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-.reveal {
+.bright-dental-template .reveal {
     opacity: 1;
     transform: none;
     filter: none;
   }
-.magnetic-link {
+.bright-dental-template .magnetic-link {
     transform: none !important;
   }
-.journey-rail {
+.bright-dental-template .journey-rail {
     transform: none !important;
   }
 }
