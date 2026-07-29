@@ -3,7 +3,7 @@
 export type TypographyPairing = {
   id: string;
   name: string;
-  category: string;
+  category: "Original" | "Library";
   displayFont: string;
   headingFont: string;
   bodyFont: string;
@@ -17,105 +17,149 @@ export type TypographyPairing = {
   googleImport: string;
 };
 
+type PairOptions = Partial<Pick<TypographyPairing, "displayFont" | "headingFont" | "bodyFont" | "navFont" | "buttonFont" | "scale" | "headingWeight" | "bodyWeight" | "lineHeight" | "letterSpacing">>;
+
+const SYSTEM_STACK = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+const SERIF_STACK = "Georgia, 'Times New Roman', serif";
+
+function idFromName(name: string) {
+  return name.toLowerCase().replace(/—/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function googleFamily(font: string) {
+  if (["System Fonts", SYSTEM_STACK, "Times New Roman", "Arial"].includes(font)) return "";
+  return font.replace(/\s+/g, "+");
+}
+
+function googleImportFor(fonts: string[]) {
+  const unique = Array.from(new Set(fonts.map(googleFamily).filter(Boolean)));
+  return unique.map((font) => `${font}:wght@300;400;500;600;700;800`).join("&family=");
+}
+
+function pair(name: string, heading: string, body: string, options: PairOptions = {}): TypographyPairing {
+  const headingWeight = options.headingWeight ?? (name.includes("Bold") ? 800 : name.includes("Light") ? 400 : 700);
+  const bodyWeight = options.bodyWeight ?? 400;
+  return {
+    id: idFromName(name),
+    name,
+    category: "Library",
+    displayFont: options.displayFont ?? heading,
+    headingFont: options.headingFont ?? heading,
+    bodyFont: options.bodyFont ?? body,
+    navFont: options.navFont ?? body,
+    buttonFont: options.buttonFont ?? body,
+    scale: options.scale ?? 1.25,
+    headingWeight,
+    bodyWeight,
+    lineHeight: options.lineHeight ?? 1.6,
+    letterSpacing: options.letterSpacing ?? "0em",
+    googleImport: googleImportFor([options.displayFont ?? heading, options.headingFont ?? heading, options.bodyFont ?? body, options.navFont ?? body, options.buttonFont ?? body]),
+  };
+}
+
+export const ORIGINAL_TYPOGRAPHY: TypographyPairing = {
+  id: "original",
+  name: "Original typography",
+  category: "Original",
+  displayFont: "inherit",
+  headingFont: "inherit",
+  bodyFont: "inherit",
+  navFont: "inherit",
+  buttonFont: "inherit",
+  scale: 1,
+  headingWeight: 700,
+  bodyWeight: 400,
+  lineHeight: 1.6,
+  letterSpacing: "0em",
+  googleImport: "",
+};
+
 export const TYPOGRAPHY_PAIRINGS: TypographyPairing[] = [
+  pair("Syne + Plus Jakarta Sans", "Syne", "Plus Jakarta Sans", { headingWeight: 700, letterSpacing: "-0.01em" }),
+  pair("Cormorant + Open Sans", "Cormorant", "Open Sans", { headingWeight: 600, lineHeight: 1.65 }),
+  pair("Archivo + Inter", "Archivo", "Inter", { headingWeight: 800, letterSpacing: "-0.01em" }),
+  pair("Assistant + Assistant", "Assistant", "Assistant", { headingWeight: 700 }),
+  pair("Cabin + IBM Plex Sans", "Cabin", "IBM Plex Sans", { headingWeight: 700 }),
+  pair("Cormorant Garamond + Open Sans", "Cormorant Garamond", "Open Sans", { headingWeight: 600, lineHeight: 1.65 }),
+  pair("Didact Gothic + Open Sans", "Didact Gothic", "Open Sans", { headingWeight: 400 }),
+  pair("Dosis + Open Sans", "Dosis", "Open Sans", { headingWeight: 700 }),
+  pair("IBM Plex Sans + IBM Plex Sans", "IBM Plex Sans", "IBM Plex Sans", { headingWeight: 700 }),
+  pair("Jost + Jost", "Jost", "Jost", { headingWeight: 700 }),
+  pair("Lato + Merriweather", "Lato", "Merriweather", { headingWeight: 800 }),
+  pair("Libre Baskerville + Open Sans", "Libre Baskerville", "Open Sans", { headingWeight: 700, lineHeight: 1.7 }),
+  pair("Montserrat + Lato", "Montserrat", "Lato", { headingWeight: 800, letterSpacing: "-0.01em" }),
+  pair("Montserrat + Montserrat", "Montserrat", "Montserrat", { headingWeight: 700 }),
+  pair("Montserrat + Montserrat - Bold", "Montserrat", "Montserrat", { headingWeight: 800, buttonFont: "Montserrat" }),
+  pair("Montserrat + Montserrat - Light", "Montserrat", "Montserrat", { headingWeight: 400, bodyWeight: 300 }),
+  pair("Montserrat + Poppins", "Montserrat", "Poppins", { headingWeight: 800 }),
+  pair("Mukta + Mukta", "Mukta", "Mukta", { headingWeight: 700 }),
+  pair("Mukta + Muli", "Mukta", "Muli", { headingWeight: 700 }),
+  pair("Muli + Muli", "Muli", "Muli", { headingWeight: 700 }),
+  pair("Muli + Muli - Bold", "Muli", "Muli", { headingWeight: 800 }),
+  pair("Noto Sans + Noto Sans Assistant", "Noto Sans", "Noto Sans", { headingWeight: 700 }),
+  pair("Nunito + Nunito", "Nunito", "Nunito", { headingWeight: 800 }),
+  pair("Open Sans + Open Sans", "Open Sans", "Open Sans", { headingWeight: 700 }),
+  pair("Oranienbaum + Raleway", "Oranienbaum", "Raleway", { headingWeight: 400, letterSpacing: "0.02em" }),
+  pair("Oswald + Open Sans", "Oswald", "Open Sans", { headingWeight: 700, letterSpacing: "0.01em" }),
+  pair("Oswald + PT Serif", "Oswald", "PT Serif", { headingWeight: 700 }),
+  pair("Ovo + Lato", "Ovo", "Lato", { headingWeight: 400, lineHeight: 1.7 }),
+  pair("Petit Formal Script + Quicksand", "Petit Formal Script", "Quicksand", { headingWeight: 400 }),
+  pair("Playfair Display + Lato", "Playfair Display", "Lato", { headingWeight: 700, lineHeight: 1.65 }),
+  pair("Playfair Display + Open Sans", "Playfair Display", "Open Sans", { headingWeight: 700, lineHeight: 1.65 }),
+  pair("Playfair Display SC + IBM Plex Serif", "Playfair Display SC", "IBM Plex Serif", { headingWeight: 700, letterSpacing: "0.02em" }),
+  pair("Poppins + Nunito", "Poppins", "Nunito", { headingWeight: 800 }),
+  pair("Poppins + Open Sans", "Poppins", "Open Sans", { headingWeight: 800 }),
+  pair("Poppins + Roboto", "Poppins", "Roboto", { headingWeight: 800 }),
+  pair("Poppins + Source Sans Pro", "Poppins", "Source Sans Pro", { headingWeight: 800 }),
+  pair("Roboto + Roboto", "Roboto", "Roboto", { headingWeight: 700 }),
+  pair("Roboto Slab + Lato", "Roboto Slab", "Lato", { headingWeight: 700 }),
+  pair("Roboto Slab + Montserrat", "Roboto Slab", "Montserrat", { headingWeight: 700 }),
+  pair("Roboto Slab + PT Sans Caption", "Roboto Slab", "PT Sans Caption", { headingWeight: 700 }),
+  pair("Rubik + Lato", "Rubik", "Lato", { headingWeight: 800 }),
+  pair("Source Sans Pro + Source Sans Pro", "Source Sans Pro", "Source Sans Pro", { headingWeight: 700 }),
+  pair("Source Serif 4 + Source Sans 3", "Source Serif 4", "Source Sans 3", { headingWeight: 700, lineHeight: 1.7 }),
   {
-    id: "modern-saas", name: "Modern SaaS", category: "Technology",
-    displayFont: "Inter", headingFont: "Inter", bodyFont: "Inter", navFont: "Inter", buttonFont: "Inter",
-    scale: 1.25, headingWeight: 700, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "-0.02em",
-    googleImport: "Inter:wght@400;500;600;700",
+    ...pair("System Fonts", "System Fonts", "System Fonts", { displayFont: SYSTEM_STACK, headingFont: SYSTEM_STACK, bodyFont: SYSTEM_STACK, navFont: SYSTEM_STACK, buttonFont: SYSTEM_STACK }),
+    googleImport: "",
   },
   {
-    id: "editorial", name: "Premium Editorial", category: "Publishing",
-    displayFont: "Playfair Display", headingFont: "Playfair Display", bodyFont: "Source Sans 3", navFont: "Source Sans 3", buttonFont: "Source Sans 3",
-    scale: 1.333, headingWeight: 700, bodyWeight: 400, lineHeight: 1.7, letterSpacing: "0em",
-    googleImport: "Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600",
+    ...pair("Times New Roman + Arial", "Times New Roman", "Arial", { displayFont: SERIF_STACK, headingFont: SERIF_STACK, bodyFont: "Arial, sans-serif", navFont: "Arial, sans-serif", buttonFont: "Arial, sans-serif", lineHeight: 1.65 }),
+    googleImport: "",
   },
-  {
-    id: "restaurant", name: "Restaurant", category: "Food & Hospitality",
-    displayFont: "Cormorant Garamond", headingFont: "Cormorant Garamond", bodyFont: "Lato", navFont: "Lato", buttonFont: "Lato",
-    scale: 1.333, headingWeight: 600, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "0.02em",
-    googleImport: "Cormorant+Garamond:wght@400;600;700&family=Lato:wght@400;700",
-  },
-  {
-    id: "creative-studio", name: "Creative Studio", category: "Creative",
-    displayFont: "Space Grotesk", headingFont: "Space Grotesk", bodyFont: "DM Sans", navFont: "DM Sans", buttonFont: "Space Grotesk",
-    scale: 1.25, headingWeight: 700, bodyWeight: 400, lineHeight: 1.5, letterSpacing: "-0.01em",
-    googleImport: "Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500",
-  },
-  {
-    id: "trades", name: "Trades & Construction", category: "Construction & Trades",
-    displayFont: "Oswald", headingFont: "Oswald", bodyFont: "Open Sans", navFont: "Open Sans", buttonFont: "Oswald",
-    scale: 1.25, headingWeight: 600, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "0em",
-    googleImport: "Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600",
-  },
-  {
-    id: "professional", name: "Professional Services", category: "Corporate",
-    displayFont: "Outfit", headingFont: "Outfit", bodyFont: "Outfit", navFont: "Outfit", buttonFont: "Outfit",
-    scale: 1.2, headingWeight: 600, bodyWeight: 400, lineHeight: 1.65, letterSpacing: "-0.01em",
-    googleImport: "Outfit:wght@300;400;500;600;700",
-  },
-  {
-    id: "luxury", name: "Luxury", category: "Luxury",
-    displayFont: "Cormorant", headingFont: "Cormorant", bodyFont: "Montserrat", navFont: "Montserrat", buttonFont: "Montserrat",
-    scale: 1.414, headingWeight: 500, bodyWeight: 400, lineHeight: 1.7, letterSpacing: "0.05em",
-    googleImport: "Cormorant:wght@400;500;600&family=Montserrat:wght@400;500;600",
-  },
-  {
-    id: "friendly", name: "Friendly Small Business", category: "General",
-    displayFont: "Nunito", headingFont: "Nunito", bodyFont: "Nunito Sans", navFont: "Nunito Sans", buttonFont: "Nunito",
-    scale: 1.2, headingWeight: 700, bodyWeight: 400, lineHeight: 1.65, letterSpacing: "0em",
-    googleImport: "Nunito:wght@400;600;700&family=Nunito+Sans:wght@400;600",
-  },
-  {
-    id: "bold-display", name: "Bold Display", category: "Creative",
-    displayFont: "Plus Jakarta Sans", headingFont: "Plus Jakarta Sans", bodyFont: "Plus Jakarta Sans", navFont: "Plus Jakarta Sans", buttonFont: "Plus Jakarta Sans",
-    scale: 1.333, headingWeight: 800, bodyWeight: 400, lineHeight: 1.4, letterSpacing: "-0.03em",
-    googleImport: "Plus+Jakarta+Sans:wght@400;500;600;700;800",
-  },
-  {
-    id: "minimal-corp", name: "Minimal Corporate", category: "Corporate",
-    displayFont: "Roboto", headingFont: "Roboto", bodyFont: "Roboto", navFont: "Roboto", buttonFont: "Roboto",
-    scale: 1.2, headingWeight: 500, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "0em",
-    googleImport: "Roboto:wght@300;400;500;700",
-  },
-  {
-    id: "health-wellness", name: "Health & Wellness", category: "Health & Wellness",
-    displayFont: "Tenor Sans", headingFont: "Tenor Sans", bodyFont: "Work Sans", navFont: "Work Sans", buttonFont: "Work Sans",
-    scale: 1.25, headingWeight: 400, bodyWeight: 400, lineHeight: 1.7, letterSpacing: "0.03em",
-    googleImport: "Tenor+Sans&family=Work+Sans:wght@400;500;600",
-  },
-  {
-    id: "beauty", name: "Beauty & Fashion", category: "Beauty & Fashion",
-    displayFont: "Bodoni Moda", headingFont: "Bodoni Moda", bodyFont: "Poppins", navFont: "Poppins", buttonFont: "Poppins",
-    scale: 1.333, headingWeight: 600, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "0.01em",
-    googleImport: "Bodoni+Moda:wght@400;600;700&family=Poppins:wght@400;500;600",
-  },
-  {
-    id: "techno", name: "Tech Mono", category: "Technology",
-    displayFont: "JetBrains Mono", headingFont: "Sora", bodyFont: "Sora", navFont: "Sora", buttonFont: "JetBrains Mono",
-    scale: 1.2, headingWeight: 600, bodyWeight: 400, lineHeight: 1.6, letterSpacing: "-0.01em",
-    googleImport: "JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600",
-  },
-  {
-    id: "warm-artisan", name: "Warm Artisan", category: "Food & Hospitality",
-    displayFont: "Fraunces", headingFont: "Fraunces", bodyFont: "Commissioner", navFont: "Commissioner", buttonFont: "Commissioner",
-    scale: 1.333, headingWeight: 600, bodyWeight: 400, lineHeight: 1.65, letterSpacing: "0em",
-    googleImport: "Fraunces:wght@400;600;700&family=Commissioner:wght@400;500;600",
-  },
-  {
-    id: "geometric", name: "Geometric Modern", category: "Creative",
-    displayFont: "Manrope", headingFont: "Manrope", bodyFont: "Manrope", navFont: "Manrope", buttonFont: "Manrope",
-    scale: 1.25, headingWeight: 700, bodyWeight: 400, lineHeight: 1.5, letterSpacing: "-0.02em",
-    googleImport: "Manrope:wght@400;500;600;700;800",
-  },
+  pair("Ubuntu + Open Sans", "Ubuntu", "Open Sans", { headingWeight: 700 }),
+  pair("Unbounded + Inter", "Unbounded", "Inter", { headingWeight: 700, letterSpacing: "-0.02em" }),
 ];
+
+export function getTypographyLibrary(): TypographyPairing[] {
+  return TYPOGRAPHY_PAIRINGS;
+}
 
 export function getTypographyByCategory(): Map<string, TypographyPairing[]> {
   const map = new Map<string, TypographyPairing[]>();
-  for (const pairing of TYPOGRAPHY_PAIRINGS) {
-    const list = map.get(pairing.category) ?? [];
-    list.push(pairing);
-    map.set(pairing.category, list);
-  }
+  map.set("Original", [ORIGINAL_TYPOGRAPHY]);
+  map.set("Library", TYPOGRAPHY_PAIRINGS);
   return map;
+}
+
+export function fontStack(font: string, fallback: "sans" | "serif" = "sans") {
+  if (font === "inherit") return "inherit";
+  if (font.includes(",") || font.startsWith("-apple-system")) return font;
+  const family = font.includes(" ") ? `"${font}"` : font;
+  return `${family}, ${fallback === "serif" ? "Georgia, serif" : "Arial, sans-serif"}`;
+}
+
+export function googleFontsHref(pairing: TypographyPairing | undefined): string | null {
+  if (!pairing?.googleImport) return null;
+  return `https://fonts.googleapis.com/css2?family=${pairing.googleImport}&display=swap`;
+}
+
+export function isTypographyPairing(value: unknown): value is TypographyPairing {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const record = value as Record<string, unknown>;
+  const stringFields = ["id", "name", "category", "displayFont", "headingFont", "bodyFont", "navFont", "buttonFont", "letterSpacing", "googleImport"];
+  return stringFields.every((field) => typeof record[field] === "string" && String(record[field]).length <= 180) &&
+    typeof record.scale === "number" &&
+    typeof record.headingWeight === "number" &&
+    typeof record.bodyWeight === "number" &&
+    typeof record.lineHeight === "number";
 }

@@ -14,6 +14,7 @@ export type Selection = {
   path: string;            // e.g. "hero.title"
   type: "text" | "image" | "link" | "section" | "item" | "icon";
   hrefPath?: string;
+  targetPath?: string;
   altPath?: string;
   resetValue?: string;
   sectionId?: string;

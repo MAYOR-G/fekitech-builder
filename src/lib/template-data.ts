@@ -1,3 +1,5 @@
+import { isTypographyPairing } from "@/lib/typography";
+
 export type TemplateValue = string | number | boolean | null | TemplateData | TemplateValue[];
 export type TemplateData = { [key: string]: TemplateValue };
 
@@ -218,7 +220,7 @@ function isCompatibleEditorMetadata(value: TemplateValue): boolean {
       return Object.values(entry).every((record) => {
         if (record === null || typeof record !== "object" || Array.isArray(record)) return false;
         return Object.entries(record).every(([field, fieldValue]) =>
-          ["text", "href", "src", "alt", "name"].includes(field) &&
+          ["text", "href", "target", "src", "alt", "name"].includes(field) &&
           typeof fieldValue === "string" &&
           fieldValue.length <= 20_000,
         );
@@ -248,6 +250,7 @@ function isCompatibleEditorMetadata(value: TemplateValue): boolean {
 
 export function isCompatibleTemplateData(defaults: TemplateData, candidate: TemplateData): boolean {
   return Object.entries(candidate).every(([key, value]) => {
+    if (key === "typography") return value === null || isTypographyPairing(value);
     if (key === "colors") {
       if (value === null || typeof value !== "object" || Array.isArray(value)) return false;
       return Object.entries(value).every(

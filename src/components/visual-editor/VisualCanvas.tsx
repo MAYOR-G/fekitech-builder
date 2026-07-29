@@ -4,11 +4,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getTemplate } from "@/registry";
 import { isEditorObject, useVisualEditorStore, type EditorObject } from "@/store/visualEditorStore";
 import { bindTemplateDom, stableHash } from "@/lib/editor-dom";
+import { templateRuntimeCss, templateVariables, useTypographyFontHref } from "@/lib/template-runtime-style";
 import FloatingTextToolbar from "./FloatingTextToolbar";
 import FloatingImageToolbar from "./FloatingImageToolbar";
 import FloatingIconToolbar from "./FloatingIconToolbar";
-import type { CSSProperties } from "react";
-import type { TypographyPairing } from "@/lib/typography";
 
 /* ── Viewport width map ── */
 const VIEWPORT_WIDTHS = { desktop: "100%", tablet: "768px", mobile: "375px" } as const;
@@ -26,19 +25,6 @@ type StyleMetadata = {
   objectFit?: string;
   objectPosition?: string;
 };
-
-function isHex(value: unknown): value is string {
-  return typeof value === "string" && /^#[0-9a-f]{6}$/i.test(value);
-}
-
-function colorValueFrom(colors: unknown, keys: string[], fallback: string) {
-  if (!isEditorObject(colors)) return fallback;
-  for (const key of keys) {
-    const value = colors[key];
-    if (isHex(value)) return value;
-  }
-  return fallback;
-}
 
 function getStyleMetadata(data: EditorObject, path: string): StyleMetadata {
   const styles = data._editor;
@@ -64,64 +50,8 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
   const template = getTemplate(templateId);
   const TemplateComponent = template?.component;
 
-  /* ── Color variable injection ── */
-  const colors = data.colors;
-
-  /* ── Typography injection ── */
-  const typography = data.typography as TypographyPairing | undefined;
-
-  useEffect(() => {
-    if (!typography) return;
-    const linkId = "ve-google-font";
-    let link = document.getElementById(linkId) as HTMLLinkElement | null;
-    if (!link) {
-      link = document.createElement("link");
-      link.id = linkId;
-      link.rel = "stylesheet";
-      document.head.appendChild(link);
-    }
-    link.href = `https://fonts.googleapis.com/css2?family=${typography.googleImport}&display=swap`;
-  }, [typography]);
-
-  const templateStyles: CSSProperties & Record<`--${string}`, string> = {
-    backgroundColor: colorValueFrom(colors, ["pageBackground", "background"], "#ffffff"),
-    color: colorValueFrom(colors, ["bodyText", "text", "textPrimary"], "#111827"),
-    "--template-primary": colorValueFrom(colors, ["primary", "accent"], "#3146d3"),
-    "--template-secondary": colorValueFrom(colors, ["secondary", "accentSecondary", "sectionAlt"], "#eef2ff"),
-    "--template-accent": colorValueFrom(colors, ["accent", "primary"], "#3146d3"),
-    "--template-background": colorValueFrom(colors, ["pageBackground", "background"], "#ffffff"),
-    "--template-surface": colorValueFrom(colors, ["surface", "sectionAlt"], "#f8fafc"),
-    "--template-card": colorValueFrom(colors, ["card", "cardBackground"], "#ffffff"),
-    "--template-heading": colorValueFrom(colors, ["headingText", "textPrimary", "text"], "#111827"),
-    "--template-text": colorValueFrom(colors, ["bodyText", "text", "textPrimary"], "#111827"),
-    "--template-muted": colorValueFrom(colors, ["mutedText", "textSecondary"], "#64748b"),
-    "--template-button-bg": colorValueFrom(colors, ["buttonBg", "accent", "primary"], "#3146d3"),
-    "--template-button-text": colorValueFrom(colors, ["buttonText"], "#ffffff"),
-    "--template-link": colorValueFrom(colors, ["link", "accent", "primary"], "#3146d3"),
-    "--template-border": colorValueFrom(colors, ["border"], "#e5e7eb"),
-    "--template-icon": colorValueFrom(colors, ["icon", "accent", "primary"], "#3146d3"),
-    "--template-footer-bg": colorValueFrom(colors, ["footerBg", "footerBackground", "textPrimary"], "#111827"),
-    "--template-footer-text": colorValueFrom(colors, ["footerText", "buttonText"], "#ffffff"),
-    "--color-primary": colorValueFrom(colors, ["primary", "accent"], "#3146d3"),
-    "--color-secondary": colorValueFrom(colors, ["secondary", "accentSecondary", "sectionAlt"], "#eef2ff"),
-    "--color-accent": colorValueFrom(colors, ["accent", "primary"], "#3146d3"),
-    "--color-bg": colorValueFrom(colors, ["pageBackground", "background"], "#ffffff"),
-    "--color-background": colorValueFrom(colors, ["pageBackground", "background"], "#ffffff"),
-    "--color-surface": colorValueFrom(colors, ["surface", "sectionAlt"], "#f8fafc"),
-    "--color-card": colorValueFrom(colors, ["card", "cardBackground"], "#ffffff"),
-    "--color-text": colorValueFrom(colors, ["bodyText", "text", "textPrimary"], "#111827"),
-    "--color-muted": colorValueFrom(colors, ["mutedText", "textSecondary"], "#64748b"),
-    "--color-border": colorValueFrom(colors, ["border"], "#e5e7eb"),
-    ...(typography
-      ? {
-          "--font-display": `"${typography.displayFont}", sans-serif`,
-          "--font-heading": `"${typography.headingFont}", sans-serif`,
-          "--font-body": `"${typography.bodyFont}", sans-serif`,
-          "--font-nav": `"${typography.navFont}", sans-serif`,
-          "--font-button": `"${typography.buttonFont}", sans-serif`,
-        }
-      : {}),
-  };
+  const fontHref = useTypographyFontHref(data);
+  const templateStyles = templateVariables(data);
 
   useEffect(() => {
     const root = canvasRef.current?.querySelector<HTMLElement>(".ve-canvas__content");
@@ -144,6 +74,7 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
   /* ── Click handler: detect editable elements ── */
   const handleCanvasClick = useCallback((e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
+    if (target.closest("[data-editor-ui]")) return;
 
     // Walk up to find an element with data-editable-path
     let el: HTMLElement | null = target;
@@ -168,6 +99,7 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
       type,
       rect,
       hrefPath: el.dataset.editableHrefPath,
+      targetPath: el.dataset.editableTargetPath,
       altPath: el.dataset.editableAltPath,
       resetValue: el.dataset.editableResetValue ?? el.dataset.editableOriginal,
       sectionId: type === "section" ? path : undefined,
@@ -199,7 +131,6 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
         const newText = (el!.textContent?.trim() ?? "").slice(0, 600);
         el!.contentEditable = "false";
         if (newText) updatePath(path, newText, `Edit text: ${path}`);
-        setEditingPath(null);
         el!.removeEventListener("blur", handleBlur);
       };
       el.addEventListener("blur", handleBlur);
@@ -271,6 +202,14 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
           position={toolbarPos}
           style={selectedStyle}
           hrefPath={selection?.hrefPath}
+          targetPath={selection?.targetPath}
+          onTextStyle={(value) => {
+            if (value === "heading1") updateSelectedStyle({ fontSize: "56px", fontWeight: "800", lineHeight: "1.05" });
+            if (value === "heading2") updateSelectedStyle({ fontSize: "40px", fontWeight: "750", lineHeight: "1.12" });
+            if (value === "heading3") updateSelectedStyle({ fontSize: "28px", fontWeight: "700", lineHeight: "1.2" });
+            if (value === "paragraph") updateSelectedStyle({ fontSize: "16px", fontWeight: "400", lineHeight: "1.65" });
+          }}
+          onFontFamily={(value) => updateSelectedStyle({ fontFamily: value })}
           onFontSize={(value) => updateSelectedStyle({ fontSize: value })}
           onBold={() => updateSelectedStyle({ fontWeight: selectedStyle.fontWeight === "700" ? "400" : "700" })}
           onItalic={() => updateSelectedStyle({ fontStyle: selectedStyle.fontStyle === "italic" ? "normal" : "italic" })}
@@ -282,6 +221,7 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
           onLineHeight={(value) => updateSelectedStyle({ lineHeight: value })}
           onLetterSpacing={(value) => updateSelectedStyle({ letterSpacing: value })}
           onLink={(href) => selection?.hrefPath && updatePath(selection.hrefPath, href, `Edit link: ${selection.hrefPath}`)}
+          onTarget={(target) => selection?.targetPath && updatePath(selection.targetPath, target, `Edit link target: ${selection.targetPath}`)}
           onDuplicate={isRepeatedElement && selection?.path ? () => duplicateNearestArrayItem(selection.path) : undefined}
           onDelete={selection?.path ? () => {
             if (isRepeatedElement) deleteNearestArrayItem(selection.path);
@@ -305,13 +245,17 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
           style={selectedStyle}
           hrefPath={selection?.hrefPath}
           onStyle={(style) => updateSelectedStyle(style)}
+          onIcon={(name) => selection?.path && updatePath(selection.path, name, `Replace icon: ${selection.path}`)}
           onLink={(href) => selection?.hrefPath && updatePath(selection.hrefPath, href, `Edit icon link: ${selection.hrefPath}`)}
+          onDuplicate={isRepeatedElement && selection?.path ? () => duplicateNearestArrayItem(selection.path) : undefined}
           onReset={selection?.path ? () => updatePath(`_editor.styles.${stableHash(selection.path)}`, {}, `Reset icon: ${selection.path}`) : undefined}
           onDelete={selection?.path ? () => updatePath(`_editor.styles.${stableHash(selection.path)}`, { ...selectedStyle, fontSize: "0px", width: "0px", height: "0px" }, `Hide icon: ${selection.path}`) : undefined}
         />
 
         {/* Template content */}
-        <div className="ve-canvas__content" style={templateStyles}>
+        <div className="ve-canvas__content" data-template-runtime={templateId} style={templateStyles}>
+          {fontHref && <link rel="stylesheet" href={fontHref} />}
+          <style dangerouslySetInnerHTML={{ __html: templateRuntimeCss(`[data-template-runtime="${templateId}"]`) }} />
           <TemplateComponent data={data} />
         </div>
       </div>

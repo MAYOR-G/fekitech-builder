@@ -1,4 +1,5 @@
 import { isEditorObject, type EditorObject, type EditorValue } from "@/store/visualEditorStore";
+import { iconSvg } from "@/lib/icon-library";
 
 export type ElementKind = "text" | "image" | "link" | "icon" | "section";
 
@@ -6,6 +7,7 @@ export type EditableElementInfo = {
   path: string;
   type: ElementKind;
   hrefPath?: string;
+  targetPath?: string;
   altPath?: string;
   resetValue?: string;
 };
@@ -143,10 +145,28 @@ export function applyElementStyle(element: HTMLElement, style: StyleMetadata) {
   if (style.color) element.style.color = style.color;
   if (style.width) element.style.width = style.width;
   if (style.height) element.style.height = style.height;
+  if (style.textAlign) element.style.textAlign = style.textAlign;
   if (element instanceof HTMLImageElement) {
     if (style.objectFit) element.style.objectFit = style.objectFit;
     if (style.objectPosition) element.style.objectPosition = style.objectPosition;
   }
+}
+
+function applyIconName(element: HTMLElement, name: string) {
+  const svg = iconSvg(name);
+  if (!svg) return;
+  if (element instanceof SVGElement) {
+    element.innerHTML = svg.replace(/^<svg[^>]*>|<\/svg>$/g, "");
+    element.setAttribute("viewBox", "0 0 24 24");
+    element.setAttribute("fill", "none");
+    element.setAttribute("stroke", "currentColor");
+    element.setAttribute("stroke-width", "2");
+    element.setAttribute("stroke-linecap", "round");
+    element.setAttribute("stroke-linejoin", "round");
+  } else {
+    element.innerHTML = svg;
+  }
+  element.dataset.iconName = name;
 }
 
 function shouldBindTextElement(element: HTMLElement): boolean {
@@ -163,6 +183,7 @@ function setEditableDataset(element: HTMLElement, info: EditableElementInfo, edi
   element.dataset.editablePath = info.path;
   element.dataset.editableType = info.type;
   if (info.hrefPath) element.dataset.editableHrefPath = info.hrefPath;
+  if (info.targetPath) element.dataset.editableTargetPath = info.targetPath;
   if (info.altPath) element.dataset.editableAltPath = info.altPath;
   if (info.resetValue) element.dataset.editableResetValue = info.resetValue;
 }
@@ -209,10 +230,22 @@ export function bindTemplateDom(root: HTMLElement, data: EditorObject, templateI
       hrefPath = anchor.dataset.editableHrefPath || takeOccurrence(urlMap, href) || hardcodedLinkPath(templateId, href, linkIndex);
       const hrefOverride = getAtPath(data, hrefPath);
       if (typeof hrefOverride === "string") anchor.setAttribute("href", hrefOverride || "#");
+      const targetPath = hrefPath.replace(/\.href$/, ".target");
+      const targetOverride = getAtPath(data, targetPath);
+      if (targetOverride === "_blank") {
+        anchor.setAttribute("target", "_blank");
+        anchor.setAttribute("rel", "noopener noreferrer");
+      } else if (typeof targetOverride === "string") {
+        anchor.removeAttribute("target");
+        anchor.removeAttribute("rel");
+      }
+      applyElementStyle(element, getStyleMetadata(data, path));
+      setEditableDataset(element, { path, type: "link", hrefPath, targetPath, resetValue: originalText }, editable);
+      return;
     }
 
     applyElementStyle(element, getStyleMetadata(data, path));
-    setEditableDataset(element, { path, type: anchor ? "link" : "text", hrefPath, resetValue: originalText }, editable);
+    setEditableDataset(element, { path, type: "text", resetValue: originalText }, editable);
   });
 
   root.querySelectorAll<HTMLImageElement>("img").forEach((image) => {
@@ -236,6 +269,8 @@ export function bindTemplateDom(root: HTMLElement, data: EditorObject, templateI
     if (icon.dataset.editablePath || icon.closest("[data-editable-path]")) return;
     const label = icon.getAttribute("aria-label") || icon.getAttribute("class") || icon.tagName;
     const path = `_editor.icons.${stableHash(`${templateId}:icon:${label}:${index}`)}.name`;
+    const iconOverride = getAtPath(data, path);
+    if (typeof iconOverride === "string") applyIconName(icon, iconOverride);
     applyElementStyle(icon, getStyleMetadata(data, path));
     setEditableDataset(icon, { path, type: "icon", resetValue: label }, editable);
   });

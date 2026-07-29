@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { AlignCenter, AlignLeft, AlignRight, Bold, Copy, Italic, Link, RotateCcw, Trash2, Type, Underline } from "lucide-react";
+import { getTypographyLibrary } from "@/lib/typography";
 
 type StyleMetadata = {
   fontSize?: string;
@@ -11,6 +13,7 @@ type StyleMetadata = {
   lineHeight?: string;
   letterSpacing?: string;
   color?: string;
+  fontFamily?: string;
 };
 
 type Props = {
@@ -18,7 +21,10 @@ type Props = {
   visible: boolean;
   style?: StyleMetadata;
   hrefPath?: string;
+  targetPath?: string;
   onFontSize?: (value: string) => void;
+  onFontFamily?: (value: string) => void;
+  onTextStyle?: (value: "paragraph" | "heading1" | "heading2" | "heading3") => void;
   onBold?: () => void;
   onItalic?: () => void;
   onUnderline?: () => void;
@@ -29,6 +35,7 @@ type Props = {
   onLineHeight?: (value: string) => void;
   onLetterSpacing?: (value: string) => void;
   onLink?: (href: string) => void;
+  onTarget?: (target: string) => void;
   onDuplicate?: () => void;
   onDelete?: () => void;
   onReset?: () => void;
@@ -38,7 +45,10 @@ export default function FloatingTextToolbar({
   position,
   style,
   hrefPath,
+  targetPath,
   onFontSize,
+  onFontFamily,
+  onTextStyle,
   onBold,
   onItalic,
   onUnderline,
@@ -49,11 +59,14 @@ export default function FloatingTextToolbar({
   onLineHeight,
   onLetterSpacing,
   onLink,
+  onTarget,
   onDuplicate,
   onDelete,
   onReset,
   visible,
 }: Props) {
+  const [linkOpen, setLinkOpen] = useState(false);
+  const [linkValue, setLinkValue] = useState("");
   if (!visible) return null;
 
   const fontSize = style?.fontSize?.replace("px", "") ?? "";
@@ -63,10 +76,50 @@ export default function FloatingTextToolbar({
   return (
     <div
       className="ve-floating-toolbar"
+      data-editor-ui
       style={{ top: position.top, left: position.left }}
       role="toolbar"
       aria-label="Text formatting"
+      onMouseDown={(event) => {
+        event.preventDefault();
+        event.stopPropagation();
+      }}
+      onClick={(event) => event.stopPropagation()}
     >
+      {onTextStyle && (
+        <select
+          className="ve-floating-toolbar__select"
+          aria-label="Text style"
+          value=""
+          onChange={(event) => {
+            const value = event.target.value as "paragraph" | "heading1" | "heading2" | "heading3";
+            if (value) onTextStyle(value);
+          }}
+        >
+          <option value="">Style</option>
+          <option value="heading1">Heading 1</option>
+          <option value="heading2">Heading 2</option>
+          <option value="heading3">Heading 3</option>
+          <option value="paragraph">Paragraph</option>
+        </select>
+      )}
+
+      {onFontFamily && (
+        <select
+          className="ve-floating-toolbar__select"
+          aria-label="Font family"
+          value={style?.fontFamily ?? ""}
+          onChange={(event) => onFontFamily(event.target.value)}
+        >
+          <option value="">Font</option>
+          {getTypographyLibrary().map((pairing) => (
+            <option key={pairing.id} value={`"${pairing.headingFont}", sans-serif`}>
+              {pairing.headingFont}
+            </option>
+          ))}
+        </select>
+      )}
+
       {onFontSize && (
         <label className="ve-floating-toolbar__field" title="Font size">
           <Type size={13} />
@@ -165,16 +218,42 @@ export default function FloatingTextToolbar({
           <div className="ve-floating-toolbar__divider" />
           <button
             type="button"
-            onClick={() => {
-              const href = window.prompt("Link destination");
-              if (href) onLink(href);
-            }}
+            onClick={() => setLinkOpen((open) => !open)}
             className="ve-floating-toolbar__btn"
             aria-label="Edit link"
             title="Edit link"
           >
             <Link size={14} />
           </button>
+          {linkOpen && (
+            <div className="ve-link-popover" role="dialog" aria-label="Edit link">
+              <label className="ve-field-label">
+                Destination
+                <input
+                  value={linkValue}
+                  placeholder="https://example.com, /about, #contact, mailto:hello@example.com, tel:+1234567890"
+                  onChange={(event) => setLinkValue(event.target.value.slice(0, 500))}
+                />
+              </label>
+              <div className="ve-link-popover__presets">
+                <button type="button" onClick={() => setLinkValue("/")}>Home</button>
+                <button type="button" onClick={() => setLinkValue("#contact")}>Section</button>
+                <button type="button" onClick={() => setLinkValue("mailto:")}>Email</button>
+                <button type="button" onClick={() => setLinkValue("tel:")}>Phone</button>
+              </div>
+              {targetPath && onTarget && (
+                <label className="ve-check-row">
+                  <input type="checkbox" onChange={(event) => onTarget(event.target.checked ? "_blank" : "")} />
+                  Open in new tab
+                </label>
+              )}
+              <div className="ve-link-popover__actions">
+                <button type="button" onClick={() => { onLink(linkValue.trim() || "#"); setLinkOpen(false); }}>Save</button>
+                <button type="button" onClick={() => { onLink("#"); setLinkValue(""); }}>Remove link</button>
+                <button type="button" onClick={() => setLinkOpen(false)}>Cancel</button>
+              </div>
+            </div>
+          )}
         </>
       )}
 
