@@ -8,6 +8,7 @@ import { canPlanUseTemplate } from "@/lib/plans";
 import { projectIdSchema } from "@/lib/project-validation";
 import { canPublishProject } from "@/lib/subscriptions";
 import { slugifySubdomain } from "@/lib/subdomains";
+import { hasTemplateData, validateEditableLinks } from "@/lib/link-validation";
 
 type RouteContext = { params: Promise<{ id: string }> };
 
@@ -38,6 +39,11 @@ export async function POST(request: NextRequest, context: RouteContext) {
     .single();
 
   if (fetchError || !existing) return NextResponse.json({ error: "Project not found." }, { status: 404 });
+
+  if (hasTemplateData(existing.editable_data)) {
+    const linkValidation = validateEditableLinks(existing.editable_data);
+    if (!linkValidation.valid) return NextResponse.json({ error: linkValidation.error }, { status: 400 });
+  }
 
   const access = await canPublishProject(sessionOrResponse.user.id, existing.is_published);
   if (!access.allowed) return NextResponse.json({ error: access.reason }, { status: 403 });

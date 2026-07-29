@@ -278,6 +278,45 @@
 
 .ve-floating-toolbar__field--compact input { width: 24px; }
 
+.ve-floating-toolbar__color {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.04);
+  cursor: pointer;
+}
+
+.ve-floating-toolbar__color input {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ve-floating-toolbar__select {
+  height: 30px;
+  max-width: 96px;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  outline: 0;
+  padding: 0 6px;
+}
+
+.ve-floating-toolbar__select option {
+  background: #1A1A24;
+  color: #FFFFFF;
+}
+
 .ve-floating-toolbar__divider {
   width: 1px;
   height: 18px;
@@ -381,6 +420,53 @@
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.06);
   background: rgba(255,255,255,0.03);
+}
+
+.ve-page-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+}
+
+.ve-field-label {
+  display: grid;
+  gap: 5px;
+  color: #8B8B9E;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ve-field-label input,
+.ve-field-label textarea {
+  min-height: 34px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 7px;
+  background: rgba(0,0,0,0.18);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 7px 9px;
+  outline: 0;
+  text-transform: none;
+}
+
+.ve-field-label textarea {
+  min-height: 68px;
+  resize: vertical;
+}
+
+.ve-check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #B0B0C0;
+  font-size: 12px;
 }
 
 /* ── Palette cards ── */

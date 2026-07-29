@@ -8,13 +8,14 @@ export type EditorValue = string | number | boolean | null | EditorObject | Edit
 export type EditorObject = { [key: string]: EditorValue };
 export type SaveStatus = "idle" | "dirty" | "saving" | "saved" | "error";
 export type Viewport = "desktop" | "tablet" | "mobile";
-export type PanelId = "design" | "blocks" | "history" | "images" | null;
+export type PanelId = "design" | "blocks" | "pages" | "history" | "images" | null;
 
 export type Selection = {
   path: string;            // e.g. "hero.title"
-  type: "text" | "image" | "link" | "section" | "item";
+  type: "text" | "image" | "link" | "section" | "item" | "icon";
   hrefPath?: string;
   altPath?: string;
+  resetValue?: string;
   sectionId?: string;
   rect?: DOMRect;
 } | null;
@@ -68,6 +69,8 @@ type VisualEditorState = {
   // Data mutations
   updatePath: (path: string, value: EditorValue, label?: string) => void;
   updateDeep: (pathSegments: Array<string | number>, value: EditorValue, label?: string) => void;
+  duplicateNearestArrayItem: (path: string) => void;
+  deleteNearestArrayItem: (path: string) => void;
   replaceData: (data: EditorObject, label?: string) => void;
 
   // History
@@ -133,6 +136,16 @@ function getAtPath(root: EditorObject, segments: Array<string | number>): Editor
     current = current[seg];
   }
   return current as EditorValue;
+}
+
+function nearestArrayItemPath(path: string): { arrayPath: Array<string | number>; index: number } | null {
+  const segments = parsePath(path);
+  for (let i = segments.length - 1; i >= 0; i -= 1) {
+    if (typeof segments[i] === "number") {
+      return { arrayPath: segments.slice(0, i), index: segments[i] as number };
+    }
+  }
+  return null;
 }
 
 /* ------------------------------------------------------------------ */
@@ -210,6 +223,40 @@ export const useVisualEditorStore = create<VisualEditorState>((set, get) => ({
     const newPast = [...past, entry].slice(-MAX_HISTORY);
 
     set({ data: newData, past: newPast, future: [] });
+    get().queueAutosave();
+  },
+
+  duplicateNearestArrayItem: (path) => {
+    const target = nearestArrayItemPath(path);
+    if (!target) return;
+    const { data, past } = get();
+    const array = getAtPath(data, target.arrayPath);
+    if (!Array.isArray(array) || target.index < 0 || target.index >= array.length) return;
+    const item = array[target.index];
+    const clone = typeof structuredClone === "function" ? structuredClone(item) : JSON.parse(JSON.stringify(item));
+    const next = [...array.slice(0, target.index + 1), clone, ...array.slice(target.index + 1)] as EditorValue[];
+    const newData = setAtPath(data, target.arrayPath, next);
+    set({
+      data: newData,
+      past: [...past, { data, label: `Duplicate ${path}`, timestamp: Date.now() }].slice(-MAX_HISTORY),
+      future: [],
+    });
+    get().queueAutosave();
+  },
+
+  deleteNearestArrayItem: (path) => {
+    const target = nearestArrayItemPath(path);
+    if (!target) return;
+    const { data, past } = get();
+    const array = getAtPath(data, target.arrayPath);
+    if (!Array.isArray(array) || array.length <= 1 || target.index < 0 || target.index >= array.length) return;
+    const next = array.filter((_, index) => index !== target.index) as EditorValue[];
+    const newData = setAtPath(data, target.arrayPath, next);
+    set({
+      data: newData,
+      past: [...past, { data, label: `Delete ${path}`, timestamp: Date.now() }].slice(-MAX_HISTORY),
+      future: [],
+    });
     get().queueAutosave();
   },
 

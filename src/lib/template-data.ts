@@ -164,12 +164,24 @@ const EDITOR_COLOR_KEYS = new Set([
   "accentSecondary",
   "buttonBg",
   "buttonText",
+  "secondaryButtonBg",
+  "secondaryButtonBorder",
+  "secondaryButtonText",
   "link",
   "border",
   "icon",
+  "formBackground",
+  "formText",
+  "formPlaceholder",
+  "formBorder",
+  "headerBg",
+  "headerText",
   "footerBg",
   "footerText",
   "footerMuted",
+  "success",
+  "warning",
+  "error",
 ]);
 
 function isCompatibleEditorMetadata(value: TemplateValue): boolean {
@@ -181,10 +193,49 @@ function isCompatibleEditorMetadata(value: TemplateValue): boolean {
       return Object.values(entry).every((style) => {
         if (style === null || typeof style !== "object" || Array.isArray(style)) return false;
         return Object.entries(style).every(([styleKey, styleValue]) =>
-          ["fontSize", "fontWeight", "fontStyle", "textAlign", "letterSpacing"].includes(styleKey) &&
+          [
+            "fontFamily",
+            "fontSize",
+            "fontWeight",
+            "fontStyle",
+            "textDecoration",
+            "textAlign",
+            "lineHeight",
+            "letterSpacing",
+            "color",
+            "objectFit",
+            "objectPosition",
+            "width",
+            "height",
+          ].includes(styleKey) &&
           typeof styleValue === "string" &&
-          styleValue.length <= 32,
+          styleValue.length <= 80,
         );
+      });
+    }
+    if (["content", "links", "images", "icons"].includes(key)) {
+      if (entry === null || typeof entry !== "object" || Array.isArray(entry)) return false;
+      return Object.values(entry).every((record) => {
+        if (record === null || typeof record !== "object" || Array.isArray(record)) return false;
+        return Object.entries(record).every(([field, fieldValue]) =>
+          ["text", "href", "src", "alt", "name"].includes(field) &&
+          typeof fieldValue === "string" &&
+          fieldValue.length <= 20_000,
+        );
+      });
+    }
+    if (key === "pages") {
+      if (entry === null || typeof entry !== "object" || Array.isArray(entry)) return false;
+      const pages = entry as TemplateData;
+      if (!Array.isArray(pages.items)) return false;
+      return pages.items.length <= 50 && pages.items.every((page) => {
+        if (page === null || typeof page !== "object" || Array.isArray(page)) return false;
+        return Object.entries(page).every(([field, fieldValue]) => {
+          if (["hidden", "home"].includes(field)) return typeof fieldValue === "boolean";
+          return ["id", "title", "navLabel", "slug", "seoTitle", "seoDescription"].includes(field) &&
+            typeof fieldValue === "string" &&
+            fieldValue.length <= 200;
+        });
       });
     }
     if (key === "hiddenSections") {

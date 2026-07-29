@@ -5,6 +5,7 @@ import { Check, ChevronRight, Palette, Type, X } from "lucide-react";
 import { getPalettesByGroup, paletteToEditorColors, type Palette as PaletteType } from "@/lib/palettes";
 import { getTypographyByCategory, type TypographyPairing } from "@/lib/typography";
 import { useVisualEditorStore } from "@/store/visualEditorStore";
+import { getTemplate } from "@/registry";
 
 type Tab = "colors" | "fonts";
 
@@ -53,6 +54,7 @@ export default function DesignPanel({ onClose }: { onClose: () => void }) {
 function PaletteSelector() {
   const updatePath = useVisualEditorStore((s) => s.updatePath);
   const data = useVisualEditorStore((s) => s.data);
+  const templateId = useVisualEditorStore((s) => s.templateId);
   const currentPrimary = (data.colors && typeof data.colors === "object" && !Array.isArray(data.colors))
     ? (data.colors as Record<string, unknown>).primary
     : undefined;
@@ -64,11 +66,31 @@ function PaletteSelector() {
     updatePath("colors", colors, `Apply palette: ${palette.name}`);
   };
 
+  const restoreOriginal = () => {
+    const originalColors = templateId ? getTemplate(templateId)?.defaultData.colors : undefined;
+    if (originalColors && typeof originalColors === "object" && !Array.isArray(originalColors)) {
+      updatePath("colors", originalColors, "Restore original palette");
+    }
+  };
+
   return (
     <div className="space-y-5">
       <p className="text-xs text-[#8B8B9E]">
         Choose a palette to instantly update your entire site&apos;s color scheme.
       </p>
+      <div>
+        <h3 className="ve-panel__group-label">Original</h3>
+        <button type="button" onClick={restoreOriginal} className="ve-palette-card" title="Restore original template colours">
+          <div className="ve-palette-card__swatches">
+            <span style={{ background: "#FFFFFF" }} />
+            <span style={{ background: "#111827" }} />
+            <span style={{ background: "#6C5CE7" }} />
+            <span style={{ background: "#E5E7EB" }} />
+            <span style={{ background: "#64748B" }} />
+          </div>
+          <span className="ve-palette-card__name">Original template</span>
+        </button>
+      </div>
       {Array.from(groups.entries()).map(([group, palettes]) => (
         <div key={group}>
           <h3 className="ve-panel__group-label">{group}</h3>

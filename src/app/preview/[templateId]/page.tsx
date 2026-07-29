@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getTemplate } from "@/registry";
 import { PreviewBar } from "./PreviewClient";
+import { TemplateRuntime } from "@/components/templates/TemplateRuntime";
 
 export default async function TemplatePreviewPage({
   params,
@@ -20,7 +21,11 @@ export default async function TemplatePreviewPage({
   const defaultData = template.defaultData;
 
   if (frame === "1") {
-    return <TemplateComponent data={defaultData} />;
+    return (
+      <TemplateRuntime data={defaultData} templateId={templateId}>
+        <TemplateComponent data={defaultData} />
+      </TemplateRuntime>
+    );
   }
 
   return (

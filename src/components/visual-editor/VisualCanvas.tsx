@@ -2,28 +2,30 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getTemplate } from "@/registry";
-import { isEditorObject, useVisualEditorStore, type EditorObject, type EditorValue } from "@/store/visualEditorStore";
+import { isEditorObject, useVisualEditorStore, type EditorObject } from "@/store/visualEditorStore";
+import { bindTemplateDom, stableHash } from "@/lib/editor-dom";
 import FloatingTextToolbar from "./FloatingTextToolbar";
 import FloatingImageToolbar from "./FloatingImageToolbar";
+import FloatingIconToolbar from "./FloatingIconToolbar";
 import type { CSSProperties } from "react";
 import type { TypographyPairing } from "@/lib/typography";
 
 /* ── Viewport width map ── */
 const VIEWPORT_WIDTHS = { desktop: "100%", tablet: "768px", mobile: "375px" } as const;
-const TEXT_SELECTOR = "h1,h2,h3,h4,h5,h6,p,span,strong,small,li,blockquote,figcaption,button,a";
-const SECTION_SELECTOR = "section,header,footer,main,[role='region']";
 
 type StyleMetadata = {
+  fontFamily?: string;
   fontSize?: string;
   fontWeight?: string;
   fontStyle?: string;
+  textDecoration?: string;
   textAlign?: string;
+  lineHeight?: string;
   letterSpacing?: string;
+  color?: string;
+  objectFit?: string;
+  objectPosition?: string;
 };
-
-function normalizeText(value: string): string {
-  return value.replace(/\s+/g, " ").trim();
-}
 
 function isHex(value: unknown): value is string {
   return typeof value === "string" && /^#[0-9a-f]{6}$/i.test(value);
@@ -38,127 +40,11 @@ function colorValueFrom(colors: unknown, keys: string[], fallback: string) {
   return fallback;
 }
 
-function flattenEditableStrings(value: EditorValue, prefix = "", acc: Array<{ path: string; value: string }> = []) {
-  if (typeof value === "string") {
-    if (prefix && !prefix.startsWith("_editor.") && !prefix.startsWith("colors.") && !prefix.startsWith("typography.")) {
-      acc.push({ path: prefix, value });
-    }
-    return acc;
-  }
-  if (Array.isArray(value)) {
-    value.forEach((entry, index) => flattenEditableStrings(entry, prefix ? `${prefix}.${index}` : String(index), acc));
-    return acc;
-  }
-  if (isEditorObject(value)) {
-    Object.entries(value).forEach(([key, entry]) => flattenEditableStrings(entry, prefix ? `${prefix}.${key}` : key, acc));
-  }
-  return acc;
-}
-
-function preferTextPath(path: string): boolean {
-  return !/(href|url|link|image|logo|photo|src|alt|icon)$/i.test(path);
-}
-
-function preferImagePath(path: string): boolean {
-  return /(image|logo|photo|src)$/i.test(path);
-}
-
-function preferHrefPath(path: string): boolean {
-  return /(href|url|link)$/i.test(path);
-}
-
-function normalizeUrl(value: string): string {
-  try {
-    const url = new URL(value, window.location.origin);
-    const encodedImageUrl = url.searchParams.get("url");
-    if (encodedImageUrl) return decodeURIComponent(encodedImageUrl);
-    return url.pathname + url.search + url.hash;
-  } catch {
-    return value;
-  }
-}
-
-function buildUniqueMap(entries: Array<{ path: string; value: string }>, predicate: (path: string) => boolean) {
-  const map = new Map<string, string | null>();
-  for (const entry of entries) {
-    if (!predicate(entry.path)) continue;
-    const key = normalizeText(entry.value);
-    if (!key) continue;
-    map.set(key, map.has(key) ? null : entry.path);
-  }
-  return map;
-}
-
 function getStyleMetadata(data: EditorObject, path: string): StyleMetadata {
   const styles = data._editor;
   if (!isEditorObject(styles) || !isEditorObject(styles.styles)) return {};
-  const value = styles.styles[path];
+  const value = styles.styles[stableHash(path)];
   return isEditorObject(value) ? value as StyleMetadata : {};
-}
-
-function applyElementStyle(element: HTMLElement, style: StyleMetadata) {
-  if (style.fontSize) element.style.fontSize = style.fontSize;
-  if (style.fontWeight) element.style.fontWeight = style.fontWeight;
-  if (style.fontStyle) element.style.fontStyle = style.fontStyle;
-  if (style.textAlign) element.style.textAlign = style.textAlign;
-  if (style.letterSpacing) element.style.letterSpacing = style.letterSpacing;
-}
-
-function annotateCanvas(root: HTMLElement, data: EditorObject) {
-  const entries = flattenEditableStrings(data);
-  const textMap = buildUniqueMap(entries, preferTextPath);
-  const urlMap = buildUniqueMap(entries, (path) => preferImagePath(path) || preferHrefPath(path));
-  const altMap = new Map(entries.filter((entry) => /alt$/i.test(entry.path)).map((entry) => [normalizeText(entry.value), entry.path]));
-
-  root.querySelectorAll<HTMLElement>("[data-editable-path]").forEach((element) => {
-    applyElementStyle(element, getStyleMetadata(data, element.dataset.editablePath ?? ""));
-  });
-
-  root.querySelectorAll<HTMLElement>(TEXT_SELECTOR).forEach((element) => {
-    if (!element.dataset.editablePath) {
-      const text = normalizeText(element.innerText || element.textContent || "");
-      const path = textMap.get(text);
-      if (path) {
-        element.dataset.editablePath = path;
-        element.dataset.editableType = element.tagName === "A" ? "link" : "text";
-      }
-    }
-
-    const anchor = element instanceof HTMLAnchorElement ? element : element.closest("a");
-    if (anchor?.getAttribute("href")) {
-      const hrefPath = urlMap.get(normalizeUrl(anchor.getAttribute("href") ?? "")) ?? urlMap.get(anchor.getAttribute("href") ?? "");
-      if (hrefPath) element.dataset.editableHrefPath = hrefPath;
-    }
-
-    if (element.dataset.editablePath) {
-      applyElementStyle(element, getStyleMetadata(data, element.dataset.editablePath));
-    }
-  });
-
-  root.querySelectorAll<HTMLImageElement>("img").forEach((image) => {
-    if (!image.dataset.editablePath) {
-      const candidates = [image.currentSrc, image.src, image.getAttribute("src") ?? ""].map(normalizeUrl);
-      const path = candidates.map((candidate) => urlMap.get(candidate)).find(Boolean);
-      if (path) {
-        image.dataset.editablePath = path;
-        image.dataset.editableType = "image";
-      }
-    }
-    if (!image.dataset.editableAltPath && image.alt) {
-      const altPath = altMap.get(normalizeText(image.alt));
-      if (altPath) image.dataset.editableAltPath = altPath;
-    }
-  });
-
-  root.querySelectorAll<HTMLElement>(SECTION_SELECTOR).forEach((section) => {
-    if (section.dataset.editableType === "section") return;
-    const editable = section.querySelector<HTMLElement>("[data-editable-path]");
-    const path = editable?.dataset.editablePath?.split(".")[0];
-    if (path && data[path] !== undefined) {
-      section.dataset.editablePath = path;
-      section.dataset.editableType = "section";
-    }
-  });
 }
 
 export default function VisualCanvas({ templateId }: { templateId: string }) {
@@ -168,6 +54,8 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
   const setSelection = useVisualEditorStore((s) => s.setSelection);
   const clearSelection = useVisualEditorStore((s) => s.clearSelection);
   const updatePath = useVisualEditorStore((s) => s.updatePath);
+  const duplicateNearestArrayItem = useVisualEditorStore((s) => s.duplicateNearestArrayItem);
+  const deleteNearestArrayItem = useVisualEditorStore((s) => s.deleteNearestArrayItem);
   const canvasRef = useRef<HTMLDivElement>(null);
   const [editingPath, setEditingPath] = useState<string | null>(null);
   const [toolbarPos, setToolbarPos] = useState({ top: 0, left: 0 });
@@ -238,8 +126,8 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
   useEffect(() => {
     const root = canvasRef.current?.querySelector<HTMLElement>(".ve-canvas__content");
     if (!root || !isEditorObject(data)) return;
-    annotateCanvas(root, data);
-  }, [data, TemplateComponent]);
+    bindTemplateDom(root, data, templateId, true);
+  }, [data, TemplateComponent, templateId]);
 
   const selectedStyle = useMemo(() => {
     if (!selection?.path || !isEditorObject(data)) return {};
@@ -248,8 +136,10 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
 
   const updateSelectedStyle = useCallback((partial: StyleMetadata) => {
     if (!selection?.path || !isEditorObject(data)) return;
-    updatePath(`_editor.styles.${selection.path}`, { ...selectedStyle, ...partial }, `Style ${selection.path}`);
+    updatePath(`_editor.styles.${stableHash(selection.path)}`, { ...selectedStyle, ...partial }, `Style ${selection.path}`);
   }, [data, selectedStyle, selection, updatePath]);
+
+  const isRepeatedElement = useMemo(() => Boolean(selection?.path.split(".").some((segment) => /^\d+$/.test(segment))), [selection]);
 
   /* ── Click handler: detect editable elements ── */
   const handleCanvasClick = useCallback((e: React.MouseEvent) => {
@@ -268,7 +158,7 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
     }
 
     const path = el.dataset.editablePath;
-    const type = (el.dataset.editableType ?? "text") as "text" | "image" | "link" | "section" | "item";
+    const type = (el.dataset.editableType ?? "text") as "text" | "image" | "link" | "section" | "item" | "icon";
     const rect = el.getBoundingClientRect();
     const cRect = canvasRef.current?.getBoundingClientRect() ?? null;
     setCanvasRect(cRect);
@@ -279,10 +169,11 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
       rect,
       hrefPath: el.dataset.editableHrefPath,
       altPath: el.dataset.editableAltPath,
+      resetValue: el.dataset.editableResetValue ?? el.dataset.editableOriginal,
       sectionId: type === "section" ? path : undefined,
     });
 
-    if (type === "text" || type === "image") {
+    if (type === "text" || type === "link" || type === "image" || type === "icon") {
       setEditingPath(path);
       // Position toolbar above the element
       if (cRect) {
@@ -298,14 +189,14 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
       }
     }
 
-    if (type === "text") {
+    if (type === "text" || type === "link") {
       // Make the element contentEditable
       el.contentEditable = "true";
       el.focus();
 
       // Listen for blur to save
       const handleBlur = () => {
-        const newText = el!.textContent?.trim() ?? "";
+        const newText = (el!.textContent?.trim() ?? "").slice(0, 600);
         el!.contentEditable = "false";
         if (newText) updatePath(path, newText, `Edit text: ${path}`);
         setEditingPath(null);
@@ -376,24 +267,47 @@ export default function VisualCanvas({ templateId }: { templateId: string }) {
 
         {/* Floating toolbars */}
         <FloatingTextToolbar
-          visible={editingPath !== null && selection?.type === "text"}
+          visible={editingPath !== null && (selection?.type === "text" || selection?.type === "link")}
           position={toolbarPos}
           style={selectedStyle}
           hrefPath={selection?.hrefPath}
           onFontSize={(value) => updateSelectedStyle({ fontSize: value })}
           onBold={() => updateSelectedStyle({ fontWeight: selectedStyle.fontWeight === "700" ? "400" : "700" })}
           onItalic={() => updateSelectedStyle({ fontStyle: selectedStyle.fontStyle === "italic" ? "normal" : "italic" })}
+          onUnderline={() => updateSelectedStyle({ textDecoration: selectedStyle.textDecoration === "underline" ? "none" : "underline" })}
+          onColor={(value) => updateSelectedStyle({ color: value })}
           onAlignLeft={() => updateSelectedStyle({ textAlign: "left" })}
           onAlignCenter={() => updateSelectedStyle({ textAlign: "center" })}
           onAlignRight={() => updateSelectedStyle({ textAlign: "right" })}
+          onLineHeight={(value) => updateSelectedStyle({ lineHeight: value })}
           onLetterSpacing={(value) => updateSelectedStyle({ letterSpacing: value })}
           onLink={(href) => selection?.hrefPath && updatePath(selection.hrefPath, href, `Edit link: ${selection.hrefPath}`)}
+          onDuplicate={isRepeatedElement && selection?.path ? () => duplicateNearestArrayItem(selection.path) : undefined}
+          onDelete={selection?.path ? () => {
+            if (isRepeatedElement) deleteNearestArrayItem(selection.path);
+            else updatePath(selection.path, "", `Clear ${selection.path}`);
+          } : undefined}
+          onReset={selection?.path && selection.resetValue !== undefined ? () => updatePath(selection.path, selection.resetValue ?? "", `Reset ${selection.path}`) : undefined}
         />
         <FloatingImageToolbar
           visible={editingPath !== null && selection?.type === "image"}
           position={toolbarPos}
           path={editingPath ?? ""}
           altPath={selection?.altPath}
+          style={selectedStyle}
+          resetValue={selection?.resetValue}
+          onStyle={(style) => updateSelectedStyle(style)}
+          onReset={selection?.path && selection.resetValue !== undefined ? () => updatePath(selection.path, selection.resetValue ?? "", `Reset image: ${selection.path}`) : undefined}
+        />
+        <FloatingIconToolbar
+          visible={editingPath !== null && selection?.type === "icon"}
+          position={toolbarPos}
+          style={selectedStyle}
+          hrefPath={selection?.hrefPath}
+          onStyle={(style) => updateSelectedStyle(style)}
+          onLink={(href) => selection?.hrefPath && updatePath(selection.hrefPath, href, `Edit icon link: ${selection.hrefPath}`)}
+          onReset={selection?.path ? () => updatePath(`_editor.styles.${stableHash(selection.path)}`, {}, `Reset icon: ${selection.path}`) : undefined}
+          onDelete={selection?.path ? () => updatePath(`_editor.styles.${stableHash(selection.path)}`, { ...selectedStyle, fontSize: "0px", width: "0px", height: "0px" }, `Hide icon: ${selection.path}`) : undefined}
         />
 
         {/* Template content */}

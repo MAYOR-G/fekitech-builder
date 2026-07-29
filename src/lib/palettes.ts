@@ -18,12 +18,24 @@ export type PaletteTokens = {
   accentSecondary: string;
   buttonBg: string;
   buttonText: string;
+  secondaryButtonBg: string;
+  secondaryButtonBorder: string;
+  secondaryButtonText: string;
   link: string;
   border: string;
   icon: string;
+  formBackground: string;
+  formText: string;
+  formPlaceholder: string;
+  formBorder: string;
+  headerBg: string;
+  headerText: string;
   footerBg: string;
   footerText: string;
   footerMuted: string;
+  success: string;
+  warning: string;
+  error: string;
 };
 
 export type Palette = {
@@ -65,11 +77,23 @@ function completeTokens(tokens: BasePaletteTokens): PaletteTokens {
     mutedText: tokens.mutedText ?? tokens.textSecondary,
     primary: tokens.primary ?? tokens.accent,
     secondary: tokens.secondary ?? tokens.accentSecondary,
+    secondaryButtonBg: tokens.secondaryButtonBg ?? tokens.card,
+    secondaryButtonBorder: tokens.secondaryButtonBorder ?? tokens.border,
+    secondaryButtonText: tokens.secondaryButtonText ?? tokens.accent,
     link: tokens.link ?? tokens.accent,
     icon: tokens.icon ?? tokens.accent,
+    formBackground: tokens.formBackground ?? tokens.card,
+    formText: tokens.formText ?? tokens.textPrimary,
+    formPlaceholder: tokens.formPlaceholder ?? tokens.textSecondary,
+    formBorder: tokens.formBorder ?? tokens.border,
+    headerBg: tokens.headerBg ?? tokens.background,
+    headerText: tokens.headerText ?? tokens.textPrimary,
     footerBg: tokens.footerBg ?? tokens.textPrimary,
     footerText: tokens.footerText ?? tokens.buttonText,
     footerMuted: tokens.footerMuted ?? tokens.textSecondary,
+    success: tokens.success ?? "#16A34A",
+    warning: tokens.warning ?? "#D97706",
+    error: tokens.error ?? "#DC2626",
     ...tokens,
   };
 }

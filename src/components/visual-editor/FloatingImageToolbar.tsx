@@ -1,14 +1,21 @@
 "use client";
 
-import { Upload, Trash2, Image as ImageIcon } from "lucide-react";
-import { useState } from "react";
+import { RotateCcw, Upload, Trash2, Image as ImageIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useVisualEditorStore } from "@/store/visualEditorStore";
+
+type AssetSummary = { id: string; originalName: string; url: string };
+type ImageStyle = { objectFit?: string; objectPosition?: string };
 
 type Props = {
   position: { top: number; left: number };
   visible: boolean;
   path: string;
   altPath?: string;
+  style?: ImageStyle;
+  resetValue?: string;
+  onStyle?: (style: ImageStyle) => void;
+  onReset?: () => void;
 };
 
 export default function FloatingImageToolbar({
@@ -16,10 +23,29 @@ export default function FloatingImageToolbar({
   visible,
   path,
   altPath,
+  style,
+  resetValue,
+  onStyle,
+  onReset,
 }: Props) {
   const [isUploading, setIsUploading] = useState(false);
+  const [assets, setAssets] = useState<AssetSummary[]>([]);
   const projectId = useVisualEditorStore((state) => state.projectId);
   const updatePath = useVisualEditorStore((state) => state.updatePath);
+
+  useEffect(() => {
+    if (!visible || !projectId) return;
+    let cancelled = false;
+    void fetch(`/api/projects/${projectId}/assets`)
+      .then((response) => response.ok ? response.json() : { assets: [] })
+      .then((payload: { assets?: AssetSummary[] }) => {
+        if (!cancelled) setAssets(payload.assets ?? []);
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
+  }, [projectId, visible]);
 
   if (!visible) return null;
 
@@ -71,6 +97,54 @@ export default function FloatingImageToolbar({
       </label>
       
       <div className="ve-floating-toolbar__divider" />
+
+      {assets.length > 0 ? (
+        <select
+          className="ve-floating-toolbar__select"
+          aria-label="Choose uploaded asset"
+          defaultValue=""
+          onChange={(event) => {
+            if (event.target.value) updatePath(path, event.target.value, `Choose image asset: ${path}`);
+            event.target.value = "";
+          }}
+        >
+          <option value="">Assets</option>
+          {assets.map((asset) => (
+            <option key={asset.id} value={asset.url}>{asset.originalName}</option>
+          ))}
+        </select>
+      ) : null}
+
+      {onStyle ? (
+        <>
+          <select
+            className="ve-floating-toolbar__select"
+            aria-label="Image fit"
+            value={style?.objectFit ?? ""}
+            onChange={(event) => onStyle({ ...style, objectFit: event.target.value })}
+          >
+            <option value="">Fit</option>
+            <option value="cover">Cover</option>
+            <option value="contain">Contain</option>
+            <option value="fill">Fill</option>
+          </select>
+          <select
+            className="ve-floating-toolbar__select"
+            aria-label="Focal point"
+            value={style?.objectPosition ?? ""}
+            onChange={(event) => onStyle({ ...style, objectPosition: event.target.value })}
+          >
+            <option value="">Focus</option>
+            <option value="center center">Center</option>
+            <option value="center top">Top</option>
+            <option value="center bottom">Bottom</option>
+            <option value="left center">Left</option>
+            <option value="right center">Right</option>
+          </select>
+        </>
+      ) : null}
+
+      <div className="ve-floating-toolbar__divider" />
       
       <button 
         type="button" 
@@ -113,6 +187,15 @@ export default function FloatingImageToolbar({
             title="Edit alt text"
           >
             Alt
+          </button>
+        </>
+      ) : null}
+
+      {resetValue && onReset ? (
+        <>
+          <div className="ve-floating-toolbar__divider" />
+          <button type="button" onClick={onReset} className="ve-floating-toolbar__btn" aria-label="Reset image" title="Reset image">
+            <RotateCcw size={14} />
           </button>
         </>
       ) : null}

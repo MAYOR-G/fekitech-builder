@@ -4,7 +4,7 @@ import Link from "next/link";
 import {
   ArrowLeft, ChevronDown, ExternalLink, Monitor, Redo2,
   Smartphone, Tablet, Undo2, Palette, Save,
-  Blocks, History,
+  Blocks, History, PanelTop,
 } from "lucide-react";
 import { useVisualEditorStore, type Viewport, type PanelId } from "@/store/visualEditorStore";
 
@@ -17,6 +17,7 @@ const VIEWPORTS: { id: Viewport; label: string; icon: typeof Monitor }[] = [
 const PANELS: { id: PanelId; label: string; icon: typeof Palette }[] = [
   { id: "design", label: "Design", icon: Palette },
   { id: "blocks", label: "Blocks", icon: Blocks },
+  { id: "pages", label: "Pages", icon: PanelTop },
   { id: "history", label: "History", icon: History },
 ];
 

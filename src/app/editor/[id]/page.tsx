@@ -7,6 +7,7 @@ import VisualCanvas from "@/components/visual-editor/VisualCanvas";
 import DesignPanel from "@/components/visual-editor/DesignPanel";
 import BlocksPanel from "@/components/visual-editor/BlocksPanel";
 import HistoryPanel from "@/components/visual-editor/HistoryPanel";
+import PagesPanel from "@/components/visual-editor/PagesPanel";
 import "@/components/visual-editor/visual-editor.css";
 
 export default function EditorPage({ params }: { params: Promise<{ id: string }> }) {
@@ -103,6 +104,9 @@ export default function EditorPage({ params }: { params: Promise<{ id: string }>
         )}
         {activePanel === "blocks" && (
           <BlocksPanel onClose={() => setActivePanel(null)} />
+        )}
+        {activePanel === "pages" && (
+          <PagesPanel onClose={() => setActivePanel(null)} />
         )}
         {activePanel === "history" && (
           <HistoryPanel onClose={() => setActivePanel(null)} />

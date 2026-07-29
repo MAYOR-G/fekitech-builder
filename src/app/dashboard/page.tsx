@@ -8,7 +8,7 @@ import { getUserPlan, isAuthorizedPlanTester } from "@/lib/subscriptions";
 import { LogoMark } from "@/components/ui/LogoMark";
 import { getAllTemplates } from "@/registry";
 import { DashboardTemplates } from "@/components/dashboard/DashboardTemplates";
-import { DeleteProjectButton } from "@/components/dashboard/DeleteProjectButton";
+import { ProjectActions } from "@/components/dashboard/ProjectActions";
 
 function getPublishedUrl(subdomain: string): string {
   const rootDomain = process.env.NEXT_PUBLIC_ROOT_DOMAIN ?? "localhost:3000";
@@ -87,7 +87,9 @@ export default async function DashboardPage() {
                   <Link href={`/editor/${project.id}`} className="flex min-h-11 flex-1 items-center justify-center rounded-xl bg-ft-surface-alt px-4 py-2.5 text-center font-semibold text-ft-ink transition-colors hover:bg-ft-primary hover:text-white">
                     Edit website
                   </Link>
-                  <DeleteProjectButton projectId={project.id} projectName={project.name} />
+                </div>
+                <div className="mt-2">
+                  <ProjectActions projectId={project.id} projectName={project.name} />
                 </div>
               </div>
             </article>

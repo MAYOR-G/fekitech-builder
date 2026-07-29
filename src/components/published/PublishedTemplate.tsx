@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { isTemplateData } from "@/lib/template-data";
 import { getTemplate } from "@/registry";
+import { TemplateRuntime } from "@/components/templates/TemplateRuntime";
 
 export function PublishedTemplate({
   templateId,
@@ -14,7 +15,9 @@ export function PublishedTemplate({
   const TemplateComponent = template.component;
   return (
     <main className="min-h-screen bg-white">
-      <TemplateComponent data={data} />
+      <TemplateRuntime data={data} templateId={templateId}>
+        <TemplateComponent data={data} />
+      </TemplateRuntime>
     </main>
   );
 }
