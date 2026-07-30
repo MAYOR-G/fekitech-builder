@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 74" role="img" aria-labelledby="title">
+  <title id="title">BrightNest Cleaning Co.</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFD400" d="M12 38c0-18 13-31 30-31 14 0 25 8 29 20-8-3-17-1-23 5-7 7-9 17-6 26-17 0-30-8-30-20Z"/>
+    <path fill="#5EC7FF" d="M37 54c-2-8 0-15 5-20 6-6 14-7 22-4-1 16-10 25-27 24Z"/>
+    <text x="80" y="43" fill="#FFF" font-family="Arial, sans-serif" font-size="28" font-weight="800">BrightNest</text>
+    <text x="82" y="61" fill="#D8E7FF" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="2">CLEANING CO.</text>
+  </g>
+</svg>

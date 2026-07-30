@@ -1,0 +1,27 @@
+[data-template-id="brightnest-cleaning"] {
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+[data-template-id="brightnest-cleaning"] .bn-frame {
+  display: block;
+  width: 100%;
+  min-height: 100dvh;
+  border: 0;
+  background: #fff;
+}
+
+[data-template-id="brightnest-cleaning"] .bn-loading {
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  background: #1239ac;
+  color: #fff;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}

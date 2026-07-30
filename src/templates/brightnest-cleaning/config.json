@@ -1,0 +1,16 @@
+{
+  "id": "brightnest-cleaning",
+  "name": "BrightNest Cleaning Co.",
+  "description": "A lively blue-and-yellow cleaning service template with local assets, editable business content, animated sliders, service plans, team, contact, projects, process, articles, FAQ, and newsletter.",
+  "category": "Business",
+  "image": "/templates/brightnest-cleaning.webp",
+  "previewImages": [
+    "/templates/brightnest-cleaning.webp"
+  ],
+  "features": [
+    "Isolated legacy design runtime",
+    "Editable identity, logo, navigation, sections, images, contact details, buttons, and links",
+    "Local index-1 dependency set",
+    "Responsive sliders, accordion, navigation, and motion"
+  ]
+}

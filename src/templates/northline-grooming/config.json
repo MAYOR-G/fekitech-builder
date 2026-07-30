@@ -1,0 +1,16 @@
+{
+  "id": "northline-grooming",
+  "name": "Northline Grooming",
+  "description": "A crisp, editorial barbershop template with sculpted imagery, an oversized hero, service menu, lookbook, team, memberships, reviews, FAQ, and booking call-to-action.",
+  "category": "Business",
+  "image": "/templates/northline-grooming.webp",
+  "previewImages": [
+    "/templates/northline-grooming.webp"
+  ],
+  "features": [
+    "Editable identity, navigation, services, prices, images, contact details, and links",
+    "Local licensed photography",
+    "Responsive editorial layout",
+    "Scoped theme tokens and motion"
+  ]
+}

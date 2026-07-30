@@ -1,0 +1,138 @@
+{
+  "theme": {
+    "colors": {
+      "berry": "#9b4b6b",
+      "blush": "#f4e7ec",
+      "charcoal": "#2c2c2c",
+      "ivory": "#faf8f6",
+      "roseGold": "#c9a19c",
+      "muted": "#7a7a7a",
+      "white": "#ffffff"
+    },
+    "typography": {
+      "heading": "\"Cormorant Garamond\", Georgia, serif",
+      "body": "Inter, \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Lacquer & Form",
+    "shortName": "L&F",
+    "tagline": "Wearable art, shaped by hand.",
+    "socialHandle": "@lacquerandform",
+    "address": "214 Clementine Row, Chicago, IL 60614",
+    "email": "studio@lacquerandform.com",
+    "emailHref": "mailto:studio@lacquerandform.com",
+    "phone": "+1 (773) 555-0138",
+    "phoneHref": "tel:+17735550138",
+    "hours": "Mon–Sat: 10am–8pm · Sun: 11am–5pm"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Work", "href": "#lf-work" },
+      { "label": "Services", "href": "#lf-services" },
+      { "label": "About", "href": "#lf-about" },
+      { "label": "Book", "href": "#lf-book" }
+    ],
+    "buttonLabel": "Book now",
+    "buttonHref": "#lf-book"
+  },
+  "hero": {
+    "eyebrow": "Lacquer & Form",
+    "titleLineOne": "Details",
+    "titleLineTwo": "In Bloom.",
+    "description": "Bespoke manicures and sculptural nail art composed for the way you dress, move, and celebrate.",
+    "primaryLabel": "View portfolio",
+    "primaryHref": "#lf-work",
+    "secondaryLabel": "Book appointment",
+    "secondaryHref": "#lf-book",
+    "image": "/templates/lacquer-form-nail-atelier/assets/hero-nails.png",
+    "imageAlt": "Glossy editorial manicure with sculptural details"
+  },
+  "about": {
+    "eyebrow": "The studio",
+    "title": "Precision in every gesture.",
+    "description": "This is slow beauty at a small scale. Each appointment begins with your references, lifestyle, and natural nail health, then develops into a set made specifically for you.",
+    "signature": "Lacquer & Form",
+    "image": "/templates/lacquer-form-nail-atelier/assets/studio-editorial.png",
+    "imageAlt": "Warm editorial nail atelier interior"
+  },
+  "portfolio": {
+    "eyebrow": "Selected work",
+    "title": "Designed to be noticed.",
+    "filters": ["All", "French", "Nail Art", "Extensions", "Bridal", "Seasonal"],
+    "items": [
+      { "title": "Contour French", "category": "French", "src": "/templates/lacquer-form-nail-atelier/assets/natural-nails.png", "alt": "Sculptural natural French manicure", "featured": true },
+      { "title": "Petal Gloss", "category": "Nail Art", "src": "/templates/lacquer-form-nail-atelier/assets/pink-nails.png", "alt": "Glossy pink nail art", "featured": false },
+      { "title": "Soft Structure", "category": "Extensions", "src": "/templates/lacquer-form-nail-atelier/assets/detail-studio.png", "alt": "Detailed soft nail extensions", "featured": false },
+      { "title": "Silk Vow", "category": "Bridal", "src": "/templates/lacquer-form-nail-atelier/assets/bridal-suite.png", "alt": "Elegant bridal manicure", "featured": false },
+      { "title": "Mulberry Light", "category": "Seasonal", "src": "/templates/lacquer-form-nail-atelier/assets/hero-nails.png", "alt": "Moody seasonal manicure", "featured": false },
+      { "title": "Fine Line Study", "category": "Nail Art", "src": "/templates/lacquer-form-nail-atelier/assets/studio-editorial.png", "alt": "Fine hand-painted nail art", "featured": true }
+    ]
+  },
+  "services": {
+    "eyebrow": "The menu",
+    "title": "What we make.",
+    "items": [
+      { "name": "Form Manicure", "description": "Shape, cuticle refinement, and premium colour", "price": "From $54", "image": "/templates/lacquer-form-nail-atelier/assets/natural-nails.png", "imageAlt": "Natural manicure result" },
+      { "name": "Soft Gel Length", "description": "Lightweight extensions balanced to your hand", "price": "From $78", "image": "/templates/lacquer-form-nail-atelier/assets/detail-studio.png", "imageAlt": "Soft gel extensions" },
+      { "name": "Bespoke Art", "description": "Painted detail, chrome, texture, and placement", "price": "From $30", "image": "/templates/lacquer-form-nail-atelier/assets/pink-nails.png", "imageAlt": "Bespoke pink nail art" },
+      { "name": "Atelier Pedicure", "description": "Restorative care with a precise colour finish", "price": "From $66", "image": "/templates/lacquer-form-nail-atelier/assets/studio-editorial.png", "imageAlt": "Calm atelier service space" },
+      { "name": "Structured Overlay", "description": "Strength and contour for natural nails", "price": "From $62", "image": "/templates/lacquer-form-nail-atelier/assets/hero-nails.png", "imageAlt": "Structured nail overlay" },
+      { "name": "Bridal Composition", "description": "Consultation, trial, and wedding-day set", "price": "From $118", "image": "/templates/lacquer-form-nail-atelier/assets/bridal-suite.png", "imageAlt": "Bridal manicure suite" }
+    ]
+  },
+  "process": {
+    "eyebrow": "The appointment",
+    "title": "How it unfolds.",
+    "steps": [
+      { "number": "01", "title": "Consider", "description": "We review your references, routine, and the condition of your natural nails." },
+      { "number": "02", "title": "Compose", "description": "Colour, shape, and detail are built deliberately, one measured layer at a time." },
+      { "number": "03", "title": "Wear", "description": "Leave with a balanced set and simple care notes to keep every edge looking fresh." }
+    ]
+  },
+  "testimonials": {
+    "title": "From the studio chair.",
+    "items": [
+      { "quote": "The tiny details feel completely personal, and the finish still looked new three weeks later.", "name": "Maya R.", "service": "Form Manicure" },
+      { "quote": "My extensions are light, balanced, and actually shaped to my hands. The whole appointment felt considered.", "name": "Tessa L.", "service": "Soft Gel Length" },
+      { "quote": "The bridal trial removed every bit of uncertainty. The final set was quiet, elegant, and exactly right.", "name": "Camille S.", "service": "Bridal Composition" }
+    ]
+  },
+  "social": {
+    "eyebrow": "Follow the work",
+    "title": "@lacquerandform",
+    "link": "https://instagram.com/",
+    "images": [
+      { "src": "/templates/lacquer-form-nail-atelier/assets/pink-nails.png", "alt": "Pink manicure studio post" },
+      { "src": "/templates/lacquer-form-nail-atelier/assets/hero-nails.png", "alt": "Editorial manicure studio post" },
+      { "src": "/templates/lacquer-form-nail-atelier/assets/natural-nails.png", "alt": "Natural nail studio post" },
+      { "src": "/templates/lacquer-form-nail-atelier/assets/detail-studio.png", "alt": "Detail nail studio post" },
+      { "src": "/templates/lacquer-form-nail-atelier/assets/studio-editorial.png", "alt": "Atelier studio post" },
+      { "src": "/templates/lacquer-form-nail-atelier/assets/bridal-suite.png", "alt": "Bridal nail studio post" }
+    ]
+  },
+  "booking": {
+    "title": "Your next set is waiting.",
+    "description": "Choose your service and tell us what you have in mind.",
+    "buttonLabel": "Request a time",
+    "buttonHref": "mailto:studio@lacquerandform.com"
+  },
+  "footer": {
+    "links": [
+      { "label": "Portfolio", "href": "#lf-work" },
+      { "label": "Services", "href": "#lf-services" },
+      { "label": "About", "href": "#lf-about" },
+      { "label": "Book", "href": "#lf-book" },
+      { "label": "Contact", "href": "mailto:studio@lacquerandform.com" },
+      { "label": "Privacy", "href": "/privacy" }
+    ],
+    "socialLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "TikTok", "href": "https://tiktok.com/" },
+      { "label": "Pinterest", "href": "https://pinterest.com/" }
+    ],
+    "copyright": "© 2026 Lacquer & Form. All rights reserved.",
+    "backToTopLabel": "Back to top ↑",
+    "backToTopHref": "#lf-top"
+  }
+}

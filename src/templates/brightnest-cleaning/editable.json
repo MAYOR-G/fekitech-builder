@@ -1,0 +1,205 @@
+{
+  "theme": {
+    "colors": {
+      "primary": "#007cfb",
+      "primaryDark": "#1239ac",
+      "accent": "#ffd400",
+      "page": "#ffffff",
+      "text": "#172052",
+      "muted": "#555555",
+      "footer": "#081c63"
+    },
+    "typography": {
+      "heading": "Georgia, \"Times New Roman\", serif",
+      "body": "\"Avenir Next\", \"Segoe UI\", sans-serif"
+    }
+  },
+  "brand": {
+    "name": "BrightNest Cleaning Co.",
+    "shortName": "BrightNest",
+    "tagline": "Reliable cleaning across Melbourne",
+    "logo": "/templates/brightnest-cleaning/assets/images/brightnest-logo.svg",
+    "logoLight": "/templates/brightnest-cleaning/assets/images/brightnest-logo-light.svg",
+    "logoAlt": "BrightNest Cleaning Co.",
+    "phone": "+61 3 9123 6648",
+    "phoneHref": "tel:+61391236648",
+    "email": "hello@brightnestcleaning.com",
+    "emailHref": "mailto:hello@brightnestcleaning.com",
+    "address": "48 Rathdowne Street, Carlton VIC 3053",
+    "hours": "Mon–Fri 08:00–17:30 · Sat 09:00–14:00",
+    "description": "Consistent residential and commercial cleaning from a careful, vetted local team."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#brightnest_banner_sec_1" },
+      { "label": "About", "href": "#about_1" },
+      { "label": "Services", "href": "#brightnest-services" },
+      { "label": "Team", "href": "#brightnest-team" },
+      { "label": "Projects", "href": "#brightnest-projects" },
+      { "label": "Contact", "href": "#home_contact" }
+    ],
+    "quoteLabel": "Get a quote",
+    "quoteHref": "#home_contact"
+  },
+  "hero": {
+    "eyebrow": "Meet BrightNest",
+    "title": "A Brighter Standard of Clean.",
+    "description": "Careful home and workplace cleaning delivered by a consistent, thoroughly vetted team.",
+    "buttonLabel": "Explore services",
+    "buttonHref": "#brightnest-services",
+    "image": "/templates/brightnest-cleaning/assets/images/hero_banner_bg_1.png",
+    "imageAlt": "BrightNest cleaner with professional cleaning supplies",
+    "experienceValue": "12",
+    "experienceLabel": "Years serving Melbourne"
+  },
+  "about": {
+    "eyebrow": "About BrightNest",
+    "title": "Cleaning that respects your space.",
+    "intro": "Reliable residential and commercial cleaners who arrive prepared, follow your priorities, and leave every room ready to use.",
+    "description": "You get clear scope, familiar faces, professional products, and a simple checklist after every visit.",
+    "benefits": [
+      "Fully insured team",
+      "Vetted local professionals",
+      "Residential specialists",
+      "Commercial cleaning",
+      "Low-tox product options",
+      "Satisfaction follow-up"
+    ],
+    "buttonLabel": "How we work",
+    "buttonHref": "#brightnest-process",
+    "image": "/templates/brightnest-cleaning/assets/images/about_img_1.png",
+    "imageAlt": "BrightNest team member cleaning a bright home"
+  },
+  "stats": [
+    { "value": "1840", "label": "Jobs completed" },
+    { "value": "1260", "label": "Returning clients" },
+    { "value": "22", "label": "Local awards" },
+    { "value": "38", "label": "Team members" }
+  ],
+  "services": {
+    "eyebrow": "Cleaning plans",
+    "title": "The right clean for every kind of space.",
+    "description": "Choose a starting point. We will tailor the checklist, frequency, and timing around your property.",
+    "buttonLabel": "Get a free estimate",
+    "buttonHref": "#home_contact",
+    "items": [
+      { "title": "Carpet care", "description": "Deep extraction, spot treatment, deodorising, and careful drying guidance.", "image": "/templates/brightnest-cleaning/assets/images/home_1_cleanplan_img_1.png", "imageAlt": "Professional carpet cleaning" },
+      { "title": "Office cleaning", "description": "Reliable desk, kitchen, washroom, floor, and touchpoint routines.", "image": "/templates/brightnest-cleaning/assets/images/home_1_cleanplan_img_2.png", "imageAlt": "Cleaner preparing an office" },
+      { "title": "Window cleaning", "description": "Interior and accessible exterior glass, frames, tracks, and sills.", "image": "/templates/brightnest-cleaning/assets/images/home_1_cleanplan_img_3.png", "imageAlt": "Professional window cleaning" },
+      { "title": "Home cleaning", "description": "Recurring or one-off cleaning shaped around how your household works.", "image": "/templates/brightnest-cleaning/assets/images/home_1_cleanplan_img_4.png", "imageAlt": "Bright residential kitchen after cleaning" },
+      { "title": "Renovation reset", "description": "Fine-dust removal, surfaces, fixtures, floors, and final handover cleaning.", "image": "/templates/brightnest-cleaning/assets/images/home_1_cleanplan_img_5.png", "imageAlt": "Post-renovation cleaning service" }
+    ]
+  },
+  "features": {
+    "eyebrow": "Our standards",
+    "title": "The details behind every BrightNest visit.",
+    "items": [
+      { "title": "Professional-grade products", "description": "Effective products selected for the surface, soil level, and people using the space." },
+      { "title": "Healthy team practices", "description": "Clear hygiene routines, clean uniforms, and responsible illness policies." },
+      { "title": "Sanitised tools", "description": "Colour-coded cloths and maintained equipment help prevent cross-contamination." },
+      { "title": "Satisfaction follow-up", "description": "Tell us quickly if something was missed and we will make it right." }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client reviews",
+    "title": "People notice the BrightNest difference.",
+    "items": [
+      { "quote": "The same team arrives every fortnight, remembers our priorities, and leaves the house genuinely calm.", "name": "Priya Nair", "detail": "Brunswick", "image": "/templates/brightnest-cleaning/assets/images/home_1_testimonial_img_2.png", "imageAlt": "Priya Nair" },
+      { "quote": "Clear communication, careful work, and no disruption to our staff. Exactly what our office needed.", "name": "Mason Clarke", "detail": "Richmond", "image": "/templates/brightnest-cleaning/assets/images/home_1_testimonial_img_3.png", "imageAlt": "Mason Clarke" },
+      { "quote": "They handled the post-renovation dust properly and had the apartment ready before handover.", "name": "Elena Rossi", "detail": "Carlton", "image": "/templates/brightnest-cleaning/assets/images/home_1_testimonial_img_1.png", "imageAlt": "Elena Rossi" }
+    ]
+  },
+  "team": {
+    "eyebrow": "Meet the team",
+    "title": "Experienced people who care about the finish.",
+    "items": [
+      { "name": "Mara Collins", "role": "Residential lead", "image": "/templates/brightnest-cleaning/assets/images/home_1_team_img_1.png", "imageAlt": "Mara Collins, residential cleaning lead" },
+      { "name": "Robert Minh", "role": "Commercial lead", "image": "/templates/brightnest-cleaning/assets/images/home_1_team_img_2.png", "imageAlt": "Robert Minh, commercial cleaning lead" },
+      { "name": "Stefan Dube", "role": "Quality supervisor", "image": "/templates/brightnest-cleaning/assets/images/home_1_team_img_3.png", "imageAlt": "Stefan Dube, quality supervisor" },
+      { "name": "Juliana Perez", "role": "Customer care lead", "image": "/templates/brightnest-cleaning/assets/images/home_1_team_img_4.png", "imageAlt": "Juliana Perez, customer care lead" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact us",
+    "title": "Tell us what needs cleaning.",
+    "description": "Share the property type, size, timing, and priorities. We will reply with the right scope and a clear estimate.",
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Email address",
+      "phonePlaceholder": "Phone number",
+      "subjectPlaceholder": "Property or service type",
+      "messagePlaceholder": "Tell us about the space",
+      "buttonLabel": "Request an estimate"
+    }
+  },
+  "projects": {
+    "eyebrow": "Recent work",
+    "title": "Latest BrightNest projects",
+    "description": "A selection of recurring workplace cleans, home resets, carpet care, and detailed window work.",
+    "items": [
+      { "title": "Creative office reset", "image": "/templates/brightnest-cleaning/assets/images/home_1_projectslider_img_1.png", "imageAlt": "Clean modern office after service" },
+      { "title": "Family home clean", "image": "/templates/brightnest-cleaning/assets/images/home_1_projectslider_img_2.png", "imageAlt": "Bright family home after cleaning" },
+      { "title": "Carpet restoration", "image": "/templates/brightnest-cleaning/assets/images/home_1_projectslider_img_3.png", "imageAlt": "Freshly cleaned carpet" },
+      { "title": "Glass and window detail", "image": "/templates/brightnest-cleaning/assets/images/home_1_projectslider_img_4.png", "imageAlt": "Clear windows after professional cleaning" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Four easy steps to a cleaner space.",
+    "note": "Low-tox and fragrance-free product options are available.",
+    "items": [
+      { "label": "Step one", "title": "Tell us about the space", "description": "Share the size, rooms, priorities, access notes, and preferred timing." },
+      { "label": "Step two", "title": "Confirm the checklist", "description": "We recommend the service level and send a clear written estimate." },
+      { "label": "Step three", "title": "Choose your time", "description": "Pick a convenient visit or set a recurring schedule in a few clicks." },
+      { "label": "Step four", "title": "Review the finish", "description": "Your team completes the checklist, secures the property, and reports back." }
+    ]
+  },
+  "articles": {
+    "eyebrow": "Useful advice",
+    "title": "Cleaning notes from the team",
+    "items": [
+      { "day": "18", "month": "Mar", "category": "Home cleaning", "title": "A practical weekly cleaning rhythm for busy households", "description": "A room-by-room routine that keeps buildup under control without taking over your weekend.", "buttonLabel": "Read article", "buttonHref": "#brightnest-articles", "image": "/templates/brightnest-cleaning/assets/images/home_1_blog_img_1.png", "imageAlt": "Bright clean home interior" },
+      { "day": "06", "month": "Apr", "category": "Office cleaning", "title": "How to keep shared workspaces cleaner between visits", "description": "Simple touchpoint, kitchen, and desk habits that support a healthier office.", "buttonLabel": "Read article", "buttonHref": "#brightnest-articles", "image": "/templates/brightnest-cleaning/assets/images/home_1_blog_img_2.png", "imageAlt": "Well-maintained office floor" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "BrightNest FAQ",
+    "title": "Questions before your first clean.",
+    "items": [
+      { "question": "Will I get the same cleaner each visit?", "answer": "We keep teams consistent wherever possible and always share changes before the appointment." },
+      { "question": "Can I customise the cleaning checklist?", "answer": "Yes. Your priorities become the checklist, and you can update them before any visit." },
+      { "question": "Which Melbourne areas do you serve?", "answer": "We serve central Melbourne and surrounding inner suburbs. Contact us with your postcode to confirm availability." },
+      { "question": "Do I need to provide equipment?", "answer": "No. We bring maintained tools and professional products, including low-tox options on request." }
+    ],
+    "image": "/templates/brightnest-cleaning/assets/images/home_1_faq_img.png",
+    "imageAlt": "BrightNest team member ready to answer cleaning questions"
+  },
+  "newsletter": {
+    "title": "Useful cleaning notes, occasionally.",
+    "placeholder": "Enter your email address",
+    "buttonLabel": "Subscribe"
+  },
+  "footer": {
+    "usefulTitle": "Useful links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "serviceLinks": [
+      { "label": "Home cleaning", "href": "#brightnest-services" },
+      { "label": "Office cleaning", "href": "#brightnest-services" },
+      { "label": "Window cleaning", "href": "#brightnest-services" },
+      { "label": "Renovation cleaning", "href": "#brightnest-services" },
+      { "label": "Carpet care", "href": "#brightnest-services" },
+      { "label": "Commercial cleaning", "href": "#brightnest-services" }
+    ],
+    "socialLinks": [
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ],
+    "copyright": "© 2026 BrightNest Cleaning Co. All rights reserved."
+  }
+}

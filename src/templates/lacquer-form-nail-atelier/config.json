@@ -1,0 +1,16 @@
+{
+  "id": "lacquer-form-nail-atelier",
+  "name": "Lacquer & Form",
+  "description": "A refined nail atelier template with an immersive editorial hero, filterable portfolio, image-led service menu, client carousel, social gallery, and booking callout.",
+  "category": "Business",
+  "image": "/templates/lacquer-form-nail-atelier.webp",
+  "previewImages": [
+    "/templates/lacquer-form-nail-atelier.webp"
+  ],
+  "features": [
+    "Editable identity, services, portfolio, testimonials, contact details, buttons, and links",
+    "Filterable lightbox portfolio",
+    "Interactive service imagery and testimonial carousel",
+    "Local imagery and responsive editorial layout"
+  ]
+}

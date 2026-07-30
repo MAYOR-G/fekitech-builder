@@ -1,0 +1,16 @@
+{
+  "id": "verdant-house-grooming",
+  "name": "Verdant House Grooming",
+  "description": "A warm, private-club-inspired barbershop template with a sculpted split hero, layered imagery, service menu, lookbook, team, packages, reviews, FAQ, and booking section.",
+  "category": "Business",
+  "image": "/templates/verdant-house-grooming.webp",
+  "previewImages": [
+    "/templates/verdant-house-grooming.webp"
+  ],
+  "features": [
+    "Editable business identity and contact details",
+    "Editable services, pricing, images, buttons, links, reviews, and FAQ",
+    "Local photography",
+    "Responsive scoped styling and motion"
+  ]
+}

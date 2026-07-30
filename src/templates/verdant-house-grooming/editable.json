@@ -1,0 +1,157 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f7f2ea",
+      "surface": "#efe7da",
+      "ink": "#242019",
+      "muted": "#665e51",
+      "accent": "#2f5b4e",
+      "champagne": "#c2a36c",
+      "white": "#fffdf8",
+      "line": "rgba(36, 32, 25, 0.12)"
+    },
+    "typography": {
+      "heading": "\"Arial Narrow\", \"Helvetica Neue Condensed\", Impact, sans-serif",
+      "body": "\"Avenir Next\", \"Segoe UI\", sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Verdant House",
+    "tagline": "Private grooming atelier",
+    "description": "Measured grooming, considered hospitality, and a room that gives the day some breathing space.",
+    "address": "27 Westbourne Terrace, Brooklyn, NY 11201",
+    "email": "appointments@verdanthouse.co",
+    "emailHref": "mailto:appointments@verdanthouse.co",
+    "phone": "+1 (718) 555-0186",
+    "phoneHref": "tel:+17185550186"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Lookbook", "href": "#lookbook" },
+      { "label": "Team", "href": "#team" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "buttonLabel": "Book a chair",
+    "buttonHref": "#book"
+  },
+  "hero": {
+    "eyebrow": "Private grooming atelier",
+    "title": "Quiet craft. Lasting confidence.",
+    "description": "An unhurried grooming ritual shaped around your features, routine, and personal style.",
+    "primaryLabel": "Book appointment",
+    "primaryHref": "#book",
+    "secondaryLabel": "View services",
+    "secondaryHref": "#services",
+    "image": "/templates/verdant-house-grooming/assets/hero.jpg",
+    "imageAlt": "Barber refining a detailed haircut",
+    "imageNote": "Private chair"
+  },
+  "promise": [
+    "Precision cuts",
+    "Personal styling",
+    "Warm towel finish",
+    "Simple booking"
+  ],
+  "about": {
+    "eyebrow": "The house ritual",
+    "title": "Time set aside for the details.",
+    "paragraphs": [
+      "Verdant House treats grooming as quiet, skilled work. Every choice—from the light around the chair to the angle of a line—is considered.",
+      "Step away from the noise, settle in, and leave with a cut that feels natural on day one and still holds its shape weeks later."
+    ],
+    "buttonLabel": "Meet the artisans",
+    "buttonHref": "#team",
+    "mainImage": "/templates/verdant-house-grooming/assets/about-main.jpg",
+    "mainImageAlt": "Refined barbershop interior",
+    "detailImage": "/templates/verdant-house-grooming/assets/about-detail.jpg",
+    "detailImageAlt": "Close-up of precision barber work"
+  },
+  "services": {
+    "eyebrow": "The service list",
+    "title": "Curated services",
+    "items": [
+      { "title": "House haircut", "description": "Consultation, wash, tailored cut, and finish.", "price": "$52" },
+      { "title": "Skin fade", "description": "Precision fade, detailing, and finish.", "price": "$62" },
+      { "title": "Beard sculpt", "description": "Shape, line work, conditioning, and towel.", "price": "$34" },
+      { "title": "Cut + beard ritual", "description": "Complete hair and beard service.", "price": "$78" },
+      { "title": "Traditional shave", "description": "Hot towels, straight razor, and skin care.", "price": "$46" },
+      { "title": "Young gentleman", "description": "A patient, polished cut for guests under 13.", "price": "$38" }
+    ]
+  },
+  "lookbook": {
+    "eyebrow": "The lookbook",
+    "title": "Built around the person.",
+    "images": [
+      { "src": "/templates/verdant-house-grooming/assets/lookbook-1.jpg", "alt": "Clean fade detail" },
+      { "src": "/templates/verdant-house-grooming/assets/lookbook-2.jpg", "alt": "Barber tools ready for an appointment" },
+      { "src": "/templates/verdant-house-grooming/assets/lookbook-3.jpg", "alt": "Careful scissor work in the studio" }
+    ]
+  },
+  "studio": {
+    "eyebrow": "Inside Verdant House",
+    "title": "A room to reset.",
+    "description": "Comfortable chairs, good coffee, considered music, and enough time to get the work right.",
+    "image": "/templates/verdant-house-grooming/assets/studio.jpg",
+    "imageAlt": "Warm, elegant barber studio"
+  },
+  "team": {
+    "eyebrow": "The artisans",
+    "title": "Experience, without ego.",
+    "items": [
+      { "name": "Julian Ward", "role": "Founder and master barber", "image": "/templates/verdant-house-grooming/assets/team-1.jpg", "imageAlt": "Julian Ward, founder of Verdant House" },
+      { "name": "Elias Stone", "role": "Fade specialist", "image": "/templates/verdant-house-grooming/assets/team-2.jpg", "imageAlt": "Elias Stone, fade specialist" },
+      { "name": "Arthur Vale", "role": "Scissor and styling expert", "image": "/templates/verdant-house-grooming/assets/team-3.jpg", "imageAlt": "Arthur Vale, styling expert" }
+    ]
+  },
+  "packages": {
+    "eyebrow": "House selections",
+    "title": "Complete appointments",
+    "items": [
+      { "name": "The essential", "price": "$52", "featured": false, "features": ["House haircut", "Neckline finish", "Product styling"], "buttonLabel": "Select", "buttonHref": "#book" },
+      { "name": "The private", "price": "$78", "featured": true, "features": ["Haircut and fade", "Beard sculpting", "Warm towel treatment"], "buttonLabel": "Select", "buttonHref": "#book" },
+      { "name": "The full house", "price": "$102", "featured": false, "features": ["Complete private service", "Scalp massage", "Skin preparation"], "buttonLabel": "Select", "buttonHref": "#book" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client words",
+    "title": "A standard people return to.",
+    "items": [
+      { "quote": "The cut is precise, but the real difference is how calmly the whole appointment moves.", "name": "James Rowan" },
+      { "quote": "Professional, punctual, and thoughtful. My hair finally grows out in a way I like.", "name": "Michael Torres" },
+      { "quote": "From the warm towel to the line work, every part of the service feels intentional.", "name": "David Lewis" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Plan your visit.",
+    "items": [
+      { "question": "Do I need to book in advance?", "answer": "We recommend it. Appointments let every guest have the chair, consultation, and finishing time they need." },
+      { "question": "What products do you use?", "answer": "We use professional products selected for different hair textures, finishes, and skin needs." },
+      { "question": "How long does a service take?", "answer": "A haircut takes about 45 minutes. Combined hair and beard services usually take 60 to 75 minutes." },
+      { "question": "Is parking available?", "answer": "Yes. Validated parking is available in the garage two doors east of the studio." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your chair is ready",
+    "title": "Leave with a sharper point of view.",
+    "buttonLabel": "Book your chair",
+    "buttonHref": "https://example.com/verdant-house-booking"
+  },
+  "footer": {
+    "hours": [
+      "Tuesday–Friday · 9:00–19:00",
+      "Saturday · 9:00–17:00",
+      "Sunday–Monday · Closed"
+    ],
+    "socialLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ],
+    "copyright": "© 2026 Verdant House Grooming. All rights reserved."
+  }
+}

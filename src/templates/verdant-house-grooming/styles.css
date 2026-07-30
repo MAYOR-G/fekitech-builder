@@ -1,0 +1,197 @@
+[data-template-id="verdant-house-grooming"] {
+  --vh-page: #f7f2ea;
+  --vh-surface: #efe7da;
+  --vh-ink: #242019;
+  --vh-muted: #665e51;
+  --vh-accent: #2f5b4e;
+  --vh-champagne: #c2a36c;
+  --vh-white: #fffdf8;
+  --vh-line: rgba(36, 32, 25, 0.12);
+  --vh-heading-font: "Arial Narrow", "Helvetica Neue Condensed", Impact, sans-serif;
+  --vh-body-font: "Avenir Next", "Segoe UI", sans-serif;
+  min-width: 320px;
+  overflow: hidden;
+  background: radial-gradient(circle at 12% 18%, color-mix(in srgb, var(--vh-accent) 8%, transparent), transparent 30rem), var(--vh-page);
+  color: var(--vh-ink);
+  font-family: var(--vh-body-font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-template-id="verdant-house-grooming"] *,
+[data-template-id="verdant-house-grooming"] *::before,
+[data-template-id="verdant-house-grooming"] *::after { box-sizing: border-box; }
+[data-template-id="verdant-house-grooming"] h1,
+[data-template-id="verdant-house-grooming"] h2,
+[data-template-id="verdant-house-grooming"] h3,
+[data-template-id="verdant-house-grooming"] p { margin: 0; }
+[data-template-id="verdant-house-grooming"] h1,
+[data-template-id="verdant-house-grooming"] h2,
+[data-template-id="verdant-house-grooming"] h3 {
+  font-family: var(--vh-heading-font);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+[data-template-id="verdant-house-grooming"] a { color: inherit; text-decoration: none; }
+[data-template-id="verdant-house-grooming"] :focus-visible { outline: 3px solid var(--vh-accent); outline-offset: 4px; }
+[data-template-id="verdant-house-grooming"] .vh-container { width: min(100% - 44px, 1232px); margin-inline: auto; }
+[data-template-id="verdant-house-grooming"] .vh-section { padding-block: clamp(5rem, 10vw, 8rem); }
+[data-template-id="verdant-house-grooming"] .vh-skip { position: fixed; top: .75rem; left: .75rem; z-index: 50; padding: .75rem 1rem; background: var(--vh-ink); color: var(--vh-white); transform: translateY(-180%); }
+[data-template-id="verdant-house-grooming"] .vh-skip:focus { transform: translateY(0); }
+[data-template-id="verdant-house-grooming"] .vh-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--vh-line); background: color-mix(in srgb, var(--vh-page) 89%, transparent); backdrop-filter: blur(18px); }
+[data-template-id="verdant-house-grooming"] .vh-nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 76px; gap: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-logo { width: fit-content; font-family: var(--vh-heading-font); font-size: 1.55rem; font-weight: 700; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-nav-links { display: flex; align-items: center; gap: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-nav-links a { font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; transition: color 220ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-nav-links a:hover { color: var(--vh-accent); }
+[data-template-id="verdant-house-grooming"] .vh-header-button { justify-self: end; padding: 1rem 1.65rem; background: var(--vh-accent); color: var(--vh-white); font-size: .67rem; font-weight: 900; letter-spacing: .17em; text-transform: uppercase; transition: background 220ms ease, transform 220ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-header-button:hover { background: var(--vh-ink); transform: translateY(-2px); }
+[data-template-id="verdant-house-grooming"] .vh-menu { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border: 1px solid var(--vh-line); background: transparent; color: var(--vh-ink); }
+[data-template-id="verdant-house-grooming"] .vh-menu svg { width: 22px; height: 22px; }
+[data-template-id="verdant-house-grooming"] .vh-hero { overflow: hidden; background: linear-gradient(120deg, var(--vh-page) 0%, var(--vh-page) 58%, #e4d9c7 58%, #e4d9c7 100%); }
+[data-template-id="verdant-house-grooming"] .vh-hero-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; min-height: calc(100dvh - 76px); gap: clamp(2.5rem, 6vw, 5rem); padding-block: clamp(3rem, 7vw, 5rem); }
+[data-template-id="verdant-house-grooming"] .vh-eyebrow,
+[data-template-id="verdant-house-grooming"] .vh-heading > p { margin-bottom: 1.1rem; color: var(--vh-accent); font-size: .68rem; font-weight: 900; letter-spacing: .22em; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-hero h1 { max-width: 740px; font-size: clamp(4rem, 7.4vw, 7rem); line-height: .84; }
+[data-template-id="verdant-house-grooming"] .vh-hero-description { max-width: 31rem; margin-top: 1.55rem; color: var(--vh-muted); font-size: 1.05rem; }
+[data-template-id="verdant-house-grooming"] .vh-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 1rem; padding: .9rem 1.5rem; border: 1px solid transparent; font-size: .67rem; font-weight: 900; letter-spacing: .17em; line-height: 1; text-transform: uppercase; transition: color 220ms ease, background 220ms ease, border-color 220ms ease, transform 220ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-button svg { width: 15px; height: 15px; transition: transform 220ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-button:hover { transform: translateY(-3px); }
+[data-template-id="verdant-house-grooming"] .vh-button:hover svg { transform: translateX(4px); }
+[data-template-id="verdant-house-grooming"] .vh-button:active { transform: scale(.98); }
+[data-template-id="verdant-house-grooming"] .vh-button-green { background: var(--vh-accent); color: var(--vh-white); }
+[data-template-id="verdant-house-grooming"] .vh-button-green:hover { background: var(--vh-ink); }
+[data-template-id="verdant-house-grooming"] .vh-button-outline { border-color: var(--vh-ink); background: transparent; color: var(--vh-ink); }
+[data-template-id="verdant-house-grooming"] .vh-button-outline:hover { background: var(--vh-ink); color: var(--vh-white); }
+[data-template-id="verdant-house-grooming"] .vh-button-light { background: var(--vh-white); color: var(--vh-ink); }
+[data-template-id="verdant-house-grooming"] .vh-button-light:hover { background: var(--vh-champagne); color: var(--vh-ink); }
+[data-template-id="verdant-house-grooming"] .vh-hero-image { position: relative; height: min(68vh, 660px); min-height: 460px; overflow: hidden; border-radius: 46% 46% 42px 42px; background: #e4d9c7; box-shadow: 0 34px 80px rgba(61,45,25,.19); }
+[data-template-id="verdant-house-grooming"] .vh-hero-image img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.05); transition: transform 1.6s ease; }
+[data-template-id="verdant-house-grooming"] .vh-hero-image:hover img { transform: scale(1); }
+[data-template-id="verdant-house-grooming"] .vh-hero-image span { position: absolute; right: 1.25rem; bottom: 1.25rem; padding: .8rem 1rem; background: var(--vh-ink); color: var(--vh-white); font-size: .6rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-promise { border-block: 1px solid var(--vh-line); background: var(--vh-white); }
+[data-template-id="verdant-house-grooming"] .vh-promise-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1rem; padding-block: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-promise p { padding-top: .8rem; border-top: 1px solid var(--vh-line); font-size: .68rem; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-about { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(3rem,7vw,6rem); }
+[data-template-id="verdant-house-grooming"] .vh-about-images { position: relative; min-height: 40rem; }
+[data-template-id="verdant-house-grooming"] .vh-about-main { width: 80%; height: 37rem; object-fit: cover; box-shadow: 0 28px 70px rgba(61,45,25,.12); }
+[data-template-id="verdant-house-grooming"] .vh-about-detail { position: absolute; right: 0; bottom: 0; width: 50%; height: 21rem; border: 10px solid var(--vh-page); object-fit: cover; }
+[data-template-id="verdant-house-grooming"] .vh-about-images::after { position: absolute; bottom: -1.6rem; left: 14%; width: 44%; height: 1px; background: var(--vh-accent); content: ""; }
+[data-template-id="verdant-house-grooming"] .vh-about h2,
+[data-template-id="verdant-house-grooming"] .vh-heading h2,
+[data-template-id="verdant-house-grooming"] .vh-studio h2,
+[data-template-id="verdant-house-grooming"] .vh-cta h2 { font-size: clamp(3rem,6vw,5.6rem); }
+[data-template-id="verdant-house-grooming"] .vh-about-copy > p:not(.vh-eyebrow) { margin-top: 1.3rem; color: var(--vh-muted); font-size: 1.05rem; }
+[data-template-id="verdant-house-grooming"] .vh-about-copy .vh-button { margin-top: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-heading { max-width: 60rem; margin-bottom: clamp(3rem,6vw,5rem); }
+[data-template-id="verdant-house-grooming"] .vh-heading-center { margin-inline: auto; text-align: center; }
+[data-template-id="verdant-house-grooming"] .vh-services { background: color-mix(in srgb, var(--vh-white) 55%, var(--vh-page)); }
+[data-template-id="verdant-house-grooming"] .vh-service-list { width: min(100%, 810px); margin-inline: auto; border-top: 1px solid var(--vh-line); }
+[data-template-id="verdant-house-grooming"] .vh-service-row { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.6rem 0; border-bottom: 1px solid var(--vh-line); transition: padding 260ms ease, background 260ms ease, box-shadow 260ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-service-row:hover { padding-inline: 1rem; background: var(--vh-white); box-shadow: 0 18px 40px rgba(61,45,25,.06); }
+[data-template-id="verdant-house-grooming"] .vh-service-row h3 { font-size: clamp(1.85rem,3.2vw,3rem); }
+[data-template-id="verdant-house-grooming"] .vh-service-row p { max-height: 0; overflow: hidden; color: var(--vh-muted); opacity: 0; transition: max-height 220ms ease, margin 220ms ease, opacity 220ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-service-row:hover p { max-height: 3rem; margin-top: .45rem; opacity: 1; }
+[data-template-id="verdant-house-grooming"] .vh-service-row strong { color: var(--vh-accent); font-size: 1.35rem; }
+[data-template-id="verdant-house-grooming"] .vh-lookbook { display: grid; grid-template-columns: 5fr 3fr 4fr; gap: 1rem; }
+[data-template-id="verdant-house-grooming"] .vh-lookbook > div { min-height: 34rem; overflow: hidden; }
+[data-template-id="verdant-house-grooming"] .vh-lookbook img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.86) contrast(1.04); transition: transform 850ms ease, filter 850ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-lookbook > div:hover img { transform: scale(1.06); filter: saturate(.9) brightness(.82); }
+[data-template-id="verdant-house-grooming"] .vh-studio { position: relative; display: grid; min-height: 38rem; place-items: center; overflow: hidden; background: var(--vh-ink); color: var(--vh-white); text-align: center; }
+[data-template-id="verdant-house-grooming"] .vh-studio > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .31; }
+[data-template-id="verdant-house-grooming"] .vh-studio::after { position: absolute; inset: 0; background: radial-gradient(circle at 50% 20%, transparent, rgba(28,28,27,.75)); content: ""; }
+[data-template-id="verdant-house-grooming"] .vh-studio-copy { position: relative; z-index: 1; width: min(100% - 44px, 640px); }
+[data-template-id="verdant-house-grooming"] .vh-studio-copy > p:last-child { margin-top: 1.4rem; color: color-mix(in srgb, var(--vh-white) 75%, transparent); font-size: 1.05rem; }
+[data-template-id="verdant-house-grooming"] .vh-team-grid,
+[data-template-id="verdant-house-grooming"] .vh-package-grid,
+[data-template-id="verdant-house-grooming"] .vh-testimonial-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(1.25rem,3vw,2.5rem); }
+[data-template-id="verdant-house-grooming"] .vh-team-grid img { width: 100%; aspect-ratio: 3/4; margin-bottom: 1.25rem; object-fit: cover; filter: grayscale(1); transition: filter 600ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-team-grid article:hover img { filter: grayscale(0); }
+[data-template-id="verdant-house-grooming"] .vh-team-grid h3 { font-size: 1.6rem; }
+[data-template-id="verdant-house-grooming"] .vh-team-grid p { margin-top: .3rem; color: var(--vh-accent); font-size: .68rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-packages { background: var(--vh-white); }
+[data-template-id="verdant-house-grooming"] .vh-package { display: flex; min-height: 30rem; flex-direction: column; align-items: center; padding: clamp(2rem,4vw,3rem); border: 1px solid var(--vh-line); background: color-mix(in srgb,var(--vh-white) 82%,transparent); text-align: center; transition: transform 280ms ease, box-shadow 280ms ease; }
+[data-template-id="verdant-house-grooming"] .vh-package:hover { transform: translateY(-8px); box-shadow: 0 25px 54px rgba(36,32,25,.1); }
+[data-template-id="verdant-house-grooming"] .vh-package.is-featured { transform: translateY(-10px); background: var(--vh-ink); color: var(--vh-white); box-shadow: 0 28px 70px rgba(36,32,25,.16); }
+[data-template-id="verdant-house-grooming"] .vh-package h3 { font-size: 1.8rem; }
+[data-template-id="verdant-house-grooming"] .vh-package > strong { margin-block: 1.2rem 2rem; color: var(--vh-champagne); font-size: 2.8rem; line-height: 1; }
+[data-template-id="verdant-house-grooming"] .vh-package ul { display: grid; gap: .7rem; margin: 0 0 2.2rem; padding: 0; color: var(--vh-muted); list-style: none; }
+[data-template-id="verdant-house-grooming"] .vh-package.is-featured ul { color: color-mix(in srgb,var(--vh-white) 68%,transparent); }
+[data-template-id="verdant-house-grooming"] .vh-package .vh-button { margin-top: auto; }
+[data-template-id="verdant-house-grooming"] .vh-testimonial-grid blockquote { margin: 0; padding: 2.5rem; border: 1px solid var(--vh-line); background: color-mix(in srgb,var(--vh-white) 78%,transparent); }
+[data-template-id="verdant-house-grooming"] .vh-testimonial-grid blockquote p { color: var(--vh-muted); font-size: 1.05rem; font-style: italic; }
+[data-template-id="verdant-house-grooming"] .vh-testimonial-grid footer { margin-top: 1.25rem; font-family: var(--vh-heading-font); font-size: 1.15rem; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-faq > div:last-child { width: min(100%,720px); margin-inline: auto; }
+[data-template-id="verdant-house-grooming"] .vh-faq details { padding-block: 1.4rem; border-bottom: 1px solid var(--vh-line); }
+[data-template-id="verdant-house-grooming"] .vh-faq details:first-child { border-top: 1px solid var(--vh-line); }
+[data-template-id="verdant-house-grooming"] .vh-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; font-family: var(--vh-heading-font); font-size: 1.35rem; text-transform: uppercase; list-style: none; }
+[data-template-id="verdant-house-grooming"] .vh-faq summary::-webkit-details-marker { display: none; }
+[data-template-id="verdant-house-grooming"] .vh-faq summary::after { color: var(--vh-accent); content: "+"; font-family: var(--vh-body-font); font-size: 1.5rem; }
+[data-template-id="verdant-house-grooming"] .vh-faq details[open] summary::after { content: "−"; }
+[data-template-id="verdant-house-grooming"] .vh-faq details p { padding: 1rem 2rem 0 0; color: var(--vh-muted); }
+[data-template-id="verdant-house-grooming"] .vh-cta { border-top: 1px solid var(--vh-line); text-align: center; }
+[data-template-id="verdant-house-grooming"] .vh-cta > div { display: flex; flex-direction: column; align-items: center; }
+[data-template-id="verdant-house-grooming"] .vh-cta h2 { max-width: 58rem; margin-bottom: 2rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer { padding-block: 5rem 2rem; background: #1f1c17; color: var(--vh-white); }
+[data-template-id="verdant-house-grooming"] .vh-footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: clamp(2rem,5vw,4rem); padding-bottom: 4rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer-grid > div { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer-grid h2 { margin-bottom: .7rem; color: var(--vh-champagne); font-family: var(--vh-heading-font); font-size: 1.15rem; letter-spacing: -.02em; text-transform: uppercase; }
+[data-template-id="verdant-house-grooming"] .vh-footer-grid p,
+[data-template-id="verdant-house-grooming"] .vh-footer-grid a:not(.vh-logo) { color: rgba(255,253,248,.62); font-size: .84rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer-grid > div:first-child p { max-width: 21rem; margin-top: 1rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer-bottom { display: flex; justify-content: space-between; gap: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.11); color: rgba(255,253,248,.4); font-size: .72rem; }
+[data-template-id="verdant-house-grooming"] .vh-footer-bottom div { display: flex; gap: 1.25rem; }
+[data-template-id="verdant-house-grooming"] [data-vh-reveal] { transform: translateY(24px); opacity: 0; transition: transform 700ms cubic-bezier(.16,1,.3,1), opacity 700ms ease; }
+[data-template-id="verdant-house-grooming"] [data-vh-reveal].is-visible { transform: translateY(0); opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-template-id="verdant-house-grooming"] *,
+  [data-template-id="verdant-house-grooming"] *::before,
+  [data-template-id="verdant-house-grooming"] *::after { transition-duration: .01ms !important; }
+  [data-template-id="verdant-house-grooming"] [data-vh-reveal] { transform: none; opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  [data-template-id="verdant-house-grooming"] .vh-nav { grid-template-columns: 1fr auto auto; }
+  [data-template-id="verdant-house-grooming"] .vh-menu { display: inline-flex; }
+  [data-template-id="verdant-house-grooming"] .vh-nav-links { position: absolute; top: calc(100% + 1px); right: 22px; left: 22px; display: grid; max-height: 0; overflow: hidden; gap: 0; background: var(--vh-page); opacity: 0; pointer-events: none; transition: max-height 300ms ease, opacity 220ms ease; }
+  [data-template-id="verdant-house-grooming"] .vh-nav-links.is-open { max-height: 20rem; border: 1px solid var(--vh-line); opacity: 1; pointer-events: auto; }
+  [data-template-id="verdant-house-grooming"] .vh-nav-links a { padding: 1rem; border-bottom: 1px solid var(--vh-line); }
+  [data-template-id="verdant-house-grooming"] .vh-hero { background: linear-gradient(165deg,var(--vh-page) 0%,var(--vh-page) 65%,#e4d9c7 65%,#e4d9c7 100%); }
+  [data-template-id="verdant-house-grooming"] .vh-hero-grid,
+  [data-template-id="verdant-house-grooming"] .vh-about { grid-template-columns: 1fr; min-height: auto; }
+  [data-template-id="verdant-house-grooming"] .vh-hero-copy { display: flex; flex-direction: column; align-items: center; padding-top: 3rem; text-align: center; }
+  [data-template-id="verdant-house-grooming"] .vh-hero-image { height: min(63vh,560px); }
+  [data-template-id="verdant-house-grooming"] .vh-promise-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  [data-template-id="verdant-house-grooming"] .vh-about-images { min-height: 38rem; }
+  [data-template-id="verdant-house-grooming"] .vh-lookbook { grid-template-columns: 1fr; }
+  [data-template-id="verdant-house-grooming"] .vh-lookbook > div { min-height: 28rem; }
+  [data-template-id="verdant-house-grooming"] .vh-team-grid,
+  [data-template-id="verdant-house-grooming"] .vh-package-grid,
+  [data-template-id="verdant-house-grooming"] .vh-testimonial-grid,
+  [data-template-id="verdant-house-grooming"] .vh-footer-grid { grid-template-columns: 1fr; }
+  [data-template-id="verdant-house-grooming"] .vh-package.is-featured { transform: none; }
+}
+
+@media (max-width: 640px) {
+  [data-template-id="verdant-house-grooming"] .vh-container { width: min(100% - 32px,1232px); }
+  [data-template-id="verdant-house-grooming"] .vh-header-button { display: none; }
+  [data-template-id="verdant-house-grooming"] .vh-nav { grid-template-columns: 1fr auto; min-height: 68px; }
+  [data-template-id="verdant-house-grooming"] .vh-nav-links { right: 16px; left: 16px; }
+  [data-template-id="verdant-house-grooming"] .vh-logo { font-size: 1.3rem; }
+  [data-template-id="verdant-house-grooming"] .vh-hero h1 { font-size: clamp(3.5rem,16vw,5rem); }
+  [data-template-id="verdant-house-grooming"] .vh-actions,
+  [data-template-id="verdant-house-grooming"] .vh-actions .vh-button { width: 100%; }
+  [data-template-id="verdant-house-grooming"] .vh-hero-image { height: 78vw; min-height: 350px; border-radius: 34px; }
+  [data-template-id="verdant-house-grooming"] .vh-promise-grid { grid-template-columns: 1fr; }
+  [data-template-id="verdant-house-grooming"] .vh-about-images { min-height: 31rem; }
+  [data-template-id="verdant-house-grooming"] .vh-about-main { width: 88%; height: 28rem; }
+  [data-template-id="verdant-house-grooming"] .vh-about-detail { width: 54%; height: 15rem; border-width: 7px; }
+  [data-template-id="verdant-house-grooming"] .vh-service-row p { display: none; }
+  [data-template-id="verdant-house-grooming"] .vh-service-row h3 { font-size: 1.65rem; }
+  [data-template-id="verdant-house-grooming"] .vh-footer-bottom { flex-direction: column; align-items: flex-start; }
+}

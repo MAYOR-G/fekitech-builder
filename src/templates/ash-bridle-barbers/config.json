@@ -1,0 +1,16 @@
+{
+  "id": "ash-bridle-barbers",
+  "name": "Ash & Bridle Barbers",
+  "description": "An editorial barbershop template with a floating glass navigation, asymmetrical hero, scroll-led philosophy, interactive service panels, bento lookbook, and dark appointment footer.",
+  "category": "Business",
+  "image": "/templates/ash-bridle-barbers.webp",
+  "previewImages": [
+    "/templates/ash-bridle-barbers.webp"
+  ],
+  "features": [
+    "Editable identity, navigation, services, imagery, booking details, and links",
+    "Interactive expanding service menu",
+    "Scroll reveals and image parallax",
+    "Responsive editorial composition"
+  ]
+}

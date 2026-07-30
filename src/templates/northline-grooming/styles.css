@@ -1,0 +1,965 @@
+[data-template-id="northline-grooming"] {
+  --nl-page: #f7f8f5;
+  --nl-surface: #ecefeb;
+  --nl-ink: #111512;
+  --nl-muted: #5f6962;
+  --nl-accent: #1d4e5f;
+  --nl-accent-soft: #d7e3e1;
+  --nl-light: #f7f8f5;
+  --nl-line: rgba(17, 21, 18, 0.12);
+  --nl-heading-font: "Avenir Next", "Segoe UI", sans-serif;
+  --nl-body-font: "Avenir Next", "Segoe UI", sans-serif;
+  min-width: 320px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 86% 9%, color-mix(in srgb, var(--nl-accent) 11%, transparent), transparent 31rem),
+    var(--nl-page);
+  color: var(--nl-ink);
+  font-family: var(--nl-body-font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-template-id="northline-grooming"] *,
+[data-template-id="northline-grooming"] *::before,
+[data-template-id="northline-grooming"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="northline-grooming"] h1,
+[data-template-id="northline-grooming"] h2,
+[data-template-id="northline-grooming"] h3,
+[data-template-id="northline-grooming"] p {
+  margin: 0;
+}
+
+[data-template-id="northline-grooming"] h1,
+[data-template-id="northline-grooming"] h2,
+[data-template-id="northline-grooming"] h3 {
+  font-family: var(--nl-heading-font);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.93;
+  text-wrap: balance;
+}
+
+[data-template-id="northline-grooming"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="northline-grooming"] button,
+[data-template-id="northline-grooming"] a,
+[data-template-id="northline-grooming"] summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+[data-template-id="northline-grooming"] :focus-visible {
+  outline: 3px solid var(--nl-accent);
+  outline-offset: 4px;
+}
+
+[data-template-id="northline-grooming"] .nl-container {
+  width: min(100% - 44px, 1248px);
+  margin-inline: auto;
+}
+
+[data-template-id="northline-grooming"] .nl-section {
+  padding-block: clamp(5.5rem, 10vw, 8.5rem);
+}
+
+[data-template-id="northline-grooming"] .nl-skip {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 50;
+  padding: 0.75rem 1rem;
+  background: var(--nl-ink);
+  color: var(--nl-light);
+  transform: translateY(-180%);
+}
+
+[data-template-id="northline-grooming"] .nl-skip:focus {
+  transform: translateY(0);
+}
+
+[data-template-id="northline-grooming"] .nl-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--nl-line);
+  background: color-mix(in srgb, var(--nl-page) 88%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+[data-template-id="northline-grooming"] .nl-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  min-height: 76px;
+  gap: 2rem;
+}
+
+[data-template-id="northline-grooming"] .nl-logo {
+  width: fit-content;
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-logo span {
+  color: var(--nl-accent);
+}
+
+[data-template-id="northline-grooming"] .nl-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 3.5vw, 2.75rem);
+}
+
+[data-template-id="northline-grooming"] .nl-links a {
+  color: var(--nl-muted);
+  font-size: 0.81rem;
+  font-weight: 700;
+  transition: color 220ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-links a:hover {
+  color: var(--nl-ink);
+}
+
+[data-template-id="northline-grooming"] .nl-header-book {
+  justify-self: end;
+  padding: 1rem 2rem;
+  background: var(--nl-accent);
+  color: var(--nl-light);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-header-book:hover {
+  background: var(--nl-ink);
+  transform: translateY(-2px);
+}
+
+[data-template-id="northline-grooming"] .nl-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--nl-line);
+  background: transparent;
+  color: var(--nl-ink);
+}
+
+[data-template-id="northline-grooming"] .nl-menu svg {
+  width: 22px;
+  height: 22px;
+}
+
+[data-template-id="northline-grooming"] .nl-hero {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  min-height: calc(100dvh - 76px);
+  gap: clamp(2.5rem, 6vw, 5.4rem);
+  padding-block: clamp(3rem, 7vw, 5.75rem);
+}
+
+[data-template-id="northline-grooming"] .nl-eyebrow,
+[data-template-id="northline-grooming"] .nl-section-heading > p {
+  margin-bottom: 1.15rem;
+  color: var(--nl-accent);
+  font-size: 0.69rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-hero h1 {
+  max-width: 720px;
+  font-size: clamp(4.2rem, 7.2vw, 7rem);
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-hero-description {
+  max-width: 34rem;
+  margin-top: 2rem;
+  color: var(--nl-muted);
+  font-size: clamp(1rem, 1.4vw, 1.17rem);
+  line-height: 1.58;
+}
+
+[data-template-id="northline-grooming"] .nl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+[data-template-id="northline-grooming"] .nl-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  gap: 1.1rem;
+  padding: 0.9rem 1.65rem;
+  border: 2px solid transparent;
+  font-size: 0.69rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color 240ms ease, background 240ms ease, border-color 240ms ease, transform 240ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-action svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 240ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-action:hover {
+  transform: translateY(-3px);
+}
+
+[data-template-id="northline-grooming"] .nl-action:hover svg {
+  transform: translateX(4px);
+}
+
+[data-template-id="northline-grooming"] .nl-action:active {
+  transform: translateY(0) scale(0.98);
+}
+
+[data-template-id="northline-grooming"] .nl-action-accent {
+  background: var(--nl-accent);
+  color: var(--nl-light);
+}
+
+[data-template-id="northline-grooming"] .nl-action-accent:hover {
+  border-color: var(--nl-accent);
+  background: transparent;
+  color: var(--nl-accent);
+}
+
+[data-template-id="northline-grooming"] .nl-action-dark {
+  background: var(--nl-ink);
+  color: var(--nl-light);
+}
+
+[data-template-id="northline-grooming"] .nl-action-dark:hover {
+  border-color: var(--nl-ink);
+  background: transparent;
+  color: var(--nl-ink);
+}
+
+[data-template-id="northline-grooming"] .nl-action-light {
+  background: var(--nl-light);
+  color: var(--nl-ink);
+}
+
+[data-template-id="northline-grooming"] .nl-action-light:hover {
+  border-color: var(--nl-light);
+  background: transparent;
+  color: var(--nl-light);
+}
+
+[data-template-id="northline-grooming"] .nl-hero-image {
+  position: relative;
+  height: min(70vh, 680px);
+  min-height: 470px;
+  overflow: hidden;
+  border-radius: 44px 44px 44% 44%;
+  box-shadow: 0 34px 80px color-mix(in srgb, var(--nl-accent) 18%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.045);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-template-id="northline-grooming"] .nl-hero-image:hover img {
+  transform: scale(1);
+}
+
+[data-template-id="northline-grooming"] .nl-hero-image span {
+  position: absolute;
+  bottom: 1.35rem;
+  left: 1.35rem;
+  padding: 0.85rem 1rem;
+  background: color-mix(in srgb, var(--nl-page) 92%, transparent);
+  color: var(--nl-ink);
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+[data-template-id="northline-grooming"] .nl-proof {
+  border-block: 1px solid var(--nl-line);
+  background: color-mix(in srgb, var(--nl-surface) 76%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.15rem;
+  padding-block: 2rem;
+}
+
+[data-template-id="northline-grooming"] .nl-proof p {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--nl-line);
+  font-size: 0.69rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-proof p::before {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--nl-accent);
+  content: "";
+}
+
+[data-template-id="northline-grooming"] .nl-about {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  gap: clamp(3rem, 7vw, 6rem);
+}
+
+[data-template-id="northline-grooming"] .nl-about-image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 44px 44px 12px 12px;
+  box-shadow: 0 28px 70px color-mix(in srgb, var(--nl-accent) 12%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 850ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-template-id="northline-grooming"] .nl-about-image:hover img {
+  transform: scale(1.035);
+}
+
+[data-template-id="northline-grooming"] .nl-about h2,
+[data-template-id="northline-grooming"] .nl-section-heading h2,
+[data-template-id="northline-grooming"] .nl-services h2,
+[data-template-id="northline-grooming"] .nl-cta h2 {
+  font-size: clamp(3.25rem, 5.8vw, 5.6rem);
+}
+
+[data-template-id="northline-grooming"] .nl-about-copy > p:not(.nl-eyebrow) {
+  max-width: 38rem;
+  margin-top: 1.35rem;
+  color: var(--nl-muted);
+  font-size: 1.05rem;
+}
+
+[data-template-id="northline-grooming"] .nl-about-copy .nl-action {
+  margin-top: 2rem;
+}
+
+[data-template-id="northline-grooming"] .nl-services {
+  margin-inline: clamp(0rem, 2vw, 2rem);
+  padding-block: clamp(5.5rem, 10vw, 8.5rem);
+  background:
+    radial-gradient(circle at 80% 0%, color-mix(in srgb, var(--nl-accent) 35%, transparent), transparent 25rem),
+    var(--nl-ink);
+  color: var(--nl-light);
+}
+
+[data-template-id="northline-grooming"] .nl-services-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.45fr);
+  align-items: end;
+  gap: 3rem;
+  margin-bottom: 3.25rem;
+}
+
+[data-template-id="northline-grooming"] .nl-services-heading > p {
+  color: color-mix(in srgb, var(--nl-light) 58%, transparent);
+  font-size: 1.02rem;
+}
+
+[data-template-id="northline-grooming"] .nl-service-list {
+  border-top: 1px solid color-mix(in srgb, var(--nl-light) 14%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-service-row {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding-block: 2rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--nl-light) 14%, transparent);
+  transition: padding 280ms ease, background 280ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-service-row:hover {
+  padding-inline: 1.15rem;
+  background: color-mix(in srgb, var(--nl-light) 5%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-service-row > span {
+  color: color-mix(in srgb, var(--nl-light) 42%, transparent);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+
+[data-template-id="northline-grooming"] .nl-service-row h3 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-weight: 400;
+}
+
+[data-template-id="northline-grooming"] .nl-service-row p {
+  max-height: 0;
+  overflow: hidden;
+  color: color-mix(in srgb, var(--nl-light) 60%, transparent);
+  opacity: 0;
+  transition: max-height 260ms ease, margin 260ms ease, opacity 260ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-service-row:hover p {
+  max-height: 4rem;
+  margin-top: 0.65rem;
+  opacity: 1;
+}
+
+[data-template-id="northline-grooming"] .nl-service-row strong {
+  color: #87aeb8;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+[data-template-id="northline-grooming"] .nl-section-heading {
+  max-width: 58rem;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+[data-template-id="northline-grooming"] .nl-section-heading.is-centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item {
+  min-height: 28rem;
+  overflow: hidden;
+  background: var(--nl-surface);
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item-1 {
+  grid-column: span 8;
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item-2 {
+  grid-column: span 4;
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item-3,
+[data-template-id="northline-grooming"] .nl-lookbook-item-4,
+[data-template-id="northline-grooming"] .nl-lookbook-item-5 {
+  grid-column: span 4;
+  min-height: 24rem;
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.88) contrast(1.04);
+  transition: transform 850ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-template-id="northline-grooming"] .nl-lookbook-item:hover img {
+  transform: scale(1.045);
+}
+
+[data-template-id="northline-grooming"] .nl-team-section {
+  background: var(--nl-surface);
+}
+
+[data-template-id="northline-grooming"] .nl-team-grid,
+[data-template-id="northline-grooming"] .nl-package-grid,
+[data-template-id="northline-grooming"] .nl-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+[data-template-id="northline-grooming"] .nl-team-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  filter: saturate(0.86) contrast(1.05);
+}
+
+[data-template-id="northline-grooming"] .nl-team-card h3 {
+  font-size: 1.6rem;
+}
+
+[data-template-id="northline-grooming"] .nl-team-card p {
+  margin-top: 0.35rem;
+  color: var(--nl-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-package {
+  display: flex;
+  flex-direction: column;
+  min-height: 34rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid var(--nl-line);
+  background: color-mix(in srgb, var(--nl-surface) 82%, transparent);
+  transition: transform 280ms ease, box-shadow 280ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-package:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 54px color-mix(in srgb, var(--nl-accent) 10%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-package.is-featured {
+  background: var(--nl-ink);
+  color: var(--nl-light);
+}
+
+[data-template-id="northline-grooming"] .nl-package h3 {
+  font-size: 1.55rem;
+}
+
+[data-template-id="northline-grooming"] .nl-price {
+  display: flex;
+  align-items: end;
+  gap: 0.75rem;
+  margin-block: 1.75rem 2.5rem;
+}
+
+[data-template-id="northline-grooming"] .nl-price strong {
+  font-size: clamp(3.2rem, 5vw, 4.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+[data-template-id="northline-grooming"] .nl-price span {
+  color: var(--nl-muted);
+  font-size: 0.8rem;
+}
+
+[data-template-id="northline-grooming"] .nl-package.is-featured .nl-price span,
+[data-template-id="northline-grooming"] .nl-package.is-featured li {
+  color: color-mix(in srgb, var(--nl-light) 68%, transparent);
+}
+
+[data-template-id="northline-grooming"] .nl-package ul {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+[data-template-id="northline-grooming"] .nl-package li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--nl-muted);
+}
+
+[data-template-id="northline-grooming"] .nl-package li::before {
+  color: var(--nl-accent);
+  content: "✓";
+  font-weight: 900;
+}
+
+[data-template-id="northline-grooming"] .nl-package .nl-action {
+  width: 100%;
+  margin-top: auto;
+}
+
+[data-template-id="northline-grooming"] .nl-reviews {
+  background: color-mix(in srgb, var(--nl-accent-soft) 58%, var(--nl-page));
+}
+
+[data-template-id="northline-grooming"] .nl-review-grid blockquote {
+  margin: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--nl-line);
+}
+
+[data-template-id="northline-grooming"] .nl-review-grid blockquote p {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.55;
+}
+
+[data-template-id="northline-grooming"] .nl-review-grid blockquote footer {
+  margin-top: 1.5rem;
+  color: var(--nl-accent);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-faq {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+[data-template-id="northline-grooming"] .nl-faq details {
+  padding-block: 1.75rem;
+  border-bottom: 1px solid var(--nl-line);
+}
+
+[data-template-id="northline-grooming"] .nl-faq details:first-child {
+  border-top: 1px solid var(--nl-line);
+}
+
+[data-template-id="northline-grooming"] .nl-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 750;
+  list-style: none;
+}
+
+[data-template-id="northline-grooming"] .nl-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="northline-grooming"] .nl-faq summary::after {
+  color: var(--nl-accent);
+  content: "+";
+  font-size: 1.7rem;
+  font-weight: 400;
+  transition: transform 220ms ease;
+}
+
+[data-template-id="northline-grooming"] .nl-faq details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+[data-template-id="northline-grooming"] .nl-faq details p {
+  max-width: 42rem;
+  padding: 1rem 2.5rem 0 0;
+  color: var(--nl-muted);
+}
+
+[data-template-id="northline-grooming"] .nl-cta {
+  margin: 0 clamp(0rem, 2vw, 2rem) clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(5.5rem, 10vw, 8rem);
+  background:
+    radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--nl-accent) 16%, transparent), transparent 31rem),
+    var(--nl-surface);
+  text-align: center;
+}
+
+[data-template-id="northline-grooming"] .nl-cta .nl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[data-template-id="northline-grooming"] .nl-cta h2 {
+  max-width: 60rem;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-cta > div > p:not(.nl-eyebrow) {
+  max-width: 34rem;
+  margin: 1.5rem auto 2rem;
+  color: var(--nl-muted);
+  font-size: 1.05rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer {
+  padding-block: clamp(4.5rem, 8vw, 7rem) 2rem;
+  border-top: 1px solid var(--nl-line);
+}
+
+[data-template-id="northline-grooming"] .nl-footer-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr;
+  gap: clamp(2.5rem, 7vw, 6rem);
+  padding-bottom: 5rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer-grid > div:first-child > p {
+  max-width: 22rem;
+  margin-top: 1.25rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer h2 {
+  margin-bottom: 0.8rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+[data-template-id="northline-grooming"] .nl-footer p,
+[data-template-id="northline-grooming"] .nl-footer-grid a:not(.nl-logo) {
+  color: var(--nl-muted);
+  font-size: 0.9rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer-grid a:not(.nl-logo):hover,
+[data-template-id="northline-grooming"] .nl-footer-bottom a:hover {
+  color: var(--nl-accent);
+}
+
+[data-template-id="northline-grooming"] .nl-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--nl-line);
+}
+
+[data-template-id="northline-grooming"] .nl-footer-bottom p,
+[data-template-id="northline-grooming"] .nl-footer-bottom a {
+  color: var(--nl-muted);
+  font-size: 0.74rem;
+}
+
+[data-template-id="northline-grooming"] .nl-footer-bottom div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+[data-template-id="northline-grooming"] [data-nl-reveal] {
+  transform: translateY(24px);
+  opacity: 0;
+  transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1), opacity 700ms ease;
+}
+
+[data-template-id="northline-grooming"] [data-nl-reveal].is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-template-id="northline-grooming"] *,
+  [data-template-id="northline-grooming"] *::before,
+  [data-template-id="northline-grooming"] *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-template-id="northline-grooming"] [data-nl-reveal] {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 980px) {
+  [data-template-id="northline-grooming"] .nl-nav {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  [data-template-id="northline-grooming"] .nl-menu {
+    display: inline-flex;
+  }
+
+  [data-template-id="northline-grooming"] .nl-links {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 22px;
+    left: 22px;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    gap: 0;
+    background: var(--nl-page);
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 320ms ease, opacity 220ms ease;
+  }
+
+  [data-template-id="northline-grooming"] .nl-links.is-open {
+    max-height: 22rem;
+    border: 1px solid var(--nl-line);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  [data-template-id="northline-grooming"] .nl-links a {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--nl-line);
+  }
+
+  [data-template-id="northline-grooming"] .nl-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 5.5rem;
+    text-align: center;
+  }
+
+  [data-template-id="northline-grooming"] .nl-hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  [data-template-id="northline-grooming"] .nl-hero-image {
+    height: min(62vh, 560px);
+  }
+
+  [data-template-id="northline-grooming"] .nl-about {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="northline-grooming"] .nl-about-image {
+    max-height: 46rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-team-grid,
+  [data-template-id="northline-grooming"] .nl-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="northline-grooming"] .nl-team-card {
+    max-width: 38rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-package {
+    min-height: 29rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-faq {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="northline-grooming"] .nl-container {
+    width: min(100% - 32px, 1248px);
+  }
+
+  [data-template-id="northline-grooming"] .nl-header-book {
+    display: none;
+  }
+
+  [data-template-id="northline-grooming"] .nl-nav {
+    grid-template-columns: 1fr auto;
+    min-height: 68px;
+  }
+
+  [data-template-id="northline-grooming"] .nl-links {
+    right: 16px;
+    left: 16px;
+  }
+
+  [data-template-id="northline-grooming"] .nl-hero h1 {
+    font-size: clamp(3.65rem, 18vw, 5rem);
+  }
+
+  [data-template-id="northline-grooming"] .nl-hero-image {
+    height: 68vw;
+    min-height: 330px;
+    border-radius: 28px;
+  }
+
+  [data-template-id="northline-grooming"] .nl-actions,
+  [data-template-id="northline-grooming"] .nl-actions .nl-action {
+    width: 100%;
+  }
+
+  [data-template-id="northline-grooming"] .nl-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="northline-grooming"] .nl-services {
+    margin-inline: 0;
+  }
+
+  [data-template-id="northline-grooming"] .nl-services-heading {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-service-row {
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    gap: 0.75rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-service-row p {
+    display: none;
+  }
+
+  [data-template-id="northline-grooming"] .nl-lookbook {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="northline-grooming"] .nl-lookbook-item,
+  [data-template-id="northline-grooming"] .nl-lookbook-item-1,
+  [data-template-id="northline-grooming"] .nl-lookbook-item-2,
+  [data-template-id="northline-grooming"] .nl-lookbook-item-3,
+  [data-template-id="northline-grooming"] .nl-lookbook-item-4,
+  [data-template-id="northline-grooming"] .nl-lookbook-item-5 {
+    grid-column: auto;
+    min-height: 24rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="northline-grooming"] .nl-cta {
+    margin-inline: 0;
+  }
+
+  [data-template-id="northline-grooming"] .nl-footer-grid {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+
+  [data-template-id="northline-grooming"] .nl-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

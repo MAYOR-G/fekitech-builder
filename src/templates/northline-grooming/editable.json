@@ -1,0 +1,176 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f7f8f5",
+      "surface": "#ecefeb",
+      "ink": "#111512",
+      "muted": "#5f6962",
+      "accent": "#1d4e5f",
+      "accentSoft": "#d7e3e1",
+      "light": "#f7f8f5",
+      "line": "rgba(17, 21, 18, 0.12)"
+    },
+    "typography": {
+      "heading": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+      "body": "\"Avenir Next\", \"Segoe UI\", sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Northline",
+    "mark": ".",
+    "tagline": "Modern grooming studio",
+    "phone": "+1 (312) 555-0147",
+    "phoneHref": "tel:+13125550147",
+    "email": "chairs@northlinegrooming.com",
+    "emailHref": "mailto:chairs@northlinegrooming.com",
+    "address": "418 West Armitage Avenue, Chicago, IL 60614"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Philosophy", "href": "#philosophy" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Lookbook", "href": "#lookbook" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "buttonLabel": "Book now",
+    "buttonHref": "#book"
+  },
+  "hero": {
+    "eyebrow": "Modern grooming studio",
+    "title": "Calm in every cut.",
+    "description": "Precise cuts, quiet appointments, and a considered studio built for people who value the details.",
+    "primaryLabel": "Book a chair",
+    "primaryHref": "#book",
+    "secondaryLabel": "Explore services",
+    "secondaryHref": "#services",
+    "image": "/templates/northline-grooming/assets/hero.jpg",
+    "imageAlt": "Professional barber tools arranged on a dark work mat",
+    "imageNote": "Clean fades / quiet chairs"
+  },
+  "proof": [
+    "Measured precision",
+    "Meticulous hygiene",
+    "Thoughtful design",
+    "Simple booking"
+  ],
+  "about": {
+    "eyebrow": "Our point of view",
+    "title": "A clearer standard.",
+    "paragraphs": [
+      "Northline keeps the room focused on the craft: balanced light, excellent tools, and barbers who understand shape, texture, and how a cut grows out.",
+      "No rushed handoffs or unnecessary theatre. Just attentive contemporary grooming in a calm, spotless studio."
+    ],
+    "buttonLabel": "Meet the barbers",
+    "buttonHref": "#team",
+    "image": "/templates/northline-grooming/assets/about.jpg",
+    "imageAlt": "Barber refining a clean fade"
+  },
+  "services": {
+    "eyebrow": "Service menu",
+    "title": "Choose your detail.",
+    "description": "Focused appointments shaped around your hair, routine, and preferred finish.",
+    "items": [
+      { "title": "Northline cut", "price": "$58", "description": "Consultation, precision cut, wash, and finish." },
+      { "title": "Skin fade", "price": "$64", "description": "Detailed fade work with a clean neckline and finish." },
+      { "title": "Cut + beard", "price": "$82", "description": "A complete haircut with beard balance and hot towel." },
+      { "title": "Beard architecture", "price": "$38", "description": "Shape, line work, conditioning, and finish." },
+      { "title": "Quiet hour", "price": "$72", "description": "A low-sensory appointment with extra time and no small talk." }
+    ]
+  },
+  "lookbook": {
+    "eyebrow": "Recent work",
+    "title": "Lines, texture, form.",
+    "images": [
+      { "src": "/templates/northline-grooming/assets/lookbook-1.jpg", "alt": "Contemporary barbershop interior" },
+      { "src": "/templates/northline-grooming/assets/lookbook-2.jpg", "alt": "Barber working carefully at a mirror" },
+      { "src": "/templates/northline-grooming/assets/lookbook-3.jpg", "alt": "Close view of a precision haircut" },
+      { "src": "/templates/northline-grooming/assets/lookbook-4.jpg", "alt": "Modern textured haircut" },
+      { "src": "/templates/northline-grooming/assets/lookbook-5.jpg", "alt": "Finished haircut with a clean silhouette" }
+    ]
+  },
+  "team": {
+    "eyebrow": "The specialists",
+    "title": "A small team, fully present.",
+    "items": [
+      { "name": "Elias Mercer", "role": "Creative director", "image": "/templates/northline-grooming/assets/team-1.jpg", "imageAlt": "Elias Mercer in the Northline studio" },
+      { "name": "Andre Holloway", "role": "Senior barber", "image": "/templates/northline-grooming/assets/team-2.jpg", "imageAlt": "Andre Holloway, senior barber" },
+      { "name": "Noah Bennett", "role": "Texture specialist", "image": "/templates/northline-grooming/assets/team-3.jpg", "imageAlt": "Noah Bennett at work" }
+    ]
+  },
+  "packages": {
+    "eyebrow": "Keep your rhythm",
+    "title": "Memberships without the noise.",
+    "items": [
+      {
+        "name": "Essential",
+        "price": "$68",
+        "period": "per month",
+        "featured": false,
+        "features": ["One haircut each month", "Priority rescheduling", "Neckline clean-up"],
+        "buttonLabel": "Choose Essential",
+        "buttonHref": "#book"
+      },
+      {
+        "name": "Form",
+        "price": "$118",
+        "period": "per month",
+        "featured": true,
+        "features": ["Two appointments each month", "Cut or cut + beard", "Product credit included"],
+        "buttonLabel": "Choose Form",
+        "buttonHref": "#book"
+      },
+      {
+        "name": "Studio",
+        "price": "$176",
+        "period": "per month",
+        "featured": false,
+        "features": ["Weekly shape-ups", "Two full cuts", "Reserved time window"],
+        "buttonLabel": "Choose Studio",
+        "buttonHref": "#book"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "From the chair",
+    "title": "The details get noticed.",
+    "items": [
+      { "quote": "The first cut I have had that looked just as good three weeks later.", "name": "Marcus Lee" },
+      { "quote": "The room is calm, the timing is exact, and Elias listens before he reaches for the clippers.", "name": "Theo Grant" },
+      { "quote": "Easy booking, thoughtful service, and consistently excellent work.", "name": "Daniel Ruiz" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Good to know",
+    "title": "Before your visit.",
+    "items": [
+      { "question": "How early should I arrive?", "answer": "Five minutes is perfect. It gives us time to settle in and begin the consultation without rushing." },
+      { "question": "Can I book the same barber each time?", "answer": "Yes. Choose your barber when booking, or ask us to keep a recurring time for a membership." },
+      { "question": "What if I need to reschedule?", "answer": "Use the link in your confirmation up to twelve hours before the appointment, or call the studio." },
+      { "question": "Do you work with longer hair and textured styles?", "answer": "Yes. Our team works across lengths and textures. Add a note when booking so we reserve the right amount of time." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your next appointment",
+    "title": "Make room for a better cut.",
+    "description": "Choose a service and a barber. We will take care of the rest.",
+    "buttonLabel": "Reserve a chair",
+    "buttonHref": "https://example.com/northline-booking"
+  },
+  "footer": {
+    "description": "Contemporary barbering in a quiet Chicago studio.",
+    "hours": [
+      "Tuesday–Friday · 9:00–20:00",
+      "Saturday · 9:00–18:00",
+      "Sunday–Monday · Closed"
+    ],
+    "socialLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ],
+    "copyright": "© 2026 Northline Grooming. All rights reserved."
+  }
+}

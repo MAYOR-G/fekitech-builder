@@ -1,0 +1,122 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f7f3eb",
+      "surface": "#eee7da",
+      "ink": "#17171b",
+      "accent": "#b07a43",
+      "light": "#f7f3eb",
+      "line": "rgba(23, 23, 27, 0.12)"
+    },
+    "typography": {
+      "heading": "\"Cormorant Garamond\", Georgia, serif",
+      "body": "Inter, \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Ash & Bridle",
+    "mark": "A&B",
+    "studioLabel": "Ash & Bridle Studio",
+    "addressLines": [
+      "68 Mercer Row",
+      "Chicago, IL 60610"
+    ],
+    "phone": "+1 (312) 555-0186",
+    "phoneHref": "tel:+13125550186",
+    "email": "chair@ashandbridle.com",
+    "emailHref": "mailto:chair@ashandbridle.com"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Philosophy", "href": "#ab-philosophy" },
+      { "label": "Services", "href": "#ab-services" },
+      { "label": "Lookbook", "href": "#ab-lookbook" }
+    ],
+    "buttonLabel": "Book",
+    "buttonHref": "#ab-book"
+  },
+  "hero": {
+    "titleLineOne": "Craft,",
+    "titleLineTwo": "Considered.",
+    "description": "Heritage technique meets modern restraint in a private studio shaped around thoughtful, unhurried service.",
+    "buttonLabel": "Reserve a chair",
+    "buttonHref": "#ab-book",
+    "image": "/templates/ash-bridle-barbers/assets/hero.jpg",
+    "imageAlt": "A refined barber studio with warm, considered details",
+    "detailImage": "/templates/ash-bridle-barbers/assets/service-cut.jpg",
+    "detailImageAlt": "Barber preparing a precision cut"
+  },
+  "philosophy": {
+    "eyebrow": "Our philosophy",
+    "statement": "A haircut should never feel like an errand. It is a measured pause—quiet craft, clear advice, and work designed to grow out beautifully."
+  },
+  "services": {
+    "eyebrow": "The menu",
+    "title": "Curated services",
+    "description": "Decades of technique, delivered with care and without rush.",
+    "items": [
+      {
+        "title": "The House Cut",
+        "price": "$64",
+        "description": "Consultation, precision scissor and clipper work, wash, and finish.",
+        "image": "/templates/ash-bridle-barbers/assets/service-cut.jpg",
+        "imageAlt": "Precision haircut in progress",
+        "icon": "scissors"
+      },
+      {
+        "title": "Hot Towel Shave",
+        "price": "$52",
+        "description": "Steam, straight razor work, cold towel, and a botanical finishing balm.",
+        "image": "/templates/ash-bridle-barbers/assets/service-shave.jpg",
+        "imageAlt": "Traditional hot towel shaving service",
+        "icon": "drop"
+      },
+      {
+        "title": "Beard Architecture",
+        "price": "$44",
+        "description": "Detailed shaping, line work, conditioning, and a balanced finish.",
+        "image": "/templates/ash-bridle-barbers/assets/service-beard.jpg",
+        "imageAlt": "Barber carefully shaping a beard",
+        "icon": "scissors"
+      },
+      {
+        "title": "The Full Detail",
+        "price": "$108",
+        "description": "A complete cut, beard service, hot towel, and restorative facial massage.",
+        "image": "/templates/ash-bridle-barbers/assets/service-detail.jpg",
+        "imageAlt": "Complete barbering detail service",
+        "icon": "drop"
+      }
+    ]
+  },
+  "lookbook": {
+    "title": "The canvas",
+    "quote": "Precision is not a detail. It is the whole point.",
+    "images": [
+      { "src": "/templates/ash-bridle-barbers/assets/lookbook-1.jpg", "alt": "Barber tools ready for service" },
+      { "src": "/templates/ash-bridle-barbers/assets/lookbook-2.jpg", "alt": "Careful barbering detail" },
+      { "src": "/templates/ash-bridle-barbers/assets/lookbook-3.jpg", "alt": "Warm and refined barber studio" },
+      { "src": "/templates/ash-bridle-barbers/assets/lookbook-4.jpg", "alt": "Finished precision haircut" },
+      { "src": "/templates/ash-bridle-barbers/assets/lookbook-5.jpg", "alt": "Modern fading technique" }
+    ]
+  },
+  "booking": {
+    "title": "Claim your",
+    "titleAccent": "time.",
+    "description": "Choose a service, reserve your chair, and leave the rest to us.",
+    "buttonLabel": "Book appointment",
+    "buttonHref": "https://example.com/ash-bridle-booking",
+    "hours": [
+      { "days": "Tuesday–Friday", "time": "9am–8pm" },
+      { "days": "Saturday", "time": "9am–6pm" },
+      { "days": "Sunday & Monday", "time": "Closed" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Ash & Bridle. All rights reserved.",
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Privacy", "href": "/privacy" }
+    ]
+  }
+}

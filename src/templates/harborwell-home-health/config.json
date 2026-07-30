@@ -1,0 +1,16 @@
+{
+  "id": "harborwell-home-health",
+  "name": "Harborwell Home Health",
+  "description": "A warm, modern home-health template with a lime editorial hero, arched care imagery, service pathways, specialty care, outcomes, family stories, partner band, and contact form.",
+  "category": "Business",
+  "image": "/templates/harborwell-home-health.webp",
+  "previewImages": [
+    "/templates/harborwell-home-health.webp"
+  ],
+  "features": [
+    "Editable identity, care services, imagery, outcomes, stories, contact details, buttons, and links",
+    "Completed service, approach, testimonial, and contact sections",
+    "Local source imagery",
+    "Responsive scroll-reveal layout"
+  ]
+}

@@ -68,6 +68,20 @@ import pizzaLightConfig from "../templates/pizza-light-clean/config.json";
 import pizzaLightEditable from "../templates/pizza-light-clean/editable.json";
 import premiumRestaurantConfig from "../templates/premium-restaurant/config.json";
 import premiumRestaurantEditable from "../templates/premium-restaurant/editable.json";
+import blueforgePlumbingConfig from "../templates/blueforge-plumbing/config.json";
+import blueforgePlumbingEditable from "../templates/blueforge-plumbing/editable.json";
+import northlineGroomingConfig from "../templates/northline-grooming/config.json";
+import northlineGroomingEditable from "../templates/northline-grooming/editable.json";
+import verdantHouseGroomingConfig from "../templates/verdant-house-grooming/config.json";
+import verdantHouseGroomingEditable from "../templates/verdant-house-grooming/editable.json";
+import brightnestCleaningConfig from "../templates/brightnest-cleaning/config.json";
+import brightnestCleaningEditable from "../templates/brightnest-cleaning/editable.json";
+import ashBridleBarbersConfig from "../templates/ash-bridle-barbers/config.json";
+import ashBridleBarbersEditable from "../templates/ash-bridle-barbers/editable.json";
+import lacquerFormNailAtelierConfig from "../templates/lacquer-form-nail-atelier/config.json";
+import lacquerFormNailAtelierEditable from "../templates/lacquer-form-nail-atelier/editable.json";
+import harborwellHomeHealthConfig from "../templates/harborwell-home-health/config.json";
+import harborwellHomeHealthEditable from "../templates/harborwell-home-health/editable.json";
 
 
 export type TemplateConfig = {
@@ -122,6 +136,13 @@ const components = {
   "pastries-snacks-premium": dynamic<{ data: TemplateData }>(() => import("../templates/pastries-snacks-premium/template")),
   "pizza-light-clean": dynamic<{ data: TemplateData }>(() => import("../templates/pizza-light-clean/template")),
   "premium-restaurant": dynamic<{ data: TemplateData }>(() => import("../templates/premium-restaurant/template")),
+  "blueforge-plumbing": dynamic<{ data: TemplateData }>(() => import("../templates/blueforge-plumbing/template")),
+  "northline-grooming": dynamic<{ data: TemplateData }>(() => import("../templates/northline-grooming/template")),
+  "verdant-house-grooming": dynamic<{ data: TemplateData }>(() => import("../templates/verdant-house-grooming/template")),
+  "brightnest-cleaning": dynamic<{ data: TemplateData }>(() => import("../templates/brightnest-cleaning/template")),
+  "ash-bridle-barbers": dynamic<{ data: TemplateData }>(() => import("../templates/ash-bridle-barbers/template")),
+  "lacquer-form-nail-atelier": dynamic<{ data: TemplateData }>(() => import("../templates/lacquer-form-nail-atelier/template")),
+  "harborwell-home-health": dynamic<{ data: TemplateData }>(() => import("../templates/harborwell-home-health/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -160,6 +181,13 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
   "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
   "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
+  "blueforge-plumbing": { config: blueforgePlumbingConfig, component: components["blueforge-plumbing"], defaultData: normalizeData(blueforgePlumbingEditable) },
+  "northline-grooming": { config: northlineGroomingConfig, component: components["northline-grooming"], defaultData: normalizeData(northlineGroomingEditable) },
+  "verdant-house-grooming": { config: verdantHouseGroomingConfig, component: components["verdant-house-grooming"], defaultData: normalizeData(verdantHouseGroomingEditable) },
+  "brightnest-cleaning": { config: brightnestCleaningConfig, component: components["brightnest-cleaning"], defaultData: normalizeData(brightnestCleaningEditable) },
+  "ash-bridle-barbers": { config: ashBridleBarbersConfig, component: components["ash-bridle-barbers"], defaultData: normalizeData(ashBridleBarbersEditable) },
+  "lacquer-form-nail-atelier": { config: lacquerFormNailAtelierConfig, component: components["lacquer-form-nail-atelier"], defaultData: normalizeData(lacquerFormNailAtelierEditable) },
+  "harborwell-home-health": { config: harborwellHomeHealthConfig, component: components["harborwell-home-health"], defaultData: normalizeData(harborwellHomeHealthEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

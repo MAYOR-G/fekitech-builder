@@ -58,12 +58,22 @@ describe("production template registry", () => {
       "forgepoint-construction",
       "pastries-snacks-premium",
       "pizza-light-clean",
-      "premium-restaurant"
+      "premium-restaurant",
+      "blueforge-plumbing",
+      "northline-grooming",
+      "verdant-house-grooming",
+      "brightnest-cleaning",
+      "ash-bridle-barbers",
+      "lacquer-form-nail-atelier",
+      "harborwell-home-health"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
+      "ash-bridle-barbers",
       "bakery-website",
       "barber-website",
+      "blueforge-plumbing",
+      "brightnest-cleaning",
       "burger-dark-premium",
       "burger-light-clean",
       "cake-bakery-premium",
@@ -79,12 +89,15 @@ describe("production template registry", () => {
       "fast-food-chicken-tacos",
       "forgepoint-construction",
       "gym-website",
+      "harborwell-home-health",
       "ice-cream-website",
       "industrial-construction",
       "ink-and-iron",
+      "lacquer-form-nail-atelier",
       "lumen-house-design",
       "noir-house-design",
       "northcrest-roofing",
+      "northline-grooming",
       "pastries-snacks-premium",
       "pizza-light-clean",
       "premium-coffee-website",
@@ -93,7 +106,8 @@ describe("production template registry", () => {
       "roofing-agency-premium",
       "second-furniture-website",
       "second-plumber-website",
-      "velvet-scoop"
+      "velvet-scoop",
+      "verdant-house-grooming"
     ]);
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
@@ -169,6 +183,13 @@ describe("production template registry", () => {
       "ice-cream-website",
       "second-furniture-website",
       "second-plumber-website",
+      "blueforge-plumbing",
+      "northline-grooming",
+      "verdant-house-grooming",
+      "brightnest-cleaning",
+      "ash-bridle-barbers",
+      "lacquer-form-nail-atelier",
+      "harborwell-home-health",
     ];
 
     for (const templateId of redesignedTemplateIds) {

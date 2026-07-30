@@ -1,0 +1,137 @@
+{
+  "theme": {
+    "colors": {
+      "lime": "#e9fac0",
+      "green": "#285f49",
+      "greenDark": "#173f31",
+      "cream": "#f8f4e9",
+      "white": "#ffffff",
+      "ink": "#173f31",
+      "line": "rgba(40, 95, 73, 0.2)"
+    },
+    "typography": {
+      "heading": "\"Helvetica Neue\", Arial, sans-serif",
+      "body": "\"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Harborwell",
+    "descriptor": "Home Health",
+    "tagline": "Care that meets you at home.",
+    "phone": "+1 (312) 555-0162",
+    "phoneHref": "tel:+13125550162",
+    "email": "hello@harborwellcare.com",
+    "emailHref": "mailto:hello@harborwellcare.com",
+    "address": "825 North Franklin Street, Chicago, IL 60610"
+  },
+  "navigation": {
+    "links": [
+      { "label": "About", "href": "#hw-about" },
+      { "label": "Care options", "href": "#hw-services" },
+      { "label": "Our approach", "href": "#hw-approach" },
+      { "label": "Stories", "href": "#hw-stories" }
+    ],
+    "buttonLabel": "Talk with us",
+    "buttonHref": "#hw-contact"
+  },
+  "hero": {
+    "eyebrow": "In-home support · Chicago",
+    "title": "Care, with room to live.",
+    "description": "Personalized medical and everyday support that helps older adults and people with ongoing health needs stay connected to home.",
+    "buttonLabel": "Explore care options",
+    "buttonHref": "#hw-services",
+    "image": "/templates/harborwell-home-health/assets/caregiver-hero.jpg",
+    "imageAlt": "Home health nurse speaking warmly with an older man"
+  },
+  "about": {
+    "eyebrow": "Our story",
+    "title": "Care begins by listening.",
+    "description": "Harborwell brings clinical insight and practical support into the place where routines already make sense. We learn what matters to each person, coordinate with family and providers, and build a plan that can change as needs do.",
+    "buttonLabel": "How care works",
+    "buttonHref": "#hw-approach",
+    "image": "/templates/harborwell-home-health/assets/family-consultation.jpg",
+    "imageAlt": "Older couple discussing a home care plan",
+    "stats": [
+      { "value": "96%", "label": "families feel more prepared" },
+      { "value": "24/7", "label": "on-call care guidance" },
+      { "value": "1:1", "label": "personal care planning" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Care options",
+    "title": "Support shaped around the day.",
+    "description": "Start with the help that matters now. We can coordinate services as routines, recovery, or health needs evolve.",
+    "items": [
+      { "number": "01", "title": "Personal care", "description": "Respectful help with bathing, dressing, mobility, meals, and daily routines.", "linkLabel": "See personal care", "linkHref": "#hw-contact" },
+      { "number": "02", "title": "Companion support", "description": "Conversation, errands, light household support, and steady social connection.", "linkLabel": "See companion support", "linkHref": "#hw-contact" },
+      { "number": "03", "title": "Skilled nursing", "description": "Medication support, monitoring, wound care, and recovery guidance in the home.", "linkLabel": "See nursing care", "linkHref": "#hw-contact" },
+      { "number": "04", "title": "Respite for families", "description": "Dependable short-term coverage so family caregivers can rest, work, or travel.", "linkLabel": "See respite care", "linkHref": "#hw-contact" }
+    ]
+  },
+  "focus": {
+    "eyebrow": "Specialized focus",
+    "title": "Experience for changing needs.",
+    "items": [
+      { "title": "Older adult care", "description": "Steady support for aging in place, mobility changes, memory needs, and the routines that preserve independence." },
+      { "title": "Disability support", "description": "Flexible assistance that respects autonomy, communication preferences, and personal goals." },
+      { "title": "Chronic condition care", "description": "Day-to-day monitoring and coordination for conditions that benefit from consistent attention." }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Our approach",
+    "title": "One plan, held by a real team.",
+    "description": "A clear path from the first conversation to ongoing, responsive support.",
+    "steps": [
+      { "number": "01", "title": "Listen first", "description": "A care coordinator learns the person, the home, and the concerns behind the call." },
+      { "number": "02", "title": "Build the plan", "description": "We match the right level of support, schedule, and caregiver skills to the situation." },
+      { "number": "03", "title": "Begin with care", "description": "The first visits establish routines, preferences, and clear family communication." },
+      { "number": "04", "title": "Stay connected", "description": "We check in, share meaningful updates, and adapt the plan as needs change." }
+    ]
+  },
+  "imageBand": {
+    "image": "/templates/harborwell-home-health/assets/caregiver-hero.jpg",
+    "imageAlt": "A nurse sharing a positive moment with a client at home",
+    "quote": "The best care supports the whole rhythm of a life."
+  },
+  "stories": {
+    "eyebrow": "Family experiences",
+    "title": "What steadier days can feel like.",
+    "description": "Notes from families who needed care to be both capable and human.",
+    "items": [
+      { "quote": "Our coordinator noticed the small routines that help my father feel in control. That changed everything about the transition.", "name": "Dana M.", "relationship": "Daughter of a client" },
+      { "quote": "We receive useful updates without feeling like home has become a clinic. The balance is exactly what we hoped for.", "name": "Aaron P.", "relationship": "Family caregiver" },
+      { "quote": "Respite care gave me enough space to be a daughter again, not only the person managing every appointment.", "name": "Elise W.", "relationship": "Daughter of a client" }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Working together",
+    "title": "Connected care needs good partners.",
+    "items": ["Northstar Clinic", "Kindred Pharmacy", "Lakeview Rehab", "Civic Aging Network", "Homeward Meals"]
+  },
+  "contact": {
+    "eyebrow": "Connect",
+    "title": "Tell us what home needs right now.",
+    "description": "A care coordinator will listen, answer practical questions, and help you identify a useful next step.",
+    "formTitle": "Request a conversation",
+    "fields": {
+      "name": "Your name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "message": "How can we help?"
+    },
+    "buttonLabel": "Send request"
+  },
+  "footer": {
+    "links": [
+      { "label": "FAQ", "href": "#hw-contact" },
+      { "label": "Accessibility", "href": "/accessibility" },
+      { "label": "Privacy", "href": "/privacy" }
+    ],
+    "socialLinks": [
+      { "label": "LinkedIn", "href": "https://linkedin.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "YouTube", "href": "https://youtube.com/" }
+    ],
+    "copyright": "© 2026 Harborwell Home Health. All rights reserved."
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "colors": {
+    "pageBackground": "#ffffff",
+    "sectionAlt": "#f6f8fb",
+    "cardBackground": "#ffffff",
+    "headingText": "#0b1220",
+    "bodyText": "#5f6b7a",
+    "mutedText": "#7a8797",
+    "accent": "#2f73ff",
+    "accentSecondary": "#dce8ff",
+    "buttonBg": "#2f73ff",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonBorder": "#2f73ff",
+    "secondaryButtonText": "#2f73ff",
+    "link": "#2f73ff",
+    "border": "#e3e8ef",
+    "icon": "#2f73ff",
+    "headerBg": "#ffffff",
+    "headerText": "#0b1220",
+    "footerBg": "#ffffff",
+    "footerText": "#0b1220"
+  },
+  "brand": {
+    "name": "Blueforge Plumbing",
+    "tagline": "Steady hands for the systems behind your home.",
+    "phone": "(612) 555-0174",
+    "phoneHref": "tel:+16125550174",
+    "email": "service@blueforgeplumbing.com",
+    "emailHref": "mailto:service@blueforgeplumbing.com",
+    "address": "2840 Hennepin Avenue, Minneapolis, MN 55408",
+    "hoursWeekday": "Monday–Friday: 7:30 AM–6:00 PM",
+    "hoursWeekend": "Saturday: 8:00 AM–2:00 PM"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "/", "page": "home" },
+      { "label": "About", "href": "/about", "page": "about" },
+      { "label": "Services", "href": "/services", "page": "services" },
+      { "label": "Reviews", "href": "/reviews", "page": "reviews" },
+      { "label": "Blog", "href": "/blog", "page": "blog" },
+      { "label": "Contact", "href": "/contact", "page": "contact" }
+    ],
+    "callLabel": "Call Now",
+    "callHref": "tel:+16125550174",
+    "requestLabel": "Request Service",
+    "requestHref": "/contact"
+  },
+  "hero": {
+    "eyebrow": "Serving Minneapolis and nearby communities",
+    "title": "Skilled Plumbing, Built to Hold Up",
+    "description": "Clear answers and durable repairs for leaks, drains, fixtures, heaters, and the unexpected.",
+    "image": "/templates/blueforge-plumbing/assets/hero.webp",
+    "imageAlt": "Professional plumber repairing a kitchen sink",
+    "primaryLabel": "Call (612) 555-0174",
+    "primaryHref": "tel:+16125550174",
+    "secondaryLabel": "Request Service",
+    "secondaryHref": "/contact",
+    "benefits": ["Licensed and insured", "Options explained first", "Priority visits available"],
+    "stats": [
+      { "value": "4.9", "label": "Google rating" },
+      { "value": "20+", "label": "Years of experience" },
+      { "value": "8K+", "label": "Homes helped" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our Services",
+    "title": "Practical Help for Every Water Line",
+    "description": "Focused diagnosis, tidy workmanship, and solutions selected for the way your home actually works.",
+    "buttonLabel": "Request Service",
+    "buttonHref": "/contact",
+    "items": [
+      { "title": "Urgent Response", "description": "Priority help for active leaks, failed shutoffs, burst lines, and backed-up drains.", "image": "/templates/blueforge-plumbing/assets/service-kitchen.webp", "imageAlt": "Plumber repairing pipes beneath a kitchen sink" },
+      { "title": "Drain Restoration", "description": "Clear stubborn kitchen, bath, and main-line blockages without guesswork.", "image": "/templates/blueforge-plumbing/assets/pipework.jpg", "imageAlt": "Clean plumbing pipework under a sink" },
+      { "title": "Leak Investigation", "description": "Trace hidden moisture to its source, then repair the problem with minimal disruption.", "image": "/templates/blueforge-plumbing/assets/bathroom-repair.webp", "imageAlt": "Bathroom sink plumbing before repair" },
+      { "title": "Water Heater Care", "description": "Repair, replace, and maintain conventional and high-efficiency hot water systems.", "image": "/templates/blueforge-plumbing/assets/bathroom-service.jpg", "imageAlt": "Clean bathroom plumbing service area" },
+      { "title": "Supply Line Renewal", "description": "Resolve corrosion, pressure loss, and aging pipework with sensible replacement plans.", "image": "/templates/blueforge-plumbing/assets/pipework.jpg", "imageAlt": "Freshly repaired residential plumbing pipes" },
+      { "title": "Sewer Diagnostics", "description": "Use targeted inspection and cleaning to address recurring backups and slow mains.", "image": "/templates/blueforge-plumbing/assets/service-kitchen.webp", "imageAlt": "Plumber checking residential plumbing connections" },
+      { "title": "Toilets and Baths", "description": "Stop running fixtures, replace worn components, and fit dependable new equipment.", "image": "/templates/blueforge-plumbing/assets/bathroom-finished.webp", "imageAlt": "Finished bathroom plumbing beneath a sink" },
+      { "title": "Fixture Upgrades", "description": "Fit faucets, sinks, valves, shower trim, and accessible fixtures with a clean finish.", "image": "/templates/blueforge-plumbing/assets/hero.webp", "imageAlt": "Plumber working at a kitchen faucet" }
+    ]
+  },
+  "emergency": {
+    "eyebrow": "24/7 Emergency Service",
+    "title": "Water Moving Where It Shouldn’t?",
+    "description": "Tell us what is happening. We will help you limit damage and arrange the fastest practical response.",
+    "buttonLabel": "Call (612) 555-0174",
+    "buttonHref": "tel:+16125550174"
+  },
+  "testimonials": {
+    "eyebrow": "Customer Reviews",
+    "title": "Work That Earns the Next Call",
+    "buttonLabel": "See All Reviews",
+    "buttonHref": "/reviews",
+    "items": [
+      { "quote": "The technician showed me the failed fitting, laid out two repair options, and left the cabinet spotless.", "name": "Lena W.", "detail": "Homeowner" },
+      { "quote": "Blueforge found the cause of a recurring backup that two earlier visits from other firms had missed.", "name": "Omar D.", "detail": "Homeowner" },
+      { "quote": "Our new water heater was sized properly, installed neatly, and explained before the crew left.", "name": "Priya S.", "detail": "Homeowner" },
+      { "quote": "Prompt updates, careful work, and a final invoice that matched the estimate.", "name": "Caleb N.", "detail": "Homeowner" }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Choose Us",
+    "title": "A More Thoughtful Service Visit",
+    "description": "Good plumbing work should solve the issue, protect the room around it, and make the next decision easier.",
+    "buttonLabel": "About Us",
+    "buttonHref": "/about",
+    "items": [
+      { "title": "Useful Explanations", "description": "See what failed, understand the available fixes, and approve the path before work begins." },
+      { "title": "Durable Materials", "description": "Repairs are selected for service life and compatibility, not merely the quickest patch." },
+      { "title": "Protected Work Areas", "description": "Floor coverings, tidy tools, and a full cleanup are part of every indoor visit." },
+      { "title": "Follow-Through", "description": "We test the completed work, review it with you, and document the result." }
+    ]
+  },
+  "areas": {
+    "eyebrow": "Service Areas",
+    "title": "Across Minneapolis and the Inner Ring",
+    "buttonLabel": "Request Service",
+    "buttonHref": "/contact",
+    "cities": ["Minneapolis", "St. Louis Park", "Golden Valley", "Roseville", "Richfield", "Edina", "Hopkins", "New Brighton"]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "A Few Things to Know Before We Arrive",
+    "description": "Straight answers about scheduling, pricing, qualifications, and the work we handle.",
+    "items": [
+      { "question": "Can you come out today?", "answer": "Often, yes. Priority availability depends on current emergencies, location, and the kind of work required." },
+      { "question": "Is Blueforge licensed and insured?", "answer": "Yes. The company and technicians carry the credentials required for the residential work offered." },
+      { "question": "What problems can your team handle?", "answer": "We work on water supply, drainage, fixtures, heaters, sewer connections, and common residential plumbing failures." },
+      { "question": "Will I know the cost before repair begins?", "answer": "After diagnosis, you receive a clear scope and price for approval before the repair moves forward." },
+      { "question": "What is the fastest way to schedule?", "answer": "Call for an active leak or urgent issue. For planned work, use the request form and include useful photos." }
+    ]
+  },
+  "aboutPage": {
+    "eyebrow": "About Us",
+    "title": "A Local Crew That Treats Craft as a Standard",
+    "description": "Meet the people who diagnose carefully, communicate plainly, and leave each system better than they found it.",
+    "storyEyebrow": "Our Story",
+    "storyTitle": "Built Around Careful Diagnosis",
+    "storyText": "Blueforge began with a simple belief: homeowners should understand the repair they are buying. That means tracing the cause, offering useful choices, and testing every finished connection before the tools are packed.",
+    "images": [
+      { "src": "/templates/blueforge-plumbing/assets/team.webp", "alt": "Plumbing professionals standing in a workshop" },
+      { "src": "/templates/blueforge-plumbing/assets/service-kitchen.webp", "alt": "Plumber completing a residential repair" }
+    ],
+    "teamTitle": "Meet the Professionals Behind Every Job",
+    "team": [
+      { "name": "Nolan Pierce", "role": "Founder and master plumber", "image": "/templates/blueforge-plumbing/assets/team.webp", "imageAlt": "Nolan Pierce in the Blueforge workshop" },
+      { "name": "Mateo Quinn", "role": "Service technician", "image": "/templates/blueforge-plumbing/assets/hero.webp", "imageAlt": "Mateo Quinn completing a service call" },
+      { "name": "Sienna Rowe", "role": "Customer care lead", "image": "/templates/blueforge-plumbing/assets/service-kitchen.webp", "imageAlt": "Sienna Rowe coordinating field service" },
+      { "name": "Devon Clarke", "role": "Plumbing technician", "image": "/templates/blueforge-plumbing/assets/pipework.jpg", "imageAlt": "Devon Clarke inspecting pipework" }
+    ],
+    "processEyebrow": "Our Process",
+    "processTitle": "Four Clear Steps, One Accountable Crew",
+    "processText": "From the first description to the final test, you know what is happening and why.",
+    "process": [
+      { "step": "01", "title": "Describe the Issue", "description": "Call or send a request with the symptoms, timing, and any useful photos." },
+      { "step": "02", "title": "Set the Visit", "description": "Choose a practical arrival window and receive updates before the technician arrives." },
+      { "step": "03", "title": "Review the Options", "description": "Approve a clearly explained scope after the system has been properly diagnosed." },
+      { "step": "04", "title": "Verify the Repair", "description": "We test the work, clean the area, and leave a record of what was completed." }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": "Contact Us",
+    "title": "Tell Us What the Water Is Doing",
+    "formTitle": "Request Service",
+    "formText": "Share a few details and our service desk will confirm the next useful step.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Service needed",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Jane Smith",
+      "email": "jane@gmail.com",
+      "phone": "(612) 555-0174",
+      "service": "Select...",
+      "message": "Briefly describe your plumbing needs..."
+    },
+    "submitLabel": "Send Request",
+    "infoEyebrow": "Contact Information",
+    "infoTitle": "Get in Touch",
+    "infoText": "Call for an urgent issue or send a request for planned work. We will respond with scheduling and any preparation details.",
+    "followLabel": "Follow Us:"
+  },
+  "blog": {
+    "eyebrow": "Plumbing Tips",
+    "title": "Helpful Notes for Homeowners",
+    "description": "Short, useful notes for noticing problems early and caring for the systems behind the walls.",
+    "posts": [
+      { "title": "What a Sudden Pressure Change Can Mean", "excerpt": "A quick diagnostic guide to fixture problems, supply restrictions, and hidden leaks." },
+      { "title": "Drain Habits That Prevent Repeat Calls", "excerpt": "Small kitchen and bath routines that reduce buildup without damaging older pipework." },
+      { "title": "Planning a Water Heater Replacement", "excerpt": "Capacity, fuel type, venting, and age all matter more than simply matching the old tank." }
+    ]
+  },
+  "bottomCta": {
+    "title": "Ready to Get Started?",
+    "image": "/templates/blueforge-plumbing/assets/service-kitchen.webp",
+    "imageAlt": "Plumber smiling while working in a kitchen",
+    "primaryLabel": "Call (612) 555-0174",
+    "primaryHref": "tel:+16125550174",
+    "secondaryLabel": "Request Service",
+    "secondaryHref": "/contact"
+  },
+  "footer": {
+    "contactTitle": "Contact Info",
+    "quickTitle": "Quick Links",
+    "servicesTitle": "Services",
+    "copyright": "© 2026 Blueforge Plumbing. All rights reserved.",
+    "privacyLabel": "Privacy Policy",
+    "privacyHref": "#privacy",
+    "termsLabel": "Terms",
+    "termsHref": "#terms",
+    "social": [
+      { "label": "X", "href": "https://x.com" },
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "Facebook", "href": "https://facebook.com" },
+      { "label": "TikTok", "href": "https://tiktok.com" },
+      { "label": "YouTube", "href": "https://youtube.com" }
+    ]
+  },
+  "_editor": {
+    "pages": {
+      "items": [
+        { "id": "home", "title": "Home", "navLabel": "Home", "slug": "", "seoTitle": "Blueforge Plumbing", "seoDescription": "Residential plumbing care across Minneapolis.", "home": true, "hidden": false },
+        { "id": "about", "title": "About", "navLabel": "About", "slug": "about", "seoTitle": "About Blueforge Plumbing", "seoDescription": "Meet the local Blueforge service crew.", "home": false, "hidden": false },
+        { "id": "services", "title": "Services", "navLabel": "Services", "slug": "services", "seoTitle": "Blueforge Services", "seoDescription": "Repairs, drainage, heaters, piping, and fixtures.", "home": false, "hidden": false },
+        { "id": "reviews", "title": "Reviews", "navLabel": "Reviews", "slug": "reviews", "seoTitle": "Blueforge Reviews", "seoDescription": "Read notes from Minneapolis-area homeowners.", "home": false, "hidden": false },
+        { "id": "blog", "title": "Blog", "navLabel": "Blog", "slug": "blog", "seoTitle": "Blueforge Field Notes", "seoDescription": "Useful plumbing guidance for homeowners.", "home": false, "hidden": false },
+        { "id": "contact", "title": "Contact", "navLabel": "Contact", "slug": "contact", "seoTitle": "Contact Blueforge", "seoDescription": "Request a Blueforge plumbing visit.", "home": false, "hidden": false }
+      ]
+    }
+  }
+}

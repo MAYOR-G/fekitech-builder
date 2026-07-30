@@ -164,6 +164,13 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "noir-house-design": "free",
   "northcrest-roofing": "free",
   "premium-construction": "free",
+  "blueforge-plumbing": "business",
+  "northline-grooming": "business",
+  "verdant-house-grooming": "business",
+  "brightnest-cleaning": "business",
+  "ash-bridle-barbers": "business",
+  "lacquer-form-nail-atelier": "business",
+  "harborwell-home-health": "business",
   "velvet-scoop": "free",
 };
 
