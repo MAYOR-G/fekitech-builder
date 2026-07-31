@@ -65,7 +65,11 @@ describe("production template registry", () => {
       "brightnest-cleaning",
       "ash-bridle-barbers",
       "lacquer-form-nail-atelier",
-      "harborwell-home-health"
+      "harborwell-home-health",
+      "infusion-london",
+      "digital-designer-portfolio",
+      "software-engineer-portfolio",
+      "london-pizza-shop"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -84,6 +88,7 @@ describe("production template registry", () => {
       "coffee-website",
       "crownline-roofworks",
       "dentist-website",
+      "digital-designer-portfolio",
       "electrician-website",
       "farm-shop-website",
       "fast-food-chicken-tacos",
@@ -92,8 +97,10 @@ describe("production template registry", () => {
       "harborwell-home-health",
       "ice-cream-website",
       "industrial-construction",
+      "infusion-london",
       "ink-and-iron",
       "lacquer-form-nail-atelier",
+      "london-pizza-shop",
       "lumen-house-design",
       "noir-house-design",
       "northcrest-roofing",
@@ -106,6 +113,7 @@ describe("production template registry", () => {
       "roofing-agency-premium",
       "second-furniture-website",
       "second-plumber-website",
+      "software-engineer-portfolio",
       "velvet-scoop",
       "verdant-house-grooming"
     ]);
@@ -142,7 +150,8 @@ describe("production template registry", () => {
       "second-furniture-website",
       "second-plumber-website",
       "velvet-scoop",
-      "fast-food-chicken-tacos"
+      "fast-food-chicken-tacos",
+      "infusion-london"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -190,6 +199,7 @@ describe("production template registry", () => {
       "ash-bridle-barbers",
       "lacquer-form-nail-atelier",
       "harborwell-home-health",
+      "infusion-london"
     ];
 
     for (const templateId of redesignedTemplateIds) {

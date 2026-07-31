@@ -82,7 +82,14 @@ import lacquerFormNailAtelierConfig from "../templates/lacquer-form-nail-atelier
 import lacquerFormNailAtelierEditable from "../templates/lacquer-form-nail-atelier/editable.json";
 import harborwellHomeHealthConfig from "../templates/harborwell-home-health/config.json";
 import harborwellHomeHealthEditable from "../templates/harborwell-home-health/editable.json";
-
+import infusionLondonConfig from "../templates/infusion-london/config.json";
+import infusionLondonEditable from "../templates/infusion-london/editable.json";
+import digitalDesignerPortfolioConfig from "../templates/digital-designer-portfolio/config.json";
+import digitalDesignerPortfolioEditable from "../templates/digital-designer-portfolio/editable.json";
+import softwareEngineerPortfolioConfig from "../templates/software-engineer-portfolio/config.json";
+import softwareEngineerPortfolioEditable from "../templates/software-engineer-portfolio/editable.json";
+import londonPizzaShopConfig from "../templates/london-pizza-shop/config.json";
+import londonPizzaShopEditable from "../templates/london-pizza-shop/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -143,6 +150,10 @@ const components = {
   "ash-bridle-barbers": dynamic<{ data: TemplateData }>(() => import("../templates/ash-bridle-barbers/template")),
   "lacquer-form-nail-atelier": dynamic<{ data: TemplateData }>(() => import("../templates/lacquer-form-nail-atelier/template")),
   "harborwell-home-health": dynamic<{ data: TemplateData }>(() => import("../templates/harborwell-home-health/template")),
+  "infusion-london": dynamic<{ data: TemplateData }>(() => import("../templates/infusion-london/template")),
+  "digital-designer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/digital-designer-portfolio/template")),
+  "software-engineer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/software-engineer-portfolio/template")),
+  "london-pizza-shop": dynamic<{ data: TemplateData }>(() => import("../templates/london-pizza-shop/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -188,6 +199,10 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "ash-bridle-barbers": { config: ashBridleBarbersConfig, component: components["ash-bridle-barbers"], defaultData: normalizeData(ashBridleBarbersEditable) },
   "lacquer-form-nail-atelier": { config: lacquerFormNailAtelierConfig, component: components["lacquer-form-nail-atelier"], defaultData: normalizeData(lacquerFormNailAtelierEditable) },
   "harborwell-home-health": { config: harborwellHomeHealthConfig, component: components["harborwell-home-health"], defaultData: normalizeData(harborwellHomeHealthEditable) },
+  "infusion-london": { config: infusionLondonConfig, component: components["infusion-london"], defaultData: normalizeData(infusionLondonEditable) },
+  "digital-designer-portfolio": { config: digitalDesignerPortfolioConfig, component: components["digital-designer-portfolio"], defaultData: normalizeData(digitalDesignerPortfolioEditable) },
+  "software-engineer-portfolio": { config: softwareEngineerPortfolioConfig, component: components["software-engineer-portfolio"], defaultData: normalizeData(softwareEngineerPortfolioEditable) },
+  "london-pizza-shop": { config: londonPizzaShopConfig, component: components["london-pizza-shop"], defaultData: normalizeData(londonPizzaShopEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

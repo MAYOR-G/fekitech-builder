@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Nothing+You+Could+Do&display=swap');
+
+[data-template-id="london-pizza-shop"] {
+  --primary-color: #d14022;
+  --secondary-color: #f4a222;
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --footer-bg: #1a1a1a;
+  
+  --font-heading: 'Anton', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Nothing You Could Do', cursive;
+  
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+[data-template-id="london-pizza-shop"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+[data-template-id="london-pizza-shop"] h1, 
+[data-template-id="london-pizza-shop"] h2, 
+[data-template-id="london-pizza-shop"] h3, 
+[data-template-id="london-pizza-shop"] h4 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+/* Header */
+[data-template-id="london-pizza-shop"] .pizza-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+  color: #fff;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+[data-template-id="london-pizza-shop"] .pizza-phone {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-nav {
+  display: flex;
+  gap: 30px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-cart {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hero */
+[data-template-id="london-pizza-shop"] .pizza-hero {
+  background-color: var(--primary-color);
+  background-image: url('data:image/svg+xml;utf8,<svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path d="M12 21a9 9 0 1 1 0-18c0 0 0 0 0 0a9 9 0 0 1 0 18z"></path><path d="M12 3v18"></path><path d="M3 12h18"></path><path d="M12 12l6 6"></path><path d="M12 12l-6-6"></path></svg>');
+  background-size: 80px 80px;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  font-family: var(--font-script);
+  font-size: clamp(10rem, 25vw, 20rem);
+  color: rgba(255, 255, 255, 0.1);
+  white-space: pre-line;
+  line-height: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-badge {
+  background: var(--secondary-color);
+  color: #fff;
+  font-family: var(--font-heading);
+  padding: 15px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  transform: rotate(15deg);
+  text-align: center;
+  line-height: 1;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  transform: translateY(100px); /* Push down into next section */
+  z-index: 2;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-img {
+  width: 100%;
+  display: block;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-hero-cross-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+  width: 120%;
+  /* Removed translucent placeholder as requested */
+}
+
+[data-template-id="london-pizza-shop"] .text-pizza-time {
+  font-family: 'Brush Script MT', 'Lucida Handwriting', 'Dancing Script', cursive;
+  font-size: clamp(5rem, 12vw, 10rem);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  transform: rotate(-10deg);
+  display: flex;
+  align-items: center;
+  text-shadow: 4px 4px 0 var(--primary-color), -2px -2px 0 var(--primary-color), 2px -2px 0 var(--primary-color), -2px 2px 0 var(--primary-color), 2px 2px 0 var(--primary-color), 8px 8px 15px rgba(0,0,0,0.6);
+}
+
+/* Banners */
+[data-template-id="london-pizza-shop"] .pizza-banners {
+  padding: 150px 0 80px;
+  background: var(--bg-color);
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banners-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 20px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banner-kids {
+  background: var(--secondary-color);
+  padding: 30px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+[data-template-id="london-pizza-shop"] .kids-content h2 {
+  font-size: 2.5rem;
+}
+
+[data-template-id="london-pizza-shop"] .kids-content p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banner-kids img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+[data-template-id="london-pizza-shop"] .kids-price {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banner-small-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+[data-template-id="london-pizza-shop"] .banner-small-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banner-location {
+  background: #3eb2c0;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-banner-location h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+[data-template-id="london-pizza-shop"] .location-input-group {
+  display: flex;
+}
+
+[data-template-id="london-pizza-shop"] .location-input-group input {
+  padding: 10px;
+  border: none;
+  flex: 1;
+  font-family: var(--font-body);
+}
+
+[data-template-id="london-pizza-shop"] .location-input-group button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Menu */
+[data-template-id="london-pizza-shop"] .pizza-menu {
+  padding: 80px 0;
+  text-align: center;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-subtitle {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-description {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  color: #666;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-item-img-wrap {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-item-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-badge.badge-new {
+  background: #3eb2c0;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-menu-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-price-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+/* Pizza of the Day */
+[data-template-id="london-pizza-shop"] .pizza-of-the-day {
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  position: relative;
+  padding: 120px 0;
+  color: #fff;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-of-the-day::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-of-the-day .pizza-container {
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-day-content {
+  max-width: 400px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-day-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-day-content p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Slice Box */
+[data-template-id="london-pizza-shop"] .pizza-slice-box {
+  padding: 100px 0;
+  background: #ffffff;
+  color: #222;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-slice-box .pizza-container {
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="london-pizza-shop"] .slice-box-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+[data-template-id="london-pizza-shop"] .slice-subtitle {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+[data-template-id="london-pizza-shop"] .slice-box-text h2 {
+  font-size: 2.5rem;
+  margin: 10px 0 20px;
+}
+
+[data-template-id="london-pizza-shop"] .slice-box-text p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+[data-template-id="london-pizza-shop"] .slice-diagram {
+  display: flex;
+  gap: 20px;
+}
+
+[data-template-id="london-pizza-shop"] .diagram-box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+[data-template-id="london-pizza-shop"] .realistic-pizza-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg) rotateZ(-45deg);
+}
+
+[data-template-id="london-pizza-shop"] .box-bottom {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  box-shadow: -20px 20px 30px rgba(0,0,0,0.2);
+}
+
+[data-template-id="london-pizza-shop"] .box-front {
+  position: absolute;
+  width: 300px;
+  height: 25px;
+  background: #d4cbb8;
+  bottom: 0;
+  transform-origin: bottom;
+  transform: rotateX(-90deg);
+  border: 1px solid #c4bba8;
+}
+
+[data-template-id="london-pizza-shop"] .box-side {
+  position: absolute;
+  width: 25px;
+  height: 300px;
+  background: #e4dbc8;
+  right: 0;
+  transform-origin: right;
+  transform: rotateY(90deg);
+  border: 1px solid #d4cbb8;
+}
+
+[data-template-id="london-pizza-shop"] .box-top {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #e3daca;
+  border: 1px solid #d4cbb8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(25px);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.05);
+}
+
+[data-template-id="london-pizza-shop"] .box-logo {
+  text-align: center;
+  color: var(--primary-color);
+  transform: rotate(-45deg);
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-template-id="london-pizza-shop"] .box-logo h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+[data-template-id="london-pizza-shop"] .box-logo p {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+/* Quote */
+[data-template-id="london-pizza-shop"] .pizza-quote {
+  padding: 80px 0;
+  text-align: center;
+  background: #fdfbf7;
+}
+
+[data-template-id="london-pizza-shop"] .quote-icon {
+  color: var(--secondary-color);
+  font-size: 4rem;
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-quote blockquote {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-quote cite {
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+
+/* Gallery */
+[data-template-id="london-pizza-shop"] .pizza-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+[data-template-id="london-pizza-shop"] .gallery-item {
+  aspect-ratio: 1;
+}
+
+[data-template-id="london-pizza-shop"] .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+[data-template-id="london-pizza-shop"] .pizza-footer {
+  background: var(--footer-bg);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-footer-image-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  mask-image: linear-gradient(to right, transparent, black 20%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
+  opacity: 0.6;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-footer-content-layer {
+  position: relative;
+  z-index: 2;
+  padding: 100px 0 50px;
+}
+
+[data-template-id="london-pizza-shop"] .pizza-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+[data-template-id="london-pizza-shop"] .footer-col h4 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+[data-template-id="london-pizza-shop"] .footer-col p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+[data-template-id="london-pizza-shop"] .footer-col h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+[data-template-id="london-pizza-shop"] .footer-seal {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  [data-template-id="london-pizza-shop"] .pizza-banners-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="london-pizza-shop"] .pizza-menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  [data-template-id="london-pizza-shop"] .slice-box-inner {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="london-pizza-shop"] .pizza-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  [data-template-id="london-pizza-shop"] .pizza-footer-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="london-pizza-shop"] .pizza-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-template-id="london-pizza-shop"] .pizza-menu-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="london-pizza-shop"] .pizza-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

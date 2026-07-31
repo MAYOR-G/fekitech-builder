@@ -1,0 +1,8 @@
+{
+  "id": "software-engineer-portfolio",
+  "name": "Software Engineer Portfolio",
+  "description": "A minimal, high-contrast portfolio for software engineers and digital creators.",
+  "category": "Portfolio",
+  "image": "/templates/software-engineer-portfolio.webp",
+  "previewImages": ["/templates/software-engineer-portfolio.webp"]
+}

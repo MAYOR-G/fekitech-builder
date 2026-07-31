@@ -1,0 +1,132 @@
+{
+  "siteContent": {
+    "global": {
+      "businessName": "Kieran Digital",
+      "logoText": "KD.",
+      "email": "hello@kierandigital.co.uk",
+      "phone": "+44 7700 900077"
+    },
+    "hero": {
+      "headline": "DIGITAL DESIGNER",
+      "subheadline": "HELLO, I AM KIERAN",
+      "image": "/templates/digital-designer-portfolio/assets/hero.png"
+    },
+    "services": {
+      "title": "WHAT I CAN DO FOR YOU",
+      "description": "Delivering high-quality digital solutions to elevate your brand.",
+      "list": [
+        {
+          "title": "1. UI/UX DESIGN",
+          "description": "Crafting intuitive and engaging user experiences tailored to your audience."
+        },
+        {
+          "title": "2. GRAPHIC DESIGN",
+          "description": "Creating visually stunning graphics that communicate your brand's message."
+        },
+        {
+          "title": "3. WEB DESIGN",
+          "description": "Designing modern, responsive websites that convert visitors into customers."
+        },
+        {
+          "title": "4. BRANDING",
+          "description": "Building strong, cohesive brand identities that stand out in the market."
+        }
+      ]
+    },
+    "about": {
+      "title": "ABOUT ME",
+      "description": "I'm a digital designer from London with a passion for creating beautiful and functional interfaces. With a strong background in visual design and user experience, I help brands connect with their audiences through thoughtful, strategy-driven design solutions.",
+      "stats": [
+        { "value": "12+", "label": "Years Experience" },
+        { "value": "150+", "label": "Successful Projects" },
+        { "value": "50+", "label": "Happy Clients" }
+      ]
+    },
+    "projects": {
+      "title": "FEATURED PROJECTS",
+      "description": "A selection of my best work, showcasing a blend of strategy and creativity.",
+      "featured": [
+        {
+          "title": "SUMMER VIBES FESTIVAL CAMPAIGN",
+          "category": "Digital Design",
+          "image": "/templates/digital-designer-portfolio/assets/project2.png"
+        },
+        {
+          "title": "CORAL SPIRAL ABSTRACT",
+          "category": "3D Art",
+          "image": "/templates/digital-designer-portfolio/assets/project1.png"
+        },
+        {
+          "title": "SHOPEASE REDESIGN SPRINT",
+          "category": "UI/UX Design",
+          "image": "/templates/digital-designer-portfolio/assets/project3.png"
+        },
+        {
+          "title": "BLACK GEOMETRIC PRISMS",
+          "category": "Branding",
+          "image": "/templates/digital-designer-portfolio/assets/project4.png"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "WHAT MY CLIENTS SAY",
+      "description": "Hear from the people I've worked with.",
+      "list": [
+        {
+          "quote": "Kieran delivered exceptional work that truly elevated our brand.",
+          "author": "Sarah Jenkins",
+          "role": "CEO, TechFlow"
+        },
+        {
+          "quote": "A creative genius who understands exactly what a project needs.",
+          "author": "Marcus Thorne",
+          "role": "Marketing Director"
+        }
+      ]
+    },
+    "faqs": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "description": "Common questions about my process and services.",
+      "list": [
+        {
+          "question": "What is your design process?",
+          "answer": "My process involves discovery, strategy, design, and delivery phases to ensure high-quality results."
+        },
+        {
+          "question": "How long does a project take?",
+          "answer": "Timelines vary depending on project scope, but a typical website redesign takes 4-6 weeks."
+        },
+        {
+          "question": "Do you work with international clients?",
+          "answer": "Yes, I work with clients globally and use digital tools to ensure smooth communication."
+        }
+      ]
+    },
+    "blog": {
+      "title": "DESIGN INSIGHTS & IDEAS",
+      "description": "Thoughts and perspectives on design and creativity.",
+      "posts": [
+        {
+          "title": "The Future of Digital Interfaces",
+          "date": "Oct 12, 2026",
+          "image": "/templates/digital-designer-portfolio/assets/project3.png"
+        },
+        {
+          "title": "Mastering UI Animations",
+          "date": "Sep 28, 2026",
+          "image": "/templates/digital-designer-portfolio/assets/project1.png"
+        }
+      ]
+    },
+    "footer": {
+      "title": "LET'S WORK TOGETHER",
+      "description": "Have a project in mind? Let's discuss how we can bring your vision to life.",
+      "socials": [
+        { "name": "LinkedIn", "url": "#" },
+        { "name": "Dribbble", "url": "#" },
+        { "name": "Behance", "url": "#" }
+      ],
+      "copyright": "© 2026 Kieran Digital. All rights reserved."
+    }
+  }
+}

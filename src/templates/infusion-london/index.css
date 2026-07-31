@@ -1,0 +1,519 @@
+[data-template-id="infusion-london"] {
+  --template-bg: var(--page, #ffffff);
+  --template-section: var(--section, #eaf2f8);
+  --template-surface: var(--surface, #ffffff);
+  --template-card: var(--card, #f8f9fa);
+  --template-heading: var(--heading, #0c2340);
+  --template-body: var(--body, #333333);
+  --template-muted: var(--muted, #555555);
+  --template-accent: var(--accent, #2f6b3d);
+  --template-accent-secondary: var(--accentSecondary, #0c2340);
+  --template-btn-primary: var(--buttonPrimary, #0c2340);
+  --template-btn-primary-text: var(--buttonPrimaryText, #ffffff);
+  --template-btn-secondary: var(--buttonSecondary, #2f6b3d);
+  --template-btn-secondary-text: var(--buttonSecondaryText, #ffffff);
+  --template-border: var(--border, #e0e0e0);
+  --template-header-bg: var(--headerBg, #0c2340);
+  --template-header-text: var(--headerText, #ffffff);
+  --template-footer-bg: var(--footerBg, #0c2340);
+  --template-footer-text: var(--footerText, #ffffff);
+
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  background-color: var(--template-bg);
+  color: var(--template-body);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+[data-template-id="infusion-london"] h1,
+[data-template-id="infusion-london"] h2,
+[data-template-id="infusion-london"] h3,
+[data-template-id="infusion-london"] h4,
+[data-template-id="infusion-london"] h5,
+[data-template-id="infusion-london"] h6 {
+  font-family: var(--font-heading);
+  color: var(--template-heading);
+  font-weight: 500;
+  margin-top: 0;
+}
+
+[data-template-id="infusion-london"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+[data-template-id="infusion-london"] .infusion-header {
+  background-color: var(--template-header-bg);
+  color: var(--template-header-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+[data-template-id="infusion-london"] .infusion-header-left,
+[data-template-id="infusion-london"] .infusion-header-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+[data-template-id="infusion-london"] .infusion-header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+[data-template-id="infusion-london"] .infusion-header-nav a:hover {
+  opacity: 0.8;
+}
+
+[data-template-id="infusion-london"] .infusion-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+[data-template-id="infusion-london"] .infusion-header svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+}
+
+/* Hero */
+[data-template-id="infusion-london"] .infusion-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 85vh;
+  position: relative;
+}
+
+[data-template-id="infusion-london"] .infusion-hero-content {
+  background-color: var(--template-section);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+}
+
+[data-template-id="infusion-london"] .infusion-hero-toplabel {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--template-muted);
+}
+
+[data-template-id="infusion-london"] .infusion-hero-title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+[data-template-id="infusion-london"] .infusion-hero-subtitle {
+  max-width: 400px;
+  font-size: 1.15rem;
+  color: var(--template-muted);
+  margin-bottom: 3rem;
+}
+
+[data-template-id="infusion-london"] .infusion-btn-primary {
+  background-color: var(--template-btn-primary);
+  color: var(--template-btn-primary-text);
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+[data-template-id="infusion-london"] .infusion-btn-primary:hover {
+  opacity: 0.9;
+}
+
+[data-template-id="infusion-london"] .infusion-hero-image {
+  background-image: url('/templates/infusion-london/assets/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+[data-template-id="infusion-london"] .infusion-hero-badge {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-color: var(--template-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-radius: 50%;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+/* New Arrivals */
+[data-template-id="infusion-london"] .infusion-arrivals {
+  padding: 5rem 2rem;
+}
+
+[data-template-id="infusion-london"] .infusion-arrivals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+[data-template-id="infusion-london"] .infusion-arrivals-header-title {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+[data-template-id="infusion-london"] .infusion-arrivals-header-desc {
+  flex: 2;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--template-muted);
+}
+
+[data-template-id="infusion-london"] .infusion-arrivals-header-link {
+  flex: 1;
+  text-align: right;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+[data-template-id="infusion-london"] .infusion-arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+[data-template-id="infusion-london"] .infusion-product-card {
+  text-align: left;
+}
+
+[data-template-id="infusion-london"] .infusion-product-image {
+  background-color: var(--template-card);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+[data-template-id="infusion-london"] .infusion-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+[data-template-id="infusion-london"] .infusion-product-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--template-heading);
+}
+
+[data-template-id="infusion-london"] .infusion-product-price {
+  font-size: 1.05rem;
+  color: var(--template-muted);
+}
+
+/* Blog Promo */
+[data-template-id="infusion-london"] .infusion-blog-promo {
+  text-align: center;
+  padding: 8rem 2rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-template-id="infusion-london"] .infusion-blog-title {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+[data-template-id="infusion-london"] .infusion-btn-secondary {
+  background-color: var(--template-btn-secondary);
+  color: var(--template-btn-secondary-text);
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+[data-template-id="infusion-london"] .infusion-btn-secondary:hover {
+  opacity: 0.9;
+}
+
+[data-template-id="infusion-london"] .infusion-floating-img {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Reviews */
+[data-template-id="infusion-london"] .infusion-reviews {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+[data-template-id="infusion-london"] .infusion-reviews-title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+[data-template-id="infusion-london"] .infusion-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+[data-template-id="infusion-london"] .infusion-review-stars {
+  color: var(--template-heading);
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+[data-template-id="infusion-london"] .infusion-review-name {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+[data-template-id="infusion-london"] .infusion-review-text {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--template-muted);
+}
+
+/* Footer */
+[data-template-id="infusion-london"] .infusion-footer {
+  background-color: var(--template-footer-bg);
+  color: var(--template-footer-text);
+  padding: 4rem 2rem 2rem;
+  font-size: 0.85rem;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+[data-template-id="infusion-london"] .infusion-footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+[data-template-id="infusion-london"] .infusion-footer h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--template-footer-text);
+}
+
+[data-template-id="infusion-london"] .infusion-footer h4 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  color: var(--template-footer-text);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-col a:hover {
+  text-decoration: underline;
+}
+
+[data-template-id="infusion-london"] .infusion-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+[data-template-id="infusion-london"] .infusion-newsletter-input-group {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+[data-template-id="infusion-london"] .infusion-newsletter-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0;
+  flex: 1;
+}
+[data-template-id="infusion-london"] .infusion-newsletter-input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+[data-template-id="infusion-london"] .infusion-newsletter-input:focus {
+  outline: none;
+}
+
+[data-template-id="infusion-london"] .infusion-newsletter-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+[data-template-id="infusion-london"] .infusion-newsletter-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+}
+
+[data-template-id="infusion-london"] .infusion-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-leaf {
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-socials svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+}
+
+[data-template-id="infusion-london"] .infusion-footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+}
+
+[data-template-id="infusion-london"] .infusion-footer-copyright-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  [data-template-id="infusion-london"] .infusion-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  [data-template-id="infusion-london"] .infusion-hero-image {
+    min-height: 50vh;
+  }
+  [data-template-id="infusion-london"] .infusion-arrivals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  [data-template-id="infusion-london"] .infusion-footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-template-id="infusion-london"] .infusion-header-nav {
+    display: none; /* simple mobile fallback */
+  }
+  [data-template-id="infusion-london"] .infusion-arrivals-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  [data-template-id="infusion-london"] .infusion-arrivals-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="infusion-london"] .infusion-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="infusion-london"] .infusion-footer-top {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  [data-template-id="infusion-london"] .infusion-footer-main {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="infusion-london"] .infusion-footer-copyright {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}

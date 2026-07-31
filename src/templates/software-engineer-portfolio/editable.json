@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "logo": "MAJD.",
+    "links": [
+      { "label": "Home", "url": "#home" },
+      { "label": "About", "url": "#about" },
+      { "label": "Projects", "url": "#projects" },
+      { "label": "Contact", "url": "#contact" }
+    ],
+    "button": { "label": "Get in touch", "url": "#contact" }
+  },
+  "hero": {
+    "headline": "SOFTWARE ENGINEER",
+    "year": "©2026",
+    "portrait": "/templates/software-engineer-portfolio/assets/portrait.png"
+  },
+  "about": {
+    "heading": "Hey!",
+    "textLeft": "I build digital products right from scratch. Focused on performance, architecture, and beautiful user experiences.",
+    "textRight": "As a London-based software engineer, I specialise in creating scalable applications for forward-thinking startups and established enterprises.",
+    "button": { "label": "View my resume", "url": "#" }
+  },
+  "mission": {
+    "text": "From idea to launch, I craft complete digital products built to move fast, stay simple, and perform in real world use, driven by clarity, structured systems, and intentional design."
+  },
+  "services": {
+    "heading": "Services",
+    "items": [
+      {
+        "title": "Full-Stack Development",
+        "tags": ["React", "Node.js", "TypeScript"]
+      },
+      {
+        "title": "System Architecture",
+        "tags": ["Cloud", "Microservices", "API"]
+      },
+      {
+        "title": "Performance Optimization",
+        "tags": ["Audit", "Refactoring", "Speed"]
+      },
+      {
+        "title": "Product Consulting",
+        "tags": ["Strategy", "Planning", "Roadmap"]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Featured Projects",
+    "viewAll": "View all work",
+    "items": [
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project1.png",
+        "title": "Dumas",
+        "category": "Fintech Dashboard"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project2.png",
+        "title": "Nami",
+        "category": "Analytics Platform"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project3.png",
+        "title": "Komi",
+        "category": "E-Commerce Experience"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project4.png",
+        "title": "PeakWise",
+        "category": "Health & Fitness App"
+      }
+    ]
+  },
+  "allProjects": {
+    "heading": "All Projects",
+    "backLink": "Back to Home",
+    "items": [
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project1.png",
+        "title": "Dumas",
+        "category": "Fintech Dashboard"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project2.png",
+        "title": "Nami",
+        "category": "Analytics Platform"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project3.png",
+        "title": "Komi",
+        "category": "E-Commerce Experience"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project4.png",
+        "title": "PeakWise",
+        "category": "Health & Fitness App"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/project5.png",
+        "title": "Neon",
+        "category": "Crypto Wallet"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/blog1.png",
+        "title": "Astra",
+        "category": "SaaS Landing Page"
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "items": [
+      {
+        "text": "\"The level of engineering quality and architectural foresight brought to our platform was unmatched. A true professional.\"",
+        "name": "Sarah Jenkins",
+        "role": "CTO, TechCorp"
+      },
+      {
+        "text": "\"Transformed our chaotic MVP into a scalable, enterprise-grade system. Communication was clear throughout.\"",
+        "name": "David O'Connor",
+        "role": "Founder, Innovate UK"
+      },
+      {
+        "text": "\"Incredibly fast delivery without compromising on performance or design. Highly recommended for any serious startup.\"",
+        "name": "Elena Rostova",
+        "role": "Director, Studio 44"
+      },
+      {
+        "text": "\"Solved our deepest performance bottlenecks and delivered a beautifully crafted UI to match. Exceptional work.\"",
+        "name": "Mark Stevens",
+        "role": "VP Engineering, Nexus"
+      }
+    ]
+  },
+  "thoughts": {
+    "heading": "Thoughts",
+    "items": [
+      {
+        "image": "/templates/software-engineer-portfolio/assets/blog1.png",
+        "title": "Building Trust Through Clear Design",
+        "date": "Oct 2025"
+      },
+      {
+        "image": "/templates/software-engineer-portfolio/assets/blog2.png",
+        "title": "The Role of Architecture in Scaling",
+        "date": "Sep 2025"
+      }
+    ],
+    "sidebar": {
+      "text": "See how we shape products with clarity and craft—explore our blog.",
+      "button": "View blog"
+    }
+  },
+  "contact": {
+    "heading": "Let's talk.",
+    "subtext": "Have a project in mind? Fill out the form or reach out directly.",
+    "socials": [
+      { "icon": "X", "url": "#" },
+      { "icon": "In", "url": "#" },
+      { "icon": "Gh", "url": "#" }
+    ]
+  },
+  "footer": {
+    "heading": "Scaling Start-ups for Growth.",
+    "email": "hello@majd.co.uk",
+    "phone": "+44 7700 900088",
+    "largeText": "MAJD"
+  }
+}

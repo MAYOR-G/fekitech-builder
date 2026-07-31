@@ -1,0 +1,344 @@
+{
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "section": "#eaf2f8",
+      "surface": "#ffffff",
+      "card": "#f8f9fa",
+      "heading": "#0c2340",
+      "body": "#333333",
+      "muted": "#555555",
+      "accent": "#2f6b3d",
+      "accentSecondary": "#0c2340",
+      "buttonPrimary": "#0c2340",
+      "buttonPrimaryText": "#ffffff",
+      "buttonSecondary": "#2f6b3d",
+      "buttonSecondaryText": "#ffffff",
+      "buttonSecondaryBorder": "#2f6b3d",
+      "link": "#2f6b3d",
+      "icon": "#0c2340",
+      "border": "#e0e0e0",
+      "headerBg": "#0c2340",
+      "headerText": "#ffffff",
+      "footerBg": "#0c2340",
+      "footerText": "#ffffff"
+    }
+  },
+  "header": {
+    "businessName": "Infusion London",
+    "nav": [
+      {
+        "label": "Shop",
+        "href": "#shop"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "social": [
+      {
+        "icon": "facebook",
+        "href": "#"
+      },
+      {
+        "icon": "instagram",
+        "href": "#"
+      },
+      {
+        "icon": "twitter",
+        "href": "#"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Time for Tea",
+    "subtitle": "Discover our exquisite collection of hand-blended teas, carefully sourced from the finest estates around the world to bring you a truly authentic British tea experience.",
+    "topLabel": "NEW BLENDS",
+    "primaryCta": {
+      "label": "Shop Now",
+      "href": "#shop"
+    },
+    "badgeText": "Premium\nQuality\nMatcha"
+  },
+  "newArrivals": {
+    "title": "New Arrivals",
+    "description": "Explore our latest additions. Each blend is meticulously crafted by our expert tea sommeliers to provide an unforgettable tasting journey.",
+    "shopAll": {
+      "label": "Shop All",
+      "href": "#"
+    },
+    "items": [
+      {
+        "id": "item1",
+        "name": "Earl Grey Reserve",
+        "price": "\u00a35.50",
+        "image": "/templates/infusion-london/assets/item1.png"
+      },
+      {
+        "id": "item2",
+        "name": "Raspberry & Vanilla",
+        "price": "\u00a36.00",
+        "image": "/templates/infusion-london/assets/item2.png"
+      },
+      {
+        "id": "item3",
+        "name": "Organic Chamomile",
+        "price": "\u00a34.50",
+        "image": "/templates/infusion-london/assets/item3.png"
+      },
+      {
+        "id": "item4",
+        "name": "Wild Hibiscus",
+        "price": "\u00a36.50",
+        "image": "/templates/infusion-london/assets/item4.png"
+      }
+    ]
+  },
+  "blogPromo": {
+    "title": "Read Our Blog",
+    "cta": {
+      "label": "Discover More",
+      "href": "#blog"
+    }
+  },
+  "reviews": {
+    "title": "Reviews",
+    "items": [
+      {
+        "id": "rev1",
+        "name": "Eleanor Davies",
+        "text": "Absolutely love the Earl Grey! Fast delivery and beautiful packaging. Will definitely be ordering more.",
+        "rating": 5
+      },
+      {
+        "id": "rev2",
+        "name": "Richard Smith",
+        "text": "The Matcha tea is top tier. Easily the best I've had in London. Highly recommend Infusion London.",
+        "rating": 5
+      },
+      {
+        "id": "rev3",
+        "name": "Catherine Brooks",
+        "text": "A wonderful selection of herbal teas. The chamomile helps me sleep perfectly every night.",
+        "rating": 5
+      }
+    ]
+  },
+  "footer": {
+    "businessName": "Infusion London",
+    "tagline": "Get to Know Infusion London Better",
+    "contact": {
+      "address": "Visit Our Stores",
+      "phone": "Customer Service: +44 20 7946 0958"
+    },
+    "helpLinks": [
+      {
+        "label": "Terms & Conditions",
+        "href": "#terms"
+      },
+      {
+        "label": "Delivery Policy",
+        "href": "#delivery-policy"
+      },
+      {
+        "label": "Refund Policy",
+        "href": "#refund-policy"
+      }
+    ],
+    "followLinks": [
+      {
+        "label": "Shop",
+        "href": "#shop"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "newsletter": {
+      "placeholder": "Enter your email here*",
+      "button": "Subscribe",
+      "disclaimer": "Yes, subscribe me to your newsletter."
+    },
+    "copyright": "\u00a9 2026 by Infusion London. All rights reserved.",
+    "bottomLinks": [
+      {
+        "label": "Accessibility Statement",
+        "href": "#"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      }
+    ]
+  },
+  "pages": {
+    "shop": {
+      "title": "Shop Our Teas",
+      "description": "Discover our full range of 15 premium blends and accessories.",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Earl Grey Reserve",
+          "price": "\u00a35.50",
+          "image": "/templates/infusion-london/assets/item1.png"
+        },
+        {
+          "id": "p2",
+          "name": "Raspberry & Vanilla",
+          "price": "\u00a36.00",
+          "image": "/templates/infusion-london/assets/item2.png"
+        },
+        {
+          "id": "p3",
+          "name": "Organic Chamomile",
+          "price": "\u00a34.50",
+          "image": "/templates/infusion-london/assets/item3.png"
+        },
+        {
+          "id": "p4",
+          "name": "Wild Hibiscus",
+          "price": "\u00a36.50",
+          "image": "/templates/infusion-london/assets/item4.png"
+        },
+        {
+          "id": "p5",
+          "name": "English Breakfast",
+          "price": "\u00a35.00",
+          "image": "/templates/infusion-london/assets/item1.png"
+        },
+        {
+          "id": "p6",
+          "name": "Peppermint Infusion",
+          "price": "\u00a34.50",
+          "image": "/templates/infusion-london/assets/item2.png"
+        },
+        {
+          "id": "p7",
+          "name": "Green Jasmine",
+          "price": "\u00a37.00",
+          "image": "/templates/infusion-london/assets/item3.png"
+        },
+        {
+          "id": "p8",
+          "name": "Lemon & Ginger",
+          "price": "\u00a35.50",
+          "image": "/templates/infusion-london/assets/item4.png"
+        },
+        {
+          "id": "p9",
+          "name": "Darjeeling First Flush",
+          "price": "\u00a38.50",
+          "image": "/templates/infusion-london/assets/item1.png"
+        },
+        {
+          "id": "p10",
+          "name": "Oolong Supreme",
+          "price": "\u00a39.00",
+          "image": "/templates/infusion-london/assets/item2.png"
+        },
+        {
+          "id": "p11",
+          "name": "Rooibos Vanilla",
+          "price": "\u00a35.50",
+          "image": "/templates/infusion-london/assets/item3.png"
+        },
+        {
+          "id": "p12",
+          "name": "White Peony",
+          "price": "\u00a37.50",
+          "image": "/templates/infusion-london/assets/item4.png"
+        },
+        {
+          "id": "p13",
+          "name": "Spiced Chai",
+          "price": "\u00a36.00",
+          "image": "/templates/infusion-london/assets/item1.png"
+        },
+        {
+          "id": "p14",
+          "name": "Matcha Ceremonial",
+          "price": "\u00a315.00",
+          "image": "/templates/infusion-london/assets/item2.png"
+        },
+        {
+          "id": "p15",
+          "name": "Rose Petal Blend",
+          "price": "\u00a36.50",
+          "image": "/templates/infusion-london/assets/item3.png"
+        }
+      ]
+    },
+    "about": {
+      "title": "About Infusion London",
+      "content": [
+        "Welcome to Infusion London, where tradition meets modern taste. Based in the heart of the UK, we have spent years perfecting our craft, working with the finest tea estates globally to bring you exceptional quality.",
+        "Our mission is to provide an authentic British tea experience while embracing sustainable practices. Every leaf is handpicked, every blend meticulously tested, ensuring that your cup of tea is nothing short of perfection.",
+        "Thank you for choosing Infusion London. We look forward to being part of your daily ritual."
+      ]
+    },
+    "blog": {
+      "title": "The Tea Journal",
+      "posts": [
+        {
+          "id": "b1",
+          "title": "The Art of Brewing the Perfect Cup",
+          "excerpt": "Discover the ideal temperatures and steeping times for every type of tea.",
+          "date": "March 15, 2026"
+        },
+        {
+          "id": "b2",
+          "title": "Health Benefits of Matcha",
+          "excerpt": "Why this vibrant green powder is taking the wellness world by storm.",
+          "date": "April 02, 2026"
+        },
+        {
+          "id": "b3",
+          "title": "Sustainability in the Tea Industry",
+          "excerpt": "How we are working to reduce our carbon footprint and support local farmers.",
+          "date": "April 20, 2026"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Have a question about our blends or your order? We'd love to hear from you.",
+      "form": {
+        "namePlaceholder": "Your Name",
+        "emailPlaceholder": "Your Email",
+        "messagePlaceholder": "Your Message",
+        "submitText": "Send Message"
+      }
+    },
+    "refund-policy": {
+      "title": "Refund Policy",
+      "content": "If you are not completely satisfied with your purchase, we're here to help.\n\nYou have 30 calendar days to return an item from the date you received it. To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.\n\nOnce we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you on the status of your refund after inspecting the item.\n\nIf your return is approved, we will initiate a refund to your credit card (or original method of payment)."
+    },
+    "delivery-policy": {
+      "title": "Delivery Policy",
+      "content": "We offer standard and express delivery options across the UK.\n\nStandard Delivery (3-5 business days): \u00a33.99, or free on orders over \u00a330.\nExpress Delivery (1-2 business days): \u00a35.99.\n\nOrders placed before 2 PM GMT are dispatched the same day. You will receive a tracking link via email once your order has shipped."
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "content": "By accessing this website, we assume you accept these terms and conditions. Do not continue to use Infusion London if you do not agree to take all of the terms and conditions stated on this page.\n\nThe following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: 'Client', 'You' and 'Your' refers to you, the person log on this website and compliant to the Company\u2019s terms and conditions.\n\nUnless otherwise stated, Infusion London and/or its licensors own the intellectual property rights for all material on Infusion London. All intellectual property rights are reserved."
+    }
+  }
+}

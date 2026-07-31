@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "phone": "0800 000 0000",
+    "links": [
+      { "label": "HOME", "href": "#" },
+      { "label": "MENU", "href": "#" },
+      { "label": "ABOUT", "href": "#" },
+      { "label": "CONTACT", "href": "#" }
+    ],
+    "cartText": "0 ITEM"
+  },
+  "hero": {
+    "backgroundText": "CRAVING A\nCRUST",
+    "subtitle": "NEW MENU FROM TODAY",
+    "title": "PIZZA TIME",
+    "badgeText": "BEST OFFER",
+    "pizzaImage": "/templates/custom-pizza-hero.png"
+  },
+  "banners": {
+    "kidsMenu": {
+      "title": "KIDS MENU",
+      "subtitle": "New pizza in our menu, everything you want",
+      "price": "£7.99",
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80&fit=crop"
+    },
+    "location": {
+      "title": "FIND DON PEPPE LOCATION NEAR",
+      "button": "GO"
+    }
+  },
+  "menu": {
+    "subtitle": "SINCE 1978 ENJOY",
+    "title": "THE BEST PIZZA MENU IN TOWN",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie.",
+    "items": [
+      {
+        "name": "MARGHERITA",
+        "price": "£12.99",
+        "oldPrice": "£15.99",
+        "badge": "20%",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80"
+      },
+      {
+        "name": "BEEF MUTANT",
+        "price": "£17.99",
+        "oldPrice": "£20.99",
+        "badge": "",
+        "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&q=80"
+      },
+      {
+        "name": "VEGETARIAN",
+        "price": "£15.49",
+        "badge": "NEW",
+        "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&q=80"
+      },
+      {
+        "name": "PEPPERONI",
+        "price": "£14.49",
+        "badge": "",
+        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80"
+      },
+      {
+        "name": "4 CHEESE",
+        "price": "£16.49",
+        "badge": "",
+        "image": "https://images.unsplash.com/photo-1573821663912-569905455b1c?w=400&q=80"
+      },
+      {
+        "name": "BBQ CHICKEN",
+        "price": "£18.49",
+        "oldPrice": "£22.49",
+        "badge": "",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80"
+      },
+      {
+        "name": "HAWAIIAN",
+        "price": "£15.49",
+        "badge": "",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80"
+      },
+      {
+        "name": "SPICY SAUSAGE",
+        "price": "£17.49",
+        "badge": "HOT",
+        "image": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&q=80"
+      }
+    ]
+  },
+  "pizzaOfDay": {
+    "title": "PIZZA OF THE DAY",
+    "subtitle": "Crust, fresh mozzarella, and tomato",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600&q=80"
+  },
+  "sliceBox": {
+    "title": "SMART PIZZA SLICE BOX",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie."
+  },
+  "quote": {
+    "text": "\"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES\"",
+    "author": "WASHINGTON POST"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop"
+  ],
+  "footer": {
+    "brandInfo": {
+      "title": "FIND OUR RESTAURANTS",
+      "address": "123 London Road\nLondon, UK SE1 1AA",
+      "phone": "0800 000 0000",
+      "email": "hello@londonpizza.co.uk"
+    },
+    "workingHours": {
+      "title": "WORKING HOURS",
+      "mondayToFriday": "09:00 - 22:00",
+      "saturday": "11:00 - 23:00",
+      "sunday": "11:00 - 21:00"
+    },
+    "about": {
+      "text": "THE DON PEPPE CREW BAKE AND PURVEY THE BEST AUTHENTIC NEW YORK STYLE SLICE IN TOWN."
+    },
+    "backgroundImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200&q=80"
+  },
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f8f8f8",
+      "primary": "#d14022",
+      "secondary": "#f4a222",
+      "text": "#222222",
+      "footerBg": "#1a1a1a",
+      "footerText": "#ffffff"
+    }
+  }
+}
