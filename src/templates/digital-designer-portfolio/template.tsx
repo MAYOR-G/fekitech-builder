@@ -5,10 +5,11 @@ import type { TemplateData } from "@/lib/template-data";
 import "./index.css";
 
 export default function DigitalDesignerPortfolioTemplate({
-  data,
+  data: rawData,
 }: {
   data: TemplateData;
 }) {
+  const data = rawData as any;
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
