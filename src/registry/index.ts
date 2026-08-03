@@ -90,6 +90,18 @@ import softwareEngineerPortfolioConfig from "../templates/software-engineer-port
 import softwareEngineerPortfolioEditable from "../templates/software-engineer-portfolio/editable.json";
 import londonPizzaShopConfig from "../templates/london-pizza-shop/config.json";
 import londonPizzaShopEditable from "../templates/london-pizza-shop/editable.json";
+import mossMarrowCafeConfig from "../templates/moss-marrow-cafe/config.json";
+import mossMarrowCafeEditable from "../templates/moss-marrow-cafe/editable.json";
+import blushCrumbBakehouseConfig from "../templates/blush-crumb-bakehouse/config.json";
+import blushCrumbBakehouseEditable from "../templates/blush-crumb-bakehouse/editable.json";
+import aureaObjectsShopConfig from "../templates/aurea-objects-shop/config.json";
+import aureaObjectsShopEditable from "../templates/aurea-objects-shop/editable.json";
+import velourStudioSalonConfig from "../templates/velour-studio-salon/config.json";
+import velourStudioSalonEditable from "../templates/velour-studio-salon/editable.json";
+import harrowValeEstatesConfig from "../templates/harrow-vale-estates/config.json";
+import harrowValeEstatesEditable from "../templates/harrow-vale-estates/editable.json";
+import emberGraceChurchConfig from "../templates/ember-grace-church/config.json";
+import emberGraceChurchEditable from "../templates/ember-grace-church/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -154,6 +166,12 @@ const components = {
   "digital-designer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/digital-designer-portfolio/template")),
   "software-engineer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/software-engineer-portfolio/template")),
   "london-pizza-shop": dynamic<{ data: TemplateData }>(() => import("../templates/london-pizza-shop/template")),
+  "moss-marrow-cafe": dynamic<{ data: TemplateData }>(() => import("../templates/moss-marrow-cafe/template")),
+  "blush-crumb-bakehouse": dynamic<{ data: TemplateData }>(() => import("../templates/blush-crumb-bakehouse/template")),
+  "aurea-objects-shop": dynamic<{ data: TemplateData }>(() => import("../templates/aurea-objects-shop/template")),
+  "velour-studio-salon": dynamic<{ data: TemplateData }>(() => import("../templates/velour-studio-salon/template")),
+  "harrow-vale-estates": dynamic<{ data: TemplateData }>(() => import("../templates/harrow-vale-estates/template")),
+  "ember-grace-church": dynamic<{ data: TemplateData }>(() => import("../templates/ember-grace-church/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -203,6 +221,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "digital-designer-portfolio": { config: digitalDesignerPortfolioConfig, component: components["digital-designer-portfolio"], defaultData: normalizeData(digitalDesignerPortfolioEditable) },
   "software-engineer-portfolio": { config: softwareEngineerPortfolioConfig, component: components["software-engineer-portfolio"], defaultData: normalizeData(softwareEngineerPortfolioEditable) },
   "london-pizza-shop": { config: londonPizzaShopConfig, component: components["london-pizza-shop"], defaultData: normalizeData(londonPizzaShopEditable) },
+  "moss-marrow-cafe": { config: mossMarrowCafeConfig, component: components["moss-marrow-cafe"], defaultData: normalizeData(mossMarrowCafeEditable) },
+  "blush-crumb-bakehouse": { config: blushCrumbBakehouseConfig, component: components["blush-crumb-bakehouse"], defaultData: normalizeData(blushCrumbBakehouseEditable) },
+  "aurea-objects-shop": { config: aureaObjectsShopConfig, component: components["aurea-objects-shop"], defaultData: normalizeData(aureaObjectsShopEditable) },
+  "velour-studio-salon": { config: velourStudioSalonConfig, component: components["velour-studio-salon"], defaultData: normalizeData(velourStudioSalonEditable) },
+  "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },
+  "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

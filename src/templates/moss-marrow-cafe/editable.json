@@ -1,0 +1,181 @@
+{
+  "colors": {
+    "pageBackground": "#f7f4ee",
+    "background": "#f7f4ee",
+    "sectionAlt": "#e7e0d3",
+    "surface": "#f7f4ee",
+    "card": "#442718",
+    "textPrimary": "#442718",
+    "bodyText": "#442718",
+    "mutedText": "#6b5649",
+    "accent": "#7c4d28",
+    "accentSecondary": "#d5b06f",
+    "buttonBg": "#442718",
+    "buttonText": "#f7f4ee",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#442718",
+    "secondaryButtonText": "#442718",
+    "link": "#442718",
+    "border": "#cfc5b4",
+    "headerBg": "#442718",
+    "headerText": "#f7f4ee",
+    "footerBg": "#442718",
+    "footerText": "#f7f4ee",
+    "footerMuted": "#d8cbbb"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Moss & Marrow",
+    "descriptor": "Kitchen and coffee",
+    "addressLine1": "18 St Nicholas Street",
+    "addressLine2": "Bristol BS1 1UE",
+    "phone": "+44 117 496 0284",
+    "email": "hello@mossandmarrow.co.uk"
+  },
+  "header": {
+    "hoursPrimary": "Mon-Fri: 7am - 5pm",
+    "hoursSecondary": "Sat-Sun: 8am - 4pm",
+    "nav": [
+      { "label": "Our Story", "href": "about" },
+      { "label": "Menu", "href": "menu" },
+      { "label": "Contact", "href": "contact" }
+    ]
+  },
+  "hero": {
+    "title": "Savour the Season in Every Spoonful",
+    "description": "A calm neighbourhood cafe where bright produce, careful coffee and warm tables meet.",
+    "image": "/templates/moss-marrow-cafe/assets/hero-cafe.webp",
+    "imageAlt": "Barista preparing coffee inside a warm independent cafe",
+    "cta": { "label": "Explore the menu", "href": "menu" }
+  },
+  "intro": {
+    "title": "Rooted in Warmth",
+    "kicker": "Welcome to Moss & Marrow",
+    "body": "Step into a space made for unhurried breakfasts, generous lunches and coffee worth lingering over. Our kitchen follows the market, keeping plates simple, seasonal and full of comfort.",
+    "images": [
+      {
+        "src": "/templates/moss-marrow-cafe/assets/harvest-board.webp",
+        "alt": "Colourful seasonal salad and small plates"
+      },
+      {
+        "src": "/templates/moss-marrow-cafe/assets/counter-detail.webp",
+        "alt": "Bright dining table prepared with fresh food"
+      }
+    ]
+  },
+  "menu": {
+    "title": "A Taste of the Morning Market",
+    "subtitle": "Fresh plates to brighten the day",
+    "cta": { "label": "See full menu", "href": "menu" },
+    "items": [
+      {
+        "name": "Garden Lentil Bowl",
+        "description": "A gently spiced bowl with roasted carrots, herb yoghurt and toasted seeds.",
+        "price": "GBP 10",
+        "image": "/templates/moss-marrow-cafe/assets/green-plate.webp",
+        "imageAlt": "Seasonal dish plated with green herbs"
+      },
+      {
+        "name": "Broccoli Egg Toast",
+        "description": "Dark sourdough, crushed greens, soft egg and lemon-chilli oil.",
+        "price": "GBP 9",
+        "image": "/templates/moss-marrow-cafe/assets/warm-plate.webp",
+        "imageAlt": "Warm savoury plate on a rustic table"
+      },
+      {
+        "name": "Honey Oat Latte",
+        "description": "House espresso with steamed oat milk, blossom honey and cinnamon.",
+        "price": "GBP 4.50",
+        "image": "/templates/moss-marrow-cafe/assets/honey-latte.webp",
+        "imageAlt": "Fresh latte served in a busy cafe"
+      }
+    ]
+  },
+  "manifesto": {
+    "title": "From Plot to Plate",
+    "kicker": "Our promise to mindful cooking",
+    "body": "Great food starts with good relationships. We buy from nearby growers, bakers and makers, then keep the cooking honest so every cup and plate feels connected to the people behind it."
+  },
+  "testimonials": {
+    "title": "Words from Our Community",
+    "kicker": "What guests say",
+    "backgroundImage": "/templates/moss-marrow-cafe/assets/community-room.webp",
+    "backgroundAlt": "Cosy restaurant dining room in warm evening light",
+    "items": [
+      {
+        "quote": "The room is peaceful, the coffee is exacting, and the greens on toast are the reason I cross town.",
+        "author": "Imogen Price"
+      },
+      {
+        "quote": "It feels like a proper neighbourhood table. Thoughtful food, gentle service and no fuss.",
+        "author": "Caleb Morgan"
+      },
+      {
+        "quote": "You can taste the care in everything they serve. I bring clients here because it always feels easy.",
+        "author": "Nadia Ellis"
+      }
+    ]
+  },
+  "pages": {
+    "about": {
+      "title": "Our Story",
+      "intro": "Moss & Marrow began as a small counter serving coffee to market traders before sunrise.",
+      "body": "Today we are still led by the same idea: cook what is close, serve it with care, and make the room feel calm enough for real conversation.",
+      "image": "/templates/moss-marrow-cafe/assets/counter-detail.webp",
+      "imageAlt": "Cafe table with seasonal food and flowers"
+    },
+    "menu": {
+      "title": "Menu",
+      "intro": "A short seasonal menu for breakfast, lunch and slow afternoons.",
+      "sections": [
+        {
+          "title": "Morning",
+          "items": [
+            { "name": "Sourdough with cultured butter", "description": "House jam or whipped honey.", "price": "GBP 5" },
+            { "name": "Broccoli egg toast", "description": "Crushed greens, soft egg, lemon-chilli oil.", "price": "GBP 9" },
+            { "name": "Porridge with orchard fruit", "description": "Oats, apple, seeds and brown sugar.", "price": "GBP 7" }
+          ]
+        },
+        {
+          "title": "Lunch",
+          "items": [
+            { "name": "Garden lentil bowl", "description": "Roasted roots, herbs and toasted seeds.", "price": "GBP 10" },
+            { "name": "Market soup", "description": "Served with yesterday's sourdough crisps.", "price": "GBP 8" },
+            { "name": "Pressed cheese and leek sandwich", "description": "Pickles, mustard and leaves.", "price": "GBP 9" }
+          ]
+        },
+        {
+          "title": "Coffee",
+          "items": [
+            { "name": "Espresso", "description": "Single-origin house roast.", "price": "GBP 3" },
+            { "name": "Honey oat latte", "description": "Blossom honey and cinnamon.", "price": "GBP 4.50" },
+            { "name": "Filter coffee", "description": "Batch brew, served all day.", "price": "GBP 3.50" }
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "Book a table, ask about private breakfasts or send a note to the kitchen.",
+      "form": {
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "messageLabel": "Message",
+        "button": "Send enquiry"
+      }
+    }
+  },
+  "footer": {
+    "privacyLabel": "Privacy Policy",
+    "privacyHref": "privacy",
+    "accessibilityLabel": "Accessibility Statement",
+    "accessibilityHref": "accessibility",
+    "copyright": "© 2026 by Moss & Marrow.",
+    "credit": "Powered by FekiTech",
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/mossandmarrow" },
+      { "label": "Facebook", "href": "https://facebook.com/mossandmarrow" },
+      { "label": "TikTok", "href": "https://tiktok.com/@mossandmarrow" }
+    ]
+  }
+}

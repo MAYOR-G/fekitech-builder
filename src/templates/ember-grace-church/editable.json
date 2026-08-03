@@ -1,0 +1,94 @@
+{
+  "colors": {
+    "pageBackground": "#101b2f",
+    "background": "#101b2f",
+    "sectionAlt": "#fff1dd",
+    "surface": "#172640",
+    "card": "#fff8ec",
+    "textPrimary": "#fff8ec",
+    "bodyText": "#fff8ec",
+    "mutedText": "#cad5e8",
+    "accent": "#ffb15f",
+    "accentSecondary": "#eb6b55",
+    "buttonBg": "#ffb15f",
+    "buttonText": "#101b2f",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#fff8ec",
+    "secondaryButtonText": "#fff8ec",
+    "link": "#fff8ec",
+    "border": "#31425d",
+    "headerBg": "#101b2f",
+    "headerText": "#fff8ec",
+    "footerBg": "#09111f",
+    "footerText": "#fff8ec"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Ember Grace Church",
+    "descriptor": "Hope in the heart of Leeds",
+    "email": "hello@embergrace.org.uk",
+    "phone": "+44 113 496 2037",
+    "address": "18 Sovereign Street, Leeds LS1 4BA"
+  },
+  "header": {
+    "nav": [
+      { "label": "Sundays", "href": "sundays" },
+      { "label": "Groups", "href": "groups" },
+      { "label": "Visit", "href": "visit" }
+    ]
+  },
+  "hero": {
+    "kicker": "Sundays at 10:30am",
+    "title": "A warm place to find faith, friends and a way forward.",
+    "body": "We are a modern Christian church in Leeds, learning to follow Jesus with honesty, kindness and hope.",
+    "image": "/templates/ember-grace-church/assets/hero-worship.webp",
+    "imageAlt": "Modern church congregation worshipping in warm morning light",
+    "cta": { "label": "Plan your visit", "href": "visit" }
+  },
+  "sundays": {
+    "title": "What Sundays feel like",
+    "body": "Coffee first, worship together, a thoughtful message, kids groups, and plenty of space to ask questions.",
+    "times": [
+      { "label": "Coffee", "time": "10:00am" },
+      { "label": "Gathering", "time": "10:30am" },
+      { "label": "Kids", "time": "10:45am" }
+    ]
+  },
+  "groups": {
+    "title": "Belong during the week",
+    "body": "Small groups meet across the city for food, prayer, scripture and practical care.",
+    "image": "/templates/ember-grace-church/assets/community-foyer.webp",
+    "imageAlt": "Church welcome team greeting visitors over coffee",
+    "items": [
+      { "name": "Neighbourhood groups", "detail": "Homes across Leeds" },
+      { "name": "Youth and students", "detail": "Fridays and Sundays" },
+      { "name": "Care team", "detail": "Meals, visits and prayer" }
+    ]
+  },
+  "visit": {
+    "title": "You can just turn up.",
+    "body": "No church background needed. Come as you are and someone friendly will help you find your way.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "What would help you feel welcome?",
+    "button": "Let us know you are coming"
+  },
+  "pages": {
+    "safeguarding": {
+      "title": "Safeguarding",
+      "body": "We are committed to creating a safe church for children, young people and vulnerable adults. Edit this page with your policy contact and procedures."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "body": "We use personal details only for church communication, pastoral follow-up and the activities people choose to join."
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/embergracechurch" },
+      { "label": "Safeguarding", "href": "safeguarding" },
+      { "label": "Privacy", "href": "privacy" }
+    ],
+    "copyright": "(c) 2026 Ember Grace Church"
+  }
+}

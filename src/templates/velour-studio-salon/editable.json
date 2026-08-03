@@ -1,0 +1,87 @@
+{
+  "colors": {
+    "pageBackground": "#241824",
+    "background": "#241824",
+    "sectionAlt": "#d8c4da",
+    "surface": "#332334",
+    "card": "#f4edf1",
+    "textPrimary": "#f7f0f5",
+    "bodyText": "#f7f0f5",
+    "mutedText": "#cbb8c8",
+    "accent": "#b98ac7",
+    "accentSecondary": "#d7a762",
+    "buttonBg": "#f4edf1",
+    "buttonText": "#241824",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#f4edf1",
+    "secondaryButtonText": "#f4edf1",
+    "link": "#f4edf1",
+    "border": "#725575",
+    "headerBg": "#241824",
+    "headerText": "#f7f0f5",
+    "footerBg": "#120b13",
+    "footerText": "#f7f0f5"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Velour Studio",
+    "descriptor": "Hair, colour and care",
+    "email": "hello@velourstudio.co.uk",
+    "phone": "+44 161 507 1184",
+    "address": "29 Tib Street, Manchester M4 1LX"
+  },
+  "header": {
+    "nav": [
+      { "label": "Services", "href": "services" },
+      { "label": "Studio", "href": "studio" },
+      { "label": "Book", "href": "book" }
+    ]
+  },
+  "hero": {
+    "kicker": "Colour work / cuts / care",
+    "title": "Soft shape. Gloss finish. Quiet confidence.",
+    "body": "A calm Manchester salon for precision cuts, dimensional colour and hair that still feels like yours.",
+    "image": "/templates/velour-studio-salon/assets/hero-salon.webp",
+    "imageAlt": "Stylist finishing a glossy bob in a modern salon",
+    "cta": { "label": "Book a chair", "href": "book" }
+  },
+  "services": {
+    "title": "Services with a slower hand",
+    "body": "Appointments are spaced so the work can be considered, not rushed.",
+    "image": "/templates/velour-studio-salon/assets/treatment-detail.webp",
+    "imageAlt": "Gloss treatment and salon tools on a lilac workstation",
+    "items": [
+      { "name": "Cut and finish", "price": "From GBP 62", "duration": "75 min" },
+      { "name": "Gloss colour", "price": "From GBP 96", "duration": "2 hrs" },
+      { "name": "Balayage refresh", "price": "From GBP 148", "duration": "3 hrs" },
+      { "name": "Repair ritual", "price": "GBP 48", "duration": "45 min" }
+    ]
+  },
+  "studio": {
+    "title": "A room designed to lower the volume.",
+    "body": "Smoked mirrors, soft towels, careful consultations and stylists who explain the shape before the scissors move."
+  },
+  "booking": {
+    "title": "Save your seat",
+    "body": "Tell us what you want to change and we will match you with the right stylist.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Hair goal",
+    "button": "Send booking request"
+  },
+  "pages": {
+    "accessibility": {
+      "title": "Accessibility",
+      "body": "We welcome every guest and are happy to discuss access, sensory needs or appointment adjustments before your visit."
+    }
+  },
+  "footer": {
+    "hours": "Tue-Sat: 9am - 6pm",
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/velourstudio" },
+      { "label": "Treatments", "href": "services" },
+      { "label": "Accessibility", "href": "accessibility" }
+    ],
+    "copyright": "(c) 2026 Velour Studio"
+  }
+}

@@ -69,14 +69,22 @@ describe("production template registry", () => {
       "infusion-london",
       "digital-designer-portfolio",
       "software-engineer-portfolio",
-      "london-pizza-shop"
+      "london-pizza-shop",
+      "moss-marrow-cafe",
+      "blush-crumb-bakehouse",
+      "aurea-objects-shop",
+      "velour-studio-salon",
+      "harrow-vale-estates",
+      "ember-grace-church"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
       "ash-bridle-barbers",
+      "aurea-objects-shop",
       "bakery-website",
       "barber-website",
       "blueforge-plumbing",
+      "blush-crumb-bakehouse",
       "brightnest-cleaning",
       "burger-dark-premium",
       "burger-light-clean",
@@ -90,11 +98,13 @@ describe("production template registry", () => {
       "dentist-website",
       "digital-designer-portfolio",
       "electrician-website",
+      "ember-grace-church",
       "farm-shop-website",
       "fast-food-chicken-tacos",
       "forgepoint-construction",
       "gym-website",
       "harborwell-home-health",
+      "harrow-vale-estates",
       "ice-cream-website",
       "industrial-construction",
       "infusion-london",
@@ -102,6 +112,7 @@ describe("production template registry", () => {
       "lacquer-form-nail-atelier",
       "london-pizza-shop",
       "lumen-house-design",
+      "moss-marrow-cafe",
       "noir-house-design",
       "northcrest-roofing",
       "northline-grooming",
@@ -114,6 +125,7 @@ describe("production template registry", () => {
       "second-furniture-website",
       "second-plumber-website",
       "software-engineer-portfolio",
+      "velour-studio-salon",
       "velvet-scoop",
       "verdant-house-grooming"
     ]);
@@ -151,7 +163,13 @@ describe("production template registry", () => {
       "second-plumber-website",
       "velvet-scoop",
       "fast-food-chicken-tacos",
-      "infusion-london"
+      "infusion-london",
+      "moss-marrow-cafe",
+      "blush-crumb-bakehouse",
+      "aurea-objects-shop",
+      "velour-studio-salon",
+      "harrow-vale-estates",
+      "ember-grace-church"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -199,7 +217,13 @@ describe("production template registry", () => {
       "ash-bridle-barbers",
       "lacquer-form-nail-atelier",
       "harborwell-home-health",
-      "infusion-london"
+      "infusion-london",
+      "moss-marrow-cafe",
+      "blush-crumb-bakehouse",
+      "aurea-objects-shop",
+      "velour-studio-salon",
+      "harrow-vale-estates",
+      "ember-grace-church"
     ];
 
     for (const templateId of redesignedTemplateIds) {

@@ -1,0 +1,201 @@
+{
+  "colors": {
+    "pageBackground": "#120684",
+    "background": "#120684",
+    "sectionAlt": "#ffc8cc",
+    "surface": "#ffc8cc",
+    "card": "#fffaf8",
+    "textPrimary": "#fffaf8",
+    "bodyText": "#fffaf8",
+    "mutedText": "#f7d7de",
+    "accent": "#ffc8cc",
+    "accentSecondary": "#fffaf8",
+    "buttonBg": "#fffaf8",
+    "buttonText": "#120684",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#fffaf8",
+    "secondaryButtonText": "#fffaf8",
+    "link": "#fffaf8",
+    "border": "#2a1fa0",
+    "headerBg": "#120684",
+    "headerText": "#fffaf8",
+    "footerBg": "#ffc8cc",
+    "footerText": "#120684"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Blush & Crumb.",
+    "descriptor": "Small-batch Bakery & Bakehouse",
+    "addressLine1": "42 Redchurch Street",
+    "addressLine2": "London E2 7DP",
+    "phone": "+44 20 8050 2471",
+    "email": "hello@blushandcrumb.co.uk"
+  },
+  "header": {
+    "nav": [
+      { "label": "Home", "href": "home" },
+      { "label": "Our Menu", "href": "menu" },
+      { "label": "About", "href": "about" },
+      { "label": "Visit Us", "href": "visit" }
+    ]
+  },
+  "hero": {
+    "wordmark": "Blush & Crumb.",
+    "cta": { "label": "Explore Menu", "href": "menu" },
+    "images": {
+      "croissant": { "src": "/templates/blush-crumb-bakehouse/assets/croissant.webp", "alt": "Golden butter croissant cutout" },
+      "cinnamon": { "src": "/templates/blush-crumb-bakehouse/assets/cinnamon-roll.webp", "alt": "Iced cinnamon roll cutout" },
+      "caramelCookie": { "src": "/templates/blush-crumb-bakehouse/assets/caramel-cookie.webp", "alt": "Salted caramel cookie cutout" },
+      "chocolateCookie": { "src": "/templates/blush-crumb-bakehouse/assets/chocolate-cookie.webp", "alt": "Dark chocolate cookie cutout" }
+    }
+  },
+  "story": {
+    "title": "Simple Pleasures, Baked Just Right",
+    "body": "We believe the best bakes are warm, generous and made by hand. Our doughs rest slowly, our fillings change with the seasons, and every tray is prepared for the neighbourhood we love.",
+    "cta": { "label": "Read Our Story >", "href": "about" }
+  },
+  "featured": {
+    "title": "Fresh from Our Ovens",
+    "body": "From three-day laminated dough to slow-fermented sourdough, every bake is made in small batches before the first coffee is poured.",
+    "cta": { "label": "See what's baking", "href": "menu" },
+    "items": [
+      {
+        "name": "Cinnamon Morning Roll",
+        "price": "GBP 4.50",
+        "description": "Warm brown sugar swirl finished with vanilla icing.",
+        "image": "/templates/blush-crumb-bakehouse/assets/cinnamon-roll.webp",
+        "imageAlt": "Iced cinnamon roll"
+      },
+      {
+        "name": "Lemon Cloud Tart",
+        "price": "GBP 5.25",
+        "description": "Sharp lemon curd with toasted meringue peaks.",
+        "image": "/templates/blush-crumb-bakehouse/assets/lemon-tart.webp",
+        "imageAlt": "Lemon meringue tart"
+      },
+      {
+        "name": "Sea Salt Chocolate Cookie",
+        "price": "GBP 3.95",
+        "description": "Deep cocoa dough with puddles of dark chocolate.",
+        "image": "/templates/blush-crumb-bakehouse/assets/chocolate-cookie.webp",
+        "imageAlt": "Dark chocolate cookie"
+      },
+      {
+        "name": "Pistachio Glazed Swirl",
+        "price": "GBP 5.50",
+        "description": "Buttery layers, pistachio cream and chopped nuts.",
+        "image": "/templates/blush-crumb-bakehouse/assets/pistachio-swirl.webp",
+        "imageAlt": "Pistachio pastry swirl"
+      }
+    ]
+  },
+  "testimonial": {
+    "eyebrow": "From Our Neighbours",
+    "quote": "A little pocket of joy. The pastries are beautifully made, the coffee is spot on, and the team makes every visit feel like Saturday morning.",
+    "author": "Mina Patel",
+    "images": {
+      "baguette": { "src": "/templates/blush-crumb-bakehouse/assets/baguette.webp", "alt": "Rustic baguette cutout" },
+      "cinnamon": { "src": "/templates/blush-crumb-bakehouse/assets/cinnamon-roll.webp", "alt": "Cinnamon pastry cutout" },
+      "pretzel": { "src": "/templates/blush-crumb-bakehouse/assets/pretzel-bun.webp", "alt": "Glossy pretzel bun cutout" }
+    }
+  },
+  "gallery": {
+    "title": "Caught in the kitchen",
+    "items": [
+      { "src": "/templates/blush-crumb-bakehouse/assets/gallery-counter.webp", "alt": "Bakery counter filled with fresh pastries" },
+      { "src": "/templates/blush-crumb-bakehouse/assets/gallery-corner.webp", "alt": "Sunny bakery seating corner with coffee and pastry" },
+      { "src": "/templates/blush-crumb-bakehouse/assets/pistachio-swirl.webp", "alt": "Pistachio pastry on a blush background" },
+      { "src": "/templates/blush-crumb-bakehouse/assets/croissant.webp", "alt": "Flaky croissant close-up cutout" },
+      { "src": "/templates/blush-crumb-bakehouse/assets/gallery-bakers.webp", "alt": "Bakers holding bread and pastries in the kitchen" }
+    ]
+  },
+  "newsletter": {
+    "title": "Join The Neighbourhood",
+    "body": "Be first to know about weekend specials, baking workshops and fresh morning trays.",
+    "emailLabel": "Email",
+    "checkboxLabel": "Yes, send me the weekly bake note.",
+    "button": "Subscribe"
+  },
+  "pages": {
+    "about": {
+      "title": "Our Story",
+      "body": "Blush & Crumb began with one proofing basket, a borrowed mixer and a Saturday queue. Today we bake slowly, serve kindly and keep the counter filled with the bakes people cross the street for.",
+      "image": "/templates/blush-crumb-bakehouse/assets/gallery-bakers.webp",
+      "imageAlt": "Two bakers holding fresh bread and pastries",
+      "cta": { "label": "Plan a visit", "href": "visit" },
+      "calloutTitle": "Baked by hand",
+      "calloutBody": "Our small team folds, proofs and finishes each bake in the Redchurch Street kitchen before the doors open."
+    },
+    "menu": {
+      "title": "Our Menu",
+      "intro": "A concise bakehouse menu for breakfast, coffee breaks and boxes to take home.",
+      "cta": { "label": "Order a box", "href": "visit" },
+      "sections": [
+        {
+          "title": "Pastries",
+          "items": [
+            { "name": "Butter croissant", "description": "Three-day laminated dough.", "price": "GBP 3.75" },
+            { "name": "Cinnamon morning roll", "description": "Brown sugar swirl and vanilla icing.", "price": "GBP 4.50" },
+            { "name": "Pistachio glazed swirl", "description": "Pistachio cream and chopped nuts.", "price": "GBP 5.50" }
+          ]
+        },
+        {
+          "title": "Sweet counter",
+          "items": [
+            { "name": "Lemon cloud tart", "description": "Lemon curd and toasted meringue.", "price": "GBP 5.25" },
+            { "name": "Sea salt chocolate cookie", "description": "Dark chocolate and flaky salt.", "price": "GBP 3.95" },
+            { "name": "Salted caramel cookie", "description": "Golden cookie with caramel centre.", "price": "GBP 3.95" }
+          ]
+        },
+        {
+          "title": "Bread & coffee",
+          "items": [
+            { "name": "Sourdough tin loaf", "description": "Slow-fermented and sliced to order.", "price": "GBP 5.80" },
+            { "name": "Baguette", "description": "Crackly crust, baked twice daily.", "price": "GBP 3.40" },
+            { "name": "Flat white", "description": "House espresso and steamed milk.", "price": "GBP 3.60" }
+          ]
+        }
+      ]
+    },
+    "visit": {
+      "title": "Visit Us",
+      "intro": "Drop in for morning pastries, order a celebration box, or ask about weekend baking workshops.",
+      "findTitle": "Find us",
+      "hours": [
+        { "day": "Mon-Fri", "time": "7:30am - 5pm" },
+        { "day": "Saturday", "time": "8am - 4pm" },
+        { "day": "Sunday", "time": "9am - 2pm" }
+      ],
+      "form": {
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "messageLabel": "Message",
+        "button": "Send enquiry"
+      }
+    },
+    "policies": {
+      "body": "This page is ready for your own bakery policy wording and can be edited after choosing the template.",
+      "backLabel": "Back home",
+      "backHref": "home"
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "Home", "href": "home" },
+      { "label": "Our Menu", "href": "menu" },
+      { "label": "About", "href": "about" },
+      { "label": "Visit Us", "href": "visit" }
+    ],
+    "policies": [
+      { "label": "Privacy Policy", "href": "privacy" },
+      { "label": "Terms & Conditions", "href": "terms" },
+      { "label": "Accessibility Statement", "href": "accessibility" }
+    ],
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/blushandcrumb" },
+      { "label": "Facebook", "href": "https://facebook.com/blushandcrumb" },
+      { "label": "TikTok", "href": "https://tiktok.com/@blushandcrumb" }
+    ],
+    "copyright": "(c) 2026 by Blush & Crumb. Powered by FekiTech"
+  }
+}

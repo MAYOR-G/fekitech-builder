@@ -1,0 +1,731 @@
+[data-template-id="moss-marrow-cafe"] {
+  --mmc-cream: var(--template-background, #f7f4ee);
+  --mmc-paper: var(--template-surface, #f7f4ee);
+  --mmc-clay: var(--template-secondary, #e7e0d3);
+  --mmc-brown: var(--template-heading, #442718);
+  --mmc-muted: var(--template-muted, #6b5649);
+  --mmc-line: var(--template-border, #cfc5b4);
+  --mmc-footer: var(--template-footer-bg, #442718);
+  --mmc-footer-text: var(--template-footer-text, #f7f4ee);
+  --mmc-heading-font: var(--font-heading, "Arial Narrow", Arial, sans-serif);
+  --mmc-body-font: var(--font-body, "Azeret Mono", "Courier New", monospace);
+  background: var(--mmc-cream);
+  color: var(--mmc-brown);
+  font-family: var(--mmc-body-font);
+  line-height: 1.15;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+[data-template-id="moss-marrow-cafe"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="moss-marrow-cafe"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] a,
+[data-template-id="moss-marrow-cafe"] button {
+  color: inherit;
+  font: inherit;
+}
+
+[data-template-id="moss-marrow-cafe"] button {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-header {
+  align-items: center;
+  background: var(--mmc-header-bg, var(--mmc-footer));
+  color: var(--mmc-header-text, var(--mmc-footer-text));
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 220px 1fr auto;
+  min-height: 74px;
+  padding: 12px 22px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-wordmark {
+  cursor: pointer;
+  text-align: left;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-logo-lockup,
+[data-template-id="moss-marrow-cafe"] .mmc-footer-brand button {
+  display: block;
+  font-family: var(--mmc-heading-font);
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.82;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-logo-sub {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-header-meta {
+  display: flex;
+  gap: clamp(28px, 6vw, 95px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-header-meta p,
+[data-template-id="moss-marrow-cafe"] .mmc-section-heading p,
+[data-template-id="moss-marrow-cafe"] .mmc-kicker,
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption p,
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption span,
+[data-template-id="moss-marrow-cafe"] .mmc-footer,
+[data-template-id="moss-marrow-cafe"] .mmc-page-kicker {
+  font-size: clamp(10px, 0.9vw, 13px);
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-nav {
+  align-items: center;
+  display: flex;
+  gap: clamp(16px, 2.1vw, 30px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-nav a {
+  font-family: var(--mmc-heading-font);
+  font-size: clamp(20px, 1.9vw, 30px);
+  line-height: 0.9;
+  text-decoration: none;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-nav a:hover,
+[data-template-id="moss-marrow-cafe"] .mmc-footer a:hover,
+[data-template-id="moss-marrow-cafe"] .mmc-text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero {
+  background: var(--mmc-cream);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100svh - 74px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 780px;
+  padding: clamp(44px, 5.5vw, 76px) clamp(22px, 3.6vw, 48px) clamp(58px, 6vw, 82px);
+}
+
+[data-template-id="moss-marrow-cafe"] h1,
+[data-template-id="moss-marrow-cafe"] h2,
+[data-template-id="moss-marrow-cafe"] h3 {
+  color: var(--mmc-brown);
+  font-family: var(--mmc-heading-font);
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero h1 {
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.88;
+  max-width: 760px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero p {
+  font-size: clamp(11px, 0.95vw, 15px);
+  line-height: 1.14;
+  margin: auto 0 34px;
+  max-width: 430px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-text-link,
+[data-template-id="moss-marrow-cafe"] .mmc-solid-link {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 5px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-text-link {
+  align-self: flex-start;
+  font-size: 12px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-text-link svg,
+[data-template-id="moss-marrow-cafe"] .mmc-solid-link svg {
+  fill: none;
+  height: 16px;
+  stroke: currentColor;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  stroke-width: 1.7;
+  width: 16px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero-media {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-hero-media img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro {
+  background: var(--mmc-clay);
+  display: grid;
+  gap: clamp(28px, 5vw, 90px);
+  grid-template-columns: minmax(250px, 0.82fr) minmax(220px, 0.72fr) minmax(300px, 1fr);
+  min-height: 630px;
+  padding: clamp(54px, 7vw, 86px) clamp(22px, 3.6vw, 48px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro-gallery {
+  align-items: start;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro-gallery img {
+  aspect-ratio: 1 / 0.78;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro h2 {
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 0.94;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro-body {
+  align-self: end;
+  max-width: 520px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-intro-body p:last-child,
+[data-template-id="moss-marrow-cafe"] .mmc-manifesto > p:last-child,
+[data-template-id="moss-marrow-cafe"] .mmc-page-heading p,
+[data-template-id="moss-marrow-cafe"] .mmc-page-hero p,
+[data-template-id="moss-marrow-cafe"] .mmc-page-text p,
+[data-template-id="moss-marrow-cafe"] .mmc-contact-page > div > p {
+  font-family: var(--mmc-heading-font);
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.02;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-section {
+  background: var(--mmc-cream);
+  padding: clamp(58px, 7vw, 90px) clamp(22px, 3.6vw, 48px) clamp(60px, 8vw, 100px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-section-heading {
+  margin-bottom: 34px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-section-heading h2,
+[data-template-id="moss-marrow-cafe"] .mmc-manifesto h2,
+[data-template-id="moss-marrow-cafe"] .mmc-testimonial-heading h2 {
+  font-size: clamp(34px, 4.2vw, 58px);
+  line-height: 0.94;
+  max-width: 680px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-section-heading p {
+  margin: 26px 0 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-card {
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  min-height: 420px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-card img {
+  aspect-ratio: 1 / 0.92;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption {
+  align-items: stretch;
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(120px, 0.55fr) 1fr auto;
+  min-height: 82px;
+  padding: 16px 20px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption h3 {
+  color: var(--mmc-footer-text);
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 0.98;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption p,
+[data-template-id="moss-marrow-cafe"] .mmc-menu-caption span {
+  align-self: center;
+  color: var(--mmc-footer-text);
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-card-3 {
+  grid-column: 1 / 2;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-cta {
+  align-items: center;
+  background: var(--mmc-clay);
+  display: flex;
+  justify-content: center;
+  min-height: 420px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-solid-link {
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  font-size: 11px;
+  min-height: 34px;
+  padding: 10px 18px;
+  text-decoration: none;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-manifesto {
+  background: var(--mmc-cream);
+  min-height: 420px;
+  padding: clamp(46px, 6vw, 80px) clamp(22px, 3.6vw, 48px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-manifesto .mmc-kicker {
+  margin: 38px 0 52px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-manifesto > p:last-child {
+  max-width: 1120px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-testimonials {
+  min-height: 820px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-testimonial-bg {
+  filter: blur(6px) saturate(0.85) brightness(0.78);
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  transform: scale(1.04);
+  width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-testimonials::after {
+  background: color-mix(in srgb, var(--mmc-footer) 28%, transparent);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-testimonial-heading {
+  color: var(--mmc-footer-text);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: clamp(52px, 6vw, 78px) clamp(22px, 3.6vw, 48px);
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-testimonial-heading h2,
+[data-template-id="moss-marrow-cafe"] .mmc-testimonial-heading p {
+  color: var(--mmc-footer-text);
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote-field {
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote {
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 245px;
+  padding: 28px 24px;
+  position: absolute;
+  width: min(310px, 28vw);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote p {
+  font-family: var(--mmc-heading-font);
+  font-size: clamp(17px, 1.6vw, 25px);
+  line-height: 1;
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote cite {
+  font-size: 11px;
+  font-style: normal;
+  margin-top: 44px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote-1 {
+  left: 24px;
+  top: 42%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote-2 {
+  left: 52%;
+  top: 26%;
+  transform: translateX(-50%);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-quote-3 {
+  bottom: 54px;
+  right: 26px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer {
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1.2fr 1.2fr 1.4fr;
+  padding: 28px 24px 22px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer a,
+[data-template-id="moss-marrow-cafe"] .mmc-footer p,
+[data-template-id="moss-marrow-cafe"] .mmc-footer button {
+  color: var(--mmc-footer-text);
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer-brand {
+  align-self: start;
+  grid-row: span 2;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer-links {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: end;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer-links a {
+  font-family: var(--mmc-heading-font);
+  font-size: clamp(20px, 2vw, 32px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer-meta {
+  display: grid;
+  gap: 8px 22px;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-footer-bottom {
+  border-top: 1px solid color-mix(in srgb, var(--mmc-footer-text) 22%, transparent);
+  display: flex;
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-subpage {
+  background: var(--mmc-cream);
+  min-height: 720px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-hero,
+[data-template-id="moss-marrow-cafe"] .mmc-contact-page {
+  display: grid;
+  gap: clamp(28px, 5vw, 76px);
+  grid-template-columns: 1fr 1fr;
+  padding: clamp(62px, 8vw, 108px) clamp(22px, 3.6vw, 48px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-hero img {
+  aspect-ratio: 1 / 0.78;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-heading {
+  padding: clamp(62px, 8vw, 108px) clamp(22px, 3.6vw, 48px) 34px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-hero h1,
+[data-template-id="moss-marrow-cafe"] .mmc-page-heading h1,
+[data-template-id="moss-marrow-cafe"] .mmc-contact-page h1 {
+  font-size: clamp(52px, 7vw, 96px);
+  line-height: 0.88;
+  margin-bottom: 32px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-kicker {
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-page-text {
+  max-width: 1000px;
+  padding: 0 clamp(22px, 3.6vw, 48px) clamp(72px, 8vw, 120px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-full-menu {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0 clamp(22px, 3.6vw, 48px) clamp(72px, 8vw, 120px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-list {
+  border-top: 1px solid var(--mmc-brown);
+  padding-top: 18px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-list h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  margin-bottom: 26px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-row {
+  border-top: 1px solid var(--mmc-line);
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr auto;
+  padding: 18px 0;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-row h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-menu-row p,
+[data-template-id="moss-marrow-cafe"] address,
+[data-template-id="moss-marrow-cafe"] label span {
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+[data-template-id="moss-marrow-cafe"] address {
+  font-style: normal;
+  margin-top: 36px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-contact-form {
+  background: var(--mmc-clay);
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 3vw, 42px);
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-contact-form label {
+  display: grid;
+  gap: 8px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-contact-form input,
+[data-template-id="moss-marrow-cafe"] .mmc-contact-form textarea {
+  background: transparent;
+  border: 1px solid var(--mmc-brown);
+  color: var(--mmc-brown);
+  font: inherit;
+  min-height: 48px;
+  padding: 12px;
+}
+
+[data-template-id="moss-marrow-cafe"] .mmc-contact-form button {
+  background: var(--mmc-footer);
+  color: var(--mmc-footer-text);
+  cursor: pointer;
+  justify-self: start;
+  min-height: 42px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+}
+
+[data-template-id="moss-marrow-cafe"] [data-mmc-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+[data-template-id="moss-marrow-cafe"] [data-mmc-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-template-id="moss-marrow-cafe"] [data-mmc-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 980px) {
+  [data-template-id="moss-marrow-cafe"] .mmc-header {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-header-meta,
+  [data-template-id="moss-marrow-cafe"] .mmc-nav {
+    justify-content: space-between;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-hero,
+  [data-template-id="moss-marrow-cafe"] .mmc-intro,
+  [data-template-id="moss-marrow-cafe"] .mmc-page-hero,
+  [data-template-id="moss-marrow-cafe"] .mmc-contact-page {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-hero-copy,
+  [data-template-id="moss-marrow-cafe"] .mmc-hero-media {
+    min-height: 560px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-testimonial-heading,
+  [data-template-id="moss-marrow-cafe"] .mmc-footer,
+  [data-template-id="moss-marrow-cafe"] .mmc-full-menu {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-footer-brand,
+  [data-template-id="moss-marrow-cafe"] .mmc-footer-bottom {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-footer-links {
+    justify-content: start;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-testimonials {
+    min-height: 980px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-quote {
+    width: min(310px, 42vw);
+  }
+}
+
+@media (max-width: 700px) {
+  [data-template-id="moss-marrow-cafe"] .mmc-header {
+    gap: 16px;
+    padding: 14px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-header-meta {
+    display: none;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-nav {
+    gap: 14px;
+    overflow-x: auto;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-nav a {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-hero-copy {
+    min-height: 520px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-hero-media {
+    min-height: 420px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-intro {
+    min-height: auto;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-intro-gallery,
+  [data-template-id="moss-marrow-cafe"] .mmc-menu-grid,
+  [data-template-id="moss-marrow-cafe"] .mmc-menu-caption,
+  [data-template-id="moss-marrow-cafe"] .mmc-footer-meta {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-menu-card-3 {
+    grid-column: auto;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-menu-cta {
+    min-height: 220px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-testimonials {
+    min-height: auto;
+    padding-bottom: 34px;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-testimonial-bg {
+    position: absolute;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-quote-field {
+    display: grid;
+    gap: 16px;
+    padding: 0 18px 28px;
+    position: relative;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-quote {
+    min-height: 210px;
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  [data-template-id="moss-marrow-cafe"] .mmc-footer-bottom {
+    display: grid;
+    gap: 8px;
+  }
+}

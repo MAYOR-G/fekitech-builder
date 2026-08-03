@@ -1,0 +1,91 @@
+{
+  "colors": {
+    "pageBackground": "#f5f0e8",
+    "background": "#f5f0e8",
+    "sectionAlt": "#101010",
+    "surface": "#ffffff",
+    "card": "#ece3d6",
+    "textPrimary": "#101010",
+    "bodyText": "#23201d",
+    "mutedText": "#70675d",
+    "accent": "#7a1024",
+    "accentSecondary": "#c9c3b8",
+    "buttonBg": "#101010",
+    "buttonText": "#f5f0e8",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#101010",
+    "secondaryButtonText": "#101010",
+    "link": "#101010",
+    "border": "#d8d0c4",
+    "headerBg": "#f5f0e8",
+    "headerText": "#101010",
+    "footerBg": "#101010",
+    "footerText": "#f5f0e8"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Aurea Objects",
+    "descriptor": "Edited homeware and accessories",
+    "email": "studio@aureaobjects.co.uk",
+    "phone": "+44 20 8044 1920",
+    "address": "14 Chiltern Street, London W1U 7PY"
+  },
+  "header": {
+    "nav": [
+      { "label": "Shop", "href": "shop" },
+      { "label": "Journal", "href": "journal" },
+      { "label": "Visit", "href": "visit" }
+    ],
+    "cartLabel": "Bag"
+  },
+  "hero": {
+    "eyebrow": "Issue 04 / New season edit",
+    "title": "Objects with a quieter kind of pull.",
+    "body": "A tightly edited collection of sculptural ceramics, soft goods and personal pieces for homes with restraint.",
+    "image": "/templates/aurea-objects-shop/assets/hero-gallery.webp",
+    "imageAlt": "Luxury boutique display with ceramics and accessories",
+    "cta": { "label": "Shop the edit", "href": "shop" }
+  },
+  "products": {
+    "title": "The current edit",
+    "body": "Small runs, honest materials, no filler.",
+    "image": "/templates/aurea-objects-shop/assets/product-still.webp",
+    "imageAlt": "Still life of luxury home objects and accessories",
+    "items": [
+      { "name": "Ripple ceramic bowl", "price": "GBP 86", "tag": "Hand-finished clay" },
+      { "name": "Oxblood card case", "price": "GBP 72", "tag": "Vegetable-tanned leather" },
+      { "name": "Smoked glass candle", "price": "GBP 44", "tag": "Cedar, fig and resin" },
+      { "name": "Oat cashmere throw", "price": "GBP 188", "tag": "Woven in Scotland" }
+    ]
+  },
+  "journal": {
+    "title": "Built around feeling, not trends.",
+    "body": "Every object is chosen for proportion, texture and the way it sits with other things. The shop stays intentionally narrow so the collection can breathe."
+  },
+  "visit": {
+    "title": "Private sourcing",
+    "body": "Book a quiet appointment for gifting, styling, or sourcing pieces for a room.",
+    "button": "Request appointment"
+  },
+  "pages": {
+    "returns": {
+      "title": "Returns",
+      "body": "Unused items can be returned within 14 days. Custom sourcing and personal orders are handled case by case."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "body": "We only use your details to reply to enquiries, process orders and send notes you have chosen to receive."
+    }
+  },
+  "footer": {
+    "newsletterTitle": "Notes from the edit",
+    "newsletterBody": "Seasonal arrivals, studio visits and object stories.",
+    "emailLabel": "Email",
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/aureaobjects" },
+      { "label": "Returns", "href": "returns" },
+      { "label": "Privacy", "href": "privacy" }
+    ],
+    "copyright": "(c) 2026 Aurea Objects"
+  }
+}

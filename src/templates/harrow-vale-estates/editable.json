@@ -1,0 +1,85 @@
+{
+  "colors": {
+    "pageBackground": "#102018",
+    "background": "#102018",
+    "sectionAlt": "#e6dece",
+    "surface": "#183226",
+    "card": "#f3eee4",
+    "textPrimary": "#f3eee4",
+    "bodyText": "#f3eee4",
+    "mutedText": "#bdc9bc",
+    "accent": "#b98b45",
+    "accentSecondary": "#e6dece",
+    "buttonBg": "#b98b45",
+    "buttonText": "#102018",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#e6dece",
+    "secondaryButtonText": "#e6dece",
+    "link": "#e6dece",
+    "border": "#375144",
+    "headerBg": "#102018",
+    "headerText": "#f3eee4",
+    "footerBg": "#08120d",
+    "footerText": "#f3eee4"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Harrow & Vale",
+    "descriptor": "Prime homes across London",
+    "email": "hello@harrowvale.co.uk",
+    "phone": "+44 20 8058 4426",
+    "address": "6 Holland Park Avenue, London W11 3QU"
+  },
+  "header": {
+    "nav": [
+      { "label": "Homes", "href": "homes" },
+      { "label": "Valuation", "href": "valuation" },
+      { "label": "Contact", "href": "contact" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Discreet residential advisory",
+    "title": "Homes with substance, handled with care.",
+    "body": "A senior-led estate agency for characterful London houses, quiet sales and exacting buyers.",
+    "image": "/templates/harrow-vale-estates/assets/hero-townhouse.webp",
+    "imageAlt": "Restored London townhouse at dusk",
+    "cta": { "label": "View homes", "href": "homes" }
+  },
+  "listings": {
+    "title": "Current instructions",
+    "image": "/templates/harrow-vale-estates/assets/interior-garden.webp",
+    "imageAlt": "Elegant townhouse kitchen and living space",
+    "items": [
+      { "name": "Holland Park townhouse", "price": "GBP 4.85m", "meta": "5 beds / garden / freehold" },
+      { "name": "Canonbury garden house", "price": "GBP 2.35m", "meta": "4 beds / studio / private terrace" },
+      { "name": "Belsize Park apartment", "price": "GBP 1.18m", "meta": "2 beds / lateral / lift" }
+    ]
+  },
+  "valuation": {
+    "title": "Valuations with context",
+    "body": "We price with evidence, buyer demand and the nuance of each street, not a postcode average.",
+    "button": "Request valuation"
+  },
+  "contact": {
+    "title": "Begin quietly",
+    "body": "Tell us what you are considering. We will reply personally, not through a call centre.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "button": "Send enquiry"
+  },
+  "pages": {
+    "privacy": {
+      "title": "Privacy",
+      "body": "Your enquiry is handled confidentially. We only use your details to respond to valuation, buying or selling requests."
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/harrowvale" },
+      { "label": "Homes", "href": "homes" },
+      { "label": "Privacy", "href": "privacy" }
+    ],
+    "copyright": "(c) 2026 Harrow & Vale"
+  }
+}
