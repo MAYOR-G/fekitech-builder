@@ -6,7 +6,9 @@ import editableData from "./editable.json";
 import "./styles.css";
 
 type VelourData = typeof editableData;
-type Page = "home" | "services" | "studio" | "book" | "accessibility";
+type Page = "home" | "services" | "studio" | "team" | "care" | "book" | "accessibility";
+
+const pages: Page[] = ["services", "studio", "team", "care", "book", "accessibility"];
 
 export default function VelourStudioSalonTemplate({ data }: { data: TemplateData }) {
   const content = mergeTemplateData(editableData, data) as VelourData;
@@ -23,14 +25,14 @@ export default function VelourStudioSalonTemplate({ data }: { data: TemplateData
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.18 });
     items.forEach((item) => observer.observe(item));
     return () => observer.disconnect();
   }, [page]);
 
   const go = (target: string, event?: React.MouseEvent<HTMLElement>) => {
     event?.preventDefault();
-    const next = ["services", "studio", "book", "accessibility"].includes(target) ? target as Page : "home";
+    const next = pages.includes(target as Page) ? target as Page : "home";
     setPage(next);
     window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
   };
@@ -38,7 +40,7 @@ export default function VelourStudioSalonTemplate({ data }: { data: TemplateData
   return (
     <div data-template-id="velour-studio-salon" className="velour-studio-salon">
       <header className="vss-header">
-        <button type="button" onClick={(event) => go("home", event)}>
+        <button type="button" onClick={(event) => go("home", event)} className="vss-logo">
           <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
           <span data-editable-path="brand.descriptor" data-editable-type="text">{content.brand.descriptor}</span>
         </button>
@@ -50,9 +52,11 @@ export default function VelourStudioSalonTemplate({ data }: { data: TemplateData
       </header>
       {page === "home" && <Home content={content} go={go} />}
       {page === "services" && <main className="vss-page"><Services content={content} /></main>}
-      {page === "studio" && <TextPage title={content.studio.title} body={content.studio.body} />}
+      {page === "studio" && <Studio content={content} />}
+      {page === "team" && <Team content={content} />}
+      {page === "care" && <Care content={content} />}
       {page === "book" && <Booking content={content} />}
-      {page === "accessibility" && <TextPage title={content.pages?.accessibility?.title} body={content.pages?.accessibility?.body} />}
+      {page === "accessibility" && <TextPage title={content.pages.accessibility.title} body={content.pages.accessibility.body} titlePath="pages.accessibility.title" bodyPath="pages.accessibility.body" />}
       <Footer content={content} go={go} />
     </div>
   );
@@ -73,10 +77,8 @@ function Home({ content, go }: { content: VelourData; go: (target: string, event
         </div>
       </section>
       <Services content={content} />
-      <section className="vss-studio" data-vss-reveal>
-        <h2 data-editable-path="studio.title" data-editable-type="text">{content.studio.title}</h2>
-        <p data-editable-path="studio.body" data-editable-type="text">{content.studio.body}</p>
-      </section>
+      <TeamIntro content={content} go={go} />
+      <Studio content={content} embedded />
     </main>
   );
 }
@@ -85,8 +87,9 @@ function Services({ content }: { content: VelourData }) {
   return (
     <section className="vss-services" id="services" data-vss-reveal>
       <div className="vss-service-heading">
+        <p data-editable-path="services.kicker" data-editable-type="text">{content.services.kicker}</p>
         <h2 data-editable-path="services.title" data-editable-type="text">{content.services.title}</h2>
-        <p data-editable-path="services.body" data-editable-type="text">{content.services.body}</p>
+        <span data-editable-path="services.body" data-editable-type="text">{content.services.body}</span>
       </div>
       <img src={content.services.image} alt={content.services.imageAlt} loading="lazy" data-editable-path="services.image" data-editable-type="image" data-editable-alt-path="services.imageAlt" />
       <div className="vss-service-list">
@@ -99,6 +102,70 @@ function Services({ content }: { content: VelourData }) {
         ))}
       </div>
     </section>
+  );
+}
+
+function TeamIntro({ content, go }: { content: VelourData; go: (target: string, event?: React.MouseEvent<HTMLElement>) => void }) {
+  return (
+    <section className="vss-team-intro" data-vss-reveal>
+      <img src={content.team.image} alt={content.team.imageAlt} loading="lazy" data-editable-path="team.image" data-editable-type="image" data-editable-alt-path="team.imageAlt" />
+      <div>
+        <p data-editable-path="team.kicker" data-editable-type="text">{content.team.kicker}</p>
+        <h2 data-editable-path="team.title" data-editable-type="text">{content.team.title}</h2>
+        <span data-editable-path="team.body" data-editable-type="text">{content.team.body}</span>
+        <a href="#team" onClick={(event) => go("team", event)} data-editable-path="team.button" data-editable-type="link" data-editable-href-path="header.nav.2.href">{content.team.button}</a>
+      </div>
+    </section>
+  );
+}
+
+function Studio({ content, embedded = false }: { content: VelourData; embedded?: boolean }) {
+  const section = (
+    <section className="vss-studio" data-vss-reveal>
+      <div>
+        <p data-editable-path="studio.kicker" data-editable-type="text">{content.studio.kicker}</p>
+        <h1 data-editable-path="studio.title" data-editable-type="text">{content.studio.title}</h1>
+      </div>
+      <p data-editable-path="studio.body" data-editable-type="text">{content.studio.body}</p>
+    </section>
+  );
+  return embedded ? section : <main className="vss-page">{section}</main>;
+}
+
+function Team({ content }: { content: VelourData }) {
+  return (
+    <main className="vss-page">
+      <section className="vss-team-page">
+        <img src={content.team.image} alt={content.team.imageAlt} loading="lazy" data-editable-path="team.image" data-editable-type="image" data-editable-alt-path="team.imageAlt" />
+        <div>
+          <p data-editable-path="team.kicker" data-editable-type="text">{content.team.kicker}</p>
+          <h1 data-editable-path="team.title" data-editable-type="text">{content.team.title}</h1>
+          <span data-editable-path="team.body" data-editable-type="text">{content.team.body}</span>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function Care({ content }: { content: VelourData }) {
+  return (
+    <main className="vss-page">
+      <section className="vss-care">
+        <div>
+          <p data-editable-path="care.kicker" data-editable-type="text">{content.care.kicker}</p>
+          <h1 data-editable-path="care.title" data-editable-type="text">{content.care.title}</h1>
+          <span data-editable-path="care.body" data-editable-type="text">{content.care.body}</span>
+        </div>
+        <div className="vss-care-list">
+          {content.care.items.map((item, index) => (
+            <article key={item.title}>
+              <h3 data-editable-path={`care.items.${index}.title`} data-editable-type="text">{item.title}</h3>
+              <p data-editable-path={`care.items.${index}.body`} data-editable-type="text">{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
 
@@ -121,15 +188,28 @@ function Booking({ content }: { content: VelourData }) {
   );
 }
 
-function TextPage({ title, body }: { title: string; body: string }) {
-  return <main className="vss-page"><section className="vss-booking"><div><h1>{title}</h1><p>{body}</p></div></section></main>;
+function TextPage({ title, body, titlePath, bodyPath }: { title: string; body: string; titlePath: string; bodyPath: string }) {
+  return <main className="vss-page"><section className="vss-booking"><div><h1 data-editable-path={titlePath} data-editable-type="text">{title}</h1><p data-editable-path={bodyPath} data-editable-type="text">{body}</p></div></section></main>;
 }
 
 function Footer({ content, go }: { content: VelourData; go: (target: string, event?: React.MouseEvent<HTMLElement>) => void }) {
   return (
     <footer className="vss-footer">
-      <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
-      <p><span data-editable-path="brand.address" data-editable-type="text">{content.brand.address}</span><br /><span data-editable-path="footer.hours" data-editable-type="text">{content.footer.hours}</span><br /><span data-editable-path="brand.email" data-editable-type="text">{content.brand.email}</span></p>
+      <div>
+        <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
+        <p data-editable-path="brand.descriptor" data-editable-type="text">{content.brand.descriptor}</p>
+      </div>
+      <address>
+        <b data-editable-path="footer.locationTitle" data-editable-type="text">{content.footer.locationTitle}</b>
+        <span data-editable-path="brand.address" data-editable-type="text">{content.brand.address}</span>
+        <span data-editable-path="footer.hours" data-editable-type="text">{content.footer.hours}</span>
+        <span data-editable-path="brand.email" data-editable-type="text">{content.brand.email}</span>
+        <span data-editable-path="brand.phone" data-editable-type="text">{content.brand.phone}</span>
+      </address>
+      <div>
+        <b data-editable-path="footer.noteTitle" data-editable-type="text">{content.footer.noteTitle}</b>
+        <p data-editable-path="footer.noteBody" data-editable-type="text">{content.footer.noteBody}</p>
+      </div>
       <nav>
         {content.footer.links.map((link, index) => (
           <a key={link.href} href={`#${link.href}`} onClick={(event) => go(link.href, event)} data-editable-path={`footer.links.${index}.label`} data-editable-type="link" data-editable-href-path={`footer.links.${index}.href`}>{link.label}</a>

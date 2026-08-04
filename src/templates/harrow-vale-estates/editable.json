@@ -33,20 +33,23 @@
   "header": {
     "nav": [
       { "label": "Homes", "href": "homes" },
+      { "label": "Neighbourhoods", "href": "neighbourhoods" },
       { "label": "Valuation", "href": "valuation" },
+      { "label": "About", "href": "about" },
       { "label": "Contact", "href": "contact" }
     ]
   },
   "hero": {
     "eyebrow": "Discreet residential advisory",
-    "title": "Homes with substance, handled with care.",
-    "body": "A senior-led estate agency for characterful London houses, quiet sales and exacting buyers.",
+    "title": "Homes handled with care.",
+    "body": "Senior-led advice for characterful London houses, quiet sales and exacting buyers.",
     "image": "/templates/harrow-vale-estates/assets/hero-townhouse.webp",
     "imageAlt": "Restored London townhouse at dusk",
     "cta": { "label": "View homes", "href": "homes" }
   },
   "listings": {
-    "title": "Current instructions",
+    "kicker": "Current instructions",
+    "title": "Quietly available",
     "image": "/templates/harrow-vale-estates/assets/interior-garden.webp",
     "imageAlt": "Elegant townhouse kitchen and living space",
     "items": [
@@ -56,9 +59,30 @@
     ]
   },
   "valuation": {
-    "title": "Valuations with context",
-    "body": "We price with evidence, buyer demand and the nuance of each street, not a postcode average.",
-    "button": "Request valuation"
+    "kicker": "Valuation",
+    "title": "Price with evidence, not postcode averages.",
+    "body": "We combine buyer demand, recent comparable sales and the nuance of each street before recommending a route to market.",
+    "button": "Request valuation",
+    "image": "/templates/harrow-vale-estates/assets/valuation-consult.webp",
+    "imageAlt": "Estate agent reviewing floor plans during a valuation appointment in a London townhouse"
+  },
+  "neighbourhoods": {
+    "kicker": "Local knowledge",
+    "title": "Advice shaped street by street.",
+    "body": "Our work is concentrated across west, north and central London, where a single square can change demand, price and pace.",
+    "button": "Explore areas",
+    "areas": [
+      { "name": "Holland Park", "body": "Large houses, leafy streets and international demand for turn-key family homes." },
+      { "name": "Islington", "body": "Garden squares, converted schools and buyers who move quickly for character." },
+      { "name": "Belsize Park", "body": "Village feel, lateral apartments and quiet family houses near open green space." }
+    ]
+  },
+  "about": {
+    "kicker": "About Harrow & Vale",
+    "title": "Senior advice from first call to completion.",
+    "body": "Every instruction is handled by a director. We keep campaigns calm, targeted and carefully documented so sellers and buyers know where they stand.",
+    "image": "/templates/harrow-vale-estates/assets/valuation-consult.webp",
+    "imageAlt": "Senior estate agent discussing a property valuation with a homeowner"
   },
   "contact": {
     "title": "Begin quietly",
@@ -75,9 +99,14 @@
     }
   },
   "footer": {
+    "hours": "Mon-Fri: 9am - 6pm / Sat by appointment",
+    "locationTitle": "London office",
+    "areasTitle": "Core areas",
+    "areasBody": "Holland Park, Notting Hill, Islington, Belsize Park, Hampstead and discreet off-market London searches.",
     "links": [
       { "label": "Instagram", "href": "https://instagram.com/harrowvale" },
       { "label": "Homes", "href": "homes" },
+      { "label": "Valuation", "href": "valuation" },
       { "label": "Privacy", "href": "privacy" }
     ],
     "copyright": "(c) 2026 Harrow & Vale"

@@ -102,6 +102,8 @@ import harrowValeEstatesConfig from "../templates/harrow-vale-estates/config.jso
 import harrowValeEstatesEditable from "../templates/harrow-vale-estates/editable.json";
 import emberGraceChurchConfig from "../templates/ember-grace-church/config.json";
 import emberGraceChurchEditable from "../templates/ember-grace-church/editable.json";
+import lindenPathTherapyConfig from "../templates/linden-path-therapy/config.json";
+import lindenPathTherapyEditable from "../templates/linden-path-therapy/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -172,6 +174,7 @@ const components = {
   "velour-studio-salon": dynamic<{ data: TemplateData }>(() => import("../templates/velour-studio-salon/template")),
   "harrow-vale-estates": dynamic<{ data: TemplateData }>(() => import("../templates/harrow-vale-estates/template")),
   "ember-grace-church": dynamic<{ data: TemplateData }>(() => import("../templates/ember-grace-church/template")),
+  "linden-path-therapy": dynamic<{ data: TemplateData }>(() => import("../templates/linden-path-therapy/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -227,6 +230,7 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "velour-studio-salon": { config: velourStudioSalonConfig, component: components["velour-studio-salon"], defaultData: normalizeData(velourStudioSalonEditable) },
   "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },
   "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
+  "linden-path-therapy": { config: lindenPathTherapyConfig, component: components["linden-path-therapy"], defaultData: normalizeData(lindenPathTherapyEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

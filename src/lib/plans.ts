@@ -178,6 +178,7 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "velour-studio-salon": "business",
   "harrow-vale-estates": "business",
   "ember-grace-church": "business",
+  "linden-path-therapy": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

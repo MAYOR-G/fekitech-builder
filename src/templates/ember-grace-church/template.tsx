@@ -6,7 +6,9 @@ import editableData from "./editable.json";
 import "./styles.css";
 
 type ChurchData = typeof editableData;
-type Page = "home" | "sundays" | "groups" | "visit" | "privacy" | "safeguarding";
+type Page = "home" | "sundays" | "groups" | "families" | "serve" | "visit" | "privacy" | "safeguarding";
+
+const pages: Page[] = ["sundays", "groups", "families", "serve", "visit", "privacy", "safeguarding"];
 
 export default function EmberGraceChurchTemplate({ data }: { data: TemplateData }) {
   const content = mergeTemplateData(editableData, data) as ChurchData;
@@ -30,7 +32,7 @@ export default function EmberGraceChurchTemplate({ data }: { data: TemplateData 
 
   const go = (target: string, event?: React.MouseEvent<HTMLElement>) => {
     event?.preventDefault();
-    const next = ["sundays", "groups", "visit", "privacy", "safeguarding"].includes(target) ? target as Page : "home";
+    const next = pages.includes(target as Page) ? target as Page : "home";
     setPage(next);
     window.requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
   };
@@ -38,7 +40,7 @@ export default function EmberGraceChurchTemplate({ data }: { data: TemplateData 
   return (
     <div data-template-id="ember-grace-church" className="ember-grace-church">
       <header className="egc-header">
-        <button type="button" onClick={(event) => go("home", event)}>
+        <button type="button" onClick={(event) => go("home", event)} className="egc-logo">
           <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
           <span data-editable-path="brand.descriptor" data-editable-type="text">{content.brand.descriptor}</span>
         </button>
@@ -51,9 +53,11 @@ export default function EmberGraceChurchTemplate({ data }: { data: TemplateData 
       {page === "home" && <Home content={content} go={go} />}
       {page === "sundays" && <main className="egc-page"><Sundays content={content} /></main>}
       {page === "groups" && <main className="egc-page"><Groups content={content} /></main>}
+      {page === "families" && <Families content={content} />}
+      {page === "serve" && <Serve content={content} />}
       {page === "visit" && <Visit content={content} />}
       {(page === "privacy" || page === "safeguarding") && (
-        <TextPage title={content.pages?.[page]?.title} body={content.pages?.[page]?.body} />
+        <TextPage title={content.pages[page].title} body={content.pages[page].body} titlePath={`pages.${page}.title`} bodyPath={`pages.${page}.body`} />
       )}
       <Footer content={content} go={go} />
     </div>
@@ -73,6 +77,7 @@ function Home({ content, go }: { content: ChurchData; go: (target: string, event
         </div>
       </section>
       <Sundays content={content} />
+      <FamiliesPanel content={content} go={go} />
       <Groups content={content} />
     </main>
   );
@@ -82,8 +87,9 @@ function Sundays({ content }: { content: ChurchData }) {
   return (
     <section className="egc-sundays" id="sundays" data-egc-reveal>
       <div>
+        <p data-editable-path="sundays.kicker" data-editable-type="text">{content.sundays.kicker}</p>
         <h2 data-editable-path="sundays.title" data-editable-type="text">{content.sundays.title}</h2>
-        <p data-editable-path="sundays.body" data-editable-type="text">{content.sundays.body}</p>
+        <span data-editable-path="sundays.body" data-editable-type="text">{content.sundays.body}</span>
       </div>
       <div className="egc-times">
         {content.sundays.times.map((item, index) => (
@@ -95,6 +101,24 @@ function Sundays({ content }: { content: ChurchData }) {
       </div>
     </section>
   );
+}
+
+function FamiliesPanel({ content, go }: { content: ChurchData; go: (target: string, event?: React.MouseEvent<HTMLElement>) => void }) {
+  return (
+    <section className="egc-families" data-egc-reveal>
+      <img src={content.families.image} alt={content.families.imageAlt} loading="lazy" data-editable-path="families.image" data-editable-type="image" data-editable-alt-path="families.imageAlt" />
+      <div>
+        <p data-editable-path="families.kicker" data-editable-type="text">{content.families.kicker}</p>
+        <h2 data-editable-path="families.title" data-editable-type="text">{content.families.title}</h2>
+        <span data-editable-path="families.body" data-editable-type="text">{content.families.body}</span>
+        <a href="#families" onClick={(event) => go("families", event)} data-editable-path="families.button" data-editable-type="link" data-editable-href-path="header.nav.2.href">{content.families.button}</a>
+      </div>
+    </section>
+  );
+}
+
+function Families({ content }: { content: ChurchData }) {
+  return <main className="egc-page"><FamiliesPanel content={content} go={() => undefined} /></main>;
 }
 
 function Groups({ content }: { content: ChurchData }) {
@@ -115,6 +139,28 @@ function Groups({ content }: { content: ChurchData }) {
   );
 }
 
+function Serve({ content }: { content: ChurchData }) {
+  return (
+    <main className="egc-page">
+      <section className="egc-serve">
+        <div>
+          <p data-editable-path="serve.kicker" data-editable-type="text">{content.serve.kicker}</p>
+          <h1 data-editable-path="serve.title" data-editable-type="text">{content.serve.title}</h1>
+          <span data-editable-path="serve.body" data-editable-type="text">{content.serve.body}</span>
+        </div>
+        <div>
+          {content.serve.items.map((item, index) => (
+            <article key={item.title}>
+              <h3 data-editable-path={`serve.items.${index}.title`} data-editable-type="text">{item.title}</h3>
+              <p data-editable-path={`serve.items.${index}.body`} data-editable-type="text">{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+
 function Visit({ content }: { content: ChurchData }) {
   return (
     <main className="egc-page">
@@ -131,15 +177,28 @@ function Visit({ content }: { content: ChurchData }) {
   );
 }
 
-function TextPage({ title, body }: { title: string; body: string }) {
-  return <main className="egc-page"><section className="egc-visit"><div><h1>{title}</h1><p>{body}</p></div></section></main>;
+function TextPage({ title, body, titlePath, bodyPath }: { title: string; body: string; titlePath: string; bodyPath: string }) {
+  return <main className="egc-page"><section className="egc-visit"><div><h1 data-editable-path={titlePath} data-editable-type="text">{title}</h1><p data-editable-path={bodyPath} data-editable-type="text">{body}</p></div></section></main>;
 }
 
 function Footer({ content, go }: { content: ChurchData; go: (target: string, event?: React.MouseEvent<HTMLElement>) => void }) {
   return (
     <footer className="egc-footer">
-      <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
-      <p><span data-editable-path="brand.address" data-editable-type="text">{content.brand.address}</span><br /><span data-editable-path="brand.email" data-editable-type="text">{content.brand.email}</span><br /><span data-editable-path="brand.phone" data-editable-type="text">{content.brand.phone}</span></p>
+      <div>
+        <strong data-editable-path="brand.name" data-editable-type="text">{content.brand.name}</strong>
+        <p data-editable-path="brand.descriptor" data-editable-type="text">{content.brand.descriptor}</p>
+      </div>
+      <address>
+        <b data-editable-path="footer.locationTitle" data-editable-type="text">{content.footer.locationTitle}</b>
+        <span data-editable-path="brand.address" data-editable-type="text">{content.brand.address}</span>
+        <span data-editable-path="footer.officeHours" data-editable-type="text">{content.footer.officeHours}</span>
+        <span data-editable-path="brand.email" data-editable-type="text">{content.brand.email}</span>
+        <span data-editable-path="brand.phone" data-editable-type="text">{content.brand.phone}</span>
+      </address>
+      <div>
+        <b data-editable-path="footer.sundayTitle" data-editable-type="text">{content.footer.sundayTitle}</b>
+        <p data-editable-path="footer.sundayBody" data-editable-type="text">{content.footer.sundayBody}</p>
+      </div>
       <nav>
         {content.footer.links.map((link, index) => (
           <a key={link.href} href={`#${link.href}`} onClick={(event) => go(link.href, event)} data-editable-path={`footer.links.${index}.label`} data-editable-type="link" data-editable-href-path={`footer.links.${index}.href`}>{link.label}</a>

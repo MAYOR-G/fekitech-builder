@@ -1,26 +1,26 @@
 {
   "colors": {
-    "pageBackground": "#f5f0e8",
-    "background": "#f5f0e8",
+    "pageBackground": "#f6f0e7",
+    "background": "#f6f0e7",
     "sectionAlt": "#101010",
-    "surface": "#ffffff",
-    "card": "#ece3d6",
+    "surface": "#fffdf8",
+    "card": "#efe4d7",
     "textPrimary": "#101010",
     "bodyText": "#23201d",
-    "mutedText": "#70675d",
+    "mutedText": "#6f665d",
     "accent": "#7a1024",
-    "accentSecondary": "#c9c3b8",
+    "accentSecondary": "#b7915d",
     "buttonBg": "#101010",
-    "buttonText": "#f5f0e8",
+    "buttonText": "#f6f0e7",
     "secondaryButtonBg": "transparent",
     "secondaryButtonBorder": "#101010",
     "secondaryButtonText": "#101010",
     "link": "#101010",
-    "border": "#d8d0c4",
-    "headerBg": "#f5f0e8",
+    "border": "#d9cec0",
+    "headerBg": "#f6f0e7",
     "headerText": "#101010",
-    "footerBg": "#101010",
-    "footerText": "#f5f0e8"
+    "footerBg": "#efe4d7",
+    "footerText": "#101010"
   },
   "typography": null,
   "brand": {
@@ -34,14 +34,16 @@
     "nav": [
       { "label": "Shop", "href": "shop" },
       { "label": "Journal", "href": "journal" },
+      { "label": "Gifting", "href": "gifting" },
+      { "label": "About", "href": "about" },
       { "label": "Visit", "href": "visit" }
     ],
     "cartLabel": "Bag"
   },
   "hero": {
-    "eyebrow": "Issue 04 / New season edit",
-    "title": "Objects with a quieter kind of pull.",
-    "body": "A tightly edited collection of sculptural ceramics, soft goods and personal pieces for homes with restraint.",
+    "eyebrow": "New season edit",
+    "title": "Objects with quiet pull.",
+    "body": "Sculptural ceramics, soft goods and personal pieces with restraint.",
     "image": "/templates/aurea-objects-shop/assets/hero-gallery.webp",
     "imageAlt": "Luxury boutique display with ceramics and accessories",
     "cta": { "label": "Shop the edit", "href": "shop" }
@@ -58,13 +60,41 @@
       { "name": "Oat cashmere throw", "price": "GBP 188", "tag": "Woven in Scotland" }
     ]
   },
+  "lookbook": {
+    "kicker": "Material study",
+    "title": "Tactile pieces that sit quietly together.",
+    "body": "Ivory clay, smoked glass, warm brass and deep oxblood leather are chosen to layer without shouting.",
+    "image": "/templates/aurea-objects-shop/assets/lookbook-still.webp",
+    "imageAlt": "Curated homeware still life with candle, ceramic vase, throw and oxblood leather pouch"
+  },
   "journal": {
+    "kicker": "Point of view",
     "title": "Built around feeling, not trends.",
     "body": "Every object is chosen for proportion, texture and the way it sits with other things. The shop stays intentionally narrow so the collection can breathe."
   },
+  "shopCta": {
+    "title": "Need a considered gift?",
+    "body": "We wrap orders in tissue and ribbon, add a note, and can help choose pieces for a room or recipient.",
+    "button": "Explore gifting"
+  },
+  "gifting": {
+    "kicker": "Gift service",
+    "title": "Wrapped with the same care as the object.",
+    "body": "Choose a note, tell us the date, and we will prepare the order from our Marylebone studio for collection or UK delivery.",
+    "image": "/templates/aurea-objects-shop/assets/wrapping-studio.webp",
+    "imageAlt": "Ceramic homeware being wrapped in tissue paper with ribbon on a boutique worktable"
+  },
+  "about": {
+    "kicker": "About the edit",
+    "title": "A small London shop for enduring materials.",
+    "body": "Aurea Objects works with independent makers, mills and small workshops across the UK and Europe. The collection is edited slowly, with repairs, refills and longevity in mind.",
+    "image": "/templates/aurea-objects-shop/assets/lookbook-still.webp",
+    "imageAlt": "Luxury home objects arranged on a pale plinth"
+  },
   "visit": {
-    "title": "Private sourcing",
-    "body": "Book a quiet appointment for gifting, styling, or sourcing pieces for a room.",
+    "kicker": "Marylebone studio",
+    "title": "Visit by appointment or collect in person.",
+    "body": "Book a quiet appointment for gifting, styling or sourcing pieces for a room.",
     "button": "Request appointment"
   },
   "pages": {
@@ -81,8 +111,13 @@
     "newsletterTitle": "Notes from the edit",
     "newsletterBody": "Seasonal arrivals, studio visits and object stories.",
     "emailLabel": "Email",
+    "locationTitle": "Marylebone studio",
+    "hours": "Tue-Sat: 10am - 6pm",
+    "serviceTitle": "Delivery and collection",
+    "serviceBody": "UK delivery from GBP 6. Complimentary Marylebone collection and careful gift wrapping available.",
     "links": [
       { "label": "Instagram", "href": "https://instagram.com/aureaobjects" },
+      { "label": "Gifting", "href": "gifting" },
       { "label": "Returns", "href": "returns" },
       { "label": "Privacy", "href": "privacy" }
     ],

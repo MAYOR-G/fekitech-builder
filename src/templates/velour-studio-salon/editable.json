@@ -2,8 +2,8 @@
   "colors": {
     "pageBackground": "#241824",
     "background": "#241824",
-    "sectionAlt": "#d8c4da",
-    "surface": "#332334",
+    "sectionAlt": "#f4edf1",
+    "surface": "#352537",
     "card": "#f4edf1",
     "textPrimary": "#f7f0f5",
     "bodyText": "#f7f0f5",
@@ -34,20 +34,23 @@
     "nav": [
       { "label": "Services", "href": "services" },
       { "label": "Studio", "href": "studio" },
+      { "label": "Team", "href": "team" },
+      { "label": "Care", "href": "care" },
       { "label": "Book", "href": "book" }
     ]
   },
   "hero": {
     "kicker": "Colour work / cuts / care",
-    "title": "Soft shape. Gloss finish. Quiet confidence.",
-    "body": "A calm Manchester salon for precision cuts, dimensional colour and hair that still feels like yours.",
+    "title": "Soft shape. Quiet confidence.",
+    "body": "A calm Manchester salon for precision cuts, dimensional colour and healthy hair.",
     "image": "/templates/velour-studio-salon/assets/hero-salon.webp",
     "imageAlt": "Stylist finishing a glossy bob in a modern salon",
     "cta": { "label": "Book a chair", "href": "book" }
   },
   "services": {
-    "title": "Services with a slower hand",
-    "body": "Appointments are spaced so the work can be considered, not rushed.",
+    "kicker": "Services",
+    "title": "Work with a slower hand",
+    "body": "Appointments are spaced so the shape, tone and finish can be considered, not rushed.",
     "image": "/templates/velour-studio-salon/assets/treatment-detail.webp",
     "imageAlt": "Gloss treatment and salon tools on a lilac workstation",
     "items": [
@@ -58,8 +61,27 @@
     ]
   },
   "studio": {
-    "title": "A room designed to lower the volume.",
+    "kicker": "The room",
+    "title": "Designed to lower the volume.",
     "body": "Smoked mirrors, soft towels, careful consultations and stylists who explain the shape before the scissors move."
+  },
+  "team": {
+    "kicker": "Senior-led consultation",
+    "title": "The first appointment starts with listening.",
+    "body": "Our small team specialises in wearable colour, healthy hair and calm advice. You will know the plan before we begin.",
+    "button": "Meet the team",
+    "image": "/templates/velour-studio-salon/assets/team-consultation.webp",
+    "imageAlt": "Senior stylists consulting with a client using hair colour swatches"
+  },
+  "care": {
+    "kicker": "Aftercare",
+    "title": "Leave with a simple plan for keeping it glossy.",
+    "body": "Every service includes clear home-care advice, product notes and timing for your next refresh.",
+    "items": [
+      { "title": "Colour notes", "body": "We record toner formulas and maintenance timing so refreshes stay consistent." },
+      { "title": "Repair rhythm", "body": "Condition treatments are planned around your hair history, not sold as extras." },
+      { "title": "Quiet adjustments", "body": "Fringe trims and minor shape tweaks can be booked between larger appointments." }
+    ]
   },
   "booking": {
     "title": "Save your seat",
@@ -77,9 +99,13 @@
   },
   "footer": {
     "hours": "Tue-Sat: 9am - 6pm",
+    "locationTitle": "Northern Quarter salon",
+    "noteTitle": "Before you arrive",
+    "noteBody": "Colour correction and big changes start with a consultation. Step-free access is available from the side entrance.",
     "links": [
       { "label": "Instagram", "href": "https://instagram.com/velourstudio" },
       { "label": "Treatments", "href": "services" },
+      { "label": "Care guide", "href": "care" },
       { "label": "Accessibility", "href": "accessibility" }
     ],
     "copyright": "(c) 2026 Velour Studio"

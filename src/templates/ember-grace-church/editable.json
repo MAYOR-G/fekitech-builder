@@ -34,18 +34,21 @@
     "nav": [
       { "label": "Sundays", "href": "sundays" },
       { "label": "Groups", "href": "groups" },
+      { "label": "Families", "href": "families" },
+      { "label": "Serve", "href": "serve" },
       { "label": "Visit", "href": "visit" }
     ]
   },
   "hero": {
     "kicker": "Sundays at 10:30am",
-    "title": "A warm place to find faith, friends and a way forward.",
-    "body": "We are a modern Christian church in Leeds, learning to follow Jesus with honesty, kindness and hope.",
+    "title": "Faith, friends, a way forward.",
+    "body": "A modern Christian church in Leeds, learning to follow Jesus with kindness and hope.",
     "image": "/templates/ember-grace-church/assets/hero-worship.webp",
     "imageAlt": "Modern church congregation worshipping in warm morning light",
     "cta": { "label": "Plan your visit", "href": "visit" }
   },
   "sundays": {
+    "kicker": "Sunday rhythm",
     "title": "What Sundays feel like",
     "body": "Coffee first, worship together, a thoughtful message, kids groups, and plenty of space to ask questions.",
     "times": [
@@ -53,6 +56,14 @@
       { "label": "Gathering", "time": "10:30am" },
       { "label": "Kids", "time": "10:45am" }
     ]
+  },
+  "families": {
+    "kicker": "Families and children",
+    "title": "Room for every age and every first visit.",
+    "body": "Our welcome team helps families settle in, find kids spaces and meet someone before the gathering starts.",
+    "button": "Families information",
+    "image": "/templates/ember-grace-church/assets/family-welcome.webp",
+    "imageAlt": "Families and volunteers greeting people in a bright church foyer"
   },
   "groups": {
     "title": "Belong during the week",
@@ -63,6 +74,16 @@
       { "name": "Neighbourhood groups", "detail": "Homes across Leeds" },
       { "name": "Youth and students", "detail": "Fridays and Sundays" },
       { "name": "Care team", "detail": "Meals, visits and prayer" }
+    ]
+  },
+  "serve": {
+    "kicker": "Serving teams",
+    "title": "Help make church feel like home.",
+    "body": "There are simple ways to join in, from coffee and welcome to music, kids, care and practical support across Leeds.",
+    "items": [
+      { "title": "Welcome team", "body": "Help people find the room, the coffee and someone friendly to sit with." },
+      { "title": "Kids and youth", "body": "Support safe, creative spaces for children and young people on Sundays." },
+      { "title": "City care", "body": "Cook meals, visit people and respond to practical needs during the week." }
     ]
   },
   "visit": {
@@ -84,8 +105,13 @@
     }
   },
   "footer": {
+    "locationTitle": "Leeds city centre",
+    "officeHours": "Office: Tue-Thu, 10am - 4pm",
+    "sundayTitle": "Sunday gathering",
+    "sundayBody": "Coffee at 10:00am. Gathering at 10:30am. Kids check-in from 10:15am.",
     "links": [
       { "label": "Instagram", "href": "https://instagram.com/embergracechurch" },
+      { "label": "Families", "href": "families" },
       { "label": "Safeguarding", "href": "safeguarding" },
       { "label": "Privacy", "href": "privacy" }
     ],

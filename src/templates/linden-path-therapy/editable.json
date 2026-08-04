@@ -1,0 +1,220 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fcfaf7",
+      "section": "#f8f3ec",
+      "surface": "#ffffff",
+      "ink": "#140907",
+      "muted": "#8d6959",
+      "olive": "#8e9867",
+      "oliveDark": "#626c40",
+      "coral": "#e1937d",
+      "gold": "#f3de8a",
+      "blue": "#7da4db",
+      "line": "#eadfd4"
+    },
+    "typography": {
+      "heading": "Castoro, Georgia, serif",
+      "body": "Nunito, Inter, Arial, sans-serif",
+      "mono": "Fragment Mono, monospace"
+    }
+  },
+  "brand": {
+    "name": "Linden Path Therapy",
+    "descriptor": "Counselling & emotional wellbeing",
+    "shortName": "Linden Path",
+    "tagline": "Quiet support for real life.",
+    "email": "hello@lindenpaththerapy.co.uk",
+    "emailHref": "mailto:hello@lindenpaththerapy.co.uk",
+    "phone": "0113 482 1940",
+    "phoneHref": "tel:+441134821940",
+    "address": "18 Park Square East, Leeds LS1 2NY",
+    "hours": "Mon-Thu 9am-7pm, Fri 9am-4pm"
+  },
+  "navigation": {
+    "links": [
+      { "label": "All Pages", "href": "home" },
+      { "label": "About", "href": "about" },
+      { "label": "Services", "href": "services" },
+      { "label": "Blog", "href": "journal" }
+    ],
+    "buttonLabel": "Book an appointment",
+    "buttonHref": "contact"
+  },
+  "hero": {
+    "rating": "4.8 Rated",
+    "ratingNote": "by clients across Leeds",
+    "title": "You deserve to feel steadier. Support begins here.",
+    "description": "Warm, private counselling for anxiety, grief, relationships and life changes.",
+    "buttonLabel": "Book an appointment",
+    "buttonHref": "contact",
+    "trusted": "320+ people have trusted Linden Path",
+    "imagePrimary": "/templates/linden-path-therapy/assets/hero-calm-portrait.webp",
+    "imagePrimaryAlt": "A calm client resting beside a window",
+    "imageSecondary": "/templates/linden-path-therapy/assets/therapist-portrait.webp",
+    "imageSecondaryAlt": "A counsellor smiling in a calm therapy room",
+    "badges": ["Initial chat", "Online or in person", "BACP aligned"],
+    "careCardTitle": "You deserve calm",
+    "careCardText": "One-to-one support, paced around what you can manage."
+  },
+  "intro": {
+    "cardTitle": "Inside a therapy session",
+    "cardText": "A gentle first conversation about what feels heavy and what might help.",
+    "cardImage": "/templates/linden-path-therapy/assets/room-detail.webp",
+    "cardImageAlt": "A quiet counselling room with a notebook and candle",
+    "title": "Space to talk.",
+    "description": "At Linden Path, healing starts with being heard without hurry.",
+    "metricLabel": "Clients report feeling clearer after their first month",
+    "metricValue": "94%",
+    "expertTitle": "Expert care",
+    "expertText": "Meet our qualified counselling team in Leeds.",
+    "expertImage": "/templates/linden-path-therapy/assets/therapist-portrait.webp",
+    "expertImageAlt": "Senior counsellor with notes"
+  },
+  "services": {
+    "eyebrow": "How we help you heal",
+    "title": "Counselling that meets you where you are.",
+    "buttonLabel": "View all services",
+    "buttonHref": "services",
+    "items": [
+      {
+        "title": "Individual therapy",
+        "description": "Personal sessions for anxiety, confidence, burnout and difficult transitions.",
+        "href": "services"
+      },
+      {
+        "title": "Couples counselling",
+        "description": "Careful conversations around trust, conflict, repair and communication.",
+        "href": "services"
+      },
+      {
+        "title": "Family therapy",
+        "description": "Support for families navigating grief, change or repeated tension.",
+        "href": "services"
+      },
+      {
+        "title": "Young adult counselling",
+        "description": "Calm support for students and young adults facing pressure or uncertainty.",
+        "href": "services"
+      }
+    ]
+  },
+  "process": {
+    "image": "/templates/linden-path-therapy/assets/therapy-session.webp",
+    "imageAlt": "Therapist and client in a private consultation room",
+    "title": "Steps toward emotional steadiness.",
+    "description": "Therapy gives you a safe place to notice patterns, make sense of emotions and practise kinder ways forward.",
+    "steps": [
+      { "title": "Therapy session", "text": "A steady hour focused on what matters now." },
+      { "title": "Choose real progress", "text": "Small changes are noticed, reviewed and built on." }
+    ],
+    "buttonLabel": "Book an appointment",
+    "buttonHref": "contact"
+  },
+  "best": {
+    "eyebrow": "What makes us best",
+    "title": "Human care, careful structure.",
+    "items": [
+      { "title": "You feel heard and understood", "text": "Your story is taken seriously, without judgement or rushing." },
+      { "title": "Safe, non-judgemental environment", "text": "Sessions are private, steady and led by qualified therapists." },
+      { "title": "Observe real progress with kind change", "text": "We track what is shifting so therapy stays grounded." }
+    ],
+    "quote": "At Linden Path, therapy is more than advice - it is a quiet partnership with your own values."
+  },
+  "gallery": {
+    "eyebrow": "Inside Linden Path",
+    "title": "A calm Leeds practice for real conversations.",
+    "images": [
+      { "src": "/templates/linden-path-therapy/assets/group-session.webp", "alt": "Small group counselling in a bright room" },
+      { "src": "/templates/linden-path-therapy/assets/couples-session.webp", "alt": "Couple speaking with a therapist" },
+      { "src": "/templates/linden-path-therapy/assets/therapy-session.webp", "alt": "One-to-one therapy consultation" },
+      { "src": "/templates/linden-path-therapy/assets/room-detail.webp", "alt": "Calm therapy room detail" },
+      { "src": "/templates/linden-path-therapy/assets/hero-calm-portrait.webp", "alt": "Client resting quietly by a window" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Real words",
+    "title": "You are not alone, hear from others like you",
+    "items": [
+      { "quote": "I came in exhausted and left with language for what I was carrying.", "name": "Maya, Headingley" },
+      { "quote": "Our sessions helped us speak without trying to win every conversation.", "name": "Tom and Aisha, Chapel Allerton" },
+      { "quote": "It felt gentle, practical and honest. I never felt pushed.", "name": "Rachel, Leeds Dock" },
+      { "quote": "The first call made starting therapy feel much less frightening.", "name": "Ben, Horsforth" }
+    ]
+  },
+  "support": {
+    "title": "Explore core services and find the right support.",
+    "tags": ["Therapy", "Counselling", "Wellbeing", "Anxiety", "Coaching", "Mindfulness", "Grief Care", "Family Therapy", "Couples Therapy", "Teen Counselling"],
+    "stats": [
+      { "value": "1:1", "label": "Private sessions" },
+      { "value": "94%", "label": "Clients report more clarity" },
+      { "value": "+", "label": "Team of qualified counsellors" },
+      { "value": "+", "label": "Online and room-based support" }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Therapy pricing",
+    "title": "Simple, transparent pricing",
+    "toggleA": "Monthly",
+    "toggleB": "Yearly",
+    "items": [
+      { "title": "Starter session", "note": "For first conversations", "price": "GBP 49", "features": ["Dedicated therapist", "Online or in person", "Personalised goal setting"], "buttonLabel": "Book this session", "buttonHref": "contact" },
+      { "title": "Growth session", "note": "For ongoing support", "price": "GBP 89", "features": ["Dedicated therapist", "Online or in person", "Personalised goal setting", "Access to client portal"], "buttonLabel": "Book this session", "buttonHref": "contact" },
+      { "title": "Complete session", "note": "For deeper work", "price": "GBP 129", "features": ["Dedicated therapist", "Online or in person", "Personalised goal setting", "Access to client portal"], "buttonLabel": "Book this session", "buttonHref": "contact" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Your questions",
+    "title": "Your questions answered",
+    "items": [
+      { "question": "What types of therapy do you offer?", "answer": "We offer counselling for anxiety, grief, relationship concerns, low confidence and life transitions." },
+      { "question": "Are sessions confidential?", "answer": "Yes. We explain confidentiality clearly before your first appointment." },
+      { "question": "Do I need a referral?", "answer": "No referral is needed. You can book an initial conversation directly." },
+      { "question": "What if I am not sure I need therapy?", "answer": "The first call is a calm way to decide whether support feels right." }
+    ]
+  },
+  "cta": {
+    "title": "Your journey to healing begins with one small step - reaching out.",
+    "buttonLabel": "Book an appointment",
+    "buttonHref": "contact"
+  },
+  "footer": {
+    "note": "Your space to feel, grow and build emotional steadiness.",
+    "quickLinksTitle": "Quick links",
+    "contactTitle": "Get in touch",
+    "visitTitle": "Visit us",
+    "copyright": "© 2026 Linden Path Therapy. All rights reserved.",
+    "legal": [
+      { "label": "Privacy Policy", "href": "privacy" },
+      { "label": "Accessibility Statement", "href": "accessibility" }
+    ],
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/lindenpaththerapy" },
+      { "label": "LinkedIn", "href": "https://linkedin.com" },
+      { "label": "Facebook", "href": "https://facebook.com" }
+    ]
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "About the practice",
+      "title": "Therapy that feels private, grounded and human.",
+      "body": "Linden Path Therapy is a small Leeds counselling practice supporting adults, couples, families and young people through difficult seasons. We work calmly, collaboratively and at a pace that respects your nervous system.",
+      "image": "/templates/linden-path-therapy/assets/group-session.webp",
+      "imageAlt": "Counselling group in a calm practice room"
+    },
+    "services": {
+      "eyebrow": "Our services",
+      "title": "Choose the support that fits this season.",
+      "body": "Start with an initial call, then book the format that feels most useful: individual work, relationship support, family sessions or young adult counselling.",
+      "image": "/templates/linden-path-therapy/assets/couples-session.webp",
+      "imageAlt": "Couple in counselling with a therapist"
+    },
+    "contact": {
+      "eyebrow": "Book a first conversation",
+      "title": "Tell us what you need. We will reply with care.",
+      "body": "Use the form to ask about availability, online therapy, accessibility or the right place to begin.",
+      "fields": ["Name", "Email", "Phone", "What would you like support with?"],
+      "buttonLabel": "Send enquiry"
+    }
+  }
+}

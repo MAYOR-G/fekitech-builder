@@ -75,7 +75,8 @@ describe("production template registry", () => {
       "aurea-objects-shop",
       "velour-studio-salon",
       "harrow-vale-estates",
-      "ember-grace-church"
+      "ember-grace-church",
+      "linden-path-therapy"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -110,6 +111,7 @@ describe("production template registry", () => {
       "infusion-london",
       "ink-and-iron",
       "lacquer-form-nail-atelier",
+      "linden-path-therapy",
       "london-pizza-shop",
       "lumen-house-design",
       "moss-marrow-cafe",
@@ -169,7 +171,8 @@ describe("production template registry", () => {
       "aurea-objects-shop",
       "velour-studio-salon",
       "harrow-vale-estates",
-      "ember-grace-church"
+      "ember-grace-church",
+      "linden-path-therapy"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -223,7 +226,8 @@ describe("production template registry", () => {
       "aurea-objects-shop",
       "velour-studio-salon",
       "harrow-vale-estates",
-      "ember-grace-church"
+      "ember-grace-church",
+      "linden-path-therapy"
     ];
 
     for (const templateId of redesignedTemplateIds) {

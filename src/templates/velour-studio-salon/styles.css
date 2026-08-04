@@ -1,6 +1,6 @@
 [data-template-id="velour-studio-salon"] {
   --vss-bg: var(--template-background, #241824);
-  --vss-panel: var(--template-surface, #332334);
+  --vss-panel: var(--template-surface, #352537);
   --vss-card: var(--template-card, #f4edf1);
   --vss-text: var(--template-heading, #f7f0f5);
   --vss-muted: var(--template-muted, #cbb8c8);
@@ -20,113 +20,148 @@
 [data-template-id="velour-studio-salon"] a { text-decoration: none; }
 [data-template-id="velour-studio-salon"] .vss-header {
   align-items: center;
+  background: rgba(36, 24, 36, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
+  gap: 24px;
   justify-content: space-between;
-  padding: 22px clamp(18px, 4vw, 70px);
+  min-height: 72px;
+  padding: 16px clamp(18px, 4vw, 70px);
   position: sticky;
   top: 0;
-  z-index: 20;
-  background: rgba(36, 24, 36, 0.82);
+  z-index: 30;
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-[data-template-id="velour-studio-salon"] .vss-header strong { display: block; font-family: Georgia, serif; font-size: 30px; font-style: italic; line-height: 0.9; }
-[data-template-id="velour-studio-salon"] .vss-header span, [data-template-id="velour-studio-salon"] .vss-header a { color: var(--vss-muted); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
-[data-template-id="velour-studio-salon"] .vss-header nav { display: flex; gap: clamp(18px, 3vw, 44px); }
+[data-template-id="velour-studio-salon"] .vss-logo { text-align: left; }
+[data-template-id="velour-studio-salon"] .vss-logo strong { display: block; font-family: Georgia, serif; font-size: clamp(26px, 2.2vw, 34px); font-style: italic; line-height: 0.92; }
+[data-template-id="velour-studio-salon"] .vss-logo span, [data-template-id="velour-studio-salon"] .vss-header a { color: var(--vss-muted); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+[data-template-id="velour-studio-salon"] .vss-header nav { display: flex; flex-wrap: wrap; gap: 12px clamp(18px, 2.6vw, 38px); justify-content: flex-end; }
 [data-template-id="velour-studio-salon"] .vss-hero {
   display: grid;
+  gap: clamp(24px, 4vw, 58px);
   grid-template-columns: minmax(320px, 0.72fr) minmax(0, 1.28fr);
-  min-height: calc(100svh - 79px);
-  padding: clamp(28px, 4vw, 70px);
-  gap: clamp(28px, 4vw, 64px);
+  min-height: calc(100svh - 72px);
+  padding: clamp(28px, 4vw, 66px);
 }
 [data-template-id="velour-studio-salon"] .vss-hero-copy {
   align-self: center;
-  background: linear-gradient(180deg, rgba(80, 52, 83, 0.8), rgba(36, 24, 36, 0.2));
+  background: linear-gradient(180deg, rgba(80, 52, 83, 0.78), rgba(36, 24, 36, 0.28));
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 42px;
-  padding: clamp(34px, 5vw, 84px);
+  border-radius: 34px;
+  padding: clamp(34px, 4.8vw, 72px);
   position: relative;
   z-index: 2;
 }
-[data-template-id="velour-studio-salon"] .vss-hero-copy p, [data-template-id="velour-studio-salon"] .vss-service-heading p {
+[data-template-id="velour-studio-salon"] .vss-hero-copy p, [data-template-id="velour-studio-salon"] .vss-service-heading p, [data-template-id="velour-studio-salon"] .vss-team-intro p, [data-template-id="velour-studio-salon"] .vss-team-page p, [data-template-id="velour-studio-salon"] .vss-care > div > p, [data-template-id="velour-studio-salon"] .vss-studio > div p {
   color: var(--vss-gold);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.18em;
+  margin: 0 0 16px;
   text-transform: uppercase;
 }
 [data-template-id="velour-studio-salon"] h1, [data-template-id="velour-studio-salon"] h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: 400;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+  line-height: 0.94;
   margin: 0;
 }
-[data-template-id="velour-studio-salon"] h1 { font-size: clamp(58px, 7.6vw, 132px); line-height: 0.86; margin: 26px 0; }
-[data-template-id="velour-studio-salon"] .vss-hero-copy span { color: var(--vss-muted); display: block; font-size: clamp(16px, 1.4vw, 22px); line-height: 1.45; max-width: 520px; }
-[data-template-id="velour-studio-salon"] .vss-hero-copy a, [data-template-id="velour-studio-salon"] .vss-booking button {
+[data-template-id="velour-studio-salon"] h1 { font-size: clamp(44px, 5.4vw, 84px); max-width: 640px; }
+[data-template-id="velour-studio-salon"] .vss-hero-copy span, [data-template-id="velour-studio-salon"] .vss-service-heading span, [data-template-id="velour-studio-salon"] .vss-team-intro span, [data-template-id="velour-studio-salon"] .vss-team-page span, [data-template-id="velour-studio-salon"] .vss-care > div > span {
+  color: var(--vss-muted);
+  display: block;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.45;
+  margin-top: 22px;
+  max-width: 560px;
+}
+[data-template-id="velour-studio-salon"] .vss-hero-copy a, [data-template-id="velour-studio-salon"] .vss-team-intro a, [data-template-id="velour-studio-salon"] .vss-booking button {
   background: var(--vss-card);
   border-radius: 999px;
   color: var(--vss-bg);
   display: inline-flex;
-  margin-top: 34px;
-  padding: 15px 26px;
-  text-transform: uppercase;
+  font-size: 11px;
   letter-spacing: 0.14em;
-  font-size: 12px;
+  margin-top: 32px;
+  padding: 14px 24px;
+  text-transform: uppercase;
 }
-[data-template-id="velour-studio-salon"] .vss-hero-media { border-radius: 999px 999px 42px 42px; overflow: hidden; min-height: 680px; }
-[data-template-id="velour-studio-salon"] .vss-hero-media img { height: 100%; object-fit: cover; width: 100%; }
+[data-template-id="velour-studio-salon"] .vss-hero-media { border-radius: 240px 240px 34px 34px; min-height: 540px; overflow: hidden; }
+[data-template-id="velour-studio-salon"] .vss-hero-media img { height: 100%; object-fit: cover; object-position: center; width: 100%; }
 [data-template-id="velour-studio-salon"] .vss-services {
+  background: #fff;
+  color: var(--vss-bg);
   display: grid;
   gap: clamp(28px, 4vw, 70px);
-  grid-template-columns: 0.8fr 0.7fr 1fr;
-  padding: clamp(60px, 8vw, 130px) clamp(18px, 4vw, 70px);
+  grid-template-columns: 0.82fr 0.72fr 1fr;
+  padding: clamp(60px, 8vw, 120px) clamp(18px, 4vw, 70px);
 }
-[data-template-id="velour-studio-salon"] .vss-service-heading h2 { font-size: clamp(44px, 5.8vw, 96px); line-height: 0.9; }
-[data-template-id="velour-studio-salon"] .vss-services > img { border-radius: 44px; height: 100%; object-fit: cover; width: 100%; }
-[data-template-id="velour-studio-salon"] .vss-service-list { display: grid; gap: 14px; }
-[data-template-id="velour-studio-salon"] .vss-service-list article {
+[data-template-id="velour-studio-salon"] .vss-services .vss-service-heading span { color: #554158; }
+[data-template-id="velour-studio-salon"] .vss-services > img { box-shadow: 0 0 0 1px rgba(36, 24, 36, 0.08); }
+[data-template-id="velour-studio-salon"] .vss-services .vss-service-list article { background: #f5edf3; border-color: #dcc6de; }
+[data-template-id="velour-studio-salon"] .vss-services .vss-service-list p { color: #6d5870; }
+[data-template-id="velour-studio-salon"] .vss-service-heading h2, [data-template-id="velour-studio-salon"] .vss-team-intro h2 { font-size: clamp(38px, 5vw, 82px); }
+[data-template-id="velour-studio-salon"] .vss-services > img { border-radius: 34px; height: 100%; object-fit: cover; width: 100%; }
+[data-template-id="velour-studio-salon"] .vss-service-list, [data-template-id="velour-studio-salon"] .vss-care-list { display: grid; gap: 14px; }
+[data-template-id="velour-studio-salon"] .vss-service-list article, [data-template-id="velour-studio-salon"] .vss-care-list article {
   background: var(--vss-panel);
   border: 1px solid var(--vss-line);
-  border-radius: 28px;
+  border-radius: 24px;
   display: grid;
-  gap: 6px;
-  padding: 24px;
+  gap: 7px;
+  padding: 23px;
 }
-[data-template-id="velour-studio-salon"] .vss-service-list h3 { font-family: Georgia, serif; font-size: clamp(24px, 2.7vw, 44px); font-style: italic; font-weight: 400; margin: 0; }
-[data-template-id="velour-studio-salon"] .vss-service-list p { color: var(--vss-muted); margin: 0; }
-[data-template-id="velour-studio-salon"] .vss-studio, [data-template-id="velour-studio-salon"] .vss-booking {
+[data-template-id="velour-studio-salon"] .vss-service-list h3, [data-template-id="velour-studio-salon"] .vss-care-list h3 { font-family: Georgia, serif; font-size: clamp(24px, 2.4vw, 38px); font-style: italic; font-weight: 400; margin: 0; }
+[data-template-id="velour-studio-salon"] .vss-service-list p, [data-template-id="velour-studio-salon"] .vss-care-list p { color: var(--vss-muted); margin: 0; }
+[data-template-id="velour-studio-salon"] .vss-team-intro, [data-template-id="velour-studio-salon"] .vss-team-page {
+  align-items: center;
+  background: var(--vss-bg);
+  color: var(--vss-text);
+  display: grid;
+  gap: clamp(28px, 5vw, 76px);
+  grid-template-columns: 1fr 0.95fr;
+  padding: clamp(60px, 8vw, 120px) clamp(22px, 7vw, 120px);
+}
+[data-template-id="velour-studio-salon"] .vss-team-intro img, [data-template-id="velour-studio-salon"] .vss-team-page img { aspect-ratio: 1.35 / 1; border-radius: 34px; height: 100%; object-fit: cover; width: 100%; }
+[data-template-id="velour-studio-salon"] .vss-team-intro span, [data-template-id="velour-studio-salon"] .vss-team-page span { color: var(--vss-muted); }
+[data-template-id="velour-studio-salon"] .vss-studio, [data-template-id="velour-studio-salon"] .vss-booking, [data-template-id="velour-studio-salon"] .vss-care {
   background: var(--vss-card);
   color: var(--vss-bg);
   display: grid;
   gap: 36px;
   grid-template-columns: 1fr 1fr;
-  min-height: 560px;
-  padding: clamp(62px, 8vw, 130px) clamp(22px, 7vw, 130px);
+  min-height: 520px;
+  padding: clamp(62px, 8vw, 120px) clamp(22px, 7vw, 120px);
 }
-[data-template-id="velour-studio-salon"] .vss-studio h2, [data-template-id="velour-studio-salon"] .vss-booking h1 { font-size: clamp(52px, 7vw, 118px); line-height: 0.88; }
-[data-template-id="velour-studio-salon"] .vss-studio p, [data-template-id="velour-studio-salon"] .vss-booking p { font-size: clamp(18px, 2vw, 30px); line-height: 1.35; }
+[data-template-id="velour-studio-salon"] .vss-studio { background: #fff8fb; }
+[data-template-id="velour-studio-salon"] .vss-studio h1, [data-template-id="velour-studio-salon"] .vss-studio h2, [data-template-id="velour-studio-salon"] .vss-booking h1, [data-template-id="velour-studio-salon"] .vss-care h1, [data-template-id="velour-studio-salon"] .vss-team-page h1 { font-size: clamp(42px, 5.6vw, 88px); }
+[data-template-id="velour-studio-salon"] .vss-studio p, [data-template-id="velour-studio-salon"] .vss-booking p { font-size: clamp(17px, 1.6vw, 24px); line-height: 1.45; }
 [data-template-id="velour-studio-salon"] .vss-page { padding-top: 0; }
 [data-template-id="velour-studio-salon"] .vss-booking form { display: grid; gap: 22px; }
 [data-template-id="velour-studio-salon"] .vss-booking label span { display: block; font-size: 12px; letter-spacing: 0.14em; margin-bottom: 8px; text-transform: uppercase; }
 [data-template-id="velour-studio-salon"] .vss-booking input, [data-template-id="velour-studio-salon"] .vss-booking textarea { background: transparent; border: 0; border-bottom: 1px solid var(--vss-bg); padding: 12px 0; width: 100%; }
 [data-template-id="velour-studio-salon"] .vss-footer {
-  align-items: end;
+  align-items: start;
   background: #120b13;
   display: grid;
-  gap: 28px;
-  grid-template-columns: 1fr 1fr auto 1fr;
-  padding: clamp(40px, 6vw, 90px) clamp(18px, 4vw, 70px);
+  gap: 30px;
+  grid-template-columns: 1.1fr 1fr 1fr auto;
+  padding: clamp(44px, 6vw, 86px) clamp(18px, 4vw, 70px) 28px;
 }
-[data-template-id="velour-studio-salon"] .vss-footer strong { font-family: Georgia, serif; font-size: clamp(42px, 6vw, 96px); font-style: italic; font-weight: 400; }
-[data-template-id="velour-studio-salon"] .vss-footer p, [data-template-id="velour-studio-salon"] .vss-footer a { color: var(--vss-muted); font-size: 13px; line-height: 1.55; }
-[data-template-id="velour-studio-salon"] .vss-footer nav { display: grid; gap: 8px; }
+[data-template-id="velour-studio-salon"] .vss-footer strong { font-family: Georgia, serif; font-size: clamp(38px, 5vw, 78px); font-style: italic; font-weight: 400; line-height: 0.95; }
+[data-template-id="velour-studio-salon"] .vss-footer p, [data-template-id="velour-studio-salon"] .vss-footer a, [data-template-id="velour-studio-salon"] .vss-footer address { color: var(--vss-muted); font-size: 13px; font-style: normal; line-height: 1.55; }
+[data-template-id="velour-studio-salon"] .vss-footer address, [data-template-id="velour-studio-salon"] .vss-footer nav { display: grid; gap: 8px; }
+[data-template-id="velour-studio-salon"] .vss-footer b { color: var(--vss-card); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+[data-template-id="velour-studio-salon"] .vss-footer > p { border-top: 1px solid rgba(255, 255, 255, 0.1); grid-column: 1 / -1; margin: 0; padding-top: 18px; }
 [data-template-id="velour-studio-salon"] [data-vss-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 560ms ease, transform 560ms ease; }
 [data-template-id="velour-studio-salon"] [data-vss-reveal].is-visible { opacity: 1; transform: translateY(0); }
-@media (max-width: 940px) {
-  [data-template-id="velour-studio-salon"] .vss-header { align-items: start; flex-direction: column; gap: 16px; position: relative; }
-  [data-template-id="velour-studio-salon"] .vss-header nav { flex-wrap: wrap; }
-  [data-template-id="velour-studio-salon"] .vss-hero, [data-template-id="velour-studio-salon"] .vss-services, [data-template-id="velour-studio-salon"] .vss-studio, [data-template-id="velour-studio-salon"] .vss-booking, [data-template-id="velour-studio-salon"] .vss-footer { grid-template-columns: 1fr; }
-  [data-template-id="velour-studio-salon"] .vss-hero-media { border-radius: 220px 220px 36px 36px; min-height: 420px; }
+@media (max-width: 980px) {
+  [data-template-id="velour-studio-salon"] .vss-header { align-items: flex-start; flex-direction: column; }
+  [data-template-id="velour-studio-salon"] .vss-header nav { justify-content: flex-start; }
+  [data-template-id="velour-studio-salon"] .vss-hero, [data-template-id="velour-studio-salon"] .vss-services, [data-template-id="velour-studio-salon"] .vss-studio, [data-template-id="velour-studio-salon"] .vss-booking, [data-template-id="velour-studio-salon"] .vss-footer, [data-template-id="velour-studio-salon"] .vss-team-intro, [data-template-id="velour-studio-salon"] .vss-team-page, [data-template-id="velour-studio-salon"] .vss-care { grid-template-columns: 1fr; }
+  [data-template-id="velour-studio-salon"] .vss-hero { min-height: auto; }
+  [data-template-id="velour-studio-salon"] .vss-hero-media { border-radius: 200px 200px 32px 32px; min-height: 360px; }
+  [data-template-id="velour-studio-salon"] h1 { font-size: clamp(38px, 10.5vw, 60px); }
+  [data-template-id="velour-studio-salon"] .vss-footer > p { grid-column: auto; }
 }
