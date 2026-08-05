@@ -1,0 +1,1100 @@
+[data-template-id="rivergate-plumbing"] {
+  --rgp-max: 1140px;
+  --rgp-pad: clamp(18px, 4vw, 56px);
+  background: var(--rgp-page);
+  color: var(--rgp-heading);
+  font-family: var(--rgp-body-font);
+  font-weight: 560;
+  line-height: 1.45;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+[data-template-id="rivergate-plumbing"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="rivergate-plumbing"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="rivergate-plumbing"] button,
+[data-template-id="rivergate-plumbing"] input,
+[data-template-id="rivergate-plumbing"] textarea {
+  font: inherit;
+}
+
+[data-template-id="rivergate-plumbing"] [data-rgp-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 700ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-template-id="rivergate-plumbing"] [data-rgp-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-header {
+  align-items: center;
+  background: rgba(6, 45, 33, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: auto 1fr auto;
+  left: 50%;
+  max-width: min(1060px, calc(100% - 24px));
+  padding: 9px 10px 9px 14px;
+  position: fixed;
+  top: 14px;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 40;
+  backdrop-filter: blur(18px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-logo,
+[data-template-id="rivergate-plumbing"] .rgp-menu,
+[data-template-id="rivergate-plumbing"] .rgp-footer button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-brand {
+  align-items: center;
+  color: #fff;
+  display: inline-flex;
+  font-family: var(--rgp-heading-font);
+  font-size: 14px;
+  font-weight: 760;
+  gap: 7px;
+  letter-spacing: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-brand-icon {
+  align-items: center;
+  background: var(--rgp-accent);
+  border-radius: 50%;
+  color: var(--rgp-dark);
+  display: inline-flex;
+  height: 22px;
+  justify-content: center;
+  width: 22px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-nav {
+  align-items: center;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-nav a,
+[data-template-id="rivergate-plumbing"] .rgp-header-cta {
+  align-items: center;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.78);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 680;
+  gap: 7px;
+  min-height: 32px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-nav a:hover {
+  color: #fff;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-header-cta {
+  background: #fff;
+  color: var(--rgp-dark);
+  font-weight: 760;
+  padding: 0 13px 0 16px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-menu {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero {
+  align-items: end;
+  background:
+    radial-gradient(circle at 50% 74%, rgba(201, 255, 104, 0.16), transparent 32%),
+    linear-gradient(180deg, #062d21 0%, #072f22 100%);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-height: 760px;
+  overflow: hidden;
+  padding: 130px var(--rgp-pad) 0;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-copy {
+  max-width: 680px;
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-label {
+  color: var(--rgp-accent);
+  font-size: 13px;
+  font-weight: 760;
+  letter-spacing: 0;
+  margin: 0 0 10px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-label::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  margin-right: 7px;
+  vertical-align: middle;
+  width: 5px;
+}
+
+[data-template-id="rivergate-plumbing"] h1,
+[data-template-id="rivergate-plumbing"] h2,
+[data-template-id="rivergate-plumbing"] h3 {
+  font-family: var(--rgp-heading-font);
+  letter-spacing: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero h1 {
+  color: #fff;
+  font-size: clamp(36px, 5.8vw, 64px);
+  font-weight: 760;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-copy > p:not(.rgp-label) {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(16px, 1.7vw, 18px);
+  font-weight: 620;
+  margin: 16px auto 22px;
+  max-width: 520px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 760;
+  gap: 8px;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 15px 0 18px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta:hover {
+  transform: translateY(-2px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-lime {
+  background: var(--rgp-accent);
+  color: var(--rgp-dark);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-light {
+  background: #fff;
+  color: var(--rgp-dark);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-dark {
+  background: var(--rgp-dark);
+  color: #fff;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-features {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-features span {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 620;
+  gap: 7px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-features svg {
+  color: var(--rgp-accent);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure {
+  margin-top: 24px;
+  max-width: 620px;
+  position: relative;
+  width: min(100%, 620px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure img {
+  height: clamp(370px, 52vw, 560px);
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center top;
+  width: min(100%, 600px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure article {
+  background: #fff;
+  border: 1px solid rgba(6, 45, 33, 0.08);
+  border-radius: 12px;
+  bottom: 58px;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.16);
+  color: var(--rgp-heading);
+  left: 50%;
+  min-width: 188px;
+  padding: 13px 16px;
+  position: absolute;
+  text-align: left;
+  transform: translateX(18%);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure strong {
+  display: block;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure span,
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure p {
+  color: var(--rgp-muted);
+  display: block;
+  font-size: 11px;
+  margin: 3px 0 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-hero-figure p::before {
+  color: #f6b900;
+  content: "★★★★★ ";
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-logos {
+  background: #fff;
+  border-bottom: 1px solid var(--rgp-border);
+  border-top: 1px solid var(--rgp-border);
+  overflow: hidden;
+  padding: 18px 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-logo-track {
+  animation: rgp-marquee 22s linear infinite;
+  display: flex;
+  gap: 44px;
+  width: max-content;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-logo-track span {
+  color: #52625b;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-logo-track span::before {
+  background: var(--rgp-dark);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 8px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-about,
+[data-template-id="rivergate-plumbing"] .rgp-why,
+[data-template-id="rivergate-plumbing"] .rgp-story,
+[data-template-id="rivergate-plumbing"] .rgp-services,
+[data-template-id="rivergate-plumbing"] .rgp-focus,
+[data-template-id="rivergate-plumbing"] .rgp-testimonials,
+[data-template-id="rivergate-plumbing"] .rgp-team,
+[data-template-id="rivergate-plumbing"] .rgp-faq,
+[data-template-id="rivergate-plumbing"] .rgp-contact,
+[data-template-id="rivergate-plumbing"] .rgp-page {
+  margin: 0 auto;
+  max-width: var(--rgp-max);
+  padding: clamp(70px, 9vw, 118px) var(--rgp-pad);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-about {
+  text-align: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-about-head h2,
+[data-template-id="rivergate-plumbing"] .rgp-services-head h2,
+[data-template-id="rivergate-plumbing"] .rgp-testimonials h2,
+[data-template-id="rivergate-plumbing"] .rgp-team h2,
+[data-template-id="rivergate-plumbing"] .rgp-faq h2,
+[data-template-id="rivergate-plumbing"] .rgp-page h1 {
+  color: var(--rgp-heading);
+  font-size: clamp(31px, 5.4vw, 58px);
+  font-weight: 760;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-about-head p,
+[data-template-id="rivergate-plumbing"] .rgp-services-head p,
+[data-template-id="rivergate-plumbing"] .rgp-page > p {
+  color: var(--rgp-body);
+  font-size: 16px;
+  font-weight: 590;
+  margin: 17px auto 0;
+  max-width: 640px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-collage {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 36px auto 0;
+  max-width: 620px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-collage img {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-collage img:nth-child(2),
+[data-template-id="rivergate-plumbing"] .rgp-collage img:nth-child(4) {
+  transform: translateY(26px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why {
+  align-items: start;
+  display: grid;
+  gap: 58px;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-intro {
+  position: sticky;
+  top: 118px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-intro h2,
+[data-template-id="rivergate-plumbing"] .rgp-story h2,
+[data-template-id="rivergate-plumbing"] .rgp-focus h2,
+[data-template-id="rivergate-plumbing"] .rgp-cta-band h2,
+[data-template-id="rivergate-plumbing"] .rgp-contact h2 {
+  font-size: clamp(30px, 5vw, 56px);
+  font-weight: 760;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list {
+  display: grid;
+  gap: 28px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list article {
+  border-top: 1px solid var(--rgp-border);
+  display: grid;
+  gap: 13px 18px;
+  grid-template-columns: auto 1fr 230px;
+  padding-top: 22px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list article > span {
+  align-items: center;
+  background: var(--rgp-accent);
+  border-radius: 50%;
+  color: var(--rgp-dark);
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list h3 {
+  font-size: 18px;
+  font-weight: 760;
+  margin: 0 0 7px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list p {
+  color: var(--rgp-body);
+  font-size: 15px;
+  font-weight: 580;
+  margin: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-why-list img {
+  aspect-ratio: 1.35;
+  border-radius: 12px;
+  grid-column: 3;
+  grid-row: span 2;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-story {
+  align-items: center;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-story img {
+  aspect-ratio: 1.35;
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-story p,
+[data-template-id="rivergate-plumbing"] .rgp-focus p,
+[data-template-id="rivergate-plumbing"] .rgp-cta-band p,
+[data-template-id="rivergate-plumbing"] .rgp-contact p {
+  color: var(--rgp-body);
+  font-size: 16px;
+  font-weight: 580;
+  margin: 0 0 22px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-services,
+[data-template-id="rivergate-plumbing"] .rgp-blogs {
+  background: var(--rgp-dark);
+  color: #ffffff;
+  max-width: 100%;
+  padding-left: max(var(--rgp-pad), calc((100vw - var(--rgp-max)) / 2 + var(--rgp-pad)));
+  padding-right: max(var(--rgp-pad), calc((100vw - var(--rgp-max)) / 2 + var(--rgp-pad)));
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-services-head {
+  margin: 0 auto 32px;
+  max-width: var(--rgp-max);
+  text-align: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-services-head h2,
+[data-template-id="rivergate-plumbing"] .rgp-blogs h2 {
+  color: #ffffff;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-services-head p {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 590;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards,
+[data-template-id="rivergate-plumbing"] .rgp-benefits,
+[data-template-id="rivergate-plumbing"] .rgp-blog-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: var(--rgp-max);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards article {
+  background: #0d3a2c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards img {
+  aspect-ratio: 1.32;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards div {
+  padding: 18px 18px 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards h3,
+[data-template-id="rivergate-plumbing"] .rgp-benefits h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 760;
+  margin: 0 0 8px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards p,
+[data-template-id="rivergate-plumbing"] .rgp-benefits p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  font-weight: 560;
+  margin: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-service-cards a {
+  align-items: center;
+  color: var(--rgp-accent);
+  display: flex;
+  font-size: 12px;
+  font-weight: 760;
+  gap: 8px;
+  padding: 18px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-benefits {
+  margin-top: 28px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-benefits article {
+  padding-top: 12px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-benefits span {
+  align-items: center;
+  background: var(--rgp-accent);
+  border-radius: 50%;
+  color: var(--rgp-dark);
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  margin-bottom: 13px;
+  width: 34px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-focus {
+  align-items: center;
+  background: var(--rgp-dark);
+  color: #fff;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 0.9fr 1.1fr;
+  max-width: 100%;
+  padding-left: max(var(--rgp-pad), calc((100vw - var(--rgp-max)) / 2 + var(--rgp-pad)));
+  padding-right: max(var(--rgp-pad), calc((100vw - var(--rgp-max)) / 2 + var(--rgp-pad)));
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-focus h2 {
+  color: #ffffff;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-focus p {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-focus-actions,
+[data-template-id="rivergate-plumbing"] .rgp-cta-band div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-focus img {
+  aspect-ratio: 1.35;
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonials,
+[data-template-id="rivergate-plumbing"] .rgp-team,
+[data-template-id="rivergate-plumbing"] .rgp-faq {
+  text-align: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card {
+  background: var(--rgp-accent);
+  border-radius: 18px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin: 32px auto 0;
+  max-width: 760px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: left;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card img {
+  aspect-ratio: 1.7;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card article {
+  padding: 10px 10px 16px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card p {
+  color: var(--rgp-heading);
+  font-size: clamp(20px, 4vw, 42px);
+  font-weight: 760;
+  line-height: 1;
+  margin: 0 0 22px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card strong {
+  display: block;
+  font-size: 40px;
+  font-weight: 780;
+  line-height: 1;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card span,
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card small {
+  color: color-mix(in srgb, var(--rgp-heading) 72%, transparent);
+  display: block;
+  font-size: 13px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-testimonial-card h3 {
+  font-size: 15px;
+  margin: 22px 0 2px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 34px;
+  text-align: left;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid article {
+  background: #fff;
+  border: 1px solid var(--rgp-border);
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid img {
+  aspect-ratio: 0.83;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid div {
+  padding: 14px 16px 18px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid h3 {
+  font-size: 17px;
+  font-weight: 760;
+  margin: 0 0 3px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid p {
+  color: var(--rgp-muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-team-grid article > span {
+  align-items: center;
+  background: var(--rgp-dark);
+  border-radius: 50%;
+  bottom: 18px;
+  color: #fff;
+  display: flex;
+  height: 28px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  width: 28px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-band {
+  background: var(--rgp-mint);
+  display: grid;
+  justify-items: center;
+  padding: clamp(74px, 9vw, 118px) var(--rgp-pad);
+  text-align: center;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-band h2 {
+  max-width: 620px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-cta-band p {
+  max-width: 520px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq > div {
+  display: grid;
+  gap: 10px;
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: left;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq details {
+  background: #fff;
+  border: 1px solid var(--rgp-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 750;
+  justify-content: space-between;
+  list-style: none;
+  min-height: 54px;
+  padding: 0 16px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq summary svg {
+  background: var(--rgp-dark);
+  border-radius: 50%;
+  color: #fff;
+  padding: 3px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-faq details p {
+  color: var(--rgp-body);
+  font-size: 13px;
+  margin: 0;
+  padding: 0 16px 18px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blogs {
+  padding-bottom: clamp(58px, 8vw, 92px);
+  padding-top: clamp(58px, 8vw, 92px);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blogs-head {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 22px;
+  max-width: var(--rgp-max);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blogs-head a {
+  align-items: center;
+  color: var(--rgp-accent);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 760;
+  gap: 8px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blog-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blog-grid article {
+  background: #0b392a;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blog-grid img {
+  aspect-ratio: 1.6;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-blog-grid h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 760;
+  line-height: 1.05;
+  margin: 0;
+  padding: 18px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact a,
+[data-template-id="rivergate-plumbing"] .rgp-contact div > span {
+  align-items: center;
+  color: var(--rgp-heading);
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact svg {
+  color: var(--rgp-dark);
+  flex: 0 0 auto;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact form {
+  display: grid;
+  gap: 12px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact label {
+  background: #fff;
+  border: 1px solid var(--rgp-border);
+  border-radius: 12px;
+  color: var(--rgp-muted);
+  display: grid;
+  font-size: 12px;
+  gap: 8px;
+  padding: 13px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact input,
+[data-template-id="rivergate-plumbing"] .rgp-contact textarea {
+  background: transparent;
+  border: 0;
+  color: var(--rgp-heading);
+  outline: none;
+  resize: vertical;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-contact form button {
+  align-items: center;
+  background: var(--rgp-dark);
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 760;
+  gap: 8px;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  width: fit-content;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer {
+  background: var(--rgp-footer);
+  color: var(--rgp-footer-text);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1.1fr 1fr 1fr auto;
+  padding: 44px max(var(--rgp-pad), calc((100vw - var(--rgp-max)) / 2 + var(--rgp-pad)));
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer p {
+  color: var(--rgp-footer-muted);
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer nav,
+[data-template-id="rivergate-plumbing"] .rgp-footer-social {
+  display: grid;
+  gap: 8px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer > p {
+  align-self: end;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-footer button {
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  color: var(--rgp-dark);
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+[data-template-id="rivergate-plumbing"] .rgp-page {
+  min-height: 680px;
+  padding-top: 150px;
+}
+
+@keyframes rgp-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.33%);
+  }
+}
+
+@media (max-width: 940px) {
+  [data-template-id="rivergate-plumbing"] .rgp-header {
+    grid-template-columns: auto 1fr auto auto;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-nav {
+    background: rgba(6, 45, 33, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    left: 12px;
+    padding: 10px;
+    position: absolute;
+    right: 12px;
+    top: calc(100% + 8px);
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-nav.is-open {
+    display: flex;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-nav a {
+    justify-content: center;
+    min-height: 38px;
+    width: 100%;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-menu {
+    display: flex;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-why,
+  [data-template-id="rivergate-plumbing"] .rgp-story,
+  [data-template-id="rivergate-plumbing"] .rgp-focus,
+  [data-template-id="rivergate-plumbing"] .rgp-contact {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-why-intro {
+    position: static;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-why-list article {
+    grid-template-columns: auto 1fr;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-why-list img {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-service-cards,
+  [data-template-id="rivergate-plumbing"] .rgp-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="rivergate-plumbing"] .rgp-header-cta {
+    display: none;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-hero {
+    min-height: 720px;
+    padding-top: 104px;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-hero h1 {
+    font-size: clamp(34px, 11vw, 47px);
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-hero-features {
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-hero-figure article {
+    bottom: 34px;
+    left: auto;
+    right: 16px;
+    transform: none;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-about,
+  [data-template-id="rivergate-plumbing"] .rgp-why,
+  [data-template-id="rivergate-plumbing"] .rgp-story,
+  [data-template-id="rivergate-plumbing"] .rgp-services,
+  [data-template-id="rivergate-plumbing"] .rgp-focus,
+  [data-template-id="rivergate-plumbing"] .rgp-testimonials,
+  [data-template-id="rivergate-plumbing"] .rgp-team,
+  [data-template-id="rivergate-plumbing"] .rgp-faq,
+  [data-template-id="rivergate-plumbing"] .rgp-contact {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-collage img:nth-child(2),
+  [data-template-id="rivergate-plumbing"] .rgp-collage img:nth-child(4) {
+    transform: translateY(18px);
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-team-grid,
+  [data-template-id="rivergate-plumbing"] .rgp-blog-grid,
+  [data-template-id="rivergate-plumbing"] .rgp-footer {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-blogs-head {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-template-id="rivergate-plumbing"] [data-rgp-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  [data-template-id="rivergate-plumbing"] .rgp-logo-track {
+    animation: none;
+  }
+}

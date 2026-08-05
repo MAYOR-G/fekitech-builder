@@ -1,0 +1,26 @@
+/* the-copper-tap base styles */
+[data-template-id="the-copper-tap"] {
+  background-color: #20241A;
+  color: #E1D0B6;
+  font-family: 'marmelad', sans-serif;
+  line-height: 1.6;
+}
+
+[data-template-id="the-copper-tap"] h1,
+[data-template-id="the-copper-tap"] h2,
+[data-template-id="the-copper-tap"] h3,
+[data-template-id="the-copper-tap"] h4 {
+  font-family: 'fahkwang', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+[data-template-id="the-copper-tap"] a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+[data-template-id="the-copper-tap"] input[type="date"]::-webkit-calendar-picker-indicator,
+[data-template-id="the-copper-tap"] input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

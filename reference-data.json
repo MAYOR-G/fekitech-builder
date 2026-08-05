@@ -1,0 +1,1023 @@
+{
+  "texts": [
+    {
+      "tag": "SPAN",
+      "text": "top of page",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 0
+    },
+    {
+      "tag": "SPAN",
+      "text": "Book a Table",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 0
+    },
+    {
+      "tag": "SPAN",
+      "text": "bottom of page",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 0
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Log In",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 82.203125
+    },
+    {
+      "tag": "P",
+      "text": "The Whale's Tail",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 83
+    },
+    {
+      "tag": "A",
+      "text": "The Whale's Tail",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 84
+    },
+    {
+      "tag": "SPAN",
+      "text": "Log In",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 88.203125
+    },
+    {
+      "tag": "H1",
+      "text": "Drink, Eat, Enjoy.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "44px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 182.953125
+    },
+    {
+      "tag": "P",
+      "text": "Pub & Eatery | Est. 2035",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "20px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 194.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Make Yourself at Home",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1024.953125
+    },
+    {
+      "tag": "SPAN",
+      "text": "Make Yourself at Home",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1025.953125
+    },
+    {
+      "tag": "SPAN",
+      "text": "ENJOY PREMIUM DRAFT BEER, GOOD WINES, AND OUR HEARTFUL DISHES",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1063.75
+    },
+    {
+      "tag": "P",
+      "text": "ENJOY PREMIUM DRAFT BEER, GOOD WINES, AND OUR HEARTFUL DISHES",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1065.75
+    },
+    {
+      "tag": "A",
+      "text": "Book a Table",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 1189
+    },
+    {
+      "tag": "SPAN",
+      "text": "Book a Table",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 1202.921875
+    },
+    {
+      "tag": "P",
+      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1304.953125
+    },
+    {
+      "tag": "SPAN",
+      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1306.953125
+    },
+    {
+      "tag": "A",
+      "text": "Order Online",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 1329
+    },
+    {
+      "tag": "SPAN",
+      "text": "Order Online",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 1344.40625
+    },
+    {
+      "tag": "A",
+      "text": "Book a Table",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 1455.328125
+    },
+    {
+      "tag": "SPAN",
+      "text": "Book a Table",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 1466.625
+    },
+    {
+      "tag": "P",
+      "text": "Hello, Neighbor",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1709.953125
+    },
+    {
+      "tag": "H2",
+      "text": "HAPPY HOUR",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 1771.75
+    },
+    {
+      "tag": "P",
+      "text": "12PM - 3PM",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1857.15625
+    },
+    {
+      "tag": "P",
+      "text": "Monday - Thursday",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1857.15625
+    },
+    {
+      "tag": "SPAN",
+      "text": "12PM - 3PM",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1859.15625
+    },
+    {
+      "tag": "SPAN",
+      "text": "Monday - Thursday",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 1859.15625
+    },
+    {
+      "tag": "H2",
+      "text": "This Month’s Special",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 2234.953125
+    },
+    {
+      "tag": "P",
+      "text": "CELEBRATING BELGIAN BEER MONTH",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 2273.75
+    },
+    {
+      "tag": "P",
+      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 2453.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 2455.96875
+    },
+    {
+      "tag": "A",
+      "text": "Our Menu",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "y": 2635.953125
+    },
+    {
+      "tag": "SPAN",
+      "text": "Our Menu",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 2647.25
+    },
+    {
+      "tag": "H2",
+      "text": "Happy Moments",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 2949.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Upcoming Events",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 3928.359375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Fri, Mar 23",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4092.96875
+    },
+    {
+      "tag": "A",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4100.765625
+    },
+    {
+      "tag": "SPAN",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4105.265625
+    },
+    {
+      "tag": "A",
+      "text": "Movie Night",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4112.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Movie Night",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4112.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "/",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4112.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "San Francisco",
+      "color": "rgb(207, 211, 199)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 4120.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Fri, Mar 23",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4193.96875
+    },
+    {
+      "tag": "A",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4201.765625
+    },
+    {
+      "tag": "SPAN",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4206.265625
+    },
+    {
+      "tag": "A",
+      "text": "Open Stage",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4213.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Open Stage",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4213.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "/",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4213.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "San Francisco",
+      "color": "rgb(207, 211, 199)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 4221.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Fri, Mar 23",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4294.96875
+    },
+    {
+      "tag": "A",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4302.765625
+    },
+    {
+      "tag": "SPAN",
+      "text": "RSVP",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "15px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "700",
+      "y": 4307.265625
+    },
+    {
+      "tag": "A",
+      "text": "Trivia Night",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4314.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Trivia Night",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4314.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "/",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "24px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4314.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "San Francisco",
+      "color": "rgb(207, 211, 199)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 4322.96875
+    },
+    {
+      "tag": "H2",
+      "text": "Reserve a Table",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang",
+      "fontWeight": "400",
+      "y": 4534.359375
+    },
+    {
+      "tag": "P",
+      "text": "To help us find the best table for you, select the preferred party size, date, and time of your reservation.",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 4613.15625
+    },
+    {
+      "tag": "SPAN",
+      "text": "DROP BY,\nWE ARE OPEN.",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 4961.5625
+    },
+    {
+      "tag": "H2",
+      "text": "DROP BY,\nWE ARE OPEN.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "42px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 4963.5625
+    },
+    {
+      "tag": "P",
+      "text": "Address",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5109.375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Address",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5110.375
+    },
+    {
+      "tag": "P",
+      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5151.171875
+    },
+    {
+      "tag": "SPAN",
+      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5153.171875
+    },
+    {
+      "tag": "P",
+      "text": "Opening Hours",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5250.359375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Opening Hours",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5251.359375
+    },
+    {
+      "tag": "P",
+      "text": "Monday - Sunday: 12pm - 1am",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5290.15625
+    },
+    {
+      "tag": "SPAN",
+      "text": "Monday - Sunday: 12pm - 1am",
+      "color": "rgb(32, 36, 26)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5292.15625
+    },
+    {
+      "tag": "P",
+      "text": "info@mysite.com",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5626.5625
+    },
+    {
+      "tag": "P",
+      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5626.5625
+    },
+    {
+      "tag": "A",
+      "text": "info@mysite.com",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5628.5625
+    },
+    {
+      "tag": "A",
+      "text": "The Whale's Tail",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5638.5625
+    },
+    {
+      "tag": "SPAN",
+      "text": "The Whale's Tail",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5638.5625
+    },
+    {
+      "tag": "P",
+      "text": "The Whale's Tail",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "22px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5639.5625
+    },
+    {
+      "tag": "P",
+      "text": "Facebook",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5639.5625
+    },
+    {
+      "tag": "P",
+      "text": "Instagram",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5639.5625
+    },
+    {
+      "tag": "P",
+      "text": "Yelp!",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5639.5625
+    },
+    {
+      "tag": "A",
+      "text": "Facebook",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5641.5625
+    },
+    {
+      "tag": "A",
+      "text": "Instagram",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5641.5625
+    },
+    {
+      "tag": "A",
+      "text": "Yelp!",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5641.5625
+    },
+    {
+      "tag": "P",
+      "text": "123-456-7890",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5653.75
+    },
+    {
+      "tag": "P",
+      "text": "Subscribe to get notified about special events.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 5725.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Subscribe to get notified about special events.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5725.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Subscribe to get notified about special events.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "400",
+      "y": 5725.96875
+    },
+    {
+      "tag": "P",
+      "text": "© 2035 by The Whale's Tail. Powered and secured by Wix",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "14px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5725.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "*",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "14px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5727.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "© 2035 by The Whale's Tail. Powered and secured by Wix",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "14px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5727.96875
+    },
+    {
+      "tag": "SPAN",
+      "text": "Wix",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "14px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5750.375
+    },
+    {
+      "tag": "A",
+      "text": "Wix",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "14px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5750.375
+    },
+    {
+      "tag": "P",
+      "text": "Yes, subscribe me to\n                                                                                  your newsletter.*",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5915.375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Yes, subscribe me to\n                                                                                  your newsletter.*",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5915.375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Yes, subscribe me to\n                                                                                  your newsletter.",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5917.375
+    },
+    {
+      "tag": "SPAN",
+      "text": "*",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "marmelad, sans-serif",
+      "fontWeight": "400",
+      "y": 5965.375
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Subscribe",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 6107.375
+    },
+    {
+      "tag": "SPAN",
+      "text": "Subscribe",
+      "color": "rgb(225, 208, 182)",
+      "fontSize": "16px",
+      "fontFamily": "fahkwang, sans-serif",
+      "fontWeight": "700",
+      "y": 6119.375
+    }
+  ],
+  "backgrounds": [
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 0,
+      "height": 6295.5625,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(81, 66, 19)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 10.953125,
+      "height": 890,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(225, 208, 182)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 900.953125,
+      "height": 709,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(81, 66, 19)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 1304.953125,
+      "height": 619,
+      "width": 648
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "jv9xi4 wixui-box",
+      "y": 1669.953125,
+      "height": 255.203125,
+      "width": 500
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 2083.953125,
+      "height": 748,
+      "width": 720
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgba(32, 36, 26, 0)",
+      "bgImage": "none",
+      "className": "rsDZMy br4i_4 OAcMJT",
+      "y": 4040.765625,
+      "height": 364,
+      "width": 1280
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(225, 208, 182)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 4511.359375,
+      "height": 212.203125,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgba(225, 208, 182, 0)",
+      "bgImage": "none",
+      "className": "sqSFvOR oxAR9fQ--XS swvpakQ",
+      "y": 4514.359375,
+      "height": 181.203125,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(77, 33, 7)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 4723.5625,
+      "height": 805,
+      "width": 1440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(225, 208, 182)",
+      "bgImage": "none",
+      "className": "jv9xi4 wixui-box",
+      "y": 4844.5625,
+      "height": 589.1875,
+      "width": 455
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgba(225, 208, 182, 0.6)",
+      "bgImage": "none",
+      "className": "V9k0ll etGVsi",
+      "y": 5600.5625,
+      "height": 104.40625,
+      "width": 1280
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 5601.5625,
+      "height": 102.40625,
+      "width": 381.75
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 5601.5625,
+      "height": 102.40625,
+      "width": 345.15625
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 5601.5625,
+      "height": 102.40625,
+      "width": 549.09375
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgba(225, 208, 182, 0.6)",
+      "bgImage": "none",
+      "className": "V9k0ll etGVsi",
+      "y": 5703.96875,
+      "height": 526.59375,
+      "width": 1280
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(32, 36, 26)",
+      "bgImage": "none",
+      "className": "LNYVZi ayCf9D",
+      "y": 5704.96875,
+      "height": 524.59375,
+      "width": 893.15625
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgba(32, 36, 26, 0)",
+      "bgImage": "none",
+      "className": "sN4uTVR",
+      "y": 5707.96875,
+      "height": 462.59375,
+      "width": 405
+    }
+  ]
+}

@@ -104,6 +104,16 @@ import emberGraceChurchConfig from "../templates/ember-grace-church/config.json"
 import emberGraceChurchEditable from "../templates/ember-grace-church/editable.json";
 import lindenPathTherapyConfig from "../templates/linden-path-therapy/config.json";
 import lindenPathTherapyEditable from "../templates/linden-path-therapy/editable.json";
+import theCopperTapConfig from "../templates/the-copper-tap/config.json";
+import theCopperTapEditable from "../templates/the-copper-tap/editable.json";
+import signalYardStudioConfig from "../templates/signal-yard-studio/config.json";
+import signalYardStudioEditable from "../templates/signal-yard-studio/editable.json";
+import modularsConfig from "../templates/modulars/config.json";
+import modularsEditable from "../templates/modulars/editable.json";
+import forgeFitTrainingConfig from "../templates/forgefit-training/config.json";
+import forgeFitTrainingEditable from "../templates/forgefit-training/editable.json";
+import rivergatePlumbingConfig from "../templates/rivergate-plumbing/config.json";
+import rivergatePlumbingEditable from "../templates/rivergate-plumbing/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -175,6 +185,11 @@ const components = {
   "harrow-vale-estates": dynamic<{ data: TemplateData }>(() => import("../templates/harrow-vale-estates/template")),
   "ember-grace-church": dynamic<{ data: TemplateData }>(() => import("../templates/ember-grace-church/template")),
   "linden-path-therapy": dynamic<{ data: TemplateData }>(() => import("../templates/linden-path-therapy/template")),
+  "the-copper-tap": dynamic<{ data: TemplateData }>(() => import("../templates/the-copper-tap/template")),
+  "signal-yard-studio": dynamic<{ data: TemplateData }>(() => import("../templates/signal-yard-studio/template")),
+  "modulars": dynamic<{ data: TemplateData }>(() => import("../templates/modulars/template")),
+  "forgefit-training": dynamic<{ data: TemplateData }>(() => import("../templates/forgefit-training/template")),
+  "rivergate-plumbing": dynamic<{ data: TemplateData }>(() => import("../templates/rivergate-plumbing/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -231,6 +246,11 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },
   "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
   "linden-path-therapy": { config: lindenPathTherapyConfig, component: components["linden-path-therapy"], defaultData: normalizeData(lindenPathTherapyEditable) },
+  "the-copper-tap": { config: theCopperTapConfig, component: components["the-copper-tap"], defaultData: normalizeData(theCopperTapEditable) },
+  "signal-yard-studio": { config: signalYardStudioConfig, component: components["signal-yard-studio"], defaultData: normalizeData(signalYardStudioEditable) },
+  "modulars": { config: modularsConfig, component: components["modulars"], defaultData: normalizeData(modularsEditable) },
+  "forgefit-training": { config: forgeFitTrainingConfig, component: components["forgefit-training"], defaultData: normalizeData(forgeFitTrainingEditable) },
+  "rivergate-plumbing": { config: rivergatePlumbingConfig, component: components["rivergate-plumbing"], defaultData: normalizeData(rivergatePlumbingEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

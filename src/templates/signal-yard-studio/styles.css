@@ -1,0 +1,828 @@
+[data-template-id="signal-yard-studio"] {
+  background: var(--sys-page);
+  color: var(--sys-text);
+  font-family: var(--sys-body-font);
+  overflow: hidden;
+}
+
+[data-template-id="signal-yard-studio"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="signal-yard-studio"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="signal-yard-studio"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] button,
+[data-template-id="signal-yard-studio"] input,
+[data-template-id="signal-yard-studio"] textarea {
+  font: inherit;
+}
+
+[data-template-id="signal-yard-studio"] .sys-header {
+  align-items: center;
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  left: 0;
+  padding: 34px 7vw 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+
+[data-template-id="signal-yard-studio"] .sys-logo {
+  align-items: baseline;
+  background: transparent;
+  border: 0;
+  color: var(--sys-ink);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--sys-heading-font);
+  font-size: clamp(22px, 1.9vw, 31px);
+  font-weight: 900;
+  gap: 5px;
+  letter-spacing: 0;
+  padding: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-logo i,
+[data-template-id="signal-yard-studio"] .sys-eyebrow > span:first-child {
+  background: var(--sys-accent);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+[data-template-id="signal-yard-studio"] .sys-logo i {
+  height: .32em;
+  width: .32em;
+}
+
+[data-template-id="signal-yard-studio"] .sys-nav {
+  align-items: center;
+  background: var(--sys-accent);
+  border-radius: 999px;
+  bottom: 32px;
+  box-shadow: 0 18px 38px rgba(244, 73, 48, .22);
+  color: #fff;
+  display: flex;
+  gap: 32px;
+  left: 50%;
+  padding: 18px 28px;
+  position: fixed;
+  transform: translateX(-50%);
+  z-index: 30;
+}
+
+[data-template-id="signal-yard-studio"] .sys-nav a {
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-pill {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(20, 17, 17, .05);
+  border-radius: 999px;
+  color: var(--sys-ink);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 900;
+  gap: 10px;
+  padding: 15px 22px;
+  transition: transform 160ms cubic-bezier(.23, 1, .32, 1);
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-pill:active,
+[data-template-id="signal-yard-studio"] .sys-strip-button:active,
+[data-template-id="signal-yard-studio"] .sys-footer a:active {
+  transform: scale(.97);
+}
+
+[data-template-id="signal-yard-studio"] .sys-menu {
+  display: none;
+}
+
+[data-template-id="signal-yard-studio"] .sys-hero {
+  min-height: 1360px;
+  padding: 154px 7vw 112px;
+  position: relative;
+}
+
+[data-template-id="signal-yard-studio"] .sys-glow {
+  background:
+    repeating-linear-gradient(90deg, rgba(244, 73, 48, .11) 0 72px, rgba(244, 73, 48, .42) 72px 144px),
+    linear-gradient(180deg, rgba(244, 73, 48, .9), rgba(244, 73, 48, 0) 72%);
+  height: 500px;
+  opacity: .9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+
+[data-template-id="signal-yard-studio"] .sys-hero h1 {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(68px, 7.8vw, 130px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: .93;
+  margin: 0;
+  max-width: 780px;
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="signal-yard-studio"] .sys-hero-lower {
+  align-items: end;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr minmax(360px, 560px);
+  margin: 72px 0 82px;
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="signal-yard-studio"] .sys-scroll,
+[data-template-id="signal-yard-studio"] .sys-eyebrow {
+  align-items: center;
+  color: var(--sys-ink);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 8px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-scroll span {
+  background: var(--sys-accent);
+  border-radius: 999px;
+  display: inline-block;
+  height: 20px;
+  width: 4px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-hero-body {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(22px, 1.75vw, 29px);
+  font-weight: 900;
+  line-height: 1.32;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-hero-image {
+  border-radius: 30px;
+  aspect-ratio: 1.82;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about,
+[data-template-id="signal-yard-studio"] .sys-projects,
+[data-template-id="signal-yard-studio"] .sys-services,
+[data-template-id="signal-yard-studio"] .sys-process,
+[data-template-id="signal-yard-studio"] .sys-expertise,
+[data-template-id="signal-yard-studio"] .sys-proof,
+[data-template-id="signal-yard-studio"] .sys-journal,
+[data-template-id="signal-yard-studio"] .sys-page {
+  padding: 108px 7vw;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about {
+  display: grid;
+  gap: 46px;
+  grid-template-columns: minmax(260px, 420px) 1fr;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about .sys-eyebrow {
+  grid-column: 1 / -1;
+}
+
+[data-template-id="signal-yard-studio"] .sys-eyebrow > span:first-child {
+  height: 9px;
+  width: 9px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about-card {
+  align-self: end;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about-card img {
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about-card p,
+[data-template-id="signal-yard-studio"] .sys-expertise p,
+[data-template-id="signal-yard-studio"] .sys-proof p,
+[data-template-id="signal-yard-studio"] .sys-page p {
+  color: var(--sys-text);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-about-copy h2 {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(40px, 4.35vw, 70px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.04;
+  margin: 0 0 70px;
+  max-width: 760px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-stats {
+  display: grid;
+  gap: 44px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="signal-yard-studio"] .sys-stats strong {
+  color: var(--sys-ink);
+  display: block;
+  font-family: var(--sys-heading-font);
+  font-size: clamp(40px, 4vw, 64px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+[data-template-id="signal-yard-studio"] .sys-stats span {
+  color: var(--sys-ink);
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-repeat {
+  color: var(--sys-ink);
+  display: flex;
+  font-family: var(--sys-heading-font);
+  font-size: clamp(40px, 4.6vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0 -7vw 64px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+[data-template-id="signal-yard-studio"] .sys-repeat-track {
+  animation: sysMarquee 24s linear infinite;
+  align-items: center;
+  display: inline-flex;
+  gap: 28px;
+  min-width: max-content;
+  will-change: transform;
+}
+
+[data-template-id="signal-yard-studio"] .sys-repeat:hover .sys-repeat-track {
+  animation-play-state: paused;
+}
+
+[data-template-id="signal-yard-studio"] .sys-repeat span {
+  align-items: center;
+  display: inline-flex;
+  gap: 28px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-repeat span::after {
+  background: var(--sys-accent);
+  border-radius: 999px;
+  content: "";
+  height: .55em;
+  width: .55em;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid,
+[data-template-id="signal-yard-studio"] .sys-article-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid article img {
+  aspect-ratio: 1.2;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid article.is-wide {
+  grid-column: span 1;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid h3,
+[data-template-id="signal-yard-studio"] .sys-article-grid h3 {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin: 14px 0 7px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid span,
+[data-template-id="signal-yard-studio"] .sys-article-grid span,
+[data-template-id="signal-yard-studio"] .sys-tags span {
+  background: #f1d5ff;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 5px 10px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid article:nth-child(2) span,
+[data-template-id="signal-yard-studio"] .sys-tags span:nth-child(4) {
+  background: #f46d30;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid article:nth-child(3) span,
+[data-template-id="signal-yard-studio"] .sys-tags span:nth-child(1) {
+  background: #90d5dd;
+}
+
+[data-template-id="signal-yard-studio"] .sys-project-grid article:nth-child(4) span,
+[data-template-id="signal-yard-studio"] .sys-tags span:nth-child(3) {
+  background: #dbb29b;
+}
+
+[data-template-id="signal-yard-studio"] .sys-strip-button {
+  align-items: center;
+  background: var(--sys-accent);
+  border-radius: 999px;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 900;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 34px;
+  min-height: 28px;
+  transition: transform 160ms cubic-bezier(.23, 1, .32, 1);
+  width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] .sys-service-list {
+  border-top: 1px solid var(--sys-line);
+}
+
+[data-template-id="signal-yard-studio"] .sys-service-list article {
+  border-bottom: 1px solid var(--sys-line);
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(240px, 420px) 1fr;
+  padding: 28px 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-service-list h3 {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(22px, 2vw, 33px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.04;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-service-list p {
+  color: var(--sys-text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 620px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-wide-image {
+  aspect-ratio: 3.25;
+  border-radius: 4px;
+  margin-top: 70px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid {
+  display: grid;
+  gap: 52px;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  max-width: 720px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid h2,
+[data-template-id="signal-yard-studio"] .sys-expertise h2,
+[data-template-id="signal-yard-studio"] .sys-proof h2,
+[data-template-id="signal-yard-studio"] .sys-journal h2,
+[data-template-id="signal-yard-studio"] .sys-page h1 {
+  color: var(--sys-ink);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(34px, 3.35vw, 54px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid h2 {
+  grid-column: 1 / -1;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid i {
+  background: conic-gradient(from 0deg, var(--sys-accent), transparent 18%, var(--sys-accent) 35%, transparent 55%, var(--sys-accent));
+  border-radius: 999px;
+  display: block;
+  height: 34px;
+  margin-bottom: 20px;
+  width: 34px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid h3 {
+  color: var(--sys-ink);
+  font-size: 17px;
+  font-weight: 900;
+  margin: 0 0 10px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-process-grid p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-expertise-grid,
+[data-template-id="signal-yard-studio"] .sys-proof {
+  display: grid;
+  gap: 56px;
+  grid-template-columns: 1fr 420px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-expertise-grid img,
+[data-template-id="signal-yard-studio"] .sys-proof img {
+  aspect-ratio: 2.2;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] .sys-expertise p,
+[data-template-id="signal-yard-studio"] .sys-proof p {
+  margin-top: 28px;
+  max-width: 600px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-tags,
+[data-template-id="signal-yard-studio"] .sys-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-logos span {
+  color: var(--sys-ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+[data-template-id="signal-yard-studio"] .sys-journal h2 {
+  margin: 0 0 46px auto;
+  max-width: 560px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-article-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="signal-yard-studio"] .sys-article-grid img {
+  aspect-ratio: 1.35;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="signal-yard-studio"] .sys-article-grid span {
+  background: var(--sys-accent);
+  margin-top: 14px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-page {
+  min-height: 900px;
+  padding-top: 190px;
+  position: relative;
+}
+
+[data-template-id="signal-yard-studio"] .sys-page h1,
+[data-template-id="signal-yard-studio"] .sys-page > p {
+  max-width: 850px;
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="signal-yard-studio"] .sys-page > p {
+  font-size: clamp(20px, 2.2vw, 32px);
+  margin-top: 28px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-home-link {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--sys-line);
+  border-radius: 999px;
+  color: var(--sys-ink);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 54px;
+  padding: 12px 16px;
+  position: relative;
+  z-index: 3;
+}
+
+[data-template-id="signal-yard-studio"] .sys-page-grid,
+[data-template-id="signal-yard-studio"] .sys-page-list,
+[data-template-id="signal-yard-studio"] .sys-contact-form {
+  margin-top: 72px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-form {
+  display: grid;
+  gap: 18px;
+  max-width: 720px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-form label {
+  color: var(--sys-ink);
+  display: grid;
+  font-size: 14px;
+  font-weight: 900;
+  gap: 8px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-form input,
+[data-template-id="signal-yard-studio"] .sys-contact-form textarea {
+  background: #fff;
+  border: 1px solid var(--sys-line);
+  border-radius: 14px;
+  color: var(--sys-ink);
+  min-height: 58px;
+  padding: 14px 16px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+[data-template-id="signal-yard-studio"] .sys-contact-form button {
+  background: var(--sys-accent);
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 900;
+  min-height: 56px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer {
+  background: var(--sys-footer);
+  color: var(--sys-footer-text);
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 260px;
+  min-height: 600px;
+  padding: 92px 7vw 44px;
+  position: relative;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer-glow {
+  background: repeating-linear-gradient(90deg, rgba(244, 73, 48, .04) 0 72px, rgba(244, 73, 48, .52) 72px 144px);
+  inset: 0;
+  opacity: .8;
+  position: absolute;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer > * {
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer h2 {
+  color: var(--sys-footer-text);
+  font-family: var(--sys-heading-font);
+  font-size: clamp(38px, 4.4vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: .98;
+  margin: 0;
+  max-width: 650px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer p {
+  color: var(--sys-footer-muted);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 24px 0;
+  max-width: 620px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer section a {
+  align-items: center;
+  background: var(--sys-accent);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 900;
+  gap: 8px;
+  padding: 14px 18px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer-links {
+  display: grid;
+  gap: 32px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer h3 {
+  color: var(--sys-footer-text);
+  font-size: 13px;
+  font-weight: 900;
+  margin: 0 0 14px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer-links a,
+[data-template-id="signal-yard-studio"] .sys-footer-bottom a {
+  color: var(--sys-footer-muted);
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer-bottom {
+  align-self: end;
+  border-top: 1px solid rgba(254, 250, 246, .13);
+  display: grid;
+  gap: 20px;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 22px;
+}
+
+[data-template-id="signal-yard-studio"] .sys-footer-bottom p {
+  margin: 0;
+}
+
+[data-template-id="signal-yard-studio"] [data-sys-reveal] {
+  opacity: 0;
+  transform: translateY(38px);
+  transition: opacity 680ms cubic-bezier(.23, 1, .32, 1), transform 680ms cubic-bezier(.23, 1, .32, 1);
+}
+
+[data-template-id="signal-yard-studio"] [data-sys-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-template-id="signal-yard-studio"] .sys-repeat-track {
+    animation: none;
+  }
+
+  [data-template-id="signal-yard-studio"] [data-sys-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@keyframes sysMarquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 900px) {
+  [data-template-id="signal-yard-studio"] .sys-header {
+    padding: 28px 22px 18px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-menu {
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--sys-line);
+    border-radius: 999px;
+    color: var(--sys-ink);
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-contact-pill {
+    display: none;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-nav {
+    bottom: auto;
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    left: 22px;
+    padding: 20px;
+    right: 22px;
+    top: 86px;
+    transform: none;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-nav.is-open {
+    display: flex;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-hero {
+    min-height: auto;
+    padding: 142px 22px 80px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-glow {
+    height: 430px;
+    width: 70vw;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-hero h1 {
+    font-size: clamp(54px, 15vw, 86px);
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-hero-lower,
+  [data-template-id="signal-yard-studio"] .sys-about,
+  [data-template-id="signal-yard-studio"] .sys-service-list article,
+  [data-template-id="signal-yard-studio"] .sys-process-grid,
+  [data-template-id="signal-yard-studio"] .sys-expertise-grid,
+  [data-template-id="signal-yard-studio"] .sys-proof,
+  [data-template-id="signal-yard-studio"] .sys-footer,
+  [data-template-id="signal-yard-studio"] .sys-footer-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-about,
+  [data-template-id="signal-yard-studio"] .sys-projects,
+  [data-template-id="signal-yard-studio"] .sys-services,
+  [data-template-id="signal-yard-studio"] .sys-process,
+  [data-template-id="signal-yard-studio"] .sys-expertise,
+  [data-template-id="signal-yard-studio"] .sys-proof,
+  [data-template-id="signal-yard-studio"] .sys-journal,
+  [data-template-id="signal-yard-studio"] .sys-page {
+    padding: 78px 22px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-stats,
+  [data-template-id="signal-yard-studio"] .sys-project-grid,
+  [data-template-id="signal-yard-studio"] .sys-article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-stats {
+    gap: 24px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-about-copy h2 {
+    margin-bottom: 44px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-repeat {
+    margin-left: -22px;
+    margin-right: -22px;
+  }
+
+  [data-template-id="signal-yard-studio"] .sys-footer {
+    padding: 78px 22px 38px;
+  }
+}

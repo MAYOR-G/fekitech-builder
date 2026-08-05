@@ -1,0 +1,175 @@
+{
+  "colors": {
+    "primary": "#f44930",
+    "secondary": "#fff2eb",
+    "accent": "#f44930",
+    "pageBackground": "#fefaf6",
+    "surface": "#f7eee8",
+    "card": "#ffffff",
+    "headingText": "#141111",
+    "bodyText": "#282222",
+    "mutedText": "#6f6660",
+    "buttonBg": "#f44930",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonBorder": "#f0e5dd",
+    "secondaryButtonText": "#141111",
+    "link": "#f44930",
+    "border": "#e8ddd5",
+    "icon": "#f44930",
+    "headerBg": "#fefaf6",
+    "headerText": "#141111",
+    "footerBg": "#1a0806",
+    "footerText": "#fefaf6",
+    "footerMuted": "#b9a39a"
+  },
+  "typography": {
+    "headingFont": "Geist",
+    "bodyFont": "Inter",
+    "navFont": "Inter",
+    "buttonFont": "Inter",
+    "headingWeight": 900,
+    "bodyWeight": 500,
+    "lineHeight": 1.45,
+    "letterSpacing": "0em"
+  },
+  "brand": {
+    "name": "Signal Yard",
+    "descriptor": "Growth studio",
+    "email": "hello@signalyard.co.uk",
+    "phone": "0161 482 1930",
+    "address": "42 Lever Street, Manchester M1 1FN",
+    "hours": "Mon-Fri 9am-5:30pm",
+    "registration": "Signal Yard Studio Ltd, registered in England and Wales"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Work", "href": "work" },
+      { "label": "About", "href": "about" },
+      { "label": "Journal", "href": "journal" },
+      { "label": "Contact", "href": "contact" }
+    ],
+    "buttonLabel": "Get in Touch",
+    "buttonHref": "contact"
+  },
+  "hero": {
+    "title": "Signal-led Growth for Ambitious Brands.",
+    "body": "Find the friction that slows your pipeline, sharpen the message, and turn marketing activity into measurable demand.",
+    "scrollLabel": "SCROLL",
+    "image": "/templates/signal-yard-studio/assets/hero-office.webp",
+    "imageAlt": "Creative strategy team in a modern Manchester studio"
+  },
+  "about": {
+    "eyebrow": "ABOUT US",
+    "cardImage": "/templates/signal-yard-studio/assets/team-room.webp",
+    "cardImageAlt": "Two strategists reviewing a campaign plan",
+    "cardText": "We pair research, creative direction and performance thinking to help teams move from busy marketing to clear growth.",
+    "title": "At Signal Yard, we craft campaigns that make the right buyers act.",
+    "stats": [
+      { "value": "4+", "label": "Years of Experience" },
+      { "value": "18+", "label": "Client Projects" },
+      { "value": "96%", "label": "Client Satisfaction" }
+    ]
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "buttonLabel": "Explore All",
+    "buttonHref": "work",
+    "items": [
+      { "name": "Foundry Finance", "category": "MARKETING", "image": "/templates/signal-yard-studio/assets/project-capsule.webp", "imageAlt": "Glossy capsule campaign artwork" },
+      { "name": "Northstar Labs", "category": "WEB DESIGN", "image": "/templates/signal-yard-studio/assets/project-orbit.webp", "imageAlt": "Glossy circular brand artwork" },
+      { "name": "Vale & Co.", "category": "BRANDING", "image": "/templates/signal-yard-studio/assets/project-sphere.webp", "imageAlt": "Glossy sphere brand artwork" },
+      { "name": "Kinetic Works", "category": "STRATEGY", "image": "/templates/signal-yard-studio/assets/project-rings.webp", "imageAlt": "Glossy ring campaign artwork" }
+    ]
+  },
+  "services": {
+    "title": "SERVICES",
+    "bannerImage": "/templates/signal-yard-studio/assets/workshop.webp",
+    "bannerImageAlt": "Workshop table with campaign notes and laptops",
+    "items": [
+      { "title": "Digital Campaigns", "text": "Paid, social and lifecycle campaigns shaped around a clear commercial target." },
+      { "title": "Growth Strategy", "text": "Positioning, funnel review and channel planning for sharper acquisition." },
+      { "title": "Brand Consulting", "text": "Messaging systems, proof points and identity guidance for confident launches." },
+      { "title": "Marketing Strategy", "text": "Quarterly roadmaps that connect content, conversion and sales priorities." },
+      { "title": "Brand Development", "text": "Lean visual and verbal systems that help small teams show up consistently." }
+    ]
+  },
+  "process": {
+    "eyebrow": "PROCESS",
+    "title": "A Streamlined Process for Lasting Results",
+    "steps": [
+      { "title": "1. Discovery", "text": "We audit goals, audiences and blockers so the work starts in the right place." },
+      { "title": "2. Planning", "text": "We shape the campaign roadmap, message hierarchy and delivery rhythm." },
+      { "title": "3. Implement", "text": "Creative, landing pages and campaign assets are built with performance in mind." },
+      { "title": "4. Deliver", "text": "We report what matters, refine what is working and leave your team clearer." }
+    ]
+  },
+  "expertise": {
+    "title": "EXPERTISE",
+    "heading": "Industry-Specific Expertise to Drive Your Success",
+    "body": "For B2B services, SaaS and local operators who need sharper positioning, better conversion paths and a calmer plan for growth.",
+    "image": "/templates/signal-yard-studio/assets/expertise.webp",
+    "imageAlt": "Studio team walking through a campaign review",
+    "tags": ["SAAS TEAMS", "PROFESSIONAL SERVICES", "LOCAL OPERATORS", "NEW LAUNCHES"]
+  },
+  "testimonials": {
+    "eyebrow": "OUR CLIENTS SAY",
+    "title": "Real Results, Trusted Partnerships",
+    "body": "We collaborate with teams that want practical thinking, quick delivery and accountable campaign decisions.",
+    "logos": ["SALARA", "POLTRO", "NEXA", "RYNATE"],
+    "image": "/templates/signal-yard-studio/assets/client-strip.webp",
+    "imageAlt": "Client meeting detail"
+  },
+  "journal": {
+    "eyebrow": "BLOG",
+    "title": "Our Latest Articles from Signal Yard",
+    "buttonLabel": "Explore All",
+    "buttonHref": "journal",
+    "items": [
+      { "title": "Designing a Visual Identity That Clicks", "category": "BRANDING", "image": "/templates/signal-yard-studio/assets/article-identity.webp", "imageAlt": "Designer reviewing identity boards" },
+      { "title": "Plan First, Win Bigger: The Pre-Design Playbook", "category": "STRATEGY", "image": "/templates/signal-yard-studio/assets/article-planning.webp", "imageAlt": "Strategist planning a campaign" },
+      { "title": "From Push, With Rigour: The Pre-Design Playbook", "category": "MARKETING", "image": "/templates/signal-yard-studio/assets/article-lab.webp", "imageAlt": "Colourful campaign testing desk" }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Accelerate Your Growth?",
+    "body": "Share where growth feels stuck. We will map the first useful move and the metrics worth watching.",
+    "buttonLabel": "Let's Talk",
+    "buttonHref": "contact"
+  },
+  "footer": {
+    "copyright": "© 2026 Signal Yard Studio. All rights reserved.",
+    "columns": [
+      { "title": "Work", "links": [{ "label": "Work", "href": "work" }, { "label": "About", "href": "about" }, { "label": "Contact", "href": "contact" }, { "label": "Policy", "href": "privacy" }] },
+      { "title": "Social", "links": [{ "label": "Instagram", "href": "https://instagram.com/signalyard" }, { "label": "LinkedIn", "href": "https://linkedin.com/company/signalyard" }, { "label": "X", "href": "https://x.com/signalyard" }] }
+    ]
+  },
+  "pages": {
+    "about": {
+      "title": "A small studio for clear positioning, useful campaigns and measurable growth.",
+      "body": "Signal Yard works with founders and marketing teams who need senior thinking without a bloated agency process. We keep the work compact, visual and accountable."
+    },
+    "work": {
+      "title": "Selected projects shaped around sharper demand.",
+      "body": "Each project pairs commercial diagnosis with creative output: campaign systems, landing pages, launch messaging and brand refreshes."
+    },
+    "services": {
+      "title": "Strategy, campaigns and brand systems for teams ready to move.",
+      "body": "Start with a growth sprint, then continue with monthly campaign direction, conversion support or launch delivery."
+    },
+    "journal": {
+      "title": "Short notes on strategy, identity and campaigns.",
+      "body": "Brief, practical articles for teams that need to make better marketing decisions."
+    },
+    "contact": {
+      "title": "Tell us what you are trying to change.",
+      "body": "We reply within one working day with a sensible next step.",
+      "fields": ["Name", "Email", "Company", "What are you trying to improve?"],
+      "buttonLabel": "Send Enquiry"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": "This demo template includes placeholder policy content. Replace it with legal text appropriate for your business before publishing."
+    }
+  }
+}

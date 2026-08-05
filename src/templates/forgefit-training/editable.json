@@ -1,0 +1,208 @@
+{
+  "colors": {
+    "primary": "#ff7a00",
+    "secondary": "#151515",
+    "accent": "#ff7a00",
+    "pageBackground": "#050505",
+    "surface": "#101010",
+    "card": "#151515",
+    "headingText": "#ffffff",
+    "bodyText": "#d8d8d8",
+    "mutedText": "#8f8f8f",
+    "buttonBg": "#ffffff",
+    "buttonText": "#050505",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#ffffff",
+    "secondaryButtonText": "#ffffff",
+    "link": "#ff7a00",
+    "border": "#262626",
+    "icon": "#ff7a00",
+    "headerBg": "#050505",
+    "headerText": "#ffffff",
+    "footerBg": "#050505",
+    "footerText": "#ffffff",
+    "footerMuted": "#8f8f8f"
+  },
+  "typography": {
+    "headingFont": "Geist",
+    "bodyFont": "Inter",
+    "navFont": "Inter",
+    "buttonFont": "Inter",
+    "headingWeight": 900,
+    "bodyWeight": 500,
+    "lineHeight": 1.42,
+    "letterSpacing": "0em"
+  },
+  "brand": {
+    "name": "ForgeFit",
+    "descriptor": "Performance Gym",
+    "email": "hello@forgefit.co.uk",
+    "phone": "020 7946 0831",
+    "address": "18 Copper Lane, Hackney Wick, London E9 5EN",
+    "hours": "Mon-Fri 5:30am-10pm, Sat-Sun 7am-8pm",
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/forgefit" },
+      { "label": "Facebook", "href": "https://facebook.com/forgefit" },
+      { "label": "YouTube", "href": "https://youtube.com" }
+    ]
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "home" },
+      { "label": "About", "href": "about" },
+      { "label": "Plans", "href": "plans" },
+      { "label": "Trainers", "href": "trainers" },
+      { "label": "Contact", "href": "contact" }
+    ],
+    "buttonLabel": "Contact Us",
+    "buttonHref": "contact"
+  },
+  "hero": {
+    "eyebrow": "NO PRESSURE. NO HYPE.",
+    "titleAccent": "TRAIN LIKE",
+    "title": "YOU PERFORM",
+    "body": "Straightforward coaching, focused sessions and practical support built around your goals.",
+    "primaryCta": { "label": "Join Us", "href": "contact" },
+    "secondaryCta": { "label": "Watch Video", "href": "about" },
+    "features": [
+      "Affordable training & eating plans",
+      "14 day free return on purchase"
+    ],
+    "image": "/templates/forgefit-training/assets/hero-athlete.webp",
+    "imageAlt": "Focused athlete in a dark performance gym"
+  },
+  "belong": {
+    "eyebrow": "Trusted by performance leaders",
+    "titleAccent": "Not just a gym.",
+    "title": "A place to belong.",
+    "body": "A focused training space for every kind of journey, from first session confidence to serious performance work.",
+    "stats": [
+      { "value": "12+", "label": "Years of coaching" },
+      { "value": "6,200+", "label": "Training sessions" },
+      { "value": "160+", "label": "Events and workshops" }
+    ],
+    "partners": ["VITA", "STAR", "CIRCLE", "ARENA"],
+    "images": [
+      { "src": "/templates/forgefit-training/assets/training-strength.webp", "alt": "Woman strength training in a dark gym" },
+      { "src": "/templates/forgefit-training/assets/training-deadlift.webp", "alt": "Athlete setting up for a deadlift" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "titleAccent": "Not just workouts.",
+    "title": "A whole approach.",
+    "body": "From personal training to nutrition and recovery, we cover what your body actually needs.",
+    "primaryCta": { "label": "Explore Pricing", "href": "plans" },
+    "secondaryCta": { "label": "Watch Video", "href": "about" },
+    "items": [
+      { "title": "Personal Training", "text": "One-to-one coaching focused on your goals, fitness level and progress." },
+      { "title": "Nutrition Guidance", "text": "Simple food support that works in real life. No extremes, just balance." },
+      { "title": "Strength & Conditioning", "text": "Structured plans to build muscle, boost stamina and stay injury-free." },
+      { "title": "Yoga & Flexibility", "text": "Mobility-led sessions that help you move well and recover properly." },
+      { "title": "Progress Tracking", "text": "Clear check-ins so you can see what is changing and where to go next." }
+    ]
+  },
+  "trainers": {
+    "eyebrow": "Meet the trainers",
+    "title": "Guidance you can trust.",
+    "body": "Real coaches who listen, support and walk with you through each stage.",
+    "badges": ["Person-first approach", "Certified & experienced", "Inclusive mindset"],
+    "items": [
+      { "name": "Amara Singh", "role": "Strength & Functional Coach", "bio": "Builds strong, capable bodies with calm, clear coaching.", "image": "/templates/forgefit-training/assets/trainer-anjali.webp", "imageAlt": "Female strength coach portrait" },
+      { "name": "Rohan Mehta", "role": "Performance & Nutrition Coach", "bio": "Pairs heavy training with sustainable habits that stick.", "image": "/templates/forgefit-training/assets/trainer-rohan.webp", "imageAlt": "Male performance coach portrait" },
+      { "name": "Priya Das", "role": "Yoga & Flexibility Coach", "bio": "Helps members move freely, recover better and feel steady.", "image": "/templates/forgefit-training/assets/trainer-priya.webp", "imageAlt": "Female yoga coach portrait" }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why choose ForgeFit",
+    "titleAccent": "Fitness should",
+    "title": "feel like it fits.",
+    "body": "No noise, no guesswork. Just coaching, structure and community that make training easier to keep.",
+    "buttonLabel": "Watch Video",
+    "buttonHref": "about",
+    "image": "/templates/forgefit-training/assets/why-athlete.webp",
+    "imageAlt": "Athlete standing with battle ropes in a dark gym",
+    "points": [
+      { "title": "Coaches who know your name", "text": "Small-group sessions, personal check-ins and clear progression." },
+      { "title": "Recovery and mobility built in", "text": "Strength work balanced with stretching, breath and recovery." },
+      { "title": "Plans that fit real life", "text": "Training blocks shaped around work, family and energy levels." },
+      { "title": "Results you can track", "text": "Simple metrics, consistent reviews and visible progress." }
+    ]
+  },
+  "steps": {
+    "titleAccent": "Getting started is simple.",
+    "title": "Staying on track is easier.",
+    "items": [
+      { "title": "Book a free intro session", "text": "Visit the studio, talk through your goals and try the space." },
+      { "title": "Get a personal fitness check", "text": "We assess strength, movement and recovery so the plan is realistic." },
+      { "title": "Start with a plan made for you", "text": "Your first training block gives you structure from day one." },
+      { "title": "Train with the right support", "text": "Small-group and one-to-one coaching keep you moving well." },
+      { "title": "Track progress and stay consistent", "text": "We review what is changing and adjust the work as you improve." }
+    ]
+  },
+  "pricing": {
+    "titleAccent": "Join the way that",
+    "title": "feels right for you.",
+    "body": "Choose a plan that suits your routine. You can upgrade, pause or change as life changes.",
+    "toggleA": "Pay Monthly",
+    "toggleB": "Pay Today",
+    "items": [
+      { "name": "Core Access", "price": "£244.99", "note": "For independent training with light support.", "features": ["Unlimited open gym", "Starter movement screen", "Member events", "App access"] },
+      { "name": "Coached", "price": "£449.99", "note": "For guided progress and accountability.", "featured": true, "features": ["Weekly coached sessions", "Nutrition check-ins", "Progress tracking", "Recovery support"] },
+      { "name": "Performance", "price": "£1,199.00", "note": "For focused transformation blocks.", "features": ["Personal training plan", "Priority coach access", "Body composition reviews", "Full support package"] }
+    ]
+  },
+  "testimonial": {
+    "titleAccent": "Because staying fit",
+    "title": "should feel good",
+    "quote": "ForgeFit helped me train with confidence for the first time. The coaches check in, the sessions make sense, and progress finally feels like something I can keep.",
+    "name": "Deepa Khan",
+    "role": "Member since 2023",
+    "image": "/templates/forgefit-training/assets/testimonial-member.webp",
+    "imageAlt": "Smiling gym member after a workout"
+  },
+  "faq": {
+    "titleAccent": "Frequently",
+    "title": "asked questions",
+    "items": [
+      { "question": "I am a complete beginner. Can I still join?", "answer": "Yes. We start with a friendly intro and build from your current level." },
+      { "question": "Do I need to bring anything for my first session?", "answer": "Comfortable kit, water and a willingness to try. We handle the rest." },
+      { "question": "Are personal training sessions included?", "answer": "They are included in selected plans and can be added to any membership." },
+      { "question": "What kind of group classes do you offer?", "answer": "Strength, conditioning, mobility, recovery and small-group coaching." },
+      { "question": "Can I freeze or pause my membership?", "answer": "Yes, members can pause plans with notice." }
+    ]
+  },
+  "contact": {
+    "title": "Get in touch",
+    "body": "Ready to train with more structure? Visit, call or send a message and we will help you start.",
+    "formTitle": "Send a message",
+    "fields": ["Your name", "Your email", "What is your fitness goal?", "Subject"],
+    "buttonLabel": "Send Message",
+    "locations": [
+      "ForgeFit Studio, 18 Copper Lane, London E9 5EN",
+      "ForgeFit City, 22 Charter Street, London EC1"
+    ]
+  },
+  "download": {
+    "title": "Download our ForgeFit app",
+    "body": "Track sessions, book classes, follow plans and stay close to your coach between visits.",
+    "bullets": ["View class schedules", "Track training progress", "Message your coach"],
+    "image": "/templates/forgefit-training/assets/app-promo.webp",
+    "imageAlt": "Mobile app screens for a dark fitness app"
+  },
+  "footer": {
+    "copyright": "© 2026 ForgeFit Training. All rights reserved.",
+    "links": [
+      { "label": "Contact Us", "href": "contact" },
+      { "label": "About", "href": "about" },
+      { "label": "Plans", "href": "plans" }
+    ]
+  },
+  "pages": {
+    "about": { "title": "A performance gym built around real people.", "body": "ForgeFit combines focused coaching, practical nutrition, recovery and community in one dark, high-energy London studio." },
+    "plans": { "title": "Choose the training plan that fits your rhythm.", "body": "Start with open gym access, add weekly coaching, or choose a focused transformation block." },
+    "trainers": { "title": "Meet the coaches behind your progress.", "body": "Every coach brings certified experience, sharp programming and a people-first approach." },
+    "contact": { "title": "Start with a simple conversation.", "body": "Send your goal, visit the studio or book a free intro session." },
+    "privacy": { "title": "Privacy Policy", "body": "Replace this placeholder with the privacy policy required for your fitness business before publishing." }
+  }
+}

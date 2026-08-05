@@ -76,7 +76,12 @@ describe("production template registry", () => {
       "velour-studio-salon",
       "harrow-vale-estates",
       "ember-grace-church",
-      "linden-path-therapy"
+      "linden-path-therapy",
+      "the-copper-tap",
+      "signal-yard-studio",
+      "modulars",
+      "forgefit-training",
+      "rivergate-plumbing"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -102,6 +107,7 @@ describe("production template registry", () => {
       "ember-grace-church",
       "farm-shop-website",
       "fast-food-chicken-tacos",
+      "forgefit-training",
       "forgepoint-construction",
       "gym-website",
       "harborwell-home-health",
@@ -114,6 +120,7 @@ describe("production template registry", () => {
       "linden-path-therapy",
       "london-pizza-shop",
       "lumen-house-design",
+      "modulars",
       "moss-marrow-cafe",
       "noir-house-design",
       "northcrest-roofing",
@@ -124,13 +131,16 @@ describe("production template registry", () => {
       "premium-construction",
       "premium-restaurant",
       "roofing-agency-premium",
+      "rivergate-plumbing",
       "second-furniture-website",
       "second-plumber-website",
       "software-engineer-portfolio",
+      "signal-yard-studio",
       "velour-studio-salon",
       "velvet-scoop",
-      "verdant-house-grooming"
-    ]);
+      "verdant-house-grooming",
+      "the-copper-tap"
+    ].sort());
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
     }
@@ -172,7 +182,11 @@ describe("production template registry", () => {
       "velour-studio-salon",
       "harrow-vale-estates",
       "ember-grace-church",
-      "linden-path-therapy"
+      "linden-path-therapy",
+      "the-copper-tap",
+      "signal-yard-studio",
+      "forgefit-training",
+      "rivergate-plumbing"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -227,7 +241,11 @@ describe("production template registry", () => {
       "velour-studio-salon",
       "harrow-vale-estates",
       "ember-grace-church",
-      "linden-path-therapy"
+      "linden-path-therapy",
+      "the-copper-tap",
+      "signal-yard-studio",
+      "forgefit-training",
+      "rivergate-plumbing"
     ];
 
     for (const templateId of redesignedTemplateIds) {

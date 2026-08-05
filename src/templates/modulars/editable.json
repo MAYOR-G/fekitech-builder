@@ -1,0 +1,187 @@
+{
+  "theme": {
+    "background": "#F6F5F2",
+    "text": "#1A1A1A",
+    "accent": "#8C6A53",
+    "fontHeading": "Playfair Display",
+    "fontBody": "Inter"
+  },
+  "header": {
+    "logoText": "Modulars",
+    "nav": [
+      {"label": "About", "href": "#about"},
+      {"label": "Services", "href": "#services"},
+      {"label": "Work", "href": "#work"},
+      {"label": "Process", "href": "#process"}
+    ],
+    "ctaText": "Contact now"
+  },
+  "hero": {
+    "preTitle": "Better spaces.\nBuilt to last.",
+    "title": "Modern renovation work for homes, interiors and commercial spaces.",
+    "description": "Planned with clarity and finished with care.",
+    "primaryButton": "Get Estimate",
+    "secondaryButton": "About Modulars",
+    "backgroundImages": [
+      "/templates/modulars/assets/modulars_hero_1785930359857.png",
+      "/templates/modulars/assets/modulars_extra_1.jpg",
+      "/templates/modulars/assets/modulars_extra_3.jpg"
+    ]
+  },
+  "about": {
+    "title": "Renovation work built around clarity and trust",
+    "description": "Modulars turns renovation ideas into finished spaces through clear planning, reliable management and careful detail.",
+    "stats": [
+      {"value": "280+", "label": "Projects Completed"},
+      {"value": "12+", "label": "Years Experience"},
+      {"value": "98%", "label": "Client Satisfaction"}
+    ],
+    "image": "/templates/modulars/assets/modulars_about_1785930369272.png"
+  },
+  "services": {
+    "preTitle": "Our Services",
+    "title": "Renovation services designed for better spaces",
+    "description": "From full remodels to detailed finishing, Modulars helps clients upgrade spaces with structure, quality and confidence.",
+    "items": [
+      {
+        "title": "Full Home Renovation",
+        "description": "Complete home upgrades that improve layout, comfort and long-term value.",
+        "image": "/templates/modulars/assets/modulars_service_1_1785930378878.png"
+      },
+      {
+        "title": "Kitchen Remodeling",
+        "description": "Modern kitchen renovations built around better flow, storage and daily use.",
+        "image": "/templates/modulars/assets/modulars_extra_1.jpg"
+      },
+      {
+        "title": "Bathroom Redesign",
+        "description": "Clean bathroom upgrades with better function, fixtures and refined finishes.",
+        "image": "/templates/modulars/assets/modulars_extra_2.jpg"
+      },
+      {
+        "title": "Commercial Renovation",
+        "description": "Professional spaces updated for better use, team function and client impression.",
+        "image": "/templates/modulars/assets/modulars_extra_3.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "preTitle": "Completed Projects",
+    "title": "Finished spaces with lasting detail",
+    "description": "A collage of completed renovation work designed to build trust through real project results.",
+    "images": [
+      "/templates/modulars/assets/modulars_extra_4.jpg",
+      "/templates/modulars/assets/modulars_extra_5.jpg",
+      "/templates/modulars/assets/modulars_extra_6.jpg",
+      "/templates/modulars/assets/modulars_extra_7.jpg",
+      "/templates/modulars/assets/modulars_extra_8.jpg",
+      "/templates/modulars/assets/modulars_extra_9.jpg"
+    ]
+  },
+  "process": {
+    "preTitle": "Our Process",
+    "title": "A clear path from idea to handover",
+    "description": "Every project follows a simple process so clients know what happens next.",
+    "steps": [
+      {"number": "01", "title": "Plan", "description": "We outline the full scope, exact costs and clear timeline before any work starts."},
+      {"number": "02", "title": "Build", "description": "Our team handles the renovation with careful oversight, keeping you updated at every stage."},
+      {"number": "03", "title": "Handover", "description": "We review the finished work together, making sure every detail meets the agreed standard."}
+    ]
+  },
+  "testimonials": {
+    "preTitle": "Client Stories",
+    "title": "Trusted by clients who value the result",
+    "description": "Real feedback from clients who wanted a clearer process and a better finished space.",
+    "items": [
+      {
+        "quote": "Modulars gave us a clear plan, stuck to the budget, and finished the work with impressive detail. The process felt organized from day one.",
+        "author": "Emily Carter",
+        "project": "Full Home Renovation"
+      },
+      {
+        "quote": "We needed our kitchen updated quickly but didn’t want to lose quality. Modulars delivered exactly what they promised.",
+        "author": "Daniel Ross",
+        "project": "Kitchen Remodeling"
+      },
+      {
+        "quote": "Our office renovation was handled perfectly. They communicated well, finished on time, and left us with a much better space.",
+        "author": "Maya Thompson",
+        "project": "Commercial Renovation"
+      }
+    ]
+  },
+  "comparison": {
+    "preTitle": "Why Modulars",
+    "title": "A cleaner way to manage renovation work",
+    "description": "Renovation should feel clear from the first review to the final walkthrough.",
+    "traditional": {
+        "title": "Traditional Renovation",
+        "points": [
+            "Unclear timelines and delayed finish dates.",
+            "Surprise costs added during the build.",
+            "Poor communication leaving clients guessing.",
+            "Messy workspaces left unmanaged.",
+            "Details rushed to finish the job."
+        ]
+    },
+    "modulars": {
+        "title": "Modulars",
+        "points": [
+            "Clear schedules with reliable delivery.",
+            "Upfront pricing with no hidden fees.",
+            "Regular updates so you know the progress.",
+            "Clean sites maintained throughout.",
+            "Careful finishing on every project."
+        ]
+    }
+  },
+  "faq": {
+    "preTitle": "Questions",
+    "title": "What clients ask before starting",
+    "items": [
+      {
+        "question": "How long does a typical renovation take?",
+        "answer": "Timelines depend on the project scale, but we provide a strict schedule upfront and stick to it."
+      },
+      {
+        "question": "Do you handle the permits and planning?",
+        "answer": "Yes, we manage all necessary permits and local approvals to ensure your project is compliant."
+      },
+      {
+        "question": "Will I have a dedicated project manager?",
+        "answer": "Absolutely. Every project is assigned a manager who will be your main point of contact from start to finish."
+      },
+      {
+        "question": "Do you guarantee your finishing work?",
+        "answer": "Yes, we stand behind the quality of our work and include a warranty on all finished spaces."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Start Your Project",
+    "description": "Tell us what you want to build or renovate. Our team will review the details and get back to you with the next steps.",
+    "image": "/templates/modulars/assets/modulars_extra_2.jpg"
+  },
+  "footer": {
+    "logoText": "Modulars",
+    "description": "Premium renovation template for modern builders.",
+    "links": [
+        {"label": "About", "href": "#about"},
+        {"label": "Services", "href": "#services"},
+        {"label": "Work", "href": "#work"},
+        {"label": "Process", "href": "#process"}
+    ],
+    "services": [
+        "Full Home Renovation",
+        "Kitchen Remodeling",
+        "Bathroom Redesign",
+        "Commercial Upgrades"
+    ],
+    "contact": [
+        "hello@modulars.example.com",
+        "+1 (555) 000-0000",
+        "123 Builder St, NY 10001"
+    ],
+    "copyright": "© 2026 Modulars. All rights reserved."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "theme": {
+    "colors": {
+      "primary": "#20241A",
+      "secondary": "#514213",
+      "accent": "#4D2107",
+      "text": "#E1D0B6",
+      "lightBackground": "#E1D0B6",
+      "darkText": "#20241A"
+    },
+    "fonts": {
+      "heading": "fahkwang, sans-serif",
+      "body": "marmelad, sans-serif"
+    }
+  },
+  "content": {
+    "header": {
+      "logo": "The Whale's Tail",
+      "nav": [
+        { "label": "Book a Table", "link": "#" },
+        { "label": "Order Online", "link": "#" },
+        { "label": "Our Menu", "link": "#" }
+      ],
+      "loginText": "Log In"
+    },
+    "hero": {
+      "title": "Drink, Eat, Enjoy.",
+      "subtitle": "Pub & Eatery | Est. 2035",
+      "image": "/templates/the-copper-tap/assets/copper_tap_hero_bg_1785926868823.png"
+    },
+    "welcome": {
+      "pretitle": "Make Yourself at Home",
+      "title": "ENJOY PREMIUM DRAFT BEER, GOOD WINES, AND OUR HEARTFUL DISHES",
+      "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "buttonText": "Book a Table",
+      "image1": "/templates/the-copper-tap/assets/copper_tap_welcome1_1785926879365.png",
+      "image2": "/templates/the-copper-tap/assets/copper_tap_welcome2_1785926888662.png"
+    },
+    "happyHour": {
+      "pretitle": "Hello, Neighbor",
+      "title": "HAPPY HOUR",
+      "time": "12PM - 3PM",
+      "days": "Monday - Thursday",
+      "image": "/templates/the-copper-tap/assets/copper_tap_moment1_1785926908871.png"
+    },
+    "special": {
+      "pretitle": "This Month’s Special",
+      "title": "CELEBRATING BELGIAN BEER MONTH",
+      "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
+      "buttonText": "Our Menu",
+      "image": "/templates/the-copper-tap/assets/copper_tap_special_1785926899278.png"
+    },
+    "moments": {
+      "title": "Happy Moments",
+      "images": [
+        "/templates/the-copper-tap/assets/copper_tap_moment2_1785926920214.png",
+        "/templates/the-copper-tap/assets/copper_tap_moment3_1785926930122.png",
+        "/templates/the-copper-tap/assets/copper_tap_moment1_1785926908871.png"
+      ]
+    },
+    "events": {
+      "title": "Upcoming Events",
+      "list": [
+        { "date": "Fri, Mar 23", "title": "Movie Night", "location": "San Francisco", "buttonText": "RSVP" },
+        { "date": "Fri, Mar 23", "title": "Open Stage", "location": "San Francisco", "buttonText": "RSVP" },
+        { "date": "Fri, Mar 23", "title": "Trivia Night", "location": "San Francisco", "buttonText": "RSVP" }
+      ]
+    },
+    "reservation": {
+      "title": "Reserve a Table",
+      "description": "To help us find the best table for you, select the preferred party size, date, and time of your reservation.",
+      "buttonText": "Book Now"
+    },
+    "footer": {
+      "title": "DROP BY,\nWE ARE OPEN.",
+      "addressTitle": "Address",
+      "address": "500 Terry Francine Street\nSan Francisco, CA 94158",
+      "hoursTitle": "Opening Hours",
+      "hours": "Monday - Sunday: 12pm - 1am",
+      "email": "info@mysite.com",
+      "phone": "123-456-7890",
+      "socials": [
+        { "label": "Facebook", "link": "#" },
+        { "label": "Instagram", "link": "#" },
+        { "label": "Yelp!", "link": "#" }
+      ],
+      "subscribeText": "Subscribe to get notified about special events.",
+      "copyright": "© 2035 by The Whale's Tail."
+    }
+  }
+}

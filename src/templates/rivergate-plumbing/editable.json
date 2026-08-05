@@ -1,0 +1,198 @@
+{
+  "colors": {
+    "primary": "#103729",
+    "secondary": "#ffffff",
+    "accent": "#c9ff68",
+    "pageBackground": "#ffffff",
+    "mintBackground": "#e8fff3",
+    "surface": "#ffffff",
+    "darkSurface": "#062d21",
+    "card": "#ffffff",
+    "headingText": "#12231c",
+    "bodyText": "#44534d",
+    "mutedText": "#7b8782",
+    "buttonBg": "#c9ff68",
+    "buttonText": "#0b2f22",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonText": "#0b2f22",
+    "border": "#dfe8dd",
+    "footerBg": "#062d21",
+    "footerText": "#ffffff",
+    "footerMuted": "#b7c8c1"
+  },
+  "typography": {
+    "headingFont": "Inter Display",
+    "bodyFont": "Inter",
+    "navFont": "Inter",
+    "buttonFont": "Inter",
+    "headingWeight": 760,
+    "bodyWeight": 600,
+    "lineHeight": 1.45,
+    "letterSpacing": "0em"
+  },
+  "brand": {
+    "name": "Rivergate",
+    "descriptor": "Plumbing & Home Repair",
+    "email": "hello@rivergateplumbing.co.uk",
+    "phone": "020 8058 4127",
+    "address": "42 Mill Lane, Stratford, London E15 2RB",
+    "hours": "Mon-Sat 7:00am-8:00pm, emergency call-outs 24/7",
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/rivergateplumbing" },
+      { "label": "Facebook", "href": "https://facebook.com/rivergateplumbing" },
+      { "label": "YouTube", "href": "https://youtube.com" }
+    ]
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "services" },
+      { "label": "Team", "href": "team" },
+      { "label": "Testimonials", "href": "testimonials" },
+      { "label": "Blogs", "href": "blogs" }
+    ],
+    "buttonLabel": "Get Free Estimate",
+    "buttonHref": "contact"
+  },
+  "hero": {
+    "eyebrow": "Trusted by thousands of homeowners",
+    "title": "Fast reliable plumbing solutions you can trust",
+    "body": "Plumbing, boiler care, drainage and complete home repairs by certified local professionals.",
+    "primaryCta": { "label": "Get Free Estimate", "href": "contact" },
+    "features": ["Certified and trained technicians", "Quality tools and professional service"],
+    "rating": { "value": "1,490+", "label": "Happy customers", "detail": "Rated excellent across London" },
+    "image": "/templates/rivergate-plumbing/assets/hero-plumber-transparent.webp",
+    "imageAlt": "Smiling Rivergate plumber in green uniform"
+  },
+  "logos": ["Quanta", "BrightHome", "Nestcare", "Lockstone", "Pipebase", "Nimble"],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Since 2015, we have been delivering trusted home repair and maintenance services.",
+    "body": "Our skilled team keeps homes safe, functional and comfortable with a careful balance of reliability, tidy workmanship and fast response times.",
+    "images": [
+      { "src": "/templates/rivergate-plumbing/assets/sink-repair.webp", "alt": "Plumber repairing a kitchen sink" },
+      { "src": "/templates/rivergate-plumbing/assets/boiler-service.webp", "alt": "Engineer servicing a boiler" },
+      { "src": "/templates/rivergate-plumbing/assets/tap-repair.webp", "alt": "Plumber adjusting bathroom taps" },
+      { "src": "/templates/rivergate-plumbing/assets/pipe-fitting.webp", "alt": "Apprentice fitting copper pipework" }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why choose us",
+    "title": "We are committed to delivering reliable, high-quality services.",
+    "buttonLabel": "Get Free Estimate",
+    "buttonHref": "contact",
+    "items": [
+      { "title": "Experienced Professionals", "text": "Qualified technicians bring hands-on experience to every job." },
+      { "title": "Fast Reliable Service", "text": "We respond quickly and finish work carefully without cutting corners." },
+      { "title": "Affordable Pricing", "text": "Clear estimates, fair rates and no hidden call-out surprises." },
+      { "title": "Customer Satisfaction", "text": "We leave homes clean, explain the work and follow up properly." }
+    ],
+    "images": [
+      { "src": "/templates/rivergate-plumbing/assets/home-visit.webp", "alt": "Plumber greeting homeowner" },
+      { "src": "/templates/rivergate-plumbing/assets/family-check.webp", "alt": "Family speaking with a home repair specialist" },
+      { "src": "/templates/rivergate-plumbing/assets/gutter-cleaning.webp", "alt": "Technician clearing roof guttering" }
+    ]
+  },
+  "story": {
+    "eyebrow": "Who we are",
+    "title": "Committed to quality home repair",
+    "body": "Rivergate is a professional home service company delivering plumbing, boiler, drainage and maintenance support for busy households.",
+    "buttonLabel": "Get Free Estimate",
+    "buttonHref": "contact",
+    "image": "/templates/rivergate-plumbing/assets/van-engineer.webp",
+    "imageAlt": "Rivergate engineer beside service van"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Complete home services under one roof",
+    "body": "Our technicians are trained to handle everyday repairs and urgent call-outs across London homes.",
+    "buttonLabel": "Get Service",
+    "buttonHref": "contact",
+    "items": [
+      { "title": "Appliance Repair", "text": "Leak checks, fittings, valves and essential home appliance repairs.", "image": "/templates/rivergate-plumbing/assets/sink-repair.webp", "imageAlt": "Kitchen plumbing repair" },
+      { "title": "Plumbing Services", "text": "Pipe leaks, blocked drains, bathroom fittings and water pump repair.", "image": "/templates/rivergate-plumbing/assets/tap-repair.webp", "imageAlt": "Bathroom tap repair" },
+      { "title": "Boiler Care", "text": "Boiler servicing, pressure faults, radiator checks and heating advice.", "image": "/templates/rivergate-plumbing/assets/boiler-service.webp", "imageAlt": "Boiler service" }
+    ],
+    "benefits": [
+      { "title": "Fast Response", "text": "Quick scheduling and emergency visits when water or heating cannot wait." },
+      { "title": "Experienced Professionals", "text": "Friendly engineers with proper tools, training and clean work habits." },
+      { "title": "Transparent Pricing", "text": "Simple estimates before work starts, with practical repair options." }
+    ]
+  },
+  "focus": {
+    "title": "Rivergate focuses on delivering reliable, customer-first plumbing solutions.",
+    "body": "We keep communication simple, arrive prepared and make sure every repair is explained before we leave.",
+    "primaryCta": { "label": "Call Rivergate", "href": "contact" },
+    "secondaryCta": { "label": "View Services", "href": "services" },
+    "image": "/templates/rivergate-plumbing/assets/family-check.webp",
+    "imageAlt": "Happy household after plumbing visit"
+  },
+  "testimonial": {
+    "eyebrow": "Testimonials",
+    "title": "What our customers say",
+    "quote": "Rivergate sorted our leaking kitchen pipe quickly and professionally. The engineer explained every step and left the cupboards cleaner than when he arrived.",
+    "name": "Charlotte Green",
+    "role": "Homeowner in Leyton",
+    "stat": "100+",
+    "statLabel": "Verified local reviews",
+    "image": "/templates/rivergate-plumbing/assets/home-visit.webp",
+    "imageAlt": "Homeowner speaking with plumber"
+  },
+  "team": {
+    "eyebrow": "Meet the experts",
+    "title": "Behind our services",
+    "items": [
+      { "name": "Owen Price", "role": "Senior Plumbing Engineer", "image": "/templates/rivergate-plumbing/assets/owen-price.webp", "imageAlt": "Owen Price plumbing engineer" },
+      { "name": "Liam Brooks", "role": "Boiler & Heating Specialist", "image": "/templates/rivergate-plumbing/assets/liam-brooks.webp", "imageAlt": "Liam Brooks heating specialist" },
+      { "name": "Arthur Hale", "role": "Drainage Technician", "image": "/templates/rivergate-plumbing/assets/arthur-hale.webp", "imageAlt": "Arthur Hale drainage technician" },
+      { "name": "Maya Patel", "role": "Repairs Coordinator", "image": "/templates/rivergate-plumbing/assets/maya-patel.webp", "imageAlt": "Maya Patel repairs coordinator" }
+    ]
+  },
+  "cta": {
+    "title": "Reliable plumbing solutions you can trust.",
+    "body": "Book a visit, ask a question or request a free estimate from our local team.",
+    "primaryCta": { "label": "Get Free Estimate", "href": "contact" },
+    "secondaryCta": { "label": "Call 020 8058 4127", "href": "contact" }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "How soon can you send a plumber?", "answer": "Most planned visits can be arranged within 24-48 hours, with emergency call-outs available." },
+      { "question": "Do you provide an estimate before work starts?", "answer": "Yes. We explain the likely repair, parts and labour before beginning any paid work." },
+      { "question": "Can you repair boilers and heating systems?", "answer": "Yes, our heating specialists handle boiler servicing, pressure issues and radiator faults." },
+      { "question": "Do you cover my area?", "answer": "We cover East, North and Central London, with nearby appointments by request." },
+      { "question": "Are your engineers insured?", "answer": "Yes. Rivergate engineers are insured, trained and background checked." }
+    ]
+  },
+  "blogs": {
+    "eyebrow": "Blogs",
+    "title": "Read articles",
+    "buttonLabel": "View all",
+    "items": [
+      { "title": "How regular maintenance can save energy", "image": "/templates/rivergate-plumbing/assets/tools-detail.webp", "imageAlt": "Plumbing tools and pipe fittings" },
+      { "title": "Plumbing problems every homeowner should fix early", "image": "/templates/rivergate-plumbing/assets/gutter-cleaning.webp", "imageAlt": "Technician maintaining exterior guttering" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Rivergate",
+    "body": "Tell us what needs fixing and we will help you choose the right next step.",
+    "fields": ["Your name", "Email address", "Phone number", "What do you need help with?"],
+    "buttonLabel": "Send Request"
+  },
+  "footer": {
+    "copyright": "© 2026 Rivergate Plumbing. All rights reserved.",
+    "links": [
+      { "label": "Services", "href": "services" },
+      { "label": "Team", "href": "team" },
+      { "label": "Testimonials", "href": "testimonials" },
+      { "label": "Privacy", "href": "privacy" }
+    ]
+  },
+  "pages": {
+    "services": { "title": "Practical plumbing and home repair services.", "body": "From blocked drains to boiler care, Rivergate gives homeowners one tidy team for essential maintenance." },
+    "team": { "title": "Experienced local technicians.", "body": "Meet the trained team behind Rivergate's calm, reliable repair service." },
+    "testimonials": { "title": "Trusted by households across London.", "body": "Our work is built around clear communication, punctual visits and repairs that last." },
+    "blogs": { "title": "Maintenance advice for safer homes.", "body": "Simple guides to help homeowners spot issues early and keep systems running properly." },
+    "contact": { "title": "Request a free estimate.", "body": "Share a few details about the issue and our team will get back to you quickly." },
+    "privacy": { "title": "Privacy Policy", "body": "Replace this placeholder with the privacy policy required for your plumbing business before publishing." }
+  }
+}
