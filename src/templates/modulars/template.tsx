@@ -96,7 +96,7 @@ export default function ModularsTemplate() {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-black/10">
-              {data.about.stats.map((stat, idx) => (
+              {data.about.stats.map((stat: any, idx: number) => (
                 <div key={idx}>
                   <div className="text-3xl font-light mb-2">{stat.value}</div>
                   <div className="text-sm font-medium opacity-60">{stat.label}</div>
@@ -122,7 +122,7 @@ export default function ModularsTemplate() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {data.services.items.map((item, idx) => (
+                {data.services.items.map((item: any, idx: number) => (
                     <div key={idx} className="group">
                         <div className="aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-black/5">
                             <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -145,7 +145,7 @@ export default function ModularsTemplate() {
           </div>
           
           <div className="masonry-grid">
-              {data.projects.images.map((img, idx) => (
+              {data.projects.images.map((img: string, idx: number) => (
                   <img key={idx} src={img} alt={`Project ${idx+1}`} className="w-full rounded-lg" />
               ))}
           </div>
@@ -182,7 +182,7 @@ export default function ModularsTemplate() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {data.testimonials.items.map((item, idx) => (
+            {data.testimonials.items.map((item: any, idx: number) => (
                 <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-black/5">
                     <p className="text-lg italic leading-relaxed mb-8">"{item.quote}"</p>
                     <div>
@@ -207,7 +207,7 @@ export default function ModularsTemplate() {
             <div className="bg-white p-8 md:p-12 rounded-2xl border border-black/10">
                 <h3 className="text-2xl mb-8 pb-8 border-b border-black/10">{data.comparison.traditional.title}</h3>
                 <ul className="space-y-6">
-                    {data.comparison.traditional.points.map((point, idx) => (
+                    {data.comparison.traditional.points.map((point: any, idx: number) => (
                         <li key={idx} className="flex items-start gap-4 opacity-70">
                             <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
                             <span>{point}</span>
@@ -239,7 +239,7 @@ export default function ModularsTemplate() {
                 <h2 className="text-3xl md:text-5xl mb-6">{data.faq.title}</h2>
             </div>
             <div className="space-y-4">
-                {data.faq.items.map((item, idx) => (
+                {data.faq.items.map((item: any, idx: number) => (
                     <details key={idx} className="faq-details group border-b border-black/10 pb-4">
                         <summary className="font-medium text-lg flex justify-between items-center outline-none">
                             {item.question}
@@ -321,7 +321,7 @@ export default function ModularsTemplate() {
             <div>
                 <h4 className="font-medium mb-4">Company</h4>
                 <ul className="space-y-3 opacity-60">
-                    {data.footer.links.map((link, idx) => (
+                    {data.footer.links.map((link: any, idx: number) => (
                         <li key={idx}><a href={link.href} className="hover:text-black transition-colors">{link.label}</a></li>
                     ))}
                 </ul>
@@ -329,7 +329,7 @@ export default function ModularsTemplate() {
             <div>
                 <h4 className="font-medium mb-4">Services</h4>
                 <ul className="space-y-3 opacity-60">
-                    {data.footer.services.map((service, idx) => (
+                    {data.footer.services.map((service: string, idx: number) => (
                         <li key={idx}>{service}</li>
                     ))}
                 </ul>
@@ -337,7 +337,7 @@ export default function ModularsTemplate() {
             <div>
                 <h4 className="font-medium mb-4">Contact</h4>
                 <ul className="space-y-3 opacity-60">
-                    {data.footer.contact.map((item, idx) => (
+                    {data.footer.contact.map((item: string, idx: number) => (
                         <li key={idx}>{item}</li>
                     ))}
                 </ul>

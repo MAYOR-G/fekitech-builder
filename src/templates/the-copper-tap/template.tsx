@@ -1,5 +1,4 @@
 import React from 'react';
-import { cn } from "@/lib/utils";
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
 import editableData from "./editable.json";
 import "./index.css";
@@ -94,9 +93,9 @@ export default function TheCopperTap({ data }: { data: TemplateData }) {
           <p className="text-lg">{content.happyHour.days}</p>
         </div>
         <div className="w-full md:w-1/2 h-full min-h-[400px]">
-           {/* @ts-ignore - happyHour image is added in editable json */}
+           {/* @ts-expect-error - happyHour image is added in editable json */}
            {content.happyHour.image && (
-              // @ts-ignore
+              // @ts-expect-error
               <img src={content.happyHour.image} alt="Happy Hour" className="w-full h-full object-cover min-h-[400px]" />
            )}
         </div>
