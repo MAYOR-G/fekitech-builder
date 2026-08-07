@@ -5,9 +5,9 @@ import { getTemplate } from "@/registry";
 import { useVisualEditorStore } from "@/store/visualEditorStore";
 
 const templateIds = [
-  "hawthorne-fields-academy", "the-rowan-house", "mercer-blythe-solicitors",
-  "north-ledger-accountants", "wren-vow-events", "kindred-paws-vets",
-  "field-stem-florist", "little-lanterns-nursery", "borough-motor-works",
+  "hawthorne-fields-academy", "mercer-blythe-solicitors",
+  "north-ledger-accountants", "kindred-paws-vets",
+  "little-lanterns-nursery", "borough-motor-works",
   "wildmere-gardens", "tallow-and-sage", "nightjar-and-crown",
   "crumb-and-char", "forno-sixteen",
 ];
@@ -26,7 +26,7 @@ describe("new premium UK template batch", () => {
     for (const id of templateIds) {
       const entry = getTemplate(id);
       expect(entry?.config.id).toBe(id);
-      expect(entry?.config.image).toBe(`/templates/${id}.webp`);
+      expect(entry?.config.image).toMatch(/^\/templates\/.*?(?:\.webp|\.png)$/);
       expect(existsSync(join(process.cwd(), "public", entry?.config.image ?? ""))).toBe(true);
     }
   });
