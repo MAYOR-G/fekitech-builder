@@ -1,0 +1,9 @@
+[data-template-id="hawthorne-fields-academy"] .ukb-header{background:#fff;border-bottom:4px solid var(--ukb-accent)}
+[data-template-id="hawthorne-fields-academy"] .ukb-hero-academy{background:var(--ukb-ink);color:#fff;display:grid;grid-template-columns:90px 1fr 1.15fr;min-height:720px}
+[data-template-id="hawthorne-fields-academy"] .ukb-hero-academy>aside{align-items:center;border-right:1px solid #ffffff44;display:flex;flex-direction:column;gap:20px;justify-content:center;letter-spacing:.15em;writing-mode:vertical-rl}
+[data-template-id="hawthorne-fields-academy"] .ukb-hero-copy{padding:90px 7vw}[data-template-id="hawthorne-fields-academy"] .ukb-hero h1{font-size:clamp(3.2rem,5.3vw,6rem)}
+[data-template-id="hawthorne-fields-academy"] .ukb-hero-media{margin:32px;min-height:620px}[data-template-id="hawthorne-fields-academy"] .ukb-hero-secondary{border-color:var(--ukb-accent);left:-40px;transform:rotate(-4deg)}
+[data-template-id="hawthorne-fields-academy"] .ukb-hero-media>strong{background:var(--ukb-accent);bottom:0;padding:22px;position:absolute;right:0}
+[data-template-id="hawthorne-fields-academy"] .ukb-intro{grid-template-columns:1.2fr .8fr}[data-template-id="hawthorne-fields-academy"] .ukb-card-grid{counter-reset:school;grid-template-columns:repeat(2,1fr)}[data-template-id="hawthorne-fields-academy"] .ukb-card-grid article{border-left:8px solid var(--ukb-accent);min-height:240px}
+[data-template-id="hawthorne-fields-academy"] .ukb-gallery-grid{grid-template-columns:2fr 1fr 1fr}[data-template-id="hawthorne-fields-academy"] .ukb-quotes blockquote{background:var(--ukb-surface);padding:32px}
+@media(max-width:900px){[data-template-id="hawthorne-fields-academy"] .ukb-hero-academy{grid-template-columns:1fr}[data-template-id="hawthorne-fields-academy"] .ukb-hero-academy>aside{display:none}}

@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fffdf7",
+      "surface": "#f3efe4",
+      "card": "#ffffff",
+      "ink": "#182019",
+      "muted": "#6d746c",
+      "accent": "#b12f28",
+      "accentSecondary": "#d3a85d",
+      "line": "#d9d4c9"
+    },
+    "typography": {
+      "heading": "'Times New Roman',serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Diamond Restaurant",
+    "strapline": "Modern British dining · London",
+    "logo": "/templates/tallow-and-sage/assets/logo.svg",
+    "logoAlt": "Diamond Restaurant logo",
+    "phone": "020 7946 0377",
+    "phoneHref": "tel:+442079460377",
+    "email": "hello@halcyontable.co.uk",
+    "emailHref": "mailto:hello@halcyontable.co.uk",
+    "address": "16 Market Lane, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Menu",
+        "page": "menu"
+      },
+      {
+        "label": "The Kitchen",
+        "page": "the-kitchen"
+      },
+      {
+        "label": "Private Dining",
+        "page": "private-dining"
+      },
+      {
+        "label": "Journal",
+        "page": "journal"
+      },
+      {
+        "label": "Reservations",
+        "page": "reservations"
+      }
+    ],
+    "ctaLabel": "Reservations",
+    "ctaPage": "reservations"
+  },
+  "hero": {
+    "eyebrow": "Modern British dining",
+    "title": "The season, served with restraint.",
+    "text": "Produce-led tasting menus, generous hospitality and a dining room shaped by British craft.",
+    "primaryLabel": "Reservations",
+    "primaryPage": "reservations",
+    "secondaryLabel": "Menu",
+    "secondaryPage": "menu",
+    "image": "/templates/tallow-and-sage/assets/halcyon-restaurant-bar-hero.png",
+    "imageAlt": "Signature food and atmosphere at Halcyon Table",
+    "imageSecondary": "/templates/tallow-and-sage/assets/halcyon-dining.webp",
+    "imageSecondaryAlt": "A second view of Halcyon Table",
+    "note": "Independent · UK produce · Walk-ins welcome"
+  },
+  "intro": {
+    "eyebrow": "Our approach",
+    "title": "Made with attention. Served without fuss.",
+    "text": "We care about ingredients, timing and the feeling around the table. The result is confident food and genuinely warm service.",
+    "image": "/templates/tallow-and-sage/assets/halcyon-chef.webp",
+    "imageAlt": "The kitchen at Halcyon Table",
+    "stats": [
+      {
+        "value": "Local",
+        "label": "Seasonal suppliers"
+      },
+      {
+        "value": "Daily",
+        "label": "Prepared in house"
+      },
+      {
+        "value": "Late",
+        "label": "Tables into the evening"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Choose well",
+    "title": "A menu with a point of view.",
+    "items": [
+      {
+        "icon": "Utensils",
+        "title": "Tasting Menu",
+        "text": "Prepared to order with ingredients chosen for flavour.",
+        "meta": "House signature"
+      },
+      {
+        "icon": "Star",
+        "title": "Lunch",
+        "text": "A concise favourite with a distinctive house finish.",
+        "meta": "Seasonal"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Wine Pairing",
+        "text": "Made for sharing, returning and recommending.",
+        "meta": "Guest favourite"
+      },
+      {
+        "icon": "Check",
+        "title": "Private Table",
+        "text": "Ask the team about today's additions.",
+        "meta": "Available today"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "From the pass",
+    "title": "Come hungry. Leave happy.",
+    "images": [
+      {
+        "src": "/templates/tallow-and-sage/assets/halcyon-dining.webp",
+        "alt": "Halcyon Table food image 1",
+        "caption": "Tasting Menu"
+      },
+      {
+        "src": "/templates/tallow-and-sage/assets/halcyon-chef.webp",
+        "alt": "Halcyon Table food image 2",
+        "caption": "Lunch"
+      },
+      {
+        "src": "/templates/tallow-and-sage/assets/halcyon-chicken.webp",
+        "alt": "Halcyon Table food image 3",
+        "caption": "Wine Pairing"
+      },
+      {
+        "src": "/templates/tallow-and-sage/assets/halcyon-table-hero.webp",
+        "alt": "Halcyon Table food image 4",
+        "caption": "Private Table"
+      },
+      {
+        "src": "/templates/tallow-and-sage/assets/halcyon-restaurant-bar-hero.png",
+        "alt": "Halcyon Table food image 5",
+        "caption": "The room"
+      }
+    ]
+  },
+  "feature": {
+    "label": "Today at the house",
+    "items": [
+      "Freshly made",
+      "Independent",
+      "UK suppliers",
+      "Good company"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "At the table",
+    "title": "The sort of place people tell friends about.",
+    "items": [
+      {
+        "quote": "Confident food, a brilliant room and service that never tries too hard.",
+        "name": "Maya · Manchester"
+      },
+      {
+        "quote": "The menu is tight, the flavours are huge and the welcome is real.",
+        "name": "Dan · Liverpool"
+      },
+      {
+        "quote": "We booked again before the pudding arrived.",
+        "name": "Ella · London"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your table",
+    "title": "Join us at Halcyon Table.",
+    "text": "Choose your time, tell us what you need and leave the rest with the team.",
+    "label": "Reservations",
+    "page": "reservations"
+  },
+  "footer": {
+    "note": "Produce-led tasting menus, generous hospitality and a dining room shaped by British craft.",
+    "legal": "© 2026 Halcyon Table. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "TikTok",
+        "href": "https://tiktok.com"
+      }
+    ]
+  },
+  "pages": {
+    "menu": {
+      "eyebrow": "Halcyon Table / Menu",
+      "title": "Menu",
+      "body": "Everything you need to know about menu at Halcyon Table, from today's choices to the easiest way to join us.",
+      "image": "/templates/tallow-and-sage/assets/halcyon-dining.webp",
+      "imageAlt": "Menu at Halcyon Table",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Menu highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "the-kitchen": {
+      "eyebrow": "Halcyon Table / The Kitchen",
+      "title": "The Kitchen",
+      "body": "Everything you need to know about the kitchen at Halcyon Table, from today's choices to the easiest way to join us.",
+      "image": "/templates/tallow-and-sage/assets/halcyon-chef.webp",
+      "imageAlt": "The Kitchen at Halcyon Table",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "The Kitchen highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "private-dining": {
+      "eyebrow": "Halcyon Table / Private Dining",
+      "title": "Private Dining",
+      "body": "Everything you need to know about private dining at Halcyon Table, from today's choices to the easiest way to join us.",
+      "image": "/templates/tallow-and-sage/assets/halcyon-chicken.webp",
+      "imageAlt": "Private Dining at Halcyon Table",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Private Dining highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "journal": {
+      "eyebrow": "Halcyon Table / Journal",
+      "title": "Journal",
+      "body": "Everything you need to know about journal at Halcyon Table, from today's choices to the easiest way to join us.",
+      "image": "/templates/tallow-and-sage/assets/halcyon-table-hero.webp",
+      "imageAlt": "Journal at Halcyon Table",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Journal highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "reservations": {
+      "eyebrow": "Halcyon Table / Reservations",
+      "title": "Reservations",
+      "body": "Everything you need to know about reservations at Halcyon Table, from today's choices to the easiest way to join us.",
+      "image": "/templates/tallow-and-sage/assets/halcyon-restaurant-bar-hero.png",
+      "imageAlt": "Reservations at Halcyon Table",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Reservations highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "intro",
+    "feature",
+    "gallery",
+    "services",
+    "testimonials",
+    "cta"
+  ]
+}

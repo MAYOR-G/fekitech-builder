@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#eff8f5",
+      "surface": "#dff1eb",
+      "card": "#ffffff",
+      "ink": "#153b3a",
+      "muted": "#577673",
+      "accent": "#008b78",
+      "accentSecondary": "#ef806f",
+      "line": "#c8ded8"
+    },
+    "typography": {
+      "heading": "Arial Rounded MT Bold,Arial,sans-serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Care Vets",
+    "strapline": "Independent vets · Bristol",
+    "logo": "/templates/kindred-paws-vets/assets/logo.svg",
+    "logoAlt": "Care Vets logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@kindredpawsvets.co.uk",
+    "emailHref": "mailto:hello@kindredpawsvets.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      },
+      {
+        "label": "Our Team",
+        "page": "our-team"
+      },
+      {
+        "label": "Pet Advice",
+        "page": "pet-advice"
+      },
+      {
+        "label": "About",
+        "page": "about"
+      },
+      {
+        "label": "Book",
+        "page": "book"
+      }
+    ],
+    "ctaLabel": "Book",
+    "ctaPage": "book"
+  },
+  "hero": {
+    "eyebrow": "Care for every chapter",
+    "title": "Good medicine. Gentler visits.",
+    "text": "An independent Bristol veterinary team providing everyday care, diagnostics and clear advice.",
+    "primaryLabel": "Book",
+    "primaryPage": "book",
+    "secondaryLabel": "Services",
+    "secondaryPage": "services",
+    "image": "/templates/kindred-paws-vets/assets/photo-1.webp",
+    "imageAlt": "Kindred Paws main view",
+    "imageSecondary": "/templates/kindred-paws-vets/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Kindred Paws",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Kindred Paws combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/kindred-paws-vets/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Kindred Paws",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Health Checks",
+        "text": "Focused health checks support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Dental Care",
+        "text": "Focused dental care support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Diagnostics",
+        "text": "Focused diagnostics support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Senior Pets",
+        "text": "Focused senior pets support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/kindred-paws-vets/assets/photo-2.webp",
+        "alt": "Kindred Paws gallery image 1",
+        "caption": "Health Checks"
+      },
+      {
+        "src": "/templates/kindred-paws-vets/assets/photo-3.webp",
+        "alt": "Kindred Paws gallery image 2",
+        "caption": "Dental Care"
+      },
+      {
+        "src": "/templates/kindred-paws-vets/assets/photo-4.webp",
+        "alt": "Kindred Paws gallery image 3",
+        "caption": "Diagnostics"
+      },
+      {
+        "src": "/templates/kindred-paws-vets/assets/photo-5.webp",
+        "alt": "Kindred Paws gallery image 4",
+        "caption": "Senior Pets"
+      },
+      {
+        "src": "/templates/kindred-paws-vets/assets/photo-6.webp",
+        "alt": "Kindred Paws gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Kindred Paws.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Book",
+    "page": "book"
+  },
+  "footer": {
+    "note": "An independent Bristol veterinary team providing everyday care, diagnostics and clear advice.",
+    "legal": "© 2026 Kindred Paws. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "services": {
+      "eyebrow": "Kindred Paws · Services",
+      "title": "Services",
+      "body": "Explore services at Kindred Paws. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/kindred-paws-vets/assets/photo-2.webp",
+      "imageAlt": "Services at Kindred Paws",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Services overview",
+          "text": "A concise introduction to our services approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "our-team": {
+      "eyebrow": "Kindred Paws · Our Team",
+      "title": "Our Team",
+      "body": "Explore our team at Kindred Paws. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/kindred-paws-vets/assets/photo-3.webp",
+      "imageAlt": "Our Team at Kindred Paws",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Our Team overview",
+          "text": "A concise introduction to our our team approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "pet-advice": {
+      "eyebrow": "Kindred Paws · Pet Advice",
+      "title": "Pet Advice",
+      "body": "Explore pet advice at Kindred Paws. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/kindred-paws-vets/assets/photo-4.webp",
+      "imageAlt": "Pet Advice at Kindred Paws",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Pet Advice overview",
+          "text": "A concise introduction to our pet advice approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Kindred Paws · About",
+      "title": "About",
+      "body": "Explore about at Kindred Paws. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/kindred-paws-vets/assets/photo-5.webp",
+      "imageAlt": "About at Kindred Paws",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "About overview",
+          "text": "A concise introduction to our about approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "book": {
+      "eyebrow": "Kindred Paws · Book",
+      "title": "Book",
+      "body": "Explore book at Kindred Paws. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/kindred-paws-vets/assets/photo-6.webp",
+      "imageAlt": "Book at Kindred Paws",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Book overview",
+          "text": "A concise introduction to our book approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "intro",
+    "services",
+    "feature",
+    "gallery",
+    "cta",
+    "testimonials"
+  ]
+}

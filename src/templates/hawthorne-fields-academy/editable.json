@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f4f0e6",
+      "surface": "#fffdf8",
+      "card": "#ffffff",
+      "ink": "#14243b",
+      "muted": "#5e6873",
+      "accent": "#b98832",
+      "accentSecondary": "#8ca0b8",
+      "line": "#d9d2c4"
+    },
+    "typography": {
+      "heading": "Georgia,serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Peak Academy",
+    "strapline": "Independent day school · York",
+    "logo": "/templates/hawthorne-fields-academy/assets/logo.svg",
+    "logoAlt": "Peak Academy logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@hawthornefieldsacademy.co.uk",
+    "emailHref": "mailto:hello@hawthornefieldsacademy.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "About",
+        "page": "about"
+      },
+      {
+        "label": "Admissions",
+        "page": "admissions"
+      },
+      {
+        "label": "Learning",
+        "page": "learning"
+      },
+      {
+        "label": "School Life",
+        "page": "school-life"
+      },
+      {
+        "label": "Visit",
+        "page": "visit"
+      }
+    ],
+    "ctaLabel": "Visit",
+    "ctaPage": "visit"
+  },
+  "hero": {
+    "eyebrow": "A thoughtful education",
+    "title": "Confidence to question. Character to contribute.",
+    "text": "An independent school for ages 4–18, pairing ambitious teaching with a warm, grounded community.",
+    "primaryLabel": "Visit",
+    "primaryPage": "visit",
+    "secondaryLabel": "About",
+    "secondaryPage": "about",
+    "image": "/templates/hawthorne-fields-academy/assets/photo-1.webp",
+    "imageAlt": "Hawthorne Fields Academy main view",
+    "imageSecondary": "/templates/hawthorne-fields-academy/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Hawthorne Fields Academy",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Hawthorne Fields Academy combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/hawthorne-fields-academy/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Hawthorne Fields Academy",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Early Years",
+        "text": "Focused early years support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Senior School",
+        "text": "Focused senior school support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Sixth Form",
+        "text": "Focused sixth form support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Pastoral Care",
+        "text": "Focused pastoral care support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/hawthorne-fields-academy/assets/photo-2.webp",
+        "alt": "Hawthorne Fields Academy gallery image 1",
+        "caption": "Early Years"
+      },
+      {
+        "src": "/templates/hawthorne-fields-academy/assets/photo-3.webp",
+        "alt": "Hawthorne Fields Academy gallery image 2",
+        "caption": "Senior School"
+      },
+      {
+        "src": "/templates/hawthorne-fields-academy/assets/photo-4.webp",
+        "alt": "Hawthorne Fields Academy gallery image 3",
+        "caption": "Sixth Form"
+      },
+      {
+        "src": "/templates/hawthorne-fields-academy/assets/photo-5.webp",
+        "alt": "Hawthorne Fields Academy gallery image 4",
+        "caption": "Pastoral Care"
+      },
+      {
+        "src": "/templates/hawthorne-fields-academy/assets/photo-6.webp",
+        "alt": "Hawthorne Fields Academy gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Hawthorne Fields Academy.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Visit",
+    "page": "visit"
+  },
+  "footer": {
+    "note": "An independent school for ages 4–18, pairing ambitious teaching with a warm, grounded community.",
+    "legal": "© 2026 Hawthorne Fields Academy. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "Hawthorne Fields Academy · About",
+      "title": "About",
+      "body": "Explore about at Hawthorne Fields Academy. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/hawthorne-fields-academy/assets/photo-2.webp",
+      "imageAlt": "About at Hawthorne Fields Academy",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "About overview",
+          "text": "A concise introduction to our about approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "admissions": {
+      "eyebrow": "Hawthorne Fields Academy · Admissions",
+      "title": "Admissions",
+      "body": "Explore admissions at Hawthorne Fields Academy. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/hawthorne-fields-academy/assets/photo-3.webp",
+      "imageAlt": "Admissions at Hawthorne Fields Academy",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Admissions overview",
+          "text": "A concise introduction to our admissions approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "learning": {
+      "eyebrow": "Hawthorne Fields Academy · Learning",
+      "title": "Learning",
+      "body": "Explore learning at Hawthorne Fields Academy. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/hawthorne-fields-academy/assets/photo-4.webp",
+      "imageAlt": "Learning at Hawthorne Fields Academy",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Learning overview",
+          "text": "A concise introduction to our learning approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "school-life": {
+      "eyebrow": "Hawthorne Fields Academy · School Life",
+      "title": "School Life",
+      "body": "Explore school life at Hawthorne Fields Academy. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/hawthorne-fields-academy/assets/photo-5.webp",
+      "imageAlt": "School Life at Hawthorne Fields Academy",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "School Life overview",
+          "text": "A concise introduction to our school life approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "visit": {
+      "eyebrow": "Hawthorne Fields Academy · Visit",
+      "title": "Visit",
+      "body": "Explore visit at Hawthorne Fields Academy. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/hawthorne-fields-academy/assets/photo-6.webp",
+      "imageAlt": "Visit at Hawthorne Fields Academy",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Visit overview",
+          "text": "A concise introduction to our visit approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "feature",
+    "intro",
+    "services",
+    "gallery",
+    "testimonials",
+    "cta"
+  ]
+}

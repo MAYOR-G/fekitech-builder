@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#edf5f4",
+      "surface": "#dceceb",
+      "card": "#ffffff",
+      "ink": "#102a30",
+      "muted": "#557078",
+      "accent": "#155eef",
+      "accentSecondary": "#52c7a5",
+      "line": "#c7d9d8"
+    },
+    "typography": {
+      "heading": "Arial,sans-serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Clear Accountants",
+    "strapline": "Chartered accountants · Manchester",
+    "logo": "/templates/north-ledger-accountants/assets/logo.svg",
+    "logoAlt": "Clear Accountants logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@northledgeraccountants.co.uk",
+    "emailHref": "mailto:hello@northledgeraccountants.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      },
+      {
+        "label": "Sectors",
+        "page": "sectors"
+      },
+      {
+        "label": "Team",
+        "page": "team"
+      },
+      {
+        "label": "Insights",
+        "page": "insights"
+      },
+      {
+        "label": "Contact",
+        "page": "contact"
+      }
+    ],
+    "ctaLabel": "Contact",
+    "ctaPage": "contact"
+  },
+  "hero": {
+    "eyebrow": "Numbers with direction",
+    "title": "See the next move before it becomes urgent.",
+    "text": "Practical accounts, tax and finance support for ambitious owner-led businesses across the North.",
+    "primaryLabel": "Contact",
+    "primaryPage": "contact",
+    "secondaryLabel": "Services",
+    "secondaryPage": "services",
+    "image": "/templates/north-ledger-accountants/assets/photo-1.webp",
+    "imageAlt": "North Ledger main view",
+    "imageSecondary": "/templates/north-ledger-accountants/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of North Ledger",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "North Ledger combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/north-ledger-accountants/assets/photo-3.webp",
+    "imageAlt": "The team and setting at North Ledger",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Accounts & Tax",
+        "text": "Focused accounts & tax support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Virtual FD",
+        "text": "Focused virtual fd support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Payroll",
+        "text": "Focused payroll support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Growth Planning",
+        "text": "Focused growth planning support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/north-ledger-accountants/assets/photo-2.webp",
+        "alt": "North Ledger gallery image 1",
+        "caption": "Accounts & Tax"
+      },
+      {
+        "src": "/templates/north-ledger-accountants/assets/photo-3.webp",
+        "alt": "North Ledger gallery image 2",
+        "caption": "Virtual FD"
+      },
+      {
+        "src": "/templates/north-ledger-accountants/assets/photo-4.webp",
+        "alt": "North Ledger gallery image 3",
+        "caption": "Payroll"
+      },
+      {
+        "src": "/templates/north-ledger-accountants/assets/photo-5.webp",
+        "alt": "North Ledger gallery image 4",
+        "caption": "Growth Planning"
+      },
+      {
+        "src": "/templates/north-ledger-accountants/assets/photo-6.webp",
+        "alt": "North Ledger gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to North Ledger.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Contact",
+    "page": "contact"
+  },
+  "footer": {
+    "note": "Practical accounts, tax and finance support for ambitious owner-led businesses across the North.",
+    "legal": "© 2026 North Ledger. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "services": {
+      "eyebrow": "North Ledger · Services",
+      "title": "Services",
+      "body": "Explore services at North Ledger. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/north-ledger-accountants/assets/photo-2.webp",
+      "imageAlt": "Services at North Ledger",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Services overview",
+          "text": "A concise introduction to our services approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "sectors": {
+      "eyebrow": "North Ledger · Sectors",
+      "title": "Sectors",
+      "body": "Explore sectors at North Ledger. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/north-ledger-accountants/assets/photo-3.webp",
+      "imageAlt": "Sectors at North Ledger",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Sectors overview",
+          "text": "A concise introduction to our sectors approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "North Ledger · Team",
+      "title": "Team",
+      "body": "Explore team at North Ledger. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/north-ledger-accountants/assets/photo-4.webp",
+      "imageAlt": "Team at North Ledger",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Team overview",
+          "text": "A concise introduction to our team approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "insights": {
+      "eyebrow": "North Ledger · Insights",
+      "title": "Insights",
+      "body": "Explore insights at North Ledger. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/north-ledger-accountants/assets/photo-5.webp",
+      "imageAlt": "Insights at North Ledger",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Insights overview",
+          "text": "A concise introduction to our insights approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "North Ledger · Contact",
+      "title": "Contact",
+      "body": "Explore contact at North Ledger. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/north-ledger-accountants/assets/photo-6.webp",
+      "imageAlt": "Contact at North Ledger",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Contact overview",
+          "text": "A concise introduction to our contact approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "feature",
+    "services",
+    "intro",
+    "testimonials",
+    "cta",
+    "gallery"
+  ]
+}

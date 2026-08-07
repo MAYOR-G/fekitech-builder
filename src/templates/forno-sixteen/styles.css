@@ -1,0 +1,257 @@
+/* ==========================================================================
+   FORNO SIXTEEN (ARTISAN PIZZA) - REDESIGN
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Header & Nav
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-header {
+  background: var(--ukb-page);
+  border-bottom: 1px solid var(--ukb-line);
+  padding: 1.5rem 3rem;
+}
+[data-template-id="forno-sixteen"] .ukb-brand b {
+  font-family: var(--ukb-heading);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-hero-pizza {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 85vh;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-template-id="forno-sixteen"] .ukb-pizza-word {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  color: var(--ukb-line);
+  opacity: 0.2;
+  font-family: var(--ukb-heading);
+  font-size: 15vw;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  z-index: 0;
+  pointer-events: none;
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-copy {
+  align-self: center;
+  padding: 4rem 4rem 4rem 6rem;
+  z-index: 1;
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero h1 {
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+  color: var(--ukb-ink);
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-media {
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-secondary {
+  position: absolute;
+  bottom: -40px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 12px solid var(--ukb-page);
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-pizza > aside {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: var(--ukb-accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(211, 84, 0, 0.4);
+  z-index: 3;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease;
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-pizza > aside:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-pizza > aside b {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-family: var(--ukb-heading);
+}
+
+[data-template-id="forno-sixteen"] .ukb-hero-pizza > aside span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 5px;
+}
+
+/* --------------------------------------------------------------------------
+   Intro Section
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-intro {
+  background: #ffffff; /* Bright clear white as requested */
+  padding: 8rem 4rem;
+  border-bottom: 1px solid var(--ukb-line);
+}
+
+/* --------------------------------------------------------------------------
+   Gallery Section
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-gallery {
+  background: var(--ukb-surface);
+  padding: 8rem 4rem;
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 4rem;
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid figure:hover img {
+  transform: scale(1.05);
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  padding: 30px 20px 20px;
+  font-family: var(--ukb-heading);
+  font-size: 1.25rem;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+[data-template-id="forno-sixteen"] .ukb-gallery-grid figure:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Services Section
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-services {
+  background: var(--ukb-page);
+  padding: 8rem 4rem;
+}
+
+[data-template-id="forno-sixteen"] .ukb-card-grid article {
+  background: var(--ukb-card);
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  border: 1px solid var(--ukb-line);
+}
+
+[data-template-id="forno-sixteen"] .ukb-card-grid article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
+}
+
+[data-template-id="forno-sixteen"] .ukb-card-index {
+  font-family: var(--ukb-heading);
+  color: var(--ukb-accent);
+  font-size: 2rem;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Feature Bar
+   -------------------------------------------------------------------------- */
+[data-template-id="forno-sixteen"] .ukb-feature {
+  background: var(--ukb-ink);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  [data-template-id="forno-sixteen"] .ukb-hero-pizza {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="forno-sixteen"] .ukb-hero-main {
+    border-radius: 0;
+  }
+  [data-template-id="forno-sixteen"] .ukb-hero-secondary {
+    display: none;
+  }
+  [data-template-id="forno-sixteen"] .ukb-pizza-word {
+    display: none;
+  }
+  [data-template-id="forno-sixteen"] .ukb-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  [data-template-id="forno-sixteen"] .ukb-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  [data-template-id="forno-sixteen"] .ukb-hero-copy {
+    padding: 3rem 2rem;
+  }
+}

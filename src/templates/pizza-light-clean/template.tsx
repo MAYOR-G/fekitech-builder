@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, List, MapPin, Phone, X } from "@phosphor-icons/react";
+import { ArrowRight, List, MapPin, Phone, X, Star, Sparkle } from "@phosphor-icons/react";
 import { TemplateImage } from "@/components/templates/TemplateImage";
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
 import editableData from "./editable.json";
@@ -37,6 +37,11 @@ export default function PizzaLightCleanTemplate({ data }: { data: TemplateData }
       </header>
 
       <section className="ls-hero">
+        <Star weight="fill" color="var(--ls-lemon)" size={48} style={{ position: 'absolute', top: '10%', left: '5%', zIndex: 1 }} />
+        <Star weight="fill" color="var(--ls-red)" size={24} style={{ position: 'absolute', bottom: '20%', left: '15%', zIndex: 1 }} />
+        <Sparkle weight="fill" color="var(--ls-sky)" size={40} style={{ position: 'absolute', top: '15%', right: '35%', zIndex: 1 }} />
+        <Sparkle weight="fill" color="var(--ls-basil)" size={32} style={{ position: 'absolute', bottom: '15%', right: '40%', zIndex: 1 }} />
+        
         <div className="ls-hero-title">
           <p>{content.hero.eyebrow}</p>
           <h1>{content.hero.title}</h1>

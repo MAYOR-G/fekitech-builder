@@ -1,0 +1,353 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "surface": "#f7f7f7",
+      "card": "#ffffff",
+      "ink": "#1a1a1a",
+      "muted": "#666666",
+      "accent": "#d2a36b",
+      "accentSecondary": "#856641",
+      "line": "#e5e5e5"
+    },
+    "typography": {
+      "heading": "'Playfair Display', Georgia, serif",
+      "body": "'Inter', Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Star Pub",
+    "strapline": "Kitchen · cask · late nights · Liverpool",
+    "logo": "/templates/nightjar-and-crown/assets/logo.svg",
+    "logoAlt": "Star Pub logo",
+    "phone": "020 7946 0377",
+    "phoneHref": "tel:+442079460377",
+    "email": "hello@nightjarandcrown.co.uk",
+    "emailHref": "mailto:hello@nightjarandcrown.co.uk",
+    "address": "16 Market Lane, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Drinks",
+        "page": "drinks"
+      },
+      {
+        "label": "Kitchen",
+        "page": "kitchen"
+      },
+      {
+        "label": "What's On",
+        "page": "what-s-on"
+      },
+      {
+        "label": "Our House",
+        "page": "our-house"
+      },
+      {
+        "label": "Book",
+        "page": "book"
+      }
+    ],
+    "ctaLabel": "Book",
+    "ctaPage": "book"
+  },
+  "hero": {
+    "eyebrow": "A modern public house",
+    "title": "Good pints. Proper plates. No velvet rope.",
+    "text": "A Liverpool neighbourhood pub for cask beer, British cooking, live sessions and long Sunday lunches.",
+    "primaryLabel": "Book",
+    "primaryPage": "book",
+    "secondaryLabel": "Drinks",
+    "secondaryPage": "drinks",
+    "image": "/templates/nightjar-and-crown/assets/photo-1.webp",
+    "imageAlt": "Signature food and atmosphere at The Nightjar & Crown",
+    "imageSecondary": "/templates/nightjar-and-crown/assets/photo-2.webp",
+    "imageSecondaryAlt": "A second view of The Nightjar & Crown",
+    "note": "Independent · UK produce · Walk-ins welcome"
+  },
+  "intro": {
+    "eyebrow": "Our approach",
+    "title": "Made with attention. Served without fuss.",
+    "text": "We care about ingredients, timing and the feeling around the table. The result is confident food and genuinely warm service.",
+    "image": "/templates/nightjar-and-crown/assets/photo-3.webp",
+    "imageAlt": "The kitchen at The Nightjar & Crown",
+    "stats": [
+      {
+        "value": "Local",
+        "label": "Seasonal suppliers"
+      },
+      {
+        "value": "Daily",
+        "label": "Prepared in house"
+      },
+      {
+        "value": "Late",
+        "label": "Tables into the evening"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Choose well",
+    "title": "A menu with a point of view.",
+    "items": [
+      {
+        "icon": "Utensils",
+        "title": "Cask & Tap",
+        "text": "Prepared to order with ingredients chosen for flavour.",
+        "meta": "House signature"
+      },
+      {
+        "icon": "Star",
+        "title": "Pub Kitchen",
+        "text": "A concise favourite with a distinctive house finish.",
+        "meta": "Seasonal"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Sunday Lunch",
+        "text": "Made for sharing, returning and recommending.",
+        "meta": "Guest favourite"
+      },
+      {
+        "icon": "Check",
+        "title": "Live Sessions",
+        "text": "Ask the team about today's additions.",
+        "meta": "Available today"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "From the pass",
+    "title": "Proper pub food. Poured to perfection.",
+    "images": [
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-2.webp",
+        "alt": "The Nightjar & Crown food image 1",
+        "caption": "Cask & Tap"
+      },
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-3.webp",
+        "alt": "The Nightjar & Crown food image 2",
+        "caption": "Pub Kitchen"
+      },
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-4.webp",
+        "alt": "The Nightjar & Crown food image 3",
+        "caption": "Sunday Lunch"
+      },
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-5.webp",
+        "alt": "The Nightjar & Crown food image 4",
+        "caption": "Live Sessions"
+      },
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-6.webp",
+        "alt": "The Nightjar & Crown food image 5",
+        "caption": "The room"
+      },
+      {
+        "src": "/templates/nightjar-and-crown/assets/photo-1.webp",
+        "alt": "The Nightjar & Crown pub exterior",
+        "caption": "Our pub"
+      }
+    ]
+  },
+  "feature": {
+    "label": "Today at the house",
+    "items": [
+      "Freshly made",
+      "Independent",
+      "UK suppliers",
+      "Good company"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "At the table",
+    "title": "The sort of place people tell friends about.",
+    "items": [
+      {
+        "quote": "Confident food, a brilliant room and service that never tries too hard.",
+        "name": "Maya · Manchester"
+      },
+      {
+        "quote": "The menu is tight, the flavours are huge and the welcome is real.",
+        "name": "Dan · Liverpool"
+      },
+      {
+        "quote": "We booked again before the pudding arrived.",
+        "name": "Ella · London"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your table",
+    "title": "Join us at The Nightjar & Crown.",
+    "text": "Choose your time, tell us what you need and leave the rest with the team.",
+    "label": "Book",
+    "page": "book"
+  },
+  "footer": {
+    "note": "A Liverpool neighbourhood pub for cask beer, British cooking, live sessions and long Sunday lunches.",
+    "legal": "© 2026 The Nightjar & Crown. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "TikTok",
+        "href": "https://tiktok.com"
+      }
+    ]
+  },
+  "pages": {
+    "drinks": {
+      "eyebrow": "The Nightjar & Crown / Drinks",
+      "title": "Drinks",
+      "body": "Everything you need to know about drinks at The Nightjar & Crown, from today's choices to the easiest way to join us.",
+      "image": "/templates/nightjar-and-crown/assets/photo-2.webp",
+      "imageAlt": "Drinks at The Nightjar & Crown",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Drinks highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "kitchen": {
+      "eyebrow": "The Nightjar & Crown / Kitchen",
+      "title": "Kitchen",
+      "body": "Everything you need to know about kitchen at The Nightjar & Crown, from today's choices to the easiest way to join us.",
+      "image": "/templates/nightjar-and-crown/assets/photo-3.webp",
+      "imageAlt": "Kitchen at The Nightjar & Crown",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Kitchen highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "what-s-on": {
+      "eyebrow": "The Nightjar & Crown / What's On",
+      "title": "What's On",
+      "body": "Everything you need to know about what's on at The Nightjar & Crown, from today's choices to the easiest way to join us.",
+      "image": "/templates/nightjar-and-crown/assets/photo-4.webp",
+      "imageAlt": "What's On at The Nightjar & Crown",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "What's On highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "our-house": {
+      "eyebrow": "The Nightjar & Crown / Our House",
+      "title": "Our House",
+      "body": "Everything you need to know about our house at The Nightjar & Crown, from today's choices to the easiest way to join us.",
+      "image": "/templates/nightjar-and-crown/assets/photo-5.webp",
+      "imageAlt": "Our House at The Nightjar & Crown",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Our House highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "book": {
+      "eyebrow": "The Nightjar & Crown / Book",
+      "title": "Book",
+      "body": "Everything you need to know about book at The Nightjar & Crown, from today's choices to the easiest way to join us.",
+      "image": "/templates/nightjar-and-crown/assets/photo-6.webp",
+      "imageAlt": "Book at The Nightjar & Crown",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Book highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "feature",
+    "services",
+    "gallery",
+    "testimonials",
+    "intro",
+    "cta"
+  ]
+}

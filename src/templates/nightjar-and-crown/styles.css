@@ -1,0 +1,468 @@
+/* ==========================================================================
+   THE NIGHTJAR & CROWN - REDESIGN (MOODY MODERN PUB)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Header & Nav
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-header {
+  background: var(--ukb-page);
+  border-bottom: 1px solid var(--ukb-line);
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[data-template-id="nightjar-and-crown"] .ukb-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+[data-template-id="nightjar-and-crown"] .ukb-brand img {
+  height: 40px;
+  width: auto;
+  filter: invert(0.8) sepia(0.3) saturate(0.5) hue-rotate(5deg);
+}
+[data-template-id="nightjar-and-crown"] .ukb-brand b {
+  font-family: var(--ukb-heading);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: var(--ukb-accent);
+}
+[data-template-id="nightjar-and-crown"] .ukb-nav {
+  display: flex;
+  gap: 2rem;
+}
+[data-template-id="nightjar-and-crown"] .ukb-nav a {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--ukb-ink);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+[data-template-id="nightjar-and-crown"] .ukb-nav a:hover {
+  opacity: 1;
+  color: var(--ukb-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-hero {
+  background: var(--ukb-page);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85vh;
+  padding: 4rem 6rem;
+  border-bottom: 1px solid var(--ukb-line);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero-copy {
+  max-width: 600px;
+  z-index: 10;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ukb-accent);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero h1 {
+  font-family: var(--ukb-heading);
+  font-weight: 400;
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  line-height: 1.1;
+  color: var(--ukb-ink);
+  margin-bottom: 2rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--ukb-muted);
+  margin-bottom: 3rem;
+  max-width: 500px;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero-media {
+  position: relative;
+  width: 45%;
+  height: 65vh;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0; /* Arched top */
+  border: 1px solid var(--ukb-line);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  z-index: 2;
+  position: relative;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero-secondary {
+  position: absolute;
+  bottom: -20px;
+  left: -80px;
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 140px 140px 0 0;
+  border: 4px solid var(--ukb-page);
+  z-index: 3;
+  box-shadow: -10px 20px 40px rgba(0,0,0,0.5);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-hero > aside {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%) rotate(-90deg);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ukb-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Feature Bar
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-feature {
+  background: var(--ukb-surface);
+  color: var(--ukb-accent);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--ukb-line);
+  font-family: var(--ukb-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* --------------------------------------------------------------------------
+   Intro Section
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-intro {
+  background: var(--ukb-page);
+  padding: 8rem 4rem;
+  border-bottom: 1px solid var(--ukb-line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-copy h2 {
+  font-family: var(--ukb-heading);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 1.5rem 0 2.5rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-copy p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--ukb-muted);
+  margin-bottom: 3rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-stats {
+  display: flex;
+  gap: 3rem;
+  border-top: 1px solid var(--ukb-line);
+  padding-top: 3rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-stats b {
+  font-family: var(--ukb-heading);
+  font-size: 2rem;
+  color: var(--ukb-accent);
+  font-weight: 400;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-stats span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ukb-muted);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-intro-image {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* --------------------------------------------------------------------------
+   Services Section
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-services {
+  background: var(--ukb-surface);
+  padding: 8rem 6rem;
+  border-bottom: 1px solid var(--ukb-line);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-services-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 6rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-services-header h2 {
+  font-family: var(--ukb-heading);
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid article {
+  background: var(--ukb-card);
+  border: 1px solid var(--ukb-line);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid article:hover {
+  transform: translateY(-5px);
+  border-color: var(--ukb-accent);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid h3 {
+  font-family: var(--ukb-heading);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--ukb-accent);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid p {
+  color: var(--ukb-muted);
+  line-height: 1.6;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-card-grid .ukb-card-meta {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--ukb-line);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ukb-ink);
+}
+
+/* --------------------------------------------------------------------------
+   Gallery Section
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-gallery {
+  background: var(--ukb-page);
+  padding: 8rem 4rem;
+  border-bottom: 1px solid var(--ukb-line);
+  text-align: center;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery > h2 {
+  font-family: var(--ukb-heading);
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 1rem 0 5rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery-grid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  filter: brightness(0.85);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery-grid figure:hover img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-gallery-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #ffffff;
+  font-family: var(--ukb-heading);
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+/* --------------------------------------------------------------------------
+   Testimonials
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-testimonials {
+  background: var(--ukb-surface);
+  padding: 8rem 4rem;
+  border-bottom: 1px solid var(--ukb-line);
+  text-align: center;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-testimonials h2 {
+  font-family: var(--ukb-heading);
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 1rem 0 5rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-testimonial-grid blockquote {
+  font-family: var(--ukb-heading);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--ukb-ink);
+  margin-bottom: 2rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-testimonial-grid cite {
+  font-style: normal;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ukb-accent);
+}
+
+/* --------------------------------------------------------------------------
+   CTA / Footer
+   -------------------------------------------------------------------------- */
+[data-template-id="nightjar-and-crown"] .ukb-cta {
+  background: var(--ukb-page);
+  padding: 8rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--ukb-line);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-cta h2 {
+  font-family: var(--ukb-heading);
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-cta p {
+  color: var(--ukb-muted);
+  font-size: 1.2rem;
+  margin: 0 auto 3rem;
+  max-width: 500px;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-button {
+  display: inline-block;
+  background: var(--ukb-accent);
+  color: var(--ukb-page);
+  padding: 1rem 2.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-button:hover {
+  background: var(--ukb-ink);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-button-secondary {
+  background: transparent;
+  color: var(--ukb-ink);
+  border: 1px solid var(--ukb-line);
+}
+
+[data-template-id="nightjar-and-crown"] .ukb-button-secondary:hover {
+  background: var(--ukb-surface);
+  border-color: var(--ukb-accent);
+  color: var(--ukb-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  [data-template-id="nightjar-and-crown"] .ukb-hero,
+  [data-template-id="nightjar-and-crown"] .ukb-intro {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  [data-template-id="nightjar-and-crown"] .ukb-hero-media {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  [data-template-id="nightjar-and-crown"] .ukb-hero-secondary,
+  [data-template-id="nightjar-and-crown"] .ukb-hero > aside {
+    display: none;
+  }
+  [data-template-id="nightjar-and-crown"] .ukb-intro-stats {
+    justify-content: center;
+  }
+  [data-template-id="nightjar-and-crown"] .ukb-services,
+  [data-template-id="nightjar-and-crown"] .ukb-gallery,
+  [data-template-id="nightjar-and-crown"] .ukb-testimonials {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-template-id="nightjar-and-crown"] .ukb-card-grid,
+  [data-template-id="nightjar-and-crown"] .ukb-gallery-grid,
+  [data-template-id="nightjar-and-crown"] .ukb-testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

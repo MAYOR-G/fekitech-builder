@@ -114,6 +114,28 @@ import forgeFitTrainingConfig from "../templates/forgefit-training/config.json";
 import forgeFitTrainingEditable from "../templates/forgefit-training/editable.json";
 import rivergatePlumbingConfig from "../templates/rivergate-plumbing/config.json";
 import rivergatePlumbingEditable from "../templates/rivergate-plumbing/editable.json";
+import hawthorneFieldsAcademyConfig from "../templates/hawthorne-fields-academy/config.json";
+import hawthorneFieldsAcademyEditable from "../templates/hawthorne-fields-academy/editable.json";
+import mercerBlytheSolicitorsConfig from "../templates/mercer-blythe-solicitors/config.json";
+import mercerBlytheSolicitorsEditable from "../templates/mercer-blythe-solicitors/editable.json";
+import northLedgerAccountantsConfig from "../templates/north-ledger-accountants/config.json";
+import northLedgerAccountantsEditable from "../templates/north-ledger-accountants/editable.json";
+import kindredPawsVetsConfig from "../templates/kindred-paws-vets/config.json";
+import kindredPawsVetsEditable from "../templates/kindred-paws-vets/editable.json";
+import littleLanternsNurseryConfig from "../templates/little-lanterns-nursery/config.json";
+import littleLanternsNurseryEditable from "../templates/little-lanterns-nursery/editable.json";
+import boroughMotorWorksConfig from "../templates/borough-motor-works/config.json";
+import boroughMotorWorksEditable from "../templates/borough-motor-works/editable.json";
+import wildmereGardensConfig from "../templates/wildmere-gardens/config.json";
+import wildmereGardensEditable from "../templates/wildmere-gardens/editable.json";
+import tallowAndSageConfig from "../templates/tallow-and-sage/config.json";
+import tallowAndSageEditable from "../templates/tallow-and-sage/editable.json";
+import nightjarAndCrownConfig from "../templates/nightjar-and-crown/config.json";
+import nightjarAndCrownEditable from "../templates/nightjar-and-crown/editable.json";
+import crumbAndCharConfig from "../templates/crumb-and-char/config.json";
+import crumbAndCharEditable from "../templates/crumb-and-char/editable.json";
+import fornoSixteenConfig from "../templates/forno-sixteen/config.json";
+import fornoSixteenEditable from "../templates/forno-sixteen/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -190,11 +212,21 @@ const components = {
   "modulars": dynamic<{ data: TemplateData }>(() => import("../templates/modulars/template")),
   "forgefit-training": dynamic<{ data: TemplateData }>(() => import("../templates/forgefit-training/template")),
   "rivergate-plumbing": dynamic<{ data: TemplateData }>(() => import("../templates/rivergate-plumbing/template")),
+  "hawthorne-fields-academy": dynamic<{ data: TemplateData }>(() => import("../templates/hawthorne-fields-academy/template")),
+  "mercer-blythe-solicitors": dynamic<{ data: TemplateData }>(() => import("../templates/mercer-blythe-solicitors/template")),
+  "north-ledger-accountants": dynamic<{ data: TemplateData }>(() => import("../templates/north-ledger-accountants/template")),
+  "kindred-paws-vets": dynamic<{ data: TemplateData }>(() => import("../templates/kindred-paws-vets/template")),
+  "little-lanterns-nursery": dynamic<{ data: TemplateData }>(() => import("../templates/little-lanterns-nursery/template")),
+  "borough-motor-works": dynamic<{ data: TemplateData }>(() => import("../templates/borough-motor-works/template")),
+  "wildmere-gardens": dynamic<{ data: TemplateData }>(() => import("../templates/wildmere-gardens/template")),
+  "tallow-and-sage": dynamic<{ data: TemplateData }>(() => import("../templates/tallow-and-sage/template")),
+  "nightjar-and-crown": dynamic<{ data: TemplateData }>(() => import("../templates/nightjar-and-crown/template")),
+  "crumb-and-char": dynamic<{ data: TemplateData }>(() => import("../templates/crumb-and-char/template")),
+  "forno-sixteen": dynamic<{ data: TemplateData }>(() => import("../templates/forno-sixteen/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
-
   "cake-bakery-premium": { config: cakeBakeryConfig, component: components["cake-bakery-premium"], defaultData: normalizeData(cakeBakeryEditable) },
   "gym-website": { config: gymConfig, component: components["gym-website"], defaultData: normalizeData(gymEditable) },
   "premium-coffee-website": { config: premiumCoffeeConfig, component: components["premium-coffee-website"], defaultData: normalizeData(premiumCoffeeEditable) },
@@ -222,35 +254,46 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "second-plumber-website": { config: secondPlumberConfig, component: components["second-plumber-website"], defaultData: normalizeData(secondPlumberEditable) },
   "velvet-scoop": { config: velvetScoopConfig, component: components["velvet-scoop"], defaultData: normalizeData(velvetScoopEditable) },
   "fast-food-chicken-tacos": { config: fastFoodChickenTacosConfig, component: components["fast-food-chicken-tacos"], defaultData: normalizeData(fastFoodChickenTacosEditable) },
-  "catering-company-premium": { config: cateringCompanyConfig, component: components["catering-company-premium"], defaultData: normalizeData(cateringCompanyEditable) },
-  "coffee-website": { config: coffeeWebsiteConfig, component: components["coffee-website"], defaultData: normalizeData(coffeeWebsiteEditable) },
-  "forgepoint-construction": { config: forgepointConstructionConfig, component: components["forgepoint-construction"], defaultData: normalizeData(forgepointConstructionEditable) },
-  "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
-  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
-  "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
-  "blueforge-plumbing": { config: blueforgePlumbingConfig, component: components["blueforge-plumbing"], defaultData: normalizeData(blueforgePlumbingEditable) },
-  "northline-grooming": { config: northlineGroomingConfig, component: components["northline-grooming"], defaultData: normalizeData(northlineGroomingEditable) },
-  "verdant-house-grooming": { config: verdantHouseGroomingConfig, component: components["verdant-house-grooming"], defaultData: normalizeData(verdantHouseGroomingEditable) },
-  "brightnest-cleaning": { config: brightnestCleaningConfig, component: components["brightnest-cleaning"], defaultData: normalizeData(brightnestCleaningEditable) },
-  "ash-bridle-barbers": { config: ashBridleBarbersConfig, component: components["ash-bridle-barbers"], defaultData: normalizeData(ashBridleBarbersEditable) },
-  "lacquer-form-nail-atelier": { config: lacquerFormNailAtelierConfig, component: components["lacquer-form-nail-atelier"], defaultData: normalizeData(lacquerFormNailAtelierEditable) },
-  "harborwell-home-health": { config: harborwellHomeHealthConfig, component: components["harborwell-home-health"], defaultData: normalizeData(harborwellHomeHealthEditable) },
-  "infusion-london": { config: infusionLondonConfig, component: components["infusion-london"], defaultData: normalizeData(infusionLondonEditable) },
-  "digital-designer-portfolio": { config: digitalDesignerPortfolioConfig, component: components["digital-designer-portfolio"], defaultData: normalizeData(digitalDesignerPortfolioEditable) },
-  "software-engineer-portfolio": { config: softwareEngineerPortfolioConfig, component: components["software-engineer-portfolio"], defaultData: normalizeData(softwareEngineerPortfolioEditable) },
-  "london-pizza-shop": { config: londonPizzaShopConfig, component: components["london-pizza-shop"], defaultData: normalizeData(londonPizzaShopEditable) },
-  "moss-marrow-cafe": { config: mossMarrowCafeConfig, component: components["moss-marrow-cafe"], defaultData: normalizeData(mossMarrowCafeEditable) },
-  "blush-crumb-bakehouse": { config: blushCrumbBakehouseConfig, component: components["blush-crumb-bakehouse"], defaultData: normalizeData(blushCrumbBakehouseEditable) },
-  "aurea-objects-shop": { config: aureaObjectsShopConfig, component: components["aurea-objects-shop"], defaultData: normalizeData(aureaObjectsShopEditable) },
-  "velour-studio-salon": { config: velourStudioSalonConfig, component: components["velour-studio-salon"], defaultData: normalizeData(velourStudioSalonEditable) },
-  "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },
-  "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
-  "linden-path-therapy": { config: lindenPathTherapyConfig, component: components["linden-path-therapy"], defaultData: normalizeData(lindenPathTherapyEditable) },
-  "the-copper-tap": { config: theCopperTapConfig, component: components["the-copper-tap"], defaultData: normalizeData(theCopperTapEditable) },
-  "signal-yard-studio": { config: signalYardStudioConfig, component: components["signal-yard-studio"], defaultData: normalizeData(signalYardStudioEditable) },
-  "modulars": { config: modularsConfig, component: components["modulars"], defaultData: normalizeData(modularsEditable) },
   "forgefit-training": { config: forgeFitTrainingConfig, component: components["forgefit-training"], defaultData: normalizeData(forgeFitTrainingEditable) },
   "rivergate-plumbing": { config: rivergatePlumbingConfig, component: components["rivergate-plumbing"], defaultData: normalizeData(rivergatePlumbingEditable) },
+  "brightnest-cleaning": { config: brightnestCleaningConfig, component: components["brightnest-cleaning"], defaultData: normalizeData(brightnestCleaningEditable) },
+  "premium-restaurant": { config: premiumRestaurantConfig, component: components["premium-restaurant"], defaultData: normalizeData(premiumRestaurantEditable) },
+  "blush-crumb-bakehouse": { config: blushCrumbBakehouseConfig, component: components["blush-crumb-bakehouse"], defaultData: normalizeData(blushCrumbBakehouseEditable) },
+  "northline-grooming": { config: northlineGroomingConfig, component: components["northline-grooming"], defaultData: normalizeData(northlineGroomingEditable) },
+  "blueforge-plumbing": { config: blueforgePlumbingConfig, component: components["blueforge-plumbing"], defaultData: normalizeData(blueforgePlumbingEditable) },
+  "pizza-light-clean": { config: pizzaLightConfig, component: components["pizza-light-clean"], defaultData: normalizeData(pizzaLightEditable) },
+  "little-lanterns-nursery": { config: littleLanternsNurseryConfig, component: components["little-lanterns-nursery"], defaultData: normalizeData(littleLanternsNurseryEditable) },
+  "north-ledger-accountants": { config: northLedgerAccountantsConfig, component: components["north-ledger-accountants"], defaultData: normalizeData(northLedgerAccountantsEditable) },
+  "harborwell-home-health": { config: harborwellHomeHealthConfig, component: components["harborwell-home-health"], defaultData: normalizeData(harborwellHomeHealthEditable) },
+  "linden-path-therapy": { config: lindenPathTherapyConfig, component: components["linden-path-therapy"], defaultData: normalizeData(lindenPathTherapyEditable) },
+  "tallow-and-sage": { config: tallowAndSageConfig, component: components["tallow-and-sage"], defaultData: normalizeData(tallowAndSageEditable) },
+  "london-pizza-shop": { config: londonPizzaShopConfig, component: components["london-pizza-shop"], defaultData: normalizeData(londonPizzaShopEditable) },
+  "lacquer-form-nail-atelier": { config: lacquerFormNailAtelierConfig, component: components["lacquer-form-nail-atelier"], defaultData: normalizeData(lacquerFormNailAtelierEditable) },
+  "crumb-and-char": { config: crumbAndCharConfig, component: components["crumb-and-char"], defaultData: normalizeData(crumbAndCharEditable) },
+  "signal-yard-studio": { config: signalYardStudioConfig, component: components["signal-yard-studio"], defaultData: normalizeData(signalYardStudioEditable) },
+  "the-copper-tap": { config: theCopperTapConfig, component: components["the-copper-tap"], defaultData: normalizeData(theCopperTapEditable) },
+  "borough-motor-works": { config: boroughMotorWorksConfig, component: components["borough-motor-works"], defaultData: normalizeData(boroughMotorWorksEditable) },
+  "digital-designer-portfolio": { config: digitalDesignerPortfolioConfig, component: components["digital-designer-portfolio"], defaultData: normalizeData(digitalDesignerPortfolioEditable) },
+  "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
+  "forgepoint-construction": { config: forgepointConstructionConfig, component: components["forgepoint-construction"], defaultData: normalizeData(forgepointConstructionEditable) },
+  "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },
+  "verdant-house-grooming": { config: verdantHouseGroomingConfig, component: components["verdant-house-grooming"], defaultData: normalizeData(verdantHouseGroomingEditable) },
+  "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
+  "aurea-objects-shop": { config: aureaObjectsShopConfig, component: components["aurea-objects-shop"], defaultData: normalizeData(aureaObjectsShopEditable) },
+  "kindred-paws-vets": { config: kindredPawsVetsConfig, component: components["kindred-paws-vets"], defaultData: normalizeData(kindredPawsVetsEditable) },
+  "forno-sixteen": { config: fornoSixteenConfig, component: components["forno-sixteen"], defaultData: normalizeData(fornoSixteenEditable) },
+  "infusion-london": { config: infusionLondonConfig, component: components["infusion-london"], defaultData: normalizeData(infusionLondonEditable) },
+  "velour-studio-salon": { config: velourStudioSalonConfig, component: components["velour-studio-salon"], defaultData: normalizeData(velourStudioSalonEditable) },
+  "software-engineer-portfolio": { config: softwareEngineerPortfolioConfig, component: components["software-engineer-portfolio"], defaultData: normalizeData(softwareEngineerPortfolioEditable) },
+  "coffee-website": { config: coffeeWebsiteConfig, component: components["coffee-website"], defaultData: normalizeData(coffeeWebsiteEditable) },
+  "mercer-blythe-solicitors": { config: mercerBlytheSolicitorsConfig, component: components["mercer-blythe-solicitors"], defaultData: normalizeData(mercerBlytheSolicitorsEditable) },
+  "ash-bridle-barbers": { config: ashBridleBarbersConfig, component: components["ash-bridle-barbers"], defaultData: normalizeData(ashBridleBarbersEditable) },
+  "catering-company-premium": { config: cateringCompanyConfig, component: components["catering-company-premium"], defaultData: normalizeData(cateringCompanyEditable) },
+  "nightjar-and-crown": { config: nightjarAndCrownConfig, component: components["nightjar-and-crown"], defaultData: normalizeData(nightjarAndCrownEditable) },
+  "moss-marrow-cafe": { config: mossMarrowCafeConfig, component: components["moss-marrow-cafe"], defaultData: normalizeData(mossMarrowCafeEditable) },
+  "modulars": { config: modularsConfig, component: components["modulars"], defaultData: normalizeData(modularsEditable) },
+  "hawthorne-fields-academy": { config: hawthorneFieldsAcademyConfig, component: components["hawthorne-fields-academy"], defaultData: normalizeData(hawthorneFieldsAcademyEditable) },
+  "wildmere-gardens": { config: wildmereGardensConfig, component: components["wildmere-gardens"], defaultData: normalizeData(wildmereGardensEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

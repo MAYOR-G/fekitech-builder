@@ -182,6 +182,17 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "signal-yard-studio": "business",
   "forgefit-training": "business",
   "rivergate-plumbing": "business",
+  "hawthorne-fields-academy": "business",
+  "mercer-blythe-solicitors": "business",
+  "north-ledger-accountants": "business",
+  "kindred-paws-vets": "business",
+  "little-lanterns-nursery": "business",
+  "borough-motor-works": "business",
+  "wildmere-gardens": "business",
+  "tallow-and-sage": "business",
+  "nightjar-and-crown": "business",
+  "crumb-and-char": "business",
+  "forno-sixteen": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

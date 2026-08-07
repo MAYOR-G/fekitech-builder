@@ -81,7 +81,21 @@ describe("production template registry", () => {
       "signal-yard-studio",
       "modulars",
       "forgefit-training",
-      "rivergate-plumbing"
+      "rivergate-plumbing",
+      "hawthorne-fields-academy",
+      "the-rowan-house",
+      "mercer-blythe-solicitors",
+      "north-ledger-accountants",
+      "wren-vow-events",
+      "kindred-paws-vets",
+      "field-stem-florist",
+      "little-lanterns-nursery",
+      "borough-motor-works",
+      "wildmere-gardens",
+      "tallow-and-sage",
+      "nightjar-and-crown",
+      "crumb-and-char",
+      "forno-sixteen"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -139,7 +153,21 @@ describe("production template registry", () => {
       "velour-studio-salon",
       "velvet-scoop",
       "verdant-house-grooming",
-      "the-copper-tap"
+      "the-copper-tap",
+      "hawthorne-fields-academy",
+      "the-rowan-house",
+      "mercer-blythe-solicitors",
+      "north-ledger-accountants",
+      "wren-vow-events",
+      "kindred-paws-vets",
+      "field-stem-florist",
+      "little-lanterns-nursery",
+      "borough-motor-works",
+      "wildmere-gardens",
+      "tallow-and-sage",
+      "nightjar-and-crown",
+      "crumb-and-char",
+      "forno-sixteen"
     ].sort());
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
@@ -186,7 +214,21 @@ describe("production template registry", () => {
       "the-copper-tap",
       "signal-yard-studio",
       "forgefit-training",
-      "rivergate-plumbing"
+      "rivergate-plumbing",
+      "hawthorne-fields-academy",
+      "the-rowan-house",
+      "mercer-blythe-solicitors",
+      "north-ledger-accountants",
+      "wren-vow-events",
+      "kindred-paws-vets",
+      "field-stem-florist",
+      "little-lanterns-nursery",
+      "borough-motor-works",
+      "wildmere-gardens",
+      "tallow-and-sage",
+      "nightjar-and-crown",
+      "crumb-and-char",
+      "forno-sixteen"
     ];
 
     for (const templateId of previewTemplateIds) {

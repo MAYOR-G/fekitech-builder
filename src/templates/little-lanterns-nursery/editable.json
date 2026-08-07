@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fff9e9",
+      "surface": "#e8f2f7",
+      "card": "#ffffff",
+      "ink": "#20354b",
+      "muted": "#627284",
+      "accent": "#247ba0",
+      "accentSecondary": "#f4b942",
+      "line": "#d7dfdf"
+    },
+    "typography": {
+      "heading": "Arial Rounded MT Bold,Arial,sans-serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Joy Nursery",
+    "strapline": "Nursery & preschool · Leeds",
+    "logo": "/templates/little-lanterns-nursery/assets/logo.svg",
+    "logoAlt": "Joy Nursery logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@littlelanternsnursery.co.uk",
+    "emailHref": "mailto:hello@littlelanternsnursery.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Rooms",
+        "page": "rooms"
+      },
+      {
+        "label": "Our Approach",
+        "page": "our-approach"
+      },
+      {
+        "label": "For Parents",
+        "page": "for-parents"
+      },
+      {
+        "label": "Team",
+        "page": "team"
+      },
+      {
+        "label": "Visit",
+        "page": "visit"
+      }
+    ],
+    "ctaLabel": "Visit",
+    "ctaPage": "visit"
+  },
+  "hero": {
+    "eyebrow": "Small steps, bright beginnings",
+    "title": "A joyful place to grow curious.",
+    "text": "Play-led childcare for babies to preschoolers, with caring key workers and a garden made for discovery.",
+    "primaryLabel": "Visit",
+    "primaryPage": "visit",
+    "secondaryLabel": "Rooms",
+    "secondaryPage": "rooms",
+    "image": "/templates/little-lanterns-nursery/assets/photo-1.webp",
+    "imageAlt": "Little Lanterns main view",
+    "imageSecondary": "/templates/little-lanterns-nursery/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Little Lanterns",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Little Lanterns combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/little-lanterns-nursery/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Little Lanterns",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Baby Room",
+        "text": "Focused baby room support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Toddlers",
+        "text": "Focused toddlers support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Preschool",
+        "text": "Focused preschool support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Forest Fridays",
+        "text": "Focused forest fridays support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/little-lanterns-nursery/assets/photo-2.webp",
+        "alt": "Little Lanterns gallery image 1",
+        "caption": "Baby Room"
+      },
+      {
+        "src": "/templates/little-lanterns-nursery/assets/photo-3.webp",
+        "alt": "Little Lanterns gallery image 2",
+        "caption": "Toddlers"
+      },
+      {
+        "src": "/templates/little-lanterns-nursery/assets/photo-4.webp",
+        "alt": "Little Lanterns gallery image 3",
+        "caption": "Preschool"
+      },
+      {
+        "src": "/templates/little-lanterns-nursery/assets/photo-5.webp",
+        "alt": "Little Lanterns gallery image 4",
+        "caption": "Forest Fridays"
+      },
+      {
+        "src": "/templates/little-lanterns-nursery/assets/photo-6.webp",
+        "alt": "Little Lanterns gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Little Lanterns.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Visit",
+    "page": "visit"
+  },
+  "footer": {
+    "note": "Play-led childcare for babies to preschoolers, with caring key workers and a garden made for discovery.",
+    "legal": "© 2026 Little Lanterns. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "rooms": {
+      "eyebrow": "Little Lanterns · Rooms",
+      "title": "Rooms",
+      "body": "Explore rooms at Little Lanterns. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/little-lanterns-nursery/assets/photo-2.webp",
+      "imageAlt": "Rooms at Little Lanterns",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Rooms overview",
+          "text": "A concise introduction to our rooms approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "our-approach": {
+      "eyebrow": "Little Lanterns · Our Approach",
+      "title": "Our Approach",
+      "body": "Explore our approach at Little Lanterns. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/little-lanterns-nursery/assets/photo-3.webp",
+      "imageAlt": "Our Approach at Little Lanterns",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Our Approach overview",
+          "text": "A concise introduction to our our approach approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "for-parents": {
+      "eyebrow": "Little Lanterns · For Parents",
+      "title": "For Parents",
+      "body": "Explore for parents at Little Lanterns. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/little-lanterns-nursery/assets/photo-4.webp",
+      "imageAlt": "For Parents at Little Lanterns",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "For Parents overview",
+          "text": "A concise introduction to our for parents approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "Little Lanterns · Team",
+      "title": "Team",
+      "body": "Explore team at Little Lanterns. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/little-lanterns-nursery/assets/photo-5.webp",
+      "imageAlt": "Team at Little Lanterns",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Team overview",
+          "text": "A concise introduction to our team approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "visit": {
+      "eyebrow": "Little Lanterns · Visit",
+      "title": "Visit",
+      "body": "Explore visit at Little Lanterns. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/little-lanterns-nursery/assets/photo-6.webp",
+      "imageAlt": "Visit at Little Lanterns",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Visit overview",
+          "text": "A concise introduction to our visit approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "feature",
+    "services",
+    "gallery",
+    "intro",
+    "cta",
+    "testimonials"
+  ]
+}

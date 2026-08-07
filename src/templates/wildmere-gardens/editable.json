@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f0f1e9",
+      "surface": "#e2e5da",
+      "card": "#fffef9",
+      "ink": "#1d2c23",
+      "muted": "#637168",
+      "accent": "#3e6b4d",
+      "accentSecondary": "#a9855b",
+      "line": "#cbd1c4"
+    },
+    "typography": {
+      "heading": "Georgia,serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Bloom Landscapes",
+    "strapline": "Garden studio · Surrey",
+    "logo": "/templates/wildmere-gardens/assets/logo.svg",
+    "logoAlt": "Bloom Landscapes logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@wildmeregardens.co.uk",
+    "emailHref": "mailto:hello@wildmeregardens.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Projects",
+        "page": "projects"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      },
+      {
+        "label": "Process",
+        "page": "process"
+      },
+      {
+        "label": "Studio",
+        "page": "studio"
+      },
+      {
+        "label": "Enquire",
+        "page": "enquire"
+      }
+    ],
+    "ctaLabel": "Enquire",
+    "ctaPage": "enquire"
+  },
+  "hero": {
+    "eyebrow": "Gardens that settle into place",
+    "title": "Designed for the life around them.",
+    "text": "Landscape design, planting and project stewardship for enduring town and country gardens.",
+    "primaryLabel": "Enquire",
+    "primaryPage": "enquire",
+    "secondaryLabel": "Projects",
+    "secondaryPage": "projects",
+    "image": "/templates/wildmere-gardens/assets/photo-1.webp",
+    "imageAlt": "Wildmere Gardens main view",
+    "imageSecondary": "/templates/wildmere-gardens/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Wildmere Gardens",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Wildmere Gardens combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/wildmere-gardens/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Wildmere Gardens",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Garden Design",
+        "text": "Focused garden design support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Planting",
+        "text": "Focused planting support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Project Direction",
+        "text": "Focused project direction support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Aftercare",
+        "text": "Focused aftercare support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/wildmere-gardens/assets/photo-2.webp",
+        "alt": "Wildmere Gardens gallery image 1",
+        "caption": "Garden Design"
+      },
+      {
+        "src": "/templates/wildmere-gardens/assets/photo-3.webp",
+        "alt": "Wildmere Gardens gallery image 2",
+        "caption": "Planting"
+      },
+      {
+        "src": "/templates/wildmere-gardens/assets/photo-4.webp",
+        "alt": "Wildmere Gardens gallery image 3",
+        "caption": "Project Direction"
+      },
+      {
+        "src": "/templates/wildmere-gardens/assets/photo-5.webp",
+        "alt": "Wildmere Gardens gallery image 4",
+        "caption": "Aftercare"
+      },
+      {
+        "src": "/templates/wildmere-gardens/assets/photo-6.webp",
+        "alt": "Wildmere Gardens gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Wildmere Gardens.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Enquire",
+    "page": "enquire"
+  },
+  "footer": {
+    "note": "Landscape design, planting and project stewardship for enduring town and country gardens.",
+    "legal": "© 2026 Wildmere Gardens. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "projects": {
+      "eyebrow": "Wildmere Gardens · Projects",
+      "title": "Projects",
+      "body": "Explore projects at Wildmere Gardens. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/wildmere-gardens/assets/photo-2.webp",
+      "imageAlt": "Projects at Wildmere Gardens",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Projects overview",
+          "text": "A concise introduction to our projects approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "services": {
+      "eyebrow": "Wildmere Gardens · Services",
+      "title": "Services",
+      "body": "Explore services at Wildmere Gardens. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/wildmere-gardens/assets/photo-3.webp",
+      "imageAlt": "Services at Wildmere Gardens",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Services overview",
+          "text": "A concise introduction to our services approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Wildmere Gardens · Process",
+      "title": "Process",
+      "body": "Explore process at Wildmere Gardens. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/wildmere-gardens/assets/photo-4.webp",
+      "imageAlt": "Process at Wildmere Gardens",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Process overview",
+          "text": "A concise introduction to our process approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "studio": {
+      "eyebrow": "Wildmere Gardens · Studio",
+      "title": "Studio",
+      "body": "Explore studio at Wildmere Gardens. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/wildmere-gardens/assets/photo-5.webp",
+      "imageAlt": "Studio at Wildmere Gardens",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Studio overview",
+          "text": "A concise introduction to our studio approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "enquire": {
+      "eyebrow": "Wildmere Gardens · Enquire",
+      "title": "Enquire",
+      "body": "Explore enquire at Wildmere Gardens. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/wildmere-gardens/assets/photo-6.webp",
+      "imageAlt": "Enquire at Wildmere Gardens",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Enquire overview",
+          "text": "A concise introduction to our enquire approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "intro",
+    "gallery",
+    "feature",
+    "services",
+    "cta",
+    "testimonials"
+  ]
+}

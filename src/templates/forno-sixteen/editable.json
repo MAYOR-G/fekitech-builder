@@ -1,0 +1,353 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#FFF8F0",
+      "surface": "#F5EBE1",
+      "card": "#ffffff",
+      "ink": "#222222",
+      "muted": "#5B5B5B",
+      "accent": "#D35400",
+      "accentSecondary": "#C0392B",
+      "line": "#E5D3C5"
+    },
+    "typography": {
+      "heading": "Georgia,serif",
+      "body": "'Inter', sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Slice Pizza",
+    "strapline": "Artisan sourdough pizza",
+    "logo": "/templates/forno-sixteen/assets/logo.svg",
+    "logoAlt": "Slice Pizza logo",
+    "phone": "020 7946 0377",
+    "phoneHref": "tel:+442079460377",
+    "email": "hello@fornosixteen.co.uk",
+    "emailHref": "mailto:hello@fornosixteen.co.uk",
+    "address": "16 Market Lane, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Menu",
+        "page": "menu"
+      },
+      {
+        "label": "Our Dough",
+        "page": "our-dough"
+      },
+      {
+        "label": "Delivery",
+        "page": "delivery"
+      },
+      {
+        "label": "Locations",
+        "page": "locations"
+      },
+      {
+        "label": "Order",
+        "page": "order"
+      }
+    ],
+    "ctaLabel": "Order",
+    "ctaPage": "order"
+  },
+  "hero": {
+    "eyebrow": "Slow dough. Fast joy.",
+    "title": "Manchester pizza with a Neapolitan pulse.",
+    "text": "Forty-eight-hour dough, British-grown toppings and a roaring oven in the heart of Ancoats.",
+    "primaryLabel": "Order",
+    "primaryPage": "order",
+    "secondaryLabel": "Menu",
+    "secondaryPage": "menu",
+    "image": "/templates/forno-sixteen/assets/signature_pizza.png",
+    "imageAlt": "Signature food and atmosphere at Forno Sixteen",
+    "imageSecondary": "/templates/forno-sixteen/assets/hero-pizza.webp",
+    "imageSecondaryAlt": "A second view of Forno Sixteen",
+    "note": "Independent · UK produce · Walk-ins welcome"
+  },
+  "intro": {
+    "eyebrow": "Our approach",
+    "title": "Made with attention. Served without fuss.",
+    "text": "We care about ingredients, timing and the feeling around the table. The result is confident food and genuinely warm service.",
+    "image": "/templates/forno-sixteen/assets/luma-slice-hero-v2.webp",
+    "imageAlt": "Signature pizza at Luma Slice",
+    "stats": [
+      {
+        "value": "Local",
+        "label": "Seasonal suppliers"
+      },
+      {
+        "value": "Daily",
+        "label": "Prepared in house"
+      },
+      {
+        "value": "Late",
+        "label": "Tables into the evening"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Choose well",
+    "title": "A menu with a point of view.",
+    "items": [
+      {
+        "icon": "Utensils",
+        "title": "Red Pizzas",
+        "text": "Prepared to order with ingredients chosen for flavour.",
+        "meta": "House signature"
+      },
+      {
+        "icon": "Star",
+        "title": "White Pizzas",
+        "text": "A concise favourite with a distinctive house finish.",
+        "meta": "Seasonal"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Seasonal Slices",
+        "text": "Made for sharing, returning and recommending.",
+        "meta": "Guest favourite"
+      },
+      {
+        "icon": "Check",
+        "title": "Pizza is a craft.",
+        "text": "Ask the team about today's additions.",
+        "meta": "Available today"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "From the pass",
+    "title": "Come hungry. Leave happy.",
+    "images": [
+      {
+        "src": "/templates/forno-sixteen/assets/gallery_pizza_1.png",
+        "alt": "Forno Sixteen food image 1",
+        "caption": "Red Pizzas"
+      },
+      {
+        "src": "/templates/forno-sixteen/assets/gallery_pizza_2.png",
+        "alt": "Forno Sixteen food image 2",
+        "caption": "White Pizzas"
+      },
+      {
+        "src": "/templates/forno-sixteen/assets/gallery_pizza_3.png",
+        "alt": "Forno Sixteen food image 3",
+        "caption": "Seasonal Slices"
+      },
+      {
+        "src": "/templates/forno-sixteen/assets/gallery_pizza_4.png",
+        "alt": "Forno Sixteen food image 4",
+        "caption": "Finishers"
+      },
+      {
+        "src": "/templates/forno-sixteen/assets/story_pizza.png",
+        "alt": "Forno Sixteen food image 5",
+        "caption": "The room"
+      },
+      {
+        "src": "/templates/forno-sixteen/assets/kitchen.webp",
+        "alt": "Forno Sixteen food image 6",
+        "caption": "The kitchen"
+      }
+    ]
+  },
+  "feature": {
+    "label": "Today at the house",
+    "items": [
+      "Freshly made",
+      "Independent",
+      "UK suppliers",
+      "Good company"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "At the table",
+    "title": "The sort of place people tell friends about.",
+    "items": [
+      {
+        "quote": "Confident food, a brilliant room and service that never tries too hard.",
+        "name": "Maya · Manchester"
+      },
+      {
+        "quote": "The menu is tight, the flavours are huge and the welcome is real.",
+        "name": "Dan · Liverpool"
+      },
+      {
+        "quote": "We booked again before the pudding arrived.",
+        "name": "Ella · London"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your table",
+    "title": "Join us at Luma Slice.",
+    "text": "Choose your time, tell us what you need and leave the rest with the team.",
+    "label": "Order",
+    "page": "order"
+  },
+  "footer": {
+    "note": "Forty-eight-hour dough, British-grown toppings and a roaring oven in the heart of Ancoats.",
+    "legal": "© 2026 Luma Slice Pizza. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "TikTok",
+        "href": "https://tiktok.com"
+      }
+    ]
+  },
+  "pages": {
+    "menu": {
+      "eyebrow": "Luma Slice / Menu",
+      "title": "Menu",
+      "body": "Everything you need to know about menu at Luma Slice, from today's choices to the easiest way to join us.",
+      "image": "/templates/forno-sixteen/assets/table.webp",
+      "imageAlt": "Menu at Forno Sixteen",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Menu highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "our-dough": {
+      "eyebrow": "Luma Slice / Our Dough",
+      "title": "Our Dough",
+      "body": "Everything you need to know about our dough at Luma Slice, from today's choices to the easiest way to join us.",
+      "image": "/templates/forno-sixteen/assets/gallery_pizza_3.png",
+      "imageAlt": "Our Dough at Forno Sixteen",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Our Dough highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "delivery": {
+      "eyebrow": "Luma Slice / Delivery",
+      "title": "Delivery",
+      "body": "Everything you need to know about delivery at Luma Slice, from today's choices to the easiest way to join us.",
+      "image": "/templates/forno-sixteen/assets/pizzeria.webp",
+      "imageAlt": "Delivery at Forno Sixteen",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Delivery highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "locations": {
+      "eyebrow": "Luma Slice / Locations",
+      "title": "Locations",
+      "body": "Everything you need to know about locations at Luma Slice, from today's choices to the easiest way to join us.",
+      "image": "/templates/forno-sixteen/assets/kitchen.webp",
+      "imageAlt": "Locations at Forno Sixteen",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Locations highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "order": {
+      "eyebrow": "Luma Slice / Order",
+      "title": "Order",
+      "body": "Everything you need to know about order at Luma Slice, from today's choices to the easiest way to join us.",
+      "image": "/templates/forno-sixteen/assets/gallery_pizza_1.png",
+      "imageAlt": "Order at Forno Sixteen",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Order highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "gallery",
+    "intro",
+    "feature",
+    "services",
+    "testimonials",
+    "cta"
+  ]
+}

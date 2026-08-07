@@ -1,0 +1,363 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "surface": "#ffeb3b",
+      "card": "#ffffff",
+      "ink": "#111111",
+      "muted": "#555555",
+      "accent": "#ff3800",
+      "accentSecondary": "#000000",
+      "line": "#e0e0e0"
+    },
+    "typography": {
+      "heading": "'Helvetica Neue', Arial, sans-serif",
+      "body": "'Helvetica Neue', Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Sunshine Burger",
+    "strapline": "Smashed with love.",
+    "logo": "/templates/crumb-and-char/assets/logo.svg",
+    "logoAlt": "Sunshine Burger logo",
+    "phone": "020 7946 0377",
+    "phoneHref": "tel:+442079460377",
+    "email": "hello@crumbandchar.co.uk",
+    "emailHref": "mailto:hello@crumbandchar.co.uk",
+    "address": "16 Market Lane, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Menu",
+        "page": "menu"
+      },
+      {
+        "label": "How We Smash",
+        "page": "how-we-smash"
+      },
+      {
+        "label": "Offers",
+        "page": "offers"
+      },
+      {
+        "label": "Shops",
+        "page": "shops"
+      },
+      {
+        "label": "Order",
+        "page": "order"
+      }
+    ],
+    "ctaLabel": "Order",
+    "ctaPage": "order"
+  },
+  "hero": {
+    "eyebrow": "Hot, crisp, gone.",
+    "title": "The burger that does not need a backstory.",
+    "text": "British beef, lacy edges, sharp pickles and soft potato buns. Smashed fast and served loud.",
+    "primaryLabel": "Order",
+    "primaryPage": "order",
+    "secondaryLabel": "Menu",
+    "secondaryPage": "menu",
+    "image": "/templates/crumb-and-char/assets/hero-burger.webp",
+    "imageAlt": "Signature smash burger at Crumb & Char",
+    "imageSecondary": "/templates/crumb-and-char/assets/photo-1.webp",
+    "imageSecondaryAlt": "Atmosphere at Crumb & Char",
+    "note": "Independent · UK produce · Walk-ins welcome"
+  },
+  "intro": {
+    "eyebrow": "Our approach",
+    "title": "Made with attention. Served without fuss.",
+    "text": "We care about ingredients, timing and the feeling around the table. The result is confident food and genuinely warm service.",
+    "image": "/templates/crumb-and-char/assets/photo-3.webp",
+    "imageAlt": "The kitchen at Crumb & Char",
+    "stats": [
+      {
+        "value": "Local",
+        "label": "Seasonal suppliers"
+      },
+      {
+        "value": "Daily",
+        "label": "Prepared in house"
+      },
+      {
+        "value": "Late",
+        "label": "Tables into the evening"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Choose well",
+    "title": "A menu with a point of view.",
+    "items": [
+      {
+        "icon": "Utensils",
+        "title": "Classic Burger",
+        "text": "Prepared to order with ingredients chosen for flavour.",
+        "meta": "House signature"
+      },
+      {
+        "icon": "Star",
+        "title": "Double Burger",
+        "text": "A concise favourite with a distinctive house finish.",
+        "meta": "Seasonal"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Vegan Burger",
+        "text": "Made for sharing, returning and recommending.",
+        "meta": "Guest favourite"
+      },
+      {
+        "icon": "Check",
+        "title": "Loaded Fries",
+        "text": "Ask the team about today's additions.",
+        "meta": "Available today"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "From the pass",
+    "title": "Come hungry. Leave happy.",
+    "images": [
+      {
+        "src": "/templates/crumb-and-char/assets/photo-2.webp",
+        "alt": "Crumb & Char food image 1",
+        "caption": "Single Char"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/photo-3.webp",
+        "alt": "Crumb & Char food image 2",
+        "caption": "Double Stack"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/photo-4.webp",
+        "alt": "Crumb & Char food image 3",
+        "caption": "Plant Crunch"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/photo-5.webp",
+        "alt": "Crumb & Char food image 4",
+        "caption": "Loaded Fries"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/photo-6.webp",
+        "alt": "Crumb & Char food image 5",
+        "caption": "The room"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/smash-burger.webp",
+        "alt": "Crumb & Char food image 6",
+        "caption": "Smash Burger"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/burnt-sugar-shake.webp",
+        "alt": "Crumb & Char food image 7",
+        "caption": "Burnt Sugar Shake"
+      },
+      {
+        "src": "/templates/crumb-and-char/assets/ember-fries.webp",
+        "alt": "Crumb & Char food image 8",
+        "caption": "Ember Fries"
+      }
+    ]
+  },
+  "feature": {
+    "label": "Today at the house",
+    "items": [
+      "Freshly made",
+      "Independent",
+      "UK suppliers",
+      "Good company"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "At the table",
+    "title": "The sort of place people tell friends about.",
+    "items": [
+      {
+        "quote": "Confident food, a brilliant room and service that never tries too hard.",
+        "name": "Maya · Manchester"
+      },
+      {
+        "quote": "The menu is tight, the flavours are huge and the welcome is real.",
+        "name": "Dan · Liverpool"
+      },
+      {
+        "quote": "We booked again before the pudding arrived.",
+        "name": "Ella · London"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Your table",
+    "title": "Join us at Crumb & Char.",
+    "text": "Choose your time, tell us what you need and leave the rest with the team.",
+    "label": "Order",
+    "page": "order"
+  },
+  "footer": {
+    "note": "British beef, lacy edges, sharp pickles and soft potato buns. Smashed fast and served loud.",
+    "legal": "© 2026 Crumb & Char. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "TikTok",
+        "href": "https://tiktok.com"
+      }
+    ]
+  },
+  "pages": {
+    "menu": {
+      "eyebrow": "Crumb & Char / Menu",
+      "title": "Menu",
+      "body": "Everything you need to know about menu at Crumb & Char, from today's choices to the easiest way to join us.",
+      "image": "/templates/crumb-and-char/assets/photo-2.webp",
+      "imageAlt": "Menu at Crumb & Char",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Menu highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "how-we-smash": {
+      "eyebrow": "Crumb & Char / How We Smash",
+      "title": "How We Smash",
+      "body": "Everything you need to know about how we smash at Crumb & Char, from today's choices to the easiest way to join us.",
+      "image": "/templates/crumb-and-char/assets/photo-3.webp",
+      "imageAlt": "How We Smash at Crumb & Char",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "How We Smash highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "offers": {
+      "eyebrow": "Crumb & Char / Offers",
+      "title": "Offers",
+      "body": "Everything you need to know about offers at Crumb & Char, from today's choices to the easiest way to join us.",
+      "image": "/templates/crumb-and-char/assets/photo-4.webp",
+      "imageAlt": "Offers at Crumb & Char",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Offers highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "shops": {
+      "eyebrow": "Crumb & Char / Shops",
+      "title": "Shops",
+      "body": "Everything you need to know about shops at Crumb & Char, from today's choices to the easiest way to join us.",
+      "image": "/templates/crumb-and-char/assets/photo-5.webp",
+      "imageAlt": "Shops at Crumb & Char",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Shops highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    },
+    "order": {
+      "eyebrow": "Crumb & Char / Order",
+      "title": "Order",
+      "body": "Everything you need to know about order at Crumb & Char, from today's choices to the easiest way to join us.",
+      "image": "/templates/crumb-and-char/assets/photo-6.webp",
+      "imageAlt": "Order at Crumb & Char",
+      "cards": [
+        {
+          "icon": "Utensils",
+          "title": "Order highlights",
+          "text": "Prepared to order with ingredients chosen for flavour.",
+          "meta": "House signature"
+        },
+        {
+          "icon": "Star",
+          "title": "Good to know",
+          "text": "A concise favourite with a distinctive house finish.",
+          "meta": "Seasonal"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Make it yours",
+          "text": "Made for sharing, returning and recommending.",
+          "meta": "Guest favourite"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "services",
+    "feature",
+    "gallery",
+    "intro",
+    "cta",
+    "testimonials"
+  ]
+}

@@ -3,7 +3,7 @@ import { useTemplateData } from "../TemplateContext";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
-  const { hero } = useTemplateData();
+  const { hero, brand } = useTemplateData();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, 300]);
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
@@ -19,8 +19,10 @@ export default function Hero() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="text-[18.5vw] sm:text-[16vw] md:text-[13.5vw] lg:text-[12vw] xl:text-[11vw] text-[#421a22] font-normal tracking-tight leading-[1] mb-6 md:mb-8 w-full whitespace-nowrap"
           style={{ fontFamily: "'Baguet Script', cursive" }}
+          data-editable-path="brand.name"
+          data-editable-type="text"
         >
-          Restaurant & Bar
+          {brand.name}
         </motion.h1>
 
         {/* Image Container with Badge */}

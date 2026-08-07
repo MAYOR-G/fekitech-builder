@@ -37,7 +37,7 @@
     "price": "$16",
     "buttonLabel": "Order this pie",
     "buttonHref": "#contact",
-    "image": "https://images.unsplash.com/photo-1651980979183-79425af50103?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800",
+    "image": "/templates/pizza-light-clean/assets/signature_pizza.png",
     "imageAlt": "Pizzas and sides arranged across a restaurant table"
   },
   "dishes": {
@@ -46,10 +46,10 @@
     "buttonLabel": "View full menu",
     "buttonHref": "#menu",
     "items": [
-      { "name": "Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16", "image": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Margherita pizza with basil" },
-      { "name": "Lemon and Mushroom", "description": "Mushrooms, arugula, lemon cream, herbs.", "price": "$17", "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Fresh pizza with herbs" },
-      { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18", "image": "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Pizza with charred crust and toppings" },
-      { "name": "Sunny Basil Pie", "description": "Tomato, mozzarella, basil, parmesan, olive oil.", "price": "$17", "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Pizza on a wooden table" }
+      { "name": "Luma Margherita", "description": "Tomato, fior di latte, basil, olive oil.", "price": "$16", "image": "/templates/pizza-light-clean/assets/signature_pizza.png", "imageAlt": "Margherita pizza with basil" },
+      { "name": "Lemon and Mushroom", "description": "Mushrooms, arugula, lemon cream, herbs.", "price": "$17", "image": "/templates/pizza-light-clean/assets/gallery_pizza_2.png", "imageAlt": "Fresh pizza with herbs" },
+      { "name": "Nduja Honey", "description": "Nduja, fior di latte, hot honey, red onion.", "price": "$18", "image": "/templates/pizza-light-clean/assets/gallery_pizza_4.png", "imageAlt": "Pizza with charred crust and toppings" },
+      { "name": "Sunny Basil Pie", "description": "Tomato, mozzarella, basil, parmesan, olive oil.", "price": "$17", "image": "/templates/pizza-light-clean/assets/gallery_pizza_1.png", "imageAlt": "Pizza on a wooden table" }
     ]
   },
   "menu": {
@@ -79,19 +79,19 @@
     "description": "Luma Slice brings together local growers, thoughtful flour, and the joy of sharing great pizza. We ferment every dough slowly and fire each pie with care so the ingredients stay bright.",
     "buttonLabel": "Come say hello",
     "buttonHref": "#gallery",
-    "image": "https://images.unsplash.com/photo-1767065604207-8876c6bfb5be?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800",
+    "image": "/templates/pizza-light-clean/assets/story_pizza.png",
     "imageAlt": "Hand holding a fresh tomato and basil pizza slice",
-    "secondaryImage": "https://images.unsplash.com/photo-1774806189017-f4c1f2760ad2?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800",
+    "secondaryImage": "/templates/pizza-light-clean/assets/gallery_pizza_3.png",
     "secondaryImageAlt": "Close-up of a margherita pizza"
   },
   "gallery": {
     "title": "A slice of Luma",
     "description": "Sunlit lunches, fiery ovens, shared pies, and a room full of color.",
     "images": [
-      { "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Pepperoni pizza in a delivery box" },
-      { "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Pizza on a wooden table with toppings" },
-      { "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Pizza with melted cheese and vegetables" },
-      { "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1600", "imageAlt": "Whole pizza with crisp crust and fresh toppings" }
+      { "image": "/templates/pizza-light-clean/assets/gallery_pizza_1.png", "imageAlt": "Pepperoni pizza in a delivery box" },
+      { "image": "/templates/pizza-light-clean/assets/gallery_pizza_2.png", "imageAlt": "Pizza on a wooden table with toppings" },
+      { "image": "/templates/pizza-light-clean/assets/gallery_pizza_3.png", "imageAlt": "Pizza with melted cheese and vegetables" },
+      { "image": "/templates/pizza-light-clean/assets/gallery_pizza_4.png", "imageAlt": "Whole pizza with crisp crust and fresh toppings" }
     ]
   },
   "reviews": {

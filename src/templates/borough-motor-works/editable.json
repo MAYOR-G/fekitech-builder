@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#eef0ed",
+      "surface": "#dfe3df",
+      "card": "#ffffff",
+      "ink": "#161b1a",
+      "muted": "#68706e",
+      "accent": "#8bbf2f",
+      "accentSecondary": "#d6672b",
+      "line": "#c9ceca"
+    },
+    "typography": {
+      "heading": "Arial Black,Arial,sans-serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Speed Garage",
+    "strapline": "Servicing & MOT · Sheffield",
+    "logo": "/templates/borough-motor-works/assets/logo.svg",
+    "logoAlt": "Speed Garage logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@boroughmotorworks.co.uk",
+    "emailHref": "mailto:hello@boroughmotorworks.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Services",
+        "page": "services"
+      },
+      {
+        "label": "MOT",
+        "page": "mot"
+      },
+      {
+        "label": "Repairs",
+        "page": "repairs"
+      },
+      {
+        "label": "About",
+        "page": "about"
+      },
+      {
+        "label": "Book",
+        "page": "book"
+      }
+    ],
+    "ctaLabel": "Book",
+    "ctaPage": "book"
+  },
+  "hero": {
+    "eyebrow": "Book it. Fix it. Know where you stand.",
+    "title": "Straight-talking care for the car you rely on.",
+    "text": "Independent servicing, MOTs and diagnostics with clear prices and no work started without approval.",
+    "primaryLabel": "Book",
+    "primaryPage": "book",
+    "secondaryLabel": "Services",
+    "secondaryPage": "services",
+    "image": "/templates/borough-motor-works/assets/photo-1.webp",
+    "imageAlt": "Borough Motor Works main view",
+    "imageSecondary": "/templates/borough-motor-works/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Borough Motor Works",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Borough Motor Works combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/borough-motor-works/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Borough Motor Works",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "MOT Tests",
+        "text": "Focused mot tests support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Full Service",
+        "text": "Focused full service support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Diagnostics",
+        "text": "Focused diagnostics support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Brakes & Tyres",
+        "text": "Focused brakes & tyres support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/borough-motor-works/assets/photo-2.webp",
+        "alt": "Borough Motor Works gallery image 1",
+        "caption": "MOT Tests"
+      },
+      {
+        "src": "/templates/borough-motor-works/assets/photo-3.webp",
+        "alt": "Borough Motor Works gallery image 2",
+        "caption": "Full Service"
+      },
+      {
+        "src": "/templates/borough-motor-works/assets/photo-4.webp",
+        "alt": "Borough Motor Works gallery image 3",
+        "caption": "Diagnostics"
+      },
+      {
+        "src": "/templates/borough-motor-works/assets/photo-5.webp",
+        "alt": "Borough Motor Works gallery image 4",
+        "caption": "Brakes & Tyres"
+      },
+      {
+        "src": "/templates/borough-motor-works/assets/photo-6.webp",
+        "alt": "Borough Motor Works gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Borough Motor Works.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Book",
+    "page": "book"
+  },
+  "footer": {
+    "note": "Independent servicing, MOTs and diagnostics with clear prices and no work started without approval.",
+    "legal": "© 2026 Borough Motor Works. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "services": {
+      "eyebrow": "Borough Motor Works · Services",
+      "title": "Services",
+      "body": "Explore services at Borough Motor Works. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/borough-motor-works/assets/photo-2.webp",
+      "imageAlt": "Services at Borough Motor Works",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Services overview",
+          "text": "A concise introduction to our services approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "mot": {
+      "eyebrow": "Borough Motor Works · MOT",
+      "title": "MOT",
+      "body": "Explore mot at Borough Motor Works. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/borough-motor-works/assets/photo-3.webp",
+      "imageAlt": "MOT at Borough Motor Works",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "MOT overview",
+          "text": "A concise introduction to our mot approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "repairs": {
+      "eyebrow": "Borough Motor Works · Repairs",
+      "title": "Repairs",
+      "body": "Explore repairs at Borough Motor Works. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/borough-motor-works/assets/photo-4.webp",
+      "imageAlt": "Repairs at Borough Motor Works",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Repairs overview",
+          "text": "A concise introduction to our repairs approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Borough Motor Works · About",
+      "title": "About",
+      "body": "Explore about at Borough Motor Works. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/borough-motor-works/assets/photo-5.webp",
+      "imageAlt": "About at Borough Motor Works",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "About overview",
+          "text": "A concise introduction to our about approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "book": {
+      "eyebrow": "Borough Motor Works · Book",
+      "title": "Book",
+      "body": "Explore book at Borough Motor Works. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/borough-motor-works/assets/photo-6.webp",
+      "imageAlt": "Book at Borough Motor Works",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Book overview",
+          "text": "A concise introduction to our book approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "services",
+    "feature",
+    "gallery",
+    "intro",
+    "testimonials",
+    "cta"
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#eeeae0",
+      "surface": "#f6f2e9",
+      "card": "#ffffff",
+      "ink": "#17201d",
+      "muted": "#66706b",
+      "accent": "#7c2f37",
+      "accentSecondary": "#b59a62",
+      "line": "#d3cdc0"
+    },
+    "typography": {
+      "heading": "Georgia,serif",
+      "body": "Arial,sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Trust Solicitors",
+    "strapline": "Solicitors · Birmingham",
+    "logo": "/templates/mercer-blythe-solicitors/assets/logo.svg",
+    "logoAlt": "Trust Solicitors logo",
+    "phone": "020 7946 0284",
+    "phoneHref": "tel:+442079460284",
+    "email": "hello@mercerblythesolicitors.co.uk",
+    "emailHref": "mailto:hello@mercerblythesolicitors.co.uk",
+    "address": "24 Market Street, United Kingdom"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "page": "home"
+      },
+      {
+        "label": "Expertise",
+        "page": "expertise"
+      },
+      {
+        "label": "People",
+        "page": "people"
+      },
+      {
+        "label": "Insights",
+        "page": "insights"
+      },
+      {
+        "label": "About",
+        "page": "about"
+      },
+      {
+        "label": "Enquire",
+        "page": "enquire"
+      }
+    ],
+    "ctaLabel": "Enquire",
+    "ctaPage": "enquire"
+  },
+  "hero": {
+    "eyebrow": "Clear counsel",
+    "title": "Complex matters, made manageable.",
+    "text": "Commercial, property and private-client solicitors offering precise advice without unnecessary theatre.",
+    "primaryLabel": "Enquire",
+    "primaryPage": "enquire",
+    "secondaryLabel": "Expertise",
+    "secondaryPage": "expertise",
+    "image": "/templates/mercer-blythe-solicitors/assets/photo-1.webp",
+    "imageAlt": "Mercer & Blythe main view",
+    "imageSecondary": "/templates/mercer-blythe-solicitors/assets/photo-2.webp",
+    "imageSecondaryAlt": "A closer view of Mercer & Blythe",
+    "note": "Independent · UK based · Enquiries welcome"
+  },
+  "intro": {
+    "eyebrow": "Our point of view",
+    "title": "Made around people, not a formula.",
+    "text": "Mercer & Blythe combines specialist knowledge with attentive service. Every detail is considered, clearly explained and shaped around real needs.",
+    "image": "/templates/mercer-blythe-solicitors/assets/photo-3.webp",
+    "imageAlt": "The team and setting at Mercer & Blythe",
+    "stats": [
+      {
+        "value": "01",
+        "label": "Clear first conversation"
+      },
+      {
+        "value": "Local",
+        "label": "UK-based expertise"
+      },
+      {
+        "value": "Human",
+        "label": "Thoughtful support"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Expert help, clearly organised.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Business",
+        "text": "Focused business support, delivered with care, clarity and local knowledge.",
+        "meta": "Personal"
+      },
+      {
+        "icon": "Star",
+        "title": "Property",
+        "text": "Focused property support, delivered with care, clarity and local knowledge.",
+        "meta": "Practical"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Employment",
+        "text": "Focused employment support, delivered with care, clarity and local knowledge.",
+        "meta": "Experienced"
+      },
+      {
+        "icon": "Check",
+        "title": "Private Client",
+        "text": "Focused private client support, delivered with care, clarity and local knowledge.",
+        "meta": "Responsive"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A closer look",
+    "title": "The details make the difference.",
+    "images": [
+      {
+        "src": "/templates/mercer-blythe-solicitors/assets/photo-2.webp",
+        "alt": "Mercer & Blythe gallery image 1",
+        "caption": "Business"
+      },
+      {
+        "src": "/templates/mercer-blythe-solicitors/assets/photo-3.webp",
+        "alt": "Mercer & Blythe gallery image 2",
+        "caption": "Property"
+      },
+      {
+        "src": "/templates/mercer-blythe-solicitors/assets/photo-4.webp",
+        "alt": "Mercer & Blythe gallery image 3",
+        "caption": "Employment"
+      },
+      {
+        "src": "/templates/mercer-blythe-solicitors/assets/photo-5.webp",
+        "alt": "Mercer & Blythe gallery image 4",
+        "caption": "Private Client"
+      },
+      {
+        "src": "/templates/mercer-blythe-solicitors/assets/photo-6.webp",
+        "alt": "Mercer & Blythe gallery image 5",
+        "caption": "Our place"
+      }
+    ]
+  },
+  "feature": {
+    "label": "At a glance",
+    "items": [
+      "UK-based",
+      "Independent",
+      "Responsive",
+      "Built around you"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Trusted for the way we work.",
+    "items": [
+      {
+        "quote": "Clear, warm and exceptionally well organised from the first conversation.",
+        "name": "Alex M. · local client"
+      },
+      {
+        "quote": "Every detail felt considered, and we always knew what happened next.",
+        "name": "Priya R. · returning client"
+      },
+      {
+        "quote": "Professional without ever feeling impersonal.",
+        "name": "Thomas W. · recent client"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start here",
+    "title": "Talk to Mercer & Blythe.",
+    "text": "Tell us what you are planning and we will come back with a clear, useful next step.",
+    "label": "Enquire",
+    "page": "enquire"
+  },
+  "footer": {
+    "note": "Commercial, property and private-client solicitors offering precise advice without unnecessary theatre.",
+    "legal": "© 2026 Mercer & Blythe. All rights reserved.",
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com"
+      }
+    ]
+  },
+  "pages": {
+    "expertise": {
+      "eyebrow": "Mercer & Blythe · Expertise",
+      "title": "Expertise",
+      "body": "Explore expertise at Mercer & Blythe. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/mercer-blythe-solicitors/assets/photo-2.webp",
+      "imageAlt": "Expertise at Mercer & Blythe",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Expertise overview",
+          "text": "A concise introduction to our expertise approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "people": {
+      "eyebrow": "Mercer & Blythe · People",
+      "title": "People",
+      "body": "Explore people at Mercer & Blythe. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/mercer-blythe-solicitors/assets/photo-3.webp",
+      "imageAlt": "People at Mercer & Blythe",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "People overview",
+          "text": "A concise introduction to our people approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "insights": {
+      "eyebrow": "Mercer & Blythe · Insights",
+      "title": "Insights",
+      "body": "Explore insights at Mercer & Blythe. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/mercer-blythe-solicitors/assets/photo-4.webp",
+      "imageAlt": "Insights at Mercer & Blythe",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Insights overview",
+          "text": "A concise introduction to our insights approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "Mercer & Blythe · About",
+      "title": "About",
+      "body": "Explore about at Mercer & Blythe. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/mercer-blythe-solicitors/assets/photo-5.webp",
+      "imageAlt": "About at Mercer & Blythe",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "About overview",
+          "text": "A concise introduction to our about approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    },
+    "enquire": {
+      "eyebrow": "Mercer & Blythe · Enquire",
+      "title": "Enquire",
+      "body": "Explore enquire at Mercer & Blythe. Clear information, thoughtful guidance and a straightforward next step for every visitor.",
+      "image": "/templates/mercer-blythe-solicitors/assets/photo-6.webp",
+      "imageAlt": "Enquire at Mercer & Blythe",
+      "cards": [
+        {
+          "icon": "Briefcase",
+          "title": "Enquire overview",
+          "text": "A concise introduction to our enquire approach.",
+          "meta": "Personal"
+        },
+        {
+          "icon": "Star",
+          "title": "What to expect",
+          "text": "Useful details, timings and support from our experienced team.",
+          "meta": "Practical"
+        },
+        {
+          "icon": "MapPin",
+          "title": "Plan your next step",
+          "text": "Speak with us for guidance tailored to your circumstances.",
+          "meta": "Experienced"
+        }
+      ]
+    }
+  },
+  "homeOrder": [
+    "services",
+    "feature",
+    "intro",
+    "testimonials",
+    "gallery",
+    "cta"
+  ]
+}
