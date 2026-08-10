@@ -188,6 +188,7 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "kindred-paws-vets": "business",
   "little-lanterns-nursery": "business",
   "borough-motor-works": "business",
+  "kinetic-frame-studio": "business",
   "wildmere-gardens": "business",
   "tallow-and-sage": "business",
   "nightjar-and-crown": "business",

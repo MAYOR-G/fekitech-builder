@@ -1,0 +1,16 @@
+{
+  "id": "kinetic-frame-studio",
+  "name": "Kinetic Frame Studio",
+  "description": "A Framer-inspired digital agency template with oversized editorial typography, rounded visual cards, accordion services, process rail, pricing, testimonials, FAQ, and contact form.",
+  "category": "Business",
+  "image": "/templates/kinetic-frame-studio.webp",
+  "previewImages": [
+    "/templates/kinetic-frame-studio.webp"
+  ],
+  "features": [
+    "Editable agency identity, logo, navigation, copy, images, buttons, links, services, pricing, testimonials, contact details, and footer",
+    "Scoped original palette and typography tokens",
+    "Responsive agency homepage with section navigation and page metadata",
+    "Safe React interactions for mobile navigation, services, FAQ, and contact form"
+  ]
+}

@@ -86,6 +86,8 @@ import infusionLondonConfig from "../templates/infusion-london/config.json";
 import infusionLondonEditable from "../templates/infusion-london/editable.json";
 import digitalDesignerPortfolioConfig from "../templates/digital-designer-portfolio/config.json";
 import digitalDesignerPortfolioEditable from "../templates/digital-designer-portfolio/editable.json";
+import kineticFrameStudioConfig from "../templates/kinetic-frame-studio/config.json";
+import kineticFrameStudioEditable from "../templates/kinetic-frame-studio/editable.json";
 import softwareEngineerPortfolioConfig from "../templates/software-engineer-portfolio/config.json";
 import softwareEngineerPortfolioEditable from "../templates/software-engineer-portfolio/editable.json";
 import londonPizzaShopConfig from "../templates/london-pizza-shop/config.json";
@@ -198,6 +200,7 @@ const components = {
   "harborwell-home-health": dynamic<{ data: TemplateData }>(() => import("../templates/harborwell-home-health/template")),
   "infusion-london": dynamic<{ data: TemplateData }>(() => import("../templates/infusion-london/template")),
   "digital-designer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/digital-designer-portfolio/template")),
+  "kinetic-frame-studio": dynamic<{ data: TemplateData }>(() => import("../templates/kinetic-frame-studio/template")),
   "software-engineer-portfolio": dynamic<{ data: TemplateData }>(() => import("../templates/software-engineer-portfolio/template")),
   "london-pizza-shop": dynamic<{ data: TemplateData }>(() => import("../templates/london-pizza-shop/template")),
   "moss-marrow-cafe": dynamic<{ data: TemplateData }>(() => import("../templates/moss-marrow-cafe/template")),
@@ -274,6 +277,7 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "the-copper-tap": { config: theCopperTapConfig, component: components["the-copper-tap"], defaultData: normalizeData(theCopperTapEditable) },
   "borough-motor-works": { config: boroughMotorWorksConfig, component: components["borough-motor-works"], defaultData: normalizeData(boroughMotorWorksEditable) },
   "digital-designer-portfolio": { config: digitalDesignerPortfolioConfig, component: components["digital-designer-portfolio"], defaultData: normalizeData(digitalDesignerPortfolioEditable) },
+  "kinetic-frame-studio": { config: kineticFrameStudioConfig, component: components["kinetic-frame-studio"], defaultData: normalizeData(kineticFrameStudioEditable) },
   "pastries-snacks-premium": { config: pastriesSnacksConfig, component: components["pastries-snacks-premium"], defaultData: normalizeData(pastriesSnacksEditable) },
   "forgepoint-construction": { config: forgepointConstructionConfig, component: components["forgepoint-construction"], defaultData: normalizeData(forgepointConstructionEditable) },
   "harrow-vale-estates": { config: harrowValeEstatesConfig, component: components["harrow-vale-estates"], defaultData: normalizeData(harrowValeEstatesEditable) },

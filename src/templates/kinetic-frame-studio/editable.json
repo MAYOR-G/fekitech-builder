@@ -1,0 +1,232 @@
+{
+  "brand": {
+    "name": "Kinetic Frame Studio",
+    "shortName": "Kinetic",
+    "logo": "/templates/kinetic-frame-studio/assets/logo.svg",
+    "logoAlt": "Kinetic Frame Studio logo",
+    "tagline": "Strategy, identity and growth systems for ambitious UK brands.",
+    "email": "hello@kineticframe.co.uk",
+    "emailHref": "mailto:hello@kineticframe.co.uk",
+    "phone": "+44 20 7946 1184",
+    "phoneHref": "tel:+442079461184",
+    "address": "42 Redchurch Street, Shoreditch, London E2 7DP",
+    "hours": "Mon-Fri 09:00-18:00"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Start a project",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "We are digital design",
+    "title": "CREATORS",
+    "description": "From launch idea to living brand system, we shape websites and campaigns that people remember.",
+    "teamLabel": "Meet our team",
+    "teamHref": "#team",
+    "image": "/templates/kinetic-frame-studio/assets/hero-studio.webp",
+    "imageAlt": "Studio table with brand boards, laptop and campaign materials",
+    "orbText": "Create Idea Insight Solution",
+    "caption": "CREATING WORK THAT MOVES",
+    "avatars": [
+      { "image": "/templates/kinetic-frame-studio/assets/hero-client-1.webp", "imageAlt": "Founder portrait for a Kinetic Frame Studio client" },
+      { "image": "/templates/kinetic-frame-studio/assets/hero-client-2.webp", "imageAlt": "Creative director portrait for a Kinetic Frame Studio client" },
+      { "image": "/templates/kinetic-frame-studio/assets/hero-client-3.webp", "imageAlt": "Business owner portrait for a Kinetic Frame Studio client" },
+      { "image": "/templates/kinetic-frame-studio/assets/hero-client-4.webp", "imageAlt": "Marketing lead portrait for a Kinetic Frame Studio client" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "EXPLORE WHAT WE CAN DO FOR YOU",
+    "items": [
+      { "number": "01", "title": "BRANDING", "meta": "Naming / Identity", "description": "Sharp positioning, visual systems and launch-ready brand assets." },
+      { "number": "02", "title": "WEB DESIGN", "meta": "UI / UX", "description": "Responsive websites with confident hierarchy, conversion paths and editor-ready sections." },
+      { "number": "03", "title": "DEVELOPMENT", "meta": "Code / CMS", "description": "Fast, accessible builds with sensible content controls and publishing workflows." },
+      { "number": "04", "title": "MARKETING", "meta": "SEO / Campaigns", "description": "Search, paid and content systems that keep the new brand moving." }
+    ]
+  },
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "WE ARE A DIGITAL GROWTH STUDIO",
+    "image": "/templates/kinetic-frame-studio/assets/about-team.webp",
+    "imageAlt": "Kinetic Frame Studio team reviewing campaign boards",
+    "storyTitle": "Our story",
+    "story": "We help founders and marketing teams turn a clear idea into a confident digital presence. Strategy, design, build and launch support stay connected from day one.",
+    "statsIntro": "We work with focused companies across the UK.",
+    "partners": ["NOVA", "FOLD", "LOOP", "CIVIC", "VAULT", "MORROW"],
+    "stats": [
+      { "value": "9+", "label": "Years Experience" },
+      { "value": "148", "label": "Projects Shipped" },
+      { "value": "64", "label": "Active Clients" },
+      { "value": "18", "label": "Awards & Mentions" }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Featured projects",
+    "title": "SHOWCASING OUR MOST IMPACTFUL WORK",
+    "items": [
+      { "category": "Marketing", "title": "VELOCITY", "image": "/templates/kinetic-frame-studio/assets/case-velocity.webp", "imageAlt": "Studio campaign materials for a marketing launch" },
+      { "category": "Web design", "title": "THE PERFECT FRAME", "image": "/templates/kinetic-frame-studio/assets/case-frame.webp", "imageAlt": "Launch planning table with tablet and brand boards" },
+      { "category": "Strategy", "title": "SPREADING THE WORD", "image": "/templates/kinetic-frame-studio/assets/case-word.webp", "imageAlt": "Creative agency team reviewing strategy materials" },
+      { "category": "Branding", "title": "FRESH BEGINNINGS", "image": "/templates/kinetic-frame-studio/assets/case-fresh.webp", "imageAlt": "Brand presentation wall with packaging mockups and colour swatches" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "STRATEGIC STEPS TO IMPACTFUL RESULTS",
+    "image": "/templates/kinetic-frame-studio/assets/process-table.webp",
+    "imageAlt": "Creative director arranging launch campaign materials",
+    "steps": [
+      { "number": "1", "title": "Listening to Your Vision", "description": "We clarify goals, audience, constraints and commercial priorities before design starts." },
+      { "number": "2", "title": "Planning with Purpose", "description": "We map the content, conversion journey, visual direction and launch plan." },
+      { "number": "3", "title": "Visualising Your Ideas", "description": "Concepts move into layouts, components and campaign moments you can review quickly." },
+      { "number": "4", "title": "Bringing It to Life", "description": "Design, copy, code and content are assembled into a responsive, accessible website." },
+      { "number": "5", "title": "Delivering Success", "description": "We support launch, analytics and practical improvements after the site goes live." }
+    ]
+  },
+  "team": {
+    "eyebrow": "Meet our team",
+    "title": "CREATIVE PROFESSIONALS AT YOUR SERVICE",
+    "people": [
+      { "name": "Marcus Hale", "role": "Brand Strategist", "image": "/templates/kinetic-frame-studio/assets/team-marcus.webp", "imageAlt": "Marcus Hale, brand strategist" },
+      { "name": "Eloise Carter", "role": "Creative Director", "image": "/templates/kinetic-frame-studio/assets/team-eloise.webp", "imageAlt": "Eloise Carter, creative director" },
+      { "name": "Sana Ahmed", "role": "Web Designer", "image": "/templates/kinetic-frame-studio/assets/team-sana.webp", "imageAlt": "Sana Ahmed, web designer" },
+      { "name": "Jon Lee", "role": "Front-End Developer", "image": "/templates/kinetic-frame-studio/assets/team-jon.webp", "imageAlt": "Jon Lee, front-end developer" },
+      { "name": "Amara Wright", "role": "Marketing Lead", "image": "/templates/kinetic-frame-studio/assets/team-amara.webp", "imageAlt": "Amara Wright, marketing lead" },
+      { "name": "Noah Finn", "role": "Project Manager", "image": "/templates/kinetic-frame-studio/assets/team-noah.webp", "imageAlt": "Noah Finn, project manager" }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing plans",
+    "title": "CHOOSE THE PERFECT PLAN FOR YOUR BUSINESS",
+    "plans": [
+      { "name": "Brand", "price": "£690", "period": "/project", "description": "Identity foundations for a focused launch.", "features": ["Discovery call", "Logo direction", "Colour palette", "Launch checklist"], "buttonLabel": "Choose brand", "buttonHref": "#contact" },
+      { "name": "Growth", "price": "£1,450", "period": "/project", "description": "Website and campaign setup for growing teams.", "features": ["Everything in Brand", "Five-page website", "CMS setup", "SEO basics", "Analytics setup"], "buttonLabel": "Choose growth", "buttonHref": "#contact" },
+      { "name": "Performance", "price": "£2,950", "period": "/project", "description": "A deeper build with marketing systems included.", "features": ["Everything in Growth", "Conversion copy", "Campaign landing page", "Monthly reporting", "Launch support"], "buttonLabel": "Choose performance", "buttonHref": "#contact" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "THAT INSPIRE CONFIDENCE",
+    "items": [
+      { "quote": "Kinetic gave our launch a point of view and a site our sales team can actually use.", "name": "Hannah Price", "role": "Founder, Apricity Labs" },
+      { "quote": "The work felt strategic from day one. Clear, polished and quick to adapt.", "name": "Owen Patel", "role": "Director, Fieldhouse" },
+      { "quote": "They translated a complex offer into something direct and beautifully structured.", "name": "Nia Brooks", "role": "Head of Growth, Verve North" },
+      { "quote": "Our campaigns finally feel connected to the brand instead of bolted on later.", "name": "Theo James", "role": "Marketing Lead, Lumen Yard" },
+      { "quote": "The editor setup is simple enough for our team to keep fresh every week.", "name": "Maya Singh", "role": "COO, Copper Lane" },
+      { "quote": "A rare mix of taste, speed and commercial clarity.", "name": "Callum Reed", "role": "Partner, Finch & Vale" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Your concerns",
+    "title": "CLEAR SOLUTIONS TO YOUR CONCERNS",
+    "image": "/templates/kinetic-frame-studio/assets/faq-consult.webp",
+    "imageAlt": "Project consultation with website wireframes and laptop",
+    "items": [
+      { "question": "What is included in your branding service?", "answer": "Positioning, logo direction, colour palette, typography guidance and practical launch assets." },
+      { "question": "How long does it take to complete a website?", "answer": "Most small business sites take four to six weeks once content and decisions are ready." },
+      { "question": "Do you offer mobile-friendly design?", "answer": "Yes. Every layout is shaped for mobile, tablet and desktop before launch." },
+      { "question": "Can you redesign an existing website?", "answer": "Yes. We can refresh the structure, content, visuals and performance without losing what works." },
+      { "question": "Do you provide content development assistance?", "answer": "Yes. We write concise web copy, campaign messages and launch checklists." },
+      { "question": "Do you offer ongoing digital marketing campaigns?", "answer": "Yes. We can support SEO, landing pages, reporting and monthly campaign improvements." }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Latest thinking",
+    "title": "STAY AHEAD WITH THE LATEST IN DIGITAL MARKETING",
+    "posts": [
+      { "title": "The Value of a Firm Brand Position", "date": "12 May 2026", "image": "/templates/kinetic-frame-studio/assets/blog-brand.webp", "imageAlt": "Brand boards and studio materials on a white table" },
+      { "title": "How Design Systems Help Small Teams Move Faster", "date": "28 May 2026", "image": "/templates/kinetic-frame-studio/assets/blog-systems.webp", "imageAlt": "Creative team reviewing website system ideas" },
+      { "title": "The Digital Marketing Trends Worth Keeping", "date": "09 Jun 2026", "image": "/templates/kinetic-frame-studio/assets/blog-marketing.webp", "imageAlt": "Close-up of campaign planning materials and tablet" }
+    ]
+  },
+  "contact": {
+    "title": "LET'S START YOUR PROJECT TODAY",
+    "description": "Send a few details. We will reply with the best next step, suggested scope and realistic timing.",
+    "badge": "Project enquiry",
+    "form": {
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "companyLabel": "Company",
+      "messageLabel": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "name@example.co.uk",
+      "companyPlaceholder": "Company name",
+      "messagePlaceholder": "Tell us what you want to build",
+      "buttonLabel": "Submit"
+    }
+  },
+  "footer": {
+    "description": "A London digital studio building brands, websites and campaigns with a sharper frame.",
+    "linksTitle": "Links",
+    "serviceTitle": "Services",
+    "socialTitle": "Social",
+    "serviceLinks": [
+      { "label": "Branding", "href": "#services" },
+      { "label": "Web design", "href": "#services" },
+      { "label": "Development", "href": "#services" },
+      { "label": "Marketing", "href": "#services" }
+    ],
+    "socialLinks": [
+      { "label": "LinkedIn", "href": "https://linkedin.com/" },
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Behance", "href": "https://behance.net/" }
+    ],
+    "copyright": "© 2026 Kinetic Frame Studio. All rights reserved."
+  },
+  "colors": {
+    "pageBackground": "#fcfcfc",
+    "surface": "#f2f2f0",
+    "card": "#ffffff",
+    "headingText": "#303033",
+    "bodyText": "#55555c",
+    "mutedText": "#86868a",
+    "accent": "#ff5638",
+    "accentSecondary": "#202025",
+    "buttonBg": "#ff5638",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonBorder": "#d9d9d9",
+    "secondaryButtonText": "#303033",
+    "link": "#303033",
+    "border": "#dfdfdc",
+    "icon": "#ff5638",
+    "headerBg": "#fcfcfc",
+    "headerText": "#303033",
+    "footerBg": "#090909",
+    "footerText": "#ffffff",
+    "footerMuted": "#b8b8b8",
+    "formBackground": "#151515",
+    "formText": "#ffffff",
+    "formPlaceholder": "#a7a7a7",
+    "formBorder": "#303030"
+  },
+  "typography": {
+    "displayFont": "Inter",
+    "headingFont": "Inter",
+    "bodyFont": "Inter",
+    "navFont": "Inter",
+    "buttonFont": "Inter",
+    "headingWeight": 900,
+    "bodyWeight": 400,
+    "lineHeight": 1.5,
+    "letterSpacing": "0em"
+  },
+  "_editor": {
+    "pages": {
+      "items": [
+        { "id": "home", "title": "Home", "navLabel": "Home", "slug": "", "home": true, "hidden": false, "seoTitle": "Kinetic Frame Studio | Digital Growth Studio", "seoDescription": "Brand strategy, web design, development and digital marketing for ambitious UK businesses." },
+        { "id": "about", "title": "About", "navLabel": "About", "slug": "about", "home": false, "hidden": false, "seoTitle": "About Kinetic Frame Studio", "seoDescription": "Meet the London studio helping brands turn strategy into websites and campaigns." },
+        { "id": "services", "title": "Services", "navLabel": "Services", "slug": "services", "home": false, "hidden": false, "seoTitle": "Digital Agency Services", "seoDescription": "Branding, web design, development and marketing support for small business growth." },
+        { "id": "projects", "title": "Projects", "navLabel": "Projects", "slug": "projects", "home": false, "hidden": false, "seoTitle": "Digital Agency Projects", "seoDescription": "Selected brand, website and marketing projects from Kinetic Frame Studio." },
+        { "id": "contact", "title": "Contact", "navLabel": "Contact", "slug": "contact", "home": false, "hidden": false, "seoTitle": "Contact Kinetic Frame Studio", "seoDescription": "Start a brand, website or marketing project with Kinetic Frame Studio." }
+      ]
+    }
+  }
+}
