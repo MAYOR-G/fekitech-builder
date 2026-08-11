@@ -194,6 +194,9 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "nightjar-and-crown": "business",
   "crumb-and-char": "business",
   "forno-sixteen": "business",
+  "arcstone-growth": "business",
+  "beaniro-cold-brew": "business",
+  "lune-leaf-skincare": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

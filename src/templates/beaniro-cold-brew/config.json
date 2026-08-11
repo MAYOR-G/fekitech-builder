@@ -1,0 +1,16 @@
+{
+  "id": "beaniro-cold-brew",
+  "name": "Beaniro Cold Brew",
+  "description": "A warm, product-led coffee shop template with bold condensed typography, iced drink menu cards, café story sections, testimonials, FAQ, special offer CTA, ticker, and footer.",
+  "category": "Food & Drink",
+  "image": "/templates/beaniro-cold-brew.webp",
+  "previewImages": [
+    "/templates/beaniro-cold-brew.webp"
+  ],
+  "features": [
+    "Editable logo, navigation, product menu, prices, story, reviews, FAQ, buttons, links, and contact details",
+    "Local coffee drink and café imagery",
+    "Fully responsive coffee shop landing page",
+    "Scoped CSS with original theme tokens"
+  ]
+}

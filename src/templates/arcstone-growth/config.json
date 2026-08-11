@@ -1,0 +1,16 @@
+{
+  "id": "arcstone-growth",
+  "name": "Arcstone Growth",
+  "description": "A clean Flexio-inspired business consulting template with an asymmetric hero, proof band, services, process, pricing, sectors, testimonials, case studies, contact call-to-action, and graphic footer.",
+  "category": "Business",
+  "image": "/templates/arcstone-growth.webp",
+  "previewImages": [
+    "/templates/arcstone-growth.webp"
+  ],
+  "features": [
+    "Editable logo, navigation, copy, services, pricing, sectors, case studies, contact details, buttons, links, and images",
+    "Local template-specific imagery",
+    "Responsive desktop, tablet, and mobile layout",
+    "Scoped CSS with original theme tokens"
+  ]
+}

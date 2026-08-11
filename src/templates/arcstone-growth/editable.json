@@ -1,0 +1,149 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "nav": "#faebdc",
+      "ink": "#262121",
+      "body": "#655b55",
+      "muted": "#8b817b",
+      "accent": "#fe6037",
+      "mint": "#76c6b3",
+      "blue": "#3861f9",
+      "yellow": "#ffd37d",
+      "surface": "#ffffff",
+      "soft": "#f1eeeb",
+      "line": "#e9ddd4",
+      "dark": "#100c0a",
+      "darkText": "#fefaf6"
+    },
+    "typography": {
+      "heading": "\"Clash Grotesk\", \"Arial Black\", Arial, sans-serif",
+      "body": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Arcstone",
+    "descriptor": "Growth consultants",
+    "email": "hello@arcstone.co.uk",
+    "emailHref": "mailto:hello@arcstone.co.uk",
+    "phone": "020 8129 4470",
+    "address": "24 Great Portland Street, London W1W 8QS",
+    "copyright": "© 2026 Arcstone Growth Ltd. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#ag-services" },
+      { "label": "Process", "href": "#ag-process" },
+      { "label": "Clients", "href": "#ag-clients" },
+      { "label": "About", "href": "#ag-about" }
+    ],
+    "buttonLabel": "Let's talk",
+    "buttonHref": "#ag-contact"
+  },
+  "hero": {
+    "eyebrow": "Business consulting",
+    "title": "Flexible solutions for modern businesses",
+    "description": "Clear strategy, sharper systems and practical delivery support for teams ready to grow with less noise.",
+    "buttonLabel": "Start here",
+    "buttonHref": "#ag-contact",
+    "imageA": "/templates/arcstone-growth/assets/hero-consulting-team.png",
+    "imageAAlt": "Consulting team reviewing growth plans around a laptop",
+    "imageB": "/templates/arcstone-growth/assets/service-growth.png",
+    "imageBAlt": "Business team discussing a project",
+    "imageC": "/templates/arcstone-growth/assets/service-marketing.png",
+    "imageCAlt": "Two colleagues reviewing marketing plans"
+  },
+  "logos": {
+    "title": "Trusted by growing teams across the UK",
+    "items": ["Northline", "Ledgerwell", "BrightLabs", "Marlow & Co", "Summitly"]
+  },
+  "barriers": {
+    "kicker": "Common barriers",
+    "title": "Overcoming the key barriers that slow growth",
+    "description": "We help leadership teams turn unclear priorities into practical, measurable action.",
+    "image": "/templates/arcstone-growth/assets/hero-consulting-team.png",
+    "imageAlt": "Consultant presenting ideas in a bright meeting room",
+    "items": [
+      { "title": "Unclear positioning", "text": "A sharper message for the buyers you want most." },
+      { "title": "Disconnected systems", "text": "Cleaner handovers between marketing, sales and delivery." },
+      { "title": "Slow decision making", "text": "Simple planning rhythms that keep work moving." }
+    ]
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Our expert services to drive growth",
+    "items": [
+      { "title": "Business consulting", "text": "Plan the right next move with senior commercial guidance.", "image": "/templates/arcstone-growth/assets/service-consulting.png", "imageAlt": "Consultants meeting with a client" },
+      { "title": "Growth strategy", "text": "Build a focused route to stronger demand and better margins.", "image": "/templates/arcstone-growth/assets/service-growth.png", "imageAlt": "Team discussing growth strategy" },
+      { "title": "Marketing systems", "text": "Connect content, conversion and reporting into one calm flow.", "image": "/templates/arcstone-growth/assets/service-marketing.png", "imageAlt": "Marketing team working together" }
+    ]
+  },
+  "process": {
+    "kicker": "Process",
+    "title": "A streamlined process for lasting results",
+    "buttonLabel": "Start now",
+    "buttonHref": "#ag-contact",
+    "secondaryLabel": "View services",
+    "secondaryHref": "#ag-services",
+    "steps": [
+      { "title": "Discover and diagnose", "text": "We review your goals, market, offer and current customer journey." },
+      { "title": "Design the plan", "text": "We shape a focused roadmap with clear owners and priorities." },
+      { "title": "Implement", "text": "We support campaigns, systems, content and conversion improvements." },
+      { "title": "Optimise for growth", "text": "We track results and refine the work so progress keeps compounding." }
+    ]
+  },
+  "imageBand": {
+    "image": "/templates/arcstone-growth/assets/hero-consulting-team.png",
+    "imageAlt": "Team reviewing a laptop during a consulting session"
+  },
+  "stats": {
+    "kicker": "Results",
+    "title": "Transforming businesses with expertise",
+    "items": [
+      { "value": "3+ Years", "label": "Proven experience" },
+      { "value": "24+ Clients", "label": "Teams supported" },
+      { "value": "38+", "label": "Projects improved" }
+    ]
+  },
+  "pricing": {
+    "kicker": "Pricing",
+    "title": "Transparent pricing built for growth",
+    "plans": [
+      { "name": "Strategy", "description": "A focused diagnosis, roadmap and delivery priorities.", "price": "£2,200", "cadence": "project" },
+      { "name": "Growth", "description": "Monthly support across campaigns, sales flow and reporting.", "price": "£4,800", "cadence": "monthly" },
+      { "name": "Enterprise", "description": "Senior partner support for complex teams and multi-market work.", "price": "£9,600", "cadence": "monthly" }
+    ]
+  },
+  "sectors": {
+    "title": "Industry-specific expertise to drive your success",
+    "items": ["Service firms", "SaaS teams", "Local operators", "Healthcare", "Retail", "Startups"]
+  },
+  "testimonials": {
+    "title": "Relied on by companies across the UK",
+    "items": [
+      { "quote": "Arcstone helped us choose fewer priorities and execute them properly. The work felt practical from week one.", "name": "Leah Morris", "role": "Managing Director, Northline" },
+      { "quote": "The team made our sales journey clearer and gave our managers a plan they could actually use.", "name": "Owen Patel", "role": "Founder, Ledgerwell" }
+    ]
+  },
+  "cases": {
+    "kicker": "Case studies",
+    "title": "Client success through our solutions",
+    "buttonLabel": "See all",
+    "buttonHref": "#ag-contact",
+    "items": [
+      { "title": "Making an impact: transforming a healthcare platform rebuild", "category": "Healthcare", "image": "/templates/arcstone-growth/assets/case-healthcare.png", "imageAlt": "Healthcare team planning around a laptop" },
+      { "title": "Optimising conversions: a SaaS startup's leap", "category": "SaaS", "image": "/templates/arcstone-growth/assets/case-saas.png", "imageAlt": "Startup team reviewing conversion performance" }
+    ]
+  },
+  "cta": {
+    "title": "Proceed toward your next achievement",
+    "buttonLabel": "Let's talk",
+    "buttonHref": "#ag-contact"
+  },
+  "footer": {
+    "columns": [
+      { "title": "Page", "links": [{ "label": "Home", "href": "#ag-top" }, { "label": "Services", "href": "#ag-services" }, { "label": "Process", "href": "#ag-process" }, { "label": "Contact", "href": "#ag-contact" }] },
+      { "title": "Social", "links": [{ "label": "LinkedIn", "href": "https://linkedin.com/" }, { "label": "Instagram", "href": "https://instagram.com/" }, { "label": "X", "href": "https://x.com/" }] }
+    ]
+  }
+}

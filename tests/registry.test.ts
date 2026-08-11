@@ -93,14 +93,20 @@ describe("production template registry", () => {
       "moss-marrow-cafe",
       "modulars",
       "hawthorne-fields-academy",
-      "wildmere-gardens"
+      "wildmere-gardens",
+      "arcstone-growth",
+      "beaniro-cold-brew",
+      "lune-leaf-skincare"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
+      "arcstone-growth",
       "ash-bridle-barbers",
       "aurea-objects-shop",
       "bakery-website",
       "barber-website",
+      "beaniro-cold-brew",
+      "lune-leaf-skincare",
       "blueforge-plumbing",
       "blush-crumb-bakehouse",
       "borough-motor-works",
@@ -239,7 +245,10 @@ describe("production template registry", () => {
       "moss-marrow-cafe",
       "modulars",
       "hawthorne-fields-academy",
-      "wildmere-gardens"
+      "wildmere-gardens",
+      "arcstone-growth",
+      "beaniro-cold-brew",
+      "lune-leaf-skincare"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -298,7 +307,8 @@ describe("production template registry", () => {
       "the-copper-tap",
       "signal-yard-studio",
       "forgefit-training",
-      "rivergate-plumbing"
+      "rivergate-plumbing",
+      "lune-leaf-skincare"
     ];
 
     for (const templateId of redesignedTemplateIds) {

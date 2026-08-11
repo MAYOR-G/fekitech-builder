@@ -1,0 +1,119 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fff3df",
+      "paper": "#fff9ed",
+      "card": "#fffaf0",
+      "ink": "#8b2e12",
+      "body": "#9f5a36",
+      "muted": "#c17a50",
+      "accent": "#ff7a1a",
+      "dark": "#913012",
+      "darkText": "#fff2df",
+      "line": "#f0d6b7"
+    },
+    "typography": {
+      "heading": "\"Arial Narrow\", \"Helvetica Neue\", Arial, sans-serif",
+      "body": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Beaniro",
+    "descriptor": "Cold brew bar",
+    "announcement": "Free delivery on orders over £25 across central London",
+    "email": "hello@beaniro.co.uk",
+    "phone": "020 8055 2148",
+    "address": "18 Redchurch Street, London E2 7DD",
+    "copyright": "© 2026 Beaniro. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "About", "href": "#bn-about" },
+      { "label": "Menu", "href": "#bn-menu" },
+      { "label": "Story", "href": "#bn-story" }
+    ],
+    "buttonLabel": "Order now",
+    "buttonHref": "#bn-menu"
+  },
+  "hero": {
+    "kicker": "Freshly brewed",
+    "title": "Fresh cold brew moments",
+    "description": "Brewed slow. Poured smooth.",
+    "buttonLabel": "Explore the menu",
+    "buttonHref": "#bn-menu",
+    "image": "/templates/beaniro-cold-brew/assets/hero-latte-cutout.png",
+    "imageAlt": "Layered iced latte in a clear glass",
+    "splashImage": "/templates/beaniro-cold-brew/assets/coffee-splash-cutout.png",
+    "splashAlt": "Coffee splash behind iced latte"
+  },
+  "menu": {
+    "kicker": "Signature brews",
+    "title": "Signature iced brews",
+    "description": "Chilled favourites, made fresh.",
+    "image": "/templates/beaniro-cold-brew/assets/menu-drinks-cutout.png",
+    "tabs": ["What's popular", "Cold brew", "Frappuccino"],
+    "items": [
+      { "name": "Pistachio Velvet", "price": "£7.50", "note": "Get the mix", "position": "0% 0%", "imageAlt": "Creamy pistachio iced coffee" },
+      { "name": "Iced Caramel Swirl", "price": "£8.75", "note": "Get the mix", "position": "100% 0%", "imageAlt": "Dark iced caramel coffee with cream swirls" },
+      { "name": "Vanilla Ice Latte", "price": "£6.50", "note": "Get the mix", "position": "0% 50%", "imageAlt": "Vanilla iced latte with caramel" },
+      { "name": "Cocoa Ice Latte", "price": "£8.00", "note": "Get the mix", "position": "100% 50%", "imageAlt": "Cocoa iced latte in a clear glass" },
+      { "name": "Cold Brew Cloud", "price": "£7.00", "note": "Get the mix", "position": "0% 100%", "imageAlt": "Cold brew coffee with milk and ice" },
+      { "name": "Iced Hazelnut", "price": "£7.25", "note": "Get the mix", "position": "100% 100%", "imageAlt": "Iced hazelnut coffee with whipped cream" }
+    ]
+  },
+  "standard": {
+    "title": "A colder kind of craft",
+    "image": "/templates/beaniro-cold-brew/assets/cold-brew-pour.webp",
+    "imageAlt": "Cold brew being poured over ice in a clear glass",
+    "body": "Slow brew. Soft cream. Clean finish."
+  },
+  "daily": {
+    "title": "Your daily coffee, chilled",
+    "body": "Smooth cold drinks, finished with care.",
+    "image": "/templates/beaniro-cold-brew/assets/cafe-interior.webp",
+    "imageAlt": "Warm café interior with coffee counter"
+  },
+  "features": [
+    { "title": "Slow brewed", "text": "Deep flavour without harsh edges." },
+    { "title": "Balanced finish", "text": "Cream, syrup and coffee in harmony." },
+    { "title": "Served fresh", "text": "Made cold, clean and ready to enjoy." }
+  ],
+  "reviews": {
+    "title": "Loved by every coffee moment",
+    "items": [
+      { "quote": "Creamy, properly balanced and not too sweet. The cold brew has become my regular.", "name": "Megan Turner" },
+      { "quote": "I tried the cocoa iced latte and it tasted fresh, rich and carefully made.", "name": "Kian Roberts" },
+      { "quote": "The team are friendly and the drinks look exactly as good as they taste.", "name": "Anika Shah" }
+    ]
+  },
+  "craft": {
+    "title": "Crafted for your coffee moment",
+    "body": "Drop in for a quick cup or settle in with something chilled.",
+    "buttonLabel": "Learn more",
+    "buttonHref": "#bn-about",
+    "image": "/templates/beaniro-cold-brew/assets/espresso-pour.webp",
+    "imageAlt": "Barista pouring espresso into an iced coffee"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "question": "What makes Beaniro coffee different?", "answer": "We use slow cold extraction, balanced syrups and freshly prepared cream finishes." },
+      { "question": "Do you take same-day orders?", "answer": "Yes, collection is available daily and local delivery depends on your postcode." },
+      { "question": "Are your ingredients locally sourced?", "answer": "Where possible, yes. We work with UK dairy partners and local bakery suppliers." },
+      { "question": "Do you have non-coffee options?", "answer": "Yes, our menu includes iced chocolate, tea coolers and seasonal specials." },
+      { "question": "Is Beaniro a good place to work or relax?", "answer": "Yes, we have calm seating, sockets, Wi-Fi and a relaxed daytime atmosphere." }
+    ]
+  },
+  "offer": {
+    "title": "Make it an iced moment",
+    "buttonLabel": "Order now",
+    "buttonHref": "#bn-menu"
+  },
+  "ticker": ["Freshly brewed", "Chill smooth", "Crafted cold", "Sip slow", "Brew bold"],
+  "footer": {
+    "columns": [
+      { "title": "Pages", "links": [{ "label": "Menu", "href": "#bn-menu" }, { "label": "Story", "href": "#bn-story" }, { "label": "Location", "href": "#bn-footer" }] },
+      { "title": "Social", "links": [{ "label": "Instagram", "href": "https://instagram.com/" }, { "label": "TikTok", "href": "https://tiktok.com/" }, { "label": "Facebook", "href": "https://facebook.com/" }] }
+    ]
+  }
+}

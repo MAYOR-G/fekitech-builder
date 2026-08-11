@@ -138,6 +138,12 @@ import crumbAndCharConfig from "../templates/crumb-and-char/config.json";
 import crumbAndCharEditable from "../templates/crumb-and-char/editable.json";
 import fornoSixteenConfig from "../templates/forno-sixteen/config.json";
 import fornoSixteenEditable from "../templates/forno-sixteen/editable.json";
+import arcstoneGrowthConfig from "../templates/arcstone-growth/config.json";
+import arcstoneGrowthEditable from "../templates/arcstone-growth/editable.json";
+import beaniroColdBrewConfig from "../templates/beaniro-cold-brew/config.json";
+import beaniroColdBrewEditable from "../templates/beaniro-cold-brew/editable.json";
+import luneLeafSkincareConfig from "../templates/lune-leaf-skincare/config.json";
+import luneLeafSkincareEditable from "../templates/lune-leaf-skincare/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -226,6 +232,9 @@ const components = {
   "nightjar-and-crown": dynamic<{ data: TemplateData }>(() => import("../templates/nightjar-and-crown/template")),
   "crumb-and-char": dynamic<{ data: TemplateData }>(() => import("../templates/crumb-and-char/template")),
   "forno-sixteen": dynamic<{ data: TemplateData }>(() => import("../templates/forno-sixteen/template")),
+  "arcstone-growth": dynamic<{ data: TemplateData }>(() => import("../templates/arcstone-growth/template")),
+  "beaniro-cold-brew": dynamic<{ data: TemplateData }>(() => import("../templates/beaniro-cold-brew/template")),
+  "lune-leaf-skincare": dynamic<{ data: TemplateData }>(() => import("../templates/lune-leaf-skincare/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -298,6 +307,9 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "modulars": { config: modularsConfig, component: components["modulars"], defaultData: normalizeData(modularsEditable) },
   "hawthorne-fields-academy": { config: hawthorneFieldsAcademyConfig, component: components["hawthorne-fields-academy"], defaultData: normalizeData(hawthorneFieldsAcademyEditable) },
   "wildmere-gardens": { config: wildmereGardensConfig, component: components["wildmere-gardens"], defaultData: normalizeData(wildmereGardensEditable) },
+  "arcstone-growth": { config: arcstoneGrowthConfig, component: components["arcstone-growth"], defaultData: normalizeData(arcstoneGrowthEditable) },
+  "beaniro-cold-brew": { config: beaniroColdBrewConfig, component: components["beaniro-cold-brew"], defaultData: normalizeData(beaniroColdBrewEditable) },
+  "lune-leaf-skincare": { config: luneLeafSkincareConfig, component: components["lune-leaf-skincare"], defaultData: normalizeData(luneLeafSkincareEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

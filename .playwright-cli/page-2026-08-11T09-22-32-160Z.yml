@@ -1,0 +1,213 @@
+- generic [ref=f13e3]:
+  - banner [ref=f13e4]:
+    - link "Arcstone" [ref=f13e5] [cursor=pointer]:
+      - /url: "#ag-top"
+    - navigation "Primary navigation" [ref=f13e10]:
+      - link "Services" [ref=f13e11] [cursor=pointer]:
+        - /url: "#ag-services"
+      - link "Process" [ref=f13e12] [cursor=pointer]:
+        - /url: "#ag-process"
+      - link "Clients" [ref=f13e13] [cursor=pointer]:
+        - /url: "#ag-clients"
+      - link "About" [ref=f13e14] [cursor=pointer]:
+        - /url: "#ag-about"
+    - link "Let's talk" [ref=f13e15] [cursor=pointer]:
+      - /url: "#ag-contact"
+  - main [ref=f13e16]:
+    - generic [ref=f13e18]:
+      - generic [ref=f13e19]:
+        - paragraph [ref=f13e20]: Business consulting
+        - heading "Flexible solutions for modern businesses" [level=1] [ref=f13e21]
+        - paragraph [ref=f13e22]: Clear strategy, sharper systems and practical delivery support for teams ready to grow with less noise.
+        - link "Start here" [ref=f13e23] [cursor=pointer]:
+          - /url: "#ag-contact"
+      - generic [ref=f13e24]:
+        - img "Consulting team reviewing growth plans around a laptop" [ref=f13e25]
+        - img "Business team discussing a project" [ref=f13e26]
+        - img "Two colleagues reviewing marketing plans" [ref=f13e27]
+    - generic [ref=f13e31]:
+      - paragraph [ref=f13e32]: Trusted by growing teams across the UK
+      - generic [ref=f13e33]:
+        - generic [ref=f13e34]: Northline
+        - generic [ref=f13e36]: Ledgerwell
+        - generic [ref=f13e38]: BrightLabs
+        - generic [ref=f13e40]: Marlow & Co
+        - generic [ref=f13e42]: Summitly
+    - generic [ref=f13e45]:
+      - generic [ref=f13e46]:
+        - paragraph [ref=f13e47]: Common barriers
+        - heading "Overcoming the key barriers that slow growth" [level=2] [ref=f13e48]
+        - paragraph [ref=f13e49]: We help leadership teams turn unclear priorities into practical, measurable action.
+        - generic [ref=f13e50]:
+          - article [ref=f13e51]:
+            - generic [ref=f13e54]:
+              - strong [ref=f13e55]: Unclear positioning
+              - text: A sharper message for the buyers you want most.
+          - article [ref=f13e56]:
+            - generic [ref=f13e59]:
+              - strong [ref=f13e60]: Disconnected systems
+              - text: Cleaner handovers between marketing, sales and delivery.
+          - article [ref=f13e61]:
+            - generic [ref=f13e64]:
+              - strong [ref=f13e65]: Slow decision making
+              - text: Simple planning rhythms that keep work moving.
+      - figure [ref=f13e66]:
+        - img "Consultant presenting ideas in a bright meeting room" [ref=f13e67]
+        - generic [ref=f13e68]: Clearer goals
+        - generic [ref=f13e69]: Better systems
+        - generic [ref=f13e70]: More progress
+    - generic [ref=f13e72]:
+      - generic [ref=f13e73]:
+        - paragraph [ref=f13e74]: Services
+        - heading "Our expert services to drive growth" [level=2] [ref=f13e75]
+      - generic [ref=f13e76]:
+        - article [ref=f13e77]:
+          - img "Consultants meeting with a client" [ref=f13e78]
+          - generic [ref=f13e79]:
+            - heading "Business consulting" [level=3] [ref=f13e80]
+            - paragraph [ref=f13e81]: Plan the right next move with senior commercial guidance.
+        - article [ref=f13e82]:
+          - img "Team discussing growth strategy" [ref=f13e83]
+          - generic [ref=f13e84]:
+            - heading "Growth strategy" [level=3] [ref=f13e85]
+            - paragraph [ref=f13e86]: Build a focused route to stronger demand and better margins.
+        - article [ref=f13e87]:
+          - img "Marketing team working together" [ref=f13e88]
+          - generic [ref=f13e89]:
+            - heading "Marketing systems" [level=3] [ref=f13e90]
+            - paragraph [ref=f13e91]: Connect content, conversion and reporting into one calm flow.
+    - generic [ref=f13e93]:
+      - generic [ref=f13e94]:
+        - paragraph [ref=f13e95]: Process
+        - heading "A streamlined process for lasting results" [level=2] [ref=f13e96]
+        - generic [ref=f13e97]:
+          - link "Start now" [ref=f13e98] [cursor=pointer]:
+            - /url: "#ag-contact"
+          - link "View services" [ref=f13e99] [cursor=pointer]:
+            - /url: "#ag-services"
+      - generic [ref=f13e100]:
+        - article [ref=f13e101]:
+          - generic [ref=f13e102]: "1"
+          - generic [ref=f13e103]:
+            - heading "Discover and diagnose" [level=3] [ref=f13e104]
+            - paragraph [ref=f13e105]: We review your goals, market, offer and current customer journey.
+        - article [ref=f13e106]:
+          - generic [ref=f13e107]: "2"
+          - generic [ref=f13e108]:
+            - heading "Design the plan" [level=3] [ref=f13e109]
+            - paragraph [ref=f13e110]: We shape a focused roadmap with clear owners and priorities.
+        - article [ref=f13e111]:
+          - generic [ref=f13e112]: "3"
+          - generic [ref=f13e113]:
+            - heading "Implement" [level=3] [ref=f13e114]
+            - paragraph [ref=f13e115]: We support campaigns, systems, content and conversion improvements.
+        - article [ref=f13e116]:
+          - generic [ref=f13e117]: "4"
+          - generic [ref=f13e118]:
+            - heading "Optimise for growth" [level=3] [ref=f13e119]
+            - paragraph [ref=f13e120]: We track results and refine the work so progress keeps compounding.
+    - img "Team reviewing a laptop during a consulting session" [ref=f13e122]
+    - generic [ref=f13e124]:
+      - generic [ref=f13e125]:
+        - paragraph [ref=f13e126]: Results
+        - heading "Transforming businesses with expertise" [level=2] [ref=f13e127]
+      - generic [ref=f13e128]:
+        - article [ref=f13e129]:
+          - strong [ref=f13e130]: 3+ Years
+          - generic [ref=f13e131]: Proven experience
+        - article [ref=f13e132]:
+          - strong [ref=f13e133]: 24+ Clients
+          - generic [ref=f13e134]: Teams supported
+        - article [ref=f13e135]:
+          - strong [ref=f13e136]: 38+
+          - generic [ref=f13e137]: Projects improved
+    - generic [ref=f13e139]:
+      - paragraph [ref=f13e140]: Pricing
+      - heading "Transparent pricing built for growth" [level=2] [ref=f13e141]
+      - generic [ref=f13e142]:
+        - article [ref=f13e143]:
+          - heading "Strategy" [level=3] [ref=f13e144]
+          - paragraph [ref=f13e145]: A focused diagnosis, roadmap and delivery priorities.
+          - generic [ref=f13e146]:
+            - strong [ref=f13e147]: £2,200
+            - text: project
+        - article [ref=f13e148]:
+          - heading "Growth" [level=3] [ref=f13e149]
+          - paragraph [ref=f13e150]: Monthly support across campaigns, sales flow and reporting.
+          - generic [ref=f13e151]:
+            - strong [ref=f13e152]: £4,800
+            - text: monthly
+        - article [ref=f13e153]:
+          - heading "Enterprise" [level=3] [ref=f13e154]
+          - paragraph [ref=f13e155]: Senior partner support for complex teams and multi-market work.
+          - generic [ref=f13e156]:
+            - strong [ref=f13e157]: £9,600
+            - text: monthly
+    - generic [ref=f13e159]:
+      - heading "Industry-specific expertise to drive your success" [level=2] [ref=f13e160]
+      - generic [ref=f13e161]:
+        - generic [ref=f13e162]: Service firms
+        - generic [ref=f13e163]: SaaS teams
+        - generic [ref=f13e164]: Local operators
+        - generic [ref=f13e165]: Healthcare
+        - generic [ref=f13e166]: Retail
+        - generic [ref=f13e167]: Startups
+    - generic [ref=f13e169]:
+      - heading "Relied on by companies across the UK" [level=2] [ref=f13e171]
+      - generic [ref=f13e172]:
+        - blockquote [ref=f13e173]:
+          - paragraph [ref=f13e174]: "\"Arcstone helped us choose fewer priorities and execute them properly. The work felt practical from week one.\""
+          - generic [ref=f13e175]:
+            - strong [ref=f13e176]: Leah Morris
+            - generic [ref=f13e177]: Managing Director, Northline
+        - blockquote [ref=f13e178]:
+          - paragraph [ref=f13e179]: "\"The team made our sales journey clearer and gave our managers a plan they could actually use.\""
+          - generic [ref=f13e180]:
+            - strong [ref=f13e181]: Owen Patel
+            - generic [ref=f13e182]: Founder, Ledgerwell
+    - generic [ref=f13e184]:
+      - generic [ref=f13e185]:
+        - generic [ref=f13e186]:
+          - paragraph [ref=f13e187]: Case studies
+          - heading "Client success through our solutions" [level=2] [ref=f13e188]
+        - link "See all" [ref=f13e189] [cursor=pointer]:
+          - /url: "#ag-contact"
+      - generic [ref=f13e190]:
+        - article [ref=f13e191]:
+          - img "Healthcare team planning around a laptop" [ref=f13e192]
+          - generic [ref=f13e193]: Healthcare
+          - 'heading "Making an impact: transforming a healthcare platform rebuild" [level=3] [ref=f13e194]'
+        - article [ref=f13e195]:
+          - img "Startup team reviewing conversion performance" [ref=f13e196]
+          - generic [ref=f13e197]: SaaS
+          - 'heading "Optimising conversions: a SaaS startup''s leap" [level=3] [ref=f13e198]'
+    - generic [ref=f13e200]:
+      - heading "Proceed toward your next achievement" [level=2] [ref=f13e201]
+      - link "Let's talk" [ref=f13e202] [cursor=pointer]:
+        - /url: "#ag-contact"
+  - contentinfo [ref=f13e211]:
+    - generic [ref=f13e212]:
+      - generic [ref=f13e213]:
+        - generic [ref=f13e214]:
+          - generic [ref=f13e215]: hello@arcstone.co.uk
+          - generic [ref=f13e216]: 020 8129 4470
+        - navigation "Page" [ref=f13e217]:
+          - strong [ref=f13e218]: Page
+          - link "Home" [ref=f13e219] [cursor=pointer]:
+            - /url: "#ag-top"
+          - link "Services" [ref=f13e220] [cursor=pointer]:
+            - /url: "#ag-services"
+          - link "Process" [ref=f13e221] [cursor=pointer]:
+            - /url: "#ag-process"
+          - link "Contact" [ref=f13e222] [cursor=pointer]:
+            - /url: "#ag-contact"
+        - navigation "Social" [ref=f13e223]:
+          - strong [ref=f13e224]: Social
+          - link "LinkedIn" [ref=f13e225] [cursor=pointer]:
+            - /url: https://linkedin.com/
+          - link "Instagram" [ref=f13e226] [cursor=pointer]:
+            - /url: https://instagram.com/
+          - link "X" [ref=f13e227] [cursor=pointer]:
+            - /url: https://x.com/
+      - strong [ref=f13e232]: Arcstone
+      - paragraph [ref=f13e233]: © 2026 Arcstone Growth Ltd. All rights reserved.

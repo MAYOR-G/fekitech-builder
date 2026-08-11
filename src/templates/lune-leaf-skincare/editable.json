@@ -1,0 +1,201 @@
+{
+  "colors": {
+    "pageBackground": "#f3f5ef",
+    "background": "#f3f5ef",
+    "surface": "#ffffff",
+    "panel": "#e9ede4",
+    "deep": "#263422",
+    "deepAlt": "#111711",
+    "textPrimary": "#293127",
+    "bodyText": "#5f685b",
+    "mutedText": "#7d8478",
+    "accent": "#9b7d45",
+    "accentSecondary": "#526245",
+    "border": "#dde2d8",
+    "buttonBg": "#263422",
+    "buttonText": "#ffffff",
+    "footerBg": "#111711",
+    "footerText": "#eff3eb"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Lune & Leaf",
+    "monogram": "L&L",
+    "strapline": "Natural skincare made in small batches",
+    "email": "hello@luneandleaf.co.uk",
+    "emailHref": "mailto:hello@luneandleaf.co.uk",
+    "phone": "020 8050 4186",
+    "phoneHref": "tel:+442080504186",
+    "address": "18 Rowan Yard, Bath BA1 2QL"
+  },
+  "header": {
+    "nav": [
+      { "label": "Shop", "href": "shop" },
+      { "label": "Collections", "href": "collections" },
+      { "label": "About", "href": "about" },
+      { "label": "Journal", "href": "journal" },
+      { "label": "Contact", "href": "contact" }
+    ],
+    "cartLabel": "Bag",
+    "accountLabel": "Account"
+  },
+  "hero": {
+    "eyebrow": "Botanical skincare",
+    "title": "Natural skincare",
+    "emphasis": "for a calm glow.",
+    "body": "Gentle formulas for skin that wants less fuss and more comfort.",
+    "image": "/templates/lune-leaf-skincare/assets/hero-skincare.webp",
+    "imageAlt": "Woman applying natural face cream in soft daylight",
+    "cta": { "label": "Shop now", "href": "shop" }
+  },
+  "trust": [
+    { "title": "Natural Formula", "body": "Plant oils, oat extracts and skin-kind actives." },
+    { "title": "Cruelty-Free", "body": "Never tested on animals and always responsibly made." },
+    { "title": "Expert Approved", "body": "Developed with simple routines and sensitive skin in mind." },
+    { "title": "Free Shipping", "body": "Free UK delivery on skincare orders over GBP 45." }
+  ],
+  "statement": {
+    "lineOne": "Refresh your skin, love yourself,",
+    "lineTwo": "renew your glow."
+  },
+  "products": {
+    "tabs": [
+      { "label": "Best Sellers", "href": "shop" },
+      { "label": "New Arrivals", "href": "shop" },
+      { "label": "Sale", "href": "shop" }
+    ],
+    "items": [
+      {
+        "name": "Citrus Foam",
+        "price": "GBP 7.95",
+        "type": "dropper",
+        "image": "/templates/lune-leaf-skincare/assets/citrus-foam-dropper.png",
+        "imageAlt": "Citrus Foam cleanser bottle"
+      },
+      {
+        "name": "Gentle Wash",
+        "price": "GBP 6.95",
+        "type": "mist",
+        "image": "/templates/lune-leaf-skincare/assets/gentle-wash-pump.png",
+        "imageAlt": "Gentle Wash facial cleanser"
+      },
+      {
+        "name": "Glow Milk",
+        "price": "GBP 8.95",
+        "type": "pump",
+        "image": "/templates/lune-leaf-skincare/assets/glow-milk-bottle.png",
+        "imageAlt": "Glow Milk daily moisturiser"
+      }
+    ],
+    "link": { "label": "Shop best sellers", "href": "shop" }
+  },
+  "eco": {
+    "title": "Eco-Friendly,",
+    "emphasis": "skin-friendly",
+    "body": "Natural ingredients are chosen for safe, effective daily care.",
+    "image": "/templates/lune-leaf-skincare/assets/eco-products.webp",
+    "imageAlt": "Skincare bottles with glossy green leaves",
+    "points": ["No harsh chemicals", "Plant-based goodness", "Ethically sourced"]
+  },
+  "benefits": {
+    "title": "Why your skin deserves the best",
+    "rating": "4.9/5 from verified customers",
+    "image": "/templates/lune-leaf-skincare/assets/radiant-skin.webp",
+    "imageAlt": "Woman with freckles holding a pale green skincare tube",
+    "cards": [
+      { "title": "Proven effectiveness", "body": "Simple routines that leave skin soft, settled and fresh." },
+      { "title": "Eco-friendly packaging", "body": "Refill-minded bottles and recyclable cartons where possible." },
+      { "title": "100% Natural. 100% You.", "body": "No harsh chemicals, plant-based goodness and careful sourcing." }
+    ]
+  },
+  "testimonial": {
+    "quote": "It feels healthier, smoother and more radiant than ever. I love knowing I am using something natural and effective.",
+    "name": "Jennifer K.",
+    "role": "Verified buyer",
+    "productImage": "/templates/lune-leaf-skincare/assets/lune-leaf-daily-dew-tube.png",
+    "productImageAlt": "Daily Dew moisturiser tube",
+    "badgeLeft": "Glow Milk",
+    "badgeRight": "Daily Dew"
+  },
+  "newsletter": {
+    "title": "Stay updated, stay radiant",
+    "body": "Be first to know about new products, offers and skincare tips.",
+    "emailLabel": "Your email",
+    "buttonLabel": "Subscribe",
+    "image": "/templates/lune-leaf-skincare/assets/eco-products.webp",
+    "imageAlt": "Natural skincare product with leaves"
+  },
+  "instagram": {
+    "title": "Follow on Instagram",
+    "items": [
+      { "image": "/templates/lune-leaf-skincare/assets/hero-skincare.webp", "alt": "Skincare cream application close-up" },
+      { "image": "/templates/lune-leaf-skincare/assets/eco-products.webp", "alt": "Botanical skincare bottles" },
+      { "image": "/templates/lune-leaf-skincare/assets/radiant-skin.webp", "alt": "Radiant skin and green product tube" },
+      { "image": "/templates/lune-leaf-skincare/assets/eco-products.webp", "alt": "Dark green skincare product scene" },
+      { "image": "/templates/lune-leaf-skincare/assets/hero-skincare.webp", "alt": "Natural skincare portrait" }
+    ]
+  },
+  "pages": {
+    "shop": {
+      "title": "Shop skincare",
+      "body": "Choose gentle cleansers, serums and moisturisers for calm daily routines.",
+      "image": "/templates/lune-leaf-skincare/assets/eco-products.webp",
+      "imageAlt": "Natural skincare products on green leaves"
+    },
+    "collections": {
+      "title": "Collections",
+      "body": "Build a simple morning or evening routine with products that sit well together.",
+      "image": "/templates/lune-leaf-skincare/assets/lune-leaf-daily-dew-tube.png",
+      "imageAlt": "Daily Dew moisturiser tube"
+    },
+    "about": {
+      "title": "About Lune & Leaf",
+      "body": "We make natural skincare in small UK batches, focusing on comfort, clarity and ingredients you can understand.",
+      "image": "/templates/lune-leaf-skincare/assets/radiant-skin.webp",
+      "imageAlt": "Woman with healthy radiant skin"
+    },
+    "journal": {
+      "title": "Journal",
+      "body": "Simple notes on skin barrier care, seasonal routines and choosing kinder ingredients.",
+      "image": "/templates/lune-leaf-skincare/assets/hero-skincare.webp",
+      "imageAlt": "Woman applying face cream"
+    },
+    "contact": {
+      "title": "Contact us",
+      "body": "Ask about products, stockists, sensitive skin routines or a recent order. We usually reply within one working day.",
+      "image": "/templates/lune-leaf-skincare/assets/radiant-skin.webp",
+      "imageAlt": "Skincare contact page image",
+      "formTitle": "Send an enquiry",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "messageLabel": "Message",
+      "buttonLabel": "Send enquiry",
+      "success": "Thank you. This demonstration form is ready to connect to your preferred service."
+    }
+  },
+  "footer": {
+    "legal": "© 2026 Lune & Leaf Skincare. All rights reserved.",
+    "columns": [
+      {
+        "title": "Shop",
+        "links": [
+          { "label": "Cleansing", "href": "shop" },
+          { "label": "Moisturisers", "href": "shop" },
+          { "label": "Serums", "href": "shop" }
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          { "label": "Contact", "href": "contact" },
+          { "label": "Delivery", "href": "contact" },
+          { "label": "My account", "href": "contact" }
+        ]
+      }
+    ],
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "TikTok", "href": "https://tiktok.com" }
+    ]
+  }
+}
