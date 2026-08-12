@@ -1,0 +1,161 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f5f5f5",
+      "card": "#ffffff",
+      "ink": "#171717",
+      "muted": "#6f6f6f",
+      "dark": "#1d3038",
+      "accent": "#e51d14",
+      "accentDark": "#bd160f",
+      "line": "#e8e8e8"
+    },
+    "typography": {
+      "heading": "Arial, Helvetica, sans-serif",
+      "body": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "HandGrid",
+    "logo": "/templates/handgrid-repairs/assets/logo.svg",
+    "logoAlt": "HandGrid Repairs logo",
+    "phone": "+44 20 3959 9960",
+    "phoneHref": "tel:+442039599960",
+    "email": "hello@handgrid.co.uk",
+    "emailHref": "mailto:hello@handgrid.co.uk",
+    "address": "42A Copley Avenue, Pimlico, London, SW1P 2AR"
+  },
+  "navigation": {
+    "links": [
+      { "label": "All Pages", "href": "#services" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Review", "href": "#reviews" }
+    ],
+    "ctaLabel": "Call us +44 20 3959 9960",
+    "ctaHref": "tel:+442039599960"
+  },
+  "hero": {
+    "title": "Get Fastest Handyman Service in Central London.",
+    "text": "Reliable repairs, fitting and maintenance for busy homes, flats and rentals.",
+    "primaryLabel": "Call +44 20 3959 9960",
+    "primaryHref": "tel:+442039599960",
+    "secondaryLabel": "Learn More",
+    "secondaryHref": "#about",
+    "image": "/templates/handgrid-repairs/assets/hero-handyman.webp",
+    "imageAlt": "HandGrid handyman standing in a tidy workshop",
+    "trust": "Trusted by London homeowners",
+    "rating": "Excellent reviews"
+  },
+  "quickLinks": [
+    { "label": "Get This Template", "href": "#contact" },
+    { "label": "Unlock All Templates", "href": "#services" },
+    { "label": "Free Templates Website", "href": "#blog" },
+    { "label": "Made in Figma", "href": "#about" }
+  ],
+  "trustCards": [
+    { "title": "Reliability & Trust", "text": "Careful repairs, clear arrival windows and tidy work in every home." },
+    { "title": "Quality Workmanship", "text": "Practical home fixes completed with proper tools and materials." },
+    { "title": "Fair & Transparent Pricing", "text": "Straightforward estimates before work starts, with no surprise extras." }
+  ],
+  "about": {
+    "title": "Your Ultimate One-Stop Home Solution",
+    "text": "From leaky taps to minor renovations, our local team covers everyday home repairs with care and good communication.",
+    "image": "/templates/handgrid-repairs/assets/hero-handyman.webp",
+    "imageAlt": "HandGrid handyman ready for a home repair visit",
+    "points": [
+      "Home repair experience",
+      "Licensed and insured",
+      "Committed to quality",
+      "Reason for happy homeowners"
+    ]
+  },
+  "stats": {
+    "title": "Our track record speaks for itself",
+    "items": [
+      { "value": "12+", "label": "Years in Business" },
+      { "value": "4k+", "label": "Projects Completed" },
+      { "value": "98%", "label": "Satisfaction Rating" }
+    ]
+  },
+  "priority": {
+    "title": "Customer Satisfaction is Our Priority",
+    "text": "Your repair should feel simple from first call to final clean-up.",
+    "image": "/templates/handgrid-repairs/assets/repair-collage.webp",
+    "imageAlt": "Handyman completing several home maintenance jobs",
+    "buttonLabel": "Explore Our Services",
+    "buttonHref": "#services",
+    "points": [
+      "Safe and careful work",
+      "Open communication",
+      "Service guarantee",
+      "Responsive support"
+    ]
+  },
+  "services": {
+    "title": "Our Handyman Services",
+    "items": [
+      { "title": "Window Replacement", "text": "Window repairs, draught fixes and careful replacement support.", "image": "/templates/handgrid-repairs/assets/shelving-fitting.webp", "alt": "Handyman measuring a home fitting" },
+      { "title": "Interior Painting", "text": "Fresh walls, touch-ups and tidy paintwork for flats and homes.", "image": "/templates/handgrid-repairs/assets/interior-painting.webp", "alt": "Handyman painting an interior wall" },
+      { "title": "Flooring Installation", "text": "Small flooring jobs, repairs and neat finishing details.", "image": "/templates/handgrid-repairs/assets/cabinet-repairs.webp", "alt": "Handyman fitting home cabinetry" },
+      { "title": "Plumbing Repairs", "text": "Leaking taps, sink repairs and bathroom fixture fixes.", "image": "/templates/handgrid-repairs/assets/plumbing-repairs.webp", "alt": "Handyman repairing a bathroom tap" },
+      { "title": "Pest Control", "text": "Simple inspection support and sealing for small pest issues.", "image": "/templates/handgrid-repairs/assets/repair-tools-detail.webp", "alt": "Hand tools prepared for home repairs" },
+      { "title": "Landscaping Design", "text": "Small garden repairs, planters, fixtures and outdoor tidy-ups.", "image": "/templates/handgrid-repairs/assets/home-maintenance-visit.webp", "alt": "Home visit for maintenance planning" }
+    ],
+    "buttonLabel": "Load More",
+    "buttonHref": "#contact"
+  },
+  "process": {
+    "title": "How HandGrid works",
+    "items": [
+      { "title": "Pick Your Service", "text": "Tell us what needs fixing and share a few helpful details." },
+      { "title": "Select Your Date", "text": "Choose a time that suits your home, tenant or team." },
+      { "title": "Confirm and Relax", "text": "We arrive prepared, complete the work and leave things tidy." }
+    ]
+  },
+  "reviews": {
+    "title": "Customer Satisfaction is Our Priority",
+    "items": [
+      { "quote": "Great value for money. The repair was handled quickly and the flat was left spotless.", "name": "Olivia Morrison", "role": "Homeowner" },
+      { "quote": "Reliable and efficient. They arrived on time and explained everything clearly.", "name": "Michael Chen", "role": "Landlord" },
+      { "quote": "Exceptional customer service from booking through to final clean-up.", "name": "Sophie Turner", "role": "Flat owner" }
+    ]
+  },
+  "blog": {
+    "title": "Latest from our blog",
+    "items": [
+      { "title": "12 Essential Tools Every Homeowner Should Have Ready", "text": "Simple tools that make small jobs and emergencies easier.", "date": "Feb 18, 2026", "image": "/templates/handgrid-repairs/assets/repair-collage.webp", "alt": "Home repair tools on a workbench" },
+      { "title": "Winter Seasonal Maintenance Tips for Your Home", "text": "Practical checks before colder months arrive.", "date": "Feb 24, 2026", "image": "/templates/handgrid-repairs/assets/shelving-fitting.webp", "alt": "Handyman fitting shelves in a home" },
+      { "title": "Top Home Decor Fixes for 2026", "text": "Small repairs that can refresh tired rooms quickly.", "date": "Feb 26, 2026", "image": "/templates/handgrid-repairs/assets/interior-painting.webp", "alt": "Interior painting home maintenance" }
+    ],
+    "buttonLabel": "Load More",
+    "buttonHref": "#contact"
+  },
+  "cta": {
+    "title": "Your Reliable Trusted Handyman is Just One Call Away!",
+    "buttonLabel": "Explore Our Services",
+    "buttonHref": "#services",
+    "image": "/templates/handgrid-repairs/assets/hero-handyman.webp",
+    "imageAlt": "Trusted HandGrid handyman"
+  },
+  "footer": {
+    "legal": "All Right Reserved @ HandGrid - 2026",
+    "links": [
+      { "label": "Client Review", "href": "#reviews" },
+      { "label": "Contact", "href": "#contact" },
+      { "label": "Blog", "href": "#blog" }
+    ],
+    "services": [
+      { "label": "Window Replacement", "href": "#services" },
+      { "label": "Interior Painting", "href": "#services" },
+      { "label": "Flooring Installation", "href": "#services" },
+      { "label": "Plumbing Repairs", "href": "#services" },
+      { "label": "Landscaping Design", "href": "#services" }
+    ],
+    "social": [
+      { "label": "Facebook", "href": "https://facebook.com" },
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "Thread", "href": "https://threads.net" }
+    ]
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f6f6f4",
+      "surface": "#ffffff",
+      "card": "#ffffff",
+      "ink": "#111111",
+      "muted": "#6c6f75",
+      "soft": "#efefec",
+      "line": "#deded9",
+      "black": "#050505",
+      "blue": "#5b83ff",
+      "coral": "#ff7b5f",
+      "pink": "#f8b8eb",
+      "green": "#9af2b7",
+      "yellow": "#ffe371",
+      "purple": "#d9cbff"
+    },
+    "typography": {
+      "heading": "Inter, Arial, sans-serif",
+      "body": "Inter, Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "PipelineOS",
+    "logo": "/templates/pipeline-os/assets/pipeline-logo.svg",
+    "logoAlt": "PipelineOS logo"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Features",
+        "href": "#features"
+      },
+      {
+        "label": "Pricing",
+        "href": "#pricing"
+      },
+      {
+        "label": "Use cases",
+        "href": "#use-cases"
+      },
+      {
+        "label": "Customers",
+        "href": "#customers"
+      }
+    ],
+    "ctaLabel": "Sign in",
+    "ctaHref": "#pricing"
+  },
+  "hero": {
+    "eyebrow": "Pipeline clarity for growing sales teams",
+    "title": "Turn scattered sales work into one clear pipeline.",
+    "text": "PipelineOS keeps every lead, task and forecast in one calm workspace, so your team always knows what to do next.",
+    "buttonLabel": "Start free",
+    "buttonHref": "#pricing",
+    "image": "/templates/pipeline-os/assets/pipeline-office.webp",
+    "imageAlt": "Sales professional reviewing a pipeline dashboard"
+  },
+  "partners": [
+    "Northstar",
+    "Apex",
+    "Fingrow",
+    "Merit",
+    "Outreach",
+    "Venture",
+    "SalesCo",
+    "Orbit"
+  ],
+  "intro": {
+    "title": "Built to bring clarity to every stage of your sales process.",
+    "text": "PipelineOS gives busy sales teams cleaner data, faster handovers and practical reporting from first enquiry to close."
+  },
+  "featureBlocks": [
+    {
+      "kicker": "Visualise every deal as it moves through your pipeline.",
+      "text": "See what is active, stuck or ready to close, then prioritise the work that matters most.",
+      "tone": "coral",
+      "image": "/templates/pipeline-os/assets/pipeline-report.webp",
+      "imageAlt": "Revenue manager reviewing sales reports",
+      "badge": "32% faster response"
+    },
+    {
+      "kicker": "Standardise your sales process with clear stages.",
+      "text": "Keep every rep aligned with simple steps, shared notes and tidy account history.",
+      "tone": "blue",
+      "image": "/templates/pipeline-os/assets/pipeline-team.webp",
+      "imageAlt": "Sales team reviewing pipeline stages together",
+      "badge": "Clean shared stages"
+    },
+    {
+      "kicker": "Never miss a follow-up or lose track of important deals.",
+      "text": "Automated reminders help your team respond at the right moment with the right context.",
+      "tone": "pink",
+      "image": "/templates/pipeline-os/assets/pipeline-call.webp",
+      "imageAlt": "Sales representative preparing follow-up notes",
+      "badge": "Follow-ups on time"
+    }
+  ],
+  "benefits": {
+    "title": "Designed for modern sales teams who value clarity.",
+    "text": "Everything is shaped to make pipeline reviews, lead routing and forecasting easier.",
+    "items": [
+      {
+        "title": "Clear by default",
+        "text": "Simple dashboards make the next action obvious."
+      },
+      {
+        "title": "Built for automation",
+        "text": "Reduce busywork with reminders, routing and reusable steps."
+      },
+      {
+        "title": "Lightweight setup",
+        "text": "Import contacts and start working without a long rollout."
+      }
+    ]
+  },
+  "workflow": {
+    "title": "How it works",
+    "text": "A clear pipeline rhythm from first interest to repeat customer.",
+    "steps": [
+      {
+        "title": "Capture new leads",
+        "text": "Collect every enquiry, assign owners and keep context attached from the start.",
+        "button": "Learn more",
+        "tone": "blue",
+        "image": "/templates/pipeline-os/assets/pipeline-team.webp",
+        "imageAlt": "Team capturing new lead details in a meeting",
+        "badge": "New lead"
+      },
+      {
+        "title": "Move deals through stages",
+        "text": "Give your team one shared view of what needs attention and what is ready to close.",
+        "button": "Learn more",
+        "tone": "green",
+        "image": "/templates/pipeline-os/assets/pipeline-office.webp",
+        "imageAlt": "Sales professional reviewing deals on a laptop",
+        "badge": "Deal moved"
+      },
+      {
+        "title": "Stay on top of follow-ups",
+        "text": "Use reminders, notes and email prompts to keep momentum with every account.",
+        "button": "Learn more",
+        "tone": "pink",
+        "image": "/templates/pipeline-os/assets/pipeline-call.webp",
+        "imageAlt": "Sales representative on a follow-up call",
+        "badge": "Reminder set"
+      },
+      {
+        "title": "Close with confidence",
+        "text": "Forecast reliably using clean records, activity history and live deal value.",
+        "button": "Learn more",
+        "tone": "mint",
+        "image": "/templates/pipeline-os/assets/pipeline-close.webp",
+        "imageAlt": "Professionals reviewing a deal on a tablet",
+        "badge": "Close ready"
+      }
+    ]
+  },
+  "useCases": {
+    "title": "Use cases",
+    "text": "PipelineOS helps revenue teams organise work across every customer moment.",
+    "tabs": [
+      "Lead management",
+      "Sales forecasting",
+      "Campaign follow-up",
+      "Account handover"
+    ],
+    "items": [
+      {
+        "title": "Sales leaders",
+        "text": "Forecast revenue, spot risk and coach each rep from one clean dashboard."
+      },
+      {
+        "title": "Founders",
+        "text": "Replace spreadsheets with simple sales visibility while the team grows."
+      },
+      {
+        "title": "Sales teams",
+        "text": "Work from a shared pipeline with clear notes, reminders and next steps."
+      },
+      {
+        "title": "Customer success",
+        "text": "See handover details and keep relationships warm after the sale."
+      },
+      {
+        "title": "Consultants & agencies",
+        "text": "Manage opportunities, proposals and client follow-ups in one flow."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Make your pipeline measurable",
+    "text": "Track useful numbers without building reports from scratch.",
+    "image": "/templates/pipeline-os/assets/pipeline-report.webp",
+    "imageAlt": "Revenue manager reviewing printed analytics and laptop reports",
+    "items": [
+      {
+        "label": "Faster lead response",
+        "value": "+32%"
+      },
+      {
+        "label": "More accurate forecasts",
+        "value": "+48%"
+      },
+      {
+        "label": "Better follow-up coverage",
+        "value": "+67%"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing & Plans",
+    "text": "Choose the right level for your team and upgrade as your process grows.",
+    "toggleA": "Monthly",
+    "toggleB": "Yearly",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$29",
+        "text": "For small teams getting organised.",
+        "features": [
+          "Lead capture",
+          "Pipeline board",
+          "Email reminders",
+          "Basic reporting"
+        ],
+        "featured": false
+      },
+      {
+        "name": "Pro",
+        "price": "$79",
+        "text": "For teams scaling sales activity.",
+        "features": [
+          "Everything in Starter",
+          "Automation rules",
+          "Forecast reports",
+          "Team permissions"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Scale",
+        "price": "$149",
+        "text": "For growing revenue operations.",
+        "features": [
+          "Everything in Pro",
+          "Advanced routing",
+          "Custom dashboards",
+          "Priority support"
+        ],
+        "featured": false
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Pricing Comparison",
+    "rows": [
+      "Leads and companies",
+      "Pipeline stages",
+      "Team activity history",
+      "Task reminders",
+      "Basic reports",
+      "Automation rules",
+      "Custom dashboards",
+      "Advanced permissions",
+      "Priority support"
+    ]
+  },
+  "testimonials": {
+    "title": "Trusted by teams who value clarity",
+    "items": [
+      {
+        "quote": "PipelineOS gave our team the single view we needed. Forecast meetings are shorter and much more useful.",
+        "name": "Lucy Hart",
+        "role": "Head of Sales"
+      },
+      {
+        "quote": "We replaced a patchwork of sheets and notes with a CRM our reps actually keep up to date.",
+        "name": "Nolan Reid",
+        "role": "Founder"
+      },
+      {
+        "quote": "The reminders and deal stages helped us stop missing follow-ups after demos.",
+        "name": "Maya Ellis",
+        "role": "Revenue Lead"
+      }
+    ]
+  },
+  "insights": {
+    "title": "Insights for modern sales teams",
+    "text": "Simple guidance for cleaner pipeline work.",
+    "items": [
+      {
+        "title": "Why follow-ups matter more than the first demo",
+        "tone": "green",
+        "image": "/templates/pipeline-os/assets/pipeline-call.webp",
+        "imageAlt": "Sales follow-up call"
+      },
+      {
+        "title": "The role of activity data in better forecasting",
+        "tone": "blue",
+        "image": "/templates/pipeline-os/assets/pipeline-report.webp",
+        "imageAlt": "Revenue reporting review"
+      },
+      {
+        "title": "How small teams build a repeatable sales process",
+        "tone": "coral",
+        "image": "/templates/pipeline-os/assets/pipeline-close.webp",
+        "imageAlt": "Sales deal review on tablet"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is PipelineOS a full CRM system?",
+        "answer": "Yes. It manages leads, deals, activities, reminders and reporting for sales teams."
+      },
+      {
+        "question": "What makes it different from spreadsheets?",
+        "answer": "PipelineOS keeps ownership, history and next steps connected so work does not get lost."
+      },
+      {
+        "question": "How does PipelineOS help improve sales alignment?",
+        "answer": "Every team member works from the same stages, notes and activity records."
+      },
+      {
+        "question": "Can PipelineOS adapt to different sales processes?",
+        "answer": "Yes. Stages, fields and automations can be adjusted around your workflow."
+      },
+      {
+        "question": "Can I try it before choosing a plan?",
+        "answer": "Yes. Teams can start small and upgrade when they need more features."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Build clarity into your pipeline",
+    "buttonLabel": "Start free",
+    "buttonHref": "#pricing",
+    "image": "/templates/pipeline-os/assets/pipeline-team.webp",
+    "imageAlt": "Sales team working together in a meeting room"
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          "Features",
+          "Pricing",
+          "Integrations"
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          "Blog",
+          "Guides",
+          "Changelog"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Contact",
+          "Privacy"
+        ]
+      }
+    ],
+    "legal": "© 2026 PipelineOS. All rights reserved."
+  }
+}

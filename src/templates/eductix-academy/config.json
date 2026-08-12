@@ -1,0 +1,9 @@
+{
+  "id": "eductix-academy",
+  "name": "Eductix Academy",
+  "category": "Education",
+  "image": "/templates/eductix-academy.webp",
+  "previewImages": [
+    "/templates/eductix-academy.webp"
+  ]
+}

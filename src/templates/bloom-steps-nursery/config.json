@@ -1,0 +1,9 @@
+{
+  "id": "bloom-steps-nursery",
+  "name": "Bloom Steps Nursery",
+  "category": "Education",
+  "image": "/templates/bloom-steps-nursery.webp",
+  "previewImages": [
+    "/templates/bloom-steps-nursery.webp"
+  ]
+}

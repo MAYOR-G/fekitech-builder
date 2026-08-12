@@ -96,16 +96,24 @@ describe("production template registry", () => {
       "wildmere-gardens",
       "arcstone-growth",
       "beaniro-cold-brew",
-      "lune-leaf-skincare"
+      "lune-leaf-skincare",
+      "bloom-steps-nursery",
+      "handgrid-repairs",
+      "eductix-academy",
+      "alvion-medical",
+      "greenly-gardens",
+      "pipeline-os"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
+      "alvion-medical",
       "arcstone-growth",
       "ash-bridle-barbers",
       "aurea-objects-shop",
       "bakery-website",
       "barber-website",
       "beaniro-cold-brew",
+      "bloom-steps-nursery",
       "lune-leaf-skincare",
       "blueforge-plumbing",
       "blush-crumb-bakehouse",
@@ -125,12 +133,15 @@ describe("production template registry", () => {
       "digital-designer-portfolio",
       "electrician-website",
       "ember-grace-church",
+      "eductix-academy",
       "farm-shop-website",
       "fast-food-chicken-tacos",
       "forgefit-training",
       "forgepoint-construction",
       "forno-sixteen",
       "gym-website",
+      "greenly-gardens",
+      "handgrid-repairs",
       "harborwell-home-health",
       "harrow-vale-estates",
       "hawthorne-fields-academy",
@@ -155,6 +166,7 @@ describe("production template registry", () => {
       "northline-grooming",
       "pastries-snacks-premium",
       "pizza-light-clean",
+      "pipeline-os",
       "premium-coffee-website",
       "premium-construction",
       "premium-restaurant",
@@ -248,7 +260,13 @@ describe("production template registry", () => {
       "wildmere-gardens",
       "arcstone-growth",
       "beaniro-cold-brew",
-      "lune-leaf-skincare"
+      "lune-leaf-skincare",
+      "bloom-steps-nursery",
+      "handgrid-repairs",
+      "eductix-academy",
+      "alvion-medical",
+      "greenly-gardens",
+      "pipeline-os"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -308,7 +326,13 @@ describe("production template registry", () => {
       "signal-yard-studio",
       "forgefit-training",
       "rivergate-plumbing",
-      "lune-leaf-skincare"
+      "lune-leaf-skincare",
+      "bloom-steps-nursery",
+      "handgrid-repairs",
+      "eductix-academy",
+      "alvion-medical",
+      "greenly-gardens",
+      "pipeline-os"
     ];
 
     for (const templateId of redesignedTemplateIds) {

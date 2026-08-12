@@ -1,0 +1,9 @@
+{
+  "id": "alvion-medical",
+  "name": "Alvion Medical",
+  "category": "Healthcare",
+  "image": "/templates/alvion-medical.webp",
+  "previewImages": [
+    "/templates/alvion-medical.webp"
+  ]
+}

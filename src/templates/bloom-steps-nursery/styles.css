@@ -1,0 +1,925 @@
+[data-template-id="bloom-steps-nursery"] {
+  background: var(--bsn-page);
+  color: var(--bsn-ink);
+  font-family: var(--bsn-body);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[data-template-id="bloom-steps-nursery"] *,
+[data-template-id="bloom-steps-nursery"] *::before,
+[data-template-id="bloom-steps-nursery"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="bloom-steps-nursery"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="bloom-steps-nursery"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] h1,
+[data-template-id="bloom-steps-nursery"] h2,
+[data-template-id="bloom-steps-nursery"] h3,
+[data-template-id="bloom-steps-nursery"] p {
+  margin: 0;
+}
+
+[data-template-id="bloom-steps-nursery"] h1,
+[data-template-id="bloom-steps-nursery"] h2 {
+  font-family: var(--bsn-heading);
+  letter-spacing: 0;
+  line-height: 0.98;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-topbar {
+  align-items: center;
+  background: var(--bsn-green);
+  color: #fff;
+  display: flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 18px;
+  justify-content: center;
+  min-height: 34px;
+  padding: 7px 18px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-topbar a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 210px 1fr auto;
+  min-height: 70px;
+  padding: 13px clamp(20px, 5vw, 72px);
+  position: relative;
+  z-index: 5;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-brand img {
+  height: 42px;
+  width: auto;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header nav {
+  align-items: center;
+  display: flex;
+  gap: clamp(16px, 2.2vw, 34px);
+  justify-content: center;
+  white-space: nowrap;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header nav a {
+  color: var(--bsn-muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header-cta,
+[data-template-id="bloom-steps-nursery"] .bsn-button {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1;
+  min-height: 44px;
+  padding: 0 20px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  white-space: nowrap;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header-cta,
+[data-template-id="bloom-steps-nursery"] .bsn-button-primary {
+  background: var(--bsn-coral);
+  box-shadow: 0 12px 28px rgba(255, 98, 71, 0.24);
+  color: #fff;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-button-soft {
+  background: #fff;
+  border: 2px solid var(--bsn-line);
+  color: var(--bsn-ink);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-header-cta:hover,
+[data-template-id="bloom-steps-nursery"] .bsn-button:hover {
+  transform: translateY(-2px);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1.1fr);
+  min-height: 620px;
+  padding: clamp(42px, 6vw, 86px) clamp(20px, 5vw, 78px) clamp(54px, 8vw, 96px);
+  position: relative;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-copy {
+  max-width: 590px;
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-copy p {
+  color: var(--bsn-green);
+  font-size: 0.95rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero h1 {
+  font-size: clamp(3.4rem, 5.5vw, 6.2rem);
+  max-width: 760px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-copy > span {
+  color: var(--bsn-muted);
+  display: block;
+  font-size: clamp(1rem, 1.35vw, 1.17rem);
+  line-height: 1.7;
+  margin-top: 22px;
+  max-width: 470px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-media {
+  margin-left: auto;
+  max-width: 720px;
+  min-height: 470px;
+  position: relative;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-media img {
+  aspect-ratio: 1.12 / 1;
+  border-radius: 52% 34% 44% 28%;
+  clip-path: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-hero-media strong {
+  background: var(--bsn-coral);
+  border: 5px solid #fff;
+  border-radius: 50%;
+  bottom: 34px;
+  box-shadow: 0 16px 36px rgba(255, 98, 71, 0.28);
+  color: #fff;
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 900;
+  height: 104px;
+  line-height: 1.25;
+  place-items: center;
+  position: absolute;
+  right: 12px;
+  text-align: center;
+  transform: rotate(-7deg);
+  width: 104px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-spark {
+  position: absolute;
+  z-index: 1;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-spark-one {
+  background: var(--bsn-lavender);
+  height: 32px;
+  left: 34px;
+  top: 145px;
+  transform: rotate(23deg);
+  width: 32px;
+  clip-path: polygon(50% 0, 62% 36%, 100% 50%, 62% 64%, 50% 100%, 38% 64%, 0 50%, 38% 36%);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-spark-two {
+  background: var(--bsn-yellow);
+  border-radius: 999px;
+  height: 24px;
+  right: 25%;
+  top: 72px;
+  width: 24px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-wave {
+  background:
+    radial-gradient(42px 34px at 42px 0, transparent 98%, var(--bsn-peach) 100%) 0 0 / 84px 58px repeat-x,
+    linear-gradient(var(--bsn-peach), var(--bsn-peach));
+  height: 74px;
+  margin-top: -1px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-zigzag {
+  background:
+    linear-gradient(135deg, transparent 16px, var(--bsn-peach) 0) 0 0 / 32px 32px,
+    linear-gradient(225deg, transparent 16px, var(--bsn-peach) 0) 0 0 / 32px 32px;
+  height: 44px;
+  opacity: 0.82;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-section {
+  padding: clamp(70px, 10vw, 128px) clamp(20px, 5vw, 72px);
+  position: relative;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-section h2,
+[data-template-id="bloom-steps-nursery"] .bsn-cta h2 {
+  font-size: clamp(2.25rem, 4.6vw, 4.5rem);
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-section > p {
+  color: var(--bsn-muted);
+  margin: 18px auto 0;
+  max-width: 620px;
+  text-align: center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-decor {
+  display: block;
+  height: 28px;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 28px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-decor-flower {
+  background: var(--bsn-yellow);
+  border-radius: 50%;
+  box-shadow: 0 -18px 0 -6px var(--bsn-yellow), 0 18px 0 -6px var(--bsn-yellow), 18px 0 0 -6px var(--bsn-yellow), -18px 0 0 -6px var(--bsn-yellow);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-decor-books {
+  background: var(--bsn-coral);
+  border-radius: 5px;
+  box-shadow: 9px -6px 0 var(--bsn-yellow), -9px 6px 0 var(--bsn-sky);
+  transform: rotate(-6deg);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro {
+  background: var(--bsn-page);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card {
+  background: var(--bsn-peach);
+  border-radius: 44px 74px 42px 70px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 54px auto 0;
+  max-width: 960px;
+  padding: clamp(22px, 4vw, 44px);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figure {
+  margin: 0;
+  min-height: 290px;
+  position: relative;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card img {
+  border: 8px solid #fff;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figure:first-child img {
+  border-radius: 40% 18% 32% 20%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figure:last-child img {
+  border-radius: 18% 40% 18% 34%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figcaption {
+  background: #fff;
+  border-radius: 16px;
+  bottom: 18px;
+  display: grid;
+  left: 18px;
+  min-width: 118px;
+  padding: 14px;
+  position: absolute;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figcaption strong {
+  font-family: var(--bsn-heading);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-intro-card figcaption span {
+  color: var(--bsn-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-story {
+  align-items: center;
+  display: grid;
+  gap: clamp(34px, 6vw, 84px);
+  grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1fr);
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-story-image img,
+[data-template-id="bloom-steps-nursery"] .bsn-foundation img {
+  aspect-ratio: 1.05 / 1;
+  border: 8px solid var(--bsn-yellow);
+  border-radius: 38% 20% 34% 18%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-story-copy h2,
+[data-template-id="bloom-steps-nursery"] .bsn-foundation h2 {
+  margin: 0;
+  text-align: left;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-story-copy > p {
+  color: var(--bsn-muted);
+  margin-top: 20px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-point-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 34px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-point-grid article b {
+  background: var(--bsn-yellow);
+  border-radius: 50%;
+  display: block;
+  height: 18px;
+  margin-bottom: 12px;
+  width: 18px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-point-grid h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-point-grid p {
+  color: var(--bsn-muted);
+  font-size: 0.92rem;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-foundation {
+  align-items: center;
+  display: grid;
+  gap: clamp(34px, 7vw, 96px);
+  grid-template-columns: 0.92fr 1fr;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding-top: 38px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-ribbons {
+  display: grid;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-ribbons span {
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 900;
+  padding: 16px 20px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-ribbons span:nth-child(1) {
+  background: #24c879;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-ribbons span:nth-child(2) {
+  background: #9b63ff;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-ribbons span:nth-child(3) {
+  background: #ffb02e;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programmes,
+[data-template-id="bloom-steps-nursery"] .bsn-team,
+[data-template-id="bloom-steps-nursery"] .bsn-testimonials {
+  background: #fffaf1;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list {
+  display: grid;
+  gap: 22px;
+  margin: 54px auto 0;
+  max-width: 1060px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list article {
+  align-items: stretch;
+  border-radius: 18px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 42% 1fr;
+  min-height: 250px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(1) {
+  background: #d9b8ff;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(2) {
+  background: #bff7dc;
+  grid-template-columns: 1fr 42%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(2) img {
+  order: 2;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(3) {
+  background: #ffe8b8;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list img {
+  border-radius: 12px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list div {
+  align-content: center;
+  display: grid;
+  padding: 12px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list span {
+  font-size: 0.78rem;
+  font-weight: 900;
+  justify-self: end;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list h3 {
+  font-family: var(--bsn-heading);
+  font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+  line-height: 1;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list p {
+  color: var(--bsn-muted);
+  margin-top: 12px;
+  max-width: 430px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-programme-list a {
+  background: #fff;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  justify-self: start;
+  margin-top: 24px;
+  padding: 11px 16px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-activity-grid {
+  display: grid;
+  gap: clamp(28px, 5vw, 54px);
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  margin: 58px auto 0;
+  max-width: 900px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-activity-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-activity-grid img {
+  aspect-ratio: 1.28 / 1;
+  border: 6px solid var(--bsn-lavender);
+  border-radius: 28% 18% 30% 18%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-activity-grid figure:nth-child(2n) img {
+  border-radius: 18% 28% 18% 30%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-activity-grid figcaption {
+  font-size: 0.92rem;
+  font-weight: 900;
+  margin-top: 14px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team::before,
+[data-template-id="bloom-steps-nursery"] .bsn-team::after {
+  background: radial-gradient(34px 28px at 34px 0, transparent 98%, var(--bsn-peach) 100%) 0 0 / 68px 44px repeat-x;
+  content: "";
+  height: 52px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team::before {
+  top: 0;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team::after {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px auto 0;
+  max-width: 960px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid article {
+  background: var(--bsn-lavender);
+  border-radius: 10px;
+  padding: 22px 18px 24px;
+  text-align: center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid img {
+  aspect-ratio: 1 / 0.86;
+  border-radius: 30% 30% 8px 8px;
+  margin-bottom: 14px;
+  object-fit: cover;
+  width: 100%;
+  clip-path: polygon(50% 0, 61% 18%, 83% 12%, 88% 35%, 100% 50%, 88% 65%, 83% 88%, 61% 82%, 50% 100%, 39% 82%, 17% 88%, 12% 65%, 0 50%, 12% 35%, 17% 12%, 39% 18%);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid article:nth-child(1) img {
+  object-position: 12% center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid article:nth-child(2) img {
+  object-position: 50% center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid article:nth-child(3) img {
+  object-position: 88% center;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid h3 {
+  font-family: var(--bsn-heading);
+  font-size: 1.25rem;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-team-grid p {
+  color: var(--bsn-muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insights {
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 0.75fr 1.25fr;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insights h2 {
+  margin: 0;
+  text-align: left;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insights > div > p {
+  color: var(--bsn-muted);
+  margin-top: 16px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insight-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insight-grid article {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(255, 176, 46, 0.12);
+  padding: 14px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insight-grid img {
+  aspect-ratio: 1.2 / 1;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insight-grid h3 {
+  font-family: var(--bsn-heading);
+  font-size: 1.06rem;
+  line-height: 1.16;
+  margin-top: 14px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-insight-grid p {
+  color: var(--bsn-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 54px auto 0;
+  max-width: 1040px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid article {
+  border-radius: 16px;
+  box-shadow: 0 20px 44px rgba(118, 77, 40, 0.08);
+  min-height: 210px;
+  padding: 24px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid article:nth-child(1) {
+  background: var(--bsn-mint);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid article:nth-child(2) {
+  background: #fff;
+  transform: translateY(26px);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid article:nth-child(3) {
+  background: #fff0c8;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid span {
+  color: var(--bsn-coral);
+  display: block;
+  font-size: 0.86rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid p {
+  color: var(--bsn-muted);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid strong {
+  display: block;
+  font-family: var(--bsn-heading);
+  margin-top: 20px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-cta {
+  align-items: center;
+  background: linear-gradient(110deg, #fff, #e1c6ff 58%, #d6b3ff);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 0.55fr 1fr;
+  margin: clamp(52px, 8vw, 100px) auto;
+  max-width: 1060px;
+  min-height: 310px;
+  overflow: hidden;
+  padding: 0 clamp(24px, 5vw, 62px) 0 0;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-cta img {
+  align-self: stretch;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-cta p {
+  color: var(--bsn-muted);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-cta h2 {
+  margin: 8px 0 0;
+  max-width: 580px;
+  text-align: left;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-cta span {
+  color: var(--bsn-muted);
+  display: block;
+  margin: 14px 0 24px;
+  max-width: 480px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer {
+  background: #fff;
+  border-top: 1px solid var(--bsn-line);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1.2fr 0.5fr 0.6fr;
+  padding: 54px clamp(20px, 5vw, 72px) 34px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer img {
+  height: 42px;
+  margin-bottom: 18px;
+  width: auto;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer p,
+[data-template-id="bloom-steps-nursery"] .bsn-footer small,
+[data-template-id="bloom-steps-nursery"] .bsn-footer a {
+  color: var(--bsn-muted);
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer small,
+[data-template-id="bloom-steps-nursery"] .bsn-footer a {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer h3 {
+  font-family: var(--bsn-heading);
+  margin-bottom: 14px;
+}
+
+[data-template-id="bloom-steps-nursery"] .bsn-footer > p {
+  border-top: 1px solid var(--bsn-line);
+  grid-column: 1 / -1;
+  padding-top: 24px;
+}
+
+@media (max-width: 1020px) {
+  [data-template-id="bloom-steps-nursery"] .bsn-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-header nav {
+    display: none;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero,
+  [data-template-id="bloom-steps-nursery"] .bsn-story,
+  [data-template-id="bloom-steps-nursery"] .bsn-foundation,
+  [data-template-id="bloom-steps-nursery"] .bsn-insights {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero {
+    padding-top: 54px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero-media {
+    margin: 18px 0 0;
+    min-height: 390px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-foundation img {
+    max-width: 620px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-insight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  [data-template-id="bloom-steps-nursery"] .bsn-topbar {
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.3;
+    min-height: 48px;
+    text-align: center;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-header {
+    min-height: 64px;
+    padding: 12px 18px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-brand img {
+    height: 34px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-header-cta {
+    min-height: 38px;
+    padding: 0 14px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero {
+    min-height: auto;
+    padding: 42px 18px 62px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.3rem);
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-actions {
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 260px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero-media {
+    min-height: 320px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-hero-media strong {
+    bottom: -14px;
+    height: 86px;
+    right: 4px;
+    width: 86px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-section {
+    padding: 68px 18px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-intro-card,
+  [data-template-id="bloom-steps-nursery"] .bsn-point-grid,
+  [data-template-id="bloom-steps-nursery"] .bsn-team-grid,
+  [data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid,
+  [data-template-id="bloom-steps-nursery"] .bsn-footer,
+  [data-template-id="bloom-steps-nursery"] .bsn-cta {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-intro-card figure {
+    min-height: 230px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-programme-list article,
+  [data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(2) {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-programme-list article:nth-child(2) img {
+    order: 0;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-programme-list img {
+    aspect-ratio: 1.35 / 1;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-activity-grid,
+  [data-template-id="bloom-steps-nursery"] .bsn-insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-testimonial-grid article:nth-child(2) {
+    transform: none;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-cta {
+    margin: 48px 18px;
+    padding: 0 0 28px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-cta div {
+    padding: 0 22px;
+  }
+
+  [data-template-id="bloom-steps-nursery"] .bsn-cta img {
+    aspect-ratio: 1.3 / 1;
+  }
+}

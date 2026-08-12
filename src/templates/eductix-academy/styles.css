@@ -1,0 +1,785 @@
+[data-template-id="eductix-academy"] {
+  background:
+    linear-gradient(rgba(4, 76, 62, 0.035) 1px, transparent 1px) 0 0 / 38px 38px,
+    linear-gradient(90deg, rgba(4, 76, 62, 0.035) 1px, transparent 1px) 0 0 / 38px 38px,
+    radial-gradient(circle at 18% 22%, rgba(4, 138, 79, 0.12), transparent 28%),
+    var(--edx-page);
+  color: var(--edx-ink);
+  font-family: var(--edx-body);
+  line-height: 1.45;
+  overflow: hidden;
+}
+
+[data-template-id="eductix-academy"] *,
+[data-template-id="eductix-academy"] *::before,
+[data-template-id="eductix-academy"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="eductix-academy"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="eductix-academy"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="eductix-academy"] h1,
+[data-template-id="eductix-academy"] h2,
+[data-template-id="eductix-academy"] h3,
+[data-template-id="eductix-academy"] p {
+  margin: 0;
+}
+
+[data-template-id="eductix-academy"] h1,
+[data-template-id="eductix-academy"] h2,
+[data-template-id="eductix-academy"] h3 {
+  font-family: var(--edx-heading);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+}
+
+[data-template-id="eductix-academy"] .edx-header,
+[data-template-id="eductix-academy"] .edx-hero,
+[data-template-id="eductix-academy"] .edx-section,
+[data-template-id="eductix-academy"] .edx-trusted,
+[data-template-id="eductix-academy"] .edx-stats,
+[data-template-id="eductix-academy"] .edx-cta,
+[data-template-id="eductix-academy"] .edx-footer {
+  margin-inline: auto;
+  max-width: 1320px;
+  padding-inline: 28px;
+}
+
+[data-template-id="eductix-academy"] .edx-header {
+  align-items: center;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 170px 1fr auto;
+  min-height: 76px;
+}
+
+[data-template-id="eductix-academy"] .edx-logo span {
+  color: var(--edx-green-dark);
+  display: inline-block;
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+[data-template-id="eductix-academy"] .edx-header nav {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+[data-template-id="eductix-academy"] .edx-header nav a {
+  color: var(--edx-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+[data-template-id="eductix-academy"] .edx-button {
+  align-items: center;
+  background: var(--edx-green);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.86rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+[data-template-id="eductix-academy"] .edx-button::after {
+  content: ">";
+  font-size: 0.75rem;
+  margin-left: 8px;
+}
+
+[data-template-id="eductix-academy"] .edx-hero {
+  display: grid;
+  gap: clamp(38px, 7vw, 92px);
+  grid-template-columns: 0.95fr 1.05fr;
+  min-height: 720px;
+  padding-bottom: 92px;
+  padding-top: 42px;
+  position: relative;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-copy {
+  align-self: start;
+  padding-top: 26px;
+}
+
+[data-template-id="eductix-academy"] .edx-hero h1 {
+  font-size: clamp(4.1rem, 7vw, 7.25rem);
+  max-width: 650px;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-copy p {
+  color: var(--edx-muted);
+  font-size: 1.08rem;
+  margin: 22px 0 28px;
+  max-width: 520px;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 150px 250px;
+}
+
+[data-template-id="eductix-academy"] .edx-card-img,
+[data-template-id="eductix-academy"] .edx-card-img img {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+[data-template-id="eductix-academy"] .edx-card-img {
+  margin: 0;
+  position: relative;
+}
+
+[data-template-id="eductix-academy"] .edx-card-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-one {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-two {
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
+
+[data-template-id="eductix-academy"] .edx-hero-two figcaption {
+  background: rgba(0, 77, 61, 0.78);
+  border-radius: 999px;
+  bottom: 16px;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  left: 16px;
+  padding: 10px 14px;
+  position: absolute;
+}
+
+[data-template-id="eductix-academy"] .edx-review-card,
+[data-template-id="eductix-academy"] .edx-metric-card,
+[data-template-id="eductix-academy"] .edx-chat-card {
+  border-radius: 18px;
+  padding: 22px;
+}
+
+[data-template-id="eductix-academy"] .edx-review-card {
+  background: var(--edx-green);
+  color: #fff;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+[data-template-id="eductix-academy"] .edx-review-card span {
+  background: var(--edx-green-soft);
+  border-radius: 999px;
+  color: var(--edx-green-dark);
+  display: inline-block;
+  font-weight: 900;
+  margin-bottom: 18px;
+  padding: 7px 15px;
+}
+
+[data-template-id="eductix-academy"] .edx-metric-card {
+  background: var(--edx-green-dark);
+  color: #fff;
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: -132px;
+}
+
+[data-template-id="eductix-academy"] .edx-metric-card strong {
+  display: block;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+[data-template-id="eductix-academy"] .edx-chat-card {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 22px 60px rgba(0, 77, 61, 0.08);
+  bottom: 126px;
+  left: 28px;
+  max-width: 350px;
+  position: absolute;
+}
+
+[data-template-id="eductix-academy"] .edx-chat-card strong {
+  color: var(--edx-green-dark);
+  display: block;
+  margin-bottom: 16px;
+}
+
+[data-template-id="eductix-academy"] p {
+  color: var(--edx-muted);
+}
+
+[data-template-id="eductix-academy"] .edx-trusted {
+  padding-block: 66px 72px;
+  text-align: center;
+}
+
+[data-template-id="eductix-academy"] .edx-trusted p {
+  margin-bottom: 32px;
+}
+
+[data-template-id="eductix-academy"] .edx-trusted div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+}
+
+[data-template-id="eductix-academy"] .edx-trusted span {
+  color: var(--edx-green-dark);
+  font-weight: 900;
+}
+
+[data-template-id="eductix-academy"] .edx-section {
+  padding-block: 74px;
+}
+
+[data-template-id="eductix-academy"] .edx-section h2 {
+  font-size: clamp(2.55rem, 4.4vw, 5rem);
+}
+
+[data-template-id="eductix-academy"] .edx-about {
+  align-items: center;
+  display: grid;
+  gap: clamp(44px, 8vw, 118px);
+  grid-template-columns: 0.9fr 1fr;
+}
+
+[data-template-id="eductix-academy"] .edx-about > div p {
+  margin: 18px 0 26px;
+  max-width: 480px;
+}
+
+[data-template-id="eductix-academy"] .edx-about figure {
+  margin: 0;
+  position: relative;
+}
+
+[data-template-id="eductix-academy"] .edx-about img {
+  aspect-ratio: 1.05 / 1;
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="eductix-academy"] .edx-about figcaption,
+[data-template-id="eductix-academy"] .edx-about span {
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 16px 40px rgba(0, 77, 61, 0.1);
+  color: var(--edx-green-dark);
+  font-weight: 800;
+  padding: 12px 16px;
+  position: absolute;
+}
+
+[data-template-id="eductix-academy"] .edx-about figcaption {
+  bottom: 34px;
+  left: -24px;
+}
+
+[data-template-id="eductix-academy"] .edx-about span:nth-of-type(1) {
+  right: -18px;
+  top: 44%;
+}
+
+[data-template-id="eductix-academy"] .edx-about span:nth-of-type(2) {
+  bottom: 22%;
+  right: 22px;
+}
+
+[data-template-id="eductix-academy"] .edx-stats {
+  border-bottom: 1px solid var(--edx-line);
+  border-top: 1px solid var(--edx-line);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-block: 28px;
+  padding-block: 42px;
+}
+
+[data-template-id="eductix-academy"] .edx-stats article {
+  border-right: 1px solid var(--edx-line);
+  padding: 0 24px;
+}
+
+[data-template-id="eductix-academy"] .edx-stats article:last-child {
+  border-right: 0;
+}
+
+[data-template-id="eductix-academy"] .edx-stats strong {
+  color: var(--edx-green-dark);
+  display: block;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 1;
+}
+
+[data-template-id="eductix-academy"] .edx-section-head {
+  align-items: start;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 0.82fr;
+  margin-bottom: 38px;
+}
+
+[data-template-id="eductix-academy"] .edx-course-grid,
+[data-template-id="eductix-academy"] .edx-project-grid,
+[data-template-id="eductix-academy"] .edx-plan-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="eductix-academy"] .edx-course-grid article,
+[data-template-id="eductix-academy"] .edx-faq-grid article,
+[data-template-id="eductix-academy"] .edx-plan-grid article {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--edx-line);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+[data-template-id="eductix-academy"] .edx-course-grid article {
+  min-height: 300px;
+}
+
+[data-template-id="eductix-academy"] .edx-course-grid span {
+  background: var(--edx-green);
+  border-radius: 50%;
+  color: #fff;
+  display: grid;
+  font-weight: 900;
+  height: 38px;
+  margin-bottom: 126px;
+  place-items: center;
+  width: 38px;
+}
+
+[data-template-id="eductix-academy"] .edx-course-grid h3,
+[data-template-id="eductix-academy"] .edx-project-grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+[data-template-id="eductix-academy"] .edx-project-grid article {
+  overflow: hidden;
+}
+
+[data-template-id="eductix-academy"] .edx-project-grid img {
+  aspect-ratio: 1.22 / 1;
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="eductix-academy"] .edx-project-grid p {
+  font-size: 0.82rem;
+  margin-top: 16px;
+}
+
+[data-template-id="eductix-academy"] .edx-outcomes {
+  align-items: center;
+  display: grid;
+  gap: clamp(40px, 7vw, 94px);
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="eductix-academy"] .edx-outcomes > img {
+  aspect-ratio: 0.92 / 1;
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="eductix-academy"] .edx-outcomes h2 {
+  margin-bottom: 28px;
+}
+
+[data-template-id="eductix-academy"] .edx-outcomes details {
+  border-top: 1px solid var(--edx-line);
+  padding: 22px 0;
+}
+
+[data-template-id="eductix-academy"] .edx-outcomes summary {
+  color: var(--edx-green-dark);
+  cursor: pointer;
+  font-size: 1.22rem;
+  font-weight: 900;
+}
+
+[data-template-id="eductix-academy"] .edx-skills {
+  text-align: center;
+}
+
+[data-template-id="eductix-academy"] .edx-skills > p {
+  margin: 18px auto 42px;
+  max-width: 650px;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare {
+  align-items: center;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 34px 1fr;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare div {
+  display: grid;
+  gap: 14px;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare h3 {
+  font-size: 1.22rem;
+  margin-bottom: 12px;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare span {
+  background: #fff;
+  border-radius: 8px;
+  color: var(--edx-green-dark);
+  font-weight: 800;
+  padding: 16px 18px;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare div:last-child span {
+  background: var(--edx-green);
+  color: #fff;
+}
+
+[data-template-id="eductix-academy"] .edx-skills-compare i {
+  background: linear-gradient(var(--edx-green-dark), var(--edx-green));
+  border-radius: 999px;
+  display: block;
+  height: 310px;
+  justify-self: center;
+  width: 3px;
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial {
+  align-items: center;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(4, 138, 79, 0.1));
+  display: grid;
+  gap: clamp(36px, 7vw, 88px);
+  grid-template-columns: 0.86fr 1.14fr;
+  max-width: none;
+  padding-inline: max(28px, calc((100vw - 1264px) / 2));
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial article {
+  background: var(--edx-green-dark);
+  border-radius: 18px;
+  color: #fff;
+  padding: clamp(32px, 5vw, 56px);
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial article h3 {
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial article p {
+  color: rgba(255, 255, 255, 0.76);
+  margin-top: 18px;
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial article div {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  display: flex;
+  gap: 16px;
+  margin-top: 36px;
+  padding: 14px;
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial img {
+  border-radius: 10px;
+  height: 70px;
+  object-fit: cover;
+  width: 70px;
+}
+
+[data-template-id="eductix-academy"] .edx-testimonial b {
+  color: #fff;
+  display: block;
+}
+
+[data-template-id="eductix-academy"] .edx-pricing .edx-section-head {
+  margin-bottom: 42px;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid article {
+  background: rgba(255, 255, 255, 0.62);
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid article.is-featured {
+  background: var(--edx-green);
+  color: #fff;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid h3 {
+  font-size: 1.3rem;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid strong {
+  display: block;
+  font-size: 3.3rem;
+  line-height: 1;
+  margin: 18px 0 24px;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid small {
+  font-size: 1rem;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid ul {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 14px;
+  color: var(--edx-green-dark);
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid li {
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+[data-template-id="eductix-academy"] .edx-plan-grid li::before {
+  content: "✓";
+  margin-right: 10px;
+}
+
+[data-template-id="eductix-academy"] .edx-faq {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 0.72fr 1.28fr;
+}
+
+[data-template-id="eductix-academy"] .edx-faq-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="eductix-academy"] .edx-faq h2 {
+  margin-bottom: 20px;
+}
+
+[data-template-id="eductix-academy"] .edx-faq .edx-button {
+  margin-top: 24px;
+}
+
+[data-template-id="eductix-academy"] .edx-faq-grid h3 {
+  font-size: 1.35rem;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+[data-template-id="eductix-academy"] .edx-cta {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--edx-line);
+  border-radius: 18px;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: 0.78fr 1.22fr;
+  margin-bottom: 86px;
+  overflow: hidden;
+  padding: 0;
+}
+
+[data-template-id="eductix-academy"] .edx-cta img {
+  align-self: stretch;
+  height: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+[data-template-id="eductix-academy"] .edx-cta div {
+  padding: 42px 42px 42px 0;
+}
+
+[data-template-id="eductix-academy"] .edx-cta h2 {
+  font-size: clamp(2.2rem, 4vw, 4.4rem);
+}
+
+[data-template-id="eductix-academy"] .edx-cta p {
+  margin: 18px 0 24px;
+  max-width: 580px;
+}
+
+[data-template-id="eductix-academy"] .edx-footer {
+  background: var(--edx-green-dark);
+  color: #fff;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 1.1fr 0.7fr 0.8fr auto;
+  max-width: none;
+  padding-block: 60px 36px;
+  padding-inline: max(28px, calc((100vw - 1264px) / 2));
+}
+
+[data-template-id="eductix-academy"] .edx-footer h2 {
+  color: #fff;
+  font-size: clamp(2.4rem, 4vw, 4.8rem);
+  max-width: 420px;
+}
+
+[data-template-id="eductix-academy"] .edx-footer p,
+[data-template-id="eductix-academy"] .edx-footer a,
+[data-template-id="eductix-academy"] .edx-footer small {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+[data-template-id="eductix-academy"] .edx-footer nav a,
+[data-template-id="eductix-academy"] .edx-footer div:nth-child(3) a {
+  display: block;
+  margin-bottom: 12px;
+}
+
+[data-template-id="eductix-academy"] .edx-footer > a {
+  align-self: end;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 12px 16px;
+}
+
+[data-template-id="eductix-academy"] .edx-footer small {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  grid-column: 1 / -1;
+  padding-top: 28px;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  [data-template-id="eductix-academy"] .edx-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  [data-template-id="eductix-academy"] .edx-header nav {
+    display: none;
+  }
+
+  [data-template-id="eductix-academy"] .edx-hero,
+  [data-template-id="eductix-academy"] .edx-about,
+  [data-template-id="eductix-academy"] .edx-outcomes,
+  [data-template-id="eductix-academy"] .edx-testimonial,
+  [data-template-id="eductix-academy"] .edx-faq,
+  [data-template-id="eductix-academy"] .edx-cta,
+  [data-template-id="eductix-academy"] .edx-footer,
+  [data-template-id="eductix-academy"] .edx-section-head {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="eductix-academy"] .edx-chat-card {
+    display: none;
+  }
+
+  [data-template-id="eductix-academy"] .edx-hero-grid {
+    min-height: 580px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-stats,
+  [data-template-id="eductix-academy"] .edx-course-grid,
+  [data-template-id="eductix-academy"] .edx-project-grid,
+  [data-template-id="eductix-academy"] .edx-plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  [data-template-id="eductix-academy"] .edx-header,
+  [data-template-id="eductix-academy"] .edx-hero,
+  [data-template-id="eductix-academy"] .edx-section,
+  [data-template-id="eductix-academy"] .edx-trusted,
+  [data-template-id="eductix-academy"] .edx-stats,
+  [data-template-id="eductix-academy"] .edx-cta {
+    padding-inline: 18px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-hero {
+    gap: 24px;
+    min-height: auto;
+    padding-bottom: 56px;
+    padding-top: 18px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-hero h1 {
+    font-size: clamp(3.2rem, 15vw, 4.6rem);
+  }
+
+  [data-template-id="eductix-academy"] .edx-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 140px 220px;
+    min-height: auto;
+  }
+
+  [data-template-id="eductix-academy"] .edx-metric-card {
+    margin-top: -112px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-stats,
+  [data-template-id="eductix-academy"] .edx-course-grid,
+  [data-template-id="eductix-academy"] .edx-project-grid,
+  [data-template-id="eductix-academy"] .edx-plan-grid,
+  [data-template-id="eductix-academy"] .edx-faq-grid,
+  [data-template-id="eductix-academy"] .edx-skills-compare {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="eductix-academy"] .edx-stats article {
+    border-bottom: 1px solid var(--edx-line);
+    border-right: 0;
+    padding: 24px 0;
+  }
+
+  [data-template-id="eductix-academy"] .edx-course-grid article {
+    min-height: 250px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-course-grid span {
+    margin-bottom: 74px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-skills-compare i {
+    height: 42px;
+  }
+
+  [data-template-id="eductix-academy"] .edx-cta {
+    margin-inline: 18px;
+    padding: 0;
+  }
+
+  [data-template-id="eductix-academy"] .edx-cta div {
+    padding: 0 24px 34px;
+  }
+}

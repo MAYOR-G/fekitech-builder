@@ -1,0 +1,197 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fffdf7",
+      "surface": "#fff3ef",
+      "card": "#ffffff",
+      "ink": "#211611",
+      "muted": "#6f625b",
+      "green": "#098758",
+      "coral": "#ff6247",
+      "yellow": "#ffd447",
+      "mint": "#bff7dc",
+      "lavender": "#d7b6ff",
+      "peach": "#ffd9cb",
+      "sky": "#bceeff",
+      "line": "#f3d8d1"
+    },
+    "typography": {
+      "heading": "Georgia, Times New Roman, serif",
+      "body": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Bloom Steps",
+    "strapline": "Nursery & Preschool",
+    "logo": "/templates/bloom-steps-nursery/assets/logo.svg",
+    "logoAlt": "Bloom Steps Nursery logo",
+    "phone": "0113 482 2048",
+    "phoneHref": "tel:+441134822048",
+    "email": "hello@bloomsteps.co.uk",
+    "emailHref": "mailto:hello@bloomsteps.co.uk",
+    "address": "18 Meadow Lane, Leeds, LS6 2AB"
+  },
+  "announcement": {
+    "text": "Admissions now open - limited funded places available",
+    "linkLabel": "Call 0113 482 2048",
+    "href": "tel:+441134822048"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Programmes", "href": "#programmes" },
+      { "label": "Activities", "href": "#activities" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Book a Visit",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Early years care in Leeds",
+    "title": "Where Little Minds Bloom & Grow",
+    "text": "A playful, caring nursery where children feel safe, known and ready for their next step.",
+    "primaryLabel": "Book a Visit",
+    "primaryHref": "#contact",
+    "secondaryLabel": "View Rooms",
+    "secondaryHref": "#programmes",
+    "image": "/templates/bloom-steps-nursery/assets/hero-creative-play.webp",
+    "imageAlt": "Children enjoying creative play at Bloom Steps Nursery",
+    "badge": "Open 7.30am - 6.00pm"
+  },
+  "intro": {
+    "title": "A Place Where Little Dreams Begin",
+    "text": "Every day is shaped around warm relationships, curious play and calm routines that help children feel confident.",
+    "stats": [
+      { "value": "15+", "label": "Years of care" },
+      { "value": "5k+", "label": "Happy family days" }
+    ],
+    "images": [
+      {
+        "src": "/templates/bloom-steps-nursery/assets/nursery-friends-reading.webp",
+        "alt": "Children reading together at nursery"
+      },
+      {
+        "src": "/templates/bloom-steps-nursery/assets/nursery-storytime.webp",
+        "alt": "Children drawing together at nursery"
+      }
+    ]
+  },
+  "story": {
+    "title": "Building bright futures through joyful learning",
+    "text": "At Bloom Steps, children explore, make friends and build everyday skills through guided play, outdoor time and kind support from trusted key workers.",
+    "image": "/templates/bloom-steps-nursery/assets/nursery-storytime.webp",
+    "imageAlt": "Nursery children enjoying story time",
+    "points": [
+      {
+        "title": "Experienced Educators",
+        "text": "Qualified practitioners who notice the little details."
+      },
+      {
+        "title": "Play-Based Learning",
+        "text": "Creative, active sessions planned for each stage."
+      }
+    ]
+  },
+  "foundation": {
+    "title": "A foundation built for bright beginnings",
+    "image": "/templates/bloom-steps-nursery/assets/nursery-classroom-morning.webp",
+    "imageAlt": "Children sitting together during nursery morning activities",
+    "items": [
+      "Safe learning spaces",
+      "Tailored routine plans",
+      "Open parent support"
+    ]
+  },
+  "programmes": {
+    "title": "Programmes Designed for Growing Minds",
+    "items": [
+      {
+        "title": "Playgroup",
+        "age": "Age 1-2",
+        "text": "Gentle care, simple routines and sensory play for early confidence.",
+        "image": "/templates/bloom-steps-nursery/assets/creative-play-card.webp",
+        "imageAlt": "Children making art in playgroup",
+        "label": "Discover Room",
+        "href": "#contact"
+      },
+      {
+        "title": "Nursery",
+        "age": "Age 2-4",
+        "text": "Busy hands, social play, early language and daily outdoor discovery.",
+        "image": "/templates/bloom-steps-nursery/assets/nursery-storytime.webp",
+        "imageAlt": "Child learning through play",
+        "label": "Discover Room",
+        "href": "#contact"
+      },
+      {
+        "title": "KG-1",
+        "age": "Age 4-5",
+        "text": "School-ready skills taught through stories, numbers, movement and care.",
+        "image": "/templates/bloom-steps-nursery/assets/nursery-classroom-morning.webp",
+        "imageAlt": "Children in a nursery classroom",
+        "label": "Discover Room",
+        "href": "#contact"
+      }
+    ]
+  },
+  "activities": {
+    "title": "Our Activities",
+    "items": [
+      { "title": "Art & Craft", "image": "/templates/bloom-steps-nursery/assets/creative-play-card.webp", "alt": "Children drawing and crafting" },
+      { "title": "Music & Movement", "image": "/templates/bloom-steps-nursery/assets/nursery-storytime.webp", "alt": "Children enjoying movement games" },
+      { "title": "Story Time", "image": "/templates/bloom-steps-nursery/assets/nursery-friends-reading.webp", "alt": "Children sharing story time" },
+      { "title": "Outdoor Play", "image": "/templates/bloom-steps-nursery/assets/nursery-outdoor-play.webp", "alt": "Children playing outdoors" },
+      { "title": "Little Explorers", "image": "/templates/bloom-steps-nursery/assets/hero-creative-play.webp", "alt": "Children exploring creative materials" },
+      { "title": "Learning Games", "image": "/templates/bloom-steps-nursery/assets/nursery-classroom-morning.webp", "alt": "Children playing learning games" }
+    ]
+  },
+  "team": {
+    "title": "Guiding Little Minds With Care",
+    "people": [
+      { "name": "Emma Johnson", "role": "Lead Practitioner", "image": "/templates/bloom-steps-nursery/assets/nursery-staff-team.webp", "alt": "Lead practitioner at Bloom Steps" },
+      { "name": "Sophia Martinez", "role": "Nursery Manager", "image": "/templates/bloom-steps-nursery/assets/nursery-staff-team.webp", "alt": "Nursery manager at Bloom Steps" },
+      { "name": "Daniel Lee", "role": "Early Years Educator", "image": "/templates/bloom-steps-nursery/assets/nursery-staff-team.webp", "alt": "Early years educator at Bloom Steps" }
+    ]
+  },
+  "insights": {
+    "title": "Useful Insights for Growing Families",
+    "text": "Explore helpful guidance for settling in, routines and making the most of your child's early years.",
+    "items": [
+      { "title": "Creative Activities That Spark Young Imaginations", "date": "May 12, 2026", "readTime": "4 min read", "image": "/templates/bloom-steps-nursery/assets/creative-play-card.webp", "alt": "Creative nursery activity" },
+      { "title": "Helping Children Develop Healthy Daily Routines", "date": "Apr 18, 2026", "readTime": "3 min read", "image": "/templates/bloom-steps-nursery/assets/nursery-friends-reading.webp", "alt": "Children following a calm routine" },
+      { "title": "The Importance of Growing Learning in Early Years", "date": "Mar 30, 2026", "readTime": "5 min read", "image": "/templates/bloom-steps-nursery/assets/nursery-learning-games.webp", "alt": "Early years learning moment" }
+    ]
+  },
+  "testimonials": {
+    "title": "Trusted by Loving Families",
+    "text": "Real words from parents who value gentle care, clear communication and happy nursery days.",
+    "items": [
+      { "quote": "The team helped our daughter settle with so much patience. She now runs in smiling every morning.", "name": "Rachel P.", "rating": "5.0" },
+      { "quote": "Warm, organised and genuinely thoughtful. We always know what our son has enjoyed each day.", "name": "Amit S.", "rating": "5.0" },
+      { "quote": "A beautiful nursery with kind staff and a lovely balance of learning, play and calm routines.", "name": "Laura M.", "rating": "5.0" }
+    ]
+  },
+  "cta": {
+    "title": "Give Your Child a Bright Beginning",
+    "text": "Arrange a visit and see how Bloom Steps could support your family.",
+    "label": "Book Your Visit",
+    "href": "#contact",
+    "image": "/templates/bloom-steps-nursery/assets/nursery-friends-reading.webp",
+    "imageAlt": "Child smiling before nursery"
+  },
+  "footer": {
+    "note": "A warm early years nursery helping children grow through play, friendship and steady care.",
+    "legal": "© 2026 Bloom Steps Nursery. All rights reserved.",
+    "links": [
+      { "label": "Rooms", "href": "#programmes" },
+      { "label": "Activities", "href": "#activities" },
+      { "label": "Visit", "href": "#contact" }
+    ],
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "Facebook", "href": "https://facebook.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com" }
+    ]
+  }
+}

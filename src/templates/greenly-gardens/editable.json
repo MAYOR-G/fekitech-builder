@@ -1,0 +1,175 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f3f1e7",
+      "section": "#ebe9d6",
+      "surface": "#fffdf2",
+      "card": "#ffffff",
+      "ink": "#213027",
+      "muted": "#677164",
+      "deep": "#214f3d",
+      "deepAlt": "#173b2d",
+      "accent": "#b9ed13",
+      "accentSoft": "#e7f8a5",
+      "line": "#dcd9c5",
+      "white": "#ffffff"
+    },
+    "typography": {
+      "heading": "Inter, Arial, sans-serif",
+      "serif": "Georgia, 'Times New Roman', serif",
+      "body": "Inter, Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Greenly",
+    "tagline": "Premium garden care",
+    "logo": "/templates/greenly-gardens/assets/greenly-logo.svg",
+    "logoAlt": "Greenly logo",
+    "phone": "+44 020 4577 1182",
+    "phoneHref": "tel:+442045771182",
+    "email": "hello@greenlygardens.co.uk",
+    "emailHref": "mailto:hello@greenlygardens.co.uk",
+    "address": "18 Cedar Row, Guildford GU1"
+  },
+  "navigation": {
+    "links": [
+      { "label": "All pages", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Get A Free Quote",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "titlePrefix": "Transform Your Outdoor",
+    "titleMain": "Space",
+    "titleAccent": "Effortlessly",
+    "titleSuffix": "Today",
+    "text": "Create a greener, more beautiful outdoor space with expert garden care, landscaping and thoughtful maintenance.",
+    "image": "/templates/greenly-gardens/assets/greenly-hero.webp",
+    "imageAlt": "Professional gardener trimming a garden hedge",
+    "cardImage": "/templates/greenly-gardens/assets/greenly-planting.webp",
+    "cardImageAlt": "Gardener planting flowers in a residential border",
+    "primaryLabel": "Get This Template",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Unlock 100+ Templates",
+    "secondaryHref": "#services",
+    "tertiaryLabel": "Access 400+ Components",
+    "tertiaryHref": "#gallery",
+    "quaternaryLabel": "Hire a Pro",
+    "quaternaryHref": "#contact"
+  },
+  "stats": [
+    { "value": "45", "title": "Skilled Gardeners", "text": "Our expert gardeners care for every border, lawn and hedge with skill." },
+    { "value": "95", "title": "Eco-Friendly Tools", "text": "We use modern low-impact equipment and sustainable garden practices." },
+    { "value": "48", "title": "24/7 Customer Support", "text": "Our customer support team is available to help whenever you need us." }
+  ],
+  "about": {
+    "image": "/templates/greenly-gardens/assets/greenly-planting.webp",
+    "imageAlt": "Greenly gardener planting flowers",
+    "title": "Dedicated to Keeping Green Spaces",
+    "accent": "Beautiful",
+    "text": "We are committed to creating and maintaining outdoor spaces that feel fresh, relaxed and beautifully designed.",
+    "points": [
+      { "title": "Quality You Can Trust", "text": "Reliable service from experienced local garden experts." },
+      { "title": "Personalised Care", "text": "Bespoke plans shaped around your garden and lifestyle." }
+    ],
+    "buttonLabel": "Discover Our Story",
+    "buttonHref": "#services"
+  },
+  "services": {
+    "title": "Our Expert",
+    "accent": "Services Today",
+    "buttonLabel": "Explore Our Services",
+    "buttonHref": "#contact",
+    "items": [
+      { "title": "Shrub Trimming", "image": "/templates/greenly-gardens/assets/greenly-service-trimming.webp", "alt": "Gardener trimming shrubs" },
+      { "title": "Garden Maintenance", "image": "/templates/greenly-gardens/assets/greenly-planting.webp", "alt": "Garden maintenance and planting work" },
+      { "title": "Landscaping Design", "image": "/templates/greenly-gardens/assets/greenly-gallery-home.webp", "alt": "Finished landscaped garden" }
+    ]
+  },
+  "values": {
+    "title": "Loved by Our",
+    "accent": "Valued Clients",
+    "text": "Our clients trust us to care for their gardens and lawns with dedication and attention to detail.",
+    "items": ["Lawn Maintenance", "Landscaping Projects", "Customer Satisfaction", "Happy Customer"]
+  },
+  "feature": {
+    "image": "/templates/greenly-gardens/assets/greenly-service-trimming.webp",
+    "imageAlt": "Gardener maintaining a lawn",
+    "title": "Make Your Outdoors",
+    "accent": "Beautiful, Naturally",
+    "text": "Our team uses sustainable methods, quality tools and friendly support to create outdoor spaces that last.",
+    "bullets": ["Free garden inspection consultation", "Eco-friendly tools and treatments"],
+    "buttonLabel": "Get a Free Quote",
+    "buttonHref": "#contact"
+  },
+  "process": [
+    { "step": "001", "title": "Receive a Quote", "text": "We provide a detailed estimate based on your garden and preferred timings.", "image": "/templates/greenly-gardens/assets/greenly-planting.webp", "alt": "Gardener preparing a quote" },
+    { "step": "002", "title": "Schedule the Service", "text": "Choose a convenient date and time for our team to visit your home.", "image": "/templates/greenly-gardens/assets/greenly-gallery-lawn.webp", "alt": "Neat topiary garden" },
+    { "step": "003", "title": "Service Completion", "text": "Our team carries out the service with professionalism and care.", "image": "/templates/greenly-gardens/assets/greenly-gallery-home.webp", "alt": "Finished landscaped lawn" },
+    { "step": "004", "title": "Follow-Up Support", "text": "We offer after-service support to make sure you are happy with the result.", "image": "/templates/greenly-gardens/assets/greenly-hero.webp", "alt": "Gardener trimming a hedge" }
+  ],
+  "testimonial": {
+    "title": "Trusted by 12k",
+    "accent": "Happy Customers",
+    "quote": "Absolutely outstanding service. My lawn has never looked this green and healthy. The team was professional, punctual and paid attention to every detail.",
+    "name": "Daniel K.",
+    "role": "Greenly property manager",
+    "image": "/templates/greenly-gardens/assets/greenly-client.svg",
+    "imageAlt": "Greenly customer portrait"
+  },
+  "gallery": {
+    "title": "Our Landscaping Gallery",
+    "buttonLabel": "View Full Gallery",
+    "buttonHref": "#contact",
+    "images": [
+      { "src": "/templates/greenly-gardens/assets/greenly-service-trimming.webp", "alt": "Garden maintenance work" },
+      { "src": "/templates/greenly-gardens/assets/greenly-gallery-home.webp", "alt": "Family garden and lawn" },
+      { "src": "/templates/greenly-gardens/assets/greenly-gallery-lawn.webp", "alt": "Freshly maintained lawn" },
+      { "src": "/templates/greenly-gardens/assets/greenly-planting.webp", "alt": "Flower bed planting" },
+      { "src": "/templates/greenly-gardens/assets/greenly-hero.webp", "alt": "Hedge trimming service" }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "accent": "Questions",
+    "text": "Maintenance depends on your lawn type and needs. Typically weekly or bi-weekly visits keep your garden healthy and looking smart.",
+    "cardTitle": "Transform Your Garden Today",
+    "cardText": "Bring your garden to life with expert care and clear, friendly advice from a team that treats every outdoor space with care.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "#contact",
+    "items": [
+      { "question": "How often should I schedule lawn maintenance?", "answer": "Most gardens benefit from weekly or fortnightly visits during the growing season." },
+      { "question": "What are the benefits of aerating my lawn?", "answer": "Aeration helps air, water and nutrients reach the roots for stronger growth." },
+      { "question": "When is the best time to fertilise my lawn?", "answer": "Spring and early autumn are usually best for UK lawns." },
+      { "question": "How can I control weeds in my lawn?", "answer": "Regular mowing, feeding and targeted weed treatment help keep lawns clean." },
+      { "question": "What type of grass is best for my climate?", "answer": "We recommend blends based on shade, usage, drainage and soil type." }
+    ]
+  },
+  "blog": {
+    "title": "Green Living",
+    "accent": "Our Blog",
+    "items": [
+      { "title": "Transform Your Outdoors with Expert Advice", "image": "/templates/greenly-gardens/assets/greenly-gallery-home.webp", "alt": "Garden advice article" },
+      { "title": "Revamp Your Garden with Seasonal Tips", "image": "/templates/greenly-gardens/assets/greenly-gallery-lawn.webp", "alt": "Seasonal garden care" },
+      { "title": "Maximise Your Space: Vertical Gardening Solutions", "image": "/templates/greenly-gardens/assets/greenly-planting.webp", "alt": "Vertical gardening ideas" }
+    ]
+  },
+  "cta": {
+    "title": "Transform Your Garden",
+    "accent": "with Experts",
+    "text": "Relax and enjoy a greener, more beautiful garden while our team handles the hard work.",
+    "buttonLabel": "Get A Free Quote",
+    "buttonHref": "#contact",
+    "image": "/templates/greenly-gardens/assets/greenly-hero.webp",
+    "imageAlt": "Greenly garden care expert"
+  },
+  "footer": {
+    "text": "We provide professional gardening services across local homes and small businesses.",
+    "quickLinks": ["About Us", "Our Services", "Garden Tips", "Our Blog"],
+    "services": ["Lawn Mowing", "Garden Maintenance", "Tree & Shrub Trimming", "Seasonal Cleanups"],
+    "legal": "© 2026 Greenly. All rights reserved."
+  }
+}

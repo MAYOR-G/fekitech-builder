@@ -1,0 +1,9 @@
+{
+  "id": "handgrid-repairs",
+  "name": "HandGrid Repairs",
+  "category": "Trades",
+  "image": "/templates/handgrid-repairs.webp",
+  "previewImages": [
+    "/templates/handgrid-repairs.webp"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#eef7f3",
+      "section": "#e7f1ee",
+      "card": "#f7fbf8",
+      "ink": "#073f35",
+      "muted": "#61736c",
+      "green": "#048a4f",
+      "greenDark": "#004d3d",
+      "greenSoft": "#d9eee6",
+      "line": "#cadbd4",
+      "white": "#ffffff"
+    },
+    "typography": {
+      "heading": "Arial, Helvetica, sans-serif",
+      "body": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Eductix",
+    "logo": "/templates/eductix-academy/assets/logo.svg",
+    "logoAlt": "Eductix logo",
+    "email": "hello@eductix.co.uk",
+    "emailHref": "mailto:hello@eductix.co.uk",
+    "phone": "+44 20 8064 1190",
+    "phoneHref": "tel:+442080641190"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Course", "href": "#courses" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "About Us", "href": "#about" }
+    ],
+    "ctaLabel": "Contact Us",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "title": "Build Skills That Shape Your Future",
+    "text": "Practical online courses designed to help you gain real-world experience and grow with confidence.",
+    "primaryLabel": "Explore Course",
+    "primaryHref": "#courses",
+    "imageOne": "/templates/eductix-academy/assets/hero-learner-red.webp",
+    "imageOneAlt": "Online learner using a phone",
+    "imageTwo": "/templates/eductix-academy/assets/hero-learner-white.webp",
+    "imageTwoAlt": "Smiling learner with a laptop",
+    "badge": "Interactive Classrooms",
+    "metricValue": "62+",
+    "metricLabel": "Courses built around real-world projects",
+    "review": "The lessons felt helpful and easy to apply right away."
+  },
+  "trusted": {
+    "title": "Trusted by learners from 50+ countries",
+    "logos": ["egipsum", "Logipsum", "Lopipsum", "logipsum", "Logiposum"]
+  },
+  "about": {
+    "title": "Learning Built for Real Careers",
+    "text": "Eductix is a modern online learning platform focused on practical, skill-based education.",
+    "primaryLabel": "Explore Programs",
+    "primaryHref": "#courses",
+    "image": "/templates/eductix-academy/assets/hero-learner-white.webp",
+    "imageAlt": "Learner smiling during an online course",
+    "rating": "4.8 average rating",
+    "tagOne": "Digital Marketing",
+    "tagTwo": "Data Analytics"
+  },
+  "stats": [
+    { "value": "97%", "label": "Learner Satisfaction" },
+    { "value": "80+", "label": "Courses Available" },
+    { "value": "40k+", "label": "Active Learners" },
+    { "value": "50+", "label": "Countries Reached" }
+  ],
+  "courses": {
+    "title": "Explore Our Career-Focused Courses",
+    "text": "Choose from expertly designed programmes built around practical, real-world skills.",
+    "items": [
+      { "title": "Digital Marketing", "text": "Learn SEO, social media, paid ads and content strategy." },
+      { "title": "Web Development", "text": "Build modern websites and reusable web applications." },
+      { "title": "Data Analytics", "text": "Analyse data and make smart data-driven decisions." }
+    ]
+  },
+  "projects": {
+    "title": "Learning Platforms & Projects We've Built",
+    "text": "We create scalable platforms designed for online courses and professional training.",
+    "items": [
+      { "title": "Online Learning Platform", "date": "2026", "image": "/templates/eductix-academy/assets/project-learning-platform.webp", "alt": "Online learning platform on a laptop" },
+      { "title": "Corporate Training Portal", "date": "2026", "image": "/templates/eductix-academy/assets/project-training-portal.webp", "alt": "Corporate training materials and laptop" },
+      { "title": "Marketing Educator", "date": "2026", "image": "/templates/eductix-academy/assets/project-marketing-educator.webp", "alt": "Marketing education laptop workspace" }
+    ]
+  },
+  "outcomes": {
+    "title": "Built for Learners, Driven by Outcomes",
+    "image": "/templates/eductix-academy/assets/online-class.webp",
+    "imageAlt": "Learner joining an online class from home",
+    "items": [
+      "Expert Mentors",
+      "Hands-On Projects",
+      "Career-Focused Curriculum",
+      "Recognised Certificates"
+    ]
+  },
+  "skills": {
+    "title": "Skills That Prepare You for Real Opportunities",
+    "text": "Our programmes are designed to help you build practical knowledge, apply real-world skills and grow with confidence.",
+    "leftTitle": "Core Learning Outcomes",
+    "rightTitle": "Career Learning Outcomes",
+    "left": [
+      "Structured, ready-to-use curriculum",
+      "Hands-on project experience",
+      "Real-world case studies",
+      "Performance tracking and feedback",
+      "Flexible learning schedule",
+      "Career-focused assignments"
+    ],
+    "right": [
+      "Practical, skill-based training",
+      "Industry-relevant skills training",
+      "Clear goals and progress milestones",
+      "Industry-relevant knowledge",
+      "Learn at your own pace",
+      "Job-ready confidence"
+    ]
+  },
+  "testimonial": {
+    "title": "What Our Learners Say",
+    "text": "Real feedback from students who completed courses on Eductix.",
+    "quote": "The lessons are practical and easy to follow.",
+    "body": "Eductix helped me build real skills and confidence to start my career successfully.",
+    "name": "Daniel Carter",
+    "role": "Data Analytics Student",
+    "image": "/templates/eductix-academy/assets/hero-learner-white.webp",
+    "imageAlt": "Eductix student testimonial",
+    "buttonLabel": "Explore Course",
+    "buttonHref": "#courses"
+  },
+  "pricing": {
+    "title": "Flexible Plans for Every Learner",
+    "text": "Choose a plan that fits your learning goals and grow at your own pace.",
+    "plans": [
+      { "name": "Basic", "price": "$19", "period": "month", "featured": false, "features": ["Access to selected courses", "Community access", "Downloadable resources", "Certificate upon completion", "Advanced projects"] },
+      { "name": "Pro", "price": "$39", "period": "month", "featured": true, "features": ["Access to all courses", "Hands-on projects", "Downloadable templates", "Certificates", "Advanced projects"] },
+      { "name": "Team", "price": "$99", "period": "month", "featured": false, "features": ["Everything in Pro", "Team dashboard", "Progress tracking", "Admin management", "Dedicated support"] }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Helpful information to guide your learning journey.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "#contact",
+    "items": [
+      { "question": "Who can enrol in Eductix courses?", "answer": "Anyone interested in building practical skills can enrol." },
+      { "question": "Do I get a certificate after completion?", "answer": "Yes, certificates are included for completed courses." },
+      { "question": "Do I get lifetime access to the courses?", "answer": "Selected plans include long-term course access." },
+      { "question": "Are the courses beginner friendly?", "answer": "Yes, courses are designed with clear steps and support." }
+    ]
+  },
+  "cta": {
+    "title": "Start Your Learning Journey Today",
+    "text": "Join thousands of learners building real-world skills and growing their careers with confidence.",
+    "buttonLabel": "Explore Course",
+    "buttonHref": "#courses",
+    "image": "/templates/eductix-academy/assets/cta-student-books.webp",
+    "imageAlt": "Student holding books for Eductix"
+  },
+  "footer": {
+    "title": "Build Skills. Build Your Future.",
+    "legal": "© 2026 Eductix. All rights reserved.",
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Programs", "href": "#courses" },
+      { "label": "Why Eductix", "href": "#skills" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "social": ["X", "In", "Fb", "Ig"],
+    "backLabel": "Back To Top"
+  }
+}

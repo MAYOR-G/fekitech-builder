@@ -197,6 +197,12 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "arcstone-growth": "business",
   "beaniro-cold-brew": "business",
   "lune-leaf-skincare": "business",
+  "bloom-steps-nursery": "business",
+  "handgrid-repairs": "business",
+  "eductix-academy": "business",
+  "alvion-medical": "business",
+  "greenly-gardens": "business",
+  "pipeline-os": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

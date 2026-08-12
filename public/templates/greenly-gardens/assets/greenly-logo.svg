@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 40" role="img" aria-labelledby="title">
+  <title id="title">Greenly</title>
+  <rect width="40" height="40" rx="10" fill="#b9ed13"/>
+  <path d="M12 22c9.5-11.5 18.2-10.6 21.5-8.5-1.1 11.5-9.2 18.8-21.5 8.5Z" fill="#214f3d"/>
+  <path d="M17 23c4.4-1.6 8.5-3.6 12.5-6.2" fill="none" stroke="#f7f4e8" stroke-width="2" stroke-linecap="round"/>
+  <text x="52" y="25" fill="#213027" font-family="Arial, sans-serif" font-size="20" font-weight="700">Greenly</text>
+</svg>

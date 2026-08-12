@@ -1,0 +1,172 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f4f4f1",
+      "soft": "#eef3f0",
+      "card": "#ffffff",
+      "ink": "#090b0d",
+      "muted": "#69706f",
+      "dark": "#050606",
+      "deep": "#073845",
+      "lime": "#cfff00",
+      "limeDark": "#96bf00",
+      "line": "#e6e8e5"
+    },
+    "typography": {
+      "heading": "Arial, Helvetica, sans-serif",
+      "body": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Alvion",
+    "logo": "/templates/alvion-medical/assets/logo.svg",
+    "logoAlt": "Alvion Medical logo",
+    "phone": "+44 20 8540 7190",
+    "phoneHref": "tel:+442085407190",
+    "email": "care@alvionmedical.co.uk",
+    "emailHref": "mailto:care@alvionmedical.co.uk",
+    "address": "88 Gresham Street, London, EC2V 7NQ"
+  },
+  "navigation": {
+    "links": [
+      { "label": "About us", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Our team", "href": "#team" },
+      { "label": "Blog", "href": "#articles" }
+    ],
+    "notice": "Click here & Claim priority access",
+    "phoneLabel": "+44 20 8540 7190",
+    "contactLabel": "Contact us",
+    "contactHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Since 1998 - Trusted medical care",
+    "titlePrefix": "Ranked",
+    "titleHighlight": "No.1",
+    "titleSuffix": "Best Hospital",
+    "text": "Quality healthcare, modern technology and experienced doctors, all in one place.",
+    "primaryLabel": "Book appointment",
+    "primaryHref": "#appointment",
+    "image": "/templates/alvion-medical/assets/hero-consultant.webp",
+    "imageAlt": "Senior Alvion consultant doctor in a modern hospital",
+    "chips": [
+      "Advanced facilities",
+      "24/7 support",
+      "Expert care",
+      "Trusted service"
+    ]
+  },
+  "intro": {
+    "eyebrow": "Welcome to medical",
+    "title": "Our experienced team combines advanced technology with compassionate care across diagnostics, consultations and personalised treatment plans.",
+    "image": "/templates/alvion-medical/assets/doctor-consultation.webp",
+    "imageAlt": "Doctor discussing treatment options with a patient",
+    "trusted": "Trusted by 25k+ patients",
+    "stats": [
+      { "value": "9/10", "label": "Overall satisfaction score" },
+      { "value": "96%", "label": "Overall success score" },
+      { "value": "10k+", "label": "Happy patients" },
+      { "value": "15k", "label": "Patient visits" }
+    ]
+  },
+  "services": {
+    "title": "Stay up to date with the Latest trends",
+    "label": "Healthcare services",
+    "items": [
+      { "title": "General consultation", "category": "Wellness", "text": "Everyday medical advice, checks and clear next steps.", "image": "/templates/alvion-medical/assets/service-general-consultation.webp", "alt": "Doctor leading a general consultation" },
+      { "title": "Diagnostic services", "category": "Consult", "text": "Modern scanning, testing and reporting for faster answers.", "image": "/templates/alvion-medical/assets/service-diagnostics.webp", "alt": "Diagnostic scanner in a private hospital" },
+      { "title": "Orthopaedic services", "category": "Wellness", "text": "Specialist support for joints, posture and mobility concerns.", "image": "/templates/alvion-medical/assets/service-orthopaedics.webp", "alt": "Orthopaedic shoulder assessment" },
+      { "title": "Cardiology care", "category": "Health", "text": "Heart checks, risk reviews and consultant-led care plans.", "image": "/templates/alvion-medical/assets/service-cardiology.webp", "alt": "Cardiology doctor with an older patient" },
+      { "title": "Dental services", "category": "Wellness", "text": "Routine dental care, hygiene support and gentle treatment.", "image": "/templates/alvion-medical/assets/service-dental.webp", "alt": "Dental clinician providing a check-up" },
+      { "title": "X-Ray services", "category": "Consult", "text": "Quick imaging reviews with careful clinical explanation.", "image": "/templates/alvion-medical/assets/service-xray.webp", "alt": "Doctor reviewing an x-ray with a patient" }
+    ]
+  },
+  "team": {
+    "title": "Meet our professional healthcare",
+    "text": "Every treatment is delivered with expert care, advanced medical technology and a patient-first approach.",
+    "buttonLabel": "Meet our specialist",
+    "buttonHref": "#appointment",
+    "members": [
+      { "name": "Dr Amara Patel", "role": "General Physician", "image": "/templates/alvion-medical/assets/team-amara-patel.webp", "alt": "Dr Amara Patel portrait" },
+      { "name": "Dr Richard Hayes", "role": "Cardiology Consultant", "image": "/templates/alvion-medical/assets/team-richard-hayes.webp", "alt": "Dr Richard Hayes portrait" },
+      { "name": "Dr Leah Morris", "role": "Radiology Lead", "image": "/templates/alvion-medical/assets/team-leah-morris.webp", "alt": "Dr Leah Morris portrait" },
+      { "name": "Dr Owen Brooks", "role": "Orthopaedics", "image": "/templates/alvion-medical/assets/team-owen-brooks.webp", "alt": "Dr Owen Brooks portrait" },
+      { "name": "Dr Marcus Stone", "role": "Consultant Surgeon", "image": "/templates/alvion-medical/assets/team-marcus-stone.webp", "alt": "Dr Marcus Stone portrait" },
+      { "name": "Dr Sarah Klein", "role": "Dental Clinician", "image": "/templates/alvion-medical/assets/team-sarah-klein.webp", "alt": "Dr Sarah Klein portrait" }
+    ]
+  },
+  "appointment": {
+    "label": "Book an appointment",
+    "title": "Book your Appointment",
+    "image": "/templates/alvion-medical/assets/appointment-banner.webp",
+    "imageAlt": "Clinician writing appointment notes with a patient",
+    "buttonLabel": "Book appointment",
+    "buttonHref": "#contact",
+    "note": "Expert care, advanced treatments and compassionate support.",
+    "hours": [
+      { "day": "Monday - Thursday", "time": "08:00 - 18:00" },
+      { "day": "Friday - Saturday", "time": "09:00 - 14:00" },
+      { "day": "Sunday", "time": "Closed" }
+    ]
+  },
+  "pricing": {
+    "label": "Fair pricing",
+    "title": "Our clear, transparent treatment pricing structure",
+    "items": [
+      { "title": "General consultation", "text": "Consult with an experienced physician for routine checks and advice.", "price": "£300", "image": "/templates/alvion-medical/assets/service-general-consultation.webp", "alt": "General consultation" },
+      { "title": "Specialist consultation", "text": "Meet a consultant for detailed assessment and specialist advice.", "price": "£450", "image": "/templates/alvion-medical/assets/doctor-consultation.webp", "alt": "Specialist consultation" },
+      { "title": "Full body checkup", "text": "Comprehensive screening to understand overall wellbeing.", "price": "£510", "image": "/templates/alvion-medical/assets/service-cardiology.webp", "alt": "Full body checkup" },
+      { "title": "Minor procedures", "text": "Safe, quick and minimally invasive procedures by skilled clinicians.", "price": "£80", "image": "/templates/alvion-medical/assets/service-orthopaedics.webp", "alt": "Minor procedures" },
+      { "title": "ECG Test", "text": "Simple, non-invasive test to monitor your heart's electrical activity.", "price": "£250", "image": "/templates/alvion-medical/assets/service-diagnostics.webp", "alt": "ECG test" },
+      { "title": "X-Ray", "text": "Fast imaging to support diagnosis for injuries and internal concerns.", "price": "£175", "image": "/templates/alvion-medical/assets/service-xray.webp", "alt": "X-ray appointment" }
+    ]
+  },
+  "articles": {
+    "label": "Latest articles",
+    "title": "Stay up to date with the Latest trends",
+    "featured": {
+      "dateDay": "15",
+      "dateMonth": "June 2026",
+      "category": "Dental service",
+      "title": "Common Warning Signs of Heart Disease You Should Never Ignore",
+      "image": "/templates/alvion-medical/assets/article-heart-check.webp",
+      "alt": "Patient receiving a calm health check"
+    },
+    "items": [
+      { "dateDay": "30", "dateMonth": "May 2026", "category": "Heart", "title": "Recognizing the Early Symptoms of Heart Problems" },
+      { "dateDay": "10", "dateMonth": "April 2026", "category": "Mental health", "title": "How Lifestyle Changes, Regular Screenings Prevent Procedures" },
+      { "dateDay": "18", "dateMonth": "March 2026", "category": "Surgery", "title": "The Most Common Heart Disease Warning Signs, Risk Factors, and Steps" }
+    ],
+    "buttonLabel": "See all posts",
+    "buttonHref": "#articles"
+  },
+  "footer": {
+    "tagline": "Need care or have a question?",
+    "description": "Full name, contact details and appointment enquiry.",
+    "buttonLabel": "Submit",
+    "checkLabel": "Check your query",
+    "legal": "Copyright 2026 | Design & Developed by FekiTech Builder",
+    "marquee": "ONLINE SUPPORT GENERAL CONSULTATION",
+    "links": [
+      { "label": "About us", "href": "#about" },
+      { "label": "Service", "href": "#services" },
+      { "label": "Our team", "href": "#team" },
+      { "label": "Blog", "href": "#articles" },
+      { "label": "Contact us", "href": "#contact" }
+    ],
+    "policy": [
+      { "label": "Trust Portal", "href": "#contact" },
+      { "label": "Service details", "href": "#services" },
+      { "label": "Terms service", "href": "#contact" },
+      { "label": "Blog details", "href": "#articles" },
+      { "label": "FAQ", "href": "#contact" }
+    ],
+    "social": [
+      { "label": "Facebook", "href": "https://facebook.com" },
+      { "label": "X / Twitter", "href": "https://x.com" },
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "Dribbble", "href": "https://dribbble.com" }
+    ]
+  }
+}

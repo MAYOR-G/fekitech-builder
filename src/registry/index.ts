@@ -144,6 +144,18 @@ import beaniroColdBrewConfig from "../templates/beaniro-cold-brew/config.json";
 import beaniroColdBrewEditable from "../templates/beaniro-cold-brew/editable.json";
 import luneLeafSkincareConfig from "../templates/lune-leaf-skincare/config.json";
 import luneLeafSkincareEditable from "../templates/lune-leaf-skincare/editable.json";
+import bloomStepsNurseryConfig from "../templates/bloom-steps-nursery/config.json";
+import bloomStepsNurseryEditable from "../templates/bloom-steps-nursery/editable.json";
+import handgridRepairsConfig from "../templates/handgrid-repairs/config.json";
+import handgridRepairsEditable from "../templates/handgrid-repairs/editable.json";
+import eductixAcademyConfig from "../templates/eductix-academy/config.json";
+import eductixAcademyEditable from "../templates/eductix-academy/editable.json";
+import alvionMedicalConfig from "../templates/alvion-medical/config.json";
+import alvionMedicalEditable from "../templates/alvion-medical/editable.json";
+import greenlyGardensConfig from "../templates/greenly-gardens/config.json";
+import greenlyGardensEditable from "../templates/greenly-gardens/editable.json";
+import pipelineOsConfig from "../templates/pipeline-os/config.json";
+import pipelineOsEditable from "../templates/pipeline-os/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -235,6 +247,12 @@ const components = {
   "arcstone-growth": dynamic<{ data: TemplateData }>(() => import("../templates/arcstone-growth/template")),
   "beaniro-cold-brew": dynamic<{ data: TemplateData }>(() => import("../templates/beaniro-cold-brew/template")),
   "lune-leaf-skincare": dynamic<{ data: TemplateData }>(() => import("../templates/lune-leaf-skincare/template")),
+  "bloom-steps-nursery": dynamic<{ data: TemplateData }>(() => import("../templates/bloom-steps-nursery/template")),
+  "handgrid-repairs": dynamic<{ data: TemplateData }>(() => import("../templates/handgrid-repairs/template")),
+  "eductix-academy": dynamic<{ data: TemplateData }>(() => import("../templates/eductix-academy/template")),
+  "alvion-medical": dynamic<{ data: TemplateData }>(() => import("../templates/alvion-medical/template")),
+  "greenly-gardens": dynamic<{ data: TemplateData }>(() => import("../templates/greenly-gardens/template")),
+  "pipeline-os": dynamic<{ data: TemplateData }>(() => import("../templates/pipeline-os/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -310,6 +328,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "arcstone-growth": { config: arcstoneGrowthConfig, component: components["arcstone-growth"], defaultData: normalizeData(arcstoneGrowthEditable) },
   "beaniro-cold-brew": { config: beaniroColdBrewConfig, component: components["beaniro-cold-brew"], defaultData: normalizeData(beaniroColdBrewEditable) },
   "lune-leaf-skincare": { config: luneLeafSkincareConfig, component: components["lune-leaf-skincare"], defaultData: normalizeData(luneLeafSkincareEditable) },
+  "bloom-steps-nursery": { config: bloomStepsNurseryConfig, component: components["bloom-steps-nursery"], defaultData: normalizeData(bloomStepsNurseryEditable) },
+  "handgrid-repairs": { config: handgridRepairsConfig, component: components["handgrid-repairs"], defaultData: normalizeData(handgridRepairsEditable) },
+  "eductix-academy": { config: eductixAcademyConfig, component: components["eductix-academy"], defaultData: normalizeData(eductixAcademyEditable) },
+  "alvion-medical": { config: alvionMedicalConfig, component: components["alvion-medical"], defaultData: normalizeData(alvionMedicalEditable) },
+  "greenly-gardens": { config: greenlyGardensConfig, component: components["greenly-gardens"], defaultData: normalizeData(greenlyGardensEditable) },
+  "pipeline-os": { config: pipelineOsConfig, component: components["pipeline-os"], defaultData: normalizeData(pipelineOsEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

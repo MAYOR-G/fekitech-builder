@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">Customer portrait</title>
+  <rect width="240" height="240" rx="18" fill="#d9ddc9"/>
+  <circle cx="120" cy="86" r="42" fill="#c7a889"/>
+  <path d="M68 206c8-48 28-74 52-74s44 26 52 74" fill="#ffffff"/>
+  <path d="M80 76c8-36 52-48 78-20 4 16-4 32-16 42-6-16-22-22-40-21-8 0-16 0-22-1Z" fill="#2e332f"/>
+  <rect x="78" y="104" width="84" height="10" rx="5" fill="#2e332f" opacity=".18"/>
+</svg>
