@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -24,7 +24,7 @@ export default function HandGridRepairsTemplate({ data }: { data: TemplateData }
   const colors = content.theme.colors;
   const fonts = content.theme.typography;
 
-  const style = useMemo(() => ({
+  const style = {
     "--hgr-page": colors.page,
     "--hgr-section": colors.section,
     "--hgr-card": colors.card,
@@ -36,7 +36,7 @@ export default function HandGridRepairsTemplate({ data }: { data: TemplateData }
     "--hgr-line": colors.line,
     "--hgr-heading": fonts.heading,
     "--hgr-body": fonts.body,
-  }) as React.CSSProperties, [colors, fonts]);
+  } as React.CSSProperties;
 
   const nav = items<LinkItem>(content.navigation.links);
   const quickLinks = items<LinkItem>(content.quickLinks);

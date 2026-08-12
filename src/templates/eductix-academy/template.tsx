@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -25,7 +25,7 @@ export default function EductixAcademyTemplate({ data }: { data: TemplateData })
   const colors = content.theme.colors;
   const fonts = content.theme.typography;
 
-  const style = useMemo(() => ({
+  const style = {
     "--edx-page": colors.page,
     "--edx-section": colors.section,
     "--edx-card": colors.card,
@@ -38,7 +38,7 @@ export default function EductixAcademyTemplate({ data }: { data: TemplateData })
     "--edx-white": colors.white,
     "--edx-heading": fonts.heading,
     "--edx-body": fonts.body,
-  }) as React.CSSProperties, [colors, fonts]);
+  } as React.CSSProperties;
 
   const nav = list<LinkItem>(content.navigation.links);
   const logos = list<string>(content.trusted.logos);

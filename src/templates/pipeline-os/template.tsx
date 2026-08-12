@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -39,7 +39,7 @@ export default function PipelineOSTemplate({ data }: { data: TemplateData }) {
   const colors = content.theme.colors;
   const typography = content.theme.typography;
 
-  const style = useMemo(() => ({
+  const style = {
     "--pos-page": colors.page,
     "--pos-section": colors.section,
     "--pos-surface": colors.surface,
@@ -57,7 +57,7 @@ export default function PipelineOSTemplate({ data }: { data: TemplateData }) {
     "--pos-purple": colors.purple,
     "--pos-heading": typography.heading,
     "--pos-body": typography.body,
-  }) as React.CSSProperties, [colors, typography]);
+  } as React.CSSProperties;
 
   const nav = list<Link>(content.navigation.links);
   const partners = list<string>(content.partners);

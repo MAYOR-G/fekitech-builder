@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -26,7 +26,7 @@ export default function AlvionMedicalTemplate({ data }: { data: TemplateData }) 
   const colors = content.theme.colors;
   const fonts = content.theme.typography;
 
-  const style = useMemo(() => ({
+  const style = {
     "--alv-page": colors.page,
     "--alv-section": colors.section,
     "--alv-soft": colors.soft,
@@ -40,7 +40,7 @@ export default function AlvionMedicalTemplate({ data }: { data: TemplateData }) 
     "--alv-line": colors.line,
     "--alv-heading": fonts.heading,
     "--alv-body": fonts.body,
-  }) as React.CSSProperties, [colors, fonts]);
+  } as React.CSSProperties;
 
   const nav = list<LinkItem>(content.navigation.links);
   const chips = list<string>(content.hero.chips);

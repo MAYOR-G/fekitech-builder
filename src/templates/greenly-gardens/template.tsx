@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -23,7 +23,7 @@ export default function GreenlyGardensTemplate({ data }: { data: TemplateData })
   const colors = content.theme.colors;
   const typography = content.theme.typography;
 
-  const style = useMemo(() => ({
+  const style = {
     "--grn-page": colors.page,
     "--grn-section": colors.section,
     "--grn-surface": colors.surface,
@@ -39,7 +39,7 @@ export default function GreenlyGardensTemplate({ data }: { data: TemplateData })
     "--grn-heading": typography.heading,
     "--grn-serif": typography.serif,
     "--grn-body": typography.body,
-  }) as React.CSSProperties, [colors, typography]);
+  } as React.CSSProperties;
 
   const nav = list<NavLink>(content.navigation.links);
   const stats = list<Stat>(content.stats);

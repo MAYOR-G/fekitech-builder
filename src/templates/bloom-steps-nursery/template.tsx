@@ -1,7 +1,7 @@
 "use client";
 
 import { mergeTemplateData, type TemplateData } from "@/lib/template-data";
-import React, { useMemo } from "react";
+import React from "react";
 import defaults from "./editable.json";
 import "./styles.css";
 
@@ -27,7 +27,7 @@ export default function BloomStepsNurseryTemplate({ data }: { data: TemplateData
   const colors = content.theme.colors;
   const fonts = content.theme.typography;
 
-  const themeStyle = useMemo(() => ({
+  const themeStyle = {
     "--bsn-page": colors.page,
     "--bsn-surface": colors.surface,
     "--bsn-card": colors.card,
@@ -43,7 +43,7 @@ export default function BloomStepsNurseryTemplate({ data }: { data: TemplateData
     "--bsn-line": colors.line,
     "--bsn-heading": fonts.heading,
     "--bsn-body": fonts.body,
-  }) as React.CSSProperties, [colors, fonts]);
+  } as React.CSSProperties;
 
   const navLinks = asItems<LinkItem>(content.navigation.links);
   const introImages = asItems<ImageItem>(content.intro.images);
