@@ -1,0 +1,146 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#fff3eb",
+      "paper": "#fff8f2",
+      "peach": "#ffd9c2",
+      "peachDeep": "#ff6b3a",
+      "navy": "#243f87",
+      "blue": "#1974b8",
+      "sky": "#b7d8ff",
+      "yellow": "#fff9a7",
+      "line": "#f49a74",
+      "muted": "#66709a",
+      "footer": "#ffd8c0"
+    },
+    "typography": {
+      "heading": "Georgia, Times New Roman, serif",
+      "body": "Arial, Helvetica, sans-serif"
+    }
+  },
+  "announcement": {
+    "text": "SAFETY FIRST We're taking extra measures to ensure children are safe in our nursery.",
+    "linkLabel": "Learn More",
+    "href": "#contact"
+  },
+  "brand": {
+    "name": "Little Rainbow",
+    "strapline": "Daycare & Nursery",
+    "logoAlt": "Little Rainbow Nursery logo"
+  },
+  "navigation": {
+    "links": [
+      { "label": "About Us", "href": "#about" },
+      { "label": "Rooms", "href": "#rooms" },
+      { "label": "Programs", "href": "#programs" },
+      { "label": "Educators", "href": "#approach" },
+      { "label": "Admissions", "href": "#contact" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Welcome to",
+    "title": "Little Rainbow\nDaycare & Nursery",
+    "tagline": "Play. Learn. Grow.",
+    "image": "/templates/little-rainbow-nursery/assets/hero-playhouse.webp",
+    "imageAlt": "Child playing with a wooden dolls house in a bright nursery room",
+    "cardText": "A bright, caring nursery where little people feel safe, listened to and excited to learn each day."
+  },
+  "rooms": {
+    "title": "Rooms",
+    "buttonLabel": "Our Learning Environments",
+    "buttonHref": "#programs",
+    "items": [
+      {
+        "name": "Infants",
+        "text": "Gentle care, calm routines and safe sensory play for our youngest children.",
+        "icon": "deer"
+      },
+      {
+        "name": "Toddlers",
+        "text": "Busy hands, new words and confident movement in a warm, playful room.",
+        "icon": "bird"
+      },
+      {
+        "name": "Preschool",
+        "text": "Creative projects, early numbers and friendships that help children get school ready.",
+        "icon": "whale"
+      },
+      {
+        "name": "Pre-K",
+        "text": "Structured discovery, stories and everyday independence for the next big step.",
+        "icon": "hedgehog"
+      }
+    ]
+  },
+  "approach": {
+    "image": "/templates/little-rainbow-nursery/assets/classroom-circle-time.webp",
+    "imageAlt": "Nursery educator leading a circle time activity with young children",
+    "title": "Our Approach",
+    "text": "We combine kind relationships, child-led play and thoughtful routines so every child can settle, explore and grow at their own pace.",
+    "buttonLabel": "Read About Us",
+    "buttonHref": "#about"
+  },
+  "testimonials": {
+    "title": "What Parents Think",
+    "items": [
+      {
+        "quote": "The staff helped our son settle so gently. He talks about nursery all the way home.",
+        "name": "Emily's mum"
+      },
+      {
+        "quote": "A lovely, bright place with clear updates and genuinely caring educators.",
+        "name": "Diana's mum"
+      },
+      {
+        "quote": "Our daughter has become so confident. The team notice every little milestone.",
+        "name": "Edgar's dad"
+      }
+    ]
+  },
+  "gallery": {
+    "images": [
+      {
+        "src": "/templates/little-rainbow-nursery/assets/gallery-blocks.webp",
+        "alt": "Children playing with wooden blocks in a bright nursery room"
+      },
+      {
+        "src": "/templates/little-rainbow-nursery/assets/gallery-reading-corner.webp",
+        "alt": "Children enjoying story time together"
+      },
+      {
+        "src": "/templates/little-rainbow-nursery/assets/gallery-learning-games.webp",
+        "alt": "Child playing with early years learning toys"
+      },
+      {
+        "src": "/templates/little-rainbow-nursery/assets/gallery-art-play.webp",
+        "alt": "Child making art at a nursery table"
+      },
+      {
+        "src": "/templates/little-rainbow-nursery/assets/classroom-circle-time.webp",
+        "alt": "Small group nursery activity with an educator"
+      },
+      {
+        "src": "/templates/little-rainbow-nursery/assets/gallery-outdoor-play.webp",
+        "alt": "Children playing outdoors at nursery"
+      }
+    ]
+  },
+  "contact": {
+    "emailLabel": "Email",
+    "email": "hello@littlerainbow.co.uk",
+    "emailHref": "mailto:hello@littlerainbow.co.uk",
+    "phoneLabel": "Phone",
+    "phone": "0121 555 7820",
+    "phoneHref": "tel:+441215557820",
+    "addressLabel": "Nursery",
+    "address": "24 Garden Lane, Birmingham, B13 8QF"
+  },
+  "footer": {
+    "legal": "© 2026 Little Rainbow Nursery.",
+    "accessibilityLabel": "Accessibility Statement",
+    "privacyLabel": "Privacy Policy",
+    "accessibilityHref": "#contact",
+    "privacyHref": "#contact"
+  }
+}

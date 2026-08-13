@@ -1,0 +1,163 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f8f4f1",
+      "section": "#ffffff",
+      "ink": "#121111",
+      "body": "#79736f",
+      "muted": "#a9a29e",
+      "line": "#ebe5e1",
+      "card": "#ffffff",
+      "soft": "#f1ece8",
+      "accent": "#9b4dff",
+      "accentDark": "#5e22dd",
+      "dark": "#161218"
+    },
+    "typography": {
+      "heading": "\"Helvetica Neue\", Arial, sans-serif",
+      "body": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Valist",
+    "descriptor": "Studio",
+    "email": "studio@valist.co.uk",
+    "emailHref": "mailto:studio@valist.co.uk",
+    "copyright": "© 2026 Valist AI Studio. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Case Studies", "href": "#cases" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Blog", "href": "#faq" }
+    ],
+    "buttonLabel": "Get started",
+    "buttonHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "AI Systems for teams",
+    "title": "Build AI Systems That\nScale Your Business",
+    "text": "We design and implement practical AI workflows that help modern teams move faster.",
+    "inputPlaceholder": "Enter your work email",
+    "buttonLabel": "Get Started",
+    "buttonHref": "#contact",
+    "image": "/templates/valist-ai-studio/assets/hero-ai-system.webp",
+    "imageAlt": "Abstract violet AI system with connected glass nodes",
+    "badge": "Automation ready"
+  },
+  "intro": {
+    "title": "In a world shaped by constant noise, we choose clarity. We focus on long-term intelligence not short-term decisions.",
+    "stats": [
+      { "label": "Projects Delivered", "value": "0+" },
+      { "label": "AI Systems Built", "value": "0+" },
+      { "label": "Active Clients", "value": "0+" }
+    ]
+  },
+  "services": {
+    "title": "Intelligent AI Solutions\nfor Modern Businesses",
+    "text": "We design AI systems that integrate naturally into your existing operations, making automation useful, measurable and easy to maintain.",
+    "items": [
+      "AI Strategy & Planning",
+      "AI Product Design",
+      "AI Agents & Automation",
+      "Data & Infrastructure"
+    ],
+    "imageA": "/templates/valist-ai-studio/assets/hero-ai-system.webp",
+    "imageAAlt": "Violet AI automation system visual",
+    "imageB": "/templates/valist-ai-studio/assets/ai-product-bloom.webp",
+    "imageBAlt": "Colourful AI product bloom visual",
+    "buttonLabels": ["Opportunity Mapping", "Product Setup", "Team Support"]
+  },
+  "proof": {
+    "title": "Trusted by Teams\nBuilding with AI",
+    "image": "/templates/valist-ai-studio/assets/proof-founder.webp",
+    "imageAlt": "Founder in a calm modern workspace",
+    "quote": "Valist helped us turn complex workflows into practical systems our team understands.",
+    "name": "Amelia Rowe",
+    "metric": "90%",
+    "metricText": "Reduction in manual reporting after the first implementation."
+  },
+  "process": {
+    "title": "Trusted by Teams\nBuilding with AI",
+    "text": "Real founders trust Valist because the work is structured, clear and focused on useful outcomes.",
+    "buttonLabel": "Book a Call",
+    "buttonHref": "#contact",
+    "steps": [
+      { "title": "Discover & Define", "text": "We map your current workflows, risks and useful automation opportunities." },
+      { "title": "Design & Prototype", "text": "We turn the best ideas into simple interfaces, prompts and system flows." },
+      { "title": "Build & Integrate", "text": "We connect systems, test outputs and prepare your team for handover." },
+      { "title": "Deploy & Optimise", "text": "We monitor usage, refine the workflow and improve reliability over time." }
+    ]
+  },
+  "results": {
+    "title": "Real Results from AI Implementation",
+    "text": "Clear systems, useful automation and measurable improvements for lean teams.",
+    "image": "/templates/valist-ai-studio/assets/automation-dashboard.webp",
+    "imageAlt": "Dark automation dashboard with orange data visualisation",
+    "quote": "The implementation was seamless, and results exceeded expectations.",
+    "buttonLabel": "View Case Study",
+    "buttonHref": "#cases",
+    "metrics": [
+      { "value": "0+", "label": "Clients Served" },
+      { "value": "0x", "label": "Faster Execution" },
+      { "value": "+85%", "label": "Productivity Increase" },
+      { "value": "-70%", "label": "Manual Workload" }
+    ]
+  },
+  "comparison": {
+    "title": "Built Different from\nTypical AI Agencies Today",
+    "text": "No bloated stacks, no black-box automation. We build practical AI systems your team can trust.",
+    "leftTitle": "Other Agencies",
+    "rightTitle": "Valist",
+    "leftTags": ["Overcomplicated", "Generic Tools", "No Clear ROI", "Scattered Systems", "Manual Fixes", "Slow Support"],
+    "rightTags": ["Smart Systems", "Fast Execution", "Clear ROI", "Scalable Setup", "Data Driven", "Automation-first"]
+  },
+  "pricing": {
+    "title": "Flexible Plans for Growing Teams",
+    "text": "Practical AI implementation plans for teams ready to automate carefully.",
+    "plans": [
+      { "name": "Starter Build", "price": "$990", "period": "one-off", "image": "/templates/valist-ai-studio/assets/hero-ai-system.webp", "imageAlt": "Violet AI system visual", "features": ["Workflow audit", "Automation mapping", "Simple implementation", "30-day support"] },
+      { "name": "Growth System", "price": "$1990", "period": "project", "image": "/templates/valist-ai-studio/assets/ai-product-bloom.webp", "imageAlt": "AI product bloom visual", "features": ["Custom agent setup", "Prototype interface", "Team handover", "60-day support"] }
+    ]
+  },
+  "team": {
+    "title": "Meet the Team\nBehind Valist",
+    "text": "A small specialist team focused on making AI practical for ambitious operators.",
+    "people": [
+      { "name": "Sadia Khan", "role": "Systems Designer", "image": "/templates/valist-ai-studio/assets/proof-founder.webp", "imageAlt": "Systems designer portrait" },
+      { "name": "Ari Rahman", "role": "AI Engineer", "image": "/templates/valist-ai-studio/assets/team-engineer.webp", "imageAlt": "AI engineer portrait" },
+      { "name": "Naomi Ash", "role": "Product Strategist", "image": "/templates/valist-ai-studio/assets/ai-product-bloom.webp", "imageAlt": "Product strategist visual portrait" }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "Straight answers for teams exploring AI systems, automation and implementation support.",
+    "items": [
+      { "question": "What types of businesses do you work with?", "answer": "We work with service firms, product teams and operational businesses looking to automate repeatable work." },
+      { "question": "How long does it take to build an AI solution?", "answer": "Most focused builds take two to six weeks depending on complexity and integrations." },
+      { "question": "Do I need technical knowledge to get started?", "answer": "No. We guide the strategy, setup and handover in plain language." },
+      { "question": "Can you integrate AI into our existing systems?", "answer": "Yes. We design around your current tools where possible." },
+      { "question": "Do you offer ongoing support?", "answer": "Yes. Support can include monitoring, refinements and new automation ideas." }
+    ]
+  },
+  "contact": {
+    "title": "Connect with Valist,\nBeyond the Screen",
+    "text": "Book a calm, practical conversation about what AI should do for your team.",
+    "buttonLabel": "Start a Conversation",
+    "buttonHref": "mailto:studio@valist.co.uk"
+  },
+  "footer": {
+    "image": "/templates/valist-ai-studio/assets/ai-product-bloom.webp",
+    "imageAlt": "Colourful AI product bloom",
+    "columns": [
+      { "title": "Navigation", "links": [{ "label": "Home", "href": "#home" }, { "label": "Services", "href": "#services" }, { "label": "Case Studies", "href": "#cases" }, { "label": "Pricing", "href": "#pricing" }, { "label": "Blog", "href": "#faq" }] },
+      { "title": "Social media", "links": [{ "label": "Twitter", "href": "https://x.com/" }, { "label": "Dribbble", "href": "https://dribbble.com/" }, { "label": "Instagram", "href": "https://instagram.com/" }, { "label": "Facebook", "href": "https://facebook.com/" }] }
+    ],
+    "termsLabel": "Terms of Use",
+    "termsHref": "#contact",
+    "privacyLabel": "Privacy Policy",
+    "privacyHref": "#contact"
+  }
+}

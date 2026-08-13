@@ -1,0 +1,185 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#070707",
+      "panel": "#161414",
+      "panelSoft": "#201d1b",
+      "line": "#2d2927",
+      "heading": "#f7f4ef",
+      "body": "#a6a19a",
+      "muted": "#6f6a64",
+      "accent": "#ff8718",
+      "accentDeep": "#c95408",
+      "buttonText": "#120a05"
+    },
+    "typography": {
+      "heading": "\"Arial Black\", \"Helvetica Neue\", Arial, sans-serif",
+      "body": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Apex",
+    "descriptor": "Growth agency",
+    "email": "hello@apexgrowth.co.uk",
+    "emailHref": "mailto:hello@apexgrowth.co.uk",
+    "phone": "020 8129 6044",
+    "phoneHref": "tel:+442081296044",
+    "address": "18 Charlotte Street, London W1T 2LY",
+    "copyright": "© 2026 Apex Growth Agency. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Case Studies", "href": "#cases" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "buttonLabel": "Contact us",
+    "buttonHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Digital marketing agency",
+    "title": "The Best Digital\nMarketing Agency.",
+    "highlight": "Digital",
+    "buttonLabel": "Start Project",
+    "buttonHref": "#contact",
+    "image": "/templates/apex-growth-agency/assets/hero-agency-team.webp",
+    "imageAlt": "Digital marketing team reviewing campaign performance around a laptop",
+    "badge": "Performance ready",
+    "marquee": "Creative Growth Agency  •  Best Marketing  •  Paid Media  •  Search Growth"
+  },
+  "services": {
+    "eyebrow": "What we are offering",
+    "buttonLabel": "Explore services",
+    "buttonHref": "#contact",
+    "items": [
+      {
+        "title": "SEO",
+        "text": "Search strategy, technical improvements and content planning that bring more qualified buyers to your site."
+      },
+      {
+        "title": "Content Marketing",
+        "text": "Clear campaigns, landing pages and useful content shaped around what your customers actually need."
+      },
+      {
+        "title": "Website Design",
+        "text": "Fast, polished websites built to explain your offer clearly and turn interest into enquiries."
+      },
+      {
+        "title": "Social Media Marketing",
+        "text": "Consistent creative, paid social testing and reporting that keeps your brand visible and trusted."
+      }
+    ]
+  },
+  "brands": {
+    "title": "Brands that trust us",
+    "items": ["Northline", "Pulseware", "Kite Labs", "Orbit Supply", "Hale & Co", "Morrow"]
+  },
+  "proof": {
+    "image": "/templates/apex-growth-agency/assets/case-traffic-record.webp",
+    "imageAlt": "Growth strategist reviewing orange analytics dashboards",
+    "stats": [
+      { "value": "15+", "label": "Projects tracked" },
+      { "value": "200%", "label": "Traffic uplift" },
+      { "value": "150+", "label": "Campaigns launched" },
+      { "value": "180", "label": "Creative tests" }
+    ],
+    "cards": [
+      { "title": "Proven Track Record", "text": "Campaigns built on clear goals, clean tracking and useful weekly decisions." },
+      { "title": "Tailored Solutions", "text": "No bloated retainers. We shape the work around your stage, market and team." },
+      { "title": "Clear Growth Focus", "text": "Every channel is measured against leads, revenue and commercial momentum." }
+    ],
+    "tags": ["Search visibility", "Paid social", "Conversion tracking", "Landing pages"]
+  },
+  "cases": {
+    "title": "Case Studies",
+    "buttonLabel": "View all work",
+    "buttonHref": "#contact",
+    "items": [
+      { "title": "Local service brand doubled qualified enquiries", "sector": "Lead generation", "image": "/templates/apex-growth-agency/assets/case-traffic-record.webp", "imageAlt": "Campaign dashboard case study" },
+      { "title": "Ecommerce launch moved from clicks to sales", "sector": "Paid media", "image": "/templates/apex-growth-agency/assets/specialty-ecommerce-lab.webp", "imageAlt": "Orange ecommerce campaign materials" },
+      { "title": "Brand sprint clarified a complex offer", "sector": "Strategy", "image": "/templates/apex-growth-agency/assets/project-brand-sprint.webp", "imageAlt": "Abstract campaign project artwork" }
+    ]
+  },
+  "testimonials": {
+    "title": "TESTIMONIAL",
+    "items": [
+      {
+        "quote": "Apex made our marketing feel simple again. The tracking is clearer, the campaigns are sharper and our sales team finally trust the lead quality.",
+        "name": "Leah Bennett",
+        "role": "Founder, Northline Studio"
+      },
+      {
+        "quote": "They moved quickly without making the work feel rushed. We now have a repeatable growth system instead of random marketing activity.",
+        "name": "Marcus Hall",
+        "role": "Director, Morrow Supply"
+      }
+    ],
+    "people": [
+      { "name": "Megan Thompson", "role": "Retail Founder", "image": "/templates/apex-growth-agency/assets/hero-agency-team.webp", "imageAlt": "Marketing client portrait" },
+      { "name": "Oliver Whiting", "role": "Technology CEO", "image": "/templates/apex-growth-agency/assets/case-traffic-record.webp", "imageAlt": "Business client portrait" }
+    ]
+  },
+  "pricing": {
+    "title": "Profitable Pricing\nPlans",
+    "plans": [
+      { "name": "Starter", "price": "£83", "cadence": "per week", "features": ["SEO health check", "Keyword plan", "Monthly performance report", "Email support"], "buttonLabel": "Get started", "buttonHref": "#contact" },
+      { "name": "Growth", "price": "£208", "cadence": "per week", "features": ["Paid media setup", "Landing page guidance", "Weekly reporting", "Strategy calls"], "buttonLabel": "Get started", "buttonHref": "#contact" },
+      { "name": "Scale", "price": "£420", "cadence": "per week", "features": ["Multi-channel campaigns", "Creative testing", "Conversion optimisation", "Priority support"], "buttonLabel": "Get started", "buttonHref": "#contact" }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Our Specialties",
+    "title": "150% average traffic increase",
+    "text": "Our team builds growth systems around clear positioning, paid campaigns, search visibility and landing pages that convert.",
+    "image": "/templates/apex-growth-agency/assets/case-traffic-record.webp",
+    "imageAlt": "Agency specialist reviewing digital traffic data",
+    "metric": "$74M",
+    "metricLabel": "Revenue influenced",
+    "orangeTitle": "Conversion rate increased by 80%",
+    "orangeText": "We improve messaging, creative and page structure so every channel has a stronger chance of turning attention into action.",
+    "orangeImage": "/templates/apex-growth-agency/assets/specialty-ecommerce-lab.webp",
+    "orangeImageAlt": "Orange ecommerce campaign creative"
+  },
+  "posts": {
+    "title": "Dive into our collection\nof engaging blog posts",
+    "buttonLabel": "Read articles",
+    "buttonHref": "#contact",
+    "items": [
+      { "title": "How to build a better growth plan before spending on ads", "category": "Marketing", "image": "/templates/apex-growth-agency/assets/project-brand-sprint.webp", "imageAlt": "Colourful campaign artwork" },
+      { "title": "Why landing pages often decide paid campaign profit", "category": "Conversion", "image": "/templates/apex-growth-agency/assets/specialty-ecommerce-lab.webp", "imageAlt": "Ecommerce campaign planning desk" },
+      { "title": "The simple metrics founders should check every week", "category": "Reporting", "image": "/templates/apex-growth-agency/assets/case-traffic-record.webp", "imageAlt": "Analytics dashboard in orange light" }
+    ]
+  },
+  "faq": {
+    "title": "Got Questions?\nWe've Got Answers!",
+    "items": [
+      { "question": "What makes your agency different?", "answer": "We focus on practical growth work: clear tracking, stronger pages and campaigns tied to commercial goals." },
+      { "question": "How long does it take to see results?", "answer": "Most clients see early signal within the first month, with stronger results after testing and optimisation." },
+      { "question": "Do you work with smaller businesses?", "answer": "Yes. We work with growing service firms, ecommerce brands and local operators across the UK." },
+      { "question": "Can you manage paid ads?", "answer": "Yes. We can plan, launch and optimise paid social and search campaigns." },
+      { "question": "Do you redesign landing pages?", "answer": "Yes. Landing page improvement is a core part of our conversion work." }
+    ]
+  },
+  "contact": {
+    "title": "Let's\nTalk.",
+    "formTitle": "Start a project",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "buttonLabel": "Submit",
+    "details": [
+      { "label": "Email", "value": "hello@apexgrowth.co.uk", "href": "mailto:hello@apexgrowth.co.uk" },
+      { "label": "Phone", "value": "020 8129 6044", "href": "tel:+442081296044" },
+      { "label": "Address", "value": "18 Charlotte Street, London W1T 2LY", "href": "#contact" }
+    ]
+  },
+  "footer": {
+    "columns": [
+      { "title": "Home", "links": [{ "label": "Hero", "href": "#home" }, { "label": "Services", "href": "#services" }, { "label": "Pricing", "href": "#pricing" }] },
+      { "title": "Work", "links": [{ "label": "Case Studies", "href": "#cases" }, { "label": "Specialties", "href": "#specialties" }, { "label": "FAQ", "href": "#faq" }] },
+      { "title": "Social", "links": [{ "label": "LinkedIn", "href": "https://linkedin.com/" }, { "label": "Instagram", "href": "https://instagram.com/" }, { "label": "X", "href": "https://x.com/" }] }
+    ]
+  }
+}

@@ -1,0 +1,644 @@
+[data-template-id="goddess-braids-salon"] {
+  --gbs-orange: var(--template-accent, #ff6533);
+  --gbs-purple: var(--template-accent-secondary, #6926b8);
+  --gbs-ink: var(--template-heading, #090909);
+  --gbs-text: var(--template-text, #222222);
+  --gbs-muted: var(--template-muted, #6f6f6f);
+  --gbs-yellow: var(--template-secondary, #fff86f);
+  --gbs-line: var(--template-border, #d8d8d8);
+  background: #ffffff;
+  color: var(--gbs-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100svh;
+  overflow-x: clip;
+}
+
+[data-template-id="goddess-braids-salon"] *,
+[data-template-id="goddess-braids-salon"] *::before,
+[data-template-id="goddess-braids-salon"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="goddess-braids-salon"] img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+[data-template-id="goddess-braids-salon"] a,
+[data-template-id="goddess-braids-salon"] button,
+[data-template-id="goddess-braids-salon"] input,
+[data-template-id="goddess-braids-salon"] textarea {
+  color: inherit;
+  font: inherit;
+}
+
+[data-template-id="goddess-braids-salon"] a {
+  text-decoration: none;
+}
+
+[data-template-id="goddess-braids-salon"] button {
+  border: 0;
+  cursor: pointer;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-header {
+  align-items: center;
+  background: var(--gbs-orange);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: auto 1fr auto;
+  min-height: 76px;
+  padding: 18px clamp(26px, 6vw, 92px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-logo {
+  align-items: center;
+  background: repeating-linear-gradient(135deg, #000 0 4px, transparent 4px 8px);
+  color: transparent;
+  display: inline-flex;
+  height: 31px;
+  justify-content: center;
+  overflow: hidden;
+  width: 31px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-header nav {
+  display: flex;
+  gap: clamp(18px, 3vw, 44px);
+  justify-content: center;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-header nav a,
+[data-template-id="goddess-braids-salon"] .gbs-header-actions,
+[data-template-id="goddess-braids-salon"] .gbs-hero p,
+[data-template-id="goddess-braids-salon"] h2,
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading p,
+[data-template-id="goddess-braids-salon"] .gbs-testimonials figcaption {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.38em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-header-actions {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-header-actions svg {
+  height: 16px;
+  width: 16px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero {
+  background: var(--gbs-orange);
+  display: grid;
+  grid-template-columns: minmax(330px, 0.85fr) minmax(360px, 1.05fr);
+  min-height: 610px;
+  overflow: hidden;
+  padding: clamp(32px, 5vw, 70px) clamp(30px, 6vw, 96px) 0;
+  position: relative;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero-copy {
+  align-self: center;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 3;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero h1 {
+  color: #fff4a8;
+  font-size: clamp(62px, 8.3vw, 135px);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  margin: 0 0 22px;
+  max-width: 620px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #fff4a8;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero-copy a,
+[data-template-id="goddess-braids-salon"] .gbs-service a,
+[data-template-id="goddess-braids-salon"] .gbs-load,
+[data-template-id="goddess-braids-salon"] .gbs-contact button,
+[data-template-id="goddess-braids-salon"] .gbs-footer button {
+  background: #000;
+  color: #fff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 42px;
+  min-width: 112px;
+  padding: 13px 20px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero-line {
+  background: #000;
+  height: 14px;
+  left: 37%;
+  position: absolute;
+  top: 312px;
+  width: 72px;
+  z-index: 4;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero p {
+  left: calc(37% + 82px);
+  margin: 0;
+  max-width: 190px;
+  position: absolute;
+  top: 292px;
+  z-index: 4;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-purple-disc {
+  aspect-ratio: 1;
+  background: var(--gbs-purple);
+  border-radius: 50%;
+  bottom: -130px;
+  position: absolute;
+  right: 7%;
+  width: min(58vw, 690px);
+  z-index: 1;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-hero-person {
+  align-self: end;
+  grid-column: 2 / 3;
+  justify-self: center;
+  max-height: 620px;
+  object-fit: contain;
+  position: relative;
+  width: min(44vw, 520px);
+  z-index: 2;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about {
+  align-items: center;
+  display: grid;
+  gap: clamp(54px, 8vw, 135px);
+  grid-template-columns: minmax(230px, 0.7fr) minmax(280px, 0.72fr);
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: clamp(70px, 10vw, 130px) 30px 54px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about img {
+  aspect-ratio: 0.85 / 1;
+  object-fit: cover;
+  width: min(100%, 390px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about h2,
+[data-template-id="goddess-braids-salon"] .gbs-service h2,
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading h2,
+[data-template-id="goddess-braids-salon"] .gbs-contact h2 {
+  margin: 0 0 18px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about p,
+[data-template-id="goddess-braids-salon"] .gbs-service p,
+[data-template-id="goddess-braids-salon"] .gbs-service dl,
+[data-template-id="goddess-braids-salon"] .gbs-contact p,
+[data-template-id="goddess-braids-salon"] .gbs-testimonials blockquote {
+  color: var(--gbs-text);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about a {
+  align-items: center;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 14px;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-about a::before,
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading h2::after,
+[data-template-id="goddess-braids-salon"] .gbs-contact form > span,
+[data-template-id="goddess-braids-salon"] .gbs-contact aside h2::before {
+  background: #000;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 44px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service {
+  display: grid;
+  grid-template-columns: 1fr minmax(260px, 0.72fr);
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 30px clamp(70px, 8vw, 116px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service > img {
+  aspect-ratio: 1.18 / 1;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service > div {
+  background: #000;
+  color: #fff;
+  min-height: 350px;
+  padding: clamp(42px, 6vw, 78px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service p,
+[data-template-id="goddess-braids-salon"] .gbs-service dl {
+  color: #fff;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service p {
+  border-bottom: 1px solid #555;
+  max-width: 260px;
+  padding-bottom: 26px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service dl {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 18px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-service a {
+  background: #fff;
+  color: #000;
+  min-width: 94px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: clamp(38px, 7vw, 92px) 30px clamp(70px, 9vw, 130px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading {
+  align-items: end;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 34px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading p {
+  color: var(--gbs-muted);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-heading h2::after {
+  display: block;
+  margin-top: 12px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure {
+  margin: 0;
+  min-width: 0;
+  position: relative;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(1),
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(4) {
+  grid-column: span 2;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(2),
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(3),
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(5),
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(6) {
+  grid-column: span 2;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid img {
+  aspect-ratio: 1;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-insta-grid figcaption {
+  background: #000;
+  bottom: 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  left: 0;
+  letter-spacing: 0.12em;
+  padding: 9px 11px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-load {
+  margin: 42px auto 0;
+  width: max-content;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials {
+  background: var(--gbs-yellow);
+  padding: 54px 30px 66px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials::before {
+  background: #000;
+  content: "";
+  height: 58px;
+  left: 50%;
+  position: absolute;
+  top: -29px;
+  transform: translateX(-50%);
+  width: 13px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials h2 {
+  color: var(--gbs-orange);
+  margin: 0 auto 44px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials > div {
+  display: grid;
+  gap: 42px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials figure {
+  margin: 0;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials figcaption::after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 22px;
+  margin: 10px auto 18px;
+  width: 5px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-testimonials blockquote {
+  font-size: 13px;
+  margin: 0 auto;
+  max-width: 230px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact {
+  display: grid;
+  gap: clamp(54px, 8vw, 122px);
+  grid-template-columns: minmax(360px, 1fr) minmax(230px, 0.55fr);
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: clamp(80px, 11vw, 146px) 30px clamp(86px, 12vw, 165px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact form > span {
+  background: var(--gbs-orange);
+  color: transparent;
+  margin-bottom: 58px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-form-grid {
+  display: grid;
+  gap: 22px 26px;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact label {
+  display: grid;
+  gap: 6px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact label b,
+[data-template-id="goddess-braids-salon"] .gbs-footer label b {
+  color: var(--gbs-muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact input,
+[data-template-id="goddess-braids-salon"] .gbs-contact textarea,
+[data-template-id="goddess-braids-salon"] .gbs-footer input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #a8a8a8;
+  min-height: 36px;
+  outline: none;
+  padding: 7px 0;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact input:focus,
+[data-template-id="goddess-braids-salon"] .gbs-contact textarea:focus,
+[data-template-id="goddess-braids-salon"] .gbs-footer input:focus {
+  border-color: var(--gbs-purple);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-message {
+  grid-column: 1 / -1;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact button {
+  background: var(--gbs-purple);
+  margin: 28px auto 0;
+  min-width: 170px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact aside {
+  display: grid;
+  gap: 82px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact aside h2::before {
+  display: block;
+  margin-bottom: 26px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-contact p {
+  white-space: pre-line;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer {
+  background: #000;
+  color: #fff;
+  padding: 36px clamp(28px, 8vw, 130px);
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-newsletter {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr auto;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-newsletter label:first-child {
+  display: grid;
+  gap: 7px;
+  grid-column: 1 / -1;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer input {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 9px 12px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-check {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-check input {
+  min-height: auto;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer button {
+  background: var(--gbs-orange);
+  min-width: 170px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer-row {
+  border-top: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 34px;
+  justify-content: center;
+  margin-top: 34px;
+  padding-top: 26px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer p,
+[data-template-id="goddess-braids-salon"] .gbs-footer small,
+[data-template-id="goddess-braids-salon"] .gbs-footer label {
+  font-size: 12px;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer nav {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+[data-template-id="goddess-braids-salon"] .gbs-footer small {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  [data-template-id="goddess-braids-salon"] .gbs-header,
+  [data-template-id="goddess-braids-salon"] .gbs-hero,
+  [data-template-id="goddess-braids-salon"] .gbs-about,
+  [data-template-id="goddess-braids-salon"] .gbs-service,
+  [data-template-id="goddess-braids-salon"] .gbs-contact,
+  [data-template-id="goddess-braids-salon"] .gbs-newsletter {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-header nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-header {
+    gap: 18px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero {
+    min-height: auto;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero-copy {
+    padding-bottom: 18px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero-line,
+  [data-template-id="goddess-braids-salon"] .gbs-hero p {
+    left: 30px;
+    position: relative;
+    top: auto;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero p {
+    margin: 13px 0 0 90px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-purple-disc {
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: min(92vw, 560px);
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero-person {
+    grid-column: 1;
+    width: min(76vw, 430px);
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-insta-grid,
+  [data-template-id="goddess-braids-salon"] .gbs-testimonials > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-insta-grid figure:nth-child(n) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  [data-template-id="goddess-braids-salon"] .gbs-header {
+    padding-inline: 20px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-header nav {
+    gap: 18px 24px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero {
+    padding-inline: 20px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-hero h1 {
+    font-size: clamp(48px, 17vw, 76px);
+    -webkit-text-stroke-width: 2px;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-form-grid,
+  [data-template-id="goddess-braids-salon"] .gbs-insta-grid,
+  [data-template-id="goddess-braids-salon"] .gbs-testimonials > div {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-insta-heading {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="goddess-braids-salon"] .gbs-about,
+  [data-template-id="goddess-braids-salon"] .gbs-service,
+  [data-template-id="goddess-braids-salon"] .gbs-insta,
+  [data-template-id="goddess-braids-salon"] .gbs-contact {
+    padding-inline: 20px;
+  }
+}

@@ -1,0 +1,847 @@
+[data-template-id="valist-ai-studio"] {
+  background: var(--vai-page);
+  color: var(--vai-ink);
+  font-family: var(--vai-body-font);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+[data-template-id="valist-ai-studio"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="valist-ai-studio"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="valist-ai-studio"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="valist-ai-studio"] .vai-header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 24px 30px 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-logo {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 850;
+  gap: 6px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-mark {
+  color: var(--vai-ink);
+  font-size: 15px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-header nav {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+[data-template-id="valist-ai-studio"] .vai-header nav a,
+[data-template-id="valist-ai-studio"] .vai-nav-button,
+[data-template-id="valist-ai-studio"] .vai-hero form a,
+[data-template-id="valist-ai-studio"] .vai-process a,
+[data-template-id="valist-ai-studio"] .vai-result-quote a,
+[data-template-id="valist-ai-studio"] .vai-contact a {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="valist-ai-studio"] .vai-header nav a {
+  color: #4e4946;
+}
+
+[data-template-id="valist-ai-studio"] .vai-nav-button,
+[data-template-id="valist-ai-studio"] .vai-hero form a,
+[data-template-id="valist-ai-studio"] .vai-process a,
+[data-template-id="valist-ai-studio"] .vai-result-quote a,
+[data-template-id="valist-ai-studio"] .vai-contact a {
+  align-items: center;
+  background: var(--vai-ink);
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero {
+  margin: 0 auto;
+  max-width: 990px;
+  padding: 72px 30px 93px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero p,
+[data-template-id="valist-ai-studio"] .vai-results > p,
+[data-template-id="valist-ai-studio"] .vai-pricing > p,
+[data-template-id="valist-ai-studio"] .vai-faq > p,
+[data-template-id="valist-ai-studio"] .vai-contact p {
+  color: var(--vai-body);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 430px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero h1 {
+  font-family: var(--vai-heading-font);
+  font-size: clamp(44px, 6vw, 74px);
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+  margin: 12px auto 14px;
+  max-width: 760px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero > span {
+  color: var(--vai-body);
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 auto 25px;
+  max-width: 430px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero form {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--vai-line);
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero input {
+  background: transparent;
+  border: 0;
+  color: var(--vai-ink);
+  font: inherit;
+  min-height: 32px;
+  min-width: 250px;
+  padding: 0 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero input::placeholder {
+  color: var(--vai-muted);
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero figure {
+  margin: 44px auto 0;
+  position: relative;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero figure img {
+  border-radius: 22px;
+  height: 325px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="valist-ai-studio"] .vai-hero figcaption {
+  background: white;
+  border: 1px solid var(--vai-line);
+  border-radius: 999px;
+  box-shadow: 0 18px 45px rgba(55, 31, 92, 0.12);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 10px 15px;
+  position: absolute;
+  right: -58px;
+  top: 80px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-intro,
+[data-template-id="valist-ai-studio"] .vai-section,
+[data-template-id="valist-ai-studio"] .vai-contact,
+[data-template-id="valist-ai-studio"] .vai-footer {
+  margin: 0 auto;
+  max-width: 990px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-intro {
+  padding-bottom: 88px;
+  padding-top: 92px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-intro h2 {
+  color: #a29c98;
+  font-size: clamp(35px, 5.1vw, 57px);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+  margin: 0 0 42px;
+  max-width: 600px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-stat-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 585px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-stat-grid article,
+[data-template-id="valist-ai-studio"] .vai-step-list article,
+[data-template-id="valist-ai-studio"] .vai-metrics article,
+[data-template-id="valist-ai-studio"] .vai-plan-grid article,
+[data-template-id="valist-ai-studio"] .vai-faq-list details {
+  background: var(--vai-card);
+  border: 1px solid var(--vai-line);
+  border-radius: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-stat-grid article {
+  min-height: 102px;
+  padding: 21px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-stat-grid span {
+  color: var(--vai-body);
+  display: block;
+  font-size: 11px;
+  font-weight: 750;
+  margin-bottom: 17px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-stat-grid strong {
+  font-size: 28px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-section {
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-services,
+[data-template-id="valist-ai-studio"] .vai-process,
+[data-template-id="valist-ai-studio"] .vai-team {
+  display: grid;
+  gap: 68px;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="valist-ai-studio"] h2 {
+  font-family: var(--vai-heading-font);
+  font-size: clamp(31px, 3.8vw, 48px);
+  font-weight: 760;
+  letter-spacing: -0.055em;
+  line-height: 0.96;
+  margin: 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-service-list a {
+  border-top: 1px solid var(--vai-line);
+  color: var(--vai-ink);
+  display: block;
+  font-size: 16px;
+  font-weight: 760;
+  padding: 19px 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-service-list h2 {
+  margin-bottom: 36px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-service-copy > p,
+[data-template-id="valist-ai-studio"] .vai-process p,
+[data-template-id="valist-ai-studio"] .vai-team > div > p,
+[data-template-id="valist-ai-studio"] .vai-step-list p {
+  color: var(--vai-body);
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-image-pair {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 42px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-image-pair img {
+  aspect-ratio: 1 / 0.82;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+[data-template-id="valist-ai-studio"] .vai-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-chip-row span {
+  background: white;
+  border: 1px solid var(--vai-line);
+  border-radius: 999px;
+  color: var(--vai-body);
+  font-size: 10px;
+  font-weight: 800;
+  padding: 8px 10px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-proof {
+  padding-top: 260px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-proof-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1.45fr 0.75fr;
+  margin-top: 34px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card,
+[data-template-id="valist-ai-studio"] .vai-impact-card,
+[data-template-id="valist-ai-studio"] .vai-result-quote,
+[data-template-id="valist-ai-studio"] .vai-compare-grid article {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card img,
+[data-template-id="valist-ai-studio"] .vai-result-quote img {
+  height: 260px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card::after,
+[data-template-id="valist-ai-studio"] .vai-result-quote::after {
+  background: linear-gradient(180deg, rgba(20, 13, 28, 0), rgba(20, 13, 28, 0.72));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card blockquote,
+[data-template-id="valist-ai-studio"] .vai-quote-card span,
+[data-template-id="valist-ai-studio"] .vai-result-quote blockquote,
+[data-template-id="valist-ai-studio"] .vai-result-quote a {
+  color: white;
+  left: 22px;
+  position: absolute;
+  z-index: 2;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card blockquote,
+[data-template-id="valist-ai-studio"] .vai-result-quote blockquote {
+  bottom: 45px;
+  font-size: 20px;
+  font-weight: 720;
+  line-height: 1.08;
+  margin: 0;
+  max-width: 470px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-quote-card span {
+  bottom: 22px;
+  font-size: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-impact-card {
+  background: #221733;
+  color: white;
+  min-height: 260px;
+  padding: 28px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-impact-card span {
+  color: #cfc3dc;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+[data-template-id="valist-ai-studio"] .vai-impact-card strong {
+  display: block;
+  font-size: 64px;
+  letter-spacing: -0.06em;
+  margin-top: 76px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-impact-card p {
+  color: #cfc3dc;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-process {
+  background: var(--vai-section);
+  max-width: none;
+  padding-left: calc((100vw - 930px) / 2);
+  padding-right: calc((100vw - 930px) / 2);
+}
+
+[data-template-id="valist-ai-studio"] .vai-process > div:first-child {
+  max-width: 330px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-process h2,
+[data-template-id="valist-ai-studio"] .vai-process p {
+  margin-bottom: 22px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-step-list {
+  display: grid;
+  gap: 11px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-step-list article {
+  padding: 23px 24px;
+  position: relative;
+}
+
+[data-template-id="valist-ai-studio"] .vai-step-list article > span {
+  color: var(--vai-muted);
+  font-size: 11px;
+  position: absolute;
+  right: 22px;
+  top: 18px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-step-list h3 {
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-results,
+[data-template-id="valist-ai-studio"] .vai-comparison,
+[data-template-id="valist-ai-studio"] .vai-pricing,
+[data-template-id="valist-ai-studio"] .vai-faq {
+  text-align: center;
+}
+
+[data-template-id="valist-ai-studio"] .vai-results > p,
+[data-template-id="valist-ai-studio"] .vai-pricing > p,
+[data-template-id="valist-ai-studio"] .vai-faq > p {
+  margin-top: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-results-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1.3fr 1fr;
+  margin-top: 42px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-result-quote img {
+  height: 300px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-result-quote a {
+  bottom: 22px;
+  left: 50%;
+  min-height: 32px;
+  transform: translateX(-50%);
+}
+
+[data-template-id="valist-ai-studio"] .vai-metrics {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+[data-template-id="valist-ai-studio"] .vai-metrics article {
+  padding: 34px 20px;
+  text-align: left;
+}
+
+[data-template-id="valist-ai-studio"] .vai-metrics strong {
+  display: block;
+  font-size: 27px;
+  margin-bottom: 17px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-metrics span {
+  color: var(--vai-body);
+  font-size: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-comparison p {
+  color: var(--vai-body);
+  font-size: 13px;
+  margin: 12px auto 34px;
+  max-width: 440px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-compare-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+[data-template-id="valist-ai-studio"] .vai-compare-grid article {
+  align-content: center;
+  background: #170f20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 300px;
+  padding: 58px 34px 34px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-compare-grid article:last-child {
+  background: #321466;
+}
+
+[data-template-id="valist-ai-studio"] .vai-compare-grid h3 {
+  color: white;
+  font-size: 13px;
+  left: 24px;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-compare-grid span {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  color: var(--vai-ink);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 10px 13px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 38px;
+  text-align: left;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid article {
+  overflow: hidden;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid img {
+  height: 130px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid article > span {
+  color: var(--vai-body);
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 18px 20px 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid h3 {
+  font-size: 36px;
+  letter-spacing: -0.055em;
+  margin: 12px 20px 16px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid small {
+  color: var(--vai-body);
+  font-size: 12px;
+  letter-spacing: 0;
+  margin-left: 5px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid ul {
+  color: var(--vai-body);
+  font-size: 12px;
+  line-height: 1.9;
+  list-style: none;
+  margin: 0;
+  padding: 0 20px 22px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-plan-grid li::before {
+  color: var(--vai-accent);
+  content: "• ";
+}
+
+[data-template-id="valist-ai-studio"] .vai-team > div:first-child {
+  align-self: end;
+}
+
+[data-template-id="valist-ai-studio"] .vai-team-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="valist-ai-studio"] .vai-team-grid img {
+  aspect-ratio: 0.78 / 1;
+  border-radius: 13px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="valist-ai-studio"] .vai-team-grid h3 {
+  font-size: 13px;
+  margin: 13px 0 3px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-team-grid p {
+  color: var(--vai-body);
+  font-size: 11px;
+  margin: 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-faq-list {
+  display: grid;
+  gap: 10px;
+  margin: 40px auto 0;
+  max-width: 760px;
+  text-align: left;
+}
+
+[data-template-id="valist-ai-studio"] .vai-faq-list summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  justify-content: space-between;
+  list-style: none;
+  padding: 22px 24px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="valist-ai-studio"] .vai-faq-list summary span {
+  align-items: center;
+  background: var(--vai-accent);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  height: 19px;
+  justify-content: center;
+  width: 19px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-faq-list details p {
+  color: var(--vai-body);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 24px 22px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact {
+  padding-bottom: 92px;
+  padding-top: 92px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact::before {
+  color: rgba(155, 77, 255, 0.06);
+  content: "Valist";
+  font-size: clamp(96px, 19vw, 210px);
+  font-weight: 900;
+  left: 50%;
+  letter-spacing: -0.08em;
+  position: absolute;
+  top: 22px;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact .vai-mark {
+  align-items: center;
+  background: var(--vai-accent);
+  border-radius: 11px;
+  color: white;
+  display: inline-flex;
+  font-size: 20px;
+  height: 46px;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 46px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact h2 {
+  margin-bottom: 10px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-contact a {
+  margin-top: 22px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer {
+  padding-bottom: 40px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-top {
+  border-top: 1px solid var(--vai-line);
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 170px 1fr auto auto;
+  padding-top: 36px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-top img {
+  aspect-ratio: 1.15 / 1;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-top strong,
+[data-template-id="valist-ai-studio"] .vai-footer-top h3 {
+  display: block;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-top a,
+[data-template-id="valist-ai-studio"] .vai-footer-bottom,
+[data-template-id="valist-ai-studio"] .vai-footer-bottom a {
+  color: var(--vai-body);
+  font-size: 12px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-top nav {
+  display: grid;
+  gap: 7px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-bottom {
+  align-items: center;
+  border-top: 1px solid var(--vai-line);
+  display: flex;
+  gap: 24px;
+  margin-top: 42px;
+  padding-top: 22px;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer-bottom span {
+  margin-right: auto;
+}
+
+[data-template-id="valist-ai-studio"] .vai-footer > h2 {
+  font-size: clamp(58px, 10vw, 128px);
+  letter-spacing: -0.09em;
+  line-height: 0.85;
+  margin: 38px 0 0;
+}
+
+@media (max-width: 900px) {
+  [data-template-id="valist-ai-studio"] .vai-header {
+    gap: 18px;
+    grid-template-columns: 1fr auto;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-header nav {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    overflow-x: auto;
+    order: 3;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-services,
+  [data-template-id="valist-ai-studio"] .vai-process,
+  [data-template-id="valist-ai-studio"] .vai-team,
+  [data-template-id="valist-ai-studio"] .vai-proof-grid,
+  [data-template-id="valist-ai-studio"] .vai-results-grid,
+  [data-template-id="valist-ai-studio"] .vai-compare-grid,
+  [data-template-id="valist-ai-studio"] .vai-plan-grid,
+  [data-template-id="valist-ai-studio"] .vai-footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-process {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-proof {
+    padding-top: 100px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-team-grid,
+  [data-template-id="valist-ai-studio"] .vai-stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  [data-template-id="valist-ai-studio"] .vai-header,
+  [data-template-id="valist-ai-studio"] .vai-hero,
+  [data-template-id="valist-ai-studio"] .vai-intro,
+  [data-template-id="valist-ai-studio"] .vai-section,
+  [data-template-id="valist-ai-studio"] .vai-contact,
+  [data-template-id="valist-ai-studio"] .vai-footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-hero {
+    padding-top: 54px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-hero form {
+    align-items: stretch;
+    border-radius: 18px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-hero input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-hero figure img {
+    height: 240px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-hero figcaption {
+    right: 12px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-intro,
+  [data-template-id="valist-ai-studio"] .vai-section,
+  [data-template-id="valist-ai-studio"] .vai-contact {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-image-pair,
+  [data-template-id="valist-ai-studio"] .vai-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  [data-template-id="valist-ai-studio"] .vai-footer-bottom span {
+    margin-right: 0;
+  }
+}

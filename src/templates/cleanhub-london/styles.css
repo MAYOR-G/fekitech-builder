@@ -1,0 +1,539 @@
+[data-template-id="cleanhub-london"] {
+  background: var(--chl-page);
+  color: var(--chl-ink);
+  font-family: var(--chl-body-font);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+[data-template-id="cleanhub-london"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="cleanhub-london"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="cleanhub-london"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="cleanhub-london"] .chl-header {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--chl-line);
+  border-radius: 999px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr auto;
+  left: 50%;
+  max-width: 1160px;
+  padding: 9px 9px 9px 18px;
+  position: fixed;
+  top: 14px;
+  transform: translateX(-50%);
+  width: calc(100% - 28px);
+  z-index: 20;
+}
+
+[data-template-id="cleanhub-london"] .chl-logo {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 850;
+  gap: 7px;
+}
+
+[data-template-id="cleanhub-london"] .chl-mark {
+  color: var(--chl-accent);
+}
+
+[data-template-id="cleanhub-london"] .chl-header nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+[data-template-id="cleanhub-london"] .chl-header nav a,
+[data-template-id="cleanhub-london"] .chl-pill,
+[data-template-id="cleanhub-london"] .chl-button,
+[data-template-id="cleanhub-london"] .chl-phone {
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+[data-template-id="cleanhub-london"] .chl-pill,
+[data-template-id="cleanhub-london"] .chl-button {
+  align-items: center;
+  background: var(--chl-accent);
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 18px;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero {
+  border-radius: 0 0 22px 22px;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero > img {
+  height: 100dvh;
+  min-height: 680px;
+  object-fit: cover;
+  object-position: 54% center;
+  width: 100%;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero::after {
+  background: linear-gradient(90deg, rgba(20, 20, 18, 0.78), rgba(20, 20, 18, 0.25) 54%, rgba(20, 20, 18, 0.08));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero-copy {
+  color: white;
+  left: max(28px, calc((100vw - 1120px) / 2));
+  position: absolute;
+  top: 50%;
+  transform: translateY(-42%);
+  z-index: 2;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero-copy p,
+[data-template-id="cleanhub-london"] .chl-kicker {
+  color: var(--chl-accent);
+  font-size: 12px;
+  font-weight: 850;
+  margin: 0 0 12px;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero h1 {
+  font-family: var(--chl-heading-font);
+  font-size: clamp(50px, 6vw, 92px);
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+  margin: 0 0 30px;
+  max-width: 760px;
+}
+
+[data-template-id="cleanhub-london"] .chl-phone {
+  margin-left: 14px;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero-copy > span {
+  color: rgba(255, 255, 255, 0.72);
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 24px;
+  max-width: 430px;
+}
+
+[data-template-id="cleanhub-london"] .chl-hero b {
+  background: white;
+  border-radius: 999px;
+  bottom: 24px;
+  color: var(--chl-ink);
+  font-size: 12px;
+  padding: 10px 14px;
+  position: absolute;
+  right: 34px;
+  z-index: 2;
+}
+
+[data-template-id="cleanhub-london"] .chl-trust {
+  background: white;
+  border-bottom: 1px solid var(--chl-line);
+  padding: 28px 30px;
+  text-align: center;
+}
+
+[data-template-id="cleanhub-london"] .chl-trust p {
+  color: var(--chl-body);
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+[data-template-id="cleanhub-london"] .chl-trust div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  justify-content: center;
+}
+
+[data-template-id="cleanhub-london"] .chl-trust span {
+  color: #77736d;
+  font-size: 16px;
+  font-weight: 850;
+}
+
+[data-template-id="cleanhub-london"] .chl-section {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 88px 30px;
+}
+
+[data-template-id="cleanhub-london"] h2 {
+  font-family: var(--chl-heading-font);
+  font-size: clamp(34px, 4.5vw, 58px);
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+  margin: 0;
+}
+
+[data-template-id="cleanhub-london"] .chl-about > p:not(.chl-kicker),
+[data-template-id="cleanhub-london"] .chl-footer > div > p,
+[data-template-id="cleanhub-london"] .chl-cta p {
+  color: var(--chl-body);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 18px 0 24px;
+  max-width: 650px;
+}
+
+[data-template-id="cleanhub-london"] .chl-feature-grid,
+[data-template-id="cleanhub-london"] .chl-how > div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 42px;
+}
+
+[data-template-id="cleanhub-london"] .chl-feature-grid article,
+[data-template-id="cleanhub-london"] .chl-how article,
+[data-template-id="cleanhub-london"] .chl-faq-list details {
+  background: white;
+  border: 1px solid var(--chl-line);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+[data-template-id="cleanhub-london"] .chl-feature-grid h3,
+[data-template-id="cleanhub-london"] .chl-how h3,
+[data-template-id="cleanhub-london"] .chl-service-grid h3,
+[data-template-id="cleanhub-london"] .chl-project-grid h3,
+[data-template-id="cleanhub-london"] .chl-tip-list h3 {
+  font-size: 17px;
+  letter-spacing: -0.03em;
+  margin: 0 0 9px;
+}
+
+[data-template-id="cleanhub-london"] .chl-feature-grid p,
+[data-template-id="cleanhub-london"] .chl-how p,
+[data-template-id="cleanhub-london"] .chl-service-grid p,
+[data-template-id="cleanhub-london"] .chl-review-grid p,
+[data-template-id="cleanhub-london"] .chl-faq-list p {
+  color: var(--chl-body);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+[data-template-id="cleanhub-london"] .chl-project-grid,
+[data-template-id="cleanhub-london"] .chl-service-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 26px;
+}
+
+[data-template-id="cleanhub-london"] .chl-project-grid article,
+[data-template-id="cleanhub-london"] .chl-service-grid article {
+  min-width: 0;
+}
+
+[data-template-id="cleanhub-london"] .chl-project-grid img,
+[data-template-id="cleanhub-london"] .chl-service-grid img {
+  aspect-ratio: 1.25 / 1;
+  border-radius: 13px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="cleanhub-london"] .chl-project-grid span,
+[data-template-id="cleanhub-london"] .chl-tip-list span {
+  color: var(--chl-body);
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 11px;
+}
+
+[data-template-id="cleanhub-london"] .chl-project-grid h3,
+[data-template-id="cleanhub-london"] .chl-service-grid h3 {
+  margin-top: 7px;
+}
+
+[data-template-id="cleanhub-london"] .chl-how {
+  text-align: center;
+}
+
+[data-template-id="cleanhub-london"] .chl-services {
+  background: var(--chl-soft);
+  max-width: none;
+  padding-left: max(30px, calc((100vw - 1060px) / 2));
+  padding-right: max(30px, calc((100vw - 1060px) / 2));
+}
+
+[data-template-id="cleanhub-london"] .chl-service-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+[data-template-id="cleanhub-london"] .chl-right {
+  float: right;
+  margin-top: 24px;
+}
+
+[data-template-id="cleanhub-london"] .chl-reviews {
+  text-align: center;
+}
+
+[data-template-id="cleanhub-london"] .chl-review-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 38px;
+}
+
+[data-template-id="cleanhub-london"] .chl-review-grid blockquote {
+  background: white;
+  border: 1px solid var(--chl-line);
+  border-radius: 14px;
+  margin: 0;
+  padding: 26px;
+  text-align: left;
+}
+
+[data-template-id="cleanhub-london"] .chl-review-grid footer {
+  font-size: 13px;
+  font-weight: 850;
+  margin-top: 22px;
+}
+
+[data-template-id="cleanhub-london"] .chl-review-grid span {
+  color: var(--chl-body);
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+[data-template-id="cleanhub-london"] .chl-tips {
+  display: grid;
+  gap: 54px;
+  grid-template-columns: 0.75fr 1fr;
+}
+
+[data-template-id="cleanhub-london"] .chl-tips .chl-pill {
+  margin-top: 22px;
+}
+
+[data-template-id="cleanhub-london"] .chl-tip-list {
+  display: grid;
+  gap: 18px;
+}
+
+[data-template-id="cleanhub-london"] .chl-tip-list article {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 170px 1fr;
+}
+
+[data-template-id="cleanhub-london"] .chl-tip-list img {
+  aspect-ratio: 1.2 / 1;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="cleanhub-london"] .chl-faq {
+  background: var(--chl-soft);
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 0.8fr 1.2fr;
+  max-width: none;
+  padding-left: max(30px, calc((100vw - 1060px) / 2));
+  padding-right: max(30px, calc((100vw - 1060px) / 2));
+}
+
+[data-template-id="cleanhub-london"] .chl-faq-list {
+  display: grid;
+  gap: 10px;
+}
+
+[data-template-id="cleanhub-london"] .chl-faq-list summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 850;
+  justify-content: space-between;
+  list-style: none;
+}
+
+[data-template-id="cleanhub-london"] .chl-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="cleanhub-london"] .chl-faq-list summary span {
+  color: var(--chl-accent);
+}
+
+[data-template-id="cleanhub-london"] .chl-faq-list p {
+  margin-top: 13px;
+}
+
+[data-template-id="cleanhub-london"] .chl-cta {
+  min-height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="cleanhub-london"] .chl-cta img {
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="cleanhub-london"] .chl-cta::after {
+  background: linear-gradient(90deg, rgba(32, 32, 30, 0.2), rgba(32, 32, 30, 0.82));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="cleanhub-london"] .chl-cta div {
+  color: white;
+  max-width: 430px;
+  position: absolute;
+  right: max(30px, calc((100vw - 1060px) / 2));
+  top: 70px;
+  z-index: 2;
+}
+
+[data-template-id="cleanhub-london"] .chl-cta p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+[data-template-id="cleanhub-london"] .chl-footer {
+  background: var(--chl-footer);
+  color: white;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  padding: 70px max(30px, calc((100vw - 1060px) / 2)) 34px;
+  position: relative;
+}
+
+[data-template-id="cleanhub-london"] .chl-footer h2 {
+  font-size: 34px;
+}
+
+[data-template-id="cleanhub-london"] .chl-footer h3 {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+[data-template-id="cleanhub-london"] .chl-footer nav {
+  display: grid;
+  gap: 10px;
+}
+
+[data-template-id="cleanhub-london"] .chl-footer a,
+[data-template-id="cleanhub-london"] .chl-footer p {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 13px;
+}
+
+[data-template-id="cleanhub-london"] .chl-footer .chl-button {
+  color: white;
+  margin-top: 6px;
+}
+
+[data-template-id="cleanhub-london"] .chl-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  grid-column: 1 / -1;
+  margin: 20px 0 0;
+  padding-top: 24px;
+}
+
+@media (max-width: 900px) {
+  [data-template-id="cleanhub-london"] .chl-header {
+    border-radius: 20px;
+    grid-template-columns: 1fr auto;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-header nav {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    overflow-x: auto;
+    order: 3;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-feature-grid,
+  [data-template-id="cleanhub-london"] .chl-how > div,
+  [data-template-id="cleanhub-london"] .chl-project-grid,
+  [data-template-id="cleanhub-london"] .chl-service-grid,
+  [data-template-id="cleanhub-london"] .chl-review-grid,
+  [data-template-id="cleanhub-london"] .chl-tips,
+  [data-template-id="cleanhub-london"] .chl-faq,
+  [data-template-id="cleanhub-london"] .chl-footer {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-services,
+  [data-template-id="cleanhub-london"] .chl-faq {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  [data-template-id="cleanhub-london"] .chl-hero,
+  [data-template-id="cleanhub-london"] .chl-hero > img {
+    min-height: 100dvh;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-hero-copy {
+    left: 20px;
+    right: 20px;
+    top: 54%;
+    transform: translateY(-44%);
+  }
+
+  [data-template-id="cleanhub-london"] .chl-hero h1 {
+    font-size: clamp(46px, 15vw, 62px);
+  }
+
+  [data-template-id="cleanhub-london"] .chl-phone {
+    display: block;
+    margin: 14px 0 0;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-section,
+  [data-template-id="cleanhub-london"] .chl-services,
+  [data-template-id="cleanhub-london"] .chl-faq {
+    padding: 70px 18px;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-tip-list article {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="cleanhub-london"] .chl-cta div {
+    left: 20px;
+    right: 20px;
+    top: 46px;
+  }
+}

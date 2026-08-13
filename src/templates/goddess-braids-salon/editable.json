@@ -1,0 +1,180 @@
+{
+  "colors": {
+    "pageBackground": "#ffffff",
+    "background": "#ffffff",
+    "sectionAlt": "#fff86f",
+    "surface": "#ffffff",
+    "card": "#000000",
+    "textPrimary": "#090909",
+    "bodyText": "#222222",
+    "mutedText": "#6f6f6f",
+    "accent": "#ff6533",
+    "accentSecondary": "#6926b8",
+    "buttonBg": "#000000",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#6926b8",
+    "secondaryButtonBorder": "#6926b8",
+    "secondaryButtonText": "#ffffff",
+    "link": "#090909",
+    "border": "#d8d8d8",
+    "headerBg": "#ff6533",
+    "headerText": "#090909",
+    "footerBg": "#000000",
+    "footerText": "#ffffff"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Goddess Braids",
+    "mark": "GB",
+    "email": "hello@goddessbraids.co.uk",
+    "phone": "+44 20 4578 6900",
+    "address": "41 Mare Street, London E8 4RP"
+  },
+  "header": {
+    "nav": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Stylists",
+        "href": "#stylists"
+      },
+      {
+        "label": "Insta",
+        "href": "#insta"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "loginLabel": "Log In",
+    "loginHref": "#login",
+    "basketLabel": "Basket",
+    "basketHref": "#basket"
+  },
+  "hero": {
+    "title": "Goddess Braids Salon",
+    "tagline": "Where hair dreams come true",
+    "buttonLabel": "Book Online",
+    "buttonHref": "#contact",
+    "image": "/templates/goddess-braids-salon/assets/hero-braids-cutout.png",
+    "imageAlt": "Smiling woman with long goddess braids"
+  },
+  "about": {
+    "title": "Goddess Braids",
+    "body": "A bright London braiding studio for protective styles, clean parting and looks that feel made for you.",
+    "buttonLabel": "Read More",
+    "buttonHref": "#services",
+    "image": "/templates/goddess-braids-salon/assets/gallery-box-braids.webp",
+    "imageAlt": "Client with knotless box braids and gold cuffs"
+  },
+  "featuredService": {
+    "title": "Goddess Braids",
+    "body": "Long, lightweight braids with a soft finish and careful scalp prep.",
+    "duration": "3 hr",
+    "price": "From GBP 200",
+    "buttonLabel": "Book Now",
+    "buttonHref": "#contact",
+    "image": "/templates/goddess-braids-salon/assets/service-goddess-braids.webp",
+    "imageAlt": "Long blonde and brown goddess braids from the back"
+  },
+  "instagram": {
+    "title": "Our Insta",
+    "handle": "@goddess.braids",
+    "buttonLabel": "Load More",
+    "buttonHref": "#insta",
+    "gallery": [
+      {
+        "title": "Knotless Box Braids",
+        "image": "/templates/goddess-braids-salon/assets/gallery-box-braids.webp",
+        "alt": "Black woman with knotless box braids and gold cuffs"
+      },
+      {
+        "title": "Dutch Braids",
+        "image": "/templates/goddess-braids-salon/assets/gallery-dutch-braids.webp",
+        "alt": "White woman with two Dutch braids"
+      },
+      {
+        "title": "Rope Braids",
+        "image": "/templates/goddess-braids-salon/assets/gallery-rope-braids.webp",
+        "alt": "Asian woman with sleek rope braids"
+      },
+      {
+        "title": "Cornrow Detail",
+        "image": "/templates/goddess-braids-salon/assets/gallery-cornrow-detail.webp",
+        "alt": "Stylist finishing cornrow braids"
+      },
+      {
+        "title": "Feed-In Braids",
+        "image": "/templates/goddess-braids-salon/assets/service-goddess-braids.webp",
+        "alt": "Feed-in goddess braids with blonde tones"
+      },
+      {
+        "title": "Goddess Length",
+        "image": "/templates/goddess-braids-salon/assets/about-braids-portrait.webp",
+        "alt": "Long goddess braids salon portrait"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "name": "Janell",
+        "quote": "My braids felt light, neat and secure. I left feeling properly looked after."
+      },
+      {
+        "name": "Heather",
+        "quote": "The parts were so clean and the team helped me choose the right length."
+      },
+      {
+        "name": "Ericka",
+        "quote": "Friendly, quick and careful. My style lasted beautifully for weeks."
+      }
+    ]
+  },
+  "contact": {
+    "formAccent": "Start Here",
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "messageLabel": "Message",
+    "buttonLabel": "Submit",
+    "hoursTitle": "Opening Hours",
+    "hours": "Monday-Saturday: 10am to 7pm\nSunday: 11am to 4pm",
+    "phoneTitle": "Give Us A Shout"
+  },
+  "newsletter": {
+    "emailLabel": "Email",
+    "checkboxLabel": "Yes, subscribe me to your newsletter.",
+    "buttonLabel": "Subscribe Now"
+  },
+  "footer": {
+    "copyright": "(c) 2026 Goddess Braids Salon. Powered and secured by FekiTech.",
+    "social": [
+      {
+        "label": "Facebook",
+        "href": "#facebook"
+      },
+      {
+        "label": "Instagram",
+        "href": "#instagram"
+      },
+      {
+        "label": "X",
+        "href": "#x"
+      }
+    ]
+  }
+}

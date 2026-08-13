@@ -1,0 +1,9 @@
+{
+  "id": "cleanhub-london",
+  "name": "CleanHub London",
+  "category": "Business",
+  "image": "/templates/cleanhub-london.webp",
+  "previewImages": [
+    "/templates/cleanhub-london.webp"
+  ]
+}

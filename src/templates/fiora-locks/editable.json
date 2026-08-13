@@ -1,0 +1,198 @@
+{
+  "colors": {
+    "pageBackground": "#fbfbfa",
+    "background": "#fbfbfa",
+    "sectionAlt": "#efefed",
+    "surface": "#ffffff",
+    "card": "#ffffff",
+    "textPrimary": "#171615",
+    "bodyText": "#363330",
+    "mutedText": "#77716b",
+    "accent": "#9b5631",
+    "accentSecondary": "#c7b8a8",
+    "buttonBg": "#ffffff",
+    "buttonText": "#171615",
+    "secondaryButtonBg": "transparent",
+    "secondaryButtonBorder": "#cbc7c1",
+    "secondaryButtonText": "#171615",
+    "link": "#171615",
+    "border": "#d8d5cf",
+    "headerBg": "#fbfbfa",
+    "headerText": "#171615",
+    "footerBg": "#fbfbfa",
+    "footerText": "#171615"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Fiora Locks",
+    "address": "58 Percy Street, Leeds LS2 8BQ",
+    "email": "hello@fioralocks.co.uk",
+    "phone": "+44 113 407 2931"
+  },
+  "header": {
+    "nav": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "bookLabel": "Book Now",
+    "bookHref": "#contact",
+    "loginLabel": "Log In",
+    "loginHref": "#login"
+  },
+  "hero": {
+    "title": "The Length You've Longed For",
+    "body": "Discrete extensions, seamless shade matching and a softer finish for everyday wear.",
+    "primaryLabel": "Book Now",
+    "primaryHref": "#contact",
+    "mainImage": "/templates/fiora-locks/assets/consultation-mono.webp",
+    "mainImageAlt": "Black and white consultation for long hair extensions",
+    "textureImage": "/templates/fiora-locks/assets/texture-honey-blonde.webp",
+    "textureImageAlt": "Honey blonde hair extension texture",
+    "portraitImage": "/templates/fiora-locks/assets/mono-profile-styling.webp",
+    "portraitImageAlt": "Black and white profile of sleek straight hair",
+    "shadeOne": "/templates/fiora-locks/assets/texture-natural-black.webp",
+    "shadeOneAlt": "Natural black hair texture",
+    "shadeTwo": "/templates/fiora-locks/assets/texture-copper-brunette.webp",
+    "shadeTwoAlt": "Copper brunette hair texture"
+  },
+  "match": {
+    "title": "Find Your Perfect Match",
+    "body": "With soft-toned colours, premium methods and flexible lengths.",
+    "image": "/templates/fiora-locks/assets/hero-gloss-black.webp",
+    "imageAlt": "Woman with long glossy black hair extensions",
+    "swatchImage": "/templates/fiora-locks/assets/texture-natural-black.webp",
+    "swatchImageAlt": "Glossy natural black hair extension swatch",
+    "services": [
+      {
+        "name": "Keratin Bond Extensions",
+        "body": "Seamless luxury with lasting bonds.",
+        "buttonLabel": "Book Now",
+        "buttonHref": "#contact"
+      },
+      {
+        "name": "Weft Extensions",
+        "body": "Natural movement with softer volume.",
+        "buttonLabel": "Book Now",
+        "buttonHref": "#contact"
+      },
+      {
+        "name": "Tape-In Extensions",
+        "body": "Effortless glamour with a low-profile fit.",
+        "buttonLabel": "Book Now",
+        "buttonHref": "#contact"
+      },
+      {
+        "name": "Clip-Ins",
+        "body": "For events, temporary style changes and weekend volume.",
+        "buttonLabel": "Book Now",
+        "buttonHref": "#contact"
+      }
+    ]
+  },
+  "editorial": {
+    "combImage": "/templates/fiora-locks/assets/brunette-comb-detail.webp",
+    "combImageAlt": "Stylist combing smooth brunette hair",
+    "blondeTexture": "/templates/fiora-locks/assets/texture-honey-blonde.webp",
+    "blondeTextureAlt": "Honey blonde extension texture",
+    "blondePortrait": "/templates/fiora-locks/assets/salon-quiet-chair.webp",
+    "blondePortraitAlt": "Salon client with softly styled hair",
+    "monoImage": "/templates/fiora-locks/assets/mono-profile-styling.webp",
+    "monoImageAlt": "Black and white sleek hair profile"
+  },
+  "shades": {
+    "items": [
+      {
+        "number": "01",
+        "name": "Copper Ember",
+        "body": "A red, warm auburn tone for coppery movement, rich and unmistakably radiant.",
+        "image": "/templates/fiora-locks/assets/texture-copper-brunette.webp",
+        "imageAlt": "Copper ember hair extension shade"
+      },
+      {
+        "number": "02",
+        "name": "Champagne Blonde",
+        "body": "A pale, luminous blonde with creamy warmth, soft, refined and naturally elegant.",
+        "image": "/templates/fiora-locks/assets/texture-honey-blonde.webp",
+        "imageAlt": "Champagne blonde hair extension shade"
+      },
+      {
+        "number": "03",
+        "name": "Ash Taupe",
+        "body": "A cool, muted brown with smoky depth, understated, expensive and seamless.",
+        "image": "/templates/fiora-locks/assets/shade-triptych.webp",
+        "imageAlt": "Cool taupe hair extension shade"
+      },
+      {
+        "number": "04",
+        "name": "Jet",
+        "body": "A pure, high-gloss black, bold, striking and beautifully refined.",
+        "image": "/templates/fiora-locks/assets/texture-natural-black.webp",
+        "imageAlt": "Jet black hair extension shade"
+      },
+      {
+        "number": "05",
+        "name": "Espresso",
+        "body": "A deep cool-toned dark brown, chic, polished and intensely luminous.",
+        "image": "/templates/fiora-locks/assets/hero-gloss-black.webp",
+        "imageAlt": "Deep espresso hair extension shade"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "A Glimpse of the Glow-Up",
+    "body": "See how we bring your dream hair closer with skill.",
+    "buttonLabel": "View Full Gallery",
+    "buttonHref": "#gallery",
+    "images": [
+      {
+        "image": "/templates/fiora-locks/assets/texture-copper-brunette.webp",
+        "alt": "Copper brunette hair detail"
+      },
+      {
+        "image": "/templates/fiora-locks/assets/salon-quiet-chair.webp",
+        "alt": "Soft salon styling portrait"
+      },
+      {
+        "image": "/templates/fiora-locks/assets/consultation-mono.webp",
+        "alt": "Monochrome hair consultation"
+      },
+      {
+        "image": "/templates/fiora-locks/assets/brunette-comb-detail.webp",
+        "alt": "Brunette hair combing detail"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Words from Our Community",
+    "quote": "My confidence has soared. The quality and application are second to none.",
+    "name": "Abel Moreno",
+    "image": "/templates/fiora-locks/assets/hero-gloss-black.webp",
+    "imageAlt": "Client with long glossy black hair"
+  },
+  "cta": {
+    "title": "Ready for Your Transformation?",
+    "body": "Let's create the hair you always envisioned.",
+    "buttonLabel": "Schedule Now",
+    "buttonHref": "#contact"
+  },
+  "footer": {
+    "locationTitle": "Visit",
+    "hours": "Tue-Sat: 9am-6pm",
+    "socialTitle": "Explore",
+    "links": [
+      { "label": "Instagram", "href": "#instagram" },
+      { "label": "Facebook", "href": "#facebook" },
+      { "label": "Pinterest", "href": "#pinterest" }
+    ],
+    "policyTitle": "Policies",
+    "policies": [
+      { "label": "Terms & Conditions", "href": "#terms" },
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Refund Policy", "href": "#refund" },
+      { "label": "Accessibility Statement", "href": "#accessibility" }
+    ],
+    "copyright": "(c) 2026 Fiora Locks. Powered and secured by FekiTech."
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f4f4f3",
+      "surface": "#ffffff",
+      "soft": "#ebebea",
+      "ink": "#25231f",
+      "body": "#7b7770",
+      "muted": "#aaa69f",
+      "line": "#dfddd9",
+      "accent": "#f7931e",
+      "dark": "#262522",
+      "footer": "#20201e"
+    },
+    "typography": {
+      "heading": "\"Helvetica Neue\", Arial, sans-serif",
+      "body": "\"Inter\", \"Helvetica Neue\", Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "CleanHub",
+    "descriptor": "London cleaners",
+    "phone": "020 3950 6452",
+    "phoneHref": "tel:+442039506452",
+    "email": "hello@cleanhub.co.uk",
+    "emailHref": "mailto:hello@cleanhub.co.uk",
+    "address": "21 Great Portland Street, London W1W 8QG",
+    "copyright": "© 2026 CleanHub Ltd. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Our services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Tips", "href": "#tips" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "buttonLabel": "Book cleaning",
+    "buttonHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Home cleaning, made simple",
+    "title": "Quality cleaning that\nwon't cost more",
+    "text": "Reliable, insured cleaners for homes, apartments and workspaces across London.",
+    "buttonLabel": "Get an estimate",
+    "buttonHref": "#contact",
+    "image": "/templates/cleanhub-london/assets/hero-vacuum.webp",
+    "imageAlt": "Professional cleaner vacuuming a bright modern living room",
+    "badge": "20+ years of trust"
+  },
+  "trust": {
+    "title": "Trusted by people who care about quality",
+    "logos": ["Lotter", "Lightguard", "Loopit", "Brinia", "Acme Corp", "Nexon"]
+  },
+  "about": {
+    "eyebrow": "What we do",
+    "title": "Cleaning that respects\nyour time and space",
+    "text": "We provide calm, organised home and office cleaning with vetted professionals, clear checklists and flexible booking.",
+    "buttonLabel": "Book cleaning",
+    "buttonHref": "#contact",
+    "features": [
+      { "title": "Trusted people in your space", "text": "Vetted cleaners, consistent teams and simple arrival updates." },
+      { "title": "Cleaning that fits your routine", "text": "Weekly, fortnightly, one-off and deep-clean plans." },
+      { "title": "Consistent quality you can feel", "text": "Clear checklists and follow-up after each visit." },
+      { "title": "Support that actually responds", "text": "Easy booking changes and fast answers when you need them." }
+    ]
+  },
+  "projects": {
+    "title": "A closer look",
+    "items": [
+      { "title": "Kitchen deep clean", "type": "Residential", "image": "/templates/cleanhub-london/assets/kitchen-counter.webp", "imageAlt": "Cleaner wiping a modern kitchen counter" },
+      { "title": "Bathroom refresh", "type": "End of tenancy", "image": "/templates/cleanhub-london/assets/deep-cleaning.png", "imageAlt": "Bright bathroom cleaning result" },
+      { "title": "Window shine treatment", "type": "Home care", "image": "/templates/cleanhub-london/assets/stair-cleaning.png", "imageAlt": "Cleaner working in a home stair area" },
+      { "title": "Commercial floor polish", "type": "Workspace", "image": "/templates/cleanhub-london/assets/office-cleaning.webp", "imageAlt": "Professional office cleaners cleaning glass and floors" },
+      { "title": "Loft cleaning clear-out", "type": "Deep clean", "image": "/templates/cleanhub-london/assets/footer-cleaner.png", "imageAlt": "Cleaner with supplies in a home" },
+      { "title": "Soft upholstery cleaning", "type": "Living room", "image": "/templates/cleanhub-london/assets/tip-home.webp", "imageAlt": "Clean bright home interior" }
+    ]
+  },
+  "how": {
+    "title": "How it works",
+    "steps": [
+      { "title": "Tell us your needs", "text": "Share the rooms, priorities and preferred time." },
+      { "title": "Book your cleaner", "text": "Choose a one-off visit or a regular cleaning routine." },
+      { "title": "We arrive prepared", "text": "Your cleaner brings a checklist and can use your preferred products." },
+      { "title": "Enjoy your space", "text": "We leave everything fresh, tidy and ready to use." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our services",
+    "title": "Cleaning services designed\naround your needs",
+    "items": [
+      { "title": "Deep cleaning", "text": "Detailed cleaning for kitchens, bathrooms and neglected corners.", "image": "/templates/cleanhub-london/assets/kitchen-counter.webp", "imageAlt": "Kitchen counter cleaning" },
+      { "title": "Office & commercial cleaning", "text": "Reliable workspace cleaning before, during or after office hours.", "image": "/templates/cleanhub-london/assets/office-cleaning.webp", "imageAlt": "Office cleaners cleaning glass partitions" },
+      { "title": "Regular home cleaning", "text": "Weekly and fortnightly plans for calm, consistent home care.", "image": "/templates/cleanhub-london/assets/stair-cleaning.png", "imageAlt": "Cleaner working in a home" },
+      { "title": "Kitchen & bathroom detailing", "text": "Targeted cleaning for the rooms that need extra attention.", "image": "/templates/cleanhub-london/assets/deep-cleaning.png", "imageAlt": "Detailed bathroom cleaning" },
+      { "title": "End of tenancy cleaning", "text": "Move-out cleans for landlords, tenants and letting agents.", "image": "/templates/cleanhub-london/assets/footer-cleaner.png", "imageAlt": "Cleaner with spray bottle" },
+      { "title": "Window cleaning", "text": "Interior window and glass cleaning for a brighter finish.", "image": "/templates/cleanhub-london/assets/tip-home.webp", "imageAlt": "Bright clean home window" },
+      { "title": "Carpet & rug cleaning", "text": "Freshen high-traffic areas with careful fabric-safe methods.", "image": "/templates/cleanhub-london/assets/hero-vacuum.webp", "imageAlt": "Vacuum cleaning a living room rug" }
+    ],
+    "buttonLabel": "Book cleaning",
+    "buttonHref": "#contact"
+  },
+  "testimonials": {
+    "title": "Trusted by homes and\nbusinesses across the UK",
+    "items": [
+      { "quote": "The team is calm, careful and always leaves our flat feeling reset.", "name": "Daniel Ellis", "role": "Homeowner" },
+      { "quote": "CleanHub keeps our small office looking ready for clients every week.", "name": "Jenna Cole", "role": "Office Manager" },
+      { "quote": "Flexible booking, lovely cleaners and a very consistent standard.", "name": "Amir Mirza", "role": "Landlord" }
+    ]
+  },
+  "tips": {
+    "title": "Practical cleaning\nguides & tips",
+    "buttonLabel": "All articles",
+    "buttonHref": "#contact",
+    "items": [
+      { "title": "Preparing your home for winter with a careful deep clean", "category": "Home care", "image": "/templates/cleanhub-london/assets/tip-home.webp", "imageAlt": "Clean bright home interior" },
+      { "title": "Eco-friendly cleaning tips for busy homes and families", "category": "Smart living", "image": "/templates/cleanhub-london/assets/footer-cleaner.png", "imageAlt": "Cleaner holding supplies" },
+      { "title": "Deep cleaning your kitchen like a professional cleaner", "category": "Room care", "image": "/templates/cleanhub-london/assets/kitchen-counter.webp", "imageAlt": "Cleaner wiping a kitchen counter" },
+      { "title": "Window cleaning without marks for homes and offices", "category": "Maintenance", "image": "/templates/cleanhub-london/assets/office-cleaning.webp", "imageAlt": "Cleaner wiping office glass" }
+    ]
+  },
+  "faq": {
+    "title": "Honest answers,\nno guesswork",
+    "buttonLabel": "Ask a question",
+    "buttonHref": "#contact",
+    "items": [
+      { "question": "Are your cleaners background checked?", "answer": "Yes. Every cleaner is vetted before joining our team." },
+      { "question": "Do I need to be home during cleaning?", "answer": "No. Many clients provide safe access instructions." },
+      { "question": "Can I request the same cleaner each time?", "answer": "Yes, we try to keep regular clients with a familiar cleaner." },
+      { "question": "Do you bring your own products?", "answer": "We can bring products or use yours if preferred." }
+    ]
+  },
+  "cta": {
+    "title": "Make your space sparkle\nevery day today",
+    "text": "Get a simple quote for home, end-of-tenancy or office cleaning.",
+    "buttonLabel": "Book cleaning",
+    "buttonHref": "#contact",
+    "image": "/templates/cleanhub-london/assets/footer-cleaner.png",
+    "imageAlt": "Friendly cleaner holding a cloth near a clean door"
+  },
+  "footer": {
+    "title": "Expert cleaners\nin London",
+    "text": "Reliable home and workplace cleaning from a careful, insured local team.",
+    "buttonLabel": "Get your quote",
+    "buttonHref": "#contact",
+    "columns": [
+      { "title": "Quick Links", "links": [{ "label": "Home", "href": "#home" }, { "label": "About", "href": "#about" }, { "label": "Services", "href": "#services" }, { "label": "Contact", "href": "#contact" }] },
+      { "title": "Resources", "links": [{ "label": "Cleaning tips", "href": "#tips" }, { "label": "FAQ", "href": "#faq" }, { "label": "Reviews", "href": "#reviews" }] },
+      { "title": "Contact", "links": [{ "label": "hello@cleanhub.co.uk", "href": "mailto:hello@cleanhub.co.uk" }, { "label": "020 3950 6452", "href": "tel:+442039506452" }, { "label": "London, UK", "href": "#contact" }] }
+    ]
+  }
+}

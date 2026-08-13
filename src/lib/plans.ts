@@ -202,7 +202,14 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "eductix-academy": "business",
   "alvion-medical": "business",
   "greenly-gardens": "business",
+  "agritech-growth": "business",
   "pipeline-os": "business",
+  "fiora-locks": "business",
+  "goddess-braids-salon": "business",
+  "little-rainbow-nursery": "business",
+  "apex-growth-agency": "business",
+  "valist-ai-studio": "business",
+  "cleanhub-london": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

@@ -1,0 +1,1046 @@
+[data-template-id="apex-growth-agency"] {
+  background: var(--aga-page);
+  color: var(--aga-heading);
+  font-family: var(--aga-body-font);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+[data-template-id="apex-growth-agency"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="apex-growth-agency"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="apex-growth-agency"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="apex-growth-agency"] .aga-header {
+  align-items: center;
+  backdrop-filter: blur(18px);
+  background: rgba(7, 7, 7, 0.78);
+  border: 1px solid var(--aga-line);
+  border-radius: 999px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: auto 1fr auto;
+  left: 50%;
+  max-width: 980px;
+  padding: 9px 10px 9px 16px;
+  position: fixed;
+  top: 16px;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  z-index: 20;
+}
+
+[data-template-id="apex-growth-agency"] .aga-logo {
+  align-items: center;
+  display: inline-flex;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+[data-template-id="apex-growth-agency"] .aga-mark {
+  display: inline-grid;
+  height: 23px;
+  place-items: center;
+  position: relative;
+  width: 23px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-mark span,
+[data-template-id="apex-growth-agency"] .aga-mark i {
+  background: var(--aga-accent);
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 23px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-mark span {
+  transform: rotate(45deg);
+}
+
+[data-template-id="apex-growth-agency"] .aga-mark i {
+  transform: rotate(-45deg);
+}
+
+[data-template-id="apex-growth-agency"] .aga-header nav {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-header nav a {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+  color: var(--aga-body);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 13px;
+  white-space: nowrap;
+}
+
+[data-template-id="apex-growth-agency"] .aga-header nav a:first-child {
+  background: var(--aga-panel-soft);
+  color: var(--aga-heading);
+}
+
+[data-template-id="apex-growth-agency"] .aga-mini-button,
+[data-template-id="apex-growth-agency"] .aga-button {
+  align-items: center;
+  background: var(--aga-accent);
+  border-radius: 999px;
+  color: var(--aga-button-text);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 950;
+  gap: 8px;
+  justify-content: center;
+  min-height: 33px;
+  padding: 0 17px;
+  white-space: nowrap;
+}
+
+[data-template-id="apex-growth-agency"] .aga-button {
+  min-height: 40px;
+  padding: 0 25px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-arrow {
+  font-size: 14px;
+  line-height: 1;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero {
+  min-height: 720px;
+  overflow: hidden;
+  padding: 110px 14px 82px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-eyebrow {
+  color: var(--aga-muted);
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0 0 11px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero h1 {
+  font-family: var(--aga-heading-font);
+  font-size: clamp(42px, 6.45vw, 88px);
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+  margin: 0 auto 20px;
+  max-width: 1060px;
+  text-transform: none;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero h1 span {
+  color: var(--aga-accent);
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero-media {
+  margin: 24px auto 0;
+  max-width: 1200px;
+  position: relative;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero-media::before {
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, rgba(255, 135, 24, 0.74) 68%, var(--aga-page) 100%);
+  bottom: 0;
+  content: "";
+  height: 168px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: min(100vw, 1220px);
+  z-index: 1;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero-media img {
+  border-radius: 2px;
+  height: 430px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  width: 100%;
+}
+
+[data-template-id="apex-growth-agency"] .aga-hero-media span {
+  background: #fff;
+  border-radius: 999px;
+  color: #111;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 8px 12px;
+  position: absolute;
+  right: 28px;
+  top: 156px;
+  z-index: 3;
+}
+
+[data-template-id="apex-growth-agency"] .aga-marquee {
+  bottom: 14px;
+  color: white;
+  font-family: var(--aga-heading-font);
+  font-size: clamp(34px, 6.8vw, 88px);
+  left: 0;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+  opacity: 0.86;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+[data-template-id="apex-growth-agency"] .aga-marquee span {
+  display: inline-block;
+  transform: translateX(-14%);
+}
+
+[data-template-id="apex-growth-agency"] .aga-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 58px 14px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-section-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-section-head p {
+  align-items: center;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 900;
+  gap: 9px;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-section-head p i {
+  background: var(--aga-accent);
+  border-radius: 999px;
+  display: inline-block;
+  height: 5px;
+  width: 27px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid article,
+[data-template-id="apex-growth-agency"] .aga-price-grid article,
+[data-template-id="apex-growth-agency"] .aga-quotes blockquote,
+[data-template-id="apex-growth-agency"] .aga-detail-grid a,
+[data-template-id="apex-growth-agency"] .aga-footer {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 14px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid article {
+  min-height: 196px;
+  padding: 25px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid span {
+  align-items: center;
+  background: var(--aga-panel-soft);
+  border-radius: 50%;
+  color: var(--aga-accent);
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 900;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid h3 {
+  font-size: 18px;
+  margin: 34px 0 24px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid p,
+[data-template-id="apex-growth-agency"] .aga-proof-cards p,
+[data-template-id="apex-growth-agency"] .aga-quotes p,
+[data-template-id="apex-growth-agency"] .aga-orange-card p,
+[data-template-id="apex-growth-agency"] .aga-faq-list p {
+  color: var(--aga-body);
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-service-grid a {
+  color: var(--aga-muted);
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 900;
+  gap: 6px;
+  margin-top: 26px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-brands {
+  margin: 4px auto 0;
+  max-width: 1120px;
+  padding: 0 14px 44px;
+  text-align: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-brands h2 {
+  font-size: 22px;
+  margin: 0 0 22px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-brands div {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: 70px repeat(6, 1fr) 70px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-brands div::before,
+[data-template-id="apex-growth-agency"] .aga-brands div::after {
+  align-items: center;
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 12px;
+  color: var(--aga-muted);
+  content: "✳";
+  display: flex;
+  font-size: 33px;
+  justify-content: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-brands span {
+  align-items: center;
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 10px;
+  color: var(--aga-body);
+  display: flex;
+  font-size: 12px;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 48px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 14px 54px;
+  position: relative;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof > img {
+  border-radius: 18px;
+  height: 385px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof::after {
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0), var(--aga-page));
+  border-radius: 18px;
+  content: "";
+  inset: 0 14px 54px;
+  position: absolute;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  inset: 64px 60px auto;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-stats strong {
+  color: var(--aga-accent);
+  display: block;
+  font-size: 36px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-stats span,
+[data-template-id="apex-growth-agency"] .aga-metric-card span,
+[data-template-id="apex-growth-agency"] .aga-post-grid span {
+  color: var(--aga-body);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-cards {
+  bottom: 92px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  left: 40px;
+  position: absolute;
+  right: 40px;
+  z-index: 2;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-cards article {
+  background: rgba(17, 15, 14, 0.8);
+  border: 1px solid var(--aga-line);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-proof-cards h3 {
+  font-size: 14px;
+  margin: 0 0 11px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-tags {
+  bottom: 52px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  left: 40px;
+  position: absolute;
+  right: 40px;
+  z-index: 2;
+}
+
+[data-template-id="apex-growth-agency"] .aga-tags span {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 999px;
+  color: var(--aga-body);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 7px 13px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-cases {
+  min-height: 560px;
+  padding-top: 42px;
+  text-align: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-cases h2,
+[data-template-id="apex-growth-agency"] .aga-pricing h2,
+[data-template-id="apex-growth-agency"] .aga-faq h2 {
+  font-size: 28px;
+  line-height: 0.95;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-case-space {
+  align-content: end;
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 370px;
+  padding-bottom: 28px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-case-space article {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: left;
+}
+
+[data-template-id="apex-growth-agency"] .aga-case-space img {
+  height: 140px;
+  object-fit: cover;
+  opacity: 0.76;
+  width: 100%;
+}
+
+[data-template-id="apex-growth-agency"] .aga-case-space span {
+  color: var(--aga-accent);
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 13px 15px 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-case-space h3 {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 8px 0 0;
+  padding: 0 15px 16px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-testimonials {
+  padding-top: 18px;
+  position: relative;
+}
+
+[data-template-id="apex-growth-agency"] .aga-testimonials h2 {
+  color: transparent;
+  font-family: var(--aga-heading-font);
+  font-size: clamp(72px, 13vw, 190px);
+  letter-spacing: -0.08em;
+  line-height: 0.75;
+  margin: 0 0 -18px;
+  opacity: 0.55;
+  -webkit-text-stroke: 1px #5f5a55;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes {
+  display: grid;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes blockquote {
+  margin: 0;
+  padding: 22px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes div {
+  color: var(--aga-accent);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes footer {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes strong {
+  font-size: 13px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-quotes span {
+  color: var(--aga-muted);
+  font-size: 11px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-pricing {
+  text-align: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 34px;
+  text-align: left;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid article {
+  min-height: 292px;
+  padding: 22px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid article > span {
+  color: var(--aga-muted);
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid h3 {
+  color: var(--aga-accent);
+  font-size: 43px;
+  line-height: 1;
+  margin: 0 0 18px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid small {
+  color: var(--aga-body);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid ul {
+  color: var(--aga-body);
+  font-size: 12px;
+  line-height: 1.9;
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid li::before {
+  color: var(--aga-accent);
+  content: "• ";
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid a {
+  align-items: center;
+  background: var(--aga-panel-soft);
+  border-radius: 999px;
+  color: var(--aga-body);
+  display: flex;
+  font-size: 11px;
+  font-weight: 900;
+  justify-content: center;
+  min-height: 33px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-price-grid .is-featured a {
+  background: var(--aga-accent);
+  color: var(--aga-button-text);
+}
+
+[data-template-id="apex-growth-agency"] .aga-specialties {
+  padding-top: 42px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-section-head > span {
+  color: var(--aga-body);
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 390px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-special-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.3fr 0.9fr;
+}
+
+[data-template-id="apex-growth-agency"] .aga-special-grid article {
+  border-radius: 14px;
+  min-height: 214px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="apex-growth-agency"] .aga-traffic-card {
+  grid-row: span 1;
+}
+
+[data-template-id="apex-growth-agency"] .aga-traffic-card img,
+[data-template-id="apex-growth-agency"] .aga-orange-image img,
+[data-template-id="apex-growth-agency"] .aga-post-grid img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="apex-growth-agency"] .aga-traffic-card h2 {
+  bottom: 18px;
+  font-size: 35px;
+  left: 18px;
+  line-height: 0.94;
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+[data-template-id="apex-growth-agency"] .aga-metric-card {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  padding: 28px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-metric-card strong {
+  display: block;
+  font-size: 51px;
+  line-height: 1;
+}
+
+[data-template-id="apex-growth-agency"] .aga-orange-card {
+  background: var(--aga-accent);
+  color: var(--aga-button-text);
+  padding: 32px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-orange-card h2 {
+  font-size: 48px;
+  line-height: 0.88;
+  margin: 0 0 60px;
+  text-align: right;
+}
+
+[data-template-id="apex-growth-agency"] .aga-orange-card p {
+  color: rgba(18, 10, 5, 0.72);
+}
+
+[data-template-id="apex-growth-agency"] .aga-posts .aga-section-head h2 {
+  font-size: 30px;
+  line-height: 0.92;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid article {
+  background: var(--aga-panel);
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid img {
+  height: 160px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid span,
+[data-template-id="apex-growth-agency"] .aga-post-grid h3 {
+  display: block;
+  padding: 0 14px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid span {
+  color: var(--aga-accent);
+  margin-top: 12px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-post-grid h3 {
+  font-size: 14px;
+  line-height: 1.15;
+  margin: 8px 0 16px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq {
+  text-align: center;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list {
+  display: grid;
+  gap: 9px;
+  margin: 34px auto 0;
+  max-width: 920px;
+  text-align: left;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list details {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 9px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list summary {
+  align-items: center;
+  color: var(--aga-heading);
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 900;
+  justify-content: space-between;
+  list-style: none;
+  padding: 17px 18px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list summary span {
+  align-items: center;
+  background: var(--aga-accent);
+  border-radius: 4px;
+  color: var(--aga-button-text);
+  display: inline-flex;
+  height: 18px;
+  justify-content: center;
+  width: 18px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-faq-list p {
+  padding: 0 18px 17px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact {
+  align-items: end;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 34px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact h2 {
+  font-family: var(--aga-heading-font);
+  font-size: clamp(72px, 12vw, 156px);
+  letter-spacing: -0.09em;
+  line-height: 0.78;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact h2 span {
+  color: var(--aga-accent);
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact form {
+  background: var(--aga-panel);
+  border: 1px solid var(--aga-line);
+  border-radius: 13px;
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact form p {
+  color: var(--aga-body);
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact label {
+  color: var(--aga-muted);
+  display: grid;
+  font-size: 11px;
+  font-weight: 900;
+  gap: 5px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact input,
+[data-template-id="apex-growth-agency"] .aga-contact textarea {
+  background: #292624;
+  border: 1px solid #34302d;
+  border-radius: 7px;
+  color: var(--aga-heading);
+  font: inherit;
+  min-height: 38px;
+  padding: 8px 10px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+[data-template-id="apex-growth-agency"] .aga-contact button {
+  background: var(--aga-accent);
+  border: 0;
+  border-radius: 7px;
+  color: var(--aga-button-text);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 950;
+  min-height: 36px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer {
+  margin: 0 auto 18px;
+  max-width: 1200px;
+  padding: 14px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-detail-grid {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 12px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-detail-grid a {
+  color: var(--aga-body);
+  display: grid;
+  font-size: 12px;
+  gap: 6px;
+  padding: 17px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-detail-grid span {
+  color: var(--aga-accent);
+  font-weight: 900;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer-main {
+  background: #11100f;
+  border: 1px solid var(--aga-line);
+  border-radius: 12px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr repeat(3, auto);
+  padding: 24px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer-main h3 {
+  color: var(--aga-accent);
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer-main div {
+  display: grid;
+  gap: 8px;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer-main a {
+  color: var(--aga-body);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+[data-template-id="apex-growth-agency"] .aga-footer > p {
+  color: var(--aga-muted);
+  font-size: 11px;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  [data-template-id="apex-growth-agency"] .aga-header {
+    border-radius: 18px;
+    grid-template-columns: 1fr auto;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-header nav {
+    grid-column: 1 / -1;
+    order: 3;
+    overflow-x: auto;
+    justify-content: start;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero {
+    min-height: auto;
+    padding-bottom: 66px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero-media {
+    margin-top: 22px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-service-grid,
+  [data-template-id="apex-growth-agency"] .aga-proof-cards,
+  [data-template-id="apex-growth-agency"] .aga-price-grid,
+  [data-template-id="apex-growth-agency"] .aga-special-grid,
+  [data-template-id="apex-growth-agency"] .aga-post-grid,
+  [data-template-id="apex-growth-agency"] .aga-contact,
+  [data-template-id="apex-growth-agency"] .aga-detail-grid,
+  [data-template-id="apex-growth-agency"] .aga-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-brands div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-brands div::before,
+  [data-template-id="apex-growth-agency"] .aga-brands div::after {
+    display: none;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof {
+    padding-bottom: 0;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof::after {
+    inset: 0 14px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof-stats,
+  [data-template-id="apex-growth-agency"] .aga-proof-cards,
+  [data-template-id="apex-growth-agency"] .aga-tags {
+    position: relative;
+    inset: auto;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof-stats {
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -315px;
+    padding: 0 20px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof-cards,
+  [data-template-id="apex-growth-agency"] .aga-tags {
+    margin: 18px 20px 0;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-tags {
+    flex-wrap: wrap;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-cases {
+    min-height: 460px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-case-space {
+    grid-template-columns: 1fr;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 560px) {
+  [data-template-id="apex-growth-agency"] .aga-header {
+    top: 8px;
+    width: calc(100% - 16px);
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-header nav a {
+    font-size: 11px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero {
+    min-height: auto;
+    padding: 132px 10px 58px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero h1 {
+    font-size: clamp(37px, 13.6vw, 58px);
+    line-height: 0.98;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero-media {
+    margin-top: 20px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-hero-media span {
+    right: 18px;
+    top: 118px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-marquee {
+    bottom: 10px;
+    font-size: clamp(30px, 12vw, 54px);
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-section {
+    padding-bottom: 58px;
+    padding-top: 58px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-proof-stats strong {
+    font-size: 27px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-testimonials h2 {
+    font-size: 65px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-orange-card h2 {
+    font-size: 39px;
+  }
+
+  [data-template-id="apex-growth-agency"] .aga-contact h2 {
+    font-size: 88px;
+  }
+}

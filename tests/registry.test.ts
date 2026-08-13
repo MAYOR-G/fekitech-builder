@@ -102,11 +102,19 @@ describe("production template registry", () => {
       "eductix-academy",
       "alvion-medical",
       "greenly-gardens",
-      "pipeline-os"
+      "agritech-growth",
+      "pipeline-os",
+      "fiora-locks",
+      "goddess-braids-salon",
+      "little-rainbow-nursery",
+      "apex-growth-agency",
+      "valist-ai-studio",
+      "cleanhub-london"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
       "alvion-medical",
+      "apex-growth-agency",
       "arcstone-growth",
       "ash-bridle-barbers",
       "aurea-objects-shop",
@@ -125,6 +133,7 @@ describe("production template registry", () => {
       "cake-website",
       "carpenter-website",
       "catering-company-premium",
+      "cleanhub-london",
       "cleaning-agency-premium",
       "coffee-website",
       "crownline-roofworks",
@@ -136,10 +145,13 @@ describe("production template registry", () => {
       "eductix-academy",
       "farm-shop-website",
       "fast-food-chicken-tacos",
+      "fiora-locks",
       "forgefit-training",
       "forgepoint-construction",
       "forno-sixteen",
+      "goddess-braids-salon",
       "gym-website",
+      "agritech-growth",
       "greenly-gardens",
       "handgrid-repairs",
       "harborwell-home-health",
@@ -153,6 +165,7 @@ describe("production template registry", () => {
       "kinetic-frame-studio",
       "lacquer-form-nail-atelier",
       "linden-path-therapy",
+      "little-rainbow-nursery",
       "little-lanterns-nursery",
       "london-pizza-shop",
       "lumen-house-design",
@@ -178,6 +191,7 @@ describe("production template registry", () => {
       "software-engineer-portfolio",
       "tallow-and-sage",
       "the-copper-tap",
+      "valist-ai-studio",
       "velour-studio-salon",
       "velvet-scoop",
       "verdant-house-grooming",
@@ -266,7 +280,14 @@ describe("production template registry", () => {
       "eductix-academy",
       "alvion-medical",
       "greenly-gardens",
-      "pipeline-os"
+      "agritech-growth",
+      "pipeline-os",
+      "fiora-locks",
+      "goddess-braids-salon",
+      "little-rainbow-nursery",
+      "apex-growth-agency",
+      "valist-ai-studio",
+      "cleanhub-london"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -332,7 +353,14 @@ describe("production template registry", () => {
       "eductix-academy",
       "alvion-medical",
       "greenly-gardens",
-      "pipeline-os"
+      "agritech-growth",
+      "pipeline-os",
+      "fiora-locks",
+      "goddess-braids-salon",
+      "little-rainbow-nursery",
+      "apex-growth-agency",
+      "valist-ai-studio",
+      "cleanhub-london"
     ];
 
     for (const templateId of redesignedTemplateIds) {

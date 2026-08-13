@@ -1,0 +1,185 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#e9ecdc",
+      "section": "#f5f6ee",
+      "surface": "#ffffff",
+      "card": "#f7f8ec",
+      "ink": "#163226",
+      "muted": "#6a7466",
+      "deep": "#07190f",
+      "deepSoft": "#10281b",
+      "accent": "#c9f238",
+      "accentAlt": "#91b51d",
+      "line": "#d5dac8",
+      "white": "#ffffff"
+    },
+    "typography": {
+      "heading": "Inter, Arial, sans-serif",
+      "body": "Inter, Arial, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Farmio",
+    "logo": "/templates/agritech-growth/assets/agritech-logo.svg",
+    "logoAlt": "Farmio logo",
+    "email": "hello@farmio.co.uk",
+    "emailHref": "mailto:hello@farmio.co.uk",
+    "phone": "01632 960 148",
+    "phoneHref": "tel:+441632960148",
+    "address": "12 Market Yard, York YO1"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "Testimonials", "href": "#testimonials" }
+    ],
+    "ctaLabel": "Contact us",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Smart farming support for modern growers",
+    "title": "Innovative Technology for Agricultural Growth",
+    "text": "Practical digital tools, field insight and hands-on guidance for farms that want clearer decisions and stronger yields.",
+    "image": "/templates/agritech-growth/assets/agritech-hero-field.png",
+    "imageAlt": "Aerial view of green crop fields",
+    "cardImage": "/templates/agritech-growth/assets/agritech-seedling-tech.png",
+    "cardImageAlt": "Seedling and soil being checked with farm sensors",
+    "cardTitle": "Field insight",
+    "cardText": "Live crop checks and simple reports for better weekly planning.",
+    "primaryLabel": "Get started",
+    "primaryHref": "#contact",
+    "secondaryLabel": "View services",
+    "secondaryHref": "#services"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Powering the future of agriculture through innovation",
+    "text": "We help farms use technology in a practical way, combining useful data, clear advice and reliable support.",
+    "stats": [
+      { "value": "12+", "label": "Years in agriculture" },
+      { "value": "235k+", "label": "Acres supported" },
+      { "value": "421k+", "label": "Field checks made" },
+      { "value": "$12b+", "label": "Crop value informed" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our solutions",
+    "title": "One platform complete agriculture solutions",
+    "buttonLabel": "Get started",
+    "buttonHref": "#contact",
+    "items": [
+      {
+        "title": "Precision farming solutions",
+        "text": "Measure crop health, moisture and field conditions with tools your team can actually use.",
+        "image": "/templates/agritech-growth/assets/agritech-hero-field.png",
+        "alt": "Aerial view of organised crop fields",
+        "tags": ["Sensors", "Mapping"]
+      },
+      {
+        "title": "Farm management system",
+        "text": "Plan jobs, record field activity and keep important farm information in one clear place.",
+        "image": "/templates/agritech-growth/assets/agritech-farm-systems.png",
+        "alt": "Farmer using a tablet beside crop irrigation",
+        "tags": ["Planning", "Reports"]
+      },
+      {
+        "title": "Sustainable agriculture services",
+        "text": "Improve soil care, reduce waste and make better use of water, labour and inputs.",
+        "image": "/templates/agritech-growth/assets/agritech-seedling-tech.png",
+        "alt": "Healthy seedling held in soil",
+        "tags": ["Soil", "Water"]
+      }
+    ]
+  },
+  "overlay": {
+    "eyebrow": "Our services",
+    "title": "Advanced Services for Modern Agriculture",
+    "image": "/templates/agritech-growth/assets/agritech-hero-field.png",
+    "imageAlt": "Wide farm landscape",
+    "cardImage": "/templates/agritech-growth/assets/agritech-farm-systems.png",
+    "cardImageAlt": "Farm advisor reviewing data in the field",
+    "cardTitle": "Agriculture consulting",
+    "cardText": "Smart, sustainable farming guidance tailored to your needs.",
+    "captionTitle": "Crop planning",
+    "captionText": "Field checks, forecasts and simple operating advice."
+  },
+  "feature": {
+    "eyebrow": "Features",
+    "title": "Driving global impact via sustainable agriculture",
+    "text": "Farmio turns field information into clear recommendations, helping growers improve yields while protecting soil and water.",
+    "image": "/templates/agritech-growth/assets/agritech-seedling-tech.png",
+    "imageAlt": "Hands holding a healthy seedling with soil",
+    "points": [
+      { "value": "60%", "label": "less time spent on manual field administration" },
+      { "value": "55%", "label": "more confident seasonal planning from weekly crop reports" }
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Sustainable Change, Global Impact",
+    "steps": [
+      { "step": "Step 01", "title": "Create your account and start farming smarter", "text": "Tell us your farm needs and we will set up the right tools for your team." },
+      { "step": "Step 02", "title": "Add farm data for personalised insight", "text": "Upload field notes, crop details and schedules to build a practical picture." },
+      { "step": "Step 03", "title": "Start optimising your farm for better yields", "text": "Receive clear actions, recommendations and support as the season develops." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Our gallery",
+    "title": "Inside our farming world",
+    "images": [
+      { "src": "/templates/agritech-growth/assets/agritech-hero-field.png", "alt": "Rows of crops in a field" },
+      { "src": "/templates/agritech-growth/assets/agritech-farm-systems.png", "alt": "Farmer reviewing farm data" },
+      { "src": "/templates/agritech-growth/assets/agritech-greenhouse.webp", "alt": "Greenhouse crop growing" },
+      { "src": "/templates/agritech-growth/assets/agritech-soil-check.webp", "alt": "Soil and planting work" },
+      { "src": "/templates/agritech-growth/assets/agritech-seedling-tech.png", "alt": "Seedling and soil close up" },
+      { "src": "/templates/agritech-growth/assets/agritech-hero-field.png", "alt": "Aerial farm field view" }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our team",
+    "title": "Our team members",
+    "members": [
+      { "name": "Sarah Wilson", "role": "Head of crop advice", "image": "/templates/agritech-growth/assets/agritech-seedling-tech.png", "alt": "Agriculture team member" },
+      { "name": "Michael Brown", "role": "Farm data specialist", "image": "/templates/agritech-growth/assets/agritech-farm-systems.png", "alt": "Farm data specialist" },
+      { "name": "John Carter", "role": "Field technology officer", "image": "/templates/agritech-growth/assets/agritech-greenhouse.webp", "alt": "Field technology officer" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What farmers say about Farmio",
+    "intro": "Real responses from farmers who trust Farmio to improve their farms and their results.",
+    "items": [
+      { "quote": "Since using Farmio, my crop planning has become easier and more accurate. I save time, reduce waste and get better yields.", "name": "Jason Miles", "role": "Arable grower, Norfolk", "image": "/templates/agritech-growth/assets/agritech-farm-systems.png", "alt": "Farmer in the field" },
+      { "quote": "Farmio helped me understand soil moisture and plan irrigation with much more confidence.", "name": "Amelia Price", "role": "Market garden owner", "image": "/templates/agritech-growth/assets/agritech-soil-check.webp", "alt": "Crop care and soil work" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQs",
+    "title": "Got questions? We've got answers",
+    "image": "/templates/agritech-growth/assets/agritech-hero-field.png",
+    "imageAlt": "Aerial field with farm tracks",
+    "items": [
+      { "question": "What is Farmio?", "answer": "Farmio is a digital agriculture platform providing smart farming solutions, crop monitoring and practical recommendations for growers." },
+      { "question": "Is Farmio available worldwide?", "answer": "We support UK farms first, with flexible tools that can be adapted for wider agricultural teams." },
+      { "question": "Does Farmio support sustainable farming?", "answer": "Yes. Our reports help reduce waste, protect soil health and use water and inputs more carefully." },
+      { "question": "How can I get started with Farmio?", "answer": "Contact our team, tell us about your farm and we will recommend a simple first setup." },
+      { "question": "What if I am not satisfied with the service?", "answer": "We keep support clear and responsive, and we will work with you to improve the setup." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to transform your farming with smart technology?",
+    "buttonLabel": "Get started",
+    "buttonHref": "#contact"
+  },
+  "footer": {
+    "text": "Transforming agriculture through smart, sustainable innovation.",
+    "quickLinks": ["About us", "Services", "Our solutions", "Our services"],
+    "services": ["Crop health", "Farm management", "Soil reports", "Consulting"],
+    "social": ["Instagram", "Facebook", "LinkedIn", "Threads"],
+    "legal": "© 2026 Farmio. All Rights Reserved"
+  }
+}

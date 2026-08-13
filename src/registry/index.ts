@@ -154,8 +154,22 @@ import alvionMedicalConfig from "../templates/alvion-medical/config.json";
 import alvionMedicalEditable from "../templates/alvion-medical/editable.json";
 import greenlyGardensConfig from "../templates/greenly-gardens/config.json";
 import greenlyGardensEditable from "../templates/greenly-gardens/editable.json";
+import agritechGrowthConfig from "../templates/agritech-growth/config.json";
+import agritechGrowthEditable from "../templates/agritech-growth/editable.json";
 import pipelineOsConfig from "../templates/pipeline-os/config.json";
 import pipelineOsEditable from "../templates/pipeline-os/editable.json";
+import fioraLocksConfig from "../templates/fiora-locks/config.json";
+import fioraLocksEditable from "../templates/fiora-locks/editable.json";
+import goddessBraidsSalonConfig from "../templates/goddess-braids-salon/config.json";
+import goddessBraidsSalonEditable from "../templates/goddess-braids-salon/editable.json";
+import littleRainbowNurseryConfig from "../templates/little-rainbow-nursery/config.json";
+import littleRainbowNurseryEditable from "../templates/little-rainbow-nursery/editable.json";
+import apexGrowthAgencyConfig from "../templates/apex-growth-agency/config.json";
+import apexGrowthAgencyEditable from "../templates/apex-growth-agency/editable.json";
+import valistAiStudioConfig from "../templates/valist-ai-studio/config.json";
+import valistAiStudioEditable from "../templates/valist-ai-studio/editable.json";
+import cleanhubLondonConfig from "../templates/cleanhub-london/config.json";
+import cleanhubLondonEditable from "../templates/cleanhub-london/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -252,7 +266,14 @@ const components = {
   "eductix-academy": dynamic<{ data: TemplateData }>(() => import("../templates/eductix-academy/template")),
   "alvion-medical": dynamic<{ data: TemplateData }>(() => import("../templates/alvion-medical/template")),
   "greenly-gardens": dynamic<{ data: TemplateData }>(() => import("../templates/greenly-gardens/template")),
+  "agritech-growth": dynamic<{ data: TemplateData }>(() => import("../templates/agritech-growth/template")),
   "pipeline-os": dynamic<{ data: TemplateData }>(() => import("../templates/pipeline-os/template")),
+  "fiora-locks": dynamic<{ data: TemplateData }>(() => import("../templates/fiora-locks/template")),
+  "goddess-braids-salon": dynamic<{ data: TemplateData }>(() => import("../templates/goddess-braids-salon/template")),
+  "little-rainbow-nursery": dynamic<{ data: TemplateData }>(() => import("../templates/little-rainbow-nursery/template")),
+  "apex-growth-agency": dynamic<{ data: TemplateData }>(() => import("../templates/apex-growth-agency/template")),
+  "valist-ai-studio": dynamic<{ data: TemplateData }>(() => import("../templates/valist-ai-studio/template")),
+  "cleanhub-london": dynamic<{ data: TemplateData }>(() => import("../templates/cleanhub-london/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -333,7 +354,14 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "eductix-academy": { config: eductixAcademyConfig, component: components["eductix-academy"], defaultData: normalizeData(eductixAcademyEditable) },
   "alvion-medical": { config: alvionMedicalConfig, component: components["alvion-medical"], defaultData: normalizeData(alvionMedicalEditable) },
   "greenly-gardens": { config: greenlyGardensConfig, component: components["greenly-gardens"], defaultData: normalizeData(greenlyGardensEditable) },
+  "agritech-growth": { config: agritechGrowthConfig, component: components["agritech-growth"], defaultData: normalizeData(agritechGrowthEditable) },
   "pipeline-os": { config: pipelineOsConfig, component: components["pipeline-os"], defaultData: normalizeData(pipelineOsEditable) },
+  "fiora-locks": { config: fioraLocksConfig, component: components["fiora-locks"], defaultData: normalizeData(fioraLocksEditable) },
+  "goddess-braids-salon": { config: goddessBraidsSalonConfig, component: components["goddess-braids-salon"], defaultData: normalizeData(goddessBraidsSalonEditable) },
+  "little-rainbow-nursery": { config: littleRainbowNurseryConfig, component: components["little-rainbow-nursery"], defaultData: normalizeData(littleRainbowNurseryEditable) },
+  "apex-growth-agency": { config: apexGrowthAgencyConfig, component: components["apex-growth-agency"], defaultData: normalizeData(apexGrowthAgencyEditable) },
+  "valist-ai-studio": { config: valistAiStudioConfig, component: components["valist-ai-studio"], defaultData: normalizeData(valistAiStudioEditable) },
+  "cleanhub-london": { config: cleanhubLondonConfig, component: components["cleanhub-london"], defaultData: normalizeData(cleanhubLondonEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

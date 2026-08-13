@@ -1,0 +1,918 @@
+[data-template-id="little-rainbow-nursery"] {
+  --lrn-radius: 28px;
+  background: var(--lrn-page);
+  color: var(--lrn-navy);
+  font-family: var(--lrn-body);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+[data-template-id="little-rainbow-nursery"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="little-rainbow-nursery"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="little-rainbow-nursery"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-safety {
+  align-items: center;
+  background: #f6fbff;
+  color: #65718f;
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 7px;
+  height: 29px;
+  justify-content: center;
+  letter-spacing: 0.01em;
+  padding: 0 20px;
+  text-align: center;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-safety p {
+  margin: 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-safety a {
+  border-bottom: 1px solid currentColor;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-header {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1488px;
+  padding: 18px 24px 12px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-brand {
+  flex: 0 0 auto;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-brand-mark {
+  align-items: center;
+  display: inline-flex;
+  gap: 11px;
+  line-height: 1;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-brand-mark strong {
+  display: block;
+  font-family: var(--lrn-heading);
+  font-size: 18px;
+  line-height: 0.95;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-brand-mark small {
+  color: var(--lrn-navy);
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rainbow {
+  display: block;
+  height: 48px;
+  position: relative;
+  width: 56px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rainbow i {
+  border: 8px solid transparent;
+  border-radius: 60px 60px 0 0;
+  border-bottom: 0;
+  display: block;
+  position: absolute;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rainbow i:nth-child(1) {
+  border-color: var(--lrn-orange);
+  border-bottom: 0;
+  inset: 3px 0 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rainbow i:nth-child(2) {
+  border-color: var(--lrn-blue);
+  border-bottom: 0;
+  inset: 13px 10px 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rainbow i:nth-child(3) {
+  border-color: var(--lrn-sky);
+  border-bottom: 0;
+  inset: 23px 20px 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-nav {
+  align-items: center;
+  background: var(--lrn-peach);
+  border-radius: 999px;
+  display: flex;
+  gap: clamp(18px, 3vw, 54px);
+  min-height: 58px;
+  padding: 0 45px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-nav a {
+  color: var(--lrn-navy);
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero,
+[data-template-id="little-rainbow-nursery"] .lrn-rooms,
+[data-template-id="little-rainbow-nursery"] .lrn-approach,
+[data-template-id="little-rainbow-nursery"] .lrn-testimonials,
+[data-template-id="little-rainbow-nursery"] .lrn-gallery {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1488px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-panel {
+  align-items: end;
+  background: var(--lrn-paper);
+  border: 2px solid var(--lrn-line);
+  border-radius: var(--lrn-radius);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  min-height: 306px;
+  padding: 41px 37px 38px;
+  position: relative;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-panel p {
+  font-size: 13px;
+  font-weight: 800;
+  left: 37px;
+  margin: 0;
+  position: absolute;
+  top: 39px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-panel h1 {
+  font-family: var(--lrn-heading);
+  font-size: clamp(62px, 8.4vw, 116px);
+  letter-spacing: 0;
+  line-height: 0.88;
+  margin: 38px 0 0;
+  max-width: 950px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-panel strong {
+  color: var(--lrn-navy);
+  font-family: var(--lrn-heading);
+  font-size: clamp(25px, 2.2vw, 39px);
+  line-height: 1;
+  margin: 0 0 30px;
+  white-space: nowrap;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-panel strong::after {
+  color: var(--lrn-orange);
+  content: " Grow.";
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 10px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-image,
+[data-template-id="little-rainbow-nursery"] .lrn-welcome-card,
+[data-template-id="little-rainbow-nursery"] .lrn-approach > img,
+[data-template-id="little-rainbow-nursery"] .lrn-approach-card,
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item img {
+  border-radius: var(--lrn-radius);
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-hero-image {
+  aspect-ratio: 1.73 / 1;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-welcome-card {
+  background: var(--lrn-peach);
+  min-height: 382px;
+  overflow: hidden;
+  padding: 47px 56px;
+  position: relative;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-welcome-card p {
+  color: var(--lrn-navy);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 300px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-star,
+[data-template-id="little-rainbow-nursery"] .lrn-starfish,
+[data-template-id="little-rainbow-nursery"] .lrn-planet,
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow {
+  display: block;
+  position: absolute;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-star {
+  background: var(--lrn-blue);
+  clip-path: polygon(50% 0, 61% 35%, 96% 24%, 73% 53%, 98% 79%, 62% 71%, 49% 100%, 36% 69%, 2% 80%, 26% 53%, 3% 26%, 38% 35%);
+  height: 74px;
+  right: 108px;
+  top: 163px;
+  transform: rotate(13deg);
+  width: 82px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-star::before,
+[data-template-id="little-rainbow-nursery"] .lrn-star::after {
+  background: var(--lrn-orange);
+  content: "";
+  height: 5px;
+  position: absolute;
+  right: -80px;
+  top: 35px;
+  transform: rotate(23deg);
+  width: 58px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-star::after {
+  top: 62px;
+  transform: rotate(46deg);
+  width: 47px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rooms {
+  padding-bottom: 120px;
+  padding-top: 132px;
+  text-align: center;
+}
+
+[data-template-id="little-rainbow-nursery"] h2 {
+  font-family: var(--lrn-heading);
+  font-size: clamp(42px, 4.2vw, 61px);
+  line-height: 0.95;
+  margin: 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-grid {
+  display: grid;
+  gap: 46px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 96px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-grid article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon {
+  display: block;
+  height: 60px;
+  margin-bottom: 31px;
+  position: relative;
+  width: 82px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon i {
+  position: absolute;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-deer i:nth-child(1) {
+  background: var(--lrn-orange);
+  clip-path: polygon(15% 53%, 48% 34%, 84% 52%, 64% 88%, 25% 82%);
+  height: 44px;
+  left: 11px;
+  top: 12px;
+  width: 49px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-deer i:nth-child(2) {
+  background: var(--lrn-orange);
+  border-radius: 50%;
+  height: 19px;
+  right: 6px;
+  top: 5px;
+  width: 20px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-deer i:nth-child(3) {
+  background: var(--lrn-orange);
+  height: 34px;
+  left: 29px;
+  top: 31px;
+  transform: rotate(35deg);
+  width: 7px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-bird i:nth-child(1) {
+  background: #b9cdf8;
+  border-radius: 58% 42% 56% 44%;
+  height: 42px;
+  left: 12px;
+  top: 13px;
+  transform: rotate(-8deg);
+  width: 58px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-bird i:nth-child(2) {
+  border-bottom: 9px solid transparent;
+  border-left: 13px solid var(--lrn-orange);
+  border-top: 9px solid transparent;
+  right: 4px;
+  top: 17px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-bird i:nth-child(3) {
+  background: var(--lrn-navy);
+  border-radius: 50%;
+  height: 6px;
+  left: 44px;
+  top: 25px;
+  width: 6px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-whale i:nth-child(1) {
+  background: var(--lrn-peach);
+  border-radius: 60% 45% 48% 60%;
+  height: 50px;
+  left: 7px;
+  top: 5px;
+  width: 72px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-whale i:nth-child(2) {
+  background: var(--lrn-peach);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  height: 35px;
+  left: 0;
+  top: 15px;
+  width: 28px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-whale i:nth-child(3) {
+  background: var(--lrn-blue);
+  border-radius: 50%;
+  height: 7px;
+  right: 21px;
+  top: 24px;
+  width: 7px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-icon-hedgehog i:nth-child(1) {
+  background: var(--lrn-blue);
+  clip-path: polygon(0 78%, 17% 22%, 26% 55%, 35% 12%, 44% 56%, 56% 6%, 62% 58%, 75% 25%, 76% 70%, 100% 43%, 86% 89%, 38% 91%);
+  height: 57px;
+  left: 5px;
+  top: 2px;
+  width: 74px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-grid h3 {
+  font-family: var(--lrn-heading);
+  font-size: 31px;
+  line-height: 1;
+  margin: 0 0 16px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-room-grid p {
+  color: var(--lrn-muted);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.17;
+  margin: 0 auto;
+  max-width: 260px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-pill-button {
+  align-items: center;
+  background: var(--lrn-navy);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 49px;
+  min-width: 334px;
+  padding: 0 34px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-rooms .lrn-pill-button {
+  margin-top: 101px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-approach {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 100px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-approach > img {
+  aspect-ratio: 1.37 / 1;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-approach-card {
+  align-items: center;
+  background: var(--lrn-peach);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 596px;
+  overflow: hidden;
+  padding: 72px 88px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-approach-card h2 {
+  margin-bottom: 62px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-approach-card p {
+  color: var(--lrn-navy);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 auto 49px;
+  max-width: 430px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-starfish {
+  background: var(--lrn-orange);
+  clip-path: polygon(50% 0, 60% 37%, 100% 27%, 67% 52%, 86% 92%, 50% 68%, 14% 92%, 33% 52%, 0 27%, 40% 37%);
+  height: 68px;
+  left: 75px;
+  top: 77px;
+  transform: rotate(12deg);
+  width: 68px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-starfish-small {
+  background: transparent;
+  border: 7px solid var(--lrn-navy);
+  height: 50px;
+  left: 72px;
+  top: 170px;
+  width: 50px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonials {
+  padding-bottom: 99px;
+  padding-top: 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonial-banner {
+  align-items: center;
+  background: var(--lrn-paper);
+  border: 2px solid var(--lrn-line);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 296px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonial-banner h2 {
+  position: relative;
+  z-index: 2;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-planet {
+  background: var(--lrn-orange);
+  border-radius: 50%;
+  height: 91px;
+  left: 280px;
+  top: 52px;
+  width: 91px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-planet::before {
+  border: 5px solid var(--lrn-blue);
+  border-left-color: transparent;
+  border-radius: 50%;
+  content: "";
+  height: 34px;
+  left: -22px;
+  position: absolute;
+  top: 24px;
+  transform: rotate(-15deg);
+  width: 132px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow {
+  border: 13px solid var(--lrn-blue);
+  border-bottom: 0;
+  border-radius: 90px 90px 0 0;
+  height: 88px;
+  right: -6px;
+  top: 20px;
+  width: 154px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow::before,
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow::after {
+  border: 13px solid;
+  border-bottom: 0;
+  border-radius: 90px 90px 0 0;
+  content: "";
+  position: absolute;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow::before {
+  border-color: var(--lrn-orange);
+  height: 59px;
+  inset: 13px 13px auto;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-corner-rainbow::after {
+  border-color: var(--lrn-navy);
+  height: 31px;
+  inset: 27px 38px auto;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid {
+  display: grid;
+  gap: 90px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 102px auto 0;
+  max-width: 1250px;
+  text-align: center;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid p {
+  color: var(--lrn-navy);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.18;
+  margin: 0 auto 41px;
+  max-width: 280px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid strong {
+  font-family: var(--lrn-heading);
+  font-size: 16px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 214px);
+  padding-bottom: 133px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item {
+  margin: 0;
+  min-height: 0;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-3 {
+  grid-column: 5 / 7;
+  grid-row: 1 / 2;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-4 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-5 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-gallery-item-6 {
+  grid-column: 5 / 7;
+  grid-row: 2 / 4;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-footer {
+  background: var(--lrn-footer);
+  min-height: 330px;
+  padding: 0 24px 38px;
+  position: relative;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-clouds {
+  height: 92px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -91px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-clouds::before {
+  background:
+    radial-gradient(circle at 12.5% 100%, transparent 0 79px, var(--lrn-footer) 80px 179px, transparent 180px),
+    radial-gradient(circle at 37.5% 100%, transparent 0 79px, var(--lrn-footer) 80px 179px, transparent 180px),
+    radial-gradient(circle at 62.5% 100%, transparent 0 79px, var(--lrn-footer) 80px 179px, transparent 180px),
+    radial-gradient(circle at 87.5% 100%, transparent 0 79px, var(--lrn-footer) 80px 179px, transparent 180px);
+  content: "";
+  display: block;
+  height: 180px;
+  transform: translateY(-1px);
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-footer-main {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  margin: 0 auto;
+  max-width: 1488px;
+  padding-top: 94px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-socials {
+  display: flex;
+  gap: 15px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-socials a {
+  align-items: center;
+  background: var(--lrn-navy);
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  height: 31px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 31px;
+  text-transform: uppercase;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-self: end;
+  text-align: right;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-footer-links a {
+  color: var(--lrn-navy);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-contact-line {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-style: normal;
+  gap: 18px 36px;
+  justify-content: center;
+  margin: 75px auto 0;
+  max-width: 1000px;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-contact-line a,
+[data-template-id="little-rainbow-nursery"] .lrn-contact-line span,
+[data-template-id="little-rainbow-nursery"] .lrn-legal {
+  color: var(--lrn-navy);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+[data-template-id="little-rainbow-nursery"] .lrn-legal {
+  margin: 42px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  [data-template-id="little-rainbow-nursery"] .lrn-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-nav {
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel strong {
+    margin-top: 28px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-grid,
+  [data-template-id="little-rainbow-nursery"] .lrn-approach {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid {
+    gap: 44px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery {
+    grid-template-rows: repeat(4, 210px);
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-1,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-2,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-3,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-4,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-5,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item-6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  [data-template-id="little-rainbow-nursery"] {
+    --lrn-radius: 20px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-safety {
+    height: auto;
+    min-height: 36px;
+    padding: 8px 14px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-header,
+  [data-template-id="little-rainbow-nursery"] .lrn-hero,
+  [data-template-id="little-rainbow-nursery"] .lrn-rooms,
+  [data-template-id="little-rainbow-nursery"] .lrn-approach,
+  [data-template-id="little-rainbow-nursery"] .lrn-testimonials,
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-nav {
+    border-radius: 22px;
+    flex-wrap: wrap;
+    gap: 14px 20px;
+    min-height: auto;
+    padding: 14px 18px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-nav a {
+    font-size: 12px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel {
+    min-height: auto;
+    padding: 64px 22px 28px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel p {
+    left: 22px;
+    top: 28px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel h1 {
+    font-size: clamp(43px, 15vw, 70px);
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-hero-panel strong {
+    font-size: 24px;
+    white-space: normal;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-welcome-card {
+    min-height: 250px;
+    padding: 32px 28px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-star {
+    right: 68px;
+    top: 126px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-rooms {
+    padding-bottom: 76px;
+    padding-top: 80px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-room-grid,
+  [data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid {
+    grid-template-columns: 1fr;
+    margin-top: 54px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-rooms .lrn-pill-button {
+    margin-top: 60px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-pill-button {
+    min-width: 0;
+    width: 100%;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-approach {
+    padding-bottom: 72px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-approach-card {
+    min-height: 430px;
+    padding: 82px 28px 48px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-approach-card h2 {
+    margin-bottom: 32px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-starfish {
+    left: 28px;
+    top: 26px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-starfish-small {
+    display: none;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-testimonial-banner {
+    min-height: 220px;
+    padding: 40px 20px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-planet {
+    left: 28px;
+    top: 28px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-testimonial-grid {
+    gap: 36px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-gallery-item img {
+    aspect-ratio: 1.35 / 1;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-footer-main {
+    gap: 38px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  [data-template-id="little-rainbow-nursery"] .lrn-footer-links {
+    justify-self: center;
+    text-align: center;
+  }
+}

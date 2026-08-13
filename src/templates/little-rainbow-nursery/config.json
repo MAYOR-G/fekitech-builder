@@ -1,0 +1,9 @@
+{
+  "id": "little-rainbow-nursery",
+  "name": "Little Rainbow Nursery",
+  "category": "Education",
+  "image": "/templates/little-rainbow-nursery.webp",
+  "previewImages": [
+    "/templates/little-rainbow-nursery.webp"
+  ]
+}
