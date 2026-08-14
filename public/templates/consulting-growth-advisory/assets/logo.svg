@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="34" viewBox="0 0 176 34" role="img" aria-labelledby="title">
+  <title id="title">Consulting</title>
+  <rect width="34" height="34" rx="17" fill="#1374cf"/>
+  <path d="M11 22.5 17 11l6 11.5h-4.4L17 18.8l-1.6 3.7H11Z" fill="#fff"/>
+  <text x="45" y="22" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">consulting</text>
+</svg>

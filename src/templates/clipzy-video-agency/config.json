@@ -1,0 +1,16 @@
+{
+  "id": "clipzy-video-agency",
+  "name": "Clipzy Video Agency",
+  "description": "A clean short-form video agency template with a centred hero, social platform focus, vertical work cards, creator proof, pricing, FAQ, and a dark closing CTA.",
+  "category": "Business",
+  "image": "/templates/clipzy-video-agency.webp",
+  "previewImages": [
+    "/templates/clipzy-video-agency.webp"
+  ],
+  "features": [
+    "Editable agency identity, logo, navigation, copy, images, buttons, links, services, pricing, testimonials, FAQs, and footer content",
+    "Scoped cream, charcoal, and orange visual system",
+    "Responsive landing page for desktop, tablet, and mobile",
+    "Safe local interactions for mobile navigation and FAQ accordions"
+  ]
+}

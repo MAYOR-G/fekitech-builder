@@ -1,0 +1,880 @@
+[data-template-id="consulting-growth-advisory"] {
+  min-height: 100%;
+  background: var(--cga-white);
+  color: var(--cga-text);
+  font-family: var(--cga-body);
+}
+
+[data-template-id="consulting-growth-advisory"] *,
+[data-template-id="consulting-growth-advisory"] *::before,
+[data-template-id="consulting-growth-advisory"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="consulting-growth-advisory"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="consulting-growth-advisory"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="consulting-growth-advisory"] h1,
+[data-template-id="consulting-growth-advisory"] h2,
+[data-template-id="consulting-growth-advisory"] h3,
+[data-template-id="consulting-growth-advisory"] p {
+  margin: 0;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(10, 15, 22, 0.82), rgba(10, 15, 22, 0.42) 48%, rgba(10, 15, 22, 0.2)),
+    linear-gradient(180deg, rgba(10, 15, 22, 0.54), rgba(10, 15, 22, 0.26));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-header {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+  height: 78px;
+  padding: 0 clamp(20px, 6vw, 86px);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-logo img {
+  width: 142px;
+  height: auto;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-header nav a:hover {
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-outline,
+[data-template-id="consulting-growth-advisory"] .cga-ghost,
+[data-template-id="consulting-growth-advisory"] .cga-button,
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta a,
+[data-template-id="consulting-growth-advisory"] .cga-story a,
+[data-template-id="consulting-growth-advisory"] .cga-process a,
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-outline,
+[data-template-id="consulting-growth-advisory"] .cga-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-button {
+  border: 1px solid var(--cga-blue);
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-outline:hover,
+[data-template-id="consulting-growth-advisory"] .cga-ghost:hover,
+[data-template-id="consulting-growth-advisory"] .cga-button:hover,
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta a:hover,
+[data-template-id="consulting-growth-advisory"] .cga-story a:hover,
+[data-template-id="consulting-growth-advisory"] .cga-process a:hover,
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta a:hover {
+  transform: translateY(-2px);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  min-height: 500px;
+  width: min(560px, calc(100% - 40px));
+  margin-left: clamp(20px, 6vw, 86px);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero h1 {
+  max-width: 510px;
+  font-family: var(--cga-heading);
+  font-size: clamp(48px, 6vw, 86px);
+  font-weight: 750;
+  letter-spacing: 0;
+  line-height: 1.04;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero-content p {
+  max-width: 500px;
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero-badges {
+  position: absolute;
+  z-index: 3;
+  bottom: 28px;
+  left: clamp(20px, 6vw, 86px);
+  display: flex;
+  gap: 10px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-hero-badges span {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-logo-strip {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px max(20px, calc((100vw - 1180px) / 2));
+  border-bottom: 1px solid var(--cga-line);
+  overflow: hidden;
+  color: #a5afbb;
+  font-size: 13px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-services,
+[data-template-id="consulting-growth-advisory"] .cga-approach,
+[data-template-id="consulting-growth-advisory"] .cga-value,
+[data-template-id="consulting-growth-advisory"] .cga-commitment,
+[data-template-id="consulting-growth-advisory"] .cga-blog {
+  padding: clamp(80px, 10vw, 128px) max(20px, calc((100vw - 1180px) / 2));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--cga-blue);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-label::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: var(--cga-blue);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-section-head {
+  display: grid;
+  justify-items: center;
+  max-width: 720px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-split-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  gap: 70px;
+  align-items: end;
+  max-width: none;
+  margin-bottom: 46px;
+  text-align: left;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-section-head h2,
+[data-template-id="consulting-growth-advisory"] .cga-split-head h2,
+[data-template-id="consulting-growth-advisory"] .cga-approach h2,
+[data-template-id="consulting-growth-advisory"] .cga-value h2,
+[data-template-id="consulting-growth-advisory"] .cga-process h2,
+[data-template-id="consulting-growth-advisory"] .cga-commitment h2,
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta h2 {
+  color: var(--cga-text);
+  font-family: var(--cga-heading);
+  font-size: clamp(36px, 4.4vw, 58px);
+  font-weight: 720;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-section-head p,
+[data-template-id="consulting-growth-advisory"] .cga-split-head p,
+[data-template-id="consulting-growth-advisory"] .cga-approach p,
+[data-template-id="consulting-growth-advisory"] .cga-value p,
+[data-template-id="consulting-growth-advisory"] .cga-process p,
+[data-template-id="consulting-growth-advisory"] .cga-commitment p {
+  color: var(--cga-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 18px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid article {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--cga-dark);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid article.is-large {
+  grid-row: span 2;
+  min-height: 520px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.84;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid article::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.66));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid article > div {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid h3 {
+  font-size: 18px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-service-grid article span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta,
+[data-template-id="consulting-growth-advisory"] .cga-process,
+[data-template-id="consulting-growth-advisory"] .cga-footer {
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 56px max(20px, calc((100vw - 1180px) / 2));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta h2 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blue-cta a,
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta a {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-approach,
+[data-template-id="consulting-growth-advisory"] .cga-commitment {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  gap: clamp(42px, 7vw, 92px);
+  align-items: center;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-photo-stat,
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo {
+  position: relative;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-photo-stat > img,
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo > img {
+  width: 100%;
+  aspect-ratio: 1.12;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart {
+  position: absolute;
+  right: -18px;
+  bottom: 26px;
+  left: 48px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 7px;
+  align-items: end;
+  padding: 18px;
+  border-radius: 10px;
+  background: var(--cga-white);
+  box-shadow: 0 18px 50px rgba(26, 39, 54, 0.16);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart span,
+[data-template-id="consulting-growth-advisory"] .cga-chart strong {
+  grid-column: 1 / -1;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart span {
+  color: var(--cga-text);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart strong {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: var(--cga-blue);
+  font-size: 13px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart i {
+  display: block;
+  min-height: 32px;
+  border-radius: 3px 3px 0 0;
+  background: var(--cga-blue);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(4) { height: 42px; }
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(5) { height: 58px; }
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(6) { height: 48px; }
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(7) { height: 64px; }
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(8) { height: 74px; }
+[data-template-id="consulting-growth-advisory"] .cga-chart i:nth-child(9) { height: 84px; }
+
+[data-template-id="consulting-growth-advisory"] .cga-approach ul {
+  display: grid;
+  gap: 13px;
+  padding: 0;
+  margin: 26px 0 0;
+  list-style: none;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-approach li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--cga-text);
+  font-weight: 700;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-approach li svg {
+  flex: 0 0 auto;
+  padding: 3px;
+  border-radius: 4px;
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story {
+  position: relative;
+  display: grid;
+  align-content: end;
+  min-height: 520px;
+  padding: 0 max(20px, calc((100vw - 1180px) / 2)) 62px;
+  overflow: hidden;
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story img,
+[data-template-id="consulting-growth-advisory"] .cga-story > div {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story img {
+  object-fit: cover;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story > div {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.62));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story h2,
+[data-template-id="consulting-growth-advisory"] .cga-story a {
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story h2 {
+  max-width: 620px;
+  font-size: clamp(34px, 4.6vw, 58px);
+  font-weight: 650;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-story a {
+  position: absolute;
+  right: max(20px, calc((100vw - 1180px) / 2));
+  bottom: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-value-grid article {
+  padding: 28px;
+  border-top: 1px solid var(--cga-line);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-value-grid article > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 6px;
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-value-grid h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-value-grid a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--cga-blue);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process {
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  gap: 48px;
+  padding: clamp(78px, 10vw, 118px) max(20px, calc((100vw - 1180px) / 2));
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process h2,
+[data-template-id="consulting-growth-advisory"] .cga-process p {
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process p {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process a {
+  margin-top: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process-grid article {
+  min-height: 210px;
+  padding: 32px;
+  border-radius: 6px;
+  background: rgba(5, 58, 112, 0.22);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process-grid strong {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--cga-white);
+  font-size: 30px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process-grid h3 {
+  margin-bottom: 12px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-process-grid p {
+  font-size: 13px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo > div {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo article {
+  padding: 24px;
+  border-radius: 10px;
+  background: var(--cga-white);
+  box-shadow: 0 12px 34px rgba(26, 39, 54, 0.15);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo article:first-child {
+  background: var(--cga-blue);
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo strong {
+  display: block;
+  font-size: 42px;
+  line-height: 1;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-commit-photo span {
+  display: block;
+  margin-top: 12px;
+  color: inherit;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonials {
+  padding: clamp(80px, 10vw, 122px) max(20px, calc((100vw - 1180px) / 2));
+  background: var(--cga-soft);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 48px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row article {
+  padding: 24px;
+  border-radius: 6px;
+  background: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row article > div {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 20px;
+  color: #f7ad21;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row p {
+  min-height: 100px;
+  color: var(--cga-muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row strong,
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row span {
+  display: block;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row strong {
+  margin-top: 18px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-testimonial-row span {
+  margin-top: 4px;
+  color: var(--cga-muted);
+  font-size: 12px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid article {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--cga-dark);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  opacity: 0.88;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid div {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--cga-blue);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-blog-grid h3 {
+  max-width: 330px;
+  font-size: 21px;
+  line-height: 1.18;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer {
+  padding: 68px max(20px, calc((100vw - 1180px) / 2)) 28px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 58px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer-cta h2 {
+  color: var(--cga-white);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 0.8fr);
+  gap: 50px;
+  padding-top: 52px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer img {
+  width: 142px;
+  margin-bottom: 22px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer p,
+[data-template-id="consulting-growth-advisory"] .cga-footer a,
+[data-template-id="consulting-growth-advisory"] .cga-footer small {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer h3 {
+  margin: 0 0 16px;
+  color: var(--cga-white);
+  font-size: 14px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer a {
+  margin-bottom: 9px;
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+[data-template-id="consulting-growth-advisory"] .cga-footer-bottom nav {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 980px) {
+  [data-template-id="consulting-growth-advisory"] .cga-header {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-menu {
+    display: grid;
+    order: 3;
+    justify-self: end;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-header nav {
+    position: absolute;
+    top: 68px;
+    right: 20px;
+    display: none;
+    min-width: 220px;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--cga-dark);
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-header nav.is-open {
+    display: grid;
+    gap: 12px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-outline {
+    justify-self: start;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-split-head,
+  [data-template-id="consulting-growth-advisory"] .cga-service-grid,
+  [data-template-id="consulting-growth-advisory"] .cga-approach,
+  [data-template-id="consulting-growth-advisory"] .cga-process,
+  [data-template-id="consulting-growth-advisory"] .cga-commitment,
+  [data-template-id="consulting-growth-advisory"] .cga-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-service-grid article.is-large {
+    min-height: 360px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-value-grid,
+  [data-template-id="consulting-growth-advisory"] .cga-blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-testimonial-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="consulting-growth-advisory"] .cga-hero {
+    min-height: 650px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-header {
+    padding-inline: 16px;
+    gap: 10px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-logo img {
+    width: 122px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-hero-content {
+    min-height: 468px;
+    margin-inline: 20px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-hero h1 {
+    font-size: clamp(42px, 13vw, 56px);
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-logo-strip {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-blue-cta,
+  [data-template-id="consulting-growth-advisory"] .cga-footer-cta,
+  [data-template-id="consulting-growth-advisory"] .cga-footer-bottom {
+    display: grid;
+    justify-items: start;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-process-grid,
+  [data-template-id="consulting-growth-advisory"] .cga-testimonial-row,
+  [data-template-id="consulting-growth-advisory"] .cga-commit-photo > div {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-chart {
+    right: 16px;
+    left: 16px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-story {
+    min-height: 430px;
+  }
+
+  [data-template-id="consulting-growth-advisory"] .cga-story a {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: max-content;
+    margin-top: 20px;
+  }
+}

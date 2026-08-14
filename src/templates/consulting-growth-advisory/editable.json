@@ -1,0 +1,164 @@
+{
+  "brand": {
+    "name": "Consulting",
+    "logo": "/templates/consulting-growth-advisory/assets/logo.svg",
+    "logoAlt": "Consulting advisory logo",
+    "email": "hello@consultingadvisory.co.uk",
+    "emailHref": "mailto:hello@consultingadvisory.co.uk",
+    "phone": "020 7946 0184",
+    "address": "18 Bishopsgate, London"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Blog", "href": "#blog" }
+    ],
+    "ctaLabel": "Contact",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "title": "Grow your business faster",
+    "subtitle": "With clear strategy, practical delivery and hands-on guidance for ambitious UK teams.",
+    "primary": { "label": "Discover Our Services", "href": "#services" },
+    "secondary": { "label": "Contact Page", "href": "#contact" },
+    "image": "/templates/consulting-growth-advisory/assets/hero-consultant-office.webp",
+    "imageAlt": "Consultant standing in a modern office",
+    "badges": ["Scale with focus", "Built to move like templates"]
+  },
+  "logos": ["Horizon", "Growly", "Hexagon", "Cloudfox", "StartUp", "Hylton", "Granite", "Hexford"],
+  "services": {
+    "label": "Our services",
+    "title": "We offer a wide range of services",
+    "body": "By combining industry knowledge with practical tools and clear methodology, we develop strategies that drive measurable results.",
+    "items": [
+      { "title": "Market research", "image": "/templates/consulting-growth-advisory/assets/market-research-laptop.webp", "imageAlt": "Consultant reviewing market research on a laptop" },
+      { "title": "Strategic planning", "image": "/templates/consulting-growth-advisory/assets/strategy-planning-board.webp", "imageAlt": "Consultants planning strategy on a glass board" },
+      { "title": "Financial advisory", "image": "/templates/consulting-growth-advisory/assets/financial-advisory-meeting.webp", "imageAlt": "Consultants discussing financial charts" }
+    ]
+  },
+  "blueCta": {
+    "title": "Need customised services?",
+    "button": { "label": "Request a personalised service", "href": "#contact" }
+  },
+  "approach": {
+    "label": "Our approach",
+    "title": "Innovative approach to consulting",
+    "body": "We combine industry knowledge with practical tools and clear methodology, so strategies become action quickly.",
+    "image": "/templates/consulting-growth-advisory/assets/financial-advisory-meeting.webp",
+    "imageAlt": "Two consultants discussing business charts",
+    "chartLabel": "Sales this month",
+    "chartValue": "+30%",
+    "points": [
+      "We believe in fostering long-term partnerships",
+      "We develop actionable plans to achieve your goals"
+    ]
+  },
+  "story": {
+    "title": "Our journey began 20 years ago",
+    "button": { "label": "Read our story", "href": "#about" },
+    "image": "/templates/consulting-growth-advisory/assets/founder-story-banner.webp",
+    "imageAlt": "Founder reading before a strategy day"
+  },
+  "value": {
+    "label": "Why choose us",
+    "title": "We strive to deliver value to our clients",
+    "body": "We are dedicated to providing the highest level of service, delivering innovative solutions and measurable impact.",
+    "items": [
+      { "title": "Proven track record", "body": "We have helped confident businesses overcome challenges.", "linkLabel": "Our track record" },
+      { "title": "Collaborative approach", "body": "We ensure transparency throughout the process.", "linkLabel": "Our process" },
+      { "title": "Innovative solutions", "body": "We leverage the best technologies to deliver solutions.", "linkLabel": "Our solutions" }
+    ]
+  },
+  "process": {
+    "title": "Our process",
+    "body": "We developed an innovative and flexible process that allows us to understand your business better.",
+    "button": { "label": "Learn more", "href": "#contact" },
+    "items": [
+      { "number": "01.", "title": "Discovery", "body": "The first step is to gain a deep understanding of your business." },
+      { "number": "02.", "title": "Development", "body": "We work with you to develop a strategy that fits your objectives." },
+      { "number": "03.", "title": "Implementation", "body": "We roll out clearly with your team to implement the changes." },
+      { "number": "04.", "title": "Monitoring", "body": "We track performance indicators and gather feedback." }
+    ]
+  },
+  "commitment": {
+    "label": "Our commitment",
+    "title": "We build solutions to drive results",
+    "body": "With our proven track record, collaborative approach and commitment to excellence, we are uniquely positioned to help you overcome challenges.",
+    "button": { "label": "Request an audit", "href": "#contact" },
+    "image": "/templates/consulting-growth-advisory/assets/commitment-suit-cuffs.webp",
+    "imageAlt": "Consultant preparing for a client presentation",
+    "stats": [
+      { "value": "30%", "label": "Growth measured" },
+      { "value": "25%", "label": "Cost savings" }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Trusted by 10k+ customers",
+    "body": "Whether you are a small start-up or a multinational corporation, we can be your trusted advisor on the path to success.",
+    "items": [
+      { "quote": "The collaborative approach and practical roadmap gave us the clarity to move with confidence.", "name": "Priya Johnson", "role": "Retail founder" },
+      { "quote": "Their impact on our growth work was clear from the first workshop.", "name": "Oliver Hart", "role": "Finance director" },
+      { "quote": "The team helped us prioritise what mattered and deliver results quickly.", "name": "Dawn Fletcher", "role": "Operations lead" },
+      { "quote": "A calm, structured partner for a complex business transformation.", "name": "Alex Perry", "role": "Managing director" }
+    ]
+  },
+  "blog": {
+    "label": "Our blog",
+    "title": "Explore insights and stay ahead",
+    "body": "Our blog features insights from our team of consultants, who share their best practices on a wide range of topics.",
+    "items": [
+      { "date": "Jan 8, 2026", "title": "The power of strategic planning as a roadmap to success", "image": "/templates/consulting-growth-advisory/assets/office-blog-planning.webp", "imageAlt": "Modern office meeting room" },
+      { "date": "Feb 15, 2026", "title": "The importance of good leadership in a growing business", "image": "/templates/consulting-growth-advisory/assets/financial-advisory-meeting.webp", "imageAlt": "Consultants discussing charts" },
+      { "date": "Feb 18, 2026", "title": "Unlocking growth strategies for scaling your business", "image": "/templates/consulting-growth-advisory/assets/strategy-planning-board.webp", "imageAlt": "Strategy planning meeting" }
+    ]
+  },
+  "footerCta": {
+    "title": "Ready to transform your business?",
+    "button": { "label": "Get started", "href": "#contact" }
+  },
+  "footer": {
+    "tagline": "Industry-leading consulting firm with innovative solutions.",
+    "companyTitle": "Company",
+    "companyLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Services", "href": "#services" }
+    ],
+    "pagesTitle": "Pages",
+    "pageLinks": [
+      { "label": "Blog", "href": "#blog" },
+      { "label": "Contact", "href": "#contact" },
+      { "label": "404", "href": "#home" }
+    ],
+    "servicesTitle": "Services",
+    "serviceLinks": [
+      { "label": "Market research", "href": "#services" },
+      { "label": "Strategic planning", "href": "#services" },
+      { "label": "Financial advisory", "href": "#services" }
+    ],
+    "socialLinks": [
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "X", "href": "https://x.com/" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/" },
+      { "label": "Instagram", "href": "https://instagram.com/" }
+    ],
+    "copyright": "FekiTech 2026. All Rights Reserved"
+  },
+  "colors": {
+    "blue": "#1374cf",
+    "blueDark": "#0d61b1",
+    "text": "#17202a",
+    "muted": "#667384",
+    "line": "#e6eaf0",
+    "soft": "#f5f7fa",
+    "white": "#ffffff",
+    "dark": "#111821"
+  },
+  "typography": {
+    "headingFont": "Arial, Helvetica, sans-serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  }
+}

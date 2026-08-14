@@ -1,0 +1,1249 @@
+[data-template-id="clipzy-video-agency"] {
+  min-height: 100%;
+  overflow-x: hidden;
+  background: var(--cva-page);
+  color: var(--cva-body);
+  font-family: var(--cva-body-font);
+}
+
+[data-template-id="clipzy-video-agency"] *,
+[data-template-id="clipzy-video-agency"] *::before,
+[data-template-id="clipzy-video-agency"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="clipzy-video-agency"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="clipzy-video-agency"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-header {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  width: min(1030px, calc(100% - 32px));
+  min-height: 58px;
+  margin: 16px auto 0;
+  padding: 10px 10px 10px 18px;
+  border: 1px solid color-mix(in srgb, var(--cva-border) 70%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cva-surface) 92%, transparent);
+  box-shadow: 0 16px 45px rgba(38, 35, 29, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-brand img {
+  width: 92px;
+  height: auto;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-header nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(14px, 3vw, 34px);
+  color: var(--cva-heading);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-header nav a {
+  opacity: 0.74;
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-header nav a:hover {
+  color: var(--cva-accent);
+  opacity: 1;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-nav-cta,
+[data-template-id="clipzy-video-agency"] .cva-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-nav-cta {
+  min-height: 38px;
+  background: var(--cva-button);
+  color: var(--cva-button-text);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-button-dark {
+  background: var(--cva-button);
+  color: var(--cva-button-text);
+  box-shadow: 0 12px 28px rgba(35, 34, 31, 0.16);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-button-light {
+  border: 1px solid var(--cva-secondary-border);
+  background: var(--cva-secondary);
+  color: var(--cva-secondary-text);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-nav-cta:hover,
+[data-template-id="clipzy-video-agency"] .cva-button:hover {
+  transform: translateY(-2px);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-nav-cta:active,
+[data-template-id="clipzy-video-agency"] .cva-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-menu {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--cva-border);
+  border-radius: 999px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(1060px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(44px, 7vw, 74px) 0 clamp(58px, 8vw, 96px);
+  text-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit {
+  position: absolute;
+  inset: 70px 4% auto;
+  height: 430px;
+  pointer-events: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit i {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(40, 39, 37, 0.1);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit span {
+  position: absolute;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(40, 39, 37, 0.08);
+  border-radius: 999px;
+  background: var(--cva-surface);
+  color: var(--cva-accent);
+  box-shadow: 0 12px 26px rgba(38, 35, 29, 0.08);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit span:nth-child(1) {
+  left: 6%;
+  top: 31%;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit span:nth-child(2) {
+  left: 50%;
+  bottom: 8%;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orbit span:nth-child(3) {
+  right: 6%;
+  top: 39%;
+  color: var(--cva-heading);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-pill {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 16px;
+  padding: 7px 12px;
+  border: 1px solid rgba(27, 26, 24, 0.08);
+  border-radius: 999px;
+  background: var(--cva-surface);
+  color: color-mix(in srgb, var(--cva-heading) 78%, var(--cva-accent));
+  font-size: 12px;
+  font-weight: 750;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: 0;
+  color: var(--cva-heading);
+  font-family: var(--cva-heading-font);
+  font-size: clamp(48px, 9vw, 96px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.92;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero h1 span,
+[data-template-id="clipzy-video-agency"] .cva-hero h1 em {
+  display: block;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero h1 em,
+[data-template-id="clipzy-video-agency"] .cva-section-title h2 em,
+[data-template-id="clipzy-video-agency"] .cva-footer h2 em {
+  color: var(--cva-accent);
+  font-family: var(--cva-accent-font);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero > p:not(.cva-pill) {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+  margin: 18px 0 0;
+  color: var(--cva-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero-media {
+  position: relative;
+  z-index: 1;
+  width: min(640px, 100%);
+  margin-top: 92px;
+  border-radius: 16px;
+  background: var(--cva-surface);
+  box-shadow: 0 26px 70px rgba(36, 34, 30, 0.14);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-hero-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9.7;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-side-notes {
+  position: absolute;
+  right: -18px;
+  top: 320px;
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  width: 142px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-side-notes span {
+  padding: 8px 10px;
+  border: 1px solid var(--cva-border);
+  border-radius: 8px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+  font-size: 10px;
+  font-weight: 800;
+  box-shadow: 0 16px 30px rgba(36, 34, 30, 0.08);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-side-notes span:nth-child(2) {
+  background: #3268ff;
+  color: #fff;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-side-notes span:nth-child(3) {
+  background: #fff;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-logos {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 12px 0 84px;
+  text-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-logos p {
+  margin: 0 0 22px;
+  color: var(--cva-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-logos div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(18px, 5vw, 52px);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-logos span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cva-heading);
+  font-size: 17px;
+  font-weight: 900;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-logos i {
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--cva-accent);
+  border-radius: 5px;
+  transform: rotate(-12deg);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0 94px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 54px;
+  left: 33.333%;
+  width: 1px;
+  background: var(--cva-border);
+  box-shadow: 293px 0 0 var(--cva-border);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps article {
+  position: relative;
+  display: flex;
+  min-height: 470px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 36px 30px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps article:nth-child(2) {
+  padding-top: 180px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps article:nth-child(3) {
+  padding-top: 74px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps article > span {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  margin-bottom: 18px;
+  border: 1px solid var(--cva-border);
+  border-radius: 999px;
+  background: var(--cva-surface);
+  color: var(--cva-accent);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps h2 {
+  margin: 0;
+  color: var(--cva-heading);
+  font-size: clamp(21px, 2.2vw, 31px);
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps p {
+  margin: 16px 0 22px;
+  color: var(--cva-body);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-steps img {
+  width: min(180px, 100%);
+  aspect-ratio: 1 / 1.05;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-section-title {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-section-title > span {
+  padding: 6px 10px;
+  border: 1px solid var(--cva-border);
+  border-radius: 999px;
+  background: var(--cva-surface);
+  color: var(--cva-muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-section-title h2 {
+  margin: 0;
+  color: var(--cva-heading);
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-works {
+  padding: 0 0 94px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track {
+  display: grid;
+  grid-auto-columns: minmax(220px, 282px);
+  grid-auto-flow: column;
+  gap: 14px;
+  width: 100%;
+  margin-top: 28px;
+  padding: 0 max(16px, calc((100vw - 980px) / 2));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track::-webkit-scrollbar {
+  display: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track article {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #171615;
+  color: #fff;
+  scroll-snap-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  opacity: 0.92;
+  transition: transform 500ms ease;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track article:hover img {
+  transform: scale(1.04);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track article::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.78));
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track article div {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track span {
+  display: inline-flex;
+  margin-bottom: 8px;
+  color: #ffcfbf;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-work-track h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.15;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-works > .cva-button {
+  margin: 26px auto 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof {
+  width: min(860px, calc(100% - 32px));
+  margin: 0 auto 98px;
+  padding: clamp(38px, 6vw, 58px);
+  border: 1px solid var(--cva-border);
+  border-radius: 12px;
+  background: var(--cva-surface);
+  text-align: center;
+  box-shadow: 0 20px 54px rgba(38, 35, 29, 0.06);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof > span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  border: 1px solid var(--cva-border);
+  border-radius: 999px;
+  color: var(--cva-muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof h2 {
+  max-width: 690px;
+  margin: 0 auto;
+  color: var(--cva-heading);
+  font-size: clamp(24px, 4vw, 39px);
+  line-height: 1.16;
+  letter-spacing: 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof h2::first-letter {
+  color: var(--cva-accent);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 38px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof article {
+  display: grid;
+  gap: 8px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof strong {
+  color: var(--cva-heading);
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 0.95;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-proof p {
+  max-width: 150px;
+  margin: 0 auto;
+  color: var(--cva-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-services {
+  width: min(860px, calc(100% - 32px));
+  margin: 0 auto 94px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 30px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid article {
+  display: grid;
+  min-height: 240px;
+  align-content: center;
+  gap: 34px;
+  padding: 30px;
+  border: 1px solid var(--cva-border);
+  border-radius: 8px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid article:nth-child(4),
+[data-template-id="clipzy-video-agency"] .cva-service-grid article:nth-child(5) {
+  min-height: 190px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid article:nth-child(4) {
+  grid-column: span 1;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid article:nth-child(5) {
+  grid-column: span 2;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid svg {
+  color: var(--cva-accent);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-service-grid h3 {
+  max-width: 210px;
+  margin: 0;
+  color: var(--cva-heading);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orange-cta {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 34px;
+  width: min(860px, calc(100% - 32px));
+  margin: 0 auto 98px;
+  padding: clamp(32px, 5vw, 48px);
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--cva-accent), #ff6a24);
+  color: #fff;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orange-cta h2 {
+  max-width: 390px;
+  margin: 0 0 142px;
+  font-size: clamp(28px, 4.2vw, 46px);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-orange-cta .cva-button-light {
+  border-color: rgba(255, 255, 255, 0.54);
+  box-shadow: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-cta-cards {
+  display: grid;
+  gap: 10px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-cta-cards article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 12px;
+  padding: 18px;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--cva-heading);
+  box-shadow: 0 12px 30px rgba(161, 36, 0, 0.12);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-cta-cards svg {
+  grid-row: span 2;
+  margin-top: 2px;
+  color: var(--cva-accent);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-cta-cards h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-cta-cards p {
+  margin: 0;
+  color: var(--cva-body);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonials {
+  padding: 0 0 94px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track {
+  display: grid;
+  grid-auto-columns: minmax(280px, 410px);
+  grid-auto-flow: column;
+  gap: 18px;
+  margin-top: 28px;
+  padding: 0 max(16px, calc((100vw - 980px) / 2));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track::-webkit-scrollbar {
+  display: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track blockquote {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
+  min-height: 210px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--cva-border);
+  border-radius: 10px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+  scroll-snap-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track img {
+  grid-row: span 2;
+  width: 112px;
+  height: 182px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track footer {
+  align-self: end;
+  display: grid;
+  gap: 3px;
+  color: var(--cva-muted);
+  font-size: 12px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-testimonial-track strong {
+  color: var(--cva-heading);
+  font-size: 13px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-pricing {
+  width: min(860px, calc(100% - 32px));
+  margin: 0 auto 96px;
+  text-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-pricing > p {
+  max-width: 560px;
+  margin: 12px auto 30px;
+  color: var(--cva-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  text-align: left;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid article {
+  display: flex;
+  min-height: 380px;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid var(--cva-border);
+  border-radius: 10px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid article > p {
+  min-height: 42px;
+  margin: 0 0 20px;
+  color: var(--cva-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid div {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid strong {
+  font-size: 34px;
+  line-height: 1;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid div span {
+  color: var(--cva-muted);
+  font-size: 12px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid article > a {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  background: var(--cva-button);
+  color: var(--cva-button-text);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid li {
+  display: flex;
+  gap: 8px;
+  color: var(--cva-body);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-price-grid li svg {
+  flex: 0 0 auto;
+  color: var(--cva-accent);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq {
+  width: min(680px, calc(100% - 32px));
+  margin: 0 auto 86px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq > div:not(.cva-section-title) {
+  display: grid;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq article {
+  border: 1px solid var(--cva-border);
+  border-radius: 8px;
+  background: var(--cva-surface);
+  overflow: hidden;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border: 0;
+  background: transparent;
+  color: var(--cva-heading);
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: left;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq p {
+  display: none;
+  margin: 0;
+  padding: 0 20px 18px;
+  color: var(--cva-body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-faq article.is-open p {
+  display: block;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer {
+  padding: 78px 16px 34px;
+  background: radial-gradient(circle at 50% 0, rgba(255, 75, 22, 0.14), transparent 28%), var(--cva-footer);
+  color: var(--cva-footer-text);
+  text-align: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer > section {
+  display: grid;
+  justify-items: center;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer h2 {
+  max-width: 530px;
+  margin: 0;
+  font-size: clamp(34px, 6vw, 58px);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer > section p {
+  max-width: 430px;
+  margin: 16px 0 22px;
+  color: var(--cva-footer-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  width: min(520px, 100%);
+  margin: 44px 0 22px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-icons::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  right: 18%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-icons span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--cva-surface);
+  color: var(--cva-accent);
+  transform: rotate(-12deg);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-icons span:nth-child(2) {
+  transform: translateY(-24px) rotate(12deg);
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-card {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 0.7fr);
+  gap: 30px;
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--cva-surface);
+  color: var(--cva-heading);
+  text-align: left;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-brand {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-brand img {
+  width: 96px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-brand p,
+[data-template-id="clipzy-video-agency"] .cva-footer-brand a,
+[data-template-id="clipzy-video-agency"] .cva-footer-card nav a {
+  color: var(--cva-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-card nav {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-card h3 {
+  margin: 0 0 7px;
+  font-size: 13px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-socials a {
+  display: inline-flex;
+  padding: 7px 8px;
+  border-radius: 6px;
+  background: var(--cva-accent);
+  color: #fff;
+  font-size: 0;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-socials a::first-letter {
+  font-size: 12px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-footer-card small {
+  grid-column: 1 / 3;
+  align-self: end;
+  color: var(--cva-muted);
+  font-size: 11px;
+}
+
+[data-template-id="clipzy-video-agency"] .cva-legal {
+  grid-column: 3 / 5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  color: var(--cva-muted);
+  font-size: 11px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-template-id="clipzy-video-agency"] .cva-orbit span {
+    animation: cva-float 5s ease-in-out infinite;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-orbit span:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-orbit span:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+}
+
+@keyframes cva-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 980px) {
+  [data-template-id="clipzy-video-agency"] .cva-header {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-menu {
+    display: grid;
+    place-items: center;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-header nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px;
+    border: 1px solid var(--cva-border);
+    border-radius: 18px;
+    background: var(--cva-surface);
+    box-shadow: 0 18px 44px rgba(38, 35, 29, 0.12);
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-header nav.is-open {
+    display: flex;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-header nav a {
+    padding: 13px 14px;
+    border-radius: 10px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-nav-cta {
+    justify-self: end;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-side-notes {
+    right: 0;
+    top: 355px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-steps::before {
+    display: none;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-steps article,
+  [data-template-id="clipzy-video-agency"] .cva-steps article:nth-child(2),
+  [data-template-id="clipzy-video-agency"] .cva-steps article:nth-child(3) {
+    min-height: 0;
+    padding: 24px;
+    border: 1px solid var(--cva-border);
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--cva-surface) 62%, transparent);
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-service-grid,
+  [data-template-id="clipzy-video-agency"] .cva-price-grid,
+  [data-template-id="clipzy-video-agency"] .cva-orange-cta {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-service-grid article:nth-child(5) {
+    grid-column: auto;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-orange-cta h2 {
+    margin-bottom: 44px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-footer-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-footer-card small,
+  [data-template-id="clipzy-video-agency"] .cva-legal {
+    grid-column: auto;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-legal {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="clipzy-video-agency"] .cva-header {
+    top: 10px;
+    width: calc(100% - 20px);
+    min-height: 54px;
+    gap: 10px;
+    padding-left: 14px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-brand img {
+    width: 82px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-nav-cta {
+    min-height: 34px;
+    max-width: 142px;
+    padding: 0 12px;
+    font-size: 10px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-hero {
+    width: calc(100% - 22px);
+    padding-top: 40px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-orbit {
+    display: none;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-hero h1 {
+    font-size: clamp(43px, 13vw, 58px);
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-hero-actions {
+    width: 100%;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-hero-actions .cva-button {
+    flex: 1 1 160px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-hero-media {
+    margin-top: 46px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-side-notes {
+    position: static;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-side-notes span {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-logos {
+    padding-bottom: 58px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-steps,
+  [data-template-id="clipzy-video-agency"] .cva-proof,
+  [data-template-id="clipzy-video-agency"] .cva-services,
+  [data-template-id="clipzy-video-agency"] .cva-orange-cta,
+  [data-template-id="clipzy-video-agency"] .cva-pricing,
+  [data-template-id="clipzy-video-agency"] .cva-faq {
+    width: calc(100% - 22px);
+    margin-bottom: 68px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-proof {
+    padding: 28px 20px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-proof div {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-service-grid article {
+    min-height: 170px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-work-track,
+  [data-template-id="clipzy-video-agency"] .cva-testimonial-track {
+    grid-auto-columns: minmax(248px, 82vw);
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-testimonial-track blockquote {
+    grid-template-columns: 86px 1fr;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-testimonial-track img {
+    width: 86px;
+    height: 142px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-testimonial-track p {
+    font-size: 14px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-footer-icons {
+    gap: 54px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-footer-card {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  [data-template-id="clipzy-video-agency"] .cva-legal {
+    flex-wrap: wrap;
+  }
+}

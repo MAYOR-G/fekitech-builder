@@ -1,0 +1,14 @@
+{
+  "id": "ace-barbers",
+  "name": "Ace Barbers",
+  "description": "A cinematic dark barbershop template with service rows, gallery tiles, team cards, testimonials, booking panel, contact details and a premium black craft aesthetic.",
+  "category": "Business",
+  "image": "/templates/ace-barbers.webp",
+  "previewImages": ["/templates/ace-barbers.webp"],
+  "features": [
+    "Editable barbershop identity, navigation, hero, services, gallery, testimonials, team, stats, booking flow, contact and footer",
+    "Scoped black-on-black grooming visual system",
+    "Responsive appointment-focused homepage",
+    "Template-owned generated barber photography"
+  ]
+}

@@ -1,0 +1,893 @@
+[data-template-id="medivra-therapy-recovery"] {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 8% 7%, rgba(181, 121, 53, 0.13), transparent 24rem),
+    radial-gradient(circle at 92% 12%, rgba(255, 255, 255, 0.72), transparent 26rem),
+    var(--mtr-page);
+  color: var(--mtr-text);
+  font-family: var(--mtr-body);
+}
+
+[data-template-id="medivra-therapy-recovery"] *,
+[data-template-id="medivra-therapy-recovery"] *::before,
+[data-template-id="medivra-therapy-recovery"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="medivra-therapy-recovery"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="medivra-therapy-recovery"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="medivra-therapy-recovery"] h1,
+[data-template-id="medivra-therapy-recovery"] h2,
+[data-template-id="medivra-therapy-recovery"] h3,
+[data-template-id="medivra-therapy-recovery"] p {
+  margin: 0;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero {
+  position: relative;
+  padding: 24px max(20px, calc((100vw - 1160px) / 2)) clamp(82px, 10vw, 132px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-header {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+  min-height: 54px;
+  margin-bottom: 34px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-logo img {
+  width: 116px;
+  height: auto;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  color: rgba(46, 41, 36, 0.72);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-header nav a:hover {
+  color: var(--mtr-accent-dark);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-nav-cta,
+[data-template-id="medivra-therapy-recovery"] .mtr-button,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-head a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-nav-cta {
+  background: var(--mtr-text);
+  color: #ffffff;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-button {
+  background: var(--mtr-accent);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(126, 82, 42, 0.2);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-head a {
+  border-color: var(--mtr-line);
+  background: var(--mtr-card);
+  color: var(--mtr-accent-dark);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-nav-cta:hover,
+[data-template-id="medivra-therapy-recovery"] .mtr-button:hover,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-head a:hover {
+  transform: translateY(-2px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--mtr-text);
+  color: #ffffff;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: stretch;
+  gap: clamp(18px, 2.4vw, 34px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 555px;
+  padding: clamp(36px, 6vw, 74px);
+  border: 1px solid rgba(230, 220, 209, 0.8);
+  border-radius: 30px 0 30px 30px;
+  background: rgba(255, 253, 251, 0.86);
+  box-shadow: 0 28px 80px rgba(73, 53, 34, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--mtr-line);
+  background: rgba(255, 255, 255, 0.64);
+  color: var(--mtr-accent-dark);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-card h1 {
+  max-width: 510px;
+  font-family: var(--mtr-heading);
+  font-size: clamp(43px, 5.5vw, 74px);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.03;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-card p {
+  max-width: 480px;
+  margin-top: 20px;
+  color: var(--mtr-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-card .mtr-button {
+  width: fit-content;
+  margin-top: 28px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-photo {
+  position: relative;
+  min-height: 555px;
+  overflow: hidden;
+  border-radius: 0 30px 30px 30px;
+  background: var(--mtr-line);
+  box-shadow: 0 28px 70px rgba(73, 53, 34, 0.12);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-hero-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-chip {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 253, 251, 0.92);
+  box-shadow: 0 14px 34px rgba(35, 28, 21, 0.16);
+  color: var(--mtr-text);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-chip-1 { top: 17%; left: 6%; }
+[data-template-id="medivra-therapy-recovery"] .mtr-chip-2 { right: 6%; top: 36%; }
+[data-template-id="medivra-therapy-recovery"] .mtr-chip-3 { left: 12%; bottom: 18%; }
+[data-template-id="medivra-therapy-recovery"] .mtr-chip-4 { right: 12%; bottom: 10%; }
+
+[data-template-id="medivra-therapy-recovery"] .mtr-statement {
+  padding: 0 max(20px, calc((100vw - 760px) / 2)) clamp(76px, 9vw, 118px);
+  text-align: center;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-statement p {
+  color: var(--mtr-text);
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 740;
+  line-height: 1.18;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats,
+[data-template-id="medivra-therapy-recovery"] .mtr-expert,
+[data-template-id="medivra-therapy-recovery"] .mtr-services,
+[data-template-id="medivra-therapy-recovery"] .mtr-specialists,
+[data-template-id="medivra-therapy-recovery"] .mtr-why,
+[data-template-id="medivra-therapy-recovery"] .mtr-process,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonials,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog,
+[data-template-id="medivra-therapy-recovery"] .mtr-faq,
+[data-template-id="medivra-therapy-recovery"] .mtr-cta,
+[data-template-id="medivra-therapy-recovery"] .mtr-footer {
+  margin-inline: max(20px, calc((100vw - 1120px) / 2));
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: clamp(82px, 10vw, 128px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats article,
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid article,
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid article,
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row article,
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline article > div,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid article,
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list article {
+  border: 1px solid rgba(230, 220, 209, 0.86);
+  background: rgba(255, 253, 251, 0.86);
+  box-shadow: 0 18px 48px rgba(73, 53, 34, 0.06);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats article {
+  position: relative;
+  min-height: 190px;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats article > span {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--mtr-accent);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats h2 {
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats h3 {
+  margin-top: 18px;
+  font-size: 17px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stats p {
+  max-width: 250px;
+  margin-top: 10px;
+  color: var(--mtr-muted);
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(30px, 7vw, 86px);
+  margin-bottom: clamp(90px, 11vw, 138px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert-photo {
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--mtr-line);
+  box-shadow: 0 24px 72px rgba(73, 53, 34, 0.13);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert-copy h2,
+[data-template-id="medivra-therapy-recovery"] .mtr-section-head h2,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-head h2,
+[data-template-id="medivra-therapy-recovery"] .mtr-cta h2 {
+  font-family: var(--mtr-heading);
+  font-size: clamp(31px, 4vw, 48px);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert-copy > p,
+[data-template-id="medivra-therapy-recovery"] .mtr-section-head p {
+  max-width: 560px;
+  margin-top: 14px;
+  color: var(--mtr-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-expert-copy .mtr-button {
+  margin-top: 24px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid article {
+  min-height: 132px;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid svg {
+  color: var(--mtr-accent);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid h3,
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid h3,
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row h3,
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline h3,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid h3,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid h3 {
+  margin-top: 12px;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-mini-grid p,
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid p,
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row p,
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline p,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid p {
+  margin-top: 8px;
+  color: var(--mtr-muted);
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-services,
+[data-template-id="medivra-therapy-recovery"] .mtr-specialists,
+[data-template-id="medivra-therapy-recovery"] .mtr-why,
+[data-template-id="medivra-therapy-recovery"] .mtr-process,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonials,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog,
+[data-template-id="medivra-therapy-recovery"] .mtr-faq {
+  margin-bottom: clamp(82px, 10vw, 126px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-section-head {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid article {
+  min-height: 200px;
+  padding: 26px;
+  border-radius: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-service-grid span {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(181, 121, 53, 0.1);
+  color: var(--mtr-accent-dark);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-specialist-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-specialist-card {
+  position: relative;
+  height: 380px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--mtr-line);
+  box-shadow: 0 20px 60px rgba(73, 53, 34, 0.11);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-specialist-card img {
+  width: 300%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-specialist-card.is-2 img {
+  transform: translateX(-33.333%);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-specialist-card.is-3 img {
+  transform: translateX(-66.666%);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row article,
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid article {
+  min-height: 178px;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-why-row span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(181, 121, 53, 0.12);
+  color: var(--mtr-accent-dark);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline {
+  position: relative;
+  display: grid;
+  gap: 38px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline::before {
+  position: absolute;
+  inset: 0 auto 0 50%;
+  width: 2px;
+  content: "";
+  background: linear-gradient(var(--mtr-accent), var(--mtr-text));
+  transform: translateX(-1px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 56px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline article strong {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--mtr-accent);
+  color: #ffffff;
+  font-size: 17px;
+  justify-self: center;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline article > div {
+  min-height: 142px;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-right > div {
+  grid-column: 3;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-right > strong {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-left > div {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-left > strong {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-stars {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  color: #d99b28;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid strong {
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-rows: repeat(2, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid article {
+  position: relative;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--mtr-line);
+  color: #ffffff;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid article.is-large {
+  grid-row: span 2;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid article::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(27, 20, 14, 0.02), rgba(27, 20, 14, 0.82));
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid article > div {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 22px;
+  left: 22px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid span,
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid time {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-blog-grid h3 {
+  max-width: 430px;
+  font-size: clamp(18px, 2vw, 25px);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list article {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 20px;
+  border: 0;
+  background: transparent;
+  color: var(--mtr-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list svg {
+  flex: 0 0 auto;
+  color: var(--mtr-accent);
+  transition: transform 180ms ease;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list article.is-open svg {
+  transform: rotate(180deg);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list article > p {
+  display: none;
+  padding: 0 20px 20px;
+  color: var(--mtr-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-faq-list article.is-open > p {
+  display: block;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-cta {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) 180px;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 70px;
+  padding: clamp(28px, 4vw, 42px);
+  border-radius: 20px;
+  background: rgba(255, 253, 251, 0.88);
+  box-shadow: 0 20px 70px rgba(73, 53, 34, 0.09);
+  text-align: center;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-cta img {
+  width: 180px;
+  height: 152px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-cta h2 {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-cta .mtr-button {
+  margin-top: 22px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 0.7fr 1fr;
+  gap: clamp(24px, 5vw, 66px);
+  padding: clamp(46px, 7vw, 74px) clamp(24px, 6vw, 70px) 34px;
+  border-radius: 26px 26px 0 0;
+  background: linear-gradient(180deg, var(--mtr-footer), #c89b6a);
+  color: rgba(48, 37, 28, 0.78);
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer > div:first-child img {
+  width: 132px;
+  margin-bottom: 18px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer p {
+  max-width: 300px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer .mtr-button {
+  min-height: 36px;
+  margin-top: 18px;
+  padding-inline: 14px;
+  font-size: 11px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer h3 {
+  margin-bottom: 14px;
+  color: var(--mtr-text);
+  font-size: 13px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer nav,
+[data-template-id="medivra-therapy-recovery"] .mtr-footer > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-socials a {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 253, 251, 0.58);
+  color: var(--mtr-text);
+  font-weight: 900;
+}
+
+[data-template-id="medivra-therapy-recovery"] .mtr-footer small {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 38px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 253, 251, 0.26);
+  font-size: 11px;
+}
+
+@media (max-width: 980px) {
+  [data-template-id="medivra-therapy-recovery"] .mtr-header {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-menu {
+    display: grid;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-header nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    display: none;
+    min-width: 220px;
+    padding: 16px;
+    border: 1px solid var(--mtr-line);
+    border-radius: 16px;
+    background: var(--mtr-card);
+    box-shadow: 0 20px 60px rgba(73, 53, 34, 0.16);
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-header nav.is-open {
+    display: grid;
+    gap: 14px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-nav-cta {
+    display: none;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-expert,
+  [data-template-id="medivra-therapy-recovery"] .mtr-blog-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-footer {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero-card,
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero-photo,
+  [data-template-id="medivra-therapy-recovery"] .mtr-expert-photo {
+    min-height: 460px;
+    border-radius: 24px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-stats,
+  [data-template-id="medivra-therapy-recovery"] .mtr-service-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-mini-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-why-row,
+  [data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-specialist-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-blog-grid article.is-large {
+    grid-row: auto;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-cta {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-cta img {
+    width: 100%;
+    height: 210px;
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero {
+    padding-top: 16px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero-card {
+    min-height: auto;
+    padding: 30px 24px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-hero-photo,
+  [data-template-id="medivra-therapy-recovery"] .mtr-expert-photo {
+    min-height: 360px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-chip {
+    position: static;
+    margin: 8px 0 0 8px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-stats,
+  [data-template-id="medivra-therapy-recovery"] .mtr-service-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-mini-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-why-row,
+  [data-template-id="medivra-therapy-recovery"] .mtr-testimonial-grid,
+  [data-template-id="medivra-therapy-recovery"] .mtr-specialist-row {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-specialist-card {
+    height: 320px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline {
+    gap: 22px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline::before {
+    left: 24px;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline article,
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-left,
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-right {
+    grid-template-columns: 48px 1fr;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-left > div,
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-right > div {
+    grid-column: 2;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-left > strong,
+  [data-template-id="medivra-therapy-recovery"] .mtr-timeline .is-right > strong {
+    grid-column: 1;
+  }
+
+  [data-template-id="medivra-therapy-recovery"] .mtr-blog-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

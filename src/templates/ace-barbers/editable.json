@@ -1,0 +1,131 @@
+{
+  "brand": {
+    "name": "Ace Barbers",
+    "logo": "/templates/ace-barbers/assets/logo.svg",
+    "logoAlt": "Ace Barbers logo",
+    "address": "24 Mercer Row, Manchester, M1 4AB",
+    "phone": "+44 161 555 0163",
+    "phoneHref": "tel:+441615550163",
+    "email": "bookings@acebarbers.co.uk",
+    "emailHref": "mailto:bookings@acebarbers.co.uk"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "button": { "label": "Book appointment", "href": "#booking" }
+  },
+  "hero": {
+    "titleLineOne": "Where",
+    "titleLineTwo": "Style Meets Craft",
+    "body": "Sharp cuts, clean shaves and considered grooming from a barbershop built around detail.",
+    "button": { "label": "Book appointment", "href": "#booking" },
+    "image": "/templates/ace-barbers/assets/hero-tools.webp",
+    "imageAlt": "Barber holding scissors and clippers in a dark studio"
+  },
+  "services": {
+    "title": "Our services",
+    "items": [
+      { "title": "Classic Haircut", "body": "Precision cut tailored to your style and face shape.", "price": "From £25" },
+      { "title": "Skin Fade", "body": "Clean fade with seamless blending and sharp detailing.", "price": "From £30" },
+      { "title": "Beard Trim & Shape", "body": "Expert beard sculpting, lining and finishing.", "price": "From £18" },
+      { "title": "Hot Towel Shave", "body": "Traditional straight razor shave with hot towel treatment.", "price": "From £28" },
+      { "title": "Haircut & Beard Combo", "body": "Complete grooming experience with haircut and beard styling.", "price": "From £42" },
+      { "title": "Kids Haircut", "body": "Stylish cut for young gents under 12.", "price": "From £16" },
+      { "title": "Senior Haircut", "body": "Professional haircut for gentlemen aged 65+.", "price": "From £18" },
+      { "title": "Premium Grooming Package", "body": "Haircut, beard trim, hot towel shave, wash and styling.", "price": "From £68" }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "images": [
+      { "src": "/templates/ace-barbers/assets/gallery-tools.webp", "alt": "Barber tools laid on black leather" },
+      { "src": "/templates/ace-barbers/assets/gallery-beard.webp", "alt": "Beard trim in progress" },
+      { "src": "/templates/ace-barbers/assets/gallery-chair.webp", "alt": "Black leather barber chair" },
+      { "src": "/templates/ace-barbers/assets/gallery-shave.webp", "alt": "Traditional straight razor shave" },
+      { "src": "/templates/ace-barbers/assets/gallery-clipper.webp", "alt": "Close up of barber clippers" },
+      { "src": "/templates/ace-barbers/assets/gallery-interior.webp", "alt": "Dark premium barber shop interior" }
+    ]
+  },
+  "testimonials": {
+    "title": "What They Say",
+    "rating": "5.0",
+    "ratingLabel": "Rated by regular clients",
+    "items": [
+      { "quote": "Walked out feeling like a brand new man.", "name": "Devon" },
+      { "quote": "Best barbershop in town, hands down.", "name": "Elias" },
+      { "quote": "Sharp fade, relaxed service and proper attention to detail.", "name": "Miles" }
+    ]
+  },
+  "team": {
+    "title": "The Team",
+    "members": [
+      { "name": "Oliver Hayes", "role": "Founder & Master Barber", "image": "/templates/ace-barbers/assets/oliver-hayes.webp", "imageAlt": "Oliver Hayes master barber portrait" },
+      { "name": "Sophia Bennett", "role": "Senior Barber & Stylist", "image": "/templates/ace-barbers/assets/sophia-bennett.webp", "imageAlt": "Sophia Bennett senior barber portrait" },
+      { "name": "Marcus Steele", "role": "Senior Barber", "image": "/templates/ace-barbers/assets/marcus-steele.webp", "imageAlt": "Marcus Steele barber portrait" },
+      { "name": "Isabella Hayes", "role": "Beards & Grooming Expert", "image": "/templates/ace-barbers/assets/isabella-hayes.webp", "imageAlt": "Isabella Hayes grooming expert portrait" },
+      { "name": "Ethan Brooks", "role": "Barber", "image": "/templates/ace-barbers/assets/ethan-brooks.webp", "imageAlt": "Ethan Brooks barber portrait" },
+      { "name": "Victoria Blake", "role": "Barber & Grooming Specialist", "image": "/templates/ace-barbers/assets/victoria-blake.webp", "imageAlt": "Victoria Blake barber portrait" }
+    ]
+  },
+  "stats": {
+    "title": "The Numbers",
+    "items": [
+      { "value": "15+", "label": "Years of experience" },
+      { "value": "12k", "label": "Happy clients" },
+      { "value": "5.0", "label": "Client rating" }
+    ]
+  },
+  "booking": {
+    "title": "Book Your Next Cut",
+    "body": "Choose a service, pick a barber and we will confirm your appointment.",
+    "steps": [
+      { "label": "Choose your barber", "value": "Oliver Hayes" },
+      { "label": "Choose your service", "value": "Skin Fade" },
+      { "label": "Choose your time", "value": "Friday, 4:30pm" }
+    ],
+    "backLabel": "Back",
+    "nextLabel": "Next"
+  },
+  "contact": {
+    "address": "24 Mercer Row, Manchester, M1 4AB",
+    "phone": "+44 161 555 0163",
+    "image": "/templates/ace-barbers/assets/about-tools.webp",
+    "imageAlt": "Barber tools in a dark premium studio",
+    "title": "Ace Barbers",
+    "body": "A Manchester barbershop built around precision, craftsmanship and personal style. Our experienced barbers combine classic techniques with modern trends to deliver sharp haircuts, expert beard grooming and a relaxed experience.",
+    "hoursTitle": "Opening Hours",
+    "hours": [
+      "Mon to Fri: 9:30am - 6:30pm",
+      "Sat: 9:00am - 6:30pm",
+      "Sun: Closed"
+    ]
+  },
+  "footer": {
+    "links": [
+      { "label": "Book appointment", "href": "#booking" },
+      { "label": "Services", "href": "#services" },
+      { "label": "404", "href": "#home" },
+      { "label": "Contacts", "href": "#contact" },
+      { "label": "Privacy policy", "href": "#home" },
+      { "label": "Terms & conditions", "href": "#home" }
+    ],
+    "copyright": "FekiTech 2026. All Rights Reserved"
+  },
+  "colors": {
+    "page": "#030303",
+    "panel": "#070707",
+    "card": "#0c0c0c",
+    "text": "#e7e0d6",
+    "muted": "#8c8780",
+    "line": "#242424",
+    "accent": "#d8d0c4",
+    "button": "#2a2a2a"
+  },
+  "typography": {
+    "headingFont": "Georgia, 'Times New Roman', serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  }
+}

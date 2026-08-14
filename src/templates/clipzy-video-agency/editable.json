@@ -1,0 +1,272 @@
+{
+  "brand": {
+    "name": "Clipzy",
+    "shortName": "Clipzy",
+    "logo": "/templates/clipzy-video-agency/assets/logo.svg",
+    "logoAlt": "Clipzy logo",
+    "email": "hello@clipzy.co.uk",
+    "emailHref": "mailto:hello@clipzy.co.uk",
+    "phone": "+44 20 8050 1642",
+    "phoneHref": "tel:+442080501642",
+    "address": "65 Redchurch Street, London E2 7DJ",
+    "strapline": "Short-form video editing for creators, brands, and busy teams."
+  },
+  "navigation": {
+    "links": [
+      { "label": "All Pages", "href": "#services" },
+      { "label": "About", "href": "#about" },
+      { "label": "Works", "href": "#works" },
+      { "label": "Service", "href": "#services" }
+    ],
+    "ctaLabel": "Book a Free Planning",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "badge": "UK short-form partner",
+    "title": "Agency that makes your",
+    "accent": "videos and reels viral",
+    "description": "Short-form video editing for YouTube, creators and brands.",
+    "primaryCta": { "label": "Book a Free Planning", "href": "#contact" },
+    "secondaryCta": { "label": "View Our Works", "href": "#works" },
+    "image": "/templates/clipzy-video-agency/assets/hero-editing-suite.webp",
+    "imageAlt": "Creator editing a vertical social video on a laptop",
+    "floaters": [
+      { "label": "Reels", "tone": "orange" },
+      { "label": "Shorts", "tone": "blue" },
+      { "label": "TikTok", "tone": "black" }
+    ],
+    "sideCards": [
+      "Hot this week",
+      "Upload, test, improve",
+      "Plan it properly"
+    ]
+  },
+  "logos": {
+    "intro": "Trusted by UK founders and creator-led teams",
+    "items": ["Craftgram", "Pulse", "Swiftly", "Sparkle", "Lumi Labs"]
+  },
+  "steps": {
+    "items": [
+      {
+        "title": "Give us your raw footage, it can be DSLR or iPhone",
+        "body": "We organise clips, pick the strongest moments and shape them into a clean content plan.",
+        "image": "/templates/clipzy-video-agency/assets/work-product-shoot.webp",
+        "imageAlt": "Phone recording a product video in a compact studio"
+      },
+      {
+        "title": "Our team instantly starts editing your videos",
+        "body": "Editors trim, subtitle, colour and pace each clip so it feels natural on every platform.",
+        "image": "/templates/clipzy-video-agency/assets/service-editing-desk.webp",
+        "imageAlt": "Editing desk with creative campaign materials"
+      },
+      {
+        "title": "Upload and start seeing results from day one",
+        "body": "We prepare final files, thumbnails and captions so your team can publish without delay.",
+        "image": "/templates/clipzy-video-agency/assets/workflow-analytics-upload.webp",
+        "imageAlt": "Laptop and tablet showing video performance and upload workflow"
+      }
+    ]
+  },
+  "works": {
+    "label": "Works",
+    "title": "Recent works for",
+    "accent": "clients",
+    "button": { "label": "View Our Works", "href": "#contact" },
+    "items": [
+      {
+        "title": "Studio product shorts",
+        "category": "Beauty brand",
+        "image": "/templates/clipzy-video-agency/assets/work-product-shoot.webp",
+        "imageAlt": "Product video shoot framed on a phone"
+      },
+      {
+        "title": "Creator launch reels",
+        "category": "Creator",
+        "image": "/templates/clipzy-video-agency/assets/work-creator-street.webp",
+        "imageAlt": "Creator filming a social video with a phone gimbal"
+      },
+      {
+        "title": "Weekly edit pack",
+        "category": "Education",
+        "image": "/templates/clipzy-video-agency/assets/service-editing-desk.webp",
+        "imageAlt": "Creative editing table with campaign notes"
+      },
+      {
+        "title": "Performance cutdowns",
+        "category": "E-commerce",
+        "image": "/templates/clipzy-video-agency/assets/workflow-analytics-upload.webp",
+        "imageAlt": "Video analytics and upload dashboard on studio devices"
+      },
+      {
+        "title": "Founder story clips",
+        "category": "Start-up",
+        "image": "/templates/clipzy-video-agency/assets/team-content-review.webp",
+        "imageAlt": "Team reviewing content and campaign boards"
+      }
+    ]
+  },
+  "proof": {
+    "label": "About Clipzy",
+    "title": "We're a short-form video editing agency helping creators and brands turn raw clips into viral Reels, Shorts, and TikToks.",
+    "stats": [
+      { "value": "1M+", "label": "Total views for clients" },
+      { "value": "5K+", "label": "Videos edited for clients" },
+      { "value": "GBP 1M+", "label": "Revenue generated for clients" }
+    ]
+  },
+  "services": {
+    "label": "Everything",
+    "title": "Everything you need",
+    "accent": "for views",
+    "items": [
+      { "title": "YouTube Shorts", "icon": "youtube" },
+      { "title": "Instagram Reels", "icon": "instagram" },
+      { "title": "TikTok Videos", "icon": "tiktok" },
+      { "title": "Video Edits and Content Creation", "icon": "edit" },
+      { "title": "Motion Graphics and Animation Design", "icon": "motion" }
+    ]
+  },
+  "cta": {
+    "title": "Hire top-tier talent quickly without any headaches.",
+    "button": { "label": "Book a Free Planning", "href": "#contact" },
+    "cards": [
+      { "title": "Save on salaries", "body": "Get experienced editors without hiring a full-time creative team." },
+      { "title": "Hire within days", "body": "Start with a clear brief, fast onboarding and a simple delivery rhythm." },
+      { "title": "Expertly trained", "body": "Work with editors who understand hooks, pacing, subtitles and platform formats." }
+    ]
+  },
+  "testimonials": {
+    "label": "Customer feedback",
+    "title": "Loved by",
+    "accent": "top creators",
+    "items": [
+      {
+        "quote": "Their editing completely changed my content game. The Reels they delivered were sharp, on-brand and easy to post.",
+        "name": "Adam Alli",
+        "role": "Fitness creator",
+        "image": "/templates/clipzy-video-agency/assets/creator-maya.webp",
+        "imageAlt": "Portrait of a fitness creator client"
+      },
+      {
+        "quote": "I never thought my brand could look this polished. The clips made our product launch feel much bigger.",
+        "name": "Ria Mason",
+        "role": "Founder",
+        "image": "/templates/clipzy-video-agency/assets/creator-oliver.webp",
+        "imageAlt": "Portrait of a founder client"
+      },
+      {
+        "quote": "Clipzy gave us a reliable weekly flow. We send footage, they send back finished videos that feel ready.",
+        "name": "Nadia Brooks",
+        "role": "Marketing lead",
+        "image": "/templates/clipzy-video-agency/assets/creator-nadia.webp",
+        "imageAlt": "Portrait of a marketing lead client"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pay monthly or",
+    "accent": "pay as you need",
+    "description": "We maintain a month-by-month video editing setup so your brand and uploads stay flexible.",
+    "plans": [
+      {
+        "name": "Clipstart",
+        "price": "$299",
+        "period": "/month",
+        "description": "For lean creators and growing brands.",
+        "button": { "label": "Get Subscription", "href": "#contact" },
+        "features": ["Four edited videos per month", "Fast captions and posting structure", "Hook and title recommendations", "Captions and basic optimisation"]
+      },
+      {
+        "name": "ReelWave",
+        "price": "$599",
+        "period": "/month",
+        "description": "For teams publishing every week.",
+        "button": { "label": "Get Subscription", "href": "#contact" },
+        "features": ["Eight edited videos per month", "Platform-ready clips and sound cuts", "Advanced motion-led subtitles", "Content brief and monthly review"]
+      },
+      {
+        "name": "ViralBoost",
+        "price": "Custom",
+        "period": "",
+        "description": "For campaigns and launch content.",
+        "button": { "label": "Book a Planning", "href": "#contact" },
+        "features": ["Unlimited short video edits", "Strategy calls and creative direction", "Thumbnail design for YouTube Shorts", "Priority edits and launch communication"]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Everything you",
+    "accent": "Need to Know",
+    "items": [
+      { "question": "How do I send you my footage?", "answer": "Share a folder link with your clips, notes and examples. We organise everything before editing starts." },
+      { "question": "Can you work from phone footage?", "answer": "Yes. We regularly edit iPhone, DSLR, podcast and screen-recorded footage into platform-ready clips." },
+      { "question": "Do you write captions and hooks?", "answer": "Yes. Every plan includes clear subtitles, opening hooks and simple posting notes." },
+      { "question": "Can I request a specific editing style?", "answer": "Yes. Send reference videos or brand guidance and we will match the pace, colour and tone." },
+      { "question": "How quickly do I receive finished videos?", "answer": "Most weekly batches are returned within three to five working days after we receive the footage." }
+    ]
+  },
+  "footer": {
+    "title": "Ready to make",
+    "accent": "your videos go viral?",
+    "body": "We create clear, social-ready edits for brands that want to post with confidence.",
+    "button": { "label": "Book a Free Planning", "href": "#contact" },
+    "companyTitle": "Company",
+    "companyLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Works", "href": "#works" }
+    ],
+    "linksTitle": "Links",
+    "links": [
+      { "label": "Service", "href": "#services" },
+      { "label": "Blogs", "href": "#works" },
+      { "label": "Terms & Conditions", "href": "#terms" },
+      { "label": "FAQs", "href": "#faq" }
+    ],
+    "socialTitle": "Follow Us",
+    "socialLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "YouTube", "href": "https://youtube.com/" },
+      { "label": "TikTok", "href": "https://tiktok.com/" }
+    ],
+    "copyright": "©2026 Clipzy. All Right Reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "colors": {
+    "pageBackground": "#f5f3ee",
+    "surface": "#ffffff",
+    "softSurface": "#ebe8e1",
+    "headingText": "#282725",
+    "bodyText": "#5e5a54",
+    "mutedText": "#8a857c",
+    "accent": "#ff4b16",
+    "accentDeep": "#db3200",
+    "buttonBg": "#242321",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonBorder": "#d8d3ca",
+    "secondaryButtonText": "#252421",
+    "border": "#dfdbd2",
+    "footerBg": "#20201f",
+    "footerText": "#ffffff",
+    "footerMuted": "#c8c2b8"
+  },
+  "typography": {
+    "headingFont": "var(--font-heading, Arial, sans-serif)",
+    "bodyFont": "var(--font-body, Arial, sans-serif)",
+    "accentFont": "Georgia, serif"
+  },
+  "_editor": {
+    "pages": {
+      "items": [
+        { "id": "home", "title": "Home", "navLabel": "Home", "slug": "", "home": true, "hidden": false, "seoTitle": "Clipzy | Short-form Video Agency", "seoDescription": "Short-form video editing for creators, brands and UK businesses." },
+        { "id": "about", "title": "About", "navLabel": "About", "slug": "about", "home": false, "hidden": false, "seoTitle": "About Clipzy", "seoDescription": "Meet the short-form video team behind Clipzy." },
+        { "id": "works", "title": "Works", "navLabel": "Works", "slug": "works", "home": false, "hidden": false, "seoTitle": "Clipzy Work", "seoDescription": "Selected Reels, Shorts and TikTok content from Clipzy." },
+        { "id": "pricing", "title": "Pricing", "navLabel": "Pricing", "slug": "pricing", "home": false, "hidden": false, "seoTitle": "Clipzy Pricing", "seoDescription": "Monthly and campaign options for short-form video editing." },
+        { "id": "contact", "title": "Contact", "navLabel": "Contact", "slug": "contact", "home": false, "hidden": false, "seoTitle": "Contact Clipzy", "seoDescription": "Book a planning call for your short-form video project." }
+      ]
+    }
+  }
+}

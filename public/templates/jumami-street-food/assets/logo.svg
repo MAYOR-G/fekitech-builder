@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="44" viewBox="0 0 174 44" role="img" aria-labelledby="title">
+  <title id="title">Jumami</title>
+  <rect width="44" height="44" rx="22" fill="#ec1928"/>
+  <circle cx="22" cy="22" r="13" fill="#ffe36b"/>
+  <path d="M14 20h16v4H14zM20 12h4v20h-4z" fill="#151515"/>
+  <text x="54" y="30" fill="#ffffff" font-family="Arial Black, Impact, sans-serif" font-size="24" letter-spacing="-1">JUMAMI</text>
+</svg>

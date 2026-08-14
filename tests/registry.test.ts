@@ -109,10 +109,17 @@ describe("production template registry", () => {
       "little-rainbow-nursery",
       "apex-growth-agency",
       "valist-ai-studio",
-      "cleanhub-london"
+      "cleanhub-london",
+      "clipzy-video-agency",
+      "quantum-wellness-spa",
+      "jumami-street-food",
+      "consulting-growth-advisory",
+      "medivra-therapy-recovery",
+      "ace-barbers"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
+      "ace-barbers",
       "alvion-medical",
       "apex-growth-agency",
       "arcstone-growth",
@@ -133,9 +140,11 @@ describe("production template registry", () => {
       "cake-website",
       "carpenter-website",
       "catering-company-premium",
+      "clipzy-video-agency",
       "cleanhub-london",
       "cleaning-agency-premium",
       "coffee-website",
+      "consulting-growth-advisory",
       "crownline-roofworks",
       "crumb-and-char",
       "dentist-website",
@@ -161,6 +170,7 @@ describe("production template registry", () => {
       "industrial-construction",
       "infusion-london",
       "ink-and-iron",
+      "jumami-street-food",
       "kindred-paws-vets",
       "kinetic-frame-studio",
       "lacquer-form-nail-atelier",
@@ -169,6 +179,7 @@ describe("production template registry", () => {
       "little-lanterns-nursery",
       "london-pizza-shop",
       "lumen-house-design",
+      "medivra-therapy-recovery",
       "mercer-blythe-solicitors",
       "modulars",
       "moss-marrow-cafe",
@@ -183,6 +194,7 @@ describe("production template registry", () => {
       "premium-coffee-website",
       "premium-construction",
       "premium-restaurant",
+      "quantum-wellness-spa",
       "rivergate-plumbing",
       "roofing-agency-premium",
       "second-furniture-website",
@@ -287,7 +299,13 @@ describe("production template registry", () => {
       "little-rainbow-nursery",
       "apex-growth-agency",
       "valist-ai-studio",
-      "cleanhub-london"
+      "cleanhub-london",
+      "clipzy-video-agency",
+      "quantum-wellness-spa",
+      "jumami-street-food",
+      "consulting-growth-advisory",
+      "medivra-therapy-recovery",
+      "ace-barbers"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -360,7 +378,13 @@ describe("production template registry", () => {
       "little-rainbow-nursery",
       "apex-growth-agency",
       "valist-ai-studio",
-      "cleanhub-london"
+      "cleanhub-london",
+      "clipzy-video-agency",
+      "quantum-wellness-spa",
+      "jumami-street-food",
+      "consulting-growth-advisory",
+      "medivra-therapy-recovery",
+      "ace-barbers"
     ];
 
     for (const templateId of redesignedTemplateIds) {

@@ -1,0 +1,16 @@
+{
+  "id": "quantum-wellness-spa",
+  "name": "Quantum Wellness Spa",
+  "description": "A calm premium wellness and spa template with a cinematic treatment hero, therapy accordion, pricing, healing stories, wellness moments, blog cards, FAQ, and dark booking CTA.",
+  "category": "Business",
+  "image": "/templates/quantum-wellness-spa.webp",
+  "previewImages": [
+    "/templates/quantum-wellness-spa.webp"
+  ],
+  "features": [
+    "Editable wellness identity, logo, navigation, copy, images, buttons, links, treatments, prices, testimonials, blog cards, FAQs, and footer",
+    "Scoped warm cream and cacao visual system",
+    "Responsive spa homepage with mobile navigation and treatment FAQ controls",
+    "Template-owned generated wellness photography"
+  ]
+}

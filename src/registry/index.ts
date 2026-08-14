@@ -170,6 +170,18 @@ import valistAiStudioConfig from "../templates/valist-ai-studio/config.json";
 import valistAiStudioEditable from "../templates/valist-ai-studio/editable.json";
 import cleanhubLondonConfig from "../templates/cleanhub-london/config.json";
 import cleanhubLondonEditable from "../templates/cleanhub-london/editable.json";
+import clipzyVideoAgencyConfig from "../templates/clipzy-video-agency/config.json";
+import clipzyVideoAgencyEditable from "../templates/clipzy-video-agency/editable.json";
+import quantumWellnessSpaConfig from "../templates/quantum-wellness-spa/config.json";
+import quantumWellnessSpaEditable from "../templates/quantum-wellness-spa/editable.json";
+import jumamiStreetFoodConfig from "../templates/jumami-street-food/config.json";
+import jumamiStreetFoodEditable from "../templates/jumami-street-food/editable.json";
+import consultingGrowthAdvisoryConfig from "../templates/consulting-growth-advisory/config.json";
+import consultingGrowthAdvisoryEditable from "../templates/consulting-growth-advisory/editable.json";
+import medivraTherapyRecoveryConfig from "../templates/medivra-therapy-recovery/config.json";
+import medivraTherapyRecoveryEditable from "../templates/medivra-therapy-recovery/editable.json";
+import aceBarbersConfig from "../templates/ace-barbers/config.json";
+import aceBarbersEditable from "../templates/ace-barbers/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -274,6 +286,12 @@ const components = {
   "apex-growth-agency": dynamic<{ data: TemplateData }>(() => import("../templates/apex-growth-agency/template")),
   "valist-ai-studio": dynamic<{ data: TemplateData }>(() => import("../templates/valist-ai-studio/template")),
   "cleanhub-london": dynamic<{ data: TemplateData }>(() => import("../templates/cleanhub-london/template")),
+  "clipzy-video-agency": dynamic<{ data: TemplateData }>(() => import("../templates/clipzy-video-agency/template")),
+  "quantum-wellness-spa": dynamic<{ data: TemplateData }>(() => import("../templates/quantum-wellness-spa/template")),
+  "jumami-street-food": dynamic<{ data: TemplateData }>(() => import("../templates/jumami-street-food/template")),
+  "consulting-growth-advisory": dynamic<{ data: TemplateData }>(() => import("../templates/consulting-growth-advisory/template")),
+  "medivra-therapy-recovery": dynamic<{ data: TemplateData }>(() => import("../templates/medivra-therapy-recovery/template")),
+  "ace-barbers": dynamic<{ data: TemplateData }>(() => import("../templates/ace-barbers/template")),
 
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
@@ -362,6 +380,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "apex-growth-agency": { config: apexGrowthAgencyConfig, component: components["apex-growth-agency"], defaultData: normalizeData(apexGrowthAgencyEditable) },
   "valist-ai-studio": { config: valistAiStudioConfig, component: components["valist-ai-studio"], defaultData: normalizeData(valistAiStudioEditable) },
   "cleanhub-london": { config: cleanhubLondonConfig, component: components["cleanhub-london"], defaultData: normalizeData(cleanhubLondonEditable) },
+  "clipzy-video-agency": { config: clipzyVideoAgencyConfig, component: components["clipzy-video-agency"], defaultData: normalizeData(clipzyVideoAgencyEditable) },
+  "quantum-wellness-spa": { config: quantumWellnessSpaConfig, component: components["quantum-wellness-spa"], defaultData: normalizeData(quantumWellnessSpaEditable) },
+  "jumami-street-food": { config: jumamiStreetFoodConfig, component: components["jumami-street-food"], defaultData: normalizeData(jumamiStreetFoodEditable) },
+  "consulting-growth-advisory": { config: consultingGrowthAdvisoryConfig, component: components["consulting-growth-advisory"], defaultData: normalizeData(consultingGrowthAdvisoryEditable) },
+  "medivra-therapy-recovery": { config: medivraTherapyRecoveryConfig, component: components["medivra-therapy-recovery"], defaultData: normalizeData(medivraTherapyRecoveryEditable) },
+  "ace-barbers": { config: aceBarbersConfig, component: components["ace-barbers"], defaultData: normalizeData(aceBarbersEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

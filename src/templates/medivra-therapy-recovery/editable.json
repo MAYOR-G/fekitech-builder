@@ -1,0 +1,163 @@
+{
+  "brand": {
+    "name": "Medivra",
+    "logo": "/templates/medivra-therapy-recovery/assets/logo.svg",
+    "logoAlt": "Medivra therapy clinic logo",
+    "email": "hello@medivra.co.uk",
+    "emailHref": "mailto:hello@medivra.co.uk",
+    "phone": "020 7946 0338",
+    "address": "42 Recovery Lane, Bristol"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Start",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "label": "Strength Therapy",
+    "title": "Therapy for Better Health Recovery",
+    "body": "Personalised therapy designed to improve health, restore movement and support recovery with professional care.",
+    "button": { "label": "Book a Consultation", "href": "#contact" },
+    "image": "/templates/medivra-therapy-recovery/assets/hero-consultation.webp",
+    "imageAlt": "Therapist consulting with a patient in a warm recovery clinic",
+    "chips": ["Injury Support", "Pain Relief", "Physical Recovery", "Posture Care"]
+  },
+  "statement": "Professional therapy specialists working together to guide patients toward better health, healing and recovery.",
+  "stats": [
+    { "value": "1200+", "label": "Patients", "body": "Trusted by individuals recovering from injury, pain and mobility challenges." },
+    { "value": "40+", "label": "Programmes", "body": "Personalised treatment plans shaped around long-term health and recovery." },
+    { "value": "90%", "label": "Recovery", "body": "Patient recovery outcomes improved through guided treatment and aftercare." }
+  ],
+  "expert": {
+    "label": "Expert Therapy",
+    "title": "Expert Therapy for Better Physical Recovery",
+    "body": "Our professional therapy services focus on reducing pain, restoring mobility and building confidence through strength, care and movement.",
+    "button": { "label": "Book a Consultation", "href": "#contact" },
+    "image": "/templates/medivra-therapy-recovery/assets/mobility-therapy.webp",
+    "imageAlt": "Physiotherapist helping a patient with shoulder mobility",
+    "cards": [
+      { "title": "Pain Relief", "body": "Reduce pain and restore movement" },
+      { "title": "Mobility Recovery", "body": "Improve flexibility and strength" },
+      { "title": "Recovery Support", "body": "Support healing with care plans" }
+    ]
+  },
+  "services": {
+    "label": "Services",
+    "title": "Professional Therapy for Recovery",
+    "body": "Expert therapy treatments designed to relieve pain, restore mobility and support faster physical recovery.",
+    "items": [
+      { "title": "Pain Relief Therapy", "body": "Reduce chronic pain and improve daily physical comfort.", "tag": "Pain relief" },
+      { "title": "Mobility Therapy", "body": "Restore joint function, flexibility and movement confidence.", "tag": "Mobility" },
+      { "title": "Injury Recovery", "body": "Support healing after sports, workplace or everyday injuries.", "tag": "Injury care" },
+      { "title": "Muscle Therapy", "body": "Strengthen muscles and improve body stability.", "tag": "Muscle care" },
+      { "title": "Rehabilitation Care", "body": "Personalised rehabilitation programmes for longer-term recovery.", "tag": "Rehab" },
+      { "title": "Posture Therapy", "body": "Correct posture and reduce body strain.", "tag": "Posture" }
+    ]
+  },
+  "specialists": {
+    "label": "Our Team",
+    "title": "Meet Our Therapy Specialists",
+    "body": "Experienced therapists dedicated to helping patients recover, move better and feel stronger.",
+    "image": "/templates/medivra-therapy-recovery/assets/specialists-triptych.webp",
+    "imageAlt": "Three physical therapy specialists"
+  },
+  "why": {
+    "label": "Benefits",
+    "title": "Why Choose Our Therapy Care",
+    "body": "We provide professional therapy services focused on better recovery, improved mobility and long-term physical health.",
+    "items": [
+      { "title": "Expert Therapists", "body": "Certified professionals with specialist recovery experience." },
+      { "title": "Personalised Care", "body": "Treatment plans adapted to each patient and goal." },
+      { "title": "Advanced Methods", "body": "Modern therapy approaches for safer progress." }
+    ]
+  },
+  "process": {
+    "label": "Process",
+    "title": "Our Simple Therapy Recovery Process",
+    "body": "Our structured therapy process helps patients restore mobility, reduce pain and rebuild confidence.",
+    "items": [
+      { "number": "1", "title": "Initial Consultation", "body": "We start with a clear discussion of symptoms, goals and recovery needs." },
+      { "number": "2", "title": "Health Assessment", "body": "Our therapists carefully assess posture, mobility, pain and movement limits." },
+      { "number": "3", "title": "Personalised Treatment", "body": "We create treatment through exercises, manual guidance and simple routines." },
+      { "number": "4", "title": "Recovery Progress", "body": "Regular reviews monitor results and adjust therapy as recovery improves." }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What Our Patients Say",
+    "body": "Real experiences from patients who improved their health and mobility through our professional therapy services.",
+    "items": [
+      { "title": "Excellent Professional Therapy Care", "quote": "Therapy sessions helped reduce pain and improved my daily mobility.", "name": "Amina White" },
+      { "title": "Trusted Recovery Support Experience", "quote": "Professional therapists guided my recovery and helped me move freely again.", "name": "Oliver Harris" },
+      { "title": "Highly Recommended Therapy Service", "quote": "Great treatment plan that improved movement and reduced my pain.", "name": "Devon Patel" }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Insights for Better Health and Recovery",
+    "button": { "label": "View all", "href": "#blog" },
+    "items": [
+      { "title": "How Therapy Helps Improve Mobility and Reduce Pain", "date": "May 10, 2026", "image": "/templates/medivra-therapy-recovery/assets/recovery-consultation.webp", "imageAlt": "Therapist reviewing recovery goals on a tablet", "tag": "Recovery" },
+      { "title": "Understanding Injury Recovery Through Therapy", "date": "May 18, 2026", "image": "/templates/medivra-therapy-recovery/assets/mobility-therapy.webp", "imageAlt": "Patient doing shoulder mobility exercise", "tag": "Injury" },
+      { "title": "Simple Exercises to Improve Daily Mobility", "date": "May 22, 2026", "image": "/templates/medivra-therapy-recovery/assets/hero-consultation.webp", "imageAlt": "Therapy consultation in recovery clinic", "tag": "Mobility" }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "body": "Answers about therapy, recovery plans and what to expect from care.",
+    "items": [
+      { "question": "How long does a therapy session take?", "answer": "Most sessions take around 45 to 60 minutes depending on the treatment plan." },
+      { "question": "How many sessions are needed?", "answer": "This depends on your condition, recovery goals and progress after assessment." },
+      { "question": "Is therapy treatment painful?", "answer": "Therapy should feel controlled and supportive. We adapt pressure and pace to you." },
+      { "question": "Do I need a doctor's referral?", "answer": "No. You can book directly, though referrals are welcome where relevant." }
+    ]
+  },
+  "cta": {
+    "label": "Care Now",
+    "title": "Start Your Therapy Recovery Journey",
+    "button": { "label": "Book a Consultation", "href": "#contact" },
+    "imageLeft": "/templates/medivra-therapy-recovery/assets/recovery-consultation.webp",
+    "imageRight": "/templates/medivra-therapy-recovery/assets/recovery-family-cta.webp",
+    "imageAlt": "Therapy recovery consultation"
+  },
+  "footer": {
+    "tagline": "Restore strength, improve mobility and begin your recovery journey today.",
+    "mainTitle": "Main Pages",
+    "mainLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Blog", "href": "#blog" }
+    ],
+    "supportTitle": "Support",
+    "supportLinks": [
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Privacy Policy", "href": "#home" }
+    ],
+    "socialLinks": [
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "X", "href": "https://x.com/" },
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/" }
+    ],
+    "copyright": "FekiTech 2026. All Rights Reserved"
+  },
+  "colors": {
+    "page": "#f3eee9",
+    "card": "#fffdfb",
+    "text": "#2e2924",
+    "muted": "#776f66",
+    "accent": "#b57935",
+    "accentDark": "#7e522a",
+    "line": "#e6dcd1",
+    "footer": "#d3ad82"
+  },
+  "typography": {
+    "headingFont": "Arial, Helvetica, sans-serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  }
+}

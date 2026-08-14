@@ -1,0 +1,678 @@
+[data-template-id="ace-barbers"] {
+  min-height: 100%;
+  background: var(--ace-page);
+  color: var(--ace-text);
+  font-family: var(--ace-body);
+}
+
+[data-template-id="ace-barbers"] *,
+[data-template-id="ace-barbers"] *::before,
+[data-template-id="ace-barbers"] *::after {
+  box-sizing: border-box;
+}
+
+[data-template-id="ace-barbers"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="ace-barbers"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="ace-barbers"] h1,
+[data-template-id="ace-barbers"] h2,
+[data-template-id="ace-barbers"] h3,
+[data-template-id="ace-barbers"] p,
+[data-template-id="ace-barbers"] figure {
+  margin: 0;
+}
+
+[data-template-id="ace-barbers"] .ace-header,
+[data-template-id="ace-barbers"] .ace-services,
+[data-template-id="ace-barbers"] .ace-gallery,
+[data-template-id="ace-barbers"] .ace-testimonials,
+[data-template-id="ace-barbers"] .ace-team,
+[data-template-id="ace-barbers"] .ace-stats,
+[data-template-id="ace-barbers"] .ace-booking,
+[data-template-id="ace-barbers"] .ace-contact,
+[data-template-id="ace-barbers"] .ace-footer {
+  width: min(100% - 28px, 1240px);
+  margin-inline: auto;
+}
+
+[data-template-id="ace-barbers"] .ace-header {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+  min-height: 64px;
+  padding: 8px 0;
+}
+
+[data-template-id="ace-barbers"] .ace-logo img {
+  width: 142px;
+  height: auto;
+}
+
+[data-template-id="ace-barbers"] .ace-header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 22px;
+  color: var(--ace-accent);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+[data-template-id="ace-barbers"] .ace-header nav a:hover {
+  color: #ffffff;
+}
+
+[data-template-id="ace-barbers"] .ace-menu {
+  display: none;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--ace-line);
+  background: var(--ace-card);
+  color: var(--ace-text);
+}
+
+[data-template-id="ace-barbers"] .ace-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: clamp(410px, 56vw, 720px);
+  width: min(100% - 28px, 1240px);
+  margin: 0 auto clamp(72px, 8vw, 116px);
+  overflow: hidden;
+  border: 1px solid var(--ace-line);
+  background: #000000;
+}
+
+[data-template-id="ace-barbers"] .ace-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+}
+
+[data-template-id="ace-barbers"] .ace-hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.76) 36%, rgba(0, 0, 0, 0.18) 70%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.86));
+}
+
+[data-template-id="ace-barbers"] .ace-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 100%);
+  padding: clamp(28px, 5vw, 52px) clamp(18px, 4vw, 34px) 92px;
+}
+
+[data-template-id="ace-barbers"] .ace-hero h1 {
+  max-width: 680px;
+  font-family: var(--ace-heading);
+  font-size: clamp(52px, 8vw, 116px);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.94;
+}
+
+[data-template-id="ace-barbers"] .ace-hero h1 span {
+  display: block;
+}
+
+[data-template-id="ace-barbers"] .ace-hero h1 span + span {
+  font-style: italic;
+}
+
+[data-template-id="ace-barbers"] .ace-hero p {
+  max-width: 430px;
+  margin-top: 20px;
+  color: var(--ace-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+[data-template-id="ace-barbers"] .ace-hero-book {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-height: 54px;
+  border: 1px solid var(--ace-line);
+  background: rgba(0, 0, 0, 0.38);
+  color: var(--ace-text);
+  font-size: 12px;
+  font-weight: 750;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+[data-template-id="ace-barbers"] .ace-hero-book:hover {
+  border-color: var(--ace-accent);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+[data-template-id="ace-barbers"] h2 {
+  font-family: var(--ace-heading);
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+[data-template-id="ace-barbers"] .ace-services,
+[data-template-id="ace-barbers"] .ace-gallery,
+[data-template-id="ace-barbers"] .ace-testimonials,
+[data-template-id="ace-barbers"] .ace-team,
+[data-template-id="ace-barbers"] .ace-stats,
+[data-template-id="ace-barbers"] .ace-booking,
+[data-template-id="ace-barbers"] .ace-contact {
+  margin-bottom: clamp(72px, 8vw, 110px);
+}
+
+[data-template-id="ace-barbers"] .ace-service-list {
+  display: grid;
+  margin-top: 32px;
+  border-top: 1px solid var(--ace-line);
+}
+
+[data-template-id="ace-barbers"] .ace-service-list article {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  min-height: 88px;
+  border-bottom: 1px solid var(--ace-line);
+}
+
+[data-template-id="ace-barbers"] .ace-service-list article > span {
+  width: 24px;
+  height: 1px;
+  background: var(--ace-accent);
+}
+
+[data-template-id="ace-barbers"] .ace-service-list h3 {
+  font-family: var(--ace-heading);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+[data-template-id="ace-barbers"] .ace-service-list p {
+  margin-top: 6px;
+  color: var(--ace-muted);
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-service-list strong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ace-accent);
+  font-family: var(--ace-heading);
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+[data-template-id="ace-barbers"] .ace-service-list strong::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid var(--ace-accent);
+  border-right: 1px solid var(--ace-accent);
+  transform: rotate(45deg);
+}
+
+[data-template-id="ace-barbers"] .ace-gallery > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 24px;
+  border: 1px solid var(--ace-line);
+}
+
+[data-template-id="ace-barbers"] .ace-gallery figure {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-right: 1px solid var(--ace-line);
+  border-bottom: 1px solid var(--ace-line);
+  background: var(--ace-card);
+}
+
+[data-template-id="ace-barbers"] .ace-gallery figure:nth-child(2),
+[data-template-id="ace-barbers"] .ace-gallery figure:nth-child(5) {
+  grid-column: span 2;
+}
+
+[data-template-id="ace-barbers"] .ace-gallery figure:nth-child(2) {
+  aspect-ratio: 2 / 1;
+}
+
+[data-template-id="ace-barbers"] .ace-gallery figure:nth-child(5) {
+  aspect-ratio: 2 / 1;
+}
+
+[data-template-id="ace-barbers"] .ace-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.08);
+  transition: transform 420ms ease;
+}
+
+[data-template-id="ace-barbers"] .ace-gallery figure:hover img {
+  transform: scale(1.04);
+}
+
+[data-template-id="ace-barbers"] .ace-section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+[data-template-id="ace-barbers"] .ace-section-row > div {
+  color: var(--ace-accent);
+  text-align: right;
+}
+
+[data-template-id="ace-barbers"] .ace-section-row span {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+[data-template-id="ace-barbers"] .ace-section-row strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-section-row p {
+  margin-top: 5px;
+  color: var(--ace-muted);
+  font-size: 11px;
+}
+
+[data-template-id="ace-barbers"] .ace-testimonial-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 28px;
+}
+
+[data-template-id="ace-barbers"] .ace-testimonial-track article {
+  display: grid;
+  align-content: center;
+  min-height: 190px;
+  padding: 28px;
+  border: 1px solid var(--ace-line);
+  background: var(--ace-panel);
+  text-align: center;
+}
+
+[data-template-id="ace-barbers"] .ace-testimonial-track p {
+  color: var(--ace-text);
+  font-family: var(--ace-heading);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+[data-template-id="ace-barbers"] .ace-testimonial-track strong {
+  margin-top: 12px;
+  color: var(--ace-muted);
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-testimonial-track span {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 12px;
+  color: var(--ace-accent);
+}
+
+[data-template-id="ace-barbers"] .ace-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: min(100%, 860px);
+  margin-top: 26px;
+}
+
+[data-template-id="ace-barbers"] .ace-team article {
+  border: 1px solid var(--ace-line);
+  background: var(--ace-panel);
+}
+
+[data-template-id="ace-barbers"] .ace-team img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: saturate(0.86) contrast(1.05);
+}
+
+[data-template-id="ace-barbers"] .ace-team article > div {
+  padding: 14px 16px 18px;
+}
+
+[data-template-id="ace-barbers"] .ace-team h3 {
+  font-family: var(--ace-heading);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+[data-template-id="ace-barbers"] .ace-team p {
+  margin-top: 5px;
+  color: var(--ace-muted);
+  font-size: 11px;
+}
+
+[data-template-id="ace-barbers"] .ace-stats > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 26px;
+}
+
+[data-template-id="ace-barbers"] .ace-stats article {
+  display: grid;
+  place-items: center;
+  min-height: 178px;
+  border: 1px solid var(--ace-line);
+  background: var(--ace-panel);
+  text-align: center;
+}
+
+[data-template-id="ace-barbers"] .ace-stats strong {
+  font-family: var(--ace-heading);
+  font-size: 42px;
+  font-weight: 500;
+}
+
+[data-template-id="ace-barbers"] .ace-stats span {
+  margin-top: -30px;
+  color: var(--ace-muted);
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-booking {
+  padding: 26px;
+  border: 1px solid #111111;
+  background: #060606;
+}
+
+[data-template-id="ace-barbers"] .ace-booking > p {
+  margin-top: 6px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--ace-line);
+  color: var(--ace-muted);
+  font-size: 13px;
+}
+
+[data-template-id="ace-barbers"] .ace-booking-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+[data-template-id="ace-barbers"] .ace-booking label {
+  display: grid;
+  gap: 8px;
+  color: var(--ace-accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+[data-template-id="ace-barbers"] .ace-booking select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--ace-line);
+  border-radius: 0;
+  background: #030303;
+  color: var(--ace-text);
+  padding: 0 14px;
+  font: inherit;
+}
+
+[data-template-id="ace-barbers"] .ace-booking-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+[data-template-id="ace-barbers"] .ace-booking-actions button {
+  min-height: 52px;
+  border: 1px solid var(--ace-line);
+  background: #030303;
+  color: var(--ace-muted);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+[data-template-id="ace-barbers"] .ace-booking-actions button:last-child {
+  background: var(--ace-button);
+  color: var(--ace-text);
+}
+
+[data-template-id="ace-barbers"] .ace-contact {
+  padding-top: 34px;
+  border-top: 1px solid var(--ace-line);
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 7px) top / 100% 54px no-repeat;
+}
+
+[data-template-id="ace-barbers"] .ace-contact-lines {
+  display: grid;
+  gap: 8px;
+  padding: 84px 0 26px;
+  color: var(--ace-accent);
+  font-size: 15px;
+}
+
+[data-template-id="ace-barbers"] .ace-about-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid #111111;
+  background: #050505;
+}
+
+[data-template-id="ace-barbers"] .ace-about-card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  opacity: 0.55;
+}
+
+[data-template-id="ace-barbers"] .ace-about-card::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.78) 48%, rgba(0, 0, 0, 0.18));
+}
+
+[data-template-id="ace-barbers"] .ace-about-card > div {
+  position: relative;
+  z-index: 1;
+  grid-column: 1;
+  align-self: end;
+  padding: clamp(24px, 5vw, 46px);
+}
+
+[data-template-id="ace-barbers"] .ace-about-card p {
+  max-width: 510px;
+  margin-top: 12px;
+  color: var(--ace-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+[data-template-id="ace-barbers"] .ace-about-card h3 {
+  margin-top: 22px;
+  font-family: var(--ace-heading);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+[data-template-id="ace-barbers"] .ace-about-card span {
+  display: block;
+  margin-top: 5px;
+  color: var(--ace-accent);
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-footer {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 58px 0 24px;
+  border-top: 1px solid var(--ace-line);
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 7px) top / 100% 54px no-repeat;
+  text-align: center;
+}
+
+[data-template-id="ace-barbers"] .ace-footer img {
+  width: 134px;
+}
+
+[data-template-id="ace-barbers"] .ace-footer nav {
+  display: grid;
+  gap: 10px;
+  color: var(--ace-accent);
+  font-size: 12px;
+}
+
+[data-template-id="ace-barbers"] .ace-back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  color: var(--ace-text);
+}
+
+[data-template-id="ace-barbers"] .ace-footer small {
+  color: var(--ace-muted);
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  [data-template-id="ace-barbers"] .ace-header {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  [data-template-id="ace-barbers"] .ace-menu {
+    display: grid;
+  }
+
+  [data-template-id="ace-barbers"] .ace-header nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    display: none;
+    min-width: 220px;
+    padding: 16px;
+    border: 1px solid var(--ace-line);
+    background: #050505;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  }
+
+  [data-template-id="ace-barbers"] .ace-header nav.is-open {
+    display: grid;
+    gap: 14px;
+  }
+
+  [data-template-id="ace-barbers"] .ace-gallery > div,
+  [data-template-id="ace-barbers"] .ace-team-grid,
+  [data-template-id="ace-barbers"] .ace-testimonial-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  [data-template-id="ace-barbers"] .ace-about-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  [data-template-id="ace-barbers"] .ace-header,
+  [data-template-id="ace-barbers"] .ace-services,
+  [data-template-id="ace-barbers"] .ace-gallery,
+  [data-template-id="ace-barbers"] .ace-testimonials,
+  [data-template-id="ace-barbers"] .ace-team,
+  [data-template-id="ace-barbers"] .ace-stats,
+  [data-template-id="ace-barbers"] .ace-booking,
+  [data-template-id="ace-barbers"] .ace-contact,
+  [data-template-id="ace-barbers"] .ace-footer,
+  [data-template-id="ace-barbers"] .ace-hero {
+    width: min(100% - 16px, 1240px);
+  }
+
+  [data-template-id="ace-barbers"] .ace-hero {
+    min-height: 470px;
+  }
+
+  [data-template-id="ace-barbers"] .ace-hero-copy {
+    padding-inline: 16px;
+  }
+
+  [data-template-id="ace-barbers"] .ace-service-list article {
+    grid-template-columns: 22px 1fr;
+    padding: 18px 0;
+  }
+
+  [data-template-id="ace-barbers"] .ace-service-list strong {
+    grid-column: 2;
+    justify-self: start;
+    font-size: 16px;
+  }
+
+  [data-template-id="ace-barbers"] .ace-gallery > div,
+  [data-template-id="ace-barbers"] .ace-team-grid,
+  [data-template-id="ace-barbers"] .ace-testimonial-track,
+  [data-template-id="ace-barbers"] .ace-stats > div,
+  [data-template-id="ace-barbers"] .ace-booking-actions {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="ace-barbers"] .ace-gallery figure:nth-child(2),
+  [data-template-id="ace-barbers"] .ace-gallery figure:nth-child(5) {
+    grid-column: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  [data-template-id="ace-barbers"] .ace-section-row {
+    display: grid;
+  }
+
+  [data-template-id="ace-barbers"] .ace-section-row > div {
+    text-align: left;
+  }
+
+  [data-template-id="ace-barbers"] .ace-section-row span {
+    justify-content: flex-start;
+  }
+
+  [data-template-id="ace-barbers"] .ace-contact-lines {
+    padding-top: 72px;
+  }
+}

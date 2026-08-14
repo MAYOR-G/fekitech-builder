@@ -1,0 +1,152 @@
+{
+  "brand": {
+    "name": "Jumami",
+    "logo": "/templates/jumami-street-food/assets/logo.svg",
+    "logoAlt": "Jumami street food logo",
+    "email": "hello@jumami.co.uk",
+    "emailHref": "mailto:hello@jumami.co.uk",
+    "phone": "0121 555 0198",
+    "address": "24 Market Street, Birmingham"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Events", "href": "#events" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Book a Table",
+    "ctaHref": "#booking"
+  },
+  "hero": {
+    "eyebrow": "Serving Since 2010",
+    "rating": "4.9 from local diners",
+    "title": "Every Bite Feels Special",
+    "subtitle": "Burgers, pizza, fries and loud table energy made fresh every day.",
+    "button": { "label": "View Menu", "href": "#menu" },
+    "image": "/templates/jumami-street-food/assets/hero-cheese-pull.webp",
+    "imageAlt": "Pizza slice lifting over burgers and chips"
+  },
+  "intro": {
+    "title": "Where Great Food Brings People Together",
+    "body": "Enjoy chef-crafted burgers, warm hospitality and a buzzing atmosphere made for after-work bites, family meals and weekend catch-ups.",
+    "hours": "Daily Special 11:00 to 11:00 PM",
+    "button": { "label": "About Us", "href": "#about" },
+    "images": [
+      { "src": "/templates/jumami-street-food/assets/guest-burger-bite.webp", "alt": "Guest eating a cheeseburger" },
+      { "src": "/templates/jumami-street-food/assets/pizza-table-spread.webp", "alt": "Pizza and loaded fries on a diner table" },
+      { "src": "/templates/jumami-street-food/assets/loaded-fries-chicken.webp", "alt": "Loaded fries and crispy chicken in a tray" }
+    ]
+  },
+  "specials": {
+    "title": "Taste What Everyone's Talking About",
+    "image": "/templates/jumami-street-food/assets/pizza-table-spread.webp",
+    "imageAlt": "Fresh pizza and loaded fries on a table",
+    "panelTitle": "Our Signature Items",
+    "button": { "label": "Reserve a Table", "href": "#booking" },
+    "items": [
+      { "name": "Big Stack Burger", "price": "GBP 8.50" },
+      { "name": "Pepperoni Pizza", "price": "GBP 12" },
+      { "name": "Shake and Fries", "price": "GBP 5.95" },
+      { "name": "Crispy Chunkers", "price": "GBP 6.95" },
+      { "name": "Smoky Loaded Fries", "price": "GBP 6.50" }
+    ]
+  },
+  "dishes": {
+    "title": "Our Most Loved Dishes",
+    "buttonLabel": "Try Today",
+    "items": [
+      { "name": "Triple Beef Burger", "body": "Juicy beef, soft bun, cheddar cheese and house burger sauce.", "image": "/templates/jumami-street-food/assets/double-cheese-burger.webp", "imageAlt": "Double cheeseburger on checker paper", "tag": "Guest Pick" },
+      { "name": "Pepperoni Pull", "body": "Golden crust, melty cheese and our sweet tomato base.", "image": "/templates/jumami-street-food/assets/pepperoni-cheese-pull.webp", "imageAlt": "Pepperoni pizza slice with cheese pull", "tag": "Hot Slice" },
+      { "name": "Crispy Fried Chicken", "body": "Crunchy pieces served with chips and signature dip.", "image": "/templates/jumami-street-food/assets/crispy-fried-chicken.webp", "imageAlt": "Crispy fried chicken with fries", "tag": "Best Crunch" },
+      { "name": "Classic Deli Burger", "body": "A proper burger with pickles, onions and melted cheese.", "image": "/templates/jumami-street-food/assets/hero-cheese-pull.webp", "imageAlt": "Burger beside pizza and chips", "tag": "Fresh Grill" },
+      { "name": "Spicy Chicken Pizza", "body": "Warm chilli, roasted peppers and smoky chicken pieces.", "image": "/templates/jumami-street-food/assets/pizza-table-spread.webp", "imageAlt": "Pizza and fries on diner table", "tag": "Spicy" },
+      { "name": "Loaded Chicken Fries", "body": "Crisp fries, chicken pieces, cheese sauce and spring onion.", "image": "/templates/jumami-street-food/assets/loaded-fries-chicken.webp", "imageAlt": "Loaded fries and chicken tray", "tag": "Loaded" }
+    ]
+  },
+  "testimonial": {
+    "title": "Trusted By Hundreds Of Happy Guests",
+    "image": "/templates/jumami-street-food/assets/friends-sharing-table.webp",
+    "imageAlt": "Friends sharing fast food at a restaurant table",
+    "quote": "The food was absolutely amazing and the service made us feel right at home. One of the best dining experiences we have had.",
+    "name": "Sarah McNeil",
+    "role": "Regular diner"
+  },
+  "moments": {
+    "title": "Make Every Moment Count",
+    "items": [
+      { "src": "/templates/jumami-street-food/assets/guest-burger-bite.webp", "alt": "Guest eating a burger" },
+      { "src": "/templates/jumami-street-food/assets/friends-sharing-table.webp", "alt": "Friends sharing food" },
+      { "src": "/templates/jumami-street-food/assets/loaded-fries-chicken.webp", "alt": "Handheld loaded fries and chicken tray" },
+      { "src": "/templates/jumami-street-food/assets/pepperoni-cheese-pull.webp", "alt": "Pizza slice with melted cheese" }
+    ]
+  },
+  "events": {
+    "title": "Acoustic Evenings Over Dinner",
+    "items": [
+      { "date": "10", "month": "June", "title": "Curated Flavours and Smooth Jazz Evenings", "body": "An elevated dining experience where brilliant flavours meet the rhythm of smooth live jazz.", "buttonLabel": "Read More", "href": "#booking", "image": "/templates/jumami-street-food/assets/friends-sharing-table.webp", "imageAlt": "Friends at a lively restaurant table" },
+      { "date": "13", "month": "May", "title": "Behind The Kitchen Signature Recipes", "body": "Explore the techniques and passion behind the dishes and learn our guests love most.", "buttonLabel": "Read More", "href": "#booking", "image": "/templates/jumami-street-food/assets/double-cheese-burger.webp", "imageAlt": "Juicy cheeseburger close up" },
+      { "date": "30", "month": "July", "title": "Summer Seafood Festival Begins", "body": "Enjoy fresh coastal bites, grilled specials and cheerful summer drinks.", "buttonLabel": "Read More", "href": "#booking", "image": "/templates/jumami-street-food/assets/pepperoni-cheese-pull.webp", "imageAlt": "Pizza slice with cheese pull" }
+    ]
+  },
+  "booking": {
+    "title": "Gather Around The Perfect Table",
+    "image": "/templates/jumami-street-food/assets/booking-burger-guest.webp",
+    "imageAlt": "Guest smiling with a burger in a red booth",
+    "fields": [
+      "Full Name",
+      "Email Address",
+      "Phone Number",
+      "Number of Guests",
+      "Reservation Date",
+      "Reservation Time"
+    ],
+    "buttonLabel": "Reserve a Table"
+  },
+  "marquee": {
+    "items": ["Italian", "Cheese", "Mexican", "Burger", "Pizza", "Fries"]
+  },
+  "footer": {
+    "companyTitle": "Company",
+    "companyLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Events", "href": "#events" },
+      { "label": "Contact Us", "href": "#contact" }
+    ],
+    "hoursTitle": "Open Time",
+    "hours": ["Tue to Fri: 11:00 to 22:00", "Sat to Sun: 11:00 to 23:00", "Monday: Closed"],
+    "socialTitle": "Social",
+    "socialLinks": [
+      { "label": "Twitter", "href": "https://twitter.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "TikTok", "href": "https://tiktok.com/" }
+    ],
+    "newsletterTitle": "Subscribe To Our Newsletter",
+    "newsletterPlaceholder": "Email Address",
+    "newsletterButton": "Book a Table",
+    "copyright": "FekiTech 2026. All Rights Reserved",
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "#home" },
+      { "label": "Terms and Conditions", "href": "#home" }
+    ]
+  },
+  "colors": {
+    "page": "#e8e8e8",
+    "ink": "#181818",
+    "muted": "#616161",
+    "red": "#ec1928",
+    "green": "#005a22",
+    "yellow": "#ffe36b",
+    "cream": "#fff8e8",
+    "white": "#ffffff",
+    "footer": "#151515"
+  },
+  "typography": {
+    "displayFont": "Arial Black, Impact, Haettenschweiler, sans-serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "jumami-street-food",
+  "name": "Jumami Street Food",
+  "description": "A bold fast-food restaurant template with a photo-led hero, playful scalloped dividers, menu panels, dish cards, social proof, events, reservation form, marquee, and dark footer.",
+  "category": "Business",
+  "image": "/templates/jumami-street-food.webp",
+  "previewImages": [
+    "/templates/jumami-street-food.webp"
+  ],
+  "features": [
+    "Editable logo, navigation, hero copy, menu, dishes, testimonials, gallery, events, booking form and footer",
+    "Scoped red, green and yellow fast-food visual system",
+    "Responsive restaurant homepage with mobile navigation",
+    "Template-owned generated food and diner photography"
+  ]
+}

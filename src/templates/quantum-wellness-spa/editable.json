@@ -1,0 +1,207 @@
+{
+  "brand": {
+    "name": "Quantuma",
+    "logo": "/templates/quantum-wellness-spa/assets/logo.svg",
+    "logoAlt": "Quantuma logo",
+    "email": "hello@quantuma.co.uk",
+    "emailHref": "mailto:hello@quantuma.co.uk",
+    "phone": "+44 20 8050 2711",
+    "phoneHref": "tel:+442080502711",
+    "address": "18 Garden Mews, Bath BA1 2LQ",
+    "strapline": "Calm therapy, facials and body treatments for everyday restoration."
+  },
+  "topBar": {
+    "text": "Mon to Sat, 9:00 to 18:00",
+    "rightText": "Bath wellness studio"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Service", "href": "#therapies" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "Blogs", "href": "#blog" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Book an Appointment",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "rating": "4.9 from 320 client reviews",
+    "title": "Your Weekly Ritual of The Body and Mind",
+    "description": "A calm wellness studio for facials, massage and mindful recovery.",
+    "primaryCta": { "label": "Start With a Session", "href": "#pricing" },
+    "image": "/templates/quantum-wellness-spa/assets/hero-facial-ritual.webp",
+    "imageAlt": "Client receiving a relaxing facial treatment in a warm spa room",
+    "cards": [
+      { "label": "Facial Care", "title": "Personalised cleansing" },
+      { "label": "Body Ritual", "title": "Full-body calm" },
+      { "label": "Mindful Recovery", "title": "Quiet reset" }
+    ]
+  },
+  "intro": {
+    "number": "36+",
+    "numberLabel": "Supporting wellness practices across the south west",
+    "title": "Where consistency of care, true sensory comfort and considered beauty rituals meet.",
+    "body": "Our treatment plans are gentle and personal, built around your skin, body tension and daily rhythm.",
+    "button": { "label": "More Results", "href": "#stories" }
+  },
+  "features": {
+    "items": [
+      { "title": "Mindful Relaxing", "body": "Quiet rooms, soft pacing and treatments that never feel rushed.", "icon": "flower" },
+      { "title": "Aromatherapy", "body": "Plant-led oils chosen for comfort, clarity and natural rest.", "icon": "leaf" },
+      { "title": "Cultural Balance", "body": "Modern treatments shaped by timeless care rituals.", "icon": "sparkle" },
+      { "title": "Wellness Plan", "body": "Simple home guidance to support the work between sessions.", "icon": "heart" }
+    ]
+  },
+  "therapies": {
+    "label": "Therapies & Treatments",
+    "title": "Therapies & Treatments",
+    "description": "Supportive treatments for skin, body tension and everyday stress.",
+    "image": "/templates/quantum-wellness-spa/assets/treatment-massage.webp",
+    "imageAlt": "Professional therapist giving a fully draped massage treatment",
+    "button": { "label": "Book This Therapy", "href": "#contact" },
+    "items": [
+      { "title": "Personalised Massage", "body": "A tailored massage for areas of tension, posture fatigue and deep daily stress." },
+      { "title": "Signature Facial", "body": "A cleansing, lifting and hydration treatment built around your skin's current needs." },
+      { "title": "Guided Meditation Session", "body": "Breath-led quiet time for clients who want a calm reset before or after therapy." },
+      { "title": "Aromatherapy Ritual", "body": "A slow sensory treatment using warm towels and plant-based oils." }
+    ]
+  },
+  "journey": {
+    "title": "Your Journey to Better Health Starts Here",
+    "image": "/templates/quantum-wellness-spa/assets/yoga-mat-journey.webp",
+    "imageAlt": "Hands unrolling a green yoga mat in a sunlit wellness studio"
+  },
+  "pricing": {
+    "label": "Pricing Plan",
+    "title": "Best Service Best Pricing",
+    "description": "Choose the care rhythm that suits your week.",
+    "plans": [
+      { "name": "Spa Hour", "price": "GBP 80", "period": "/session", "icon": "flower" },
+      { "name": "Body Massage", "price": "GBP 95", "period": "/session", "icon": "hands" },
+      { "name": "Facial Massage", "price": "GBP 75", "period": "/session", "icon": "sparkle" }
+    ]
+  },
+  "stories": {
+    "label": "Testimonials",
+    "title": "Healing Stories",
+    "description": "Real experiences from guests who made restoration a regular ritual.",
+    "items": [
+      {
+        "quote": "The neck treatment is excellent. I felt calmer all evening and slept properly for the first time in weeks.",
+        "name": "Martha Ellis",
+        "role": "Monthly guest",
+        "image": "/templates/quantum-wellness-spa/assets/story-neck-therapy.webp",
+        "imageAlt": "Client receiving a calm neck and shoulder treatment"
+      },
+      {
+        "quote": "Every visit feels considered. The facial was gentle, thorough and exactly what my skin needed.",
+        "name": "Priya Nair",
+        "role": "Facial client",
+        "image": "/templates/quantum-wellness-spa/assets/hero-facial-ritual.webp",
+        "imageAlt": "Relaxing facial therapy in a warm spa room"
+      }
+    ]
+  },
+  "path": {
+    "title": "The Path to Your Well-being",
+    "description": "A clear route from first consultation to a regular care rhythm.",
+    "image": "/templates/quantum-wellness-spa/assets/moment-meditation.webp",
+    "imageAlt": "Client meditating in a warm wellness room",
+    "items": [
+      { "title": "Personal Consultation", "body": "We listen to your needs before choosing treatment pressure, products and pace." },
+      { "title": "Sensory Immersion", "body": "Soft lighting, scent and quiet preparation help your body settle." },
+      { "title": "Bespoke Therapy", "body": "Your therapist adapts the session to your skin, posture and comfort." },
+      { "title": "Post Care Guidance", "body": "You leave with simple steps to keep the benefits going." }
+    ]
+  },
+  "moments": {
+    "label": "Our Gallery",
+    "title": "Wellness Moments",
+    "description": "Small glimpses of the rituals, rooms and quiet details our guests love.",
+    "items": [
+      { "image": "/templates/quantum-wellness-spa/assets/moment-facial-glow.webp", "alt": "Client with eyes closed after a facial treatment" },
+      { "image": "/templates/quantum-wellness-spa/assets/moment-meditation.webp", "alt": "Client meditating in a bright wellness studio" },
+      { "image": "/templates/quantum-wellness-spa/assets/moment-tea.webp", "alt": "Guest holding herbal tea in a calm spa lounge" }
+    ]
+  },
+  "blog": {
+    "label": "Beauty Blog",
+    "title": "Everyday Beauty Blog",
+    "description": "Simple notes on recovery, skincare and restorative habits.",
+    "items": [
+      { "title": "Three gentle habits before your evening skincare", "date": "10 July 2026", "image": "/templates/quantum-wellness-spa/assets/blog-garden-reset.webp", "imageAlt": "Guest walking through a lush wellness garden", "buttonLabel": "Read More", "href": "#contact" },
+      { "title": "How massage supports better rest", "date": "18 July 2026", "image": "/templates/quantum-wellness-spa/assets/story-neck-therapy.webp", "imageAlt": "Therapist supporting a client during neck therapy", "buttonLabel": "Read More", "href": "#contact" },
+      { "title": "Choosing a facial rhythm that fits real life", "date": "29 July 2026", "image": "/templates/quantum-wellness-spa/assets/moment-tea.webp", "imageAlt": "Guest enjoying herbal tea after treatment", "buttonLabel": "Read More", "href": "#contact" }
+    ]
+  },
+  "faq": {
+    "title": "Most Common Questions",
+    "description": "Helpful answers before your first visit.",
+    "items": [
+      { "question": "What can I expect in my first session?", "answer": "We begin with a short consultation, then tailor the treatment pressure, products and pace to your needs." },
+      { "question": "Do you offer online therapy?", "answer": "We offer online wellbeing consultations and in-studio treatments for hands-on care." },
+      { "question": "How long does it take to see progress?", "answer": "Many guests feel calmer after one visit. Skin and tension goals usually improve with regular sessions." },
+      { "question": "Are your therapists licensed and trained?", "answer": "Yes. Each therapist is trained in safe, professional wellness and beauty treatments." },
+      { "question": "Is this suitable for sensitive skin or allergies?", "answer": "Yes. Tell us before your session and we will adapt products and oils where needed." }
+    ]
+  },
+  "cta": {
+    "title": "Your sanctuary is waiting.",
+    "body": "Choose one treatment or begin a regular wellbeing ritual.",
+    "button": { "label": "Reserve Your Session", "href": "#contact" }
+  },
+  "footer": {
+    "newsletterLabel": "Sign up and stay in the ritual",
+    "newsletterButton": "Submit",
+    "companyTitle": "Studio",
+    "companyLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Service", "href": "#therapies" },
+      { "label": "Pricing", "href": "#pricing" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "hoursTitle": "Hours",
+    "hours": ["Mon to Fri", "9:00 to 18:00", "Saturday", "10:00 to 16:00"],
+    "socialTitle": "Follow",
+    "socialLinks": [
+      { "label": "Instagram", "href": "https://instagram.com/" },
+      { "label": "Facebook", "href": "https://facebook.com/" },
+      { "label": "YouTube", "href": "https://youtube.com/" }
+    ],
+    "copyright": "Designed by FekiTech 2026"
+  },
+  "colors": {
+    "pageBackground": "#f2e9df",
+    "surface": "#fbf7f1",
+    "card": "#fffaf4",
+    "headingText": "#2b2118",
+    "bodyText": "#6e6257",
+    "mutedText": "#9b8c7c",
+    "accent": "#6f7a4a",
+    "accentDeep": "#364028",
+    "line": "#ded1c4",
+    "buttonBg": "#2b2118",
+    "buttonText": "#fffaf4",
+    "footerBg": "#21170f",
+    "footerText": "#fffaf4",
+    "footerMuted": "#c8b8a6"
+  },
+  "typography": {
+    "headingFont": "var(--font-heading, Georgia, serif)",
+    "bodyFont": "var(--font-body, Arial, sans-serif)",
+    "displayFont": "var(--font-display, Georgia, serif)"
+  },
+  "_editor": {
+    "pages": {
+      "items": [
+        { "id": "home", "title": "Home", "navLabel": "Home", "slug": "", "home": true, "hidden": false, "seoTitle": "Quantuma | Wellness Spa", "seoDescription": "Facials, massage and holistic wellbeing treatments in a calm UK spa studio." },
+        { "id": "service", "title": "Service", "navLabel": "Service", "slug": "service", "home": false, "hidden": false, "seoTitle": "Wellness Treatments", "seoDescription": "Personalised massage, facials, meditation and aromatherapy rituals." },
+        { "id": "pricing", "title": "Pricing", "navLabel": "Pricing", "slug": "pricing", "home": false, "hidden": false, "seoTitle": "Spa Pricing", "seoDescription": "Simple pricing for wellness and beauty treatments." },
+        { "id": "blog", "title": "Blog", "navLabel": "Blog", "slug": "blog", "home": false, "hidden": false, "seoTitle": "Wellness Blog", "seoDescription": "Practical notes on skincare, recovery and everyday wellbeing." },
+        { "id": "contact", "title": "Contact", "navLabel": "Contact", "slug": "contact", "home": false, "hidden": false, "seoTitle": "Book a Wellness Treatment", "seoDescription": "Reserve a wellness treatment at Quantuma." }
+      ]
+    }
+  }
+}
