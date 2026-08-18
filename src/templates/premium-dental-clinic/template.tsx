@@ -11,12 +11,13 @@ import { Reviews } from "./components/Reviews";
 import { FAQ } from "./components/FAQ";
 import { Location } from "./components/Location";
 import { Footer } from "./components/Footer";
-import { TemplateData, TemplateProvider } from "./TemplateContext";
+import { TemplateData as LocalTemplateData, TemplateProvider } from "./TemplateContext";
+import { type TemplateData } from "@/lib/template-data";
 import "./index.css";
 
 export default function PremiumDentalClinicTemplate({ data }: { data: TemplateData }) {
   return (
-    <TemplateProvider value={data}>
+    <TemplateProvider value={data as LocalTemplateData}>
       <div className="premium-dental-clinic font-sans bg-[#f9f8f6] text-[#222222]">
         <Navbar />
         <Hero />
