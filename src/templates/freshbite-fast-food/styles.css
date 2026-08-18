@@ -1,0 +1,971 @@
+[data-template-id="freshbite-fast-food"] {
+  background: var(--fb-page);
+  color: var(--fb-ink);
+  font-family: var(--fb-body);
+  letter-spacing: 0;
+  line-height: 1.45;
+  overflow: hidden;
+}
+
+[data-template-id="freshbite-fast-food"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="freshbite-fast-food"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] section {
+  padding: clamp(70px, 7vw, 120px) clamp(18px, 4vw, 76px);
+  position: relative;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-header {
+  background: var(--fb-dark);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 290px 1fr auto;
+  grid-template-rows: 44px 82px;
+  min-height: 126px;
+  position: relative;
+  z-index: 10;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-logo {
+  align-items: center;
+  background: #fff;
+  color: var(--fb-ink);
+  display: flex;
+  gap: 12px;
+  grid-row: 1 / 3;
+  justify-content: center;
+  padding: 22px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-logo i {
+  background: linear-gradient(90deg, var(--fb-orange), var(--fb-red));
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 84px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-logo strong {
+  display: block;
+  font-family: var(--fb-heading);
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-logo small {
+  display: block;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-logo b {
+  color: var(--fb-red);
+  font-size: 30px;
+  line-height: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-topbar {
+  align-items: center;
+  background: var(--fb-red);
+  display: flex;
+  gap: 18px;
+  grid-column: 2 / 4;
+  justify-content: space-between;
+  padding: 0 clamp(18px, 4vw, 72px);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-topbar span:first-child {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-topbar a,
+[data-template-id="freshbite-fast-food"] .fb-topbar span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-nav {
+  align-items: center;
+  display: flex;
+  gap: clamp(18px, 3vw, 42px);
+  padding-left: clamp(18px, 4vw, 72px);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-nav a {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-nav span {
+  color: #fff;
+  margin-left: 6px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-icons {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  padding-right: clamp(18px, 4vw, 72px);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero {
+  min-height: 780px;
+  padding: 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero > img,
+[data-template-id="freshbite-fast-food"] .fb-offer > img,
+[data-template-id="freshbite-fast-food"] .fb-deal > img,
+[data-template-id="freshbite-fast-food"] .fb-testimonials > img {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero::after {
+  background: linear-gradient(90deg, rgb(0 0 0 / 0.74), rgb(0 0 0 / 0.1));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero-copy {
+  color: #fff;
+  left: clamp(18px, 5vw, 86px);
+  max-width: 760px;
+  position: absolute;
+  top: 185px;
+  z-index: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero-copy p,
+[data-template-id="freshbite-fast-food"] .fb-heading span,
+[data-template-id="freshbite-fast-food"] .fb-promo-grid span,
+[data-template-id="freshbite-fast-food"] .fb-offer span,
+[data-template-id="freshbite-fast-food"] .fb-deal span,
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card > span {
+  color: var(--fb-orange);
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-hero h1 {
+  font-family: var(--fb-heading);
+  font-size: clamp(56px, 7vw, 126px);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 16px 0 44px;
+  max-width: 780px;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-cta {
+  align-items: center;
+  color: #fff;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 950;
+  gap: 13px;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 28px;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-cta.is-red {
+  background: var(--fb-red);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-cta.is-orange {
+  background: var(--fb-orange);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-heading {
+  margin: 0 auto 54px;
+  max-width: 760px;
+  text-align: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-heading h2 {
+  font-family: var(--fb-heading);
+  font-size: clamp(34px, 4vw, 54px);
+  letter-spacing: -0.045em;
+  line-height: 1;
+  margin: 8px 0 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-popular-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto 98px;
+  max-width: 1200px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-popular-grid article,
+[data-template-id="freshbite-fast-food"] .fb-dish-grid article,
+[data-template-id="freshbite-fast-food"] .fb-chef-grid article,
+[data-template-id="freshbite-fast-food"] .fb-news-grid article {
+  background: var(--fb-surface);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgb(7 21 33 / 0.05);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-popular-grid article {
+  min-height: 190px;
+  padding: 78px 22px 26px;
+  position: relative;
+  text-align: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-popular-grid img {
+  aspect-ratio: 1;
+  border: 2px dashed var(--fb-red);
+  border-radius: 50%;
+  height: 120px;
+  left: 50%;
+  object-fit: cover;
+  padding: 7px;
+  position: absolute;
+  top: -58px;
+  transform: translateX(-50%);
+  width: 120px;
+}
+
+[data-template-id="freshbite-fast-food"] h3 {
+  color: var(--fb-ink);
+  font-family: var(--fb-heading);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+[data-template-id="freshbite-fast-food"] p {
+  color: var(--fb-muted);
+  margin: 0;
+}
+
+[data-template-id="freshbite-fast-food"] strong {
+  color: var(--fb-red);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid article {
+  min-height: 290px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid div {
+  color: #fff;
+  left: 32px;
+  position: absolute;
+  top: 48px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid h3 {
+  color: #fff;
+  font-size: clamp(22px, 2vw, 32px);
+  margin: 8px 0;
+  max-width: 360px;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-promo-grid p {
+  color: var(--fb-orange);
+  font-weight: 950;
+  margin-bottom: 24px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about {
+  align-items: center;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 28px;
+  overflow: hidden;
+  text-align: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about .fb-heading {
+  margin-bottom: 22px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about p {
+  margin: 0 auto 34px;
+  max-width: 680px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about-left,
+[data-template-id="freshbite-fast-food"] .fb-about-right {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  height: min(38vw, 520px);
+  object-fit: cover;
+  width: min(38vw, 520px);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about-left {
+  margin-left: -160px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-about-right {
+  margin-left: auto;
+  margin-right: -160px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-dishes {
+  text-align: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-dish-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 54px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-dish-grid article {
+  padding: 28px 22px 30px;
+  position: relative;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-dish-grid button {
+  align-items: center;
+  background: var(--fb-red);
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 34px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-dish-grid img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 auto 22px;
+  object-fit: cover;
+  width: 150px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-offer,
+[data-template-id="freshbite-fast-food"] .fb-deal,
+[data-template-id="freshbite-fast-food"] .fb-testimonials {
+  color: #fff;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-offer div {
+  margin-left: 0;
+  max-width: 520px;
+  padding: 86px 0;
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-offer h2,
+[data-template-id="freshbite-fast-food"] .fb-deal h2,
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card h2 {
+  color: #fff;
+  font-family: var(--fb-heading);
+  font-size: clamp(36px, 4.5vw, 58px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 14px 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-offer p {
+  color: var(--fb-orange);
+  font-size: 22px;
+  font-weight: 950;
+  margin-bottom: 30px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-offer b {
+  background: #fff;
+  border-radius: 50%;
+  color: var(--fb-orange);
+  display: grid;
+  font-family: var(--fb-heading);
+  height: 94px;
+  place-items: center;
+  position: absolute;
+  right: -250px;
+  top: 70px;
+  transform: rotate(-8deg);
+  width: 120px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-section::after,
+[data-template-id="freshbite-fast-food"] .fb-dishes::after {
+  color: rgb(7 21 33 / 0.2);
+  content: "CHICKEN PIZZA   GRILLED CHICKEN";
+  font-family: var(--fb-heading);
+  font-size: clamp(42px, 6vw, 88px);
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 100%;
+  transform: translateY(-25%);
+  white-space: nowrap;
+  z-index: 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-card {
+  background: #fff;
+  border-radius: 18px;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: clamp(32px, 5vw, 74px);
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-tabs {
+  border-bottom: 1px solid var(--fb-line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  margin: -20px auto 54px;
+  max-width: 920px;
+  padding-bottom: 28px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-tabs span {
+  font-size: 18px;
+  font-weight: 950;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-tabs span:first-child {
+  color: var(--fb-red);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list {
+  display: grid;
+  gap: 28px 64px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list article {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 76px 1fr auto;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list h3 {
+  color: var(--fb-red);
+  font-size: 24px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list article:nth-child(even) h3 {
+  color: var(--fb-ink);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-menu-list strong {
+  color: var(--fb-ink);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-deal {
+  min-height: 430px;
+  margin: 70px clamp(18px, 4vw, 76px) 0;
+  padding: 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-deal div {
+  background: rgb(0 0 0 / 0.74);
+  margin-left: auto;
+  margin-right: 9%;
+  margin-top: 82px;
+  max-width: 520px;
+  min-height: 250px;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-deal p {
+  color: var(--fb-muted);
+  font-weight: 900;
+  margin: 22px 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chefs {
+  text-align: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chef-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto 76px;
+  max-width: 1160px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chef-grid article {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chef-grid img {
+  aspect-ratio: 1.22 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chef-grid h3 {
+  font-size: 23px;
+  margin-top: 28px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-chef-grid p {
+  padding-bottom: 34px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-brand-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 5vw, 88px);
+  justify-content: center;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-brand-strip span {
+  color: rgb(7 21 33 / 0.24);
+  font-family: var(--fb-heading);
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonials {
+  min-height: 660px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonials::after {
+  background: rgb(0 0 0 / 0.62);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card {
+  margin-left: auto;
+  max-width: 760px;
+  padding-top: 90px;
+  position: relative;
+  z-index: 1;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card article {
+  background: #fff;
+  border-radius: 10px;
+  border-top: 6px solid var(--fb-orange);
+  color: var(--fb-ink);
+  margin-top: 36px;
+  padding: 48px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card small {
+  color: var(--fb-muted);
+  display: block;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-testimonial-card p {
+  color: var(--fb-orange);
+  margin: 8px 0 24px;
+}
+
+[data-template-id="freshbite-fast-food"] blockquote {
+  color: var(--fb-muted);
+  font-size: 22px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto 70px;
+  max-width: 1220px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid article {
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid img {
+  aspect-ratio: 1.55 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid article > p,
+[data-template-id="freshbite-fast-food"] .fb-news-grid h3,
+[data-template-id="freshbite-fast-food"] .fb-news-grid a {
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid article > p {
+  margin-top: 28px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid h3 {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-news-grid a {
+  align-items: center;
+  color: var(--fb-muted);
+  display: inline-flex;
+  font-weight: 900;
+  gap: 8px;
+  margin-bottom: 34px;
+  margin-top: 24px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-date {
+  background: var(--fb-red);
+  color: #fff;
+  display: grid;
+  height: 72px;
+  left: 34px;
+  place-items: center;
+  position: absolute;
+  top: calc(1.55 / 1 * 0px);
+  transform: translateY(-50%);
+  width: 68px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-date strong {
+  color: #fff;
+  font-size: 26px;
+  line-height: 0.9;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 -76px -120px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-gallery img {
+  aspect-ratio: 1.35 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer {
+  background: var(--fb-footer);
+  color: #fff;
+  padding: 92px clamp(18px, 5vw, 88px) 0;
+  position: relative;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-contact-band {
+  background: var(--fb-orange);
+  border-radius: 12px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto 80px;
+  max-width: 1420px;
+  padding: 38px 62px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-contact-band span {
+  align-items: center;
+  display: grid;
+  gap: 4px 18px;
+  grid-template-columns: 42px 1fr;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-contact-band svg {
+  background: #fff;
+  border-radius: 50%;
+  color: var(--fb-orange);
+  grid-row: 1 / 3;
+  padding: 8px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-contact-band b,
+[data-template-id="freshbite-fast-food"] .fb-contact-band em {
+  font-style: normal;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer-grid {
+  display: grid;
+  gap: 44px;
+  grid-template-columns: 1.2fr 1fr 1fr 1.1fr;
+  margin: 0 auto 76px;
+  max-width: 1420px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer .fb-logo {
+  background: transparent;
+  color: #fff;
+  justify-content: flex-start;
+  padding: 0 0 24px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer h3 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer a,
+[data-template-id="freshbite-fast-food"] .fb-footer p,
+[data-template-id="freshbite-fast-food"] .fb-footer small {
+  color: rgb(255 255 255 / 0.7);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer nav a {
+  display: block;
+  font-weight: 800;
+  margin: 14px 0;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer label {
+  background: #fff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 48px;
+  margin: 28px 0 14px;
+  max-width: 300px;
+  padding: 8px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer input {
+  border: 0;
+  min-height: 42px;
+  padding: 0 12px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer button {
+  background: var(--fb-orange);
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer-bottom {
+  align-items: center;
+  background: var(--fb-red);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 calc(clamp(18px, 5vw, 88px) * -1);
+  padding: 22px clamp(18px, 5vw, 88px);
+}
+
+[data-template-id="freshbite-fast-food"] .fb-footer-bottom a {
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 14px;
+  padding: 8px 14px;
+}
+
+[data-template-id="freshbite-fast-food"] .fb-sr {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media (max-width: 1100px) {
+  [data-template-id="freshbite-fast-food"] .fb-header {
+    grid-template-columns: 220px 1fr;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-icons {
+    display: none;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-nav {
+    grid-column: 2;
+    overflow-x: auto;
+    padding-right: 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-popular-grid,
+  [data-template-id="freshbite-fast-food"] .fb-dish-grid,
+  [data-template-id="freshbite-fast-food"] .fb-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-promo-grid,
+  [data-template-id="freshbite-fast-food"] .fb-chef-grid,
+  [data-template-id="freshbite-fast-food"] .fb-news-grid,
+  [data-template-id="freshbite-fast-food"] .fb-contact-band {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-about {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-about-left,
+  [data-template-id="freshbite-fast-food"] .fb-about-right {
+    border-radius: 24px;
+    height: 320px;
+    margin: 0 auto;
+    width: min(100%, 720px);
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-menu-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  [data-template-id="freshbite-fast-food"] section {
+    padding: 62px 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-header {
+    display: block;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-logo {
+    justify-content: flex-start;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-topbar,
+  [data-template-id="freshbite-fast-food"] .fb-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-topbar a {
+    display: none;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-hero {
+    min-height: 620px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-hero-copy {
+    left: 18px;
+    right: 18px;
+    top: 110px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-hero h1 {
+    font-size: clamp(46px, 14vw, 72px);
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-popular-grid,
+  [data-template-id="freshbite-fast-food"] .fb-dish-grid,
+  [data-template-id="freshbite-fast-food"] .fb-menu-list,
+  [data-template-id="freshbite-fast-food"] .fb-footer-grid,
+  [data-template-id="freshbite-fast-food"] .fb-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-popular-grid {
+    gap: 80px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-promo-grid div {
+    left: 22px;
+    right: 22px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-offer b {
+    position: static;
+    transform: none;
+    margin-bottom: 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-menu-card {
+    padding: 28px 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-menu-list article {
+    grid-template-columns: 58px 1fr;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-menu-list strong {
+    grid-column: 2;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-deal {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-deal div,
+  [data-template-id="freshbite-fast-food"] .fb-testimonial-card article {
+    padding: 28px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-testimonial-card {
+    padding-top: 40px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-contact-band {
+    padding: 28px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  [data-template-id="freshbite-fast-food"] .fb-footer-bottom a {
+    margin: 8px 8px 0 0;
+  }
+}

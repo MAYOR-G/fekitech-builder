@@ -10,19 +10,8 @@ const CAPTURE_HEIGHT = 2700;
 const IMAGE_QUALITY = 90;
 
 const TEMPLATES_TO_CAPTURE = [
-  "forgefit-training",
-  "rivergate-plumbing",
-  "hawthorne-fields-academy",
-  "mercer-blythe-solicitors",
-  "north-ledger-accountants",
-  "kindred-paws-vets",
-  "little-lanterns-nursery",
-  "borough-motor-works",
-  "wildmere-gardens",
-  "tallow-and-sage",
-  "nightjar-and-crown",
-  "crumb-and-char",
-  "forno-sixteen"
+  "premium-dental-clinic",
+  "aquablast-pressure-wash"
 ];
 
 const OUTPUT_DIR = path.resolve("public/templates");

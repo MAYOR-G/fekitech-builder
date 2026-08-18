@@ -1,0 +1,179 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#f4f0e8",
+      "cream": "#f4f0e8",
+      "surface": "#ffffff",
+      "ink": "#071521",
+      "muted": "#6f7782",
+      "red": "#f00635",
+      "orange": "#ff7a17",
+      "yellow": "#ffd526",
+      "dark": "#06131d",
+      "footer": "#06131d",
+      "line": "#ded8ce"
+    },
+    "typography": {
+      "heading": "var(--font-heading, Arial Black, Impact, sans-serif)",
+      "body": "var(--font-body, Arial, Helvetica, sans-serif)"
+    }
+  },
+  "brand": {
+    "name": "FRESHBITE",
+    "tagline": "Responsive",
+    "logoAlt": "FreshBite fast food logo",
+    "address": "48 Rocky Road, Manchester M4 6DH",
+    "email": "info@freshbite.co.uk",
+    "emailHref": "mailto:info@freshbite.co.uk",
+    "phone": "+44 0161 555 8499",
+    "copyright": "© All Copyright 2026 by FreshBite"
+  },
+  "topbar": {
+    "hours": "09:00 am - 06:00 pm",
+    "follow": "Follow us:",
+    "socials": ["Facebook", "Twitter", "YouTube", "LinkedIn"]
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Shop", "href": "#dishes" },
+      { "label": "Pages", "href": "#menu" },
+      { "label": "Blog", "href": "#news" },
+      { "label": "Contact Us", "href": "#contact" }
+    ],
+    "buttonLabel": "Order Now",
+    "buttonHref": "#menu"
+  },
+  "hero": {
+    "eyebrow": "Welcome FreshBite",
+    "title": "Manchester Deep Burger Feast",
+    "buttonLabel": "Order Now",
+    "buttonHref": "#menu",
+    "image": "/templates/freshbite-fast-food/assets/hero-feast.webp",
+    "imageAlt": "Fast food burger, fries and chicken on a dark brick background"
+  },
+  "popular": {
+    "eyebrow": "Best Food",
+    "title": "Popular Food Items",
+    "items": [
+      { "name": "Egg And Cucumber", "description": "Fresh breakfast bowl", "price": "£8.00", "image": "/templates/freshbite-fast-food/assets/fresh-pasta.webp", "imageAlt": "Fresh breakfast style dish" },
+      { "name": "Chicken Fried Rice", "description": "House favourite bowl", "price": "£10.99", "image": "/templates/freshbite-fast-food/assets/hot-noodles.webp", "imageAlt": "Chicken rice in a round bowl" },
+      { "name": "Chicken Leg Piece", "description": "Crispy dipped chicken", "price": "£6.99", "image": "/templates/freshbite-fast-food/assets/fried-chicken.webp", "imageAlt": "Crispy fried chicken pieces" },
+      { "name": "Chicken Pizza", "description": "Stone baked slice", "price": "£12.99", "image": "/templates/freshbite-fast-food/assets/pepperoni-pizza.webp", "imageAlt": "Pepperoni pizza with melted cheese" }
+    ]
+  },
+  "promos": {
+    "items": [
+      { "eyebrow": "On This Week", "title": "Spicy Fried Chicken", "text": "Limited time offer", "buttonLabel": "Order Now", "buttonHref": "#menu", "image": "/templates/freshbite-fast-food/assets/promo-chicken.webp", "imageAlt": "Spicy fried chicken promo banner" },
+      { "eyebrow": "Welcome FreshBite", "title": "Today Special Food", "text": "Limited time offer", "buttonLabel": "Order Now", "buttonHref": "#menu", "image": "/templates/freshbite-fast-food/assets/promo-burger.webp", "imageAlt": "Burger special promo banner" },
+      { "eyebrow": "On This Week", "title": "Special Chicken Roll", "text": "Limited time offer", "buttonLabel": "Order Now", "buttonHref": "#menu", "image": "/templates/freshbite-fast-food/assets/promo-pizza.webp", "imageAlt": "Pizza roll special promo banner" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Variety Of Flavours From Our Kitchen",
+    "text": "FreshBite serves proper burgers, pizza, chicken and pasta with fast service, warm smiles and generous portions for local diners.",
+    "buttonLabel": "Order Now",
+    "buttonHref": "#menu",
+    "leftImage": "/templates/freshbite-fast-food/assets/pizza-table.webp",
+    "leftImageAlt": "Table spread of pizza and sides",
+    "rightImage": "/templates/freshbite-fast-food/assets/hot-noodles.webp",
+    "rightImageAlt": "Hot noodles in a black bowl"
+  },
+  "dishes": {
+    "eyebrow": "Popular Dishes",
+    "title": "Best Selling Dishes",
+    "buttonLabel": "View All Item",
+    "buttonHref": "#menu",
+    "items": [
+      { "name": "Chicken Fried Rice", "description": "Freshly cooked daily", "price": "£10.99", "image": "/templates/freshbite-fast-food/assets/hot-noodles.webp", "imageAlt": "Chicken fried rice bowl" },
+      { "name": "Chinese Pasta", "description": "Saucy comfort bowl", "price": "£9.99", "image": "/templates/freshbite-fast-food/assets/fresh-pasta.webp", "imageAlt": "Fresh pasta dish" },
+      { "name": "Chicken Pizza", "description": "Crisp base and cheese", "price": "£12.99", "image": "/templates/freshbite-fast-food/assets/pepperoni-pizza.webp", "imageAlt": "Chicken pizza dish" },
+      { "name": "Chicken Noodles", "description": "Warm wok flavour", "price": "£11.00", "image": "/templates/freshbite-fast-food/assets/pizza-table.webp", "imageAlt": "Chicken noodles and sides" },
+      { "name": "Grilled Chicken", "description": "Crispy with house dip", "price": "£8.99", "image": "/templates/freshbite-fast-food/assets/fried-chicken.webp", "imageAlt": "Grilled chicken pieces" }
+    ]
+  },
+  "offer": {
+    "eyebrow": "Welcome FreshBite",
+    "title": "Today Special Food",
+    "text": "Limited time offer",
+    "discount": "45% Off",
+    "buttonLabel": "Order Now",
+    "buttonHref": "#menu",
+    "image": "/templates/freshbite-fast-food/assets/pizza-offer.webp",
+    "imageAlt": "Pizza special offer banner"
+  },
+  "menu": {
+    "eyebrow": "Food Menu",
+    "title": "FreshBite Foods Menu",
+    "tabs": ["Fast Food", "Drink & Juice", "Chicken Pizza", "Fresh Pasta"],
+    "items": [
+      { "name": "Chinese Pasta", "description": "A proper savoury bowl.", "price": "£15.99", "image": "/templates/freshbite-fast-food/assets/fresh-pasta.webp", "imageAlt": "Chinese pasta" },
+      { "name": "Egg And Cucumber", "description": "Fresh breakfast bowl.", "price": "£6.99", "image": "/templates/freshbite-fast-food/assets/hot-noodles.webp", "imageAlt": "Egg and cucumber dish" },
+      { "name": "Chicken Fried Rice", "description": "A customer favourite.", "price": "£10.99", "image": "/templates/freshbite-fast-food/assets/hot-noodles.webp", "imageAlt": "Chicken fried rice" },
+      { "name": "Chicken White Rice", "description": "Crispy bites and rice.", "price": "£13.99", "image": "/templates/freshbite-fast-food/assets/fried-chicken.webp", "imageAlt": "Chicken white rice" },
+      { "name": "Chicken Pizza", "description": "Hot cheese and sauce.", "price": "£12.99", "image": "/templates/freshbite-fast-food/assets/pepperoni-pizza.webp", "imageAlt": "Chicken pizza" },
+      { "name": "Special Burger", "description": "Stacked with fresh salad.", "price": "£9.99", "image": "/templates/freshbite-fast-food/assets/burger-stack.webp", "imageAlt": "Special burger" },
+      { "name": "Chicken Noodles", "description": "Fresh wok-style dish.", "price": "£11.99", "image": "/templates/freshbite-fast-food/assets/pizza-table.webp", "imageAlt": "Chicken noodles" },
+      { "name": "Vegetables Burger", "description": "Big flavour, no fuss.", "price": "£7.99", "image": "/templates/freshbite-fast-food/assets/crispy-burger.webp", "imageAlt": "Vegetable burger" },
+      { "name": "Grilled Chicken", "description": "Served with dip.", "price": "£8.99", "image": "/templates/freshbite-fast-food/assets/fried-chicken.webp", "imageAlt": "Grilled chicken" },
+      { "name": "Brief Chicken", "description": "Crispy and tender.", "price": "£7.49", "image": "/templates/freshbite-fast-food/assets/loaded-fries.webp", "imageAlt": "Crispy chicken side" }
+    ]
+  },
+  "deal": {
+    "eyebrow": "Special Offer",
+    "title": "Get 30% Discount Every Item",
+    "status": "Ends Soon",
+    "buttonLabel": "Order Now",
+    "buttonHref": "#menu",
+    "image": "/templates/freshbite-fast-food/assets/crispy-burger.webp",
+    "imageAlt": "Large crispy burger deal banner"
+  },
+  "chefs": {
+    "eyebrow": "Our Chefs",
+    "title": "Meet Our Expert Chefs",
+    "items": [
+      { "name": "Ralph Edwards", "role": "Chef Lead", "image": "/templates/freshbite-fast-food/assets/kitchen-team.webp", "imageAlt": "Chef Ralph Edwards" },
+      { "name": "Leslie Alexander", "role": "Chef Assistant", "image": "/templates/freshbite-fast-food/assets/pizza-table.webp", "imageAlt": "Chef Leslie Alexander" },
+      { "name": "Ronald Richards", "role": "Chef Assistant", "image": "/templates/freshbite-fast-food/assets/burger-stack.webp", "imageAlt": "Chef Ronald Richards" }
+    ],
+    "logos": ["Restaurant", "Coffee House", "Good Food", "Barbecue", "Grill House"]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What Our Clients Say",
+    "image": "/templates/freshbite-fast-food/assets/kitchen-team.webp",
+    "imageAlt": "Kitchen team preparing food",
+    "name": "Albert Flores",
+    "role": "Local Customer",
+    "quote": "The food arrived hot, the portions were generous, and the team made ordering easy. FreshBite is now our Friday night regular."
+  },
+  "news": {
+    "eyebrow": "Latest News",
+    "title": "Our Latest Food News",
+    "items": [
+      { "date": "17", "month": "Dec", "category": "Chicken", "title": "Benefits Of Fresh Food And Safety Measures", "image": "/templates/freshbite-fast-food/assets/pizza-table.webp", "imageAlt": "Fresh food news image" },
+      { "date": "25", "month": "Dec", "category": "Noodles", "title": "Quick Cravings With Fresh Fast Food Delights", "image": "/templates/freshbite-fast-food/assets/fresh-pasta.webp", "imageAlt": "Pasta news image" },
+      { "date": "15", "month": "Dec", "category": "Pizza", "title": "Fast Food Flavour With Real Convenience", "image": "/templates/freshbite-fast-food/assets/pepperoni-pizza.webp", "imageAlt": "Pizza news image" }
+    ],
+    "gallery": [
+      { "image": "/templates/freshbite-fast-food/assets/pizza-table.webp", "imageAlt": "Fresh food gallery one" },
+      { "image": "/templates/freshbite-fast-food/assets/pepperoni-pizza.webp", "imageAlt": "Fresh food gallery two" },
+      { "image": "/templates/freshbite-fast-food/assets/fresh-pasta.webp", "imageAlt": "Fresh food gallery three" },
+      { "image": "/templates/freshbite-fast-food/assets/hot-noodles.webp", "imageAlt": "Fresh food gallery four" }
+    ]
+  },
+  "footer": {
+    "intro": "Freshly made burgers, pizza, pasta and chicken for quick lunches, family dinners and weekend cravings.",
+    "quickTitle": "Quick Links",
+    "menuTitle": "Our Menu",
+    "contactTitle": "Contact Us",
+    "hours": ["Monday - Friday: 8am - 4pm", "Saturday: 8am - 12am"],
+    "newsletterPlaceholder": "Your email address",
+    "privacyLabel": "I agree to the Privacy Policy.",
+    "links": ["About Us", "Our Gallery", "Our Blogs", "FAQ's", "Contact Us"],
+    "menuLinks": ["Burger King", "Pizza King", "Fresh Food", "Vegetable", "Desserts"],
+    "legal": ["Terms & Condition", "Privacy Policy"]
+  }
+}

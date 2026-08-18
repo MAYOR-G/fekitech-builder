@@ -1,0 +1,16 @@
+{
+  "id": "freshbite-fast-food",
+  "name": "FreshBite Fast Food",
+  "description": "A bold fast-food restaurant template with a dark offer hero, product cards, promo banners, food menu, chef cards, testimonials, latest news, and a rich footer.",
+  "category": "Restaurant",
+  "image": "/templates/freshbite-fast-food.webp",
+  "previewImages": [
+    "/templates/freshbite-fast-food.webp"
+  ],
+  "features": [
+    "Editable logo, navigation, copy, buttons, links, menu items, prices, images, chefs, testimonials, news, contact details, and footer content",
+    "Scoped red, orange, cream, and dark fast-food visual system",
+    "Responsive restaurant landing page for desktop, tablet, and mobile",
+    "Template-owned local assets and safe isolated styling"
+  ]
+}

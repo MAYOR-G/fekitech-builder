@@ -1,0 +1,180 @@
+{
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "surface": "#f9f9f9",
+      "soft": "#f2f2f2",
+      "ink": "#111111",
+      "body": "#444444",
+      "muted": "#777777",
+      "line": "#e5e5e5",
+      "accent": "#ff6a00",
+      "dark": "#222222",
+      "footer": "#1a1a1a"
+    },
+    "typography": {
+      "heading": "'Geist', sans-serif",
+      "body": "'Inter', sans-serif"
+    }
+  },
+  "brand": {
+    "name": "AquaBlast UK",
+    "phone": "0800 123 4567",
+    "phoneHref": "tel:08001234567",
+    "copyright": "© 2026 AquaBlast UK. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Why Us", "href": "#why-us" },
+      { "label": "Areas", "href": "#areas" }
+    ],
+    "buttonLabel": "Free Quote",
+    "buttonHref": "#contact"
+  },
+  "hero": {
+    "eyebrow": "TRUSTED EXTERIOR CLEANING",
+    "title": "Professional Pressure\nWashing for UK\nHomes & Businesses",
+    "text": "Restore the beauty of your property with our expert pressure washing services. We tackle tough grime, moss, and dirt.",
+    "buttonLabel": "Get Free Quote",
+    "buttonHref": "#contact",
+    "badge": "Rated 5/5 on Trustpilot",
+    "image": "/templates/aquablast-pressure-wash/hero-bg.jpg",
+    "imageAlt": "Professional pressure washing a driveway"
+  },
+  "features": {
+    "title": "Expert exterior cleaning from the ground up",
+    "text": "We use commercial-grade equipment to deliver pristine results safely and efficiently.",
+    "items": [
+      {
+        "title": "Commercial Sites",
+        "image": "/templates/aquablast-pressure-wash/feature-1.jpg",
+        "imageAlt": "Pressure washing a warehouse"
+      },
+      {
+        "title": "Residential Drives",
+        "image": "/templates/aquablast-pressure-wash/feature-2.jpg",
+        "imageAlt": "Cleaning a residential driveway"
+      },
+      {
+        "title": "Public Spaces",
+        "image": "/templates/aquablast-pressure-wash/feature-3.jpg",
+        "imageAlt": "Pressure washing public steps"
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Core Services",
+    "text": "We provide a comprehensive range of pressure washing solutions for all surfaces.",
+    "list": [
+      { "label": "House Washing", "active": true },
+      { "label": "Roof Cleaning", "active": false },
+      { "label": "Driveways & Patios", "active": false },
+      { "label": "Gutter Cleaning", "active": false },
+      { "label": "Commercial Fleet", "active": false }
+    ],
+    "image": "/templates/aquablast-pressure-wash/services-main.jpg",
+    "imageAlt": "A beautiful house with clean exterior"
+  },
+  "projects": {
+    "title": "Recent Work Examples",
+    "text": "See the dramatic difference our cleaning services can make to your property.",
+    "items": [
+      {
+        "title": "Gutter Clearing",
+        "type": "Residential",
+        "image": "/templates/aquablast-pressure-wash/project-1.jpg",
+        "imageAlt": "Gutter cleaning before and after"
+      },
+      {
+        "title": "Roof Moss Removal",
+        "type": "Residential",
+        "image": "/templates/aquablast-pressure-wash/project-2.jpg",
+        "imageAlt": "Roof moss removal"
+      },
+      {
+        "title": "Driveway Restoration",
+        "type": "Residential",
+        "image": "/templates/aquablast-pressure-wash/project-3.jpg",
+        "imageAlt": "Driveway pressure washing"
+      }
+    ]
+  },
+  "areas": {
+    "title": "Serving Multiple Areas in Surrey",
+    "text": "We cover a wide range of locations across Surrey and Greater London.",
+    "items": [
+      {
+        "title": "Guildford",
+        "type": "Surrey",
+        "image": "/templates/aquablast-pressure-wash/area-1.jpg",
+        "imageAlt": "Guildford high street"
+      },
+      {
+        "title": "Woking",
+        "type": "Surrey",
+        "image": "/templates/aquablast-pressure-wash/area-2.jpg",
+        "imageAlt": "Woking town centre"
+      },
+      {
+        "title": "Farnham",
+        "type": "Surrey",
+        "image": "/templates/aquablast-pressure-wash/area-3.jpg",
+        "imageAlt": "Farnham"
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Why Choose AquaBlast?",
+    "text": "We are fully insured, highly trained, and committed to delivering the best possible results for your property.",
+    "image": "/templates/aquablast-pressure-wash/why-us.jpg",
+    "imageAlt": "Pressure washing expert",
+    "points": [
+      {
+        "title": "10+ Years Experience",
+        "text": "Trusted by hundreds of customers."
+      },
+      {
+        "title": "Satisfaction Guaranteed",
+        "text": "We don't leave until you are happy."
+      },
+      {
+        "title": "Fully Insured",
+        "text": "Comprehensive liability cover."
+      }
+    ]
+  },
+  "footer": {
+    "title": "Ready to transform your property?",
+    "text": "Get in touch today for a free, no-obligation quote.",
+    "buttonLabel": "Contact Us",
+    "buttonHref": "#contact",
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Driveway Cleaning", "href": "#" },
+          { "label": "Roof Cleaning", "href": "#" },
+          { "label": "Patio Cleaning", "href": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "#" },
+          { "label": "Projects", "href": "#" },
+          { "label": "Contact", "href": "#" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "href": "#" },
+          { "label": "Terms of Service", "href": "#" }
+        ]
+      }
+    ]
+  }
+}

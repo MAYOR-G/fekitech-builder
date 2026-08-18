@@ -1,0 +1,74 @@
+.premium-dental-clinic {
+  --template-bg: #f8f8f8;
+  --template-surface: #ffffff;
+  --template-text: #1c140c;
+  --template-text-light: #625a53;
+  --template-accent: #d97f50;
+  --template-accent-hover: #b86b43;
+  --template-border: #e5e7eb;
+  
+  /* Fonts */
+  --font-heading: 'Geist', 'Inter', system-ui, sans-serif;
+  --font-body: 'Mona Sans', 'Inter', system-ui, sans-serif;
+}
+
+.premium-dental-clinic h1,
+.premium-dental-clinic h2,
+.premium-dental-clinic h3,
+.premium-dental-clinic h4,
+.premium-dental-clinic h5,
+.premium-dental-clinic h6 {
+  font-family: var(--font-heading);
+  color: var(--template-text);
+}
+
+.premium-dental-clinic p,
+.premium-dental-clinic span,
+.premium-dental-clinic a,
+.premium-dental-clinic button,
+.premium-dental-clinic li {
+  font-family: var(--font-body);
+}
+
+/* Base button */
+.premium-dental-clinic .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1.5rem;
+}
+
+.premium-dental-clinic .btn-primary {
+  background-color: var(--template-accent);
+  color: #ffffff;
+}
+
+.premium-dental-clinic .btn-primary:hover {
+  background-color: var(--template-accent-hover);
+}
+
+.premium-dental-clinic .btn-outline {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.premium-dental-clinic .btn-outline:hover {
+  background-color: #ffffff;
+  color: var(--template-text);
+}
+
+.premium-dental-clinic .section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .premium-dental-clinic .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}

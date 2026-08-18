@@ -1,0 +1,16 @@
+{
+  "id": "das-studio",
+  "name": "DAS Studio",
+  "description": "A minimal editorial creative studio template with oversized typography, image-led case studies, services, process, pricing, FAQ, journal, and a bold footer.",
+  "category": "Business",
+  "image": "/templates/das-studio.webp",
+  "previewImages": [
+    "/templates/das-studio.webp"
+  ],
+  "features": [
+    "Editable studio identity, logo, navigation, copy, images, buttons, links, projects, services, pricing, testimonials, FAQs, journal, and footer content",
+    "Scoped monochrome editorial design system",
+    "Responsive layout for desktop, tablet, and mobile",
+    "Local template-owned image assets and safe details accordions"
+  ]
+}

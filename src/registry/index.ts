@@ -168,6 +168,8 @@ import apexGrowthAgencyConfig from "../templates/apex-growth-agency/config.json"
 import apexGrowthAgencyEditable from "../templates/apex-growth-agency/editable.json";
 import valistAiStudioConfig from "../templates/valist-ai-studio/config.json";
 import valistAiStudioEditable from "../templates/valist-ai-studio/editable.json";
+import dasStudioConfig from "../templates/das-studio/config.json";
+import dasStudioEditable from "../templates/das-studio/editable.json";
 import cleanhubLondonConfig from "../templates/cleanhub-london/config.json";
 import cleanhubLondonEditable from "../templates/cleanhub-london/editable.json";
 import clipzyVideoAgencyConfig from "../templates/clipzy-video-agency/config.json";
@@ -176,12 +178,21 @@ import quantumWellnessSpaConfig from "../templates/quantum-wellness-spa/config.j
 import quantumWellnessSpaEditable from "../templates/quantum-wellness-spa/editable.json";
 import jumamiStreetFoodConfig from "../templates/jumami-street-food/config.json";
 import jumamiStreetFoodEditable from "../templates/jumami-street-food/editable.json";
+import freshbiteFastFoodConfig from "../templates/freshbite-fast-food/config.json";
+import freshbiteFastFoodEditable from "../templates/freshbite-fast-food/editable.json";
 import consultingGrowthAdvisoryConfig from "../templates/consulting-growth-advisory/config.json";
 import consultingGrowthAdvisoryEditable from "../templates/consulting-growth-advisory/editable.json";
 import medivraTherapyRecoveryConfig from "../templates/medivra-therapy-recovery/config.json";
 import medivraTherapyRecoveryEditable from "../templates/medivra-therapy-recovery/editable.json";
 import aceBarbersConfig from "../templates/ace-barbers/config.json";
 import aceBarbersEditable from "../templates/ace-barbers/editable.json";
+import dreamHomeDiscoveryConfig from "../templates/dream-home-discovery/config.json";
+import dreamHomeDiscoveryEditable from "../templates/dream-home-discovery/editable.json";
+
+import premiumDentalClinicConfig from "../templates/premium-dental-clinic/config.json";
+import premiumDentalClinicEditable from "../templates/premium-dental-clinic/editable.json";
+import aquablastPressureWashConfig from "../templates/aquablast-pressure-wash/config.json";
+import aquablastPressureWashEditable from "../templates/aquablast-pressure-wash/editable.json";
 
 export type TemplateConfig = {
   id: string;
@@ -285,14 +296,18 @@ const components = {
   "little-rainbow-nursery": dynamic<{ data: TemplateData }>(() => import("../templates/little-rainbow-nursery/template")),
   "apex-growth-agency": dynamic<{ data: TemplateData }>(() => import("../templates/apex-growth-agency/template")),
   "valist-ai-studio": dynamic<{ data: TemplateData }>(() => import("../templates/valist-ai-studio/template")),
+  "das-studio": dynamic<{ data: TemplateData }>(() => import("../templates/das-studio/template")),
   "cleanhub-london": dynamic<{ data: TemplateData }>(() => import("../templates/cleanhub-london/template")),
   "clipzy-video-agency": dynamic<{ data: TemplateData }>(() => import("../templates/clipzy-video-agency/template")),
   "quantum-wellness-spa": dynamic<{ data: TemplateData }>(() => import("../templates/quantum-wellness-spa/template")),
   "jumami-street-food": dynamic<{ data: TemplateData }>(() => import("../templates/jumami-street-food/template")),
+  "freshbite-fast-food": dynamic<{ data: TemplateData }>(() => import("../templates/freshbite-fast-food/template")),
   "consulting-growth-advisory": dynamic<{ data: TemplateData }>(() => import("../templates/consulting-growth-advisory/template")),
   "medivra-therapy-recovery": dynamic<{ data: TemplateData }>(() => import("../templates/medivra-therapy-recovery/template")),
   "ace-barbers": dynamic<{ data: TemplateData }>(() => import("../templates/ace-barbers/template")),
-
+  "dream-home-discovery": dynamic<{ data: TemplateData }>(() => import("../templates/dream-home-discovery/template")),
+  "premium-dental-clinic": dynamic<{ data: TemplateData }>(() => import("../templates/premium-dental-clinic/template")),
+  "aquablast-pressure-wash": dynamic<{ data: TemplateData }>(() => import("../templates/aquablast-pressure-wash/template")),
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
@@ -379,13 +394,18 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "little-rainbow-nursery": { config: littleRainbowNurseryConfig, component: components["little-rainbow-nursery"], defaultData: normalizeData(littleRainbowNurseryEditable) },
   "apex-growth-agency": { config: apexGrowthAgencyConfig, component: components["apex-growth-agency"], defaultData: normalizeData(apexGrowthAgencyEditable) },
   "valist-ai-studio": { config: valistAiStudioConfig, component: components["valist-ai-studio"], defaultData: normalizeData(valistAiStudioEditable) },
+  "das-studio": { config: dasStudioConfig, component: components["das-studio"], defaultData: normalizeData(dasStudioEditable) },
   "cleanhub-london": { config: cleanhubLondonConfig, component: components["cleanhub-london"], defaultData: normalizeData(cleanhubLondonEditable) },
   "clipzy-video-agency": { config: clipzyVideoAgencyConfig, component: components["clipzy-video-agency"], defaultData: normalizeData(clipzyVideoAgencyEditable) },
   "quantum-wellness-spa": { config: quantumWellnessSpaConfig, component: components["quantum-wellness-spa"], defaultData: normalizeData(quantumWellnessSpaEditable) },
   "jumami-street-food": { config: jumamiStreetFoodConfig, component: components["jumami-street-food"], defaultData: normalizeData(jumamiStreetFoodEditable) },
+  "freshbite-fast-food": { config: freshbiteFastFoodConfig, component: components["freshbite-fast-food"], defaultData: normalizeData(freshbiteFastFoodEditable) },
   "consulting-growth-advisory": { config: consultingGrowthAdvisoryConfig, component: components["consulting-growth-advisory"], defaultData: normalizeData(consultingGrowthAdvisoryEditable) },
   "medivra-therapy-recovery": { config: medivraTherapyRecoveryConfig, component: components["medivra-therapy-recovery"], defaultData: normalizeData(medivraTherapyRecoveryEditable) },
   "ace-barbers": { config: aceBarbersConfig, component: components["ace-barbers"], defaultData: normalizeData(aceBarbersEditable) },
+  "dream-home-discovery": { config: dreamHomeDiscoveryConfig, component: components["dream-home-discovery"], defaultData: normalizeData(dreamHomeDiscoveryEditable) },
+  "premium-dental-clinic": { config: premiumDentalClinicConfig, component: components["premium-dental-clinic"], defaultData: normalizeData(premiumDentalClinicEditable) },
+  "aquablast-pressure-wash": { config: aquablastPressureWashConfig, component: components["aquablast-pressure-wash"], defaultData: normalizeData(aquablastPressureWashEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

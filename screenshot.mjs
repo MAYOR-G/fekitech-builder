@@ -3,21 +3,13 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 
 const templates = [
-  'alder-slate-roofing',
-  'burger-dark-premium',
-  'crownline-roofworks',
-  'ice-cream-website',
-  'noir-house-design',
-  'northcrest-roofing',
-  'second-furniture-website',
-  'second-plumber-website',
-  'velvet-scoop'
+  'freshbite-fast-food'
 ];
 
 (async () => {
   const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1440, height: 2800 });
+  await page.setViewport({ width: 1440, height: 900 });
 
   for (const template of templates) {
     console.log(`Taking screenshot for ${template}...`);
@@ -29,7 +21,10 @@ const templates = [
       const pngPath = `public/templates/${template}.png`;
       const webpPath = `public/templates/${template}.webp`;
       
-      await page.screenshot({ path: pngPath });
+      await page.screenshot({ 
+        path: pngPath,
+        clip: { x: 0, y: 0, width: 1440, height: 2800 }
+      });
       console.log(`Saved PNG: ${pngPath}`);
       
       // Convert to webp using Node's canvas or sharp? We don't have those. We can use cwebp if available, or just leave it as PNG and rename to webp? 

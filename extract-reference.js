@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
   
   await page.setViewport({ width: 1440, height: 2500 });
-  await page.goto('http://localhost:8001/template.html', { waitUntil: 'networkidle2', timeout: 30000 });
+  await page.goto('file:///Users/mayorg/Documents/MAYOR G WORK/template.html', { waitUntil: 'networkidle2', timeout: 30000 });
   
   // Wait for Wix to render
   await new Promise(r => setTimeout(r, 5000));

@@ -1,0 +1,1034 @@
+[data-template-id="das-studio"] {
+  background: var(--das-page);
+  color: var(--das-ink);
+  font-family: var(--das-body-font);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.15;
+  overflow: hidden;
+}
+
+[data-template-id="das-studio"] a {
+  color: inherit;
+  text-decoration: none;
+}
+
+[data-template-id="das-studio"] img {
+  display: block;
+  max-width: 100%;
+}
+
+[data-template-id="das-studio"] .das-hero,
+[data-template-id="das-studio"] section,
+[data-template-id="das-studio"] .das-footer {
+  padding: clamp(28px, 3vw, 46px);
+}
+
+[data-template-id="das-studio"] section {
+  border-top: 1px solid var(--das-line);
+  min-height: 620px;
+}
+
+[data-template-id="das-studio"] .das-hero-top {
+  align-items: end;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(220px, 330px);
+  gap: clamp(28px, 12vw, 190px);
+  min-height: 300px;
+}
+
+[data-template-id="das-studio"] .das-logo {
+  display: block;
+  font-family: var(--das-heading-font);
+  font-size: clamp(54px, 8vw, 96px);
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  line-height: 0.85;
+  margin-bottom: 42px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-hero-top p,
+[data-template-id="das-studio"] .das-section-head p,
+[data-template-id="das-studio"] .das-section-foot p,
+[data-template-id="das-studio"] .das-faq-aside p,
+[data-template-id="das-studio"] .das-cta p {
+  color: var(--das-body);
+  max-width: 340px;
+}
+
+[data-template-id="das-studio"] .das-hero-actions,
+[data-template-id="das-studio"] .das-inline-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+[data-template-id="das-studio"] .das-pill,
+[data-template-id="das-studio"] .das-text-link {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 900;
+  gap: 8px;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+[data-template-id="das-studio"] .das-pill {
+  background: var(--das-pill);
+  color: var(--das-pill-text);
+}
+
+[data-template-id="das-studio"] .das-text-link {
+  border-radius: 0;
+  min-height: 0;
+  padding: 0;
+}
+
+[data-template-id="das-studio"] .das-meta-list {
+  margin: 0;
+}
+
+[data-template-id="das-studio"] .das-meta-list div {
+  align-items: center;
+  border-bottom: 1px solid var(--das-line);
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-meta-list dt {
+  color: var(--das-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+[data-template-id="das-studio"] .das-meta-list dd {
+  font-size: 11px;
+  font-weight: 900;
+  margin: 0;
+}
+
+[data-template-id="das-studio"] .das-tile-row {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  margin: 88px -46px 0;
+  position: relative;
+}
+
+[data-template-id="das-studio"] .das-hero-tile {
+  aspect-ratio: 1 / 1.45;
+  background: var(--das-card);
+  border-radius: 8px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="das-studio"] .das-hero-tile img,
+[data-template-id="das-studio"] .das-project-grid img,
+[data-template-id="das-studio"] .das-testimonial-grid figure img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="das-studio"] .das-hero-tile.is-text {
+  align-items: center;
+  background: var(--das-pink);
+  display: flex;
+  justify-content: center;
+}
+
+[data-template-id="das-studio"] .das-hero-tile.is-text span {
+  color: var(--das-blue);
+  font-family: var(--das-heading-font);
+  font-size: clamp(88px, 15vw, 220px);
+  font-weight: 950;
+  letter-spacing: -0.09em;
+  line-height: 0.8;
+  transform: scaleX(0.82);
+}
+
+[data-template-id="das-studio"] .das-hero-tile.is-orb {
+  align-items: center;
+  background: linear-gradient(90deg, #f4eee9, #f7d4df);
+  display: flex;
+  justify-content: center;
+}
+
+[data-template-id="das-studio"] .das-soft-sphere {
+  background: radial-gradient(circle at 50% 50%, #fa244c 0 9%, #e62879 28%, #f174a5 44%, rgb(255 255 255 / 0) 70%);
+  border-radius: 50%;
+  display: block;
+  filter: blur(10px);
+  height: 62%;
+  width: 62%;
+}
+
+[data-template-id="das-studio"] .das-round-nav,
+[data-template-id="das-studio"] .das-arrows button {
+  align-items: center;
+  background: rgb(0 0 0 / 0.38);
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  width: 34px;
+}
+
+[data-template-id="das-studio"] .das-round-nav {
+  left: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+[data-template-id="das-studio"] .das-round-nav.is-next {
+  left: auto;
+  right: 18px;
+}
+
+[data-template-id="das-studio"] .das-intro,
+[data-template-id="das-studio"] .das-about {
+  display: grid;
+  gap: clamp(26px, 7vw, 120px);
+  grid-template-columns: 210px minmax(320px, 1fr) 32px;
+  padding-bottom: 110px;
+  padding-top: 118px;
+}
+
+[data-template-id="das-studio"] .das-kicker,
+[data-template-id="das-studio"] .das-section-number,
+[data-template-id="das-studio"] .das-project-grid article > span,
+[data-template-id="das-studio"] .das-article-grid article > span,
+[data-template-id="das-studio"] .das-flow-meta,
+[data-template-id="das-studio"] .das-footer button {
+  color: var(--das-muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-large-copy {
+  font-size: clamp(26px, 2.7vw, 43px);
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin: 0;
+  max-width: 850px;
+}
+
+[data-template-id="das-studio"] .das-logo-proof {
+  margin-top: 128px;
+  max-width: 900px;
+}
+
+[data-template-id="das-studio"] .das-logo-proof p {
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  margin: 0 0 8px;
+}
+
+[data-template-id="das-studio"] .das-logo-proof > span {
+  color: var(--das-muted);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 38px;
+}
+
+[data-template-id="das-studio"] .das-logo-proof div {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+[data-template-id="das-studio"] .das-logo-proof strong {
+  align-items: center;
+  background: var(--das-card);
+  border-radius: 8px;
+  display: flex;
+  font-size: clamp(22px, 3vw, 42px);
+  font-weight: 800;
+  justify-content: center;
+  min-height: 104px;
+}
+
+[data-template-id="das-studio"] .das-section-head {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 300px);
+  gap: 32px;
+  margin-bottom: 70px;
+}
+
+[data-template-id="das-studio"] .das-section-head h2,
+[data-template-id="das-studio"] .das-testimonial-head h2,
+[data-template-id="das-studio"] .das-faq-aside h2,
+[data-template-id="das-studio"] .das-journal-head h2,
+[data-template-id="das-studio"] .das-cta h2 {
+  font-family: var(--das-heading-font);
+  font-size: clamp(52px, 7.4vw, 112px);
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  line-height: 0.83;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-section-head sup {
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-left: 4px;
+  vertical-align: top;
+}
+
+[data-template-id="das-studio"] .das-project-grid,
+[data-template-id="das-studio"] .das-article-grid {
+  display: grid;
+  gap: 76px 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+[data-template-id="das-studio"] .das-project-grid figure,
+[data-template-id="das-studio"] .das-article-grid img {
+  aspect-ratio: 1.6 / 1.12;
+  background: var(--das-card);
+  border-radius: 8px;
+  margin: 0 0 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="das-studio"] .das-project-grid figcaption {
+  background: rgb(0 0 0 / 0.42);
+  border-radius: 999px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 6px 10px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-project-grid h3,
+[data-template-id="das-studio"] .das-article-grid h3 {
+  border-bottom: 1px solid var(--das-line);
+  font-size: clamp(22px, 2.3vw, 34px);
+  font-weight: 950;
+  letter-spacing: -0.05em;
+  margin: 5px 0 0;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-section-foot {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 92px;
+}
+
+[data-template-id="das-studio"] .das-service-list {
+  margin-top: 300px;
+}
+
+[data-template-id="das-studio"] details {
+  border-bottom: 1px solid var(--das-line);
+}
+
+[data-template-id="das-studio"] summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+[data-template-id="das-studio"] summary::-webkit-details-marker {
+  display: none;
+}
+
+[data-template-id="das-studio"] .das-service-list summary {
+  align-items: center;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 210px 1fr 28px;
+  padding: 31px 0;
+}
+
+[data-template-id="das-studio"] .das-service-list summary span {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+[data-template-id="das-studio"] .das-service-list summary strong {
+  font-size: clamp(30px, 4vw, 58px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-minus,
+[data-template-id="das-studio"] details[open] .das-plus {
+  display: none;
+}
+
+[data-template-id="das-studio"] details[open] .das-minus {
+  display: block;
+}
+
+[data-template-id="das-studio"] .das-service-body {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 210px minmax(260px, 640px);
+  padding: 0 0 44px 0;
+}
+
+[data-template-id="das-studio"] .das-service-body ul {
+  color: var(--das-muted);
+  font-size: 12px;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+
+[data-template-id="das-studio"] .das-service-body p {
+  margin: 0;
+  max-width: 620px;
+}
+
+[data-template-id="das-studio"] .das-flow {
+  min-height: 780px;
+}
+
+[data-template-id="das-studio"] .das-flow-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+
+[data-template-id="das-studio"] .das-flow-grid {
+  border-left: 1px solid var(--das-line);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 430px;
+}
+
+[data-template-id="das-studio"] .das-flow-grid article {
+  align-content: end;
+  border-right: 1px solid var(--das-line);
+  display: grid;
+  min-height: 430px;
+  padding: 28px 24px 34px;
+}
+
+[data-template-id="das-studio"] .das-flow-grid article:nth-child(2) {
+  align-content: center;
+}
+
+[data-template-id="das-studio"] .das-flow-grid article:nth-child(3) {
+  align-content: end;
+  padding-bottom: 92px;
+}
+
+[data-template-id="das-studio"] .das-flow-grid article:nth-child(4) {
+  align-content: end;
+}
+
+[data-template-id="das-studio"] .das-flow-icon {
+  background: #ececec;
+  border-radius: 8px;
+  box-shadow: inset 0 0 22px rgb(0 0 0 / 0.35);
+  display: block;
+  height: 86px;
+  margin: 0 0 40px;
+  width: 86px;
+}
+
+[data-template-id="das-studio"] .das-flow-grid h3 {
+  font-size: clamp(24px, 2.6vw, 40px);
+  letter-spacing: -0.05em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-flow-grid p {
+  color: var(--das-muted);
+  margin: 0 0 54px;
+  max-width: 230px;
+}
+
+[data-template-id="das-studio"] .das-progress span {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+[data-template-id="das-studio"] .das-progress i {
+  background: linear-gradient(90deg, var(--das-ink) var(--das-progress), transparent 0);
+  border-radius: 999px;
+  display: block;
+  height: 6px;
+  width: 100%;
+}
+
+[data-template-id="das-studio"] .das-about-image {
+  aspect-ratio: 1.66 / 1;
+  border-radius: 8px;
+  height: auto;
+  margin-top: 76px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="das-studio"] .das-stats {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 1fr minmax(210px, 1fr);
+  margin: 38px auto 0;
+  max-width: 780px;
+}
+
+[data-template-id="das-studio"] .das-stats div {
+  border-right: 1px solid var(--das-line);
+  text-align: center;
+}
+
+[data-template-id="das-studio"] .das-stats strong {
+  display: block;
+  font-size: clamp(42px, 5vw, 74px);
+  letter-spacing: -0.05em;
+}
+
+[data-template-id="das-studio"] .das-stats span,
+[data-template-id="das-studio"] .das-stats p {
+  color: var(--das-muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-testimonial-head,
+[data-template-id="das-studio"] .das-journal-head {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+[data-template-id="das-studio"] .das-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+[data-template-id="das-studio"] .das-arrows button {
+  background: var(--das-pill);
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1.05fr repeat(3, 1fr);
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid figure,
+[data-template-id="das-studio"] .das-testimonial-grid article,
+[data-template-id="das-studio"] .das-plan-grid article {
+  background: var(--das-card);
+  border-radius: 8px;
+  margin: 0;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid figure {
+  aspect-ratio: 1.25 / 1;
+  overflow: hidden;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid article {
+  display: grid;
+  min-height: 260px;
+  padding: 24px;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid article > div,
+[data-template-id="das-studio"] .das-plan-grid header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-template-id="das-studio"] blockquote {
+  color: var(--das-muted);
+  margin: 28px 0;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid footer {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid footer i {
+  background: linear-gradient(135deg, #d78373, #f8d4bd);
+  border-radius: 50%;
+  display: block;
+  height: 34px;
+  width: 34px;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid footer strong,
+[data-template-id="das-studio"] .das-testimonial-grid footer em {
+  display: block;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-testimonial-grid footer em {
+  color: var(--das-muted);
+  text-transform: none;
+}
+
+[data-template-id="das-studio"] .das-plan-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+[data-template-id="das-studio"] .das-plan-grid article {
+  padding: clamp(28px, 3vw, 42px);
+}
+
+[data-template-id="das-studio"] .das-plan-grid h3 {
+  font-size: 26px;
+  letter-spacing: -0.04em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-plan-grid header span {
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-plan-grid article > p {
+  color: var(--das-muted);
+  min-height: 42px;
+}
+
+[data-template-id="das-studio"] .das-plan-grid article > strong {
+  display: block;
+  font-size: clamp(44px, 5vw, 72px);
+  letter-spacing: -0.06em;
+  margin: 42px 0 28px;
+}
+
+[data-template-id="das-studio"] .das-plan-grid small {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+
+[data-template-id="das-studio"] .das-plan-grid ul {
+  color: var(--das-muted);
+  display: grid;
+  gap: 13px;
+  list-style: none;
+  margin: 0 0 44px;
+  padding: 0;
+}
+
+[data-template-id="das-studio"] .das-plan-grid li {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+}
+
+[data-template-id="das-studio"] .das-pill.is-wide {
+  width: 100%;
+}
+
+[data-template-id="das-studio"] .das-faq {
+  display: grid;
+  gap: clamp(48px, 6vw, 150px);
+  grid-template-columns: minmax(520px, 0.66fr) minmax(520px, 1fr);
+}
+
+[data-template-id="das-studio"] .das-faq-aside h2 {
+  font-size: clamp(64px, 5.6vw, 128px);
+  max-width: 100%;
+}
+
+[data-template-id="das-studio"] .das-faq-aside h3 {
+  font-size: 16px;
+  margin-top: 82px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-faq-list summary {
+  align-items: center;
+  display: flex;
+  font-size: clamp(22px, 2.3vw, 34px);
+  justify-content: space-between;
+  letter-spacing: -0.04em;
+  padding: 28px 0;
+}
+
+[data-template-id="das-studio"] .das-faq-list p {
+  color: var(--das-muted);
+  margin: 0;
+  max-width: 760px;
+  padding: 0 0 26px;
+}
+
+[data-template-id="das-studio"] .das-article-grid img {
+  aspect-ratio: 1.6 / 1.12;
+  border-radius: 8px;
+  height: min(37vw, 460px);
+  margin-bottom: 12px;
+  object-fit: cover;
+  width: 100%;
+}
+
+[data-template-id="das-studio"] .das-article-grid a {
+  align-items: center;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 900;
+  gap: 8px;
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-cta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+  text-align: center;
+}
+
+[data-template-id="das-studio"] .das-cta span {
+  color: var(--das-muted);
+  font-size: 11px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-cta h2 {
+  max-width: 720px;
+}
+
+[data-template-id="das-studio"] .das-cta p {
+  margin: 22px 0 24px;
+}
+
+[data-template-id="das-studio"] .das-footer {
+  border-top: 1px solid var(--das-line);
+  padding-top: 0;
+  position: relative;
+}
+
+[data-template-id="das-studio"] .das-footer-marquee {
+  font-family: var(--das-heading-font);
+  font-size: clamp(90px, 18vw, 300px);
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  line-height: 0.78;
+  margin-left: -1vw;
+  text-transform: uppercase;
+  text-shadow: 0 30px 22px rgb(0 0 0 / 0.34);
+  white-space: nowrap;
+}
+
+[data-template-id="das-studio"] .das-footer-nav {
+  align-items: center;
+  border-bottom: 1px solid var(--das-line);
+  border-top: 1px solid var(--das-line);
+  display: flex;
+  font-size: 11px;
+  font-weight: 900;
+  gap: 28px;
+  justify-content: flex-end;
+  margin: 0 -46px;
+  padding: 14px 46px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-footer-main {
+  display: grid;
+  gap: 46px;
+  grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.2fr);
+  padding: 54px 0 80px;
+}
+
+[data-template-id="das-studio"] .das-footer form {
+  display: grid;
+  gap: 24px;
+  max-width: 360px;
+}
+
+[data-template-id="das-studio"] .das-footer label {
+  color: var(--das-muted);
+  font-size: clamp(20px, 2vw, 31px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+[data-template-id="das-studio"] .das-footer input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--das-line);
+  color: var(--das-ink);
+  min-height: 48px;
+}
+
+[data-template-id="das-studio"] .das-footer button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  gap: 8px;
+  justify-self: start;
+  padding: 0;
+}
+
+[data-template-id="das-studio"] .das-footer-projects {
+  display: grid;
+}
+
+[data-template-id="das-studio"] .das-footer-projects a {
+  align-items: center;
+  border-bottom: 1px solid var(--das-line);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 56px 1fr auto;
+  min-height: 78px;
+}
+
+[data-template-id="das-studio"] .das-footer-projects img {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 56px;
+}
+
+[data-template-id="das-studio"] .das-footer-projects em {
+  align-items: center;
+  display: inline-flex;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-footer-columns {
+  display: grid;
+  gap: 30px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 50%;
+}
+
+[data-template-id="das-studio"] .das-footer-columns h3 {
+  color: var(--das-muted);
+  font-size: 11px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-footer-columns a {
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 7px 0;
+  text-transform: uppercase;
+}
+
+[data-template-id="das-studio"] .das-footer-bottom {
+  align-items: end;
+  border-top: 1px solid var(--das-line);
+  color: var(--das-muted);
+  display: flex;
+  font-size: 11px;
+  font-weight: 900;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+@media (max-width: 980px) {
+  [data-template-id="das-studio"] .das-hero-top,
+  [data-template-id="das-studio"] .das-intro,
+  [data-template-id="das-studio"] .das-about,
+  [data-template-id="das-studio"] .das-section-head,
+  [data-template-id="das-studio"] .das-faq,
+  [data-template-id="das-studio"] .das-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="das-studio"] .das-tile-row {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  [data-template-id="das-studio"] .das-hero-tile {
+    aspect-ratio: 1 / 1;
+  }
+
+  [data-template-id="das-studio"] .das-section-number {
+    display: none;
+  }
+
+  [data-template-id="das-studio"] .das-logo-proof div,
+  [data-template-id="das-studio"] .das-project-grid,
+  [data-template-id="das-studio"] .das-article-grid,
+  [data-template-id="das-studio"] .das-plan-grid,
+  [data-template-id="das-studio"] .das-testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  [data-template-id="das-studio"] .das-service-list {
+    margin-top: 90px;
+  }
+
+  [data-template-id="das-studio"] .das-service-list summary,
+  [data-template-id="das-studio"] .das-service-body {
+    grid-template-columns: 56px 1fr 28px;
+  }
+
+  [data-template-id="das-studio"] .das-service-body ul {
+    grid-column: 1 / 2;
+  }
+
+  [data-template-id="das-studio"] .das-service-body p {
+    grid-column: 2 / 4;
+  }
+
+  [data-template-id="das-studio"] .das-flow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  [data-template-id="das-studio"] .das-footer-columns {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  [data-template-id="das-studio"] {
+    font-size: 14px;
+  }
+
+  [data-template-id="das-studio"] .das-hero,
+  [data-template-id="das-studio"] section,
+  [data-template-id="das-studio"] .das-footer {
+    padding: 22px;
+  }
+
+  [data-template-id="das-studio"] section {
+    min-height: auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  [data-template-id="das-studio"] .das-logo {
+    font-size: clamp(48px, 17vw, 82px);
+    margin-bottom: 28px;
+  }
+
+  [data-template-id="das-studio"] .das-tile-row,
+  [data-template-id="das-studio"] .das-logo-proof div,
+  [data-template-id="das-studio"] .das-project-grid,
+  [data-template-id="das-studio"] .das-article-grid,
+  [data-template-id="das-studio"] .das-plan-grid,
+  [data-template-id="das-studio"] .das-testimonial-grid,
+  [data-template-id="das-studio"] .das-flow-grid,
+  [data-template-id="das-studio"] .das-stats,
+  [data-template-id="das-studio"] .das-footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  [data-template-id="das-studio"] .das-logo-proof {
+    margin-top: 64px;
+  }
+
+  [data-template-id="das-studio"] .das-section-foot,
+  [data-template-id="das-studio"] .das-testimonial-head,
+  [data-template-id="das-studio"] .das-journal-head,
+  [data-template-id="das-studio"] .das-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  [data-template-id="das-studio"] .das-service-list summary {
+    gap: 16px;
+    grid-template-columns: 38px 1fr 24px;
+  }
+
+  [data-template-id="das-studio"] .das-service-body {
+    gap: 18px;
+    grid-template-columns: 1fr;
+    padding-left: 38px;
+  }
+
+  [data-template-id="das-studio"] .das-service-body ul,
+  [data-template-id="das-studio"] .das-service-body p {
+    grid-column: auto;
+  }
+
+  [data-template-id="das-studio"] .das-flow-grid article {
+    min-height: 310px;
+  }
+
+  [data-template-id="das-studio"] .das-footer-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -22px;
+    padding: 14px 22px;
+  }
+
+  [data-template-id="das-studio"] .das-footer-projects a {
+    grid-template-columns: 48px 1fr;
+  }
+
+  [data-template-id="das-studio"] .das-footer-projects img {
+    width: 48px;
+  }
+
+  [data-template-id="das-studio"] .das-footer-projects em {
+    grid-column: 2;
+  }
+
+  [data-template-id="das-studio"] .das-section-head h2,
+  [data-template-id="das-studio"] .das-testimonial-head h2,
+  [data-template-id="das-studio"] .das-faq-aside h2,
+  [data-template-id="das-studio"] .das-journal-head h2,
+  [data-template-id="das-studio"] .das-cta h2 {
+    letter-spacing: -0.055em;
+  }
+
+  [data-template-id="das-studio"] .das-faq-aside h2 {
+    font-size: clamp(42px, 16vw, 68px);
+    max-width: 360px;
+  }
+}

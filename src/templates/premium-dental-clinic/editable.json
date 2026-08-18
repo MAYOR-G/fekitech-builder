@@ -1,0 +1,151 @@
+{
+  "brand": {
+    "name": "Dentalo",
+    "phone": "+358 045 192 7365",
+    "email": "Dentalo.thompson@homequest.com",
+    "address": "Elmwood Ave. 42",
+    "hours": "9 AM to 5 PM"
+  },
+  "navLinks": [
+    { "label": "Services", "href": "#services" },
+    { "label": "Reviews", "href": "#reviews" },
+    { "label": "Contact Us", "href": "#contact" }
+  ],
+  "hero": {
+    "badge": "Start Smiling Confidently",
+    "title": "Best Dental Treatment in West London",
+    "description": "We are dedicated to delivering gentle, high-quality dental care for every patient. Our skilled dentists and caring team focus on your comfort, safety.",
+    "primaryCta": { "label": "Book Now", "href": "#book" },
+    "image": "/templates/premium-dental-clinic/hero.png"
+  },
+  "valueProp": {
+    "title": "Building confidence through healthy smiles",
+    "description": "At Dentalo, we believe a healthy smile is the foundation of true confidence. Our team is dedicated to providing gentle, personalized dental care that helps you look and feel your best.",
+    "cta": "Read More",
+    "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80"
+  },
+  "services": {
+    "title": "Explore our services with our latest technology",
+    "cta": "View all services",
+    "items": [
+      {
+        "title": "Teeth Whitening",
+        "description": "Achieve a brighter smile with our professional whitening treatments.",
+        "image": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
+        "cta": "Read More"
+      },
+      {
+        "title": "Dental check up",
+        "description": "Comprehensive exams to keep your teeth and gums healthy.",
+        "image": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80",
+        "cta": "Read More"
+      },
+      {
+        "title": "Dental implants",
+        "description": "Restore your smile with our reliable and long-lasting implants.",
+        "image": "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=800&q=80",
+        "cta": "Read More"
+      }
+    ]
+  },
+  "videoFeature": {
+    "title": "Transform your smile with expert dental care",
+    "description": "We believe great dental care goes beyond treatments—it's about creating lasting confidence.",
+    "list": [
+      "Healthier teeth and gums.",
+      "Early detection of dental issues.",
+      "Improved confidence and appearance."
+    ],
+    "cta": "Book Now",
+    "image": "/templates/premium-dental-clinic/video-feature.png"
+  },
+  "beforeAfter": {
+    "title": "Real results, real smiles",
+    "description": "See the difference our expert dental care makes.",
+    "items": [
+      {
+        "title": "Orthodontic treatment",
+        "beforeImage": "/templates/premium-dental-clinic/ortho-before.png",
+        "afterImage": "/templates/premium-dental-clinic/ortho-after.png"
+      },
+      {
+        "title": "Fast whitening treatment",
+        "beforeImage": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
+        "afterImage": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "features": {
+    "title": "Dedicated to your smiles",
+    "image": "/templates/premium-dental-clinic/features.png",
+    "items": [
+      {
+        "id": "01",
+        "title": "Top rated dental clinic",
+        "description": "We are highly rated by our patients for outstanding care."
+      },
+      {
+        "id": "02",
+        "title": "Advanced dental technology",
+        "description": "Using the latest technology for minimal discomfort."
+      },
+      {
+        "id": "03",
+        "title": "Comfortable clinic environment",
+        "description": "Our modern clinic is designed to help you relax."
+      },
+      {
+        "id": "04",
+        "title": "Affordable pricing options",
+        "description": "Flexible payment plans to suit your needs."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Discover what our patients say",
+    "items": [
+      {
+        "name": "David",
+        "image": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80",
+        "text": "The best dental experience I have ever had. Highly recommend to anyone."
+      },
+      {
+        "name": "Michael",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "text": "Professional, caring, and gentle. My whole family goes here now."
+      },
+      {
+        "name": "Sarah",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+        "text": "I used to be afraid of the dentist, but not anymore. They are amazing."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Got a question? We've got answers",
+    "items": [
+      {
+        "question": "How often should I visit the dentist?",
+        "answer": "We recommend visiting the dentist every six months for a regular check-up."
+      },
+      {
+        "question": "Do you offer emergency dental services?",
+        "answer": "Yes, we provide emergency dental care for urgent issues."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept cash, major credit cards, and work with several dental financing options."
+      }
+    ]
+  },
+  "location": {
+    "title": "Convenient locations for you",
+    "image": "/templates/premium-dental-clinic/location.png"
+  },
+  "footerLinks": [
+    { "label": "Request Appointment", "href": "#" },
+    { "label": "Get Second Opinion", "href": "#" },
+    { "label": "Contact Customer Care", "href": "#" },
+    { "label": "Our Locations", "href": "#" }
+  ]
+}

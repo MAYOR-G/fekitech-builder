@@ -1,0 +1,278 @@
+{
+  "colors": {
+    "pageBackground": "#ffffff",
+    "background": "#ffffff",
+    "sectionAlt": "#d2dbe5",
+    "surface": "#f29e88",
+    "card": "#ffffff",
+    "textPrimary": "#101e28",
+    "bodyText": "#4a5568",
+    "mutedText": "#718096",
+    "accent": "#f29e88",
+    "accentSecondary": "#d2dbe5",
+    "buttonBg": "#101e28",
+    "buttonText": "#ffffff",
+    "secondaryButtonBg": "#ffffff",
+    "secondaryButtonBorder": "#101e28",
+    "secondaryButtonText": "#101e28",
+    "link": "#101e28",
+    "border": "#e2e8f0",
+    "headerBg": "transparent",
+    "headerText": "#ffffff",
+    "footerBg": "#101e28",
+    "footerText": "#e2e8f0"
+  },
+  "typography": null,
+  "brand": {
+    "name": "Dream Home Discovery",
+    "descriptor": "Premium UK Real Estate",
+    "email": "hello@dreamhomediscovery.co.uk",
+    "phone": "+44 20 7946 0012",
+    "address": "15 Kensington High Street, London W8 5NP"
+  },
+  "header": {
+    "nav": [
+      { "label": "Home", "href": "home" },
+      { "label": "Listings", "href": "listings" },
+      { "label": "Agents", "href": "agents" },
+      { "label": "About", "href": "about" }
+    ],
+    "cta": { "label": "Contact Us", "href": "contact" }
+  },
+  "hero": {
+    "title": "Start Dream Home Discovery",
+    "subtitle": "Discover the finest properties across the UK. Tailored searches, exclusive listings, and expert guidance to help you find your perfect match.",
+    "search": {
+      "locationPlaceholder": "Location",
+      "typePlaceholder": "Property Type",
+      "pricePlaceholder": "Price Range",
+      "button": "Search"
+    }
+  },
+  "featuredListings": {
+    "kicker": "Exclusive",
+    "title": "Featured real estate listings",
+    "button": "View all listings",
+    "items": [
+      {
+        "image": "/templates/dream-home-discovery/assets/property-1.webp",
+        "imageAlt": "Modern townhouse with pool",
+        "tag": "For Sale",
+        "name": "Kensington Modern Villa",
+        "location": "London, UK",
+        "beds": "5 beds",
+        "price": "£4,250,000"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/property-2.webp",
+        "imageAlt": "Minimalist home with large windows",
+        "tag": "For Sale",
+        "name": "Chelsea Minimalist Home",
+        "location": "London, UK",
+        "beds": "4 beds",
+        "price": "£3,100,000"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/property-3.webp",
+        "imageAlt": "Contemporary estate",
+        "tag": "Sold",
+        "name": "Surrey Contemporary Estate",
+        "location": "Surrey, UK",
+        "beds": "6 beds",
+        "price": "£5,500,000"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/property-4.webp",
+        "imageAlt": "Penthouse apartment",
+        "tag": "For Sale",
+        "name": "Mayfair Penthouse",
+        "location": "London, UK",
+        "beds": "3 beds",
+        "price": "£2,950,000"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/property-5.webp",
+        "imageAlt": "Riverside property",
+        "tag": "For Rent",
+        "name": "Richmond Riverside",
+        "location": "London, UK",
+        "beds": "4 beds",
+        "price": "£8,500 / month"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/property-6.webp",
+        "imageAlt": "Open plan living room",
+        "tag": "For Sale",
+        "name": "Notting Hill Apartment",
+        "location": "London, UK",
+        "beds": "2 beds",
+        "price": "£1,450,000"
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover",
+    "subtitle": "We make real estate less complicated",
+    "body": "Navigating the property market shouldn't be stressful. We provide clear, transparent advice and handle the complex details, allowing you to focus on finding a home you love.",
+    "stats": [
+      { "value": "250+", "label": "Properties Sold" },
+      { "value": "99%", "label": "Client Satisfaction" },
+      { "value": "12", "label": "Industry Awards" }
+    ],
+    "images": [
+      "/templates/dream-home-discovery/assets/discover-1.webp",
+      "/templates/dream-home-discovery/assets/discover-2.webp",
+      "/templates/dream-home-discovery/assets/discover-3.webp"
+    ]
+  },
+  "banner": {
+    "title": "Real estate choice. Rewarded. Inspiring.",
+    "image": "/templates/dream-home-discovery/assets/banner.webp",
+    "imageAlt": "Wide shot of a modern architectural home at sunset"
+  },
+  "neighborhoods": {
+    "title": "Explore neighborhoods",
+    "subtitle": "Find the perfect area for your lifestyle",
+    "items": [
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-1.webp",
+        "name": "Kensington",
+        "properties": "42 properties"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-2.webp",
+        "name": "Chelsea",
+        "properties": "38 properties"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-3.webp",
+        "name": "Notting Hill",
+        "properties": "25 properties"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-4.webp",
+        "name": "Mayfair",
+        "properties": "15 properties"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-5.webp",
+        "name": "Richmond",
+        "properties": "20 properties"
+      },
+      {
+        "image": "/templates/dream-home-discovery/assets/neighborhood-6.webp",
+        "name": "Surrey",
+        "properties": "55 properties"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What our customers think",
+    "items": [
+      {
+        "name": "Sarah Jenkins",
+        "text": "The team made finding our family home an absolute breeze. Professional, responsive, and truly understood what we were looking for in a property.",
+        "image": "/templates/dream-home-discovery/assets/testimonial-1.webp"
+      },
+      {
+        "name": "James Thornton",
+        "text": "Exceptional service from start to finish. They handled the sale of my apartment with complete discretion and secured a fantastic price.",
+        "image": "/templates/dream-home-discovery/assets/testimonial-2.webp"
+      },
+      {
+        "name": "Emma Collins",
+        "text": "I couldn't have asked for a better experience. Their knowledge of the London market is unmatched, and they found us a hidden gem.",
+        "image": "/templates/dream-home-discovery/assets/testimonial-3.webp"
+      }
+    ]
+  },
+  "agents": {
+    "title": "Meet our agents",
+    "items": [
+      {
+        "name": "David Hughes",
+        "role": "Senior Director",
+        "image": "/templates/dream-home-discovery/assets/agent-1.webp"
+      },
+      {
+        "name": "Eleanor Vance",
+        "role": "Sales Partner",
+        "image": "/templates/dream-home-discovery/assets/agent-2.webp"
+      },
+      {
+        "name": "Marcus Wright",
+        "role": "Lettings Manager",
+        "image": "/templates/dream-home-discovery/assets/agent-3.webp"
+      },
+      {
+        "name": "Sophie Turner",
+        "role": "Property Consultant",
+        "image": "/templates/dream-home-discovery/assets/agent-4.webp"
+      },
+      {
+        "name": "Oliver Graham",
+        "role": "Valuations Expert",
+        "image": "/templates/dream-home-discovery/assets/agent-5.webp"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is the process of buying a home?",
+        "answer": "We start with an initial consultation to understand your requirements, followed by curated property viewings. Once you find a match, we handle negotiations and guide you through the conveyancing process to completion."
+      },
+      {
+        "question": "How do you value my property?",
+        "answer": "Our valuations are evidence-based, drawing on recent comparable sales, current market demand, and the unique characteristics of your home and street."
+      },
+      {
+        "question": "Do you offer off-market property listings?",
+        "answer": "Yes. A significant portion of our transactions are conducted off-market for clients who prefer discretion. Please contact us to register as a private buyer."
+      },
+      {
+        "question": "What fees should I expect as a seller?",
+        "answer": "We operate on a clear, competitive commission structure agreed upon during our initial appraisal. There are no hidden marketing fees or upfront costs."
+      },
+      {
+        "question": "Can you assist with international relocations?",
+        "answer": "Absolutely. We regularly assist international clients moving to the UK, offering virtual viewings and comprehensive advice on the local buying process."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Property in city",
+    "subtitle": "Let's find the perfect home",
+    "form": {
+      "typeLabel": "Type of Service",
+      "typeOptions": ["Buy", "Sell", "Rent"],
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone Number",
+      "button": "Submit Enquiry"
+    }
+  },
+  "pages": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": "We treat your data with the utmost respect. Any information provided is used exclusively to assist with your property search or sale."
+    }
+  },
+  "footer": {
+    "tagline": "Discover perfectly tailored spaces for your life.",
+    "links1Title": "Company",
+    "links1": [
+      { "label": "About Us", "href": "about" },
+      { "label": "Agents", "href": "agents" },
+      { "label": "Careers", "href": "careers" }
+    ],
+    "links2Title": "Services",
+    "links2": [
+      { "label": "Buy", "href": "buy" },
+      { "label": "Sell", "href": "sell" },
+      { "label": "Valuation", "href": "valuation" }
+    ],
+    "copyright": "© 2026 Dream Home Discovery"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "surface": "#f5f5f5",
+      "card": "#f4f4f4",
+      "ink": "#080808",
+      "body": "#202020",
+      "muted": "#6b6b6b",
+      "line": "#dfdfdf",
+      "pill": "#0a0a0a",
+      "pillText": "#ffffff",
+      "softPink": "#f5b6d7",
+      "blue": "#1371b8"
+    },
+    "typography": {
+      "heading": "var(--font-heading, Arial, Helvetica, sans-serif)",
+      "body": "var(--font-body, Arial, Helvetica, sans-serif)"
+    }
+  },
+  "brand": {
+    "name": "DAS STUDIO",
+    "shortName": "DAS",
+    "tagline": "Strategy and design that make real sense for growing brands.",
+    "address": "14 Redchurch Street, Shoreditch, London E2",
+    "email": "hello@dasstudio.co.uk",
+    "copyright": "© 2026 DAS Studio"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Journal", "href": "#journal" },
+      { "label": "About", "href": "#about" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "primaryLabel": "Start project",
+    "primaryHref": "#contact",
+    "secondaryLabel": "Our approach",
+    "secondaryHref": "#flow"
+  },
+  "hero": {
+    "stats": [
+      { "label": "Response time", "value": "3h" },
+      { "label": "Based in", "value": "London" },
+      { "label": "Creators", "value": "23" }
+    ],
+    "tiles": [
+      { "type": "text", "text": "OK!", "image": "", "imageAlt": "" },
+      { "type": "image", "text": "", "image": "/templates/das-studio/assets/hero-can.webp", "imageAlt": "Minimal frosted can on a pale blue studio surface" },
+      { "type": "image", "text": "", "image": "/templates/das-studio/assets/beauty-closeup.webp", "imageAlt": "Editorial cosmetics campaign close-up with pink tones" },
+      { "type": "orb", "text": "", "image": "", "imageAlt": "Soft pink abstract campaign artwork" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Who we are",
+    "number": "01",
+    "title": "We help brands create clear visuals, strong websites, and consistent marketing. We turn bold ideas into intuitive experiences. We are a creative design studio.",
+    "primaryLabel": "Our work",
+    "primaryHref": "#projects",
+    "secondaryLabel": "Our approach",
+    "secondaryHref": "#flow",
+    "proofIntro": "Some of the brands we collaborate with",
+    "logos": ["uilogos", "velocity", "northmade", "kirnros", "ASGARDIA", "nirastate"]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "count": "6",
+    "text": "Case studies that walk through our approach and impact.",
+    "note": "These are just a few highlights. Browse our full project portfolio to see more.",
+    "buttonLabel": "See all projects",
+    "buttonHref": "#contact",
+    "items": [
+      { "duration": "5 weeks", "title": "Lumen Void", "category": "Art Direction", "image": "/templates/das-studio/assets/lumen-void.webp", "imageAlt": "Orange surfboard floating in clear turquoise water" },
+      { "duration": "4 weeks", "title": "Primary Form", "category": "Fashion", "image": "/templates/das-studio/assets/primary-form.webp", "imageAlt": "Hand holding an unbranded white product against a white background" },
+      { "duration": "2 weeks", "title": "Luma Wood", "category": "Product Design", "image": "/templates/das-studio/assets/hero-can.webp", "imageAlt": "Minimal frosted can used as a clean product campaign image" },
+      { "duration": "3 weeks", "title": "Silence Studio", "category": "Branding", "image": "/templates/das-studio/assets/beauty-closeup.webp", "imageAlt": "Pink editorial beauty campaign close-up" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "count": "4",
+    "text": "We work across art direction, branding, editorial design, and web development.",
+    "fallback": "If you do not find exactly the service you need, we can tailor one for you.",
+    "buttonLabel": "Book a call",
+    "buttonHref": "#contact",
+    "items": [
+      { "number": "01", "title": "Art Direction", "details": ["Visual direction", "Type rules", "Layout system"], "text": "We set the visual direction for a brand or project. That includes references, layout rules, typography choices, and the overall look and feel." },
+      { "number": "02", "title": "Branding", "details": ["Positioning", "Identity", "Guidelines"], "text": "Identity systems, brand language and simple rules that help teams show up clearly across every touchpoint." },
+      { "number": "03", "title": "Marketing", "details": ["Campaigns", "Content", "Launches"], "text": "Clear campaigns and marketing assets built around the audience, offer and action that matter most." },
+      { "number": "04", "title": "Web Development", "details": ["Websites", "Landing pages", "CMS"], "text": "Responsive websites that feel sharp, load quickly, and make the next step easy for visitors." },
+      { "number": "05", "title": "Editorial", "details": ["Articles", "Lookbooks", "Reports"], "text": "Editorial layouts and content systems for launches, reports, journals and brand storytelling." }
+    ]
+  },
+  "flow": {
+    "eyebrow": "Flow",
+    "metaLeft": "Process: 4 steps",
+    "metaRight": "Duration: ~1 month",
+    "text": "Our process for turning ideas into real, working solutions that deliver strong results.",
+    "steps": [
+      { "title": "Discover", "text": "Understanding your challenge, your audience, and what success looks like for you.", "progress": "25%" },
+      { "title": "Design", "text": "Ideas take shape. We explore directions, test concepts, and refine until it feels right.", "progress": "50%" },
+      { "title": "Build", "text": "We develop the final product with attention to every detail and technical precision.", "progress": "75%" },
+      { "title": "Launch", "text": "We manage the launch, provide training if needed, and ensure a smooth transition.", "progress": "100%" }
+    ]
+  },
+  "about": {
+    "eyebrow": "More about us",
+    "number": "02",
+    "title": "We're a small team in London doing thoughtful design work for brands that want to stand out. No big agency overhead, no unnecessary process, just clear strategic thinking and truly honest execution.",
+    "primaryLabel": "About the studio",
+    "primaryHref": "#about",
+    "secondaryLabel": "Our work",
+    "secondaryHref": "#projects",
+    "image": "/templates/das-studio/assets/studio-front.webp",
+    "imageAlt": "Minimal studio frontage with a green striped awning",
+    "stats": [
+      { "value": "48+", "label": "Projects delivered" },
+      { "value": "16+", "label": "Clients worldwide" }
+    ],
+    "statNote": "Numbers that show we've been doing this long enough to know what works."
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Brands that love working with us",
+    "summary": "We've worked with over 200 clients who trust us with their brand. Want to see what we could do for you?",
+    "buttonLabel": "Let's talk",
+    "buttonHref": "#contact",
+    "image": "/templates/das-studio/assets/beauty-closeup.webp",
+    "imageAlt": "Portrait detail used for testimonial section",
+    "items": [
+      { "quote": "They gave us a clear direction early, and everything after that became easier. The work is clean and consistent.", "name": "Sarah Mitchell", "role": "Brand Strategist" },
+      { "quote": "Intelligent tools that understand aesthetics and adapt to your creative direction.", "name": "Maya Rodriguez", "role": "Art Director" },
+      { "quote": "Upload to complete moodboard in seconds. No complex workflows or manual setup.", "name": "Nina Petersen", "role": "Lead Designer" }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "count": "2",
+    "text": "We keep pricing clear and fully transparent. Final cost depends on scope and timeline.",
+    "plans": [
+      { "name": "Premium", "badge": "Limited availability", "description": "Ideal for brands that need regular creative work.", "price": "£1K", "period": "/month", "buttonLabel": "Start monthly plan", "buttonHref": "#contact", "features": ["Flexible working hours", "3 active projects at a time", "2 marketing campaigns", "Zoom meetings and live events"] },
+      { "name": "Project", "badge": "Popular", "description": "We'll tailor the quote to your timeline and budget.", "price": "£1.4K", "period": "/project", "buttonLabel": "Start project", "buttonHref": "#contact", "features": ["Web design & development", "Brand identity design", "1 project", "3 marketing campaigns"] }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Have some questions?",
+    "supportTitle": "Not finding answers?",
+    "supportText": "Reach out anytime. We're happy to answer any questions before you commit to working together.",
+    "buttonLabel": "Contact us",
+    "buttonHref": "#contact",
+    "items": [
+      { "question": "Do you take on small projects?", "answer": "We're flexible. Whether you need a complete identity or just a standout landing page, we'll tailor our process to suit your scope without compromising quality." },
+      { "question": "Can you work with an existing brand?", "answer": "Yes. We can refine your current look, build new pages, or create campaign assets that respect the brand you already have." },
+      { "question": "What's your typical project timeline?", "answer": "Most focused projects take two to six weeks. Larger websites or brand systems are planned in stages so progress stays clear." },
+      { "question": "What happens after I reach out?", "answer": "We reply with a few useful questions, then arrange a short call to understand the project and recommend the right next step." },
+      { "question": "Do you offer free consultations?", "answer": "Yes. Introductory calls are free and practical. We use them to see if the project is a good fit." },
+      { "question": "Can I reach out if I'm not sure what I need yet?", "answer": "Absolutely. Bring the rough idea and we will help shape it into a clear brief." }
+    ]
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "title": "Our take on design and the culture",
+    "buttonLabel": "See all articles",
+    "buttonHref": "#contact",
+    "items": [
+      { "readTime": "5 min read", "title": "Editorial layout as science for the web", "image": "/templates/das-studio/assets/hero-can.webp", "imageAlt": "Minimal frosted can on pale blue background" },
+      { "readTime": "6 min read", "title": "Why London design loves the grid", "image": "/templates/das-studio/assets/beauty-closeup.webp", "imageAlt": "Pink editorial cosmetics close-up" }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Free 20-min intro call",
+    "title": "Tell us what you're building",
+    "text": "Work with a team that brings clarity, care, and creativity to every project.",
+    "buttonLabel": "Book a call",
+    "buttonHref": "#contact"
+  },
+  "footer": {
+    "newsletterTitle": "Subscribe for new projects and insights, once a month.",
+    "placeholder": "Your email address",
+    "submitLabel": "Submit",
+    "projects": [
+      { "title": "Lumen void", "image": "/templates/das-studio/assets/lumen-void.webp", "imageAlt": "Tiny preview for Lumen Void", "href": "#projects" },
+      { "title": "Primary form", "image": "/templates/das-studio/assets/primary-form.webp", "imageAlt": "Tiny preview for Primary Form", "href": "#projects" },
+      { "title": "Luma wood", "image": "/templates/das-studio/assets/hero-can.webp", "imageAlt": "Tiny preview for Luma Wood", "href": "#projects" }
+    ],
+    "columns": [
+      { "title": "Projects", "links": [{ "label": "Projects", "href": "#projects" }, { "label": "Journal", "href": "#journal" }, { "label": "About", "href": "#about" }] },
+      { "title": "Services", "links": [{ "label": "Workflow", "href": "#flow" }, { "label": "Pricing", "href": "#pricing" }] },
+      { "title": "Contact", "links": [{ "label": "Email", "href": "mailto:hello@dasstudio.co.uk" }, { "label": "Instagram", "href": "#" }] }
+    ],
+    "credit": "Built in FekiTech"
+  }
+}

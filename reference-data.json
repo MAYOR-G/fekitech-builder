@@ -1,1023 +1,1527 @@
 {
   "texts": [
     {
-      "tag": "SPAN",
-      "text": "top of page",
-      "color": "rgb(0, 0, 0)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 0
-    },
-    {
-      "tag": "SPAN",
-      "text": "Book a Table",
-      "color": "rgb(0, 0, 0)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 0
-    },
-    {
-      "tag": "SPAN",
-      "text": "bottom of page",
-      "color": "rgb(0, 0, 0)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 0
-    },
-    {
-      "tag": "BUTTON",
-      "text": "Log In",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 82.203125
-    },
-    {
       "tag": "P",
-      "text": "The Whale's Tail",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
+      "text": "Start Smiling Confidently Like Atlanta Patients – Book Now",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 83
+      "y": 8
     },
     {
       "tag": "A",
-      "text": "The Whale's Tail",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
+      "text": "Book Now",
+      "color": "rgb(217, 127, 80)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 84
+      "y": 11
     },
     {
       "tag": "SPAN",
-      "text": "Log In",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
+      "text": "Book Now",
+      "color": "rgb(217, 127, 80)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 88.203125
+      "y": 11
+    },
+    {
+      "tag": "A",
+      "text": "Book An Appointment",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 56.09375
+    },
+    {
+      "tag": "A",
+      "text": "All Pages",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "All Pages",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 68.09375
+    },
+    {
+      "tag": "A",
+      "text": "Services",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "Services",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 68.09375
+    },
+    {
+      "tag": "A",
+      "text": "Reviews",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "Reviews",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 68.09375
+    },
+    {
+      "tag": "A",
+      "text": "Contact Us",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "Contact Us",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "Book An Appointment",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 68.09375
+    },
+    {
+      "tag": "P",
+      "text": "Gentle care for every smile",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 246.796875
     },
     {
       "tag": "H1",
-      "text": "Drink, Eat, Enjoy.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "44px",
-      "fontFamily": "fahkwang, sans-serif",
+      "text": "Best Dental Treatment in West London",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "88px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 182.953125
+      "y": 296.59375
     },
     {
       "tag": "P",
-      "text": "Pub & Eatery | Est. 2035",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "20px",
-      "fontFamily": "marmelad, sans-serif",
+      "text": "We are dedicated to delivering gentle, high-quality dental care for every patient. Our skilled dentists and caring team focus on your comfort, safety.",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 194.953125
-    },
-    {
-      "tag": "H2",
-      "text": "Make Yourself at Home",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1024.953125
-    },
-    {
-      "tag": "SPAN",
-      "text": "Make Yourself at Home",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1025.953125
-    },
-    {
-      "tag": "SPAN",
-      "text": "ENJOY PREMIUM DRAFT BEER, GOOD WINES, AND OUR HEARTFUL DISHES",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1063.75
-    },
-    {
-      "tag": "P",
-      "text": "ENJOY PREMIUM DRAFT BEER, GOOD WINES, AND OUR HEARTFUL DISHES",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1065.75
+      "y": 587.140625
     },
     {
       "tag": "A",
-      "text": "Book a Table",
+      "text": "Book An Appointment",
       "color": "rgb(0, 0, 238)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
       "fontWeight": "400",
-      "y": 1189
-    },
-    {
-      "tag": "SPAN",
-      "text": "Book a Table",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 1202.921875
+      "y": 700.75
     },
     {
       "tag": "P",
-      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1304.953125
-    },
-    {
-      "tag": "SPAN",
-      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1306.953125
-    },
-    {
-      "tag": "A",
-      "text": "Order Online",
-      "color": "rgb(0, 0, 238)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 1329
-    },
-    {
-      "tag": "SPAN",
-      "text": "Order Online",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 1344.40625
-    },
-    {
-      "tag": "A",
-      "text": "Book a Table",
-      "color": "rgb(0, 0, 238)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 1455.328125
-    },
-    {
-      "tag": "SPAN",
-      "text": "Book a Table",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 1466.625
-    },
-    {
-      "tag": "P",
-      "text": "Hello, Neighbor",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1709.953125
-    },
-    {
-      "tag": "H2",
-      "text": "HAPPY HOUR",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 1771.75
-    },
-    {
-      "tag": "P",
-      "text": "12PM - 3PM",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1857.15625
-    },
-    {
-      "tag": "P",
-      "text": "Monday - Thursday",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1857.15625
-    },
-    {
-      "tag": "SPAN",
-      "text": "12PM - 3PM",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1859.15625
-    },
-    {
-      "tag": "SPAN",
-      "text": "Monday - Thursday",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 1859.15625
-    },
-    {
-      "tag": "H2",
-      "text": "This Month’s Special",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 2234.953125
-    },
-    {
-      "tag": "P",
-      "text": "CELEBRATING BELGIAN BEER MONTH",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 2273.75
-    },
-    {
-      "tag": "P",
-      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 2453.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 2455.96875
-    },
-    {
-      "tag": "A",
-      "text": "Our Menu",
-      "color": "rgb(0, 0, 238)",
-      "fontSize": "10px",
-      "fontFamily": "Arial, Helvetica, sans-serif",
-      "fontWeight": "400",
-      "y": 2635.953125
-    },
-    {
-      "tag": "SPAN",
-      "text": "Our Menu",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 2647.25
-    },
-    {
-      "tag": "H2",
-      "text": "Happy Moments",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 2949.953125
-    },
-    {
-      "tag": "H2",
-      "text": "Upcoming Events",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 3928.359375
-    },
-    {
-      "tag": "SPAN",
-      "text": "Fri, Mar 23",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4092.96875
-    },
-    {
-      "tag": "A",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4100.765625
-    },
-    {
-      "tag": "SPAN",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4105.265625
-    },
-    {
-      "tag": "A",
-      "text": "Movie Night",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4112.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Movie Night",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4112.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "/",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4112.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "San Francisco",
-      "color": "rgb(207, 211, 199)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 4120.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Fri, Mar 23",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4193.96875
-    },
-    {
-      "tag": "A",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4201.765625
-    },
-    {
-      "tag": "SPAN",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4206.265625
-    },
-    {
-      "tag": "A",
-      "text": "Open Stage",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4213.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Open Stage",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4213.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "/",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4213.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "San Francisco",
-      "color": "rgb(207, 211, 199)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 4221.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Fri, Mar 23",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4294.96875
-    },
-    {
-      "tag": "A",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4302.765625
-    },
-    {
-      "tag": "SPAN",
-      "text": "RSVP",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "15px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "700",
-      "y": 4307.265625
-    },
-    {
-      "tag": "A",
-      "text": "Trivia Night",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4314.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Trivia Night",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4314.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "/",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "24px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4314.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "San Francisco",
-      "color": "rgb(207, 211, 199)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 4322.96875
-    },
-    {
-      "tag": "H2",
-      "text": "Reserve a Table",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang",
-      "fontWeight": "400",
-      "y": 4534.359375
-    },
-    {
-      "tag": "P",
-      "text": "To help us find the best table for you, select the preferred party size, date, and time of your reservation.",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 4613.15625
-    },
-    {
-      "tag": "SPAN",
-      "text": "DROP BY,\nWE ARE OPEN.",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 4961.5625
-    },
-    {
-      "tag": "H2",
-      "text": "DROP BY,\nWE ARE OPEN.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "42px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 4963.5625
+      "text": "Book An Appointment",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 712.75
     },
     {
       "tag": "P",
       "text": "Address",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5109.375
-    },
-    {
-      "tag": "SPAN",
-      "text": "Address",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5110.375
-    },
-    {
-      "tag": "P",
-      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5151.171875
-    },
-    {
-      "tag": "SPAN",
-      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5153.171875
-    },
-    {
-      "tag": "P",
-      "text": "Opening Hours",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5250.359375
-    },
-    {
-      "tag": "SPAN",
-      "text": "Opening Hours",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5251.359375
-    },
-    {
-      "tag": "P",
-      "text": "Monday - Sunday: 12pm - 1am",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5290.15625
-    },
-    {
-      "tag": "SPAN",
-      "text": "Monday - Sunday: 12pm - 1am",
-      "color": "rgb(32, 36, 26)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5292.15625
-    },
-    {
-      "tag": "P",
-      "text": "info@mysite.com",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5626.5625
-    },
-    {
-      "tag": "P",
-      "text": "500 Terry Francine Street\nSan Francisco, CA 94158",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5626.5625
-    },
-    {
-      "tag": "A",
-      "text": "info@mysite.com",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5628.5625
-    },
-    {
-      "tag": "A",
-      "text": "The Whale's Tail",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5638.5625
-    },
-    {
-      "tag": "SPAN",
-      "text": "The Whale's Tail",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5638.5625
-    },
-    {
-      "tag": "P",
-      "text": "The Whale's Tail",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "22px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5639.5625
-    },
-    {
-      "tag": "P",
-      "text": "Facebook",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5639.5625
-    },
-    {
-      "tag": "P",
-      "text": "Instagram",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5639.5625
-    },
-    {
-      "tag": "P",
-      "text": "Yelp!",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5639.5625
-    },
-    {
-      "tag": "A",
-      "text": "Facebook",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5641.5625
-    },
-    {
-      "tag": "A",
-      "text": "Instagram",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5641.5625
-    },
-    {
-      "tag": "A",
-      "text": "Yelp!",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5641.5625
-    },
-    {
-      "tag": "P",
-      "text": "123-456-7890",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5653.75
-    },
-    {
-      "tag": "P",
-      "text": "Subscribe to get notified about special events.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 5725.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Subscribe to get notified about special events.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5725.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Subscribe to get notified about special events.",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "400",
-      "y": 5725.96875
-    },
-    {
-      "tag": "P",
-      "text": "© 2035 by The Whale's Tail. Powered and secured by Wix",
-      "color": "rgb(225, 208, 182)",
+      "color": "rgb(255, 255, 255)",
       "fontSize": "14px",
-      "fontFamily": "marmelad, sans-serif",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 5725.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "*",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "14px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5727.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "© 2035 by The Whale's Tail. Powered and secured by Wix",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "14px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5727.96875
-    },
-    {
-      "tag": "SPAN",
-      "text": "Wix",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "14px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5750.375
-    },
-    {
-      "tag": "A",
-      "text": "Wix",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "14px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5750.375
+      "y": 862.046875
     },
     {
       "tag": "P",
-      "text": "Yes, subscribe me to\n                                                                                  your newsletter.*",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
+      "text": "Opening hours",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 5915.375
+      "y": 862.046875
     },
     {
-      "tag": "SPAN",
-      "text": "Yes, subscribe me to\n                                                                                  your newsletter.*",
-      "color": "rgb(225, 208, 182)",
+      "tag": "P",
+      "text": "Elmwood Ave. 42",
+      "color": "rgb(255, 255, 255)",
       "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5915.375
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 889.84375
     },
     {
-      "tag": "SPAN",
-      "text": "Yes, subscribe me to\n                                                                                  your newsletter.",
-      "color": "rgb(225, 208, 182)",
+      "tag": "P",
+      "text": "9 AM to 5 PM",
+      "color": "rgb(255, 255, 255)",
       "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
-      "fontWeight": "400",
-      "y": 5917.375
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 889.84375
     },
     {
-      "tag": "SPAN",
-      "text": "*",
-      "color": "rgb(225, 208, 182)",
+      "tag": "P",
+      "text": "Request Appointment",
+      "color": "rgb(28, 20, 12)",
       "fontSize": "16px",
-      "fontFamily": "marmelad, sans-serif",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1009.546875
+    },
+    {
+      "tag": "P",
+      "text": "Get Second Opinion",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1009.546875
+    },
+    {
+      "tag": "P",
+      "text": "Contact Customer Care",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1009.546875
+    },
+    {
+      "tag": "P",
+      "text": "Our Locations",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1009.546875
+    },
+    {
+      "tag": "H2",
+      "text": "Building confidence through healthy smiles",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1261.75
+    },
+    {
+      "tag": "P",
+      "text": "At Dentalo, we believe a healthy smile is the foundation of true confidence. Our team is dedicated to providing gentle, personalized dental care that helps you look.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
       "fontWeight": "400",
-      "y": 5965.375
+      "y": 1388.15625
+    },
+    {
+      "tag": "P",
+      "text": "We understand that every smile is unique. That’s why we tailor each treatment plan to your specific needs, ensuring.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 1769.140625
+    },
+    {
+      "tag": "P",
+      "text": "Our skilled professionals are dedicated to providing expert care with a compassionate approach, making.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 1847.546875
+    },
+    {
+      "tag": "A",
+      "text": "Book An Appointment",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 1933.953125
+    },
+    {
+      "tag": "P",
+      "text": "Book An Appointment",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 1945.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Redefining dentistry with comfort and care",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2271.75
+    },
+    {
+      "tag": "A",
+      "text": "GET THIS TEMPLATE\n\nGET THIS TEMPLATE",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2307.78125
+    },
+    {
+      "tag": "P",
+      "text": "GET THIS TEMPLATE",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2319.78125
+    },
+    {
+      "tag": "P",
+      "text": "GET THIS TEMPLATE",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2346.78125
+    },
+    {
+      "tag": "A",
+      "text": "UNLOCK 350+ TEMPLATES\n\nUNLOCK 350+ TEMPLATES",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2352.1875
+    },
+    {
+      "tag": "P",
+      "text": "UNLOCK 350+ TEMPLATES",
+      "color": "rgb(254, 253, 255)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2364.1875
+    },
+    {
+      "tag": "P",
+      "text": "UNLOCK 350+ TEMPLATES",
+      "color": "rgb(254, 253, 255)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2391.1875
+    },
+    {
+      "tag": "A",
+      "text": "✨ HIRE FOR CUSTOM WEBSITE\n\n✨ HIRE FOR CUSTOM WEBSITE",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2396.59375
+    },
+    {
+      "tag": "P",
+      "text": "✨ HIRE FOR CUSTOM WEBSITE",
+      "color": "rgb(254, 253, 255)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2408.59375
+    },
+    {
+      "tag": "P",
+      "text": "✨ HIRE FOR CUSTOM WEBSITE",
+      "color": "rgb(254, 253, 255)",
+      "fontSize": "12px",
+      "fontFamily": "\"Inclusive Sans\", \"Inclusive Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2435.59375
+    },
+    {
+      "tag": "A",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2442
+    },
+    {
+      "tag": "A",
+      "text": "Root canal treatment\n\nDuring the procedure, the infected pulp inside the tooth is meticulously removed, and the area is thoroughly cleaned.\n\nLearn More",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2446.15625
+    },
+    {
+      "tag": "A",
+      "text": "Tooth extraction service\n\nWhen a tooth is severely damaged or cannot be saved, our extraction service ensures a safe and comfortable experience.\n\nLearn More",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2446.15625
+    },
+    {
+      "tag": "A",
+      "text": "Dental implant service\n\nExplore our innovative dental implants! They provide a reliable and long-lasting solution for restoring your smile.\n\nLearn More",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2446.15625
+    },
+    {
+      "tag": "P",
+      "text": "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2460.965087890625
+    },
+    {
+      "tag": "H5",
+      "text": "Root canal treatment",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2821.15625
+    },
+    {
+      "tag": "H5",
+      "text": "Tooth extraction service",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2821.15625
+    },
+    {
+      "tag": "H5",
+      "text": "Dental implant service",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2821.15625
+    },
+    {
+      "tag": "P",
+      "text": "During the procedure, the infected pulp inside the tooth is meticulously removed, and the area is thoroughly cleaned.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 2862.75
+    },
+    {
+      "tag": "P",
+      "text": "When a tooth is severely damaged or cannot be saved, our extraction service ensures a safe and comfortable experience.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 2862.75
+    },
+    {
+      "tag": "P",
+      "text": "Explore our innovative dental implants! They provide a reliable and long-lasting solution for restoring your smile.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 2862.75
     },
     {
       "tag": "BUTTON",
-      "text": "Subscribe",
-      "color": "rgb(225, 208, 182)",
-      "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 6107.375
+      "text": "Learn More",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2964.359375
     },
     {
-      "tag": "SPAN",
-      "text": "Subscribe",
-      "color": "rgb(225, 208, 182)",
+      "tag": "P",
+      "text": "Learn More",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2964.359375
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn More",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2964.359375
+    },
+    {
+      "tag": "P",
+      "text": "Learn More",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2964.359375
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Learn More",
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 2964.359375
+    },
+    {
+      "tag": "P",
+      "text": "Learn More",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 2964.359375
+    },
+    {
+      "tag": "P",
+      "text": "Book your detail today.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 3078.15625
+    },
+    {
+      "tag": "P",
+      "text": "Call us at (888) 123-456",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 3101.953125
+    },
+    {
+      "tag": "A",
+      "text": "(888) 123-456",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 3104.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Transform your smile with expert dental care",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 3444.25
+    },
+    {
+      "tag": "P",
+      "text": "We believe great dental care goes beyond treatments—it’s about creating lasting confidence and comfort.",
+      "color": "rgb(98, 90, 83)",
       "fontSize": "16px",
-      "fontFamily": "fahkwang, sans-serif",
-      "fontWeight": "700",
-      "y": 6119.375
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 3570.65625
+    },
+    {
+      "tag": "P",
+      "text": "To get started, you should have",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 3927.03125
+    },
+    {
+      "tag": "P",
+      "text": "With years of experience in dental care, our team is dedicated to helping you achieve optimal oral health. From preventive treatments to advanced cosmetic procedures.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 3994.234375
+    },
+    {
+      "tag": "P",
+      "text": "Healthier teeth and gums.",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 4095.359375
+    },
+    {
+      "tag": "A",
+      "text": "+358 045 192 7365,",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 4107.84375
+    },
+    {
+      "tag": "P",
+      "text": "+358 045 192 7365,",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 4107.84375
+    },
+    {
+      "tag": "P",
+      "text": "Early detection of dental issues.",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 4125.15625
+    },
+    {
+      "tag": "A",
+      "text": "Dentalo.thompson@homequest.com",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 4151.046875
+    },
+    {
+      "tag": "P",
+      "text": "Dentalo.thompson@homequest.com",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 4151.046875
+    },
+    {
+      "tag": "P",
+      "text": "Improved confidence and appearance.",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 4154.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Before & after transformations",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 4456.75
+    },
+    {
+      "tag": "P",
+      "text": "Orthodontic treatment | Confident smile",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5173.953125
+    },
+    {
+      "tag": "P",
+      "text": "Fast whitening treatment | Natural bright results",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5173.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Real benefits for real smiles",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5447.953125
+    },
+    {
+      "tag": "P",
+      "text": "At Dentalo, we focus on delivering results that truly make a difference in your everyday life. Our treatments are designed to improve.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 5519.15625
+    },
+    {
+      "tag": "H4",
+      "text": "01.",
+      "color": "rgb(217, 127, 80)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5675.5625
+    },
+    {
+      "tag": "H4",
+      "text": "Personalized treatment plans",
+      "color": "rgb(217, 127, 80)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5675.5625
+    },
+    {
+      "tag": "H4",
+      "text": "02.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5750.765625
+    },
+    {
+      "tag": "H4",
+      "text": "Advanced dental technology",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5750.765625
+    },
+    {
+      "tag": "H4",
+      "text": "03.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5825.96875
+    },
+    {
+      "tag": "H4",
+      "text": "Comfortable clinic environment",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5825.96875
+    },
+    {
+      "tag": "H4",
+      "text": "04.",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5901.171875
+    },
+    {
+      "tag": "H4",
+      "text": "Affordable pricing options",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "28px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 5901.171875
+    },
+    {
+      "tag": "P",
+      "text": "At Dentalo, we believe every smile is unique, which is why we create customized treatment plans tailored specifically for you.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 6279.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Every smile has a real story",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 6639.5625
+    },
+    {
+      "tag": "P",
+      "text": "Ethan Carter",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 6766.765625
+    },
+    {
+      "tag": "P",
+      "text": "Noah Smith",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 6766.765625
+    },
+    {
+      "tag": "P",
+      "text": "123 Venture Lane, Metropolis, USA",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 6797.96875
+    },
+    {
+      "tag": "P",
+      "text": "320 Silicon Road, San Jose, USA",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 6797.96875
+    },
+    {
+      "tag": "P",
+      "text": "“My experience with this dental clinic has been amazing from start to finish. Whether I need preventive care or cosmetic.”",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 7214.75
+    },
+    {
+      "tag": "P",
+      "text": "“This dental team has truly changed how I feel about visiting the dentist. Whether it’s a simple cleaning or a detailed.”",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 7297.15625
+    },
+    {
+      "tag": "P",
+      "text": "“This clinic has completely improved my dental health and overall comfort. Whether I visit for regular.”",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 7297.15625
+    },
+    {
+      "tag": "P",
+      "text": "Liam Johnson",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 7348.75
+    },
+    {
+      "tag": "P",
+      "text": "789 Tech Park Avenue, Boston, USA",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 7379.953125
+    },
+    {
+      "tag": "H2",
+      "text": "Got questions? we’ve got answers",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 7655.15625
+    },
+    {
+      "tag": "P",
+      "text": "How do I book a cleaning?",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 7717.15625
+    },
+    {
+      "tag": "P",
+      "text": "You should visit the dentist every 6 months for a routine checkup and cleaning to maintain good oral health.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 7763.15625
+    },
+    {
+      "tag": "P",
+      "text": "What should i do in a dental emergency?",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 7885.5625
+    },
+    {
+      "tag": "P",
+      "text": "How can i keep my teeth healthy at home?",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 7987.5625
+    },
+    {
+      "tag": "P",
+      "text": "Are dental X-rays safe?",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 8089.5625
+    },
+    {
+      "tag": "P",
+      "text": "Do you offer teeth whitening services?",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "20px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 8191.5625
+    },
+    {
+      "tag": "H2",
+      "text": "Convenient locations for you",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "48px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 8447.5625
+    },
+    {
+      "tag": "P",
+      "text": "Building enduring relationships between individuals and their ideal homes, transformed.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 8518.765625
+    },
+    {
+      "tag": "H5",
+      "text": "Washington Ave, Kentucky",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 8699.234375
+    },
+    {
+      "tag": "P",
+      "text": "People and their perfect homes, redefined luxury living that seamlessly integrates comfort.",
+      "color": "rgb(98, 90, 83)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 8748.828125
+    },
+    {
+      "tag": "A",
+      "text": "+1 234-567-8901",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 8819.234375
+    },
+    {
+      "tag": "P",
+      "text": "+1 234-567-8901",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 8819.234375
+    },
+    {
+      "tag": "A",
+      "text": "1234 Maplewood Ave, Sunnyvale, California 94086",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 8862.4375
+    },
+    {
+      "tag": "P",
+      "text": "1234 Maplewood Ave, Sunnyvale, California 94086",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 8862.4375
+    },
+    {
+      "tag": "H5",
+      "text": "Maple Ave. Brookfield, New York",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 8953.640625
+    },
+    {
+      "tag": "H5",
+      "text": "Washington Ave, Kentucky",
+      "color": "rgb(28, 20, 12)",
+      "fontSize": "24px",
+      "fontFamily": "Geist, \"Geist Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 9035.234375
+    },
+    {
+      "tag": "P",
+      "text": "Contact Number:",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9394.90625
+    },
+    {
+      "tag": "P",
+      "text": "Emergency Number:",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9394.90625
+    },
+    {
+      "tag": "P",
+      "text": "Email:",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9394.90625
+    },
+    {
+      "tag": "P",
+      "text": "(888) 123-456",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9418.703125
+    },
+    {
+      "tag": "P",
+      "text": "(888) 123-890",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9418.703125
+    },
+    {
+      "tag": "P",
+      "text": "hello@example.com",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9418.703125
+    },
+    {
+      "tag": "A",
+      "text": "(888) 123-456",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9420.703125
+    },
+    {
+      "tag": "A",
+      "text": "(888) 123-890",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9420.703125
+    },
+    {
+      "tag": "A",
+      "text": "hello@example.com",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontFamily": "\"Mona Sans\", \"Mona Sans Placeholder\", sans-serif",
+      "fontWeight": "600",
+      "y": 9420.703125
+    },
+    {
+      "tag": "P",
+      "text": "Navigation",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 9565.90625
+    },
+    {
+      "tag": "P",
+      "text": "Hours",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 9565.90625
+    },
+    {
+      "tag": "P",
+      "text": "Office Location",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 9565.90625
+    },
+    {
+      "tag": "A",
+      "text": "About Us",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9605.703125
+    },
+    {
+      "tag": "P",
+      "text": "About Us",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9605.703125
+    },
+    {
+      "tag": "P",
+      "text": "Sun: CLOSED",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9605.703125
+    },
+    {
+      "tag": "P",
+      "text": "Emily Hattson",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9605.703125
+    },
+    {
+      "tag": "P",
+      "text": "DentalCraft provides you with the essential tools to build a stunning and professional website.",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9624.90625
+    },
+    {
+      "tag": "P",
+      "text": "940 Goldendale Dr, Wasilla,",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9629.5
+    },
+    {
+      "tag": "A",
+      "text": "Testimonials",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9637.5
+    },
+    {
+      "tag": "P",
+      "text": "Testimonials",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9637.5
+    },
+    {
+      "tag": "P",
+      "text": "Mon to Sun: 9 AM-7PM",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9641.5
+    },
+    {
+      "tag": "A",
+      "text": "See on Map",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9665.296875
+    },
+    {
+      "tag": "P",
+      "text": "See on Map",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "500",
+      "y": 9665.296875
+    },
+    {
+      "tag": "A",
+      "text": "Services",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9669.296875
+    },
+    {
+      "tag": "P",
+      "text": "Services",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9669.296875
+    },
+    {
+      "tag": "P",
+      "text": "Sat to Fri: 10AM-7PM",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9677.296875
+    },
+    {
+      "tag": "A",
+      "text": "Contact Us",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9701.09375
+    },
+    {
+      "tag": "P",
+      "text": "Contact Us",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9701.09375
+    },
+    {
+      "tag": "P",
+      "text": "© 2026 Dentalo. All rights reserved.",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9796.890625
+    },
+    {
+      "tag": "A",
+      "text": "Privacy Policy",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9796.890625
+    },
+    {
+      "tag": "P",
+      "text": "Privacy Policy",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9796.890625
+    },
+    {
+      "tag": "A",
+      "text": "Terms of Service",
+      "color": "rgb(0, 0, 238)",
+      "fontSize": "12px",
+      "fontFamily": "sans-serif",
+      "fontWeight": "400",
+      "y": 9796.890625
+    },
+    {
+      "tag": "P",
+      "text": "Terms of Service",
+      "color": "rgb(248, 248, 248)",
+      "fontSize": "14px",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontWeight": "400",
+      "y": 9796.890625
     }
   ],
   "backgrounds": [
     {
       "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
+      "bgColor": "rgb(255, 255, 255)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
+      "className": "framer-hKJ1l framer-1co2ppw",
       "y": 0,
-      "height": 6295.5625,
+      "height": 9830.6875,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgb(81, 66, 19)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "bgImage": "linear-gradient(90deg, rgba(255, 228, 208, 0.3) 0%, rgba(241, 224, 212, 0) 53%)",
+      "className": "framer-i09b0d",
+      "y": 39.796875,
+      "height": 914.75,
+      "width": 1440
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(255, 255, 255)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 10.953125,
-      "height": 890,
+      "className": "framer-yqle5j",
+      "y": 954.546875,
+      "height": 137.203125,
+      "width": 1440
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-o0wkhd",
+      "y": 1091.75,
+      "height": 1060,
+      "width": 1440
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(248, 248, 248)",
+      "bgImage": "none",
+      "className": "framer-172xi44",
+      "y": 2151.75,
+      "height": 1094,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgb(225, 208, 182)",
+      "bgColor": "rgb(248, 248, 248)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 900.953125,
-      "height": 709,
+      "className": "framer-1bjanbb",
+      "y": 2781.15625,
+      "height": 247,
+      "width": 420
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(248, 248, 248)",
+      "bgImage": "none",
+      "className": "framer-1bjanbb",
+      "y": 2781.15625,
+      "height": 247,
+      "width": 420
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(248, 248, 248)",
+      "bgImage": "none",
+      "className": "framer-1bjanbb",
+      "y": 2781.15625,
+      "height": 247,
+      "width": 420
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-1ksimwe",
+      "y": 3245.75,
+      "height": 1051,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgb(81, 66, 19)",
+      "bgColor": "rgba(28, 20, 12, 0.7)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 1304.953125,
-      "height": 619,
-      "width": 648
+      "className": "framer-v3qgr9",
+      "y": 4071.359375,
+      "height": 131.390625,
+      "width": 318.25
     },
     {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
+      "tag": "SECTION",
+      "bgColor": "rgb(248, 248, 248)",
       "bgImage": "none",
-      "className": "jv9xi4 wixui-box",
-      "y": 1669.953125,
-      "height": 255.203125,
-      "width": 500
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
-      "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 2083.953125,
-      "height": 748,
-      "width": 720
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgba(32, 36, 26, 0)",
-      "bgImage": "none",
-      "className": "rsDZMy br4i_4 OAcMJT",
-      "y": 4040.765625,
-      "height": 364,
-      "width": 1280
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgb(225, 208, 182)",
-      "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 4511.359375,
-      "height": 212.203125,
+      "className": "framer-1wlavw1",
+      "y": 4296.75,
+      "height": 991.203125,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgba(225, 208, 182, 0)",
+      "bgColor": "rgb(255, 255, 255)",
       "bgImage": "none",
-      "className": "sqSFvOR oxAR9fQ--XS swvpakQ",
-      "y": 4514.359375,
-      "height": 181.203125,
+      "className": "css-18zhc1",
+      "y": 4575.953125,
+      "height": 582,
+      "width": 672
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "css-18zhc1",
+      "y": 4575.953125,
+      "height": 582,
+      "width": 672
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-qjqej2",
+      "y": 5287.953125,
+      "height": 1191.609375,
+      "width": 1440
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(248, 248, 248)",
+      "bgImage": "none",
+      "className": "framer-1fabkqu",
+      "y": 6479.5625,
+      "height": 1015.59375,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgb(77, 33, 7)",
+      "bgColor": "rgb(255, 255, 255)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 4723.5625,
-      "height": 805,
+      "className": "framer-ewu5br",
+      "y": 6758.765625,
+      "height": 573.984375,
+      "width": 440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-ewu5br",
+      "y": 6841.171875,
+      "height": 573.984375,
+      "width": 440
+    },
+    {
+      "tag": "DIV",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-ewu5br",
+      "y": 6841.171875,
+      "height": 573.984375,
+      "width": 440
+    },
+    {
+      "tag": "SECTION",
+      "bgColor": "rgb(255, 255, 255)",
+      "bgImage": "none",
+      "className": "framer-bbwqou",
+      "y": 7495.15625,
+      "height": 792.40625,
       "width": 1440
     },
     {
       "tag": "DIV",
-      "bgColor": "rgb(225, 208, 182)",
+      "bgColor": "rgb(248, 248, 248)",
       "bgImage": "none",
-      "className": "jv9xi4 wixui-box",
-      "y": 4844.5625,
-      "height": 589.1875,
-      "width": 455
+      "className": "framer-56Mi5 framer-YP1xd framer-3k9ZW framer-up7lqn framer-v-up7lqn",
+      "y": 7695.15625,
+      "height": 144.40625,
+      "width": 901
     },
     {
-      "tag": "DIV",
-      "bgColor": "rgba(225, 208, 182, 0.6)",
+      "tag": "SECTION",
+      "bgColor": "rgb(248, 248, 248)",
       "bgImage": "none",
-      "className": "V9k0ll etGVsi",
-      "y": 5600.5625,
-      "height": 104.40625,
-      "width": 1280
+      "className": "framer-BaEFe framer-vvh5W framer-3k9ZW framer-ta40ot framer-v-ta40ot",
+      "y": 8287.5625,
+      "height": 947.34375,
+      "width": 1440
     },
     {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
+      "tag": "FOOTER",
+      "bgColor": "rgb(28, 20, 12)",
       "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 5601.5625,
-      "height": 102.40625,
-      "width": 381.75
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
-      "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 5601.5625,
-      "height": 102.40625,
-      "width": 345.15625
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
-      "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 5601.5625,
-      "height": 102.40625,
-      "width": 549.09375
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgba(225, 208, 182, 0.6)",
-      "bgImage": "none",
-      "className": "V9k0ll etGVsi",
-      "y": 5703.96875,
-      "height": 526.59375,
-      "width": 1280
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgb(32, 36, 26)",
-      "bgImage": "none",
-      "className": "LNYVZi ayCf9D",
-      "y": 5704.96875,
-      "height": 524.59375,
-      "width": 893.15625
-    },
-    {
-      "tag": "DIV",
-      "bgColor": "rgba(32, 36, 26, 0)",
-      "bgImage": "none",
-      "className": "sN4uTVR",
-      "y": 5707.96875,
-      "height": 462.59375,
-      "width": 405
+      "className": "framer-RBCTA framer-oSKlH framer-GCZyV framer-qGk2j framer-1uk4cdx framer-v-1uk4cdx",
+      "y": 9234.90625,
+      "height": 595.78125,
+      "width": 1440
     }
   ]
 }
