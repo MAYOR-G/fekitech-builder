@@ -117,7 +117,10 @@ describe("production template registry", () => {
       "freshbite-fast-food",
       "consulting-growth-advisory",
       "medivra-therapy-recovery",
-      "ace-barbers"
+      "ace-barbers",
+      "dream-home-discovery",
+      "premium-dental-clinic",
+      "aquablast-pressure-wash"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -211,7 +214,10 @@ describe("production template registry", () => {
       "velour-studio-salon",
       "velvet-scoop",
       "verdant-house-grooming",
-      "wildmere-gardens"
+      "wildmere-gardens",
+      "dream-home-discovery",
+      "premium-dental-clinic",
+      "aquablast-pressure-wash"
     ].sort());
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
@@ -309,7 +315,10 @@ describe("production template registry", () => {
       "jumami-street-food",
       "consulting-growth-advisory",
       "medivra-therapy-recovery",
-      "ace-barbers"
+      "ace-barbers",
+      "dream-home-discovery",
+      "premium-dental-clinic",
+      "aquablast-pressure-wash"
     ];
 
     for (const templateId of previewTemplateIds) {
@@ -388,7 +397,10 @@ describe("production template registry", () => {
       "jumami-street-food",
       "consulting-growth-advisory",
       "medivra-therapy-recovery",
-      "ace-barbers"
+      "ace-barbers",
+      "dream-home-discovery",
+      "premium-dental-clinic",
+      "aquablast-pressure-wash"
     ];
 
     for (const templateId of redesignedTemplateIds) {
@@ -400,7 +412,7 @@ describe("production template registry", () => {
       const editablePath = join(templateRoot, templateId, "editable.json");
       const editableData = JSON.parse(readFileSync(editablePath, "utf8")) as unknown;
       const imagePaths = collectStrings(editableData).filter((value) =>
-        value.startsWith(`/templates/${templateId}/assets/`)
+        value.startsWith(`/templates/${templateId}/assets/`) || value.startsWith(`/templates/${templateId}/`)
       );
 
       expect(imagePaths.length).toBeGreaterThan(0);
