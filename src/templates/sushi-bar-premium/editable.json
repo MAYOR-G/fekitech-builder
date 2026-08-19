@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "KURO",
+    "phone": "+44 20 7123 4567",
+    "email": "reservations@kuro-london.co.uk",
+    "address": "8 Berkeley Square, Mayfair, London W1J 6EN",
+    "hours": "Tue - Sun: 18:00 - 23:00"
+  },
+  "navLinks": [
+    { "label": "The Experience", "href": "#experience" },
+    { "label": "Menu", "href": "#menu" },
+    { "label": "Reservations", "href": "#reservations" }
+  ],
+  "hero": {
+    "title": "The Art of Omakase",
+    "subtitle": "An intimate journey through the finest seasonal ingredients, curated by Master Chef Hideo.",
+    "cta": "Reserve a seat",
+    "image": "/templates/sushi-bar-premium/sushi_hero_1787147785261.jpg"
+  },
+  "about": {
+    "title": "A symphony of tradition and precision",
+    "description": "At Kuro, we honour the centuries-old Edomae tradition. Every slice, every grain of rice is prepared with absolute dedication to the craft. We source our seafood directly from Toyosu Market and the finest local waters.",
+    "image": "/templates/sushi-bar-premium/sushi_about_1787147793573.jpg"
+  },
+  "menu": {
+    "title": "Seasonal Offerings",
+    "items": [
+      {
+        "title": "Signature Omakase",
+        "description": "A 20-course journey featuring premium nigiri, seasonal appetizers, and our signature tamago.",
+        "price": "£250",
+        "image": "/templates/sushi-bar-premium/sushi_menu_1_1787147804108.jpg"
+      },
+      {
+        "title": "Sake Pairing",
+        "description": "Curated selection of rare and seasonal sakes to perfectly complement your dining experience.",
+        "price": "£120",
+        "image": "/templates/sushi-bar-premium/sushi_menu_2_1787147813603.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Kuro London Ltd. All rights reserved.",
+    "social": [
+      { "name": "Instagram", "href": "#" }
+    ]
+  }
+}

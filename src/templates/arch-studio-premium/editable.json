@@ -1,0 +1,74 @@
+{
+  "brand": {
+    "name": "LUMINA",
+    "phone": "+44 20 7946 0199",
+    "email": "hello@luminarch.co.uk",
+    "address": "142 Design District, London, E20 1FT"
+  },
+  "navLinks": [
+    { "label": "Studio", "href": "#studio" },
+    { "label": "Expertise", "href": "#expertise" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "title": "Designing spaces that inspire and endure",
+    "subtitle": "Award-winning architectural and interior design studio based in London, crafting timeless environments.",
+    "cta": "View our work",
+    "image": "/templates/arch-studio-premium/arch_hero_1787147642440.jpg"
+  },
+  "about": {
+    "tagline": "The Studio",
+    "title": "A meticulous approach to modern living.",
+    "description": "At Lumina, we believe that architecture is more than just shelter; it is the framework for our lives. Our designs focus on clean lines, abundant natural light, and the honest expression of materials. Every project is a unique collaboration with our clients.",
+    "image": "/templates/arch-studio-premium/arch_about_1787147650322.jpg"
+  },
+  "services": {
+    "title": "Our Expertise",
+    "items": [
+      {
+        "title": "Residential Architecture",
+        "description": "Bespoke home design tailored to your lifestyle and site context.",
+        "image": "/templates/arch-studio-premium/arch_service_1_1787147659082.jpg"
+      },
+      {
+        "title": "Interior Design",
+        "description": "Curated interior spaces that harmonise with the architectural envelope.",
+        "image": "/templates/arch-studio-premium/arch_portfolio_1_1787147668571.jpg"
+      },
+      {
+        "title": "Commercial Spaces",
+        "description": "Innovative environments for modern businesses and luxury retail.",
+        "image": "/templates/arch-studio-premium/arch_hero_1787147642440.jpg"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Selected Works",
+    "items": [
+      {
+        "name": "The Glass House",
+        "location": "Surrey, UK",
+        "image": "/templates/arch-studio-premium/arch_hero_1787147642440.jpg"
+      },
+      {
+        "name": "Minimalist Loft",
+        "location": "Shoreditch, London",
+        "image": "/templates/arch-studio-premium/arch_portfolio_1_1787147668571.jpg"
+      },
+      {
+        "name": "Coastal Retreat",
+        "location": "Cornwall, UK",
+        "image": "/templates/arch-studio-premium/arch_service_1_1787147659082.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Lumina Architecture Ltd. Registered in England & Wales.",
+    "social": [
+      { "name": "Instagram", "href": "#" },
+      { "name": "LinkedIn", "href": "#" },
+      { "name": "Pinterest", "href": "#" }
+    ]
+  }
+}

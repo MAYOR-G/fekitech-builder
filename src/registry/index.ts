@@ -194,6 +194,13 @@ import premiumDentalClinicEditable from "../templates/premium-dental-clinic/edit
 import aquablastPressureWashConfig from "../templates/aquablast-pressure-wash/config.json";
 import aquablastPressureWashEditable from "../templates/aquablast-pressure-wash/editable.json";
 
+import archStudioPremiumConfig from "../templates/arch-studio-premium/config.json";
+import archStudioPremiumEditable from "../templates/arch-studio-premium/editable.json";
+import sushiBarPremiumConfig from "../templates/sushi-bar-premium/config.json";
+import sushiBarPremiumEditable from "../templates/sushi-bar-premium/editable.json";
+import premiumFitnessCoachConfig from "../templates/premium-fitness-coach/config.json";
+import premiumFitnessCoachEditable from "../templates/premium-fitness-coach/editable.json";
+
 export type TemplateConfig = {
   id: string;
   name: string;
@@ -308,6 +315,9 @@ const components = {
   "dream-home-discovery": dynamic<{ data: TemplateData }>(() => import("../templates/dream-home-discovery/template")),
   "premium-dental-clinic": dynamic<{ data: TemplateData }>(() => import("../templates/premium-dental-clinic/template")),
   "aquablast-pressure-wash": dynamic<{ data: TemplateData }>(() => import("../templates/aquablast-pressure-wash/template")),
+  "arch-studio-premium": dynamic<{ data: TemplateData }>(() => import("../templates/arch-studio-premium/template")),
+  "sushi-bar-premium": dynamic<{ data: TemplateData }>(() => import("../templates/sushi-bar-premium/template")),
+  "premium-fitness-coach": dynamic<{ data: TemplateData }>(() => import("../templates/premium-fitness-coach/template")),
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
@@ -406,6 +416,9 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "dream-home-discovery": { config: dreamHomeDiscoveryConfig, component: components["dream-home-discovery"], defaultData: normalizeData(dreamHomeDiscoveryEditable) },
   "premium-dental-clinic": { config: premiumDentalClinicConfig, component: components["premium-dental-clinic"], defaultData: normalizeData(premiumDentalClinicEditable) },
   "aquablast-pressure-wash": { config: aquablastPressureWashConfig, component: components["aquablast-pressure-wash"], defaultData: normalizeData(aquablastPressureWashEditable) },
+  "arch-studio-premium": { config: archStudioPremiumConfig, component: components["arch-studio-premium"], defaultData: normalizeData(archStudioPremiumEditable) },
+  "sushi-bar-premium": { config: sushiBarPremiumConfig, component: components["sushi-bar-premium"], defaultData: normalizeData(sushiBarPremiumEditable) },
+  "premium-fitness-coach": { config: premiumFitnessCoachConfig, component: components["premium-fitness-coach"], defaultData: normalizeData(premiumFitnessCoachEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

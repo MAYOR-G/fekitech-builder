@@ -1,0 +1,47 @@
+{
+  "brand": {
+    "name": "APEX",
+    "phone": "+44 7700 900077",
+    "email": "train@apexelite.co.uk",
+    "address": "Level 4, 100 Fitness Way, London E1 8QU"
+  },
+  "navLinks": [
+    { "label": "Philosophy", "href": "#philosophy" },
+    { "label": "Programs", "href": "#programs" },
+    { "label": "Apply", "href": "#apply" }
+  ],
+  "hero": {
+    "title": "Redefine your absolute limits.",
+    "subtitle": "Premium 1-on-1 performance coaching for those who demand excellence.",
+    "cta": "Apply for coaching",
+    "image": "/templates/premium-fitness-coach/fit_hero_1787147938106.jpg"
+  },
+  "about": {
+    "tagline": "The Coach",
+    "title": "Built on science, driven by results.",
+    "description": "I don't just give you a workout plan. I engineer a complete lifestyle transformation. Through meticulous programming, nutritional periodization, and daily accountability, we achieve what you previously thought impossible.",
+    "image": "/templates/premium-fitness-coach/fit_about_1787147946392.jpg"
+  },
+  "programs": {
+    "title": "Elite Programs",
+    "items": [
+      {
+        "title": "1-on-1 Studio Training",
+        "description": "Bespoke in-person coaching at our private facility.",
+        "image": "/templates/premium-fitness-coach/fit_service_1_1787147957459.jpg"
+      },
+      {
+        "title": "Performance Online",
+        "description": "Data-driven remote coaching with weekly check-ins and video analysis.",
+        "image": "/templates/premium-fitness-coach/fit_story_1787147969782.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Apex Elite Fitness Ltd.",
+    "social": [
+      { "name": "Instagram", "href": "#" },
+      { "name": "YouTube", "href": "#" }
+    ]
+  }
+}

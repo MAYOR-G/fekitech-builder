@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+.arch-studio-premium {
+  --arch-bg: #ffffff;
+  --arch-text: #1a1a1a;
+  --arch-text-muted: #666666;
+  --arch-border: #e5e5e5;
+  --arch-accent: #000000;
+  
+  --arch-font-sans: 'Plus Jakarta Sans', sans-serif;
+  --arch-font-serif: 'Playfair Display', serif;
+
+  font-family: var(--arch-font-sans);
+  background-color: var(--arch-bg);
+  color: var(--arch-text);
+  line-height: 1.6;
+}
+
+.arch-studio-premium h1,
+.arch-studio-premium h2,
+.arch-studio-premium h3,
+.arch-studio-premium h4 {
+  font-family: var(--arch-font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.arch-studio-premium section {
+  padding: 120px 24px;
+}
+
+@media (max-width: 768px) {
+  .arch-studio-premium section {
+    padding: 80px 20px;
+  }
+}
+
+.arch-studio-premium .arch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background-color: var(--arch-accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--arch-accent);
+}
+
+.arch-studio-premium .arch-btn:hover {
+  background-color: transparent;
+  color: var(--arch-accent);
+}
+
+.arch-studio-premium .arch-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.arch-studio-premium img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

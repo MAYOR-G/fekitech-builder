@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.premium-fitness-coach {
+  --fit-bg: #09090b;
+  --fit-text: #ffffff;
+  --fit-text-muted: #a1a1aa;
+  --fit-accent: #e1ff00; /* Neon yellow-green */
+  --fit-surface: #18181b;
+  
+  --fit-font-sans: 'Inter', sans-serif;
+  --fit-font-display: 'Teko', sans-serif;
+
+  font-family: var(--fit-font-sans);
+  background-color: var(--fit-bg);
+  color: var(--fit-text);
+  line-height: 1.6;
+}
+
+.premium-fitness-coach h1,
+.premium-fitness-coach h2,
+.premium-fitness-coach h3,
+.premium-fitness-coach h4 {
+  font-family: var(--fit-font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.premium-fitness-coach section {
+  padding: 100px 24px;
+}
+
+@media (max-width: 768px) {
+  .premium-fitness-coach section {
+    padding: 60px 20px;
+  }
+}
+
+.premium-fitness-coach .fit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  background-color: var(--fit-accent);
+  color: #000;
+  font-family: var(--fit-font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.premium-fitness-coach .fit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(225, 255, 0, 0.2);
+}
+
+.premium-fitness-coach .fit-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.premium-fitness-coach img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

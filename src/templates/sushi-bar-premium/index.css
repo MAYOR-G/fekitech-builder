@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap');
+
+.sushi-bar-premium {
+  --sushi-bg: #0a0a0a;
+  --sushi-text: #f0f0f0;
+  --sushi-text-muted: #999999;
+  --sushi-border: #222222;
+  --sushi-accent: #c4302b;
+  
+  --sushi-font-sans: 'Lato', sans-serif;
+  --sushi-font-serif: 'Cormorant Garamond', serif;
+
+  font-family: var(--sushi-font-sans);
+  background-color: var(--sushi-bg);
+  color: var(--sushi-text);
+  line-height: 1.7;
+}
+
+.sushi-bar-premium h1,
+.sushi-bar-premium h2,
+.sushi-bar-premium h3,
+.sushi-bar-premium h4 {
+  font-family: var(--sushi-font-serif);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.sushi-bar-premium section {
+  padding: 100px 24px;
+}
+
+@media (max-width: 768px) {
+  .sushi-bar-premium section {
+    padding: 60px 20px;
+  }
+}
+
+.sushi-bar-premium .sushi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background-color: transparent;
+  color: var(--sushi-text);
+  font-family: var(--sushi-font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border: 1px solid var(--sushi-border);
+}
+
+.sushi-bar-premium .sushi-btn:hover {
+  border-color: var(--sushi-text);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sushi-bar-premium .sushi-btn-primary {
+  background-color: var(--sushi-accent);
+  border-color: var(--sushi-accent);
+  color: #fff;
+}
+
+.sushi-bar-premium .sushi-btn-primary:hover {
+  background-color: #a02521;
+  border-color: #a02521;
+}
+
+.sushi-bar-premium .sushi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sushi-bar-premium img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
