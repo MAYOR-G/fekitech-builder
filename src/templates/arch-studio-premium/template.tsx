@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TemplateData as LocalTemplateData, TemplateProvider } from "./TemplateContext";
+import { LocalTemplateData, TemplateProvider } from "./TemplateContext";
 import { type TemplateData } from "@/lib/template-data";
 import "./index.css";
 import { Navbar } from "./components/Navbar";
