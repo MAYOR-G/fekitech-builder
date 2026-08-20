@@ -1,0 +1,874 @@
+/* =========================================================
+   Furever Paws – Template-scoped CSS
+   All rules scoped under [data-template-id="furever-paws"]
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+[data-template-id="furever-paws"] {
+  --fp-page: #ffffff;
+  --fp-cream: #fffedc;
+  --fp-orange: #f77201;
+  --fp-orange-hover: #e06800;
+  --fp-purple: #4f207d;
+  --fp-purple-light: #6b35a8;
+  --fp-dark: #380100;
+  --fp-green: #c5dd83;
+  --fp-pink: #feaaf4;
+  --fp-mauve: #bf66b4;
+  --fp-black: #000000;
+  --fp-white: #ffffff;
+  --fp-gray: #666;
+  --fp-heading-font: 'Outfit', 'Inter', system-ui, sans-serif;
+  --fp-body-font: 'Inter', system-ui, sans-serif;
+  
+  font-family: var(--fp-body-font);
+  color: var(--fp-dark);
+  background-color: var(--fp-page);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+[data-template-id="furever-paws"] * {
+  box-sizing: border-box;
+}
+
+/* Typography */
+[data-template-id="furever-paws"] h1,
+[data-template-id="furever-paws"] h2,
+[data-template-id="furever-paws"] h3,
+[data-template-id="furever-paws"] h4,
+[data-template-id="furever-paws"] h5,
+[data-template-id="furever-paws"] h6 {
+  font-family: var(--fp-heading-font);
+  color: var(--fp-dark);
+  line-height: 1.1;
+  margin: 0;
+}
+
+[data-template-id="furever-paws"] p {
+  margin: 0;
+}
+
+[data-template-id="furever-paws"] a {
+  text-decoration: none;
+  color: inherit;
+}
+
+[data-template-id="furever-paws"] img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- Navbar ---- */
+[data-template-id="furever-paws"] .fp-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--fp-white);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding: 0 24px;
+}
+
+[data-template-id="furever-paws"] .fp-navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+[data-template-id="furever-paws"] .fp-logo {
+  font-family: var(--fp-heading-font);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--fp-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+[data-template-id="furever-paws"] .fp-logo-paw {
+  font-size: 1.3rem;
+}
+
+[data-template-id="furever-paws"] .fp-nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[data-template-id="furever-paws"] .fp-nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--fp-dark);
+  transition: color 0.2s;
+}
+
+[data-template-id="furever-paws"] .fp-nav-links a:hover {
+  color: var(--fp-orange);
+}
+
+[data-template-id="furever-paws"] .fp-nav-cta {
+  background: var(--fp-orange);
+  color: var(--fp-white) !important; /* scoped override for link color */
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+[data-template-id="furever-paws"] .fp-nav-cta:hover {
+  background: var(--fp-orange-hover);
+}
+
+[data-template-id="furever-paws"] .fp-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--fp-dark);
+}
+
+/* ---- Hero ---- */
+[data-template-id="furever-paws"] .fp-hero {
+  background: var(--fp-cream);
+  text-align: center;
+  padding: 80px 24px 0;
+  overflow: hidden;
+}
+
+[data-template-id="furever-paws"] .fp-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-hero-tagline {
+  font-family: var(--fp-heading-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--fp-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+
+[data-template-id="furever-paws"] .fp-hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: var(--fp-dark);
+}
+
+[data-template-id="furever-paws"] .fp-hero-title .fp-accent {
+  color: var(--fp-orange);
+}
+
+[data-template-id="furever-paws"] .fp-hero-desc {
+  font-size: 1.1rem;
+  color: var(--fp-gray);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+[data-template-id="furever-paws"] .fp-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+[data-template-id="furever-paws"] .fp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fp-orange);
+  color: var(--fp-white);
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.15s;
+  border: none;
+  cursor: pointer;
+}
+
+[data-template-id="furever-paws"] .fp-btn-primary:hover {
+  background: var(--fp-orange-hover);
+  transform: translateY(-1px);
+}
+
+[data-template-id="furever-paws"] .fp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--fp-dark);
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--fp-dark);
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+[data-template-id="furever-paws"] .fp-btn-secondary:hover {
+  background: var(--fp-dark);
+  color: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-hero-image {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+[data-template-id="furever-paws"] .fp-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Why Choose Us ---- */
+[data-template-id="furever-paws"] .fp-why {
+  padding: 80px 24px;
+  background: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-why-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+[data-template-id="furever-paws"] .fp-section-title .fp-paw {
+  color: var(--fp-orange);
+  display: inline-block;
+  margin: 0 8px;
+}
+
+[data-template-id="furever-paws"] .fp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+[data-template-id="furever-paws"] .fp-why-card {
+  text-align: center;
+  padding: 24px;
+}
+
+[data-template-id="furever-paws"] .fp-why-card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 4px solid var(--fp-cream);
+}
+
+[data-template-id="furever-paws"] .fp-why-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+[data-template-id="furever-paws"] .fp-why-card p {
+  font-size: 0.95rem;
+  color: var(--fp-gray);
+  line-height: 1.6;
+}
+
+/* ---- Services ---- */
+[data-template-id="furever-paws"] .fp-services {
+  background: var(--fp-purple);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+[data-template-id="furever-paws"] .fp-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-services .fp-section-title {
+  color: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-services .fp-section-subtitle {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  margin-bottom: 48px;
+}
+
+[data-template-id="furever-paws"] .fp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+[data-template-id="furever-paws"] .fp-service-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 24px;
+  padding: 40px 28px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+[data-template-id="furever-paws"] .fp-service-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.18);
+}
+
+[data-template-id="furever-paws"] .fp-service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+[data-template-id="furever-paws"] .fp-service-card h3 {
+  color: var(--fp-white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+[data-template-id="furever-paws"] .fp-service-card p {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ---- Gallery ---- */
+[data-template-id="furever-paws"] .fp-gallery {
+  padding: 80px 24px;
+  background: var(--fp-cream);
+}
+
+[data-template-id="furever-paws"] .fp-gallery-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+[data-template-id="furever-paws"] .fp-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+[data-template-id="furever-paws"] .fp-gallery-item {
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+[data-template-id="furever-paws"] .fp-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+[data-template-id="furever-paws"] .fp-gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* ---- Welcome ---- */
+[data-template-id="furever-paws"] .fp-welcome {
+  padding: 80px 24px;
+  background: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-welcome-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-images {
+  display: flex;
+  gap: 20px;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-img {
+  width: 50%;
+  border-radius: 999px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-img:first-child {
+  margin-top: 40px;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-content h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+[data-template-id="furever-paws"] .fp-welcome-content h2 .fp-accent {
+  color: var(--fp-orange);
+}
+
+[data-template-id="furever-paws"] .fp-welcome-content > p {
+  font-size: 1rem;
+  color: var(--fp-gray);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+[data-template-id="furever-paws"] .fp-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[data-template-id="furever-paws"] .fp-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+[data-template-id="furever-paws"] .fp-feature-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--fp-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+[data-template-id="furever-paws"] .fp-feature-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+[data-template-id="furever-paws"] .fp-feature-item p {
+  font-size: 0.9rem;
+  color: var(--fp-gray);
+}
+
+/* ---- FAQ ---- */
+[data-template-id="furever-paws"] .fp-faq {
+  padding: 80px 24px;
+  background: var(--fp-dark);
+}
+
+[data-template-id="furever-paws"] .fp-faq-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-faq .fp-section-title {
+  color: var(--fp-white);
+  margin-bottom: 40px;
+}
+
+[data-template-id="furever-paws"] .fp-faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding: 20px 0;
+}
+
+[data-template-id="furever-paws"] .fp-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  font-family: var(--fp-heading-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--fp-white);
+  transition: color 0.2s;
+}
+
+[data-template-id="furever-paws"] .fp-faq-question:hover {
+  color: var(--fp-orange);
+}
+
+[data-template-id="furever-paws"] .fp-faq-toggle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: transform 0.3s;
+  color: var(--fp-orange);
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+[data-template-id="furever-paws"] .fp-faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, padding 0.3s;
+  padding-top: 0;
+}
+
+[data-template-id="furever-paws"] .fp-faq-answer.fp-open {
+  max-height: 200px;
+  padding-top: 12px;
+}
+
+[data-template-id="furever-paws"] .fp-faq-answer p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ---- Testimonials ---- */
+[data-template-id="furever-paws"] .fp-testimonials {
+  padding: 80px 24px;
+  background: var(--fp-purple);
+  text-align: center;
+}
+
+[data-template-id="furever-paws"] .fp-testimonials-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-testimonials .fp-section-title {
+  color: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-testimonials .fp-section-title .fp-accent {
+  color: var(--fp-pink);
+}
+
+[data-template-id="furever-paws"] .fp-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-card {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: left;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-card .fp-stars {
+  color: var(--fp-orange);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-card p {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+[data-template-id="furever-paws"] .fp-testimonial-name {
+  font-weight: 600;
+  color: var(--fp-white);
+  font-size: 0.95rem;
+}
+
+/* ---- CTA Banner ---- */
+[data-template-id="furever-paws"] .fp-cta-banner {
+  padding: 80px 24px;
+  background: linear-gradient(135deg, var(--fp-orange) 0%, #e06800 100%);
+  text-align: center;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner h2 {
+  color: var(--fp-white);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner .fp-btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fp-white);
+  color: var(--fp-orange);
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner .fp-btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner .fp-btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--fp-white);
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--fp-white);
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+[data-template-id="furever-paws"] .fp-cta-banner .fp-btn-outline-white:hover {
+  background: var(--fp-white);
+  color: var(--fp-orange);
+}
+
+/* ---- Footer ---- */
+[data-template-id="furever-paws"] .fp-footer {
+  background: var(--fp-dark);
+  padding: 60px 24px 32px;
+  color: var(--fp-white);
+}
+
+[data-template-id="furever-paws"] .fp-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[data-template-id="furever-paws"] .fp-footer-brand {
+  font-family: var(--fp-heading-font);
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fp-white);
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+[data-template-id="furever-paws"] .fp-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+[data-template-id="furever-paws"] .fp-footer-desc {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+[data-template-id="furever-paws"] .fp-footer-links h4 {
+  color: var(--fp-white);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+[data-template-id="furever-paws"] .fp-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+[data-template-id="furever-paws"] .fp-footer-links a {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+[data-template-id="furever-paws"] .fp-footer-links a:hover {
+  color: var(--fp-orange);
+}
+
+[data-template-id="furever-paws"] .fp-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-template-id="furever-paws"] .fp-footer-copyright {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.85rem;
+}
+
+[data-template-id="furever-paws"] .fp-footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+[data-template-id="furever-paws"] .fp-footer-socials a {
+  color: rgba(255,255,255,0.5);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+[data-template-id="furever-paws"] .fp-footer-socials a:hover {
+  color: var(--fp-orange);
+}
+
+/* ---- Mobile Responsive ---- */
+@media (max-width: 1024px) {
+  [data-template-id="furever-paws"] .fp-why-grid,
+  [data-template-id="furever-paws"] .fp-services-grid,
+  [data-template-id="furever-paws"] .fp-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  [data-template-id="furever-paws"] .fp-welcome-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  [data-template-id="furever-paws"] .fp-welcome-images {
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  [data-template-id="furever-paws"] .fp-footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-template-id="furever-paws"] .fp-nav-links {
+    display: none;
+  }
+  
+  [data-template-id="furever-paws"] .fp-mobile-toggle {
+    display: block;
+  }
+  
+  [data-template-id="furever-paws"] .fp-nav-links.fp-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--fp-white);
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    z-index: 99;
+  }
+  
+  [data-template-id="furever-paws"] .fp-hero {
+    padding: 48px 20px 0;
+  }
+  
+  [data-template-id="furever-paws"] .fp-why-grid,
+  [data-template-id="furever-paws"] .fp-services-grid,
+  [data-template-id="furever-paws"] .fp-gallery-grid,
+  [data-template-id="furever-paws"] .fp-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  [data-template-id="furever-paws"] .fp-welcome-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  [data-template-id="furever-paws"] .fp-welcome-img {
+    width: 80%;
+    max-width: 280px;
+  }
+  
+  [data-template-id="furever-paws"] .fp-welcome-img:first-child {
+    margin-top: 0;
+  }
+  
+  [data-template-id="furever-paws"] .fp-footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  [data-template-id="furever-paws"] .fp-footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  [data-template-id="furever-paws"] .fp-cta-banner .fp-btn-white,
+  [data-template-id="furever-paws"] .fp-cta-banner .fp-btn-outline-white {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+  
+  [data-template-id="furever-paws"] .fp-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "brand": {
+    "name": "Furever Paws",
+    "phone": "+44 20 7946 0958",
+    "email": "hello@fureverpaws.co.uk",
+    "address": "14 Barkley Lane, Richmond, London TW9 2AH"
+  },
+  "navLinks": [
+    { "label": "Services", "href": "#services" },
+    { "label": "About", "href": "#about" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Reviews", "href": "#reviews" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "tagline": "TAILS THAT",
+    "title": "NEVER STOP WAGGING",
+    "description": "Trusted pet grooming, wellness checks, and enrichment play — all under one roof. Because every pet deserves to feel their best.",
+    "primaryCta": { "label": "Book a Visit", "href": "#contact" },
+    "secondaryCta": { "label": "Our Services", "href": "#services" },
+    "image": "/templates/furever-paws/hero-dogs.jpg"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "items": [
+      {
+        "title": "Experienced Team",
+        "description": "Our qualified carers bring years of hands-on experience with dogs, cats, and small animals.",
+        "image": "/templates/furever-paws/pet-portrait-1.webp"
+      },
+      {
+        "title": "Gentle Handling",
+        "description": "Every pet is treated with patience and kindness — we never rush or force an anxious animal.",
+        "image": "/templates/furever-paws/pet-portrait-2.webp"
+      },
+      {
+        "title": "One-Stop Care",
+        "description": "From grooming to wellness checks and supervised play, everything your pet needs in one visit.",
+        "image": "/templates/furever-paws/grooming-service.jpg"
+      }
+    ]
+  },
+  "services": {
+    "title": "One Place Pet Service",
+    "subtitle": "Everything your companion needs, all in one welcoming space.",
+    "items": [
+      {
+        "title": "Pet Spa",
+        "description": "Full bathing, blow-dry, and coat conditioning for a fresh, clean pet.",
+        "icon": "🛁"
+      },
+      {
+        "title": "Full Grooming",
+        "description": "Breed-specific cuts, nail trimming, ear cleaning, and teeth brushing.",
+        "icon": "✂️"
+      },
+      {
+        "title": "Vet Care",
+        "description": "Routine health checks, vaccinations, and wellness assessments.",
+        "icon": "🩺"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "The Perfect",
+    "subtitle": "Match for Your Pet",
+    "images": [
+      "/templates/furever-paws/pet-portrait-3.webp",
+      "/templates/furever-paws/grooming-service.jpg",
+      "/templates/furever-paws/play-service.jpg",
+      "/templates/furever-paws/happy-cat.jpg",
+      "/templates/furever-paws/pet-portrait-4.webp",
+      "/templates/furever-paws/wellness-service.jpg"
+    ]
+  },
+  "welcome": {
+    "title": "Welcome to the",
+    "titleAccent": "Pet Care Family",
+    "description": "At Furever Paws, we believe pets are family. Our team of passionate animal lovers is dedicated to providing the highest standard of grooming, wellness, and enrichment services across South West London.",
+    "features": [
+      {
+        "title": "Qualified & Certified Staff",
+        "description": "Every team member holds recognised pet care qualifications."
+      },
+      {
+        "title": "Vet-Approved Protocols",
+        "description": "All our wellness and grooming procedures follow veterinary best practice."
+      },
+      {
+        "title": "Pet-Friendly Facilities",
+        "description": "Spacious, clean, and designed to keep your pet calm and comfortable."
+      }
+    ],
+    "image1": "/templates/furever-paws/wellness-service.jpg",
+    "image2": "/templates/furever-paws/play-service.jpg"
+  },
+  "faq": {
+    "sectionTitle": "Everything You Need to Know",
+    "items": [
+      {
+        "question": "How do I book an appointment?",
+        "answer": "You can book online through our website, call us on +44 20 7946 0958, or pop into the salon. We recommend booking at least 48 hours in advance."
+      },
+      {
+        "question": "Do you cater for cats as well as dogs?",
+        "answer": "Absolutely. We welcome cats, rabbits, and most small animals. Our team is trained to handle each species with specialist care."
+      },
+      {
+        "question": "What should I bring to a first visit?",
+        "answer": "Please bring your pet's vaccination records, any medication they take, and a note of any allergies or sensitivities."
+      },
+      {
+        "question": "How long does a grooming session take?",
+        "answer": "A standard groom takes around 60–90 minutes depending on breed and coat condition. Full spa treatments may take up to two hours."
+      },
+      {
+        "question": "Is my pet insured while in your care?",
+        "answer": "Yes. We carry full public liability and professional indemnity insurance covering all animals in our care."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Happy Pets,",
+    "titleAccent": "Happy Parents",
+    "items": [
+      {
+        "name": "Sarah Mitchell",
+        "text": "The team at Furever Paws are wonderful. My cocker spaniel actually enjoys going now — that says it all really.",
+        "rating": 5,
+        "image": "/templates/furever-paws/pet-portrait-1.webp"
+      },
+      {
+        "name": "James Hartley",
+        "text": "Professional, gentle, and thorough. My cat came home looking and smelling gorgeous. Highly recommended.",
+        "rating": 5,
+        "image": "/templates/furever-paws/happy-cat.jpg"
+      },
+      {
+        "name": "Priya Kaur",
+        "text": "We bring both our dogs here for grooming and wellness checks. The staff really care about the animals.",
+        "rating": 5,
+        "image": "/templates/furever-paws/pet-portrait-2.webp"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Join Our Healthy Pet Community",
+    "description": "Book your first appointment today and give your pet the care they deserve.",
+    "primaryCta": { "label": "Book Now", "href": "#contact" },
+    "secondaryCta": { "label": "Learn More", "href": "#services" }
+  },
+  "footer": {
+    "brandName": "FUREVER PAWS",
+    "description": "Furever Paws provides premium pet grooming, wellness, and enrichment services across South West London. Trusted by pet owners since 2018.",
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "Contact", "href": "#contact" },
+      { "label": "Privacy Policy", "href": "#" }
+    ],
+    "copyright": "© 2026 Furever Paws. All rights reserved.",
+    "socials": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    }
+  },
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "cream": "#fffedc",
+      "orange": "#f77201",
+      "purple": "#4f207d",
+      "darkBrown": "#380100",
+      "green": "#c5dd83",
+      "pink": "#feaaf4",
+      "mauve": "#bf66b4",
+      "black": "#000000",
+      "headerBg": "#ffffff",
+      "headerText": "#380100",
+      "footerBg": "#380100",
+      "footerText": "#ffffff"
+    }
+  }
+}

@@ -1,0 +1,340 @@
+/* Scoped stylesheet for Coloria Painting Template */
+
+[data-template-id="coloria-painting"] {
+  --color-page: #ffffff;
+  --color-section: #f8f3ec;
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-heading: #131126;
+  --color-body: #3f4051;
+  --color-muted: #6b7280;
+  --color-accent: #ff6c1f;
+  --color-accent-hover: #e5560e;
+  --color-accent-light: #fff3ec;
+  --color-accent-secondary: #f8a849;
+  --color-border: #e8dfd4;
+  --color-border-light: rgba(0, 0, 0, 0.08);
+  --color-dark-bg: #0d1117;
+  --color-dark-surface: #171c26;
+  --font-heading: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  font-family: var(--font-body);
+  color: var(--color-body);
+  background-color: var(--color-page);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-template-id="coloria-painting"] * {
+  box-sizing: border-box;
+}
+
+[data-template-id="coloria-painting"] h1,
+[data-template-id="coloria-painting"] h2,
+[data-template-id="coloria-painting"] h3,
+[data-template-id="coloria-painting"] h4,
+[data-template-id="coloria-painting"] h5,
+[data-template-id="coloria-painting"] h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+[data-template-id="coloria-painting"] p {
+  margin: 0;
+}
+
+[data-template-id="coloria-painting"] a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+[data-template-id="coloria-painting"] button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: all 0.25s ease;
+}
+
+/* Container */
+[data-template-id="coloria-painting"] .container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  [data-template-id="coloria-painting"] .container-custom {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  [data-template-id="coloria-painting"] .container-custom {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+/* Badge / Pill */
+[data-template-id="coloria-painting"] .badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+[data-template-id="coloria-painting"] .section-tag {
+  display: inline-block;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+[data-template-id="coloria-painting"] .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(255, 108, 31, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-template-id="coloria-painting"] .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 108, 31, 0.4);
+}
+
+[data-template-id="coloria-painting"] .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: var(--color-heading);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+[data-template-id="coloria-painting"] .btn-secondary:hover {
+  border-color: var(--color-heading);
+  transform: translateY(-2px);
+  background-color: #fafafa;
+}
+
+/* Hero Styles */
+[data-template-id="coloria-painting"] .hero-section {
+  position: relative;
+  background-color: #fdfaf6;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1024px) {
+  [data-template-id="coloria-painting"] .hero-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+[data-template-id="coloria-painting"] .hero-painter-img {
+  max-height: 580px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.08));
+}
+
+[data-template-id="coloria-painting"] .hero-slider-thumb {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+[data-template-id="coloria-painting"] .hero-slider-thumb.active {
+  border-color: var(--color-accent) !important;
+  transform: scale(1.05);
+}
+
+/* Section Common */
+[data-template-id="coloria-painting"] .section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  [data-template-id="coloria-painting"] .section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Card Hover */
+[data-template-id="coloria-painting"] .card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-template-id="coloria-painting"] .card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(19, 17, 38, 0.08);
+}
+
+/* Service Card */
+[data-template-id="coloria-painting"] .service-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+[data-template-id="coloria-painting"] .service-card .img-wrapper {
+  overflow: hidden;
+  height: 220px;
+}
+
+[data-template-id="coloria-painting"] .service-card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+[data-template-id="coloria-painting"] .service-card:hover .img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Project Card */
+[data-template-id="coloria-painting"] .project-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #f1ede6;
+}
+
+[data-template-id="coloria-painting"] .project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-template-id="coloria-painting"] .project-card:hover img {
+  transform: scale(1.04);
+}
+
+[data-template-id="coloria-painting"] .project-card .project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(13, 17, 23, 0.85) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+/* Process Card */
+[data-template-id="coloria-painting"] .process-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 32px 24px;
+  border: 1px solid var(--color-border);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+[data-template-id="coloria-painting"] .process-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 108, 31, 0.08);
+}
+
+[data-template-id="coloria-painting"] .process-num-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Testimonials */
+[data-template-id="coloria-painting"] .testimonial-card {
+  border-radius: 24px;
+  padding: 36px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-template-id="coloria-painting"] .testimonial-card.featured {
+  background-color: var(--color-dark-bg);
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+[data-template-id="coloria-painting"] .testimonial-card.light {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  color: var(--color-body);
+}
+
+/* CTA Card */
+[data-template-id="coloria-painting"] .cta-banner {
+  background-color: #eaf1f7;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Footer */
+[data-template-id="coloria-painting"] footer {
+  background-color: var(--color-dark-bg);
+  color: #a0aec0;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+[data-template-id="coloria-painting"] footer a:hover {
+  color: #ffffff;
+}

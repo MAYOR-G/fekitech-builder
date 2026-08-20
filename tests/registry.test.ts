@@ -120,7 +120,13 @@ describe("production template registry", () => {
       "ace-barbers",
       "dream-home-discovery",
       "premium-dental-clinic",
-      "aquablast-pressure-wash"
+      "aquablast-pressure-wash",
+      "fresh-farm",
+      "arch-studio-premium",
+      "sushi-bar-premium",
+      "premium-fitness-coach",
+      "furever-paws",
+      "coloria-painting"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -217,7 +223,13 @@ describe("production template registry", () => {
       "wildmere-gardens",
       "dream-home-discovery",
       "premium-dental-clinic",
-      "aquablast-pressure-wash"
+      "aquablast-pressure-wash",
+      "fresh-farm",
+      "arch-studio-premium",
+      "sushi-bar-premium",
+      "premium-fitness-coach",
+      "furever-paws",
+      "coloria-painting"
     ].sort());
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);

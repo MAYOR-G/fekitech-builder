@@ -1,0 +1,577 @@
+/* Fresh Farm Template Scoped Styles */
+
+[data-template-id="fresh-farm"] {
+  --ff-bg: #eef9d2;
+  --ff-primary: #2b5c46;
+  --ff-white: #ffffff;
+  --ff-font-heading: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --ff-font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+  background-color: var(--ff-bg);
+  color: var(--ff-primary);
+  font-family: var(--ff-font-body);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+[data-template-id="fresh-farm"] *,
+[data-template-id="fresh-farm"] *::before,
+[data-template-id="fresh-farm"] *::after {
+  box-sizing: inherit;
+}
+
+/* Typography Utilities */
+[data-template-id="fresh-farm"] h1, 
+[data-template-id="fresh-farm"] h2, 
+[data-template-id="fresh-farm"] h3 {
+  font-family: var(--ff-font-heading);
+  font-weight: 400;
+}
+
+/* Header */
+[data-template-id="fresh-farm"] .ff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  background-color: var(--ff-bg);
+}
+
+[data-template-id="fresh-farm"] .ff-header-links-left,
+[data-template-id="fresh-farm"] .ff-header-links-right {
+  display: flex;
+  gap: 32px;
+}
+
+[data-template-id="fresh-farm"] .ff-nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.2s ease;
+}
+
+[data-template-id="fresh-farm"] .ff-nav-link:hover {
+  opacity: 0.6;
+}
+
+/* Hero Section */
+[data-template-id="fresh-farm"] .ff-hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 92, 70, 0.4); /* Dark green tint */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-content {
+  text-align: center;
+  color: var(--ff-white);
+  max-width: 800px;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-title {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+  font-weight: 300;
+}
+
+[data-template-id="fresh-farm"] .ff-hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Gallery */
+[data-template-id="fresh-farm"] .ff-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+[data-template-id="fresh-farm"] .ff-gallery-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-template-id="fresh-farm"] .ff-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+[data-template-id="fresh-farm"] .ff-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Features Grid */
+[data-template-id="fresh-farm"] .ff-features-section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+[data-template-id="fresh-farm"] .ff-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 40px;
+}
+
+[data-template-id="fresh-farm"] .ff-feature-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+[data-template-id="fresh-farm"] .ff-feature-title {
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+
+[data-template-id="fresh-farm"] .ff-feature-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--ff-primary);
+  border: none;
+  margin: 0 0 24px 0;
+}
+
+[data-template-id="fresh-farm"] .ff-feature-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Parallax Section */
+[data-template-id="fresh-farm"] .ff-parallax-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+[data-template-id="fresh-farm"] .ff-parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-attachment: fixed simulation not possible with img, but gives the look */
+  z-index: 1;
+}
+
+[data-template-id="fresh-farm"] .ff-parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 92, 70, 0.5); /* Tint */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-template-id="fresh-farm"] .ff-parallax-content {
+  text-align: center;
+  color: var(--ff-white);
+  max-width: 800px;
+  padding: 0 40px;
+}
+
+[data-template-id="fresh-farm"] .ff-parallax-quote {
+  font-size: 40px;
+  font-style: italic;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+}
+
+[data-template-id="fresh-farm"] .ff-parallax-author {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Split Sections */
+[data-template-id="fresh-farm"] .ff-split-section {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+}
+
+[data-template-id="fresh-farm"] .ff-split-left,
+[data-template-id="fresh-farm"] .ff-split-right {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[data-template-id="fresh-farm"] .ff-relative {
+  position: relative;
+}
+
+[data-template-id="fresh-farm"] .ff-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+[data-template-id="fresh-farm"] .ff-bg-primary {
+  background-color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-text-light {
+  color: var(--ff-bg);
+}
+
+/* Subscribe Section */
+[data-template-id="fresh-farm"] .ff-subscribe-content {
+  padding: 80px;
+  max-width: 500px;
+  margin-left: auto; 
+}
+
+[data-template-id="fresh-farm"] .ff-subscribe-title {
+  font-size: 48px;
+  margin: 0;
+}
+
+[data-template-id="fresh-farm"] .ff-subscribe-subtitle {
+  font-family: var(--ff-font-body);
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 24px 0;
+  opacity: 0.9;
+}
+
+[data-template-id="fresh-farm"] .ff-subscribe-text {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+[data-template-id="fresh-farm"] .ff-subscribe-card {
+  position: relative;
+  z-index: 2;
+  background-color: var(--ff-bg);
+  padding: 50px 40px;
+  width: 80%;
+  max-width: 440px;
+  margin: 0 auto;
+  align-self: center; 
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+[data-template-id="fresh-farm"] .ff-contact-bg {
+  background-color: var(--ff-bg);
+}
+
+[data-template-id="fresh-farm"] .ff-contact-content {
+  padding: 80px;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+[data-template-id="fresh-farm"] .ff-contact-title {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+[data-template-id="fresh-farm"] .ff-contact-title:last-of-type {
+  margin-bottom: 50px;
+}
+
+[data-template-id="fresh-farm"] .ff-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Forms */
+[data-template-id="fresh-farm"] .ff-form-row {
+  display: flex;
+  gap: 24px;
+}
+
+[data-template-id="fresh-farm"] .ff-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+[data-template-id="fresh-farm"] .ff-form-group label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-form-group input {
+  padding: 14px;
+  border: 1px solid rgba(43, 92, 70, 0.3);
+  background: transparent;
+  color: var(--ff-primary);
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+[data-template-id="fresh-farm"] .ff-form-group input:focus {
+  outline: none;
+  border-color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+[data-template-id="fresh-farm"] .ff-form-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-form-checkbox label {
+  font-size: 13px;
+  color: var(--ff-primary);
+}
+
+/* Contact Underline Form */
+[data-template-id="fresh-farm"] .ff-form-group-underline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+[data-template-id="fresh-farm"] .ff-form-group-underline label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-form-group-underline input,
+[data-template-id="fresh-farm"] .ff-form-group-underline textarea {
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid rgba(43, 92, 70, 0.3);
+  background: transparent;
+  color: var(--ff-primary);
+  font-size: 15px;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+[data-template-id="fresh-farm"] .ff-form-group-underline input:focus,
+[data-template-id="fresh-farm"] .ff-form-group-underline textarea:focus {
+  outline: none;
+  border-bottom-color: var(--ff-primary);
+}
+
+/* Buttons */
+[data-template-id="fresh-farm"] .ff-btn {
+  background-color: var(--ff-primary);
+  color: var(--ff-bg);
+  border: 1px solid var(--ff-primary);
+  padding: 16px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+[data-template-id="fresh-farm"] .ff-btn-hero {
+  background-color: var(--ff-white);
+  color: var(--ff-primary);
+  border-color: var(--ff-white);
+}
+
+[data-template-id="fresh-farm"] .ff-btn-outline {
+  background-color: transparent;
+  color: var(--ff-white);
+  border-color: var(--ff-white);
+}
+
+[data-template-id="fresh-farm"] .ff-btn-outline:hover {
+  background-color: var(--ff-white);
+  color: var(--ff-primary);
+}
+
+[data-template-id="fresh-farm"] .ff-btn-full {
+  width: 100%;
+}
+
+[data-template-id="fresh-farm"] .ff-btn-submit {
+  border-radius: 40px;
+  padding: 16px 48px;
+  align-self: flex-start;
+  margin-top: 16px;
+}
+
+[data-template-id="fresh-farm"] .ff-btn:hover {
+  background-color: var(--ff-bg);
+  color: var(--ff-primary);
+  border-color: var(--ff-primary);
+}
+
+/* Footer */
+[data-template-id="fresh-farm"] .ff-footer {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ff-primary);
+  color: var(--ff-bg);
+}
+
+[data-template-id="fresh-farm"] .ff-socials {
+  display: flex;
+  gap: 32px;
+}
+
+[data-template-id="fresh-farm"] .ff-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+[data-template-id="fresh-farm"] .ff-icon:hover {
+  opacity: 0.6;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  [data-template-id="fresh-farm"] .ff-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  [data-template-id="fresh-farm"] .ff-header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-hero-title {
+    font-size: 48px;
+  }
+
+  [data-template-id="fresh-farm"] .ff-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-split-section {
+    flex-direction: column;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-split-left,
+  [data-template-id="fresh-farm"] .ff-split-right {
+    width: 100%;
+    min-height: 500px;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-subscribe-content,
+  [data-template-id="fresh-farm"] .ff-contact-content {
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-btn-submit {
+    align-self: center;
+  }
+
+  [data-template-id="fresh-farm"] .ff-subscribe-card {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  [data-template-id="fresh-farm"] .ff-hero-buttons {
+    flex-direction: column;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-parallax-quote {
+    font-size: 32px;
+  }
+  
+  [data-template-id="fresh-farm"] .ff-form-row {
+    flex-direction: column;
+  }
+}

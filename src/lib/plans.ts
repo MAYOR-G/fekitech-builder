@@ -220,6 +220,7 @@ const TEMPLATE_MINIMUM_PLAN: Record<string, PlanId> = {
   "consulting-growth-advisory": "business",
   "medivra-therapy-recovery": "business",
   "ace-barbers": "business",
+  "furever-paws": "business",
 };
 
 export function isPlanId(value: unknown): value is PlanId {

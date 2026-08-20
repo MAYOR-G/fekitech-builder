@@ -193,6 +193,8 @@ import premiumDentalClinicConfig from "../templates/premium-dental-clinic/config
 import premiumDentalClinicEditable from "../templates/premium-dental-clinic/editable.json";
 import aquablastPressureWashConfig from "../templates/aquablast-pressure-wash/config.json";
 import aquablastPressureWashEditable from "../templates/aquablast-pressure-wash/editable.json";
+import freshFarmConfig from "../templates/fresh-farm/config.json";
+import freshFarmEditable from "../templates/fresh-farm/editable.json";
 
 import archStudioPremiumConfig from "../templates/arch-studio-premium/config.json";
 import archStudioPremiumEditable from "../templates/arch-studio-premium/editable.json";
@@ -200,6 +202,11 @@ import sushiBarPremiumConfig from "../templates/sushi-bar-premium/config.json";
 import sushiBarPremiumEditable from "../templates/sushi-bar-premium/editable.json";
 import premiumFitnessCoachConfig from "../templates/premium-fitness-coach/config.json";
 import premiumFitnessCoachEditable from "../templates/premium-fitness-coach/editable.json";
+import fureverPawsConfig from "../templates/furever-paws/config.json";
+import fureverPawsEditable from "../templates/furever-paws/editable.json";
+import coloriaPaintingConfig from "../templates/coloria-painting/config.json";
+import coloriaPaintingEditable from "../templates/coloria-painting/editable.json";
+
 
 export type TemplateConfig = {
   id: string;
@@ -315,9 +322,12 @@ const components = {
   "dream-home-discovery": dynamic<{ data: TemplateData }>(() => import("../templates/dream-home-discovery/template")),
   "premium-dental-clinic": dynamic<{ data: TemplateData }>(() => import("../templates/premium-dental-clinic/template")),
   "aquablast-pressure-wash": dynamic<{ data: TemplateData }>(() => import("../templates/aquablast-pressure-wash/template")),
+  "fresh-farm": dynamic<{ data: TemplateData }>(() => import("../templates/fresh-farm/template")),
   "arch-studio-premium": dynamic<{ data: TemplateData }>(() => import("../templates/arch-studio-premium/template")),
   "sushi-bar-premium": dynamic<{ data: TemplateData }>(() => import("../templates/sushi-bar-premium/template")),
   "premium-fitness-coach": dynamic<{ data: TemplateData }>(() => import("../templates/premium-fitness-coach/template")),
+  "furever-paws": dynamic<{ data: TemplateData }>(() => import("../templates/furever-paws/template")),
+  "coloria-painting": dynamic<{ data: TemplateData }>(() => import("../templates/coloria-painting/template")),
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
@@ -416,9 +426,12 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "dream-home-discovery": { config: dreamHomeDiscoveryConfig, component: components["dream-home-discovery"], defaultData: normalizeData(dreamHomeDiscoveryEditable) },
   "premium-dental-clinic": { config: premiumDentalClinicConfig, component: components["premium-dental-clinic"], defaultData: normalizeData(premiumDentalClinicEditable) },
   "aquablast-pressure-wash": { config: aquablastPressureWashConfig, component: components["aquablast-pressure-wash"], defaultData: normalizeData(aquablastPressureWashEditable) },
+  "fresh-farm": { config: freshFarmConfig, component: components["fresh-farm"], defaultData: normalizeData(freshFarmEditable) },
   "arch-studio-premium": { config: archStudioPremiumConfig, component: components["arch-studio-premium"], defaultData: normalizeData(archStudioPremiumEditable) },
   "sushi-bar-premium": { config: sushiBarPremiumConfig, component: components["sushi-bar-premium"], defaultData: normalizeData(sushiBarPremiumEditable) },
   "premium-fitness-coach": { config: premiumFitnessCoachConfig, component: components["premium-fitness-coach"], defaultData: normalizeData(premiumFitnessCoachEditable) },
+  "furever-paws": { config: fureverPawsConfig, component: components["furever-paws"], defaultData: normalizeData(fureverPawsEditable) },
+  "coloria-painting": { config: coloriaPaintingConfig, component: components["coloria-painting"], defaultData: normalizeData(coloriaPaintingEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {

@@ -1,0 +1,91 @@
+{
+  "theme": {
+    "colors": {
+      "background": "#eef9d2",
+      "primary": "#2b5c46",
+      "white": "#ffffff"
+    }
+  },
+  "content": {
+    "header": {
+      "links": [
+        "Shop Now",
+        "Our Story",
+        "Farm to Table",
+        "Recipes",
+        "Contact",
+        "Login | Cart (0)"
+      ]
+    },
+    "hero": {
+      "title": "Experience the Taste of True Freshness",
+      "subtitle": "Organically grown produce from our farm to your table, every single day.",
+      "image": "/templates/fresh-farm/fresh_farm_bg_clean.jpg",
+      "buttons": [
+        "Shop Fresh Produce",
+        "Browse the Shop"
+      ]
+    },
+    "gallery": [
+      {
+        "src": "/templates/fresh-farm/gallery_sack_1787214101406.jpg",
+        "alt": "Sack of vegetables"
+      },
+      {
+        "src": "/templates/fresh-farm/gallery_tote_1787214116762.jpg",
+        "alt": "Tote of vegetables"
+      },
+      {
+        "src": "/templates/fresh-farm/gallery_crate_1787214127831.jpg",
+        "alt": "Crate of vegetables"
+      }
+    ],
+    "features": [
+      {
+        "title": "Fresh Local Produce",
+        "description": "Direct from our fields to your table, ensuring maximum freshness."
+      },
+      {
+        "title": "Organic Farming",
+        "description": "Grown without synthetic pesticides or fertilizers for a healthy environment."
+      },
+      {
+        "title": "Sustainable Practices",
+        "description": "Protecting our soil and water for future generations of farming."
+      },
+      {
+        "title": "Seasonal Harvests",
+        "description": "Enjoy the best and most vibrant flavors each season has to offer."
+      },
+      {
+        "title": "Community Supported",
+        "description": "Building strong, lasting connections with our local community."
+      },
+      {
+        "title": "Farm to Table Delivery",
+        "description": "Convenient and fast delivery straight to your doorstep."
+      }
+    ],
+    "parallax": {
+      "image": "/templates/fresh-farm/parallax_farm_products_1787215048802.jpg",
+      "quote": "\"We believe in the power of nature to provide the purest nourishment.\"",
+      "author": "— The Harvest Bowl Family"
+    },
+    "subscribe": {
+      "title": "Subscribe",
+      "subtitle": "to our Newsletter",
+      "text": "Stay up to date with our latest harvests, seasonal recipes, and special farm events.",
+      "image": "/templates/fresh-farm/subscribe_crate_1787214138078.jpg",
+      "button": "Subscribe to our Newsletter"
+    },
+    "contact": {
+      "title1": "Get In",
+      "title2": "Touch",
+      "image": "/templates/fresh-farm/contact_box_1787214147438.jpg",
+      "button": "Submit"
+    },
+    "footer": {
+      "text": "© 2026 Fresh Farm. All rights reserved."
+    }
+  }
+}

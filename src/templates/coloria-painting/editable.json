@@ -1,0 +1,341 @@
+{
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f8f3ec",
+      "surface": "#ffffff",
+      "card": "#ffffff",
+      "heading": "#131126",
+      "body": "#3f4051",
+      "muted": "#6b7280",
+      "accent": "#ff6c1f",
+      "accentSecondary": "#f8a849",
+      "buttonPrimary": "#ff6c1f",
+      "buttonPrimaryText": "#ffffff",
+      "buttonSecondary": "#ffffff",
+      "buttonSecondaryText": "#131126",
+      "buttonSecondaryBorder": "#e2d9cd",
+      "link": "#ff6c1f",
+      "icon": "#ff6c1f",
+      "border": "#e8dfd4",
+      "headerBg": "#ffffff",
+      "headerText": "#131126",
+      "footerBg": "#0d1117",
+      "footerText": "#ffffff"
+    },
+    "fontHeading": "Instrument Sans",
+    "fontBody": "Instrument Sans"
+  },
+  "brand": {
+    "name": "Coloria",
+    "tagline": "Professional Painting & Decorating",
+    "logo": "/templates/coloria-painting/logo.svg",
+    "phone": "+44 20 7946 0192",
+    "email": "hello@coloriapainting.co.uk",
+    "address": "48 Kensington High Street, West London, W8 4PE",
+    "hours": "Mon - Sat: 8:00 AM - 6:30 PM",
+    "rating": "4.9",
+    "reviewCount": "350+"
+  },
+  "topBar": {
+    "announcement": "Transform your space with master decorators — Request a free, fixed-price quote today!",
+    "email": "hello@coloriapainting.co.uk",
+    "phone": "+44 20 7946 0192"
+  },
+  "navigation": {
+    "logoText": "Coloria",
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About Us", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Process", "href": "#process" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaLabel": "Get a Free Quote",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "badge": "Top-Rated Decorators in West London",
+    "titleLine1": "Professional",
+    "titleLine2": "Painting Services",
+    "titleLine3": "in West London",
+    "description": "Coloria delivers flawless interior and exterior painting for homes, apartments, and commercial spaces across West London. Master craftsmanship, dustless prep, and premium eco paints.",
+    "primaryCta": "Get a Free Quote",
+    "primaryCtaHref": "#contact",
+    "secondaryCta": "View Our Work",
+    "secondaryCtaHref": "#projects",
+    "socialProof": {
+      "rating": 5,
+      "text": "Trusted by 2,500+ London Homeowners",
+      "avatars": [
+        "/templates/coloria-painting/avatar-1.webp",
+        "/templates/coloria-painting/avatar-2.webp",
+        "/templates/coloria-painting/avatar-3.webp"
+      ]
+    },
+    "painterImage": "/templates/coloria-painting/hero-painter.png",
+    "slidePreviews": [
+      { "image": "/templates/coloria-painting/hero-slide-1.webp", "label": "Residential Finishing" },
+      { "image": "/templates/coloria-painting/hero-slide-2.webp", "label": "Interior Decorating" },
+      { "image": "/templates/coloria-painting/hero-slide-3.webp", "label": "Commercial Fit-outs" }
+    ]
+  },
+  "about": {
+    "tag": "ABOUT US",
+    "title": "Excellence You Can Trust",
+    "description": "We bring precision, craft, and care to every wall. Specialising in luxury residential decorating, period restorations, and commercial interiors across West London.",
+    "images": {
+      "woodPrep": "/templates/coloria-painting/about-wood-prep.webp",
+      "paintPots": "/templates/coloria-painting/about-paint-pots.webp",
+      "painterAction": "/templates/coloria-painting/about-painter-action.webp"
+    },
+    "stats": [
+      { "value": "350+", "label": "Painting Projects", "sublabel": "Completed across London" },
+      { "value": "99%", "label": "Client Satisfaction", "sublabel": "Verified 5-star feedback" },
+      { "value": "25 yrs", "label": "Master Experience", "sublabel": "Combined trade expertise" },
+      { "value": "70+", "label": "Repeat Clients", "sublabel": "Homeowners & businesses" }
+    ]
+  },
+  "services": {
+    "tag": "SERVICES",
+    "title": "Professional Painting Services For Every Space",
+    "description": "From single-room updates to full property renovations, our skilled trade team provides bespoke decorative solutions tailored to your requirements.",
+    "items": [
+      {
+        "id": "residential",
+        "title": "Villa & Residential Painting",
+        "category": "Residential",
+        "description": "Complete interior transformations, bespoke wall finishes, skirting, ceilings, and flawless architectural woodwork painting.",
+        "image": "/templates/coloria-painting/service-residential.webp",
+        "linkText": "Learn More",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "exterior",
+        "title": "Building & Facade Decorating",
+        "category": "Exterior",
+        "description": "Weather-resistant exterior masonry coating, heritage sash window restoration, and protective facade painting built to last UK winters.",
+        "image": "/templates/coloria-painting/service-exterior.webp",
+        "linkText": "Learn More",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "commercial",
+        "title": "Commercial & Office Fit-Outs",
+        "category": "Commercial",
+        "description": "Flexible out-of-hours painting for offices, boutique shops, and hospitality venues, with fast turnaround and minimal disruption.",
+        "image": "/templates/coloria-painting/service-commercial.webp",
+        "linkText": "Learn More",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "specialist",
+        "title": "Specialist & Decorative Finishes",
+        "category": "Specialist",
+        "description": "Bespoke feature walls, fine furniture lacquering, wallpaper hanging, and protective moisture-barrier coatings for kitchens & bathrooms.",
+        "image": "/templates/coloria-painting/service-specialist.webp",
+        "linkText": "Learn More",
+        "linkHref": "#contact"
+      }
+    ]
+  },
+  "projects": {
+    "tag": "PORTFOLIO",
+    "title": "Our Painting Projects",
+    "description": "Explore our recent residential and commercial transformations completed to master decorator standards across London.",
+    "filterTabs": ["All Projects", "Residential", "Commercial", "Exterior", "Specialist"],
+    "items": [
+      {
+        "id": "1",
+        "title": "Victorian Fireplace Lounge",
+        "category": "Interior Painting",
+        "location": "Kensington, London",
+        "image": "/templates/coloria-painting/project-living-room.webp",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "2",
+        "title": "Geometric 3D Feature Wall",
+        "category": "Accent & Feature Walls",
+        "location": "Mayfair, London",
+        "image": "/templates/coloria-painting/project-geometric-wall.webp",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "3",
+        "title": "Boutique Dining & Creative Hub",
+        "category": "Commercial Painting",
+        "location": "Chelsea, London",
+        "image": "/templates/coloria-painting/project-dining-room.webp",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "4",
+        "title": "Heritage Dining Room & Wainscoting",
+        "category": "Heritage Decorating",
+        "location": "Richmond, London",
+        "image": "/templates/coloria-painting/project-heritage-hall.webp",
+        "linkHref": "#contact"
+      },
+      {
+        "id": "5",
+        "title": "Modern Studio & Meeting Space",
+        "category": "Office Decorating",
+        "location": "Notting Hill, London",
+        "image": "/templates/coloria-painting/project-studio-office.webp",
+        "linkHref": "#contact"
+      }
+    ],
+    "ctaText": "See More Projects",
+    "ctaHref": "#contact"
+  },
+  "process": {
+    "tag": "PROCESS",
+    "title": "A Simple, Professional Painting Process",
+    "description": "We take the stress out of decorating with an organised, transparent approach from initial survey to spotless handover.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Consultation & Colour Survey",
+        "description": "We understand your vision, assess surfaces, review lighting and colour schemes, and supply a clear, itemised quote."
+      },
+      {
+        "number": "02",
+        "title": "Protection & Dustless Prep",
+        "description": "We mask flooring, cover furnishings with heavy-duty protection, and sand with HEPA dust-extraction systems."
+      },
+      {
+        "number": "03",
+        "title": "Precision Trade Application",
+        "description": "Our experienced decorators apply high-grade trade coatings with razor-sharp edges and uniform coverage."
+      },
+      {
+        "number": "04",
+        "title": "Inspection & Clean Handover",
+        "description": "We conduct a thorough final walkthrough together, vacuum the area, and leave you with touch-up paint pots."
+      }
+    ]
+  },
+  "trustedPartner": {
+    "tag": "WHY CHOOSE US",
+    "title": "Your Trusted Partner for Professional Painting",
+    "description": "Choosing the right painting company makes all the difference. At Coloria, we combine skilled craftsmanship, premium materials, and a customer-first approach.",
+    "showcaseImage": "/templates/coloria-painting/team-painting-wall.webp",
+    "featureBadge": "Clean & Dust-Free Finish Guarantee",
+    "partnerLogos": [
+      { "name": "Farrow & Ball", "icon": "/templates/coloria-painting/partner-1.svg" },
+      { "name": "Dulux Trade", "icon": "/templates/coloria-painting/partner-2.svg" },
+      { "name": "Little Greene", "icon": "/templates/coloria-painting/partner-3.svg" },
+      { "name": "Crown Trade", "icon": "/templates/coloria-painting/partner-4.svg" }
+    ]
+  },
+  "testimonials": {
+    "tag": "TESTIMONIALS",
+    "title": "What Our Clients Say About Coloria",
+    "description": "Read genuine feedback from West London homeowners and commercial property managers.",
+    "items": [
+      {
+        "id": "1",
+        "rating": 5,
+        "quote": "Coloria completely revitalised our Victorian townhouse in Kensington. The prep work was immaculate and there wasn’t a single speck of paint on our hardwood floors. Outstanding attention to detail.",
+        "author": "David Thompson",
+        "role": "Property Manager",
+        "location": "Kensington, London",
+        "avatar": "/templates/coloria-painting/client-david.webp",
+        "isFeatured": false
+      },
+      {
+        "id": "2",
+        "rating": 5,
+        "quote": "The entire team was punctual, polite, and extremely skilled. They finished painting our 4-bedroom house two days ahead of schedule, and the sharp lines on the feature wall are truly perfection.",
+        "author": "Emma Richardson",
+        "role": "Homeowner",
+        "location": "Chiswick, London",
+        "avatar": "/templates/coloria-painting/client-emma.webp",
+        "isFeatured": true
+      },
+      {
+        "id": "3",
+        "rating": 5,
+        "quote": "We hired Coloria for our boutique office renovation in Chelsea. They worked over the weekend so we could open on Monday with zero downtime. Exceptional professionalism and competitive rates.",
+        "author": "Sophia Patel",
+        "role": "Studio Director",
+        "location": "Chelsea, London",
+        "avatar": "/templates/coloria-painting/client-sophia.webp",
+        "isFeatured": false
+      }
+    ]
+  },
+  "benefits": {
+    "tag": "BENEFITS",
+    "title": "The Benefits of Choosing Coloria",
+    "description": "We set the standard for high-end decorating with reliable timelines, premium finishes, and complete peace of mind.",
+    "image": "/templates/coloria-painting/benefits-painter.webp",
+    "items": [
+      {
+        "title": "Flawless Craftsmanship & Crisp Lines",
+        "description": "Our master painters focus on microscopic surface prep, laser-straight edges, and uniform coverage that enhances any room."
+      },
+      {
+        "title": "Guaranteed Upfront Pricing",
+        "description": "Detailed fixed-price estimates with comprehensive breakdowns. No hidden fees or surprise add-ons upon completion."
+      },
+      {
+        "title": "Long-Lasting Eco & Trade Materials",
+        "description": "We specify ultra-durable, low-VOC washable emulsions and tough wood lacquers from leading British paint makers."
+      },
+      {
+        "title": "Spotless Daily Cleanliness",
+        "description": "We respect your home with full protective masking, HEPA air scrubbers, and a thorough clean-up at the end of each day."
+      },
+      {
+        "title": "Fully Insured & 2-Year Guarantee",
+        "description": "Full £5M public liability insurance and a written two-year guarantee covering all workmanship and peeling."
+      }
+    ]
+  },
+  "cta": {
+    "tag": "GET IN TOUCH",
+    "title": "Ready To Transform Your Space with Colour?",
+    "description": "Book your free, no-obligation survey and colour consultation today. We respond to all enquiries within 2 hours.",
+    "email": "hello@coloriapainting.co.uk",
+    "phone": "+44 20 7946 0192",
+    "location": "West London, United Kingdom",
+    "hours": "Mon - Sat: 8:00 AM - 6:30 PM",
+    "buttonText": "Request a Free Quote",
+    "buttonHref": "tel:+442079460192",
+    "painterImage": "/templates/coloria-painting/cta-painter.webp"
+  },
+  "footer": {
+    "logoText": "Coloria",
+    "tagline": "Coloria provides expert residential and commercial painting services across West London and surrounding boroughs.",
+    "contact": {
+      "phone": "+44 20 7946 0192",
+      "email": "hello@coloriapainting.co.uk",
+      "address": "West London, United Kingdom W8 4PE"
+    },
+    "quickLinks": [
+      { "label": "About Us", "href": "#about" },
+      { "label": "Our Services", "href": "#services" },
+      { "label": "Recent Projects", "href": "#projects" },
+      { "label": "Our Process", "href": "#process" },
+      { "label": "Client Reviews", "href": "#testimonials" }
+    ],
+    "serviceLinks": [
+      { "label": "Residential Painting", "href": "#services" },
+      { "label": "Exterior Facades", "href": "#services" },
+      { "label": "Commercial Fit-Outs", "href": "#services" },
+      { "label": "Decorative Feature Walls", "href": "#services" },
+      { "label": "Woodwork & Spraying", "href": "#services" }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms of Service", "href": "#" },
+      { "label": "Cookie Policy", "href": "#" }
+    ],
+    "copyright": "© 2026 Coloria Painting & Decorating Services. All rights reserved."
+  }
+}
