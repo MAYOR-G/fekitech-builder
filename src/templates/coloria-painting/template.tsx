@@ -18,9 +18,7 @@ import {
   Sparkles,
   ChevronRight,
   CheckCircle2,
-  Award,
-  PenTool,
-  Droplets
+  Award
 } from "lucide-react";
 
 function PaintBrushIcon({ className = "w-5 h-5" }: { className?: string }) {
