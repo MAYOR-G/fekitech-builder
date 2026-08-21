@@ -14,7 +14,6 @@ import {
   LinkedinLogo,
   TwitterLogo,
   CaretRight,
-  Lightning,
   Sparkle,
   TrendUp
 } from "@phosphor-icons/react";
