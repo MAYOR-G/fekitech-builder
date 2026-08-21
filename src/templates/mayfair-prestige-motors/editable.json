@@ -1,0 +1,290 @@
+{
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#f2f2f2",
+      "section": "#f2f2f2",
+      "surface": "#ffffff",
+      "card": "#ffffff",
+      "heading": "#000000",
+      "body": "#4d4d4d",
+      "muted": "#888888",
+      "accent": "#000000",
+      "accentSecondary": "#ffffff",
+      "buttonPrimary": "#000000",
+      "buttonPrimaryText": "#ffffff",
+      "buttonSecondary": "#ffffff",
+      "buttonSecondaryText": "#000000",
+      "buttonSecondaryBorder": "#d9d9d9",
+      "border": "#e5e5e5",
+      "headerBg": "rgba(242, 242, 242, 0.95)",
+      "headerText": "#000000",
+      "footerBg": "#f2f2f2",
+      "footerText": "#000000",
+      "heroCardBg": "#000000",
+      "heroCardText": "#ffffff"
+    },
+    "typography": {
+      "heading": "Space Grotesk, sans-serif",
+      "body": "Inter, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "CAR DEALERSHIP",
+    "tagline": "Supercar & Luxury Motor Showroom",
+    "location": "Mayfair, London W1K",
+    "phone": "+44 (0)20 7946 0880",
+    "email": "concierge@mayfairprestigemotors.co.uk"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Inventory", "href": "#inventory" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Financing", "href": "#services" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Journal", "href": "#journal" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "buttonLabel": "Contact Sales",
+    "buttonHref": "#contact"
+  },
+  "hero": {
+    "badge": "MAYFAIR SHOWROOM",
+    "title": "Mayfair's Premier Luxury Dealership",
+    "subtitle": "Curated luxury vehicles from the world's most prestigious brands since 2010",
+    "primaryCta": {
+      "label": "Browse Inventory",
+      "href": "#inventory"
+    },
+    "modelSelectLabel": "Select Model",
+    "image": "/templates/mayfair-prestige-motors/hero-supercar.webp",
+    "imageAlt": "Sleek dark performance hypercar with open dihedral doors in a luxury showroom",
+    "stats": [
+      { "value": "800+", "label": "Cars Sold" },
+      { "value": "£80M+", "label": "Sales Value" }
+    ]
+  },
+  "featured": {
+    "tag": "FEATURED CARS",
+    "title": "Performance Meets Prestige",
+    "subtitle": "Handpicked from our collection. Each one represents the pinnacle of automotive excellence today.",
+    "ctaLabel": "Browse Inventory",
+    "ctaHref": "#inventory",
+    "cars": [
+      {
+        "name": "Range Rover Sport SV",
+        "year": "2024",
+        "price": "£145,000",
+        "badge": "New Arrival",
+        "image": "/templates/mayfair-prestige-motors/car-rangerover.png",
+        "imageAlt": "Black Range Rover Sport SV in studio"
+      },
+      {
+        "name": "Porsche 911 GT3 RS",
+        "year": "2023",
+        "price": "£241,350",
+        "badge": "Performance Icon",
+        "image": "/templates/mayfair-prestige-motors/car-porsche-gt3.webp",
+        "imageAlt": "Silver Porsche 911 GT3 RS with aerodynamic wing"
+      },
+      {
+        "name": "Lamborghini Urus Performante",
+        "year": "2024",
+        "price": "£239,950",
+        "badge": "New Arrival",
+        "image": "/templates/mayfair-prestige-motors/car-urus.webp",
+        "imageAlt": "Matte black Lamborghini Urus SUV"
+      }
+    ]
+  },
+  "services": {
+    "tag": "SERVICES",
+    "title": "We're Way More Than a Dealership",
+    "subtitle": "Premium vehicles deserve premium service—and that's exactly what you'll get.",
+    "ctaLabel": "Browse Services",
+    "ctaHref": "#services",
+    "cards": [
+      {
+        "id": "service-1",
+        "title": "Full Technical Inspection & Professional Detailing",
+        "image": "/templates/mayfair-prestige-motors/service-detailing.webp",
+        "imageAlt": "Technician using precision polishing equipment on vehicle"
+      },
+      {
+        "id": "service-2",
+        "title": "Verified History & Trusted Marque Network",
+        "type": "marques",
+        "marques": [
+          { "name": "Marque 1", "icon": "/templates/mayfair-prestige-motors/brand-1.svg" },
+          { "name": "Marque 2", "icon": "/templates/mayfair-prestige-motors/brand-2.svg" },
+          { "name": "Marque 3", "icon": "/templates/mayfair-prestige-motors/brand-3.svg" },
+          { "name": "Marque 4", "icon": "/templates/mayfair-prestige-motors/brand-4.svg" },
+          { "name": "Marque 5", "icon": "/templates/mayfair-prestige-motors/brand-5.svg" },
+          { "name": "Marque 6", "icon": "/templates/mayfair-prestige-motors/brand-6.svg" },
+          { "name": "Marque 7", "icon": "/templates/mayfair-prestige-motors/brand-7.svg" },
+          { "name": "Marque 8", "icon": "/templates/mayfair-prestige-motors/brand-8.svg" }
+        ]
+      },
+      {
+        "id": "service-3",
+        "title": "Warranty Support & Performance Engineering",
+        "image": "/templates/mayfair-prestige-motors/service-tuning.webp",
+        "imageAlt": "Close up of high-performance brake dial and engineering"
+      },
+      {
+        "id": "service-4",
+        "title": "Leasing, Tailored Financing & VIP Handover",
+        "image": "/templates/mayfair-prestige-motors/service-handover.webp",
+        "imageAlt": "Handing over car keys with handshake"
+      }
+    ]
+  },
+  "testimonials": {
+    "tag": "TESTIMONIALS",
+    "title": "Great Numbers, Happy Owners.",
+    "subtitle": "Real experiences from customers who found their perfect car and trusted us completely.",
+    "ctaLabel": "Browse Inventory",
+    "ctaHref": "#inventory",
+    "featuredReview": {
+      "quote": "\"Outstanding service from start to finish, truly professional team and exceptional vehicle quality throughout.\"",
+      "author": "James Mitchell",
+      "role": "Porsche 911 Owner",
+      "image": "/templates/mayfair-prestige-motors/client-david.png",
+      "imageAlt": "James Mitchell posing in front of his sports car",
+      "rating": 5
+    },
+    "statCards": [
+      {
+        "value": "20+",
+        "label": "Years of Experience",
+        "description": "Over two decades curating rare supercars and modern performance icons."
+      },
+      {
+        "value": "800+",
+        "label": "Happy Owners",
+        "rating": "5.0",
+        "reviewCount": "From +4000 reviews",
+        "googleIcon": "/templates/mayfair-prestige-motors/google-badge.png"
+      }
+    ]
+  },
+  "team": {
+    "tag": "OUR TEAM",
+    "title": "Meet The Experts.",
+    "subtitle": "Passionate about cars, precision, and exceptional service. Meet the people who make it happen.",
+    "ctaLabel": "Learn More",
+    "ctaHref": "#contact",
+    "members": [
+      {
+        "name": "Michael Richardson",
+        "role": "Sales Director",
+        "image": "/templates/mayfair-prestige-motors/team-alexander.webp",
+        "imageAlt": "Michael Richardson, Sales Director"
+      },
+      {
+        "name": "Sarah Thompson",
+        "role": "Founder & CEO",
+        "image": "/templates/mayfair-prestige-motors/team-victoria.webp",
+        "imageAlt": "Sarah Thompson, Founder & CEO"
+      }
+    ]
+  },
+  "journal": {
+    "tag": "BLOG",
+    "title": "Insights & Expertise Now",
+    "subtitle": "Market trends, buying guides, and insider knowledge to help you make smarter decisions.",
+    "ctaLabel": "View All",
+    "ctaHref": "#journal",
+    "articles": [
+      {
+        "title": "The New Lamborghini Urus Performante Has Arrived—And It's Everything We Hoped For",
+        "date": "May 3, 2026",
+        "category": "Automotive News",
+        "image": "/templates/mayfair-prestige-motors/article-market.webp",
+        "imageAlt": "Lamborghini Urus front close-up"
+      },
+      {
+        "title": "Leasing vs Buying a Luxury Car: Which Is Right for You in 2026?",
+        "date": "May 3, 2026",
+        "category": "Financing Guide",
+        "image": "/templates/mayfair-prestige-motors/article-finance.webp",
+        "imageAlt": "Vehicle key and financing documents"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Ready to Experience Your Dream Car?",
+    "subtitle": "Book a private test drive and feel what true performance means. Every vehicle available for immediate viewing.",
+    "buttonLabel": "Schedule Test Drive",
+    "buttonHref": "#contact",
+    "image": "/templates/mayfair-prestige-motors/cta-supercar.png",
+    "imageAlt": "Red sports car with glowing taillights in motion"
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Everything You Need Here",
+    "subtitle": "Everything you need to know about financing, warranties, delivery, and buying with confidence.",
+    "items": [
+      {
+        "question": "What financing options do you offer?",
+        "answer": "We work with a wide network of lenders to offer flexible financing solutions — whether you're buying new, used, or refinancing. Our finance team will walk you through competitive rates, lease options, and payment plans tailored to your budget. Pre-approval is available online in minutes."
+      },
+      {
+        "question": "Can I trade in my current vehicle?",
+        "answer": "Absolutely. We accept trade-ins on all makes and models. Bring your vehicle in for a free, no-obligation appraisal, or get an instant estimate online. Your trade-in value can be applied directly toward your next purchase."
+      },
+      {
+        "question": "Do your used vehicles come with a warranty?",
+        "answer": "All certified pre-owned vehicles in our inventory go through a rigorous multi-point inspection and come with a limited warranty. Extended protection plans are also available for added peace of mind."
+      },
+      {
+        "question": "How do I schedule a test drive?",
+        "answer": "You can book a test drive directly on our website by selecting any vehicle in our inventory, or simply call our showroom. We're open 7 days a week and happy to accommodate same-day appointments."
+      },
+      {
+        "question": "Do you offer vehicle delivery?",
+        "answer": "Yes. We offer home and office delivery within the region. Once your paperwork is finalized, we'll coordinate a convenient time to bring your vehicle directly to you."
+      }
+    ]
+  },
+  "quickContact": {
+    "title": "Ready to test your dream car?",
+    "subtitle": "Curated luxury vehicles from the world's most prestigious brands since 2010",
+    "inputPlaceholder": "Enter your email or phone number...",
+    "buttonLabel": "Contact us",
+    "marques": [
+      "Ferrari",
+      "Porsche",
+      "Lamborghini",
+      "McLaren",
+      "Aston Martin",
+      "Bentley",
+      "Rolls-Royce",
+      "Range Rover",
+      "Bugatti"
+    ]
+  },
+  "footer": {
+    "brandName": "CAR DEALERSHIP",
+    "location": "Mayfair Showroom, 14 Berkeley Square, London W1J 6BL",
+    "phone": "+44 (0)20 7946 0880",
+    "email": "concierge@mayfairprestigemotors.co.uk",
+    "copyright": "© 2026 Mayfair Prestige Motors Ltd. All rights reserved.",
+    "madeBy": "FekiTech",
+    "links": [
+      { "label": "Home", "href": "#" },
+      { "label": "Inventory", "href": "#inventory" },
+      { "label": "Trade-In", "href": "#services" },
+      { "label": "Financing", "href": "#services" },
+      { "label": "About", "href": "#team" },
+      { "label": "Contact", "href": "#contact" },
+      { "label": "Blog", "href": "#journal" }
+    ],
+    "legalLinks": [
+      { "label": "Terms & Conditions", "href": "#" },
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Cookies", "href": "#" }
+    ]
+  }
+}

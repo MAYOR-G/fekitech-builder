@@ -80,9 +80,14 @@ describe("production template registry", () => {
       "verdant-house-grooming",
       "ember-grace-church",
       "aurea-objects-shop",
+      "bloom-steps-nursery",
+      "eductix-academy",
+      "infusion-london",
+      "goddess-braids-salon",
+      "agritech-growth",
+      "fiora-locks",
       "kindred-paws-vets",
       "forno-sixteen",
-      "infusion-london",
       "velour-studio-salon",
       "software-engineer-portfolio",
       "coffee-website",
@@ -97,22 +102,20 @@ describe("production template registry", () => {
       "arcstone-growth",
       "beaniro-cold-brew",
       "lune-leaf-skincare",
-      "bloom-steps-nursery",
       "handgrid-repairs",
-      "eductix-academy",
       "alvion-medical",
       "greenly-gardens",
-      "agritech-growth",
       "pipeline-os",
-      "fiora-locks",
-      "goddess-braids-salon",
       "little-rainbow-nursery",
-      "apex-growth-agency",
+      "kidocare-daycare",
+      "adstik-tiktok-agency",
       "valist-ai-studio",
       "das-studio",
+      "quantum-wellness-spa",
+      "mayfair-prestige-motors",
+      "apex-growth-agency",
       "cleanhub-london",
       "clipzy-video-agency",
-      "quantum-wellness-spa",
       "jumami-street-food",
       "freshbite-fast-food",
       "consulting-growth-advisory",
@@ -126,7 +129,8 @@ describe("production template registry", () => {
       "sushi-bar-premium",
       "premium-fitness-coach",
       "furever-paws",
-      "coloria-painting"
+      "coloria-painting",
+      "dentara-dental-clinic"
     ]);
     expect(templates.map((template) => template.id).sort()).toEqual([
       "alder-slate-roofing",
@@ -229,7 +233,11 @@ describe("production template registry", () => {
       "sushi-bar-premium",
       "premium-fitness-coach",
       "furever-paws",
-      "coloria-painting"
+      "coloria-painting",
+      "dentara-dental-clinic",
+      "kidocare-daycare",
+      "adstik-tiktok-agency",
+      "mayfair-prestige-motors"
     ].sort());
     for (const template of templates) {
       expect(isValidEditableData(getTemplate(template.id)?.defaultData)).toBe(true);
@@ -412,7 +420,10 @@ describe("production template registry", () => {
       "ace-barbers",
       "dream-home-discovery",
       "premium-dental-clinic",
-      "aquablast-pressure-wash"
+      "aquablast-pressure-wash",
+      "kidocare-daycare",
+      "adstik-tiktok-agency",
+      "mayfair-prestige-motors"
     ];
 
     for (const templateId of redesignedTemplateIds) {

@@ -142,6 +142,7 @@ export function TemplateCatalogCard({
         <div>
           <h2 className="text-base font-semibold text-ft-ink">{template.name}</h2>
           <p className="mt-1 text-xs text-ft-body">
+            {template.category ? `${template.category} • ` : ""}
             {minimumPlan === "free" ? "Free to customize" : `${PLANS[minimumPlan].name} plan`}
           </p>
         </div>

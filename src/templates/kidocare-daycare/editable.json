@@ -1,0 +1,300 @@
+{
+  "theme": {
+    "colors": {
+      "page": "#ffffff",
+      "section": "#fcfbf7",
+      "surface": "#f5f4ef",
+      "card": "#f5f4ef",
+      "cardBorder": "#e8e7e0",
+      "heading": "#000000",
+      "body": "#5a5753",
+      "muted": "#797773",
+      "accent": "#cff145",
+      "accentText": "#000000",
+      "badgePink": "#fb6668",
+      "badgeGreen": "#338942",
+      "badgePurple": "#d8a3f3",
+      "badgeOrange": "#fece80",
+      "bannerYellow": "#f4f6d1",
+      "bannerGrid": "#e4e8b8",
+      "dark": "#161616",
+      "darkText": "#ffffff",
+      "line": "#eceae2"
+    },
+    "typography": {
+      "heading": "\"Nunito\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "body": "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif"
+    }
+  },
+  "brand": {
+    "name": "Kidocare",
+    "descriptor": "Early Years & Daycare",
+    "phone": "020 8123 4567",
+    "email": "admissions@kidocare.co.uk",
+    "address": "14 Primrose Gardens, Richmond, London TW9 2LL",
+    "hours": "Monday – Friday: 7:30 AM – 6:30 PM",
+    "copyright": "© 2026 Kidocare Daycare & Nursery. All rights reserved."
+  },
+  "navigation": {
+    "links": [
+      { "label": "About", "href": "#kc-story" },
+      { "label": "Programs", "href": "#kc-programs" },
+      { "label": "Routine", "href": "#kc-routine" },
+      { "label": "Teachers", "href": "#kc-teachers" },
+      { "label": "FAQ", "href": "#kc-faq" }
+    ],
+    "phoneLabel": "020 8123 4567",
+    "phoneHref": "tel:02081234567",
+    "buttonLabel": "Schedule a Tour",
+    "buttonHref": "#kc-cta"
+  },
+  "hero": {
+    "stickerSafe": "Safe",
+    "stickerCare": "Care",
+    "stickerGuided": "Guided",
+    "title": "Trusted Child Care",
+    "subtitle": "A nurturing, joyful daycare and nursery where little learners discover, grow, and flourish through playful education.",
+    "buttonLabel": "Schedule a Tour",
+    "buttonHref": "#kc-cta",
+    "image": "/templates/kidocare-daycare/assets/hero-storytime.webp",
+    "imageAlt": "Early years educator reading a storybook to happy toddler children sitting on a soft rug",
+    "badgeTitle": "Enrol Your Child",
+    "badgeRating": "4.9",
+    "badgeStars": "★★★★★",
+    "badgeReviews": "150+ Happy Families"
+  },
+  "trust": {
+    "sticker": "Secure",
+    "title": "Built on Trust",
+    "subtitle": "Our foundational commitment to early years safety, certified teaching, and nurturing care.",
+    "items": [
+      {
+        "title": "Certified Teachers",
+        "description": "Qualified educators trained in early childhood development, paediatric first aid, and gentle guidance.",
+        "image": "/templates/kidocare-daycare/assets/trust-teachers.webp",
+        "imageAlt": "Qualified teacher guiding young children with story time"
+      },
+      {
+        "title": "Nutritious Meals",
+        "description": "Freshly prepared balanced hot meals and organic snacks cooked daily on-site by our dedicated chef.",
+        "image": "/templates/kidocare-daycare/assets/trust-meals.webp",
+        "imageAlt": "Healthy child meals and fresh fruit preparation"
+      },
+      {
+        "title": "Safe & Fun Facilities",
+        "description": "Child-proofed indoor learning suites and secure outdoor sensory gardens with 24/7 monitored access.",
+        "image": "/templates/kidocare-daycare/assets/trust-facilities.webp",
+        "imageAlt": "Children enjoying safe outdoor play area and playground equipment"
+      },
+      {
+        "title": "Enriched Play",
+        "description": "Creative arts, music circles, messy science, and foundation phonics that inspire natural curiosity.",
+        "image": "/templates/kidocare-daycare/assets/trust-curriculum.webp",
+        "imageAlt": "Children painting and doing creative hands-on arts and crafts"
+      }
+    ]
+  },
+  "story": {
+    "badge": "Who We Are",
+    "title": "Our Story",
+    "body": "We created our daycare to give children a nurturing, joyful start in life. Our dedicated team focuses on emotional support, playful learning, and structured routines that help children develop essential skills while feeling secure and inspired every single day.",
+    "buttonLabel": "More About Us",
+    "buttonHref": "#kc-programs",
+    "image": "/templates/kidocare-daycare/assets/story-classroom.webp",
+    "imageAlt": "Teacher helping toddler children build creative wooden block towers on the classroom rug"
+  },
+  "programs": {
+    "badge": "Playful",
+    "title": "Our Programs",
+    "description": "Age-tailored learning pathways designed to support each developmental milestone with joy.",
+    "buttonLabel": "Explore",
+    "buttonHref": "#kc-cta",
+    "items": [
+      {
+        "age": "0–1 Years",
+        "title": "Infant Care Program",
+        "description": "Gentle sensory exploration, cosy nap spaces, and responsive, loving attention for our youngest babies.",
+        "image": "/templates/kidocare-daycare/assets/program-infants.webp",
+        "imageAlt": "Infant playing with soft sensory learning toys"
+      },
+      {
+        "age": "2–3 Years",
+        "title": "Toddler Program",
+        "description": "Active discovery, speech building, fine motor play, and joyful group activities that foster early friendships.",
+        "image": "/templates/kidocare-daycare/assets/program-toddlers.webp",
+        "imageAlt": "Toddlers collaborating with colourful building blocks"
+      },
+      {
+        "age": "3–4 Years",
+        "title": "Preschool Program",
+        "description": "Children develop creativity, language, and social confidence through storytelling, numeracy, and playful learning.",
+        "image": "/templates/kidocare-daycare/assets/program-preschool.webp",
+        "imageAlt": "Preschool children engaging in group learning activities"
+      },
+      {
+        "age": "4–5 Years",
+        "title": "Pre-K & Club Prep",
+        "description": "Prepares children for primary school with early literacy, problem solving, independence, and after-school enrichment.",
+        "image": "/templates/kidocare-daycare/assets/program-afterschool.webp",
+        "imageAlt": "Children enjoying outdoor games and learning activities"
+      }
+    ]
+  },
+  "routine": {
+    "badge": "Secure",
+    "title": "Our Daily Routine",
+    "description": "A predictable yet flexible daily rhythm that fosters security, joy, and healthy development.",
+    "items": [
+      {
+        "time": "08:00 – 09:00 AM",
+        "title": "Morning Welcome",
+        "description": "Children arrive, greet their key educators, and begin the day with calming free play and friendly interactions that help them settle in comfortably."
+      },
+      {
+        "time": "09:30 – 11:30 AM",
+        "title": "Creative Play & Circle Time",
+        "description": "Engaging storytelling, music circles, sensory messy play, and early phonics learning designed to spark imagination and peer communication."
+      },
+      {
+        "time": "12:00 – 02:00 PM",
+        "title": "Nutritious Lunch & Rest",
+        "description": "A warm, balanced two-course lunch with friends, followed by peaceful sleep and quiet relaxation in our dimmed cosy rest rooms."
+      },
+      {
+        "time": "02:30 – 05:30 PM",
+        "title": "Garden Exploration & Pick-up",
+        "description": "Active outdoor discovery in the sensory garden, afternoon fruit snacks, group singing, and warm daily handover with parents."
+      }
+    ]
+  },
+  "teachers": {
+    "badge": "Trusted",
+    "title": "Meet Our Teachers",
+    "description": "Passionate, qualified early childhood specialists committed to giving your child the best start.",
+    "items": [
+      {
+        "name": "Daniel Carter",
+        "role": "Lead Preschool Teacher",
+        "bio": "Daniel, with 8 years in early education, boosts children's confidence, curiosity, and literacy through imaginative play.",
+        "image": "/templates/kidocare-daycare/assets/teacher-1.webp",
+        "imageAlt": "Daniel Carter, Lead Preschool Teacher"
+      },
+      {
+        "name": "Liam Anderson",
+        "role": "Child Development Expert",
+        "bio": "Liam supports children's emotional growth, communication, and social skills through engaging group activities and sensory art.",
+        "image": "/templates/kidocare-daycare/assets/teacher-2.webp",
+        "imageAlt": "Liam Anderson, Child Development Expert"
+      },
+      {
+        "name": "Ethan Walker",
+        "role": "Creative Learning Instructor",
+        "bio": "Ethan specialises in early phonics, music circles, and forest school outdoor learning that make every day an adventure.",
+        "image": "/templates/kidocare-daycare/assets/teacher-3.webp",
+        "imageAlt": "Ethan Walker, Creative Learning Instructor"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Parent Feedback",
+    "title": "The Best Choice For Our Kids",
+    "description": "Hear what parents say about their experience with our dedicated educators and warm community.",
+    "items": [
+      {
+        "quote": "Our son settled in way quicker than we thought! The teachers were incredibly patient at first and kept us in the loop with daily app updates, which really helped our family adjust to the new environment and feel completely at ease.",
+        "author": "Michael Turner",
+        "role": "Parent of Lucas (Age 3)",
+        "avatar": "/templates/kidocare-daycare/assets/parent-1.webp"
+      },
+      {
+        "quote": "We were amazed at how quickly our child felt at home. The balanced hot meals, creative arts, and attentive staff have given our daughter wonderful confidence and friendships that she talks about all evening.",
+        "author": "James Wilson",
+        "role": "Parent of Maya (Age 2)",
+        "avatar": "/templates/kidocare-daycare/assets/parent-2.webp"
+      },
+      {
+        "quote": "The preschool readiness curriculum has been fantastic. Our son has developed exceptional early reading, numbers, and emotional maturity. Kidocare is truly the warmest nursery in London.",
+        "author": "Emily Roberts",
+        "role": "Parent of Oliver (Age 4)",
+        "avatar": "/templates/kidocare-daycare/assets/parent-3.webp"
+      }
+    ]
+  },
+  "stats": {
+    "badge": "Guided",
+    "title": "Trusted by Families",
+    "description": "Parents trust us to create a safe, warm, and inspiring space where children feel valued and supported.",
+    "image": "/templates/kidocare-daycare/assets/trusted-families.webp",
+    "imageAlt": "Educator guiding young children with colourful crayons at a wooden learning table",
+    "counters": [
+      { "value": "10+", "label": "Years of Excellence" },
+      { "value": "35+", "label": "Qualified Teachers" },
+      { "value": "20+", "label": "Learning Activities" }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Have Questions?",
+    "description": "Everything you need to know about our admissions, routines, and policies.",
+    "items": [
+      {
+        "question": "What age groups do you accept for enrollment?",
+        "answer": "We warmly welcome children between the ages of 3 months and 5 years old. Our engaging rooms are thoughtfully tailored to support infant care, toddler exploration, and preschool school-readiness."
+      },
+      {
+        "question": "What are your regular operating hours and drop-off times?",
+        "answer": "We operate Monday through Friday from 7:30 AM to 6:30 PM year-round, with flexible full-day and morning/afternoon session options available to suit busy working families."
+      },
+      {
+        "question": "What are your staff-to-child ratios and safety standards?",
+        "answer": "We strictly adhere to and exceed UK EYFS ratios (1:3 for babies under 2, 1:4 for toddlers aged 2-3, and 1:8 for preschool). All staff are Enhanced DBS checked and Paediatric First Aid certified."
+      },
+      {
+        "question": "What meals and dietary requirements do you cater for?",
+        "answer": "Our on-site chef prepares balanced, fresh two-course hot meals and nutritious snacks daily. We gladly cater for all allergies, intolerances, halal, vegetarian, and vegan requirements."
+      },
+      {
+        "question": "Do you accept government childcare funding and tax-free vouchers?",
+        "answer": "Yes! We accept the 15 and 30-hour government funded childcare schemes for eligible 9-month to 4-year-olds, Tax-Free Childcare, and employer childcare vouchers."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Tour",
+    "title": "Ready to Get Started!",
+    "subtitle": "Book a personalised in-person visit to explore our classrooms and meet our warm teaching team.",
+    "buttonLabel": "Schedule a Tour",
+    "buttonHref": "mailto:admissions@kidocare.co.uk",
+    "image": "/templates/kidocare-daycare/assets/cta-child.webp",
+    "imageAlt": "Happy child smiling excitedly and cheering",
+    "speechText": "Join our learning family!"
+  },
+  "footer": {
+    "brandName": "Kidocare",
+    "tagline": "Nurturing curious minds and joyful early learners with warmth, safety, and inspired education.",
+    "programsTitle": "Programs",
+    "programsLinks": [
+      { "label": "Infant Care Room", "href": "#kc-programs" },
+      { "label": "Toddler Program", "href": "#kc-programs" },
+      { "label": "Preschool Prep", "href": "#kc-programs" },
+      { "label": "Holiday & Clubs", "href": "#kc-programs" }
+    ],
+    "exploreTitle": "Explore",
+    "exploreLinks": [
+      { "label": "Our Story", "href": "#kc-story" },
+      { "label": "Daily Routine", "href": "#kc-routine" },
+      { "label": "Meet Teachers", "href": "#kc-teachers" },
+      { "label": "Parent Reviews", "href": "#kc-testimonials" },
+      { "label": "FAQ", "href": "#kc-faq" }
+    ],
+    "contactTitle": "Visit Us",
+    "contactLines": [
+      "14 Primrose Gardens, Richmond",
+      "London TW9 2LL",
+      "Phone: 020 8123 4567",
+      "admissions@kidocare.co.uk",
+      "Mon–Fri: 7:30 AM – 6:30 PM"
+    ],
+    "copyright": "© 2026 Kidocare Early Years & Daycare. All rights reserved."
+  }
+}

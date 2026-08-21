@@ -1,0 +1,314 @@
+{
+  "brand": {
+    "name": "PulseTik",
+    "shortName": "PulseTik",
+    "logo": "/templates/adstik-tiktok-agency/assets/tiktok-3d-badge.png",
+    "logoAlt": "PulseTik TikTok Agency Logo",
+    "email": "hello@pulsetik.co.uk",
+    "emailHref": "mailto:hello@pulsetik.co.uk",
+    "phone": "+44 20 7946 0928",
+    "phoneHref": "tel:+442079460928",
+    "address": "74 Great Eastern Street, Shoreditch, London EC2A 3JG",
+    "strapline": "UK's premier viral TikTok advertising and creator growth agency."
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Why Us", "href": "#why-tiktok" },
+      { "label": "Works", "href": "#works" },
+      { "label": "Approach", "href": "#approach" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "ctaLabel": "Get Started",
+    "ctaHref": "#contact"
+  },
+  "hero": {
+    "badge": "⚡ UK's Leading TikTok Growth Partner",
+    "titlePrefix": "TikTok",
+    "titleMid": "Ads",
+    "titleTag": "#",
+    "titleSuffix": "that Go Viral",
+    "description": "We craft high-performing TikTok campaigns that capture attention, stop the scroll, and turn viral reach into measurable revenue for ambitious UK brands.",
+    "primaryCta": { "label": "Get Free Proposal", "href": "#contact" },
+    "heroImage": "/templates/adstik-tiktok-agency/assets/hero-creator-headphones.png",
+    "heroImageAlt": "Creative producer with headphones holding smartphone",
+    "statValue": "25M+",
+    "statLabel": "Views Generated",
+    "impressionValue": "10x",
+    "impressionLabel": "Impressions",
+    "avatarLabel": "Join 250K+ Creators",
+    "avatarCount": "6k+",
+    "avatarImages": [
+      "/templates/adstik-tiktok-agency/assets/avatar-creator-1.png",
+      "/templates/adstik-tiktok-agency/assets/avatar-creator-2.png",
+      "/templates/adstik-tiktok-agency/assets/avatar-creator-3.png"
+    ]
+  },
+  "ticker1": {
+    "items": ["Trusted", "Loved", "Viral", "High ROAS", "Creative First", "Rapid Scaling", "TikTok Pros"]
+  },
+  "services": {
+    "badge": "HOW WE CAN HELP YOU",
+    "title": "Our TikTok Growth Solutions",
+    "items": [
+      {
+        "title": "TikTok Creator Campaigns",
+        "description": "Drive high-trust sales with bespoke UK influencer partnerships, organic scripting, and authentic native creator production.",
+        "image": "/templates/adstik-tiktok-agency/assets/service-spiral-3d.png",
+        "imageAlt": "3D colorful spiral icon"
+      },
+      {
+        "title": "TikTok Paid Ads Management",
+        "description": "Scale your revenue with full-funnel media buying, rigorous creative A/B testing, and real-time ROAS optimization.",
+        "image": "/templates/adstik-tiktok-agency/assets/service-cursor-3d.png",
+        "imageAlt": "3D neon yellow cursor pointer"
+      },
+      {
+        "title": "Viral UGC Video Production",
+        "description": "Studio-grade vertical video production, high-velocity hook engineering, and rapid cutdowns tailored to TikTok's algorithm.",
+        "image": "/templates/adstik-tiktok-agency/assets/service-layers-3d.png",
+        "imageAlt": "3D stacked layers creative icon"
+      }
+    ]
+  },
+  "whyTiktok": {
+    "badge": "WHY TIKTOK",
+    "title": "Why Advertise On TikTok",
+    "description": "TikTok is the UK's fastest-growing shopping and discovery platform. We unlock its full revenue potential with creative strategies built specifically for TikTok's native audience.",
+    "checklist": [
+      "Reach hyper-engaged Gen-Z and Millennial buyers ready to purchase",
+      "3.4x higher engagement rates compared to traditional social feeds",
+      "Rapid creative iteration with our proprietary 3-second hook testing",
+      "Full attribution transparency and measurable return on ad spend"
+    ],
+    "cta": { "label": "Start A Campaign", "href": "#contact" },
+    "image": "/templates/adstik-tiktok-agency/assets/why-creator-coffee.png",
+    "imageAlt": "Creator with coffee and smartphone on TikTok",
+    "likesBadge": "1.2M Likes",
+    "sharesBadge": "48K Shares",
+    "torusImage": "/templates/adstik-tiktok-agency/assets/why-torus-ring-3d.png"
+  },
+  "showcase": {
+    "badge": "OUR WORK",
+    "title": "PulseTik Selected Ads",
+    "subtitle": "Explore our latest viral client campaigns that generated millions of views and massive 6-figure revenue spikes.",
+    "ctaLabel": "See Case Studies",
+    "ctaHref": "#contact",
+    "items": [
+      {
+        "title": "Streetwear Viral Drop",
+        "client": "@urbanhype.uk",
+        "views": "4.2M Views",
+        "roas": "5.6x ROAS",
+        "image": "/templates/adstik-tiktok-agency/assets/showcase-card-streetwear.jpg",
+        "imageAlt": "TikTok ad creative showcasing streetwear model"
+      },
+      {
+        "title": "Artisan Smash Burgers",
+        "client": "@stackhouse.london",
+        "views": "8.5M Views",
+        "roas": "6.8x ROAS",
+        "image": "/templates/adstik-tiktok-agency/assets/showcase-card-burger.jpg",
+        "imageAlt": "TikTok ad creative showcasing gourmet burger"
+      },
+      {
+        "title": "Futuristic Audio & Style",
+        "client": "@auralux.uk",
+        "views": "6.1M Views",
+        "roas": "4.9x ROAS",
+        "image": "/templates/adstik-tiktok-agency/assets/showcase-card-fashion.png",
+        "imageAlt": "TikTok ad creative showcasing tech and fashion model"
+      }
+    ]
+  },
+  "approach": {
+    "badge": "OUR PROCESS",
+    "title": "Our Approach",
+    "items": [
+      {
+        "title": "Massive Global Reach",
+        "description": "Expand your market across the UK, Europe, and beyond with localized demographic targeting and cultural hooks.",
+        "image": "/templates/adstik-tiktok-agency/assets/approach-lightbulb-3d.png",
+        "imageAlt": "3D lightbulb and dialogue bubble"
+      },
+      {
+        "title": "From Plan To Product",
+        "description": "Turn raw product propositions into viral scripting, high-converting storyboards, and polished native video assets.",
+        "image": "/templates/adstik-tiktok-agency/assets/approach-venn-diagram.png",
+        "imageAlt": "Orbital Venn diagram strategy visual"
+      },
+      {
+        "title": "Powered By Insight",
+        "description": "Continuous algorithmic analysis, trend forecasting, and behavioral data to engineer hooks that capture instant attention.",
+        "image": "/templates/adstik-tiktok-agency/assets/approach-analytics-3d.png",
+        "imageAlt": "3D analytics user dashboard"
+      },
+      {
+        "title": "Delivering Better Outcomes",
+        "description": "Relentless multivariate testing on hooks, soundbeds, and CTAs to consistently drive down cost-per-acquisition.",
+        "image": "/templates/adstik-tiktok-agency/assets/approach-roller-3d.png",
+        "imageAlt": "3D modern geometric design sculpture"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "CLIENT SUCCESS",
+    "title": "They Grew. You Can Too",
+    "items": [
+      {
+        "quote": "PulseTik transformed our e-commerce performance. Our TikTok ad revenue jumped 280% within the first 60 days of partnering with them.",
+        "name": "Marcus Vance",
+        "role": "Founder, PeakForm UK",
+        "avatar": "/templates/adstik-tiktok-agency/assets/testimonial-client-1.png",
+        "avatarAlt": "Marcus Vance",
+        "tone": "amber"
+      },
+      {
+        "quote": "The UGC creators they sourced were top-tier. We generated over 4.5 million organic views and cut our customer acquisition cost by 40%.",
+        "name": "David Chen",
+        "role": "Head of Growth, Solaria Health",
+        "avatar": "/templates/adstik-tiktok-agency/assets/testimonial-client-2.png",
+        "avatarAlt": "David Chen",
+        "tone": "teal"
+      },
+      {
+        "quote": "Hands down the most creative and data-obsessed team in London. They make TikTok advertising seamless and highly profitable.",
+        "name": "Liam O'Connor",
+        "role": "CMO, Nova Streetwear",
+        "avatar": "/templates/adstik-tiktok-agency/assets/testimonial-client-3.png",
+        "avatarAlt": "Liam O'Connor",
+        "tone": "blue"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "GOT QUESTIONS?",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How is TikTok advertising different from Meta & Instagram?",
+        "answer": "TikTok is an interest-based, entertainment-first engine where native, authentic creative outperforms polished corporate ads. Our campaigns leverage TikTok-specific trends, hooks, and sound design to achieve superior engagement and lower CPA."
+      },
+      {
+        "question": "What is the recommended monthly ad budget to start?",
+        "answer": "We typically work with brands ready to invest at least £2,500 to £5,000 per month in ad spend to allow sufficient statistical significance during rapid creative testing."
+      },
+      {
+        "question": "Do you handle all creator sourcing and video editing?",
+        "answer": "Yes. We manage the end-to-end process: creator sourcing, briefing, scriptwriting, filming direction, dynamic subtitles, audio licensing, and high-velocity iteration."
+      },
+      {
+        "question": "How quickly can we launch our first campaign?",
+        "answer": "From onboarding to campaign launch usually takes between 7 to 10 working days, including initial creative scripting and creator matching."
+      },
+      {
+        "question": "How do you track conversions and measure ROAS?",
+        "answer": "We install the TikTok Pixel alongside server-side Events API (CAPI) and third-party attribution tools (Triple Whale, Northbeam) to provide 100% transparent real-time reporting."
+      },
+      {
+        "question": "Can you collaborate with our in-house creative team?",
+        "answer": "Absolutely. We often act as the dedicated TikTok growth wing, providing creative strategy, hooks, and performance media buying while collaborating closely with in-house designers."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "badge": "READY TO SCALE?",
+    "title": "Scale Your Brand With Us",
+    "description": "Ready to turn viral TikTok attention into predictable, scalable revenue? Let's build your brand's growth roadmap today.",
+    "button": { "label": "Let's Talk", "href": "#contact" }
+  },
+  "proposal": {
+    "badge": "LET'S COLLABORATE",
+    "title": "Request a Proposal",
+    "subtitle": "Tell us about your brand and growth ambitions. We will review your TikTok profile and send a bespoke growth audit within 24 hours.",
+    "budgetOptions": ["£2.5k - £5k", "£5k - £15k", "£15k - £50k", "£50k+"],
+    "submitLabel": "Get Free Proposal",
+    "confidentialNotice": "🔒 100% confidential. No spam or pressure, ever."
+  },
+  "ticker2": {
+    "items": ["TIKTOK AD PROS", "VIRAL CAMPAIGNS", "HIGH CONVERSIONS", "UK CREATIVE STUDIO", "SCALABLE ROAS"]
+  },
+  "footer": {
+    "logo": "/templates/adstik-tiktok-agency/assets/tiktok-3d-badge.png",
+    "logoAlt": "PulseTik Logo",
+    "description": "PulseTik is London's premier TikTok advertising and viral creator growth agency, scaling direct-to-consumer and modern brands.",
+    "navTitle": "Navigation",
+    "navLinks": [
+      { "label": "Home", "href": "#top" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Why TikTok", "href": "#why-tiktok" },
+      { "label": "Our Works", "href": "#works" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "servicesTitle": "Growth Solutions",
+    "serviceLinks": [
+      { "label": "TikTok Paid Ads", "href": "#services" },
+      { "label": "Creator & UGC Production", "href": "#services" },
+      { "label": "Viral Creative Strategy", "href": "#services" },
+      { "label": "Influencer Partnerships", "href": "#services" },
+      { "label": "Full-Funnel Management", "href": "#services" }
+    ],
+    "contactTitle": "Contact Us",
+    "contactAddress": "74 Great Eastern St, London EC2A 3JG",
+    "contactEmail": "hello@pulsetik.co.uk",
+    "contactPhone": "+44 20 7946 0928",
+    "newsletterTitle": "Stay In The Loop",
+    "newsletterDescription": "Get our weekly breakdown of trending TikTok sounds, hooks, and high-performing ad creatives.",
+    "copyright": "© 2026 PulseTik Media Ltd. All Rights Reserved.",
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Terms of Service", "href": "#terms" },
+      { "label": "Cookie Policy", "href": "#cookies" }
+    ],
+    "socials": [
+      { "name": "TikTok", "href": "https://tiktok.com" },
+      { "name": "Instagram", "href": "https://instagram.com" },
+      { "name": "YouTube", "href": "https://youtube.com" },
+      { "name": "LinkedIn", "href": "https://linkedin.com" },
+      { "name": "X", "href": "https://x.com" }
+    ]
+  },
+  "colors": {
+    "pageBackground": "#0b0416",
+    "pageBackgroundLight": "#ffffff",
+    "surface": "#15092a",
+    "surfaceSoft": "#1d0e3a",
+    "surfaceLight": "#f7f7f9",
+    "headingText": "#ffffff",
+    "bodyText": "#c8c4d6",
+    "mutedText": "#9890ad",
+    "textDark": "#0e061c",
+    "textDarkMuted": "#505050",
+    "accentPurple": "#7c3aed",
+    "accentPurpleGradient": "linear-gradient(98deg, #9658ff 0%, #550fcd 100%)",
+    "accentYellow": "#f9ff4c",
+    "accentYellowHover": "#e6ec35",
+    "accentPink": "#ff57ee",
+    "buttonPrimaryBg": "#f9ff4c",
+    "buttonPrimaryText": "#0e061c",
+    "buttonDarkBg": "#110624",
+    "buttonDarkText": "#ffffff",
+    "borderDark": "rgba(255, 255, 255, 0.12)",
+    "borderLight": "#e5e7eb",
+    "tickerBg": "#550fcd",
+    "footerBg": "#07020e",
+    "footerText": "#ffffff"
+  },
+  "typography": {
+    "headingFont": "var(--font-heading, 'Inter', sans-serif)",
+    "bodyFont": "var(--font-body, 'Inter', sans-serif)",
+    "accentFont": "var(--font-heading, 'Inter', sans-serif)"
+  },
+  "_editor": {
+    "pages": {
+      "items": [
+        { "id": "home", "title": "Home", "navLabel": "Home", "slug": "", "home": true, "hidden": false, "seoTitle": "PulseTik | Viral TikTok Ads Agency London", "seoDescription": "UK's premier TikTok advertising and viral creator growth agency." },
+        { "id": "services", "title": "Services", "navLabel": "Services", "slug": "services", "home": false, "hidden": false, "seoTitle": "TikTok Growth Services | PulseTik", "seoDescription": "Paid TikTok ad management, UGC creator campaigns, and viral creative production." },
+        { "id": "works", "title": "Works", "navLabel": "Works", "slug": "works", "home": false, "hidden": false, "seoTitle": "Case Studies | PulseTik", "seoDescription": "See how we scaled UK e-commerce and DTC brands on TikTok." },
+        { "id": "contact", "title": "Contact", "navLabel": "Contact", "slug": "contact", "home": false, "hidden": false, "seoTitle": "Request a Proposal | PulseTik", "seoDescription": "Get your custom TikTok growth roadmap and proposal." }
+      ]
+    }
+  }
+}

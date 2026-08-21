@@ -1,0 +1,16 @@
+{
+  "id": "adstik-tiktok-agency",
+  "name": "PulseTik TikTok Agency",
+  "description": "A high-impact viral TikTok ad agency template with dynamic hero graphics, 3D floating badges, service cards, showcase video stack, 4-step framework, client testimonials, and proposal form.",
+  "category": "Business",
+  "image": "/templates/adstik-tiktok-agency.webp",
+  "previewImages": [
+    "/templates/adstik-tiktok-agency.webp"
+  ],
+  "features": [
+    "Editable agency branding, logo, navigation, copy, images, buttons, services, showcase, testimonials, FAQs, and proposal form",
+    "Vibrant purple, magenta, and neon yellow visual identity with 3D elements",
+    "Fully responsive on desktop, tablet, and mobile with animated mobile menu",
+    "Interactive FAQ accordion and proposal budget selector"
+  ]
+}

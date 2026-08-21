@@ -1,0 +1,20 @@
+{
+  "id": "kidocare-daycare",
+  "name": "Kidocare Child Care",
+  "description": "A cheerful, high-trust nursery and early years childcare template featuring rounded typography, organic card masks, age-grouped programs, daily routine schedules, teacher spotlights, parent reviews, interactive FAQ, and tour booking CTA.",
+  "category": "Education",
+  "image": "/templates/kidocare-daycare.webp",
+  "previewImages": [
+    "/templates/kidocare-daycare.webp"
+  ],
+  "features": [
+    "Editable logo, navigation links, hero storytime image, and headline stickers",
+    "Interactive 'Built on Trust' values with organic mask illustrations",
+    "Age-specific curriculum programs with tag filters and smooth carousel/grid",
+    "Daily routine schedule timeline from morning welcome to family pick-up",
+    "Educator team profiles with organic backdrop shapes and qualifications",
+    "Interactive parent testimonials and real-time review ratings",
+    "Accordion FAQ and vibrant tour booking banner with playful child cutout",
+    "Scoped CSS with original theme tokens and zero global style leakage"
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "theme": {
+    "palette": "original",
+    "colors": {
+      "page": "#ffffff",
+      "section": "#f5f8fb",
+      "surface": "#ffffff",
+      "card": "#ffffff",
+      "heading": "#0f0f0f",
+      "body": "#2f2f2f",
+      "muted": "#6d6d6d",
+      "accent": "#0454ff",
+      "accentSecondary": "#052927",
+      "buttonPrimary": "#0454ff",
+      "buttonPrimaryText": "#ffffff",
+      "buttonSecondary": "transparent",
+      "buttonSecondaryText": "#0454ff",
+      "buttonSecondaryBorder": "#0454ff",
+      "link": "#0454ff",
+      "icon": "#0454ff",
+      "border": "#e0e7fe",
+      "headerBg": "#ffffff",
+      "headerText": "#0f0f0f",
+      "footerBg": "#052927",
+      "footerText": "#ffffff"
+    }
+  },
+  "brand": {
+    "name": "Dentara",
+    "tagline": "Dentist & Dental Clinic",
+    "badge": "Top-Notch Healthcare",
+    "phone": "+44 (0)20 7946 0892",
+    "phoneHref": "tel:+442079460892",
+    "email": "appointments@dentara-clinic.co.uk",
+    "emailHref": "mailto:appointments@dentara-clinic.co.uk",
+    "address": "42 Harley Street, Marylebone, London W1G 9PR",
+    "hours": "Mon – Fri: 8:00 AM – 7:00 PM | Sat: 9:00 AM – 4:00 PM"
+  },
+  "navigation": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Why Us", "href": "#why-us" },
+      { "label": "Results", "href": "#results" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "button": {
+      "label": "Book Appointment",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "badge": "Dental Healthcare Clinic",
+    "title": "Top-Notch Dental Care For Awesome Smiles",
+    "subtitle": "Experience gentle, award-winning dentistry tailored to your family in London. From routine hygiene to complete smile makeovers, our modern clinic is here for you.",
+    "primaryCta": {
+      "label": "Book Consultation",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "Explore Services",
+      "href": "#services"
+    },
+    "ratingScore": "4.9/5",
+    "ratingLabel": "120K+ Patient Reviews",
+    "statYears": "19+",
+    "statLabel": "Years Clinical Excellence",
+    "image": "/templates/dentara-dental-clinic/hero-dentist.png",
+    "imageAlt": "Dentara dental clinic specialist smiling warmly"
+  },
+  "about": {
+    "badge": "WHO WE ARE",
+    "title": "What Sets Our Dental Practice Apart?",
+    "description": "We deliver trusted, gentle dental care focused on patient comfort, precision digital diagnostics, and long-lasting healthy smiles for every generation.",
+    "image": "/templates/dentara-dental-clinic/about-clinic.jpg",
+    "imageAlt": "Dentist examining patient in modern London dental surgery",
+    "heading": "Modern Dentistry for Every Smile",
+    "points": [
+      { "text": "Personalised treatment plans tailored to your goals" },
+      { "text": "Comfortable, anxiety-free and pain-free process" },
+      { "text": "Certified specialist dentists and implantologists" },
+      { "text": "Advanced digital 3D imaging and diagnostics" }
+    ],
+    "cta": {
+      "label": "Learn More About Us",
+      "href": "#services"
+    }
+  },
+  "experience": {
+    "badge": "OUR EXPERIENCE",
+    "title": "Benefits You Receive with Dentara",
+    "subtitle": "We provide advanced dental treatments designed for confidence, comfort, and lasting oral wellness.",
+    "items": [
+      {
+        "icon": "user",
+        "title": "Personalised Dental Care",
+        "description": "Receive bespoke treatments designed for your unique smile goals and long-term oral health needs."
+      },
+      {
+        "icon": "shield",
+        "title": "Advanced 3D Technology",
+        "description": "Modern intraoral scanners and low-radiation 3D diagnostics ensure safe, accurate, and gentle treatments."
+      },
+      {
+        "icon": "sparkles",
+        "title": "Comfortable Experience",
+        "description": "Enjoy relaxed, stress-free dental care with a gentle, patient-first approach and calm environment."
+      }
+    ],
+    "bannerImage": "/templates/dentara-dental-clinic/experience-tech.jpg",
+    "bannerImageAlt": "Dental clinicians reviewing 3D scan on digital monitor"
+  },
+  "services": {
+    "badge": "OUR SERVICES",
+    "title": "Comprehensive Dental Treatments Under One Roof",
+    "description": "We offer a full range of specialist dental services designed to protect oral health, restore function, and craft beautiful smiles.",
+    "cta": {
+      "label": "View All Services",
+      "href": "#contact"
+    },
+    "items": [
+      {
+        "title": "General & Preventative Dentistry",
+        "description": "Routine dental examinations, hygiene scaling, tooth fillings, and preventative care for all ages.",
+        "image": "/templates/dentara-dental-clinic/service-general.jpg",
+        "imageAlt": "General dentistry checkup and clean",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      },
+      {
+        "title": "Cosmetic Dentistry & Veneers",
+        "description": "Custom handcrafted porcelain veneers, composite bonding, and digital smile design makeovers.",
+        "image": "/templates/dentara-dental-clinic/service-cosmetic.jpg",
+        "imageAlt": "Cosmetic dentistry veneers smile consultation",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      },
+      {
+        "title": "Clear Aligners & Orthodontics",
+        "description": "Discreet teeth straightening with custom clear aligners for teenagers and adults with fast results.",
+        "image": "/templates/dentara-dental-clinic/service-ortho.jpg",
+        "imageAlt": "Clear orthodontic aligners on dental model",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      },
+      {
+        "title": "Dental Implants & Restorations",
+        "description": "Permanent tooth replacement solutions with high-precision titanium implants, crowns, and bridges.",
+        "image": "/templates/dentara-dental-clinic/service-implants.jpg",
+        "imageAlt": "Dental implant restoration model",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      },
+      {
+        "title": "Root Canal & Restorative Care",
+        "description": "Gentle, microscopically-guided endodontic therapy designed to save natural teeth comfortably.",
+        "image": "/templates/dentara-dental-clinic/service-rootcanal.jpg",
+        "imageAlt": "Gentle root canal therapy in modern dental clinic",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      },
+      {
+        "title": "Teeth Whitening & Laser Hygiene",
+        "description": "Same-day in-clinic laser teeth whitening and air-polishing hygiene sessions for a sparkling smile.",
+        "image": "/templates/dentara-dental-clinic/service-whitening.jpg",
+        "imageAlt": "Laser teeth whitening treatment session",
+        "buttonLabel": "Learn More",
+        "buttonHref": "#contact"
+      }
+    ]
+  },
+  "features": {
+    "badge": "WHY CHOOSE DENTARA",
+    "title": "Trusted Dental Care for the Whole Family",
+    "subtitle": "We offer reliable, evidence-based dental solutions designed to improve comfort, confidence, and lasting oral health.",
+    "items": [
+      {
+        "icon": "clipboard",
+        "title": "Bespoke Treatment Plans",
+        "description": "Receive customised treatment plans tailored to your unique dental anatomy and smile goals."
+      },
+      {
+        "icon": "cpu",
+        "title": "Dental Tech Innovations",
+        "description": "We utilize 3D intraoral scanners and digital x-rays for precise, pain-free diagnosis."
+      },
+      {
+        "icon": "heart",
+        "title": "Pleasant Patient Experience",
+        "description": "Enjoy a stress-free dental environment focused on your personal comfort and care."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Preventive Oral Health",
+        "description": "Protect teeth and gums with thorough regular screenings, deep cleans, and preventive guidance."
+      },
+      {
+        "icon": "sparkle",
+        "title": "Smile Enhancement",
+        "description": "Boost your confidence with whitening, veneers, and advanced cosmetic makeovers."
+      },
+      {
+        "icon": "clock",
+        "title": "Same-Day Emergency Support",
+        "description": "Prompt, reassuring clinical care whenever urgent dental pain or chipped teeth occur."
+      }
+    ]
+  },
+  "results": {
+    "badge": "PROVEN RESULTS",
+    "title": "Inspiring Radiant, Healthy Smiles Forever",
+    "description": "Take care of your smile and look great doing it! Enjoy safe, modern, personalised care for a brighter, healthier you with our proven cosmetic treatments.",
+    "cta": {
+      "label": "Book Smile Consultation",
+      "href": "#contact"
+    },
+    "beforeLabel": "Before Treatment",
+    "afterLabel": "After Treatment",
+    "image": "/templates/dentara-dental-clinic/smile-before-after.jpg",
+    "imageAlt": "Before and after cosmetic teeth whitening results"
+  },
+  "team": {
+    "badge": "OUR SPECIALISTS",
+    "title": "Meet Our Dental Team",
+    "subtitle": "Skilled, compassionate dentists and specialists dedicated to delivering trusted clinical excellence every day.",
+    "members": [
+      {
+        "name": "Dr. Arthur J. Finch",
+        "role": "Principal Dental Surgeon",
+        "qualifications": "BDS (Lon), MSc Implantology",
+        "image": "/templates/dentara-dental-clinic/doctor-1.jpg",
+        "imageAlt": "Dr. Arthur J. Finch - Principal Dental Surgeon"
+      },
+      {
+        "name": "Dr. Sarah Jenkins",
+        "role": "Cosmetic Dental Specialist",
+        "qualifications": "BDS, Aesthetic Dentistry Lead",
+        "image": "/templates/dentara-dental-clinic/doctor-2.jpg",
+        "imageAlt": "Dr. Sarah Jenkins - Cosmetic Dental Specialist"
+      },
+      {
+        "name": "Dr. Marcus Stone",
+        "role": "Specialist Orthodontist",
+        "qualifications": "MSc Ortho, Clear Aligner Provider",
+        "image": "/templates/dentara-dental-clinic/doctor-3.webp",
+        "imageAlt": "Dr. Marcus Stone - Specialist Orthodontist"
+      },
+      {
+        "name": "Dr. Amara Patel",
+        "role": "Periodontist & Gum Specialist",
+        "qualifications": "BDS, MClinDent Periodontology",
+        "image": "/templates/dentara-dental-clinic/doctor-4.webp",
+        "imageAlt": "Dr. Amara Patel - Periodontist"
+      },
+      {
+        "name": "Dr. Owen Brooks",
+        "role": "Dental Implant Specialist",
+        "qualifications": "DDS, Restorative & Implant Lead",
+        "image": "/templates/dentara-dental-clinic/doctor-5.webp",
+        "imageAlt": "Dr. Owen Brooks - Dental Implant Specialist"
+      },
+      {
+        "name": "Dr. Leah Morris",
+        "role": "Paediatric & Family Dentist",
+        "qualifications": "BDS (Hons), Children's Oral Health",
+        "image": "/templates/dentara-dental-clinic/doctor-6.webp",
+        "imageAlt": "Dr. Leah Morris - Paediatric Dentist"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "PATIENT FEEDBACK",
+    "title": "Trusted by Thousands of Happy Patients",
+    "subtitle": "Patients trust our expert dental care, friendly support, and comfortable treatments for healthier smiles.",
+    "items": [
+      {
+        "quote": "Dentara completely changed my dental experience. The implant surgery was entirely pain-free and the staff were wonderful throughout.",
+        "author": "Robert Fox",
+        "role": "Local Resident / School Teacher",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-1.webp",
+        "procedure": "Dental Implants"
+      },
+      {
+        "quote": "I finished my clear aligners in just 6 months. The digital 3D scans made the journey seamless without messy impressions!",
+        "author": "Olivia Miller",
+        "role": "Fitness Coach",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-2.webp",
+        "procedure": "Clear Aligners"
+      },
+      {
+        "quote": "The warmest, most professional clinic in Marylebone. My children love coming here for their checkups because the staff are so gentle.",
+        "author": "Jane Cooper",
+        "role": "Mother of Two / Homemaker",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-3.webp",
+        "procedure": "Family Dentistry"
+      },
+      {
+        "quote": "I broke a tooth on Friday evening and they saw me on Saturday morning for emergency repair. Fantastic service and craftsmanship.",
+        "author": "Albert Flores",
+        "role": "University Lecturer",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-4.webp",
+        "procedure": "Emergency Care"
+      },
+      {
+        "quote": "The teeth whitening results exceeded all my expectations. Five shades lighter in one 60-minute session with zero sensitivity.",
+        "author": "Theresa Webb",
+        "role": "Corporate Manager",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-5.webp",
+        "procedure": "Teeth Whitening"
+      },
+      {
+        "quote": "From reception to surgery, every step was explained with calm clarity. You feel in the safest possible hands at Dentara.",
+        "author": "Emma Roman",
+        "role": "Software Engineer",
+        "rating": 5,
+        "avatar": "/templates/dentara-dental-clinic/avatar-6.webp",
+        "procedure": "Cosmetic Veneers"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQS",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Clear answers to common questions about dental treatments, appointments, insurance, and aftercare.",
+    "contactPrompt": "Have a specific question not covered here? Speak directly with our friendly reception team.",
+    "contactCta": {
+      "label": "Get in Touch with Us",
+      "href": "#contact"
+    },
+    "items": [
+      {
+        "question": "How often should I visit the dentist for a check-up and clean?",
+        "answer": "We recommend visiting every 6 months for a routine examination and professional hygiene cleaning. Regular check-ups help catch minor issues before they become complex and keep your teeth healthy."
+      },
+      {
+        "question": "Do you offer cosmetic dental treatments and smile makeovers?",
+        "answer": "Yes, we provide a full range of aesthetic dental treatments including custom porcelain veneers, composite bonding, professional laser teeth whitening, and discreet clear aligners."
+      },
+      {
+        "question": "Is in-clinic teeth whitening safe for sensitive teeth?",
+        "answer": "Absolutely. Our clinic uses advanced, enamel-safe whitening systems formulated with desensitising agents to protect your enamel and minimise sensitivity while delivering fast results."
+      },
+      {
+        "question": "Do you provide same-day emergency dental appointments?",
+        "answer": "Yes, we reserve daily slots specifically for dental emergencies, such as acute toothaches, chipped or knocked-out teeth, and lost crowns. Call our direct helpline for immediate assistance."
+      },
+      {
+        "question": "What payment methods and dental financing do you accept?",
+        "answer": "We accept all major debit and credit cards, Apple Pay, private dental insurance, and flexible 0% interest monthly payment plans to spread the cost of larger treatments."
+      },
+      {
+        "question": "What happens during my initial consultation?",
+        "answer": "Your first visit includes a comprehensive oral exam, digital intraoral 3D scan, low-radiation digital x-rays, periodontal gum screening, and a personalised discussion of treatment options."
+      }
+    ]
+  },
+  "booking": {
+    "badge": "CONTACT US",
+    "title": "Get Your Best Smile Yet!",
+    "subtitle": "Empowering Healthy Smiles Through Expert Care for Your Family.",
+    "description": "Whether you need routine dental care or a complete smile transformation, our team is ready to help you achieve confident, healthy teeth.",
+    "image": "/templates/dentara-dental-clinic/contact-clinic.jpg",
+    "imageAlt": "Dentara dental clinic welcoming reception",
+    "formTitle": "Send us a message",
+    "formSubtitle": "Fill in your details and our team will get back to you within 24 hours.",
+    "formFields": {
+      "namePlaceholder": "Full Name",
+      "emailPlaceholder": "Email Address",
+      "phonePlaceholder": "Phone Number",
+      "servicePlaceholder": "Select Treatment Required",
+      "messagePlaceholder": "How can we help you?",
+      "submitButton": "Send Message"
+    },
+    "servicesOptions": [
+      "General Consultation & Checkup",
+      "Teeth Whitening & Hygiene",
+      "Cosmetic Veneers & Bonding",
+      "Clear Aligners & Orthodontics",
+      "Dental Implants & Restorations",
+      "Emergency Dental Assistance"
+    ]
+  },
+  "footer": {
+    "description": "We offer exceptional dental care with a friendly touch to help you showcase your brightest, healthiest smile!",
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": [
+      { "label": "About Us", "href": "#about" },
+      { "label": "Our Services", "href": "#services" },
+      { "label": "Dental Team", "href": "#team" },
+      { "label": "Testimonials", "href": "#reviews" },
+      { "label": "FAQs", "href": "#faq" }
+    ],
+    "treatmentsTitle": "Treatments",
+    "treatments": [
+      { "label": "General Dentistry", "href": "#services" },
+      { "label": "Cosmetic Makeovers", "href": "#services" },
+      { "label": "Clear Aligners", "href": "#services" },
+      { "label": "Dental Implants", "href": "#services" },
+      { "label": "Laser Teeth Whitening", "href": "#services" }
+    ],
+    "contactTitle": "Contact Clinic",
+    "copyright": "© 2026 Dentara Dental Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

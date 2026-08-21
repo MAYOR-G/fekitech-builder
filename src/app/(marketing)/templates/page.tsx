@@ -21,9 +21,14 @@ export default function TemplatesPage() {
   const [currentPage, setCurrentPage] = useState(Number.isInteger(initialPage) && initialPage > 0 ? initialPage : 1);
 
   const filtered = useMemo(() => {
-    return templates.filter((template) => 
-      template.name.toLowerCase().includes(search.trim().toLowerCase())
-    );
+    const q = search.trim().toLowerCase();
+    if (!q) return templates;
+    return templates.filter((template) => {
+      const nameMatch = template.name.toLowerCase().includes(q);
+      const categoryMatch = template.category ? template.category.toLowerCase().includes(q) : false;
+      const idMatch = template.id.toLowerCase().includes(q);
+      return nameMatch || categoryMatch || idMatch;
+    });
   }, [search]);
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
@@ -33,6 +38,13 @@ export default function TemplatesPage() {
     safeCurrentPage * ITEMS_PER_PAGE
   );
   const returnPath = `/templates?page=${safeCurrentPage}${search.trim() ? `&q=${encodeURIComponent(search.trim())}` : ""}`;
+
+  const goToPage = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const nextPath = `/templates?page=${safeCurrentPage}${search.trim() ? `&q=${encodeURIComponent(search.trim())}` : ""}`;
@@ -118,7 +130,7 @@ export default function TemplatesPage() {
               {totalPages > 1 && (
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                    onClick={() => goToPage(Math.max(1, safeCurrentPage - 1))}
                     disabled={safeCurrentPage === 1}
                     className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
                   >
@@ -129,7 +141,7 @@ export default function TemplatesPage() {
                     {Array.from({ length: totalPages }).map((_, i) => (
                       <button
                         key={i}
-                        onClick={() => setCurrentPage(i + 1)}
+                        onClick={() => goToPage(i + 1)}
                         className={`inline-flex h-10 w-10 items-center justify-center rounded-lg text-sm font-medium transition-colors ${
                           safeCurrentPage === i + 1
                             ? "bg-ft-primary text-white"
@@ -141,7 +153,7 @@ export default function TemplatesPage() {
                     ))}
                   </div>
                   <button
-                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                    onClick={() => goToPage(Math.min(totalPages, safeCurrentPage + 1))}
                     disabled={safeCurrentPage === totalPages}
                     className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ft-border px-4 text-sm font-medium transition-colors hover:bg-ft-surface-alt disabled:pointer-events-none disabled:opacity-50"
                   >

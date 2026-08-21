@@ -1,0 +1,1277 @@
+/* Kidocare Daycare Template Scoped CSS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap");
+
+.kidocare-daycare,
+[data-template-id="kidocare-daycare"] {
+  --kc-page: #ffffff;
+  --kc-section: #fcfbf7;
+  --kc-surface: #f5f4ef;
+  --kc-card: #f5f4ef;
+  --kc-card-border: #e8e7e0;
+  --kc-heading: #000000;
+  --kc-body: #5a5753;
+  --kc-muted: #797773;
+  --kc-accent: #cff145;
+  --kc-accent-hover: #bde42a;
+  --kc-accent-text: #000000;
+  --kc-badge-pink: #fb6668;
+  --kc-badge-green: #338942;
+  --kc-badge-purple: #d8a3f3;
+  --kc-badge-orange: #fece80;
+  --kc-banner-yellow: #f4f6d1;
+  --kc-banner-grid: rgba(182, 185, 125, 0.25);
+  --kc-dark: #161616;
+  --kc-dark-text: #ffffff;
+  --kc-line: #eceae2;
+  --kc-font-heading: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --kc-font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  background-color: var(--kc-page);
+  color: var(--kc-body);
+  font-family: var(--kc-font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.kidocare-daycare *,
+[data-template-id="kidocare-daycare"] * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.kidocare-daycare h1,
+.kidocare-daycare h2,
+.kidocare-daycare h3,
+.kidocare-daycare h4,
+[data-template-id="kidocare-daycare"] h1,
+[data-template-id="kidocare-daycare"] h2,
+[data-template-id="kidocare-daycare"] h3,
+[data-template-id="kidocare-daycare"] h4 {
+  font-family: var(--kc-font-heading);
+  color: var(--kc-heading);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.kidocare-daycare img,
+[data-template-id="kidocare-daycare"] img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.kidocare-daycare a,
+[data-template-id="kidocare-daycare"] a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Button & Pill Utilities */
+.kidocare-daycare .kc-btn,
+[data-template-id="kidocare-daycare"] .kc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--kc-accent);
+  color: var(--kc-accent-text);
+  font-family: var(--kc-font-heading);
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(207, 241, 69, 0.35);
+  text-decoration: none;
+}
+
+.kidocare-daycare .kc-btn:hover,
+[data-template-id="kidocare-daycare"] .kc-btn:hover {
+  background-color: var(--kc-accent-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(207, 241, 69, 0.45);
+}
+
+.kidocare-daycare .kc-btn:active,
+[data-template-id="kidocare-daycare"] .kc-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Sticker Badges */
+.kidocare-daycare .kc-sticker,
+[data-template-id="kidocare-daycare"] .kc-sticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 14px;
+  font-family: var(--kc-font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 9999px;
+  line-height: 1.2;
+  user-select: none;
+}
+
+.kidocare-daycare .kc-sticker-pink,
+[data-template-id="kidocare-daycare"] .kc-sticker-pink {
+  background-color: var(--kc-badge-pink);
+  color: #ffffff;
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 10px rgba(251, 102, 104, 0.25);
+}
+
+.kidocare-daycare .kc-sticker-green,
+[data-template-id="kidocare-daycare"] .kc-sticker-green {
+  background-color: var(--kc-badge-green);
+  color: #ffffff;
+  transform: rotate(3deg);
+  box-shadow: 0 4px 10px rgba(51, 137, 66, 0.25);
+}
+
+.kidocare-daycare .kc-sticker-purple,
+[data-template-id="kidocare-daycare"] .kc-sticker-purple {
+  background-color: var(--kc-badge-purple);
+  color: #2b0b42;
+  transform: rotate(-3deg);
+  box-shadow: 0 4px 10px rgba(216, 163, 243, 0.25);
+}
+
+.kidocare-daycare .kc-sticker-orange,
+[data-template-id="kidocare-daycare"] .kc-sticker-orange {
+  background-color: var(--kc-badge-orange);
+  color: #4a2800;
+  transform: rotate(4deg);
+  box-shadow: 0 4px 10px rgba(254, 206, 128, 0.3);
+}
+
+/* Main Container */
+.kidocare-daycare .kc-container,
+[data-template-id="kidocare-daycare"] .kc-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.kidocare-daycare .kc-header,
+[data-template-id="kidocare-daycare"] .kc-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--kc-line);
+  padding: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.kidocare-daycare .kc-header-inner,
+[data-template-id="kidocare-daycare"] .kc-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kidocare-daycare .kc-logo,
+[data-template-id="kidocare-daycare"] .kc-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--kc-font-heading);
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--kc-heading);
+  letter-spacing: -0.03em;
+}
+
+.kidocare-daycare .kc-logo-icon,
+[data-template-id="kidocare-daycare"] .kc-logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.kidocare-daycare .kc-nav,
+[data-template-id="kidocare-daycare"] .kc-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.kidocare-daycare .kc-nav-link,
+[data-template-id="kidocare-daycare"] .kc-nav-link {
+  font-family: var(--kc-font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--kc-heading);
+  position: relative;
+  padding: 6px 0;
+}
+
+.kidocare-daycare .kc-nav-link:hover,
+[data-template-id="kidocare-daycare"] .kc-nav-link:hover {
+  color: var(--kc-badge-green);
+}
+
+.kidocare-daycare .kc-header-actions,
+[data-template-id="kidocare-daycare"] .kc-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.kidocare-daycare .kc-header-phone,
+[data-template-id="kidocare-daycare"] .kc-header-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 12px;
+  color: var(--kc-muted);
+}
+
+.kidocare-daycare .kc-header-phone strong,
+[data-template-id="kidocare-daycare"] .kc-header-phone strong {
+  font-family: var(--kc-font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--kc-heading);
+}
+
+.kidocare-daycare .kc-mobile-toggle,
+[data-template-id="kidocare-daycare"] .kc-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--kc-heading);
+}
+
+/* Hero Section */
+.kidocare-daycare .kc-hero,
+[data-template-id="kidocare-daycare"] .kc-hero {
+  padding: 40px 0 60px;
+  text-align: center;
+  background: radial-gradient(circle at 50% 30%, rgba(207, 241, 69, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.kidocare-daycare .kc-hero-headline-wrap,
+[data-template-id="kidocare-daycare"] .kc-hero-headline-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.kidocare-daycare .kc-hero-title,
+[data-template-id="kidocare-daycare"] .kc-hero-title {
+  font-size: clamp(42px, 6.5vw, 76px);
+  font-weight: 900;
+  color: var(--kc-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.kidocare-daycare .kc-hero-badge-1,
+[data-template-id="kidocare-daycare"] .kc-hero-badge-1 {
+  position: absolute;
+  top: -12px;
+  left: 2%;
+  z-index: 2;
+}
+
+.kidocare-daycare .kc-hero-badge-2,
+[data-template-id="kidocare-daycare"] .kc-hero-badge-2 {
+  position: absolute;
+  top: 4px;
+  right: -10px;
+  z-index: 2;
+}
+
+.kidocare-daycare .kc-hero-badge-3,
+[data-template-id="kidocare-daycare"] .kc-hero-badge-3 {
+  position: absolute;
+  bottom: -10px;
+  left: 48%;
+  transform: translateX(-50%) rotate(2deg);
+  z-index: 2;
+}
+
+.kidocare-daycare .kc-hero-image-wrap,
+[data-template-id="kidocare-daycare"] .kc-hero-image-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-hero-img,
+[data-template-id="kidocare-daycare"] .kc-hero-img {
+  width: 100%;
+  height: clamp(340px, 45vw, 620px);
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.kidocare-daycare .kc-hero-image-wrap:hover .kc-hero-img,
+[data-template-id="kidocare-daycare"] .kc-hero-image-wrap:hover .kc-hero-img {
+  transform: scale(1.02);
+}
+
+.kidocare-daycare .kc-hero-card-float,
+[data-template-id="kidocare-daycare"] .kc-hero-card-float {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  background-color: var(--kc-dark);
+  color: var(--kc-dark-text);
+  padding: 18px 24px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+}
+
+.kidocare-daycare .kc-hero-card-float strong,
+[data-template-id="kidocare-daycare"] .kc-hero-card-float strong {
+  font-family: var(--kc-font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.kidocare-daycare .kc-hero-card-stars,
+[data-template-id="kidocare-daycare"] .kc-hero-card-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.kidocare-daycare .kc-hero-card-stars span,
+[data-template-id="kidocare-daycare"] .kc-hero-card-stars span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Built on Trust (Features Grid) */
+.kidocare-daycare .kc-trust,
+[data-template-id="kidocare-daycare"] .kc-trust {
+  padding: 70px 0 90px;
+  text-align: center;
+}
+
+.kidocare-daycare .kc-section-head,
+[data-template-id="kidocare-daycare"] .kc-section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.kidocare-daycare .kc-section-head h2,
+[data-template-id="kidocare-daycare"] .kc-section-head h2 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.kidocare-daycare .kc-trust-grid,
+[data-template-id="kidocare-daycare"] .kc-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.kidocare-daycare .kc-trust-card,
+[data-template-id="kidocare-daycare"] .kc-trust-card {
+  background-color: var(--kc-surface);
+  border-radius: 28px;
+  padding: 28px 24px 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--kc-card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.kidocare-daycare .kc-trust-card:hover,
+[data-template-id="kidocare-daycare"] .kc-trust-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.kidocare-daycare .kc-trust-card h3,
+[data-template-id="kidocare-daycare"] .kc-trust-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.kidocare-daycare .kc-trust-card p,
+[data-template-id="kidocare-daycare"] .kc-trust-card p {
+  font-size: 14px;
+  color: var(--kc-body);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.kidocare-daycare .kc-trust-img-wrap,
+[data-template-id="kidocare-daycare"] .kc-trust-img-wrap {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.kidocare-daycare .kc-trust-img-wrap img,
+[data-template-id="kidocare-daycare"] .kc-trust-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Our Story Section */
+.kidocare-daycare .kc-story,
+[data-template-id="kidocare-daycare"] .kc-story {
+  padding: 60px 0 90px;
+}
+
+.kidocare-daycare .kc-story-inner,
+[data-template-id="kidocare-daycare"] .kc-story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.kidocare-daycare .kc-story-image-wrap,
+[data-template-id="kidocare-daycare"] .kc-story-image-wrap {
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-story-image-wrap img,
+[data-template-id="kidocare-daycare"] .kc-story-image-wrap img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.kidocare-daycare .kc-story-content,
+[data-template-id="kidocare-daycare"] .kc-story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.kidocare-daycare .kc-story-content h2,
+[data-template-id="kidocare-daycare"] .kc-story-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.kidocare-daycare .kc-story-content p,
+[data-template-id="kidocare-daycare"] .kc-story-content p {
+  font-size: 16px;
+  color: var(--kc-body);
+  line-height: 1.7;
+}
+
+/* Our Programs Section */
+.kidocare-daycare .kc-programs,
+[data-template-id="kidocare-daycare"] .kc-programs {
+  padding: 70px 0 90px;
+  background-color: #faf9f5;
+}
+
+.kidocare-daycare .kc-programs-header,
+[data-template-id="kidocare-daycare"] .kc-programs-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.kidocare-daycare .kc-programs-title-group,
+[data-template-id="kidocare-daycare"] .kc-programs-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kidocare-daycare .kc-programs-controls,
+[data-template-id="kidocare-daycare"] .kc-programs-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.kidocare-daycare .kc-arrow-btn,
+[data-template-id="kidocare-daycare"] .kc-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--kc-line);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--kc-heading);
+}
+
+.kidocare-daycare .kc-arrow-btn:hover,
+[data-template-id="kidocare-daycare"] .kc-arrow-btn:hover {
+  background-color: var(--kc-accent);
+  border-color: var(--kc-accent);
+  transform: scale(1.08);
+}
+
+.kidocare-daycare .kc-programs-grid,
+[data-template-id="kidocare-daycare"] .kc-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.kidocare-daycare .kc-program-card,
+[data-template-id="kidocare-daycare"] .kc-program-card {
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 24px;
+  border: 1px solid var(--kc-line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kidocare-daycare .kc-program-card:hover,
+[data-template-id="kidocare-daycare"] .kc-program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-program-age,
+[data-template-id="kidocare-daycare"] .kc-program-age {
+  display: inline-block;
+  font-family: var(--kc-font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--kc-body);
+  background-color: var(--kc-surface);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.kidocare-daycare .kc-program-card h3,
+[data-template-id="kidocare-daycare"] .kc-program-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.kidocare-daycare .kc-program-card p,
+[data-template-id="kidocare-daycare"] .kc-program-card p {
+  font-size: 14px;
+  color: var(--kc-body);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.kidocare-daycare .kc-program-img-wrap,
+[data-template-id="kidocare-daycare"] .kc-program-img-wrap {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.kidocare-daycare .kc-program-img-wrap img,
+[data-template-id="kidocare-daycare"] .kc-program-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Daily Routine */
+.kidocare-daycare .kc-routine,
+[data-template-id="kidocare-daycare"] .kc-routine {
+  padding: 80px 0 90px;
+  text-align: center;
+}
+
+.kidocare-daycare .kc-routine-grid,
+[data-template-id="kidocare-daycare"] .kc-routine-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.kidocare-daycare .kc-routine-card,
+[data-template-id="kidocare-daycare"] .kc-routine-card {
+  background-color: var(--kc-surface);
+  border-radius: 24px;
+  padding: 28px 24px;
+  text-align: left;
+  border: 1px solid var(--kc-card-border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease;
+}
+
+.kidocare-daycare .kc-routine-card:hover,
+[data-template-id="kidocare-daycare"] .kc-routine-card:hover {
+  transform: translateY(-4px);
+}
+
+.kidocare-daycare .kc-routine-time,
+[data-template-id="kidocare-daycare"] .kc-routine-time {
+  display: inline-block;
+  font-family: var(--kc-font-heading);
+  font-size: 13px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: var(--kc-dark);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.kidocare-daycare .kc-routine-card h3,
+[data-template-id="kidocare-daycare"] .kc-routine-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.kidocare-daycare .kc-routine-card p,
+[data-template-id="kidocare-daycare"] .kc-routine-card p {
+  font-size: 14px;
+  color: var(--kc-body);
+  line-height: 1.5;
+}
+
+/* Meet Our Teachers */
+.kidocare-daycare .kc-teachers,
+[data-template-id="kidocare-daycare"] .kc-teachers {
+  padding: 80px 0 90px;
+  background-color: #faf9f5;
+  text-align: center;
+}
+
+.kidocare-daycare .kc-teachers-grid,
+[data-template-id="kidocare-daycare"] .kc-teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.kidocare-daycare .kc-teacher-card,
+[data-template-id="kidocare-daycare"] .kc-teacher-card {
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 32px 24px;
+  border: 1px solid var(--kc-line);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kidocare-daycare .kc-teacher-card:hover,
+[data-template-id="kidocare-daycare"] .kc-teacher-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-teacher-photo-wrap,
+[data-template-id="kidocare-daycare"] .kc-teacher-photo-wrap {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kidocare-daycare .kc-teacher-blob,
+[data-template-id="kidocare-daycare"] .kc-teacher-blob {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.kidocare-daycare .kc-teacher-img,
+[data-template-id="kidocare-daycare"] .kc-teacher-img {
+  position: relative;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-teacher-card h3,
+[data-template-id="kidocare-daycare"] .kc-teacher-card h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.kidocare-daycare .kc-teacher-role,
+[data-template-id="kidocare-daycare"] .kc-teacher-role {
+  font-family: var(--kc-font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--kc-badge-green);
+  margin-bottom: 12px;
+}
+
+.kidocare-daycare .kc-teacher-card p,
+[data-template-id="kidocare-daycare"] .kc-teacher-card p {
+  font-size: 14px;
+  color: var(--kc-body);
+  line-height: 1.5;
+}
+
+/* Testimonial Card */
+.kidocare-daycare .kc-testimonial-section,
+[data-template-id="kidocare-daycare"] .kc-testimonial-section {
+  padding: 60px 0 80px;
+}
+
+.kidocare-daycare .kc-testimonial-box,
+[data-template-id="kidocare-daycare"] .kc-testimonial-box {
+  background-color: var(--kc-banner-yellow);
+  border-radius: 36px;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 12px 36px rgba(182, 185, 125, 0.15);
+}
+
+.kidocare-daycare .kc-testimonial-left,
+[data-template-id="kidocare-daycare"] .kc-testimonial-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kidocare-daycare .kc-testimonial-left h3,
+[data-template-id="kidocare-daycare"] .kc-testimonial-left h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.kidocare-daycare .kc-avatars-row,
+[data-template-id="kidocare-daycare"] .kc-avatars-row {
+  display: flex;
+  gap: 10px;
+}
+
+.kidocare-daycare .kc-avatar-btn,
+[data-template-id="kidocare-daycare"] .kc-avatar-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  background: none;
+}
+
+.kidocare-daycare .kc-avatar-btn.is-active,
+[data-template-id="kidocare-daycare"] .kc-avatar-btn.is-active {
+  border-color: var(--kc-dark);
+  transform: scale(1.1);
+}
+
+.kidocare-daycare .kc-avatar-btn img,
+[data-template-id="kidocare-daycare"] .kc-avatar-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kidocare-daycare .kc-testimonial-quote-wrap,
+[data-template-id="kidocare-daycare"] .kc-testimonial-quote-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kidocare-daycare .kc-testimonial-quote,
+[data-template-id="kidocare-daycare"] .kc-testimonial-quote {
+  font-family: var(--kc-font-heading);
+  font-size: clamp(20px, 2.4vw, 28px);
+  font-weight: 800;
+  color: var(--kc-heading);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.kidocare-daycare .kc-testimonial-author,
+[data-template-id="kidocare-daycare"] .kc-testimonial-author {
+  font-size: 15px;
+  color: var(--kc-body);
+  font-weight: 600;
+}
+
+/* Trusted by Families / Stats */
+.kidocare-daycare .kc-stats,
+[data-template-id="kidocare-daycare"] .kc-stats {
+  padding: 70px 0 90px;
+}
+
+.kidocare-daycare .kc-stats-inner,
+[data-template-id="kidocare-daycare"] .kc-stats-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.kidocare-daycare .kc-stats-image-wrap,
+[data-template-id="kidocare-daycare"] .kc-stats-image-wrap {
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.kidocare-daycare .kc-stats-image-wrap img,
+[data-template-id="kidocare-daycare"] .kc-stats-image-wrap img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.kidocare-daycare .kc-stats-content,
+[data-template-id="kidocare-daycare"] .kc-stats-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.kidocare-daycare .kc-stats-content h2,
+[data-template-id="kidocare-daycare"] .kc-stats-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.kidocare-daycare .kc-stats-row,
+[data-template-id="kidocare-daycare"] .kc-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--kc-line);
+}
+
+.kidocare-daycare .kc-stat-item strong,
+[data-template-id="kidocare-daycare"] .kc-stat-item strong {
+  display: block;
+  font-family: var(--kc-font-heading);
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 900;
+  color: var(--kc-heading);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.kidocare-daycare .kc-stat-item span,
+[data-template-id="kidocare-daycare"] .kc-stat-item span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--kc-muted);
+}
+
+/* FAQ Section */
+.kidocare-daycare .kc-faq,
+[data-template-id="kidocare-daycare"] .kc-faq {
+  padding: 80px 0 100px;
+  background-color: #faf9f5;
+  text-align: center;
+}
+
+.kidocare-daycare .kc-faq-list,
+[data-template-id="kidocare-daycare"] .kc-faq-list {
+  max-width: 840px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.kidocare-daycare .kc-faq-item,
+[data-template-id="kidocare-daycare"] .kc-faq-item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid var(--kc-line);
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.kidocare-daycare .kc-faq-item.is-open,
+[data-template-id="kidocare-daycare"] .kc-faq-item.is-open {
+  border-color: #d2d0c2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.kidocare-daycare .kc-faq-trigger,
+[data-template-id="kidocare-daycare"] .kc-faq-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.kidocare-daycare .kc-faq-trigger span,
+[data-template-id="kidocare-daycare"] .kc-faq-trigger span {
+  font-family: var(--kc-font-heading);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--kc-heading);
+}
+
+.kidocare-daycare .kc-faq-icon,
+[data-template-id="kidocare-daycare"] .kc-faq-icon {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--kc-heading);
+  transition: transform 0.2s ease;
+}
+
+.kidocare-daycare .kc-faq-answer,
+[data-template-id="kidocare-daycare"] .kc-faq-answer {
+  padding: 0 28px 24px;
+  font-size: 15px;
+  color: var(--kc-body);
+  line-height: 1.6;
+}
+
+/* CTA Banner */
+.kidocare-daycare .kc-cta,
+[data-template-id="kidocare-daycare"] .kc-cta {
+  padding: 40px 0 80px;
+}
+
+.kidocare-daycare .kc-cta-card,
+[data-template-id="kidocare-daycare"] .kc-cta-card {
+  position: relative;
+  background-color: var(--kc-banner-yellow);
+  background-image: 
+    linear-gradient(to right, var(--kc-banner-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--kc-banner-grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-radius: 40px;
+  padding: 60px 64px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(182, 185, 125, 0.2);
+}
+
+.kidocare-daycare .kc-cta-content,
+[data-template-id="kidocare-daycare"] .kc-cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  z-index: 2;
+}
+
+.kidocare-daycare .kc-cta-content h2,
+[data-template-id="kidocare-daycare"] .kc-cta-content h2 {
+  font-size: clamp(36px, 4.5vw, 56px);
+  line-height: 1.1;
+}
+
+.kidocare-daycare .kc-cta-image-wrap,
+[data-template-id="kidocare-daycare"] .kc-cta-image-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.kidocare-daycare .kc-cta-child-img,
+[data-template-id="kidocare-daycare"] .kc-cta-child-img {
+  max-height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.1));
+}
+
+.kidocare-daycare .kc-cta-speech,
+[data-template-id="kidocare-daycare"] .kc-cta-speech {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: #ffffff;
+  font-family: var(--kc-font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--kc-heading);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: rotate(6deg);
+}
+
+/* Footer */
+.kidocare-daycare .kc-footer,
+[data-template-id="kidocare-daycare"] .kc-footer {
+  background-color: #ffffff;
+  border-top: 1px solid var(--kc-line);
+  padding: 80px 0 40px;
+}
+
+.kidocare-daycare .kc-footer-grid,
+[data-template-id="kidocare-daycare"] .kc-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.kidocare-daycare .kc-footer-brand,
+[data-template-id="kidocare-daycare"] .kc-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kidocare-daycare .kc-footer-brand p,
+[data-template-id="kidocare-daycare"] .kc-footer-brand p {
+  font-size: 15px;
+  color: var(--kc-body);
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+.kidocare-daycare .kc-footer-col h4,
+[data-template-id="kidocare-daycare"] .kc-footer-col h4 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.kidocare-daycare .kc-footer-col ul,
+[data-template-id="kidocare-daycare"] .kc-footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kidocare-daycare .kc-footer-col a,
+[data-template-id="kidocare-daycare"] .kc-footer-col a {
+  font-size: 14px;
+  color: var(--kc-body);
+}
+
+.kidocare-daycare .kc-footer-col a:hover,
+[data-template-id="kidocare-daycare"] .kc-footer-col a:hover {
+  color: var(--kc-badge-green);
+}
+
+.kidocare-daycare .kc-footer-col li,
+[data-template-id="kidocare-daycare"] .kc-footer-col li {
+  font-size: 14px;
+  color: var(--kc-body);
+}
+
+.kidocare-daycare .kc-footer-bottom,
+[data-template-id="kidocare-daycare"] .kc-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 1px solid var(--kc-line);
+  font-size: 13px;
+  color: var(--kc-muted);
+}
+
+.kidocare-daycare .kc-social-dots,
+[data-template-id="kidocare-daycare"] .kc-social-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.kidocare-daycare .kc-social-dot,
+[data-template-id="kidocare-daycare"] .kc-social-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--kc-accent);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1080px) {
+  .kidocare-daycare .kc-trust-grid,
+  [data-template-id="kidocare-daycare"] .kc-trust-grid,
+  .kidocare-daycare .kc-programs-grid,
+  [data-template-id="kidocare-daycare"] .kc-programs-grid,
+  .kidocare-daycare .kc-routine-grid,
+  [data-template-id="kidocare-daycare"] .kc-routine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kidocare-daycare .kc-footer-grid,
+  [data-template-id="kidocare-daycare"] .kc-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 860px) {
+  .kidocare-daycare .kc-nav,
+  [data-template-id="kidocare-daycare"] .kc-nav,
+  .kidocare-daycare .kc-header-phone,
+  [data-template-id="kidocare-daycare"] .kc-header-phone {
+    display: none;
+  }
+
+  .kidocare-daycare .kc-mobile-toggle,
+  [data-template-id="kidocare-daycare"] .kc-mobile-toggle {
+    display: block;
+  }
+
+  .kidocare-daycare .kc-story-inner,
+  [data-template-id="kidocare-daycare"] .kc-story-inner,
+  .kidocare-daycare .kc-stats-inner,
+  [data-template-id="kidocare-daycare"] .kc-stats-inner,
+  .kidocare-daycare .kc-cta-card,
+  [data-template-id="kidocare-daycare"] .kc-cta-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .kidocare-daycare .kc-testimonial-box,
+  [data-template-id="kidocare-daycare"] .kc-testimonial-box {
+    grid-template-columns: 1fr;
+    padding: 36px 28px;
+    gap: 28px;
+  }
+
+  .kidocare-daycare .kc-teachers-grid,
+  [data-template-id="kidocare-daycare"] .kc-teachers-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .kidocare-daycare .kc-trust-grid,
+  [data-template-id="kidocare-daycare"] .kc-trust-grid,
+  .kidocare-daycare .kc-programs-grid,
+  [data-template-id="kidocare-daycare"] .kc-programs-grid,
+  .kidocare-daycare .kc-routine-grid,
+  [data-template-id="kidocare-daycare"] .kc-routine-grid,
+  .kidocare-daycare .kc-footer-grid,
+  [data-template-id="kidocare-daycare"] .kc-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kidocare-daycare .kc-hero-card-float,
+  [data-template-id="kidocare-daycare"] .kc-hero-card-float {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .kidocare-daycare .kc-cta-card,
+  [data-template-id="kidocare-daycare"] .kc-cta-card {
+    padding: 36px 24px;
+  }
+
+  .kidocare-daycare .kc-stats-row,
+  [data-template-id="kidocare-daycare"] .kc-stats-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .kidocare-daycare .kc-footer-bottom,
+  [data-template-id="kidocare-daycare"] .kc-footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* Mobile Nav Overlay */
+.kidocare-daycare .kc-mobile-nav,
+[data-template-id="kidocare-daycare"] .kc-mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--kc-line);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.kidocare-daycare .kc-mobile-nav a,
+[data-template-id="kidocare-daycare"] .kc-mobile-nav a {
+  font-family: var(--kc-font-heading);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--kc-heading);
+  padding: 8px 0;
+}

@@ -206,6 +206,14 @@ import fureverPawsConfig from "../templates/furever-paws/config.json";
 import fureverPawsEditable from "../templates/furever-paws/editable.json";
 import coloriaPaintingConfig from "../templates/coloria-painting/config.json";
 import coloriaPaintingEditable from "../templates/coloria-painting/editable.json";
+import dentaraDentalClinicConfig from "../templates/dentara-dental-clinic/config.json";
+import dentaraDentalClinicEditable from "../templates/dentara-dental-clinic/editable.json";
+import kidocareDaycareConfig from "../templates/kidocare-daycare/config.json";
+import kidocareDaycareEditable from "../templates/kidocare-daycare/editable.json";
+import adstikTiktokAgencyConfig from "../templates/adstik-tiktok-agency/config.json";
+import adstikTiktokAgencyEditable from "../templates/adstik-tiktok-agency/editable.json";
+import mayfairPrestigeMotorsConfig from "../templates/mayfair-prestige-motors/config.json";
+import mayfairPrestigeMotorsEditable from "../templates/mayfair-prestige-motors/editable.json";
 
 
 export type TemplateConfig = {
@@ -328,6 +336,10 @@ const components = {
   "premium-fitness-coach": dynamic<{ data: TemplateData }>(() => import("../templates/premium-fitness-coach/template")),
   "furever-paws": dynamic<{ data: TemplateData }>(() => import("../templates/furever-paws/template")),
   "coloria-painting": dynamic<{ data: TemplateData }>(() => import("../templates/coloria-painting/template")),
+  "dentara-dental-clinic": dynamic<{ data: TemplateData }>(() => import("../templates/dentara-dental-clinic/template")),
+  "kidocare-daycare": dynamic<{ data: TemplateData }>(() => import("../templates/kidocare-daycare/template")),
+  "adstik-tiktok-agency": dynamic<{ data: TemplateData }>(() => import("../templates/adstik-tiktok-agency/template")),
+  "mayfair-prestige-motors": dynamic<{ data: TemplateData }>(() => import("../templates/mayfair-prestige-motors/template")),
 } satisfies Record<string, ComponentType<{ data: TemplateData }>>;
 
 export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
@@ -385,9 +397,14 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "verdant-house-grooming": { config: verdantHouseGroomingConfig, component: components["verdant-house-grooming"], defaultData: normalizeData(verdantHouseGroomingEditable) },
   "ember-grace-church": { config: emberGraceChurchConfig, component: components["ember-grace-church"], defaultData: normalizeData(emberGraceChurchEditable) },
   "aurea-objects-shop": { config: aureaObjectsShopConfig, component: components["aurea-objects-shop"], defaultData: normalizeData(aureaObjectsShopEditable) },
+  "bloom-steps-nursery": { config: bloomStepsNurseryConfig, component: components["bloom-steps-nursery"], defaultData: normalizeData(bloomStepsNurseryEditable) },
+  "eductix-academy": { config: eductixAcademyConfig, component: components["eductix-academy"], defaultData: normalizeData(eductixAcademyEditable) },
+  "infusion-london": { config: infusionLondonConfig, component: components["infusion-london"], defaultData: normalizeData(infusionLondonEditable) },
+  "goddess-braids-salon": { config: goddessBraidsSalonConfig, component: components["goddess-braids-salon"], defaultData: normalizeData(goddessBraidsSalonEditable) },
+  "agritech-growth": { config: agritechGrowthConfig, component: components["agritech-growth"], defaultData: normalizeData(agritechGrowthEditable) },
+  "fiora-locks": { config: fioraLocksConfig, component: components["fiora-locks"], defaultData: normalizeData(fioraLocksEditable) },
   "kindred-paws-vets": { config: kindredPawsVetsConfig, component: components["kindred-paws-vets"], defaultData: normalizeData(kindredPawsVetsEditable) },
   "forno-sixteen": { config: fornoSixteenConfig, component: components["forno-sixteen"], defaultData: normalizeData(fornoSixteenEditable) },
-  "infusion-london": { config: infusionLondonConfig, component: components["infusion-london"], defaultData: normalizeData(infusionLondonEditable) },
   "velour-studio-salon": { config: velourStudioSalonConfig, component: components["velour-studio-salon"], defaultData: normalizeData(velourStudioSalonEditable) },
   "software-engineer-portfolio": { config: softwareEngineerPortfolioConfig, component: components["software-engineer-portfolio"], defaultData: normalizeData(softwareEngineerPortfolioEditable) },
   "coffee-website": { config: coffeeWebsiteConfig, component: components["coffee-website"], defaultData: normalizeData(coffeeWebsiteEditable) },
@@ -402,22 +419,20 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "arcstone-growth": { config: arcstoneGrowthConfig, component: components["arcstone-growth"], defaultData: normalizeData(arcstoneGrowthEditable) },
   "beaniro-cold-brew": { config: beaniroColdBrewConfig, component: components["beaniro-cold-brew"], defaultData: normalizeData(beaniroColdBrewEditable) },
   "lune-leaf-skincare": { config: luneLeafSkincareConfig, component: components["lune-leaf-skincare"], defaultData: normalizeData(luneLeafSkincareEditable) },
-  "bloom-steps-nursery": { config: bloomStepsNurseryConfig, component: components["bloom-steps-nursery"], defaultData: normalizeData(bloomStepsNurseryEditable) },
   "handgrid-repairs": { config: handgridRepairsConfig, component: components["handgrid-repairs"], defaultData: normalizeData(handgridRepairsEditable) },
-  "eductix-academy": { config: eductixAcademyConfig, component: components["eductix-academy"], defaultData: normalizeData(eductixAcademyEditable) },
   "alvion-medical": { config: alvionMedicalConfig, component: components["alvion-medical"], defaultData: normalizeData(alvionMedicalEditable) },
   "greenly-gardens": { config: greenlyGardensConfig, component: components["greenly-gardens"], defaultData: normalizeData(greenlyGardensEditable) },
-  "agritech-growth": { config: agritechGrowthConfig, component: components["agritech-growth"], defaultData: normalizeData(agritechGrowthEditable) },
   "pipeline-os": { config: pipelineOsConfig, component: components["pipeline-os"], defaultData: normalizeData(pipelineOsEditable) },
-  "fiora-locks": { config: fioraLocksConfig, component: components["fiora-locks"], defaultData: normalizeData(fioraLocksEditable) },
-  "goddess-braids-salon": { config: goddessBraidsSalonConfig, component: components["goddess-braids-salon"], defaultData: normalizeData(goddessBraidsSalonEditable) },
   "little-rainbow-nursery": { config: littleRainbowNurseryConfig, component: components["little-rainbow-nursery"], defaultData: normalizeData(littleRainbowNurseryEditable) },
-  "apex-growth-agency": { config: apexGrowthAgencyConfig, component: components["apex-growth-agency"], defaultData: normalizeData(apexGrowthAgencyEditable) },
+  "kidocare-daycare": { config: kidocareDaycareConfig, component: components["kidocare-daycare"], defaultData: normalizeData(kidocareDaycareEditable) },
+  "adstik-tiktok-agency": { config: adstikTiktokAgencyConfig, component: components["adstik-tiktok-agency"], defaultData: normalizeData(adstikTiktokAgencyEditable) },
   "valist-ai-studio": { config: valistAiStudioConfig, component: components["valist-ai-studio"], defaultData: normalizeData(valistAiStudioEditable) },
   "das-studio": { config: dasStudioConfig, component: components["das-studio"], defaultData: normalizeData(dasStudioEditable) },
+  "quantum-wellness-spa": { config: quantumWellnessSpaConfig, component: components["quantum-wellness-spa"], defaultData: normalizeData(quantumWellnessSpaEditable) },
+  "mayfair-prestige-motors": { config: mayfairPrestigeMotorsConfig, component: components["mayfair-prestige-motors"], defaultData: normalizeData(mayfairPrestigeMotorsEditable) },
+  "apex-growth-agency": { config: apexGrowthAgencyConfig, component: components["apex-growth-agency"], defaultData: normalizeData(apexGrowthAgencyEditable) },
   "cleanhub-london": { config: cleanhubLondonConfig, component: components["cleanhub-london"], defaultData: normalizeData(cleanhubLondonEditable) },
   "clipzy-video-agency": { config: clipzyVideoAgencyConfig, component: components["clipzy-video-agency"], defaultData: normalizeData(clipzyVideoAgencyEditable) },
-  "quantum-wellness-spa": { config: quantumWellnessSpaConfig, component: components["quantum-wellness-spa"], defaultData: normalizeData(quantumWellnessSpaEditable) },
   "jumami-street-food": { config: jumamiStreetFoodConfig, component: components["jumami-street-food"], defaultData: normalizeData(jumamiStreetFoodEditable) },
   "freshbite-fast-food": { config: freshbiteFastFoodConfig, component: components["freshbite-fast-food"], defaultData: normalizeData(freshbiteFastFoodEditable) },
   "consulting-growth-advisory": { config: consultingGrowthAdvisoryConfig, component: components["consulting-growth-advisory"], defaultData: normalizeData(consultingGrowthAdvisoryEditable) },
@@ -432,6 +447,7 @@ export const TEMPLATE_REGISTRY: Record<string, TemplateEntry> = {
   "premium-fitness-coach": { config: premiumFitnessCoachConfig, component: components["premium-fitness-coach"], defaultData: normalizeData(premiumFitnessCoachEditable) },
   "furever-paws": { config: fureverPawsConfig, component: components["furever-paws"], defaultData: normalizeData(fureverPawsEditable) },
   "coloria-painting": { config: coloriaPaintingConfig, component: components["coloria-painting"], defaultData: normalizeData(coloriaPaintingEditable) },
+  "dentara-dental-clinic": { config: dentaraDentalClinicConfig, component: components["dentara-dental-clinic"], defaultData: normalizeData(dentaraDentalClinicEditable) },
 };
 
 export function getTemplate(id: string): TemplateEntry | undefined {
